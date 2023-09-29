@@ -15,17 +15,6 @@ include_directories(
 # Add link directories (also for redis)
 link_directories(/usr/local/lib)
 
-##############################  CAV ROUTE PLANNER  ##################################
-
-ament_auto_add_library(cav_route_planner_component SHARED
-  src/cav_route_planner.cpp
-)
-
-rclcpp_components_register_node(cav_route_planner_component
-  PLUGIN "cav_route_planner::CavRoutePlanner"
-  EXECUTABLE cav_route_planner
-)
-
 ##############################  OPERATION MODE  #####################################
 
 ament_auto_add_library(operation_mode_component SHARED

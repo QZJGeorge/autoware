@@ -23,12 +23,13 @@ namespace sumo_autoware_cosim{
 
     cli_clear_route = this->create_client<ClearRoute>("/planning/mission_planning/clear_route");
     cli_set_route_points = this->create_client<SetRoutePoints>("/planning/mission_planning/set_route_points");
+    cli_set_operation_mode = this->create_client<ChangeOperationMode>("/system/operation_mode/change_operation_mode");
 
     sub_route_state = this->create_subscription<RouteState>(
       "/planning/mission_planning/route_state", 10, std::bind(&SumoAutowareCosim::route_state_callback, this, std::placeholders::_1));
 
-    sub_mode_state = this->create_subscription<OperationModeState>(
-      "/system/operation_mode/state", 10, std::bind(&SumoAutowareCosim::mode_state_callback, this, std::placeholders::_1));
+    // sub_mode_state = this->create_subscription<OperationModeState>(
+    //   "/system/operation_mode/state", 10, std::bind(&SumoAutowareCosim::mode_state_callback, this, std::placeholders::_1));
 
     timer_ = rclcpp::create_timer(
       this, get_clock(), 1000ms, std::bind(&SumoAutowareCosim::on_timer, this));
@@ -43,14 +44,17 @@ namespace sumo_autoware_cosim{
     int state = stoi(terasim_state);
 
     if (state == 0){
-      if (route_state.state != UNSET){
+      pub_localization();
+
+      if (route_state_msg.state != UNSET){
         clear_route();
       }
-      pub_localization();
+      set_operation_mode(STOP);
     } else{
-      if (route_state.state != SET){
+      if (route_state_msg.state != SET){
         set_route_points();
       }
+      set_operation_mode(AUTONOMOUS);
     }
   }
 
@@ -172,9 +176,23 @@ namespace sumo_autoware_cosim{
     auto result_s = cli_set_route_points->async_send_request(set_route_points_req);
   }
 
+  void SumoAutowareCosim::set_operation_mode(uint8_t mode){
+    auto request = std::make_shared<ChangeOperationMode::Request>();
+    request->mode = mode;
+
+    while (!cli_set_operation_mode->wait_for_service(1s)) {
+      if (!rclcpp::ok()) {
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
+      }
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "routing service not available, waiting again...");
+    }
+
+    auto result = cli_set_operation_mode->async_send_request(request);
+  }
+
   void SumoAutowareCosim::route_state_callback(RouteState::SharedPtr msg){
-    route_state = *msg;
-    auto state = route_state.state;
+    route_state_msg = *msg;
+    auto state = route_state_msg.state;
 
     if (state == UNKNOWN){
       cout << "route state: unknown" << endl;
@@ -189,9 +207,10 @@ namespace sumo_autoware_cosim{
     }
   }
 
-  void SumoAutowareCosim::mode_state_callback(OperationModeState::SharedPtr msg){
-      cout << "current operation mode: " << (int)msg->mode << endl;
-  }
+  // void SumoAutowareCosim::mode_state_callback(OperationModeState::SharedPtr msg){
+  //   operation_mode_msg = *msg;
+  //   cout << "current operation mode: " << operation_mode_msg.mode << endl;
+  // }
 }
 
 RCLCPP_COMPONENTS_REGISTER_NODE(sumo_autoware_cosim::SumoAutowareCosim)

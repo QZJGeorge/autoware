@@ -20,6 +20,7 @@
 #include <hiredis/hiredis.h>
 #include <geometry_msgs/msg/pose.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
+#include <tier4_system_msgs/srv/change_operation_mode.hpp>
 #include <autoware_adapi_v1_msgs/srv/clear_route.hpp>
 #include <autoware_adapi_v1_msgs/msg/route_state.hpp>
 #include <autoware_adapi_v1_msgs/srv/set_route_points.hpp>
@@ -34,7 +35,7 @@ using namespace std;
 
 using geometry_msgs::msg::Pose;
 using geometry_msgs::msg::PoseWithCovarianceStamped;
-
+using tier4_system_msgs::srv::ChangeOperationMode;
 using autoware_adapi_v1_msgs::msg::RouteState;
 using autoware_adapi_v1_msgs::msg::OperationModeState;
 using autoware_adapi_v1_msgs::srv::ClearRoute;
@@ -47,29 +48,37 @@ public:
   ~SumoAutowareCosim() = default;
 
 private:
-  const uint16_t UNKNOWN = 0;
-  const uint16_t UNSET = 1;
-  const uint16_t SET = 2;
-  const uint16_t ARRIVED = 3;
-  const uint16_t CHANGING = 4;
+  // constants for route state
+  uint16_t UNKNOWN = 0;
+  uint16_t UNSET = 1;
+  uint16_t SET = 2;
+  uint16_t ARRIVED = 3;
+  uint16_t CHANGING = 4;
+
+  // constants for operation mode
+  uint8_t STOP = 1;
+  uint8_t AUTONOMOUS = 2;
+  uint8_t LOCAL = 3;
+  uint8_t REMOTE = 4;
 
   Pose wp0, wp1, wp2, wp3, wp4;
 
   redisContext *context;
 
+  RouteState route_state_msg;
+  // OperationModeState operation_mode_msg;
   PoseWithCovarianceStamped localization_msg;
 
   rclcpp::TimerBase::SharedPtr timer_;
 
-  RouteState route_state;
-
   rclcpp::Publisher<PoseWithCovarianceStamped>::SharedPtr pub_local;
 
   rclcpp::Subscription<RouteState>::SharedPtr sub_route_state;
-  rclcpp::Subscription<OperationModeState>::SharedPtr sub_mode_state;
+  // rclcpp::Subscription<OperationModeState>::SharedPtr sub_mode_state;
 
   rclcpp::Client<ClearRoute>::SharedPtr cli_clear_route;
   rclcpp::Client<SetRoutePoints>::SharedPtr cli_set_route_points;
+  rclcpp::Client<ChangeOperationMode>::SharedPtr cli_set_operation_mode;
 
   void on_timer();
   void init_redis_client();
@@ -82,8 +91,10 @@ private:
 
   void clear_route();
 
+  void set_operation_mode(uint8_t mode);
+
   void route_state_callback(RouteState::SharedPtr msg);
-  void mode_state_callback(OperationModeState::SharedPtr msg);
+  // void mode_state_callback(OperationModeState::SharedPtr msg);
 
   string get_key(string key);
 };
