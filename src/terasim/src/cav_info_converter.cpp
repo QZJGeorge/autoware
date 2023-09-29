@@ -23,9 +23,6 @@ namespace cav_info_converter
     sub_ego_odom = this->create_subscription<Odometry>(
       "/localization/kinematic_state", 10, std::bind(&CavInfoConverter::odom_callback, this, std::placeholders::_1));
 
-    timer_ = rclcpp::create_timer(
-        this, get_clock(), 200ms, std::bind(&CavInfoConverter::on_timer, this));
-
     init_redis_client();
     signal(SIGINT, handleShutdown);  // Register the signal handler for clearing redis cashe before shutting down node
   }
@@ -56,20 +53,6 @@ namespace cav_info_converter
     return mgrs;
   }
 
-  string CavInfoConverter::get_cav_ego_positionheading_ros(double lat, double lon, double yaw){
-    nlohmann::json cav_dic;
-    cav_dic["x"] = lat;
-    cav_dic["y"] = lon;
-    cav_dic["orientation"] = yaw;
-    return cav_dic.dump();;
-  }
-
-  string CavInfoConverter::get_cav_ego_speed_ros(double velocity){
-    nlohmann::json cav_dic;
-    cav_dic["velocity"] = velocity;
-    return cav_dic.dump();;
-  }
-
   void CavInfoConverter::odom_callback(Odometry::SharedPtr msg){
     int zone = 17;                                 // ann arbor is in zone 17
     int prec = 10;                                 // we set conversion precision to 10 decimals
@@ -81,11 +64,15 @@ namespace cav_info_converter
     // Convert the MGRS coordinates to UTM coordinates
     GeographicLib::MGRS::Reverse(mgrs, zone, north, lat, lon, prec);
 
-    std::string cav_ego_positionheading_ros = get_cav_ego_positionheading_ros(lat, lon, yaw);
-    std::string cav_ego_speed_ros = get_cav_ego_speed_ros(0.00);
+    json av_state;
 
-    set_key("cav_ego_positionheading_ros", cav_ego_positionheading_ros);
-    set_key("cav_ego_speed_ros", cav_ego_speed_ros);
+    av_state["x"] = lat;
+    av_state["y"] = lon;
+    av_state["orientation"] = yaw;
+    av_state["velocity"] = 0.0;
+    av_state["resolution"] = 0.1;
+
+    set_key("av_state", av_state.dump());
     set_key("terasim_time", get_key("terasim_time"));
   }
 
@@ -108,10 +95,12 @@ namespace cav_info_converter
   void CavInfoConverter::set_key(string key, string value){
     // SET key
     redisReply *reply = (redisReply *)redisCommand(context, "SET %s %s", key.c_str(), value.c_str());
-    if (reply->type == REDIS_REPLY_STATUS)
+    if (reply->type == REDIS_REPLY_STATUS){
       cout << "SET " << key.c_str() << " : " << value.c_str() << endl;
-    if (reply->type == REDIS_REPLY_ERROR)
+    }
+    if (reply->type == REDIS_REPLY_ERROR){
       cout << "SET " << key.c_str() << " error" << endl;
+    }
   }
 
   string CavInfoConverter::get_key(string key){
@@ -121,10 +110,6 @@ namespace cav_info_converter
     if (reply->type == REDIS_REPLY_STRING)
       result = reply->str;
     return result;
-  }
-
-  void CavInfoConverter::on_timer(){
-  
   }
 }
 

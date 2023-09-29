@@ -24,8 +24,6 @@
 #include <autoware_adapi_v1_msgs/srv/clear_route.hpp>
 #include <autoware_adapi_v1_msgs/msg/route_state.hpp>
 #include <autoware_adapi_v1_msgs/srv/set_route_points.hpp>
-#include <autoware_adapi_v1_msgs/msg/operation_mode_state.hpp>
-#include <autoware_adapi_v1_msgs/srv/initialize_localization.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
 
 namespace sumo_autoware_cosim
@@ -37,7 +35,6 @@ using geometry_msgs::msg::Pose;
 using geometry_msgs::msg::PoseWithCovarianceStamped;
 using tier4_system_msgs::srv::ChangeOperationMode;
 using autoware_adapi_v1_msgs::msg::RouteState;
-using autoware_adapi_v1_msgs::msg::OperationModeState;
 using autoware_adapi_v1_msgs::srv::ClearRoute;
 using autoware_adapi_v1_msgs::srv::SetRoutePoints;
 
@@ -66,15 +63,12 @@ private:
   redisContext *context;
 
   RouteState route_state_msg;
-  // OperationModeState operation_mode_msg;
   PoseWithCovarianceStamped localization_msg;
 
   rclcpp::TimerBase::SharedPtr timer_;
 
   rclcpp::Publisher<PoseWithCovarianceStamped>::SharedPtr pub_local;
-
   rclcpp::Subscription<RouteState>::SharedPtr sub_route_state;
-  // rclcpp::Subscription<OperationModeState>::SharedPtr sub_mode_state;
 
   rclcpp::Client<ClearRoute>::SharedPtr cli_clear_route;
   rclcpp::Client<SetRoutePoints>::SharedPtr cli_set_route_points;
@@ -94,7 +88,6 @@ private:
   void set_operation_mode(uint8_t mode);
 
   void route_state_callback(RouteState::SharedPtr msg);
-  // void mode_state_callback(OperationModeState::SharedPtr msg);
 
   string get_key(string key);
 };

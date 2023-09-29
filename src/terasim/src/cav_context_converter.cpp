@@ -229,11 +229,11 @@ namespace cav_context_converter
   }
 
   void CavContextConverter::on_timer(){
-    string cav_context_vehicle_info_ros = get_key("cav_context_vehicle_info_ros");
+    string cav_context_vehicle_info_ros = get_key("av_context");
     string newString = post_process_cav_context_vehicle_info_ros(cav_context_vehicle_info_ros);
 
     if (newString == ""){
-      cout << "cav_context_vehicle_info_ros not availble, waiting..." << endl;
+      cout << "av_context not availble, waiting..." << endl;
       update_bv_in_autoware_sim(DELETEALL, "", "");
       return;
     } else{

@@ -15,17 +15,6 @@ include_directories(
 # Add link directories (also for redis)
 link_directories(/usr/local/lib)
 
-##############################  OPERATION MODE  #####################################
-
-ament_auto_add_library(operation_mode_component SHARED
-  src/operation_mode.cpp
-)
-
-rclcpp_components_register_node(operation_mode_component
-  PLUGIN "operation_mode::OperationMode"
-  EXECUTABLE operation_mode
-)
-
 #############################  TRAFFIC SIGNAL CONTROL  ##############################
 
 ament_auto_add_library(traffic_signal_control_component SHARED

@@ -28,11 +28,8 @@ namespace sumo_autoware_cosim{
     sub_route_state = this->create_subscription<RouteState>(
       "/planning/mission_planning/route_state", 10, std::bind(&SumoAutowareCosim::route_state_callback, this, std::placeholders::_1));
 
-    // sub_mode_state = this->create_subscription<OperationModeState>(
-    //   "/system/operation_mode/state", 10, std::bind(&SumoAutowareCosim::mode_state_callback, this, std::placeholders::_1));
-
     timer_ = rclcpp::create_timer(
-      this, get_clock(), 1000ms, std::bind(&SumoAutowareCosim::on_timer, this));
+      this, get_clock(), 500ms, std::bind(&SumoAutowareCosim::on_timer, this));
 
     init_redis_client();
     init_localization();
@@ -41,8 +38,13 @@ namespace sumo_autoware_cosim{
 
   void SumoAutowareCosim::on_timer(){
     string terasim_state = get_key("terasim_state");
-    int state = stoi(terasim_state);
+    if (terasim_state == ""){
+      pub_localization();
+      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "failed to read terasim state, please try again");
+      return;
+    }
 
+    int state = stoi(terasim_state);
     if (state == 0){
       pub_localization();
 

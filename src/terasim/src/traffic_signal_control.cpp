@@ -83,14 +83,14 @@ namespace traffic_signal_control{
   }
 
   void TrafficSignalControl::on_timer(){
-    string cav_front_tls_info_ros = get_key("cav_front_tls_info_ros");
+    string av_tls = get_key("av_tls");
 
-    if (cav_front_tls_info_ros == ""){
-      cout << "cav_front_tls_info_ros not availble, waiting..." << endl;
+    if (av_tls == ""){
+      cout << "av_tls not availble, waiting..." << endl;
       return;
     }
 
-    json traffic_signals_json = json::parse(cav_front_tls_info_ros);
+    json traffic_signals_json = json::parse(av_tls);
     json traffic_signals_tls_info = json::parse(traffic_signals_json["tls_info"].dump());
 
     update_signals(traffic_signals_tls_info);

@@ -36,7 +36,7 @@ namespace cav_info_converter
 {
     
 using namespace std;
-
+using nlohmann::json;
 using nav_msgs::msg::Odometry;
 
 class CavInfoConverter : public rclcpp::Node
@@ -58,7 +58,6 @@ public:
   }
 
 private:
-  rclcpp::TimerBase::SharedPtr timer_;
   rclcpp::Subscription<Odometry>::SharedPtr sub_ego_odom;
 
   redisContext *context;
@@ -72,8 +71,6 @@ private:
 
   string get_key(string key);
   string get_mgrs_from_odom(Odometry::SharedPtr msg);
-  string get_cav_ego_speed_ros(double velocity);
-  string get_cav_ego_positionheading_ros(double lat, double lon, double yaw);
 };
 
 }

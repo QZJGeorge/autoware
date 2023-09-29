@@ -6,11 +6,6 @@ def generate_launch_description():
         Node(
             package='mcity_terasim',
             namespace='/terasim',
-            executable='cav_route_planner',
-        ),
-        Node(
-            package='mcity_terasim',
-            namespace='/terasim',
             executable='cav_info_converter',
         ),
         Node(
@@ -22,5 +17,10 @@ def generate_launch_description():
             package='mcity_terasim',
             namespace='/terasim',
             executable='traffic_signal_control',
+        ),
+        Node(
+            package='mcity_terasim',
+            namespace='/terasim',
+            executable='sumo_autoware_cosim',
         )
     ])
