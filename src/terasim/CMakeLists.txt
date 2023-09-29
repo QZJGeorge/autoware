@@ -76,6 +76,19 @@ rclcpp_components_register_node(cav_context_converter_component
   EXECUTABLE cav_context_converter
 )
 
+##########################  SUMO AUTOWARE COSIM  ####################################
+
+ament_auto_add_library(sumo_autoware_cosim_component SHARED
+  src/sumo_autoware_cosim.cpp
+)
+
+target_link_libraries(sumo_autoware_cosim_component hiredis Geographic)
+
+rclcpp_components_register_node(sumo_autoware_cosim_component
+  PLUGIN "sumo_autoware_cosim::SumoAutowareCosim"
+  EXECUTABLE sumo_autoware_cosim
+)
+
 #############################  GNSS TO POSE TWIST  ###################################
 
 ament_auto_add_library(gnss_to_pose_twist_component SHARED
