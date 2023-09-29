@@ -17,7 +17,7 @@ sudo apt-get install libgeographic-dev
 ## Installation
 ```bash
 # Clone the repository from MTL workspace
-git clone git@github.com:QZJGeorge/Terasim-Autoware.git
+git clone git@github.com:QZJGeorge/autoware.git
 
 cd Terasim-Autoware-Universe
 
