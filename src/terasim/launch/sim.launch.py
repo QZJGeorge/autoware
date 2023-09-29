@@ -1,0 +1,26 @@
+from launch import LaunchDescription
+from launch_ros.actions import Node
+
+def generate_launch_description():
+    return LaunchDescription([
+        Node(
+            package='mcity_terasim',
+            namespace='/terasim',
+            executable='cav_route_planner',
+        ),
+        Node(
+            package='mcity_terasim',
+            namespace='/terasim',
+            executable='cav_info_converter',
+        ),
+        Node(
+            package='mcity_terasim',
+            namespace='/terasim',
+            executable='cav_context_converter',
+        ),
+        Node(
+            package='mcity_terasim',
+            namespace='/terasim',
+            executable='traffic_signal_control',
+        )
+    ])
