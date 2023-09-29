@@ -86,7 +86,10 @@
 
   <!-- Localization -->
   <group if="$(var launch_localization)">
-    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_localization_component.launch.xml"/>
+    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_localization_component.launch.xml">
+      <arg name="pose_source" value="eagleye"/>
+      <arg name="twist_source" value="eagleye"/>
+    </include>
   </group>
 
   <!-- Perception -->
