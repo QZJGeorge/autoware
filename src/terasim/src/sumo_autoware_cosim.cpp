@@ -24,12 +24,13 @@ namespace sumo_autoware_cosim{
     cli_clear_route = this->create_client<ClearRoute>("/planning/mission_planning/clear_route");
     cli_set_route_points = this->create_client<SetRoutePoints>("/planning/mission_planning/set_route_points");
     cli_set_operation_mode = this->create_client<ChangeOperationMode>("/system/operation_mode/change_operation_mode");
+    cli_set_autoware_control = this->create_client<ChangeAutowareControl>("/system/operation_mode/change_autoware_control");
 
     sub_route_state = this->create_subscription<RouteState>(
       "/planning/mission_planning/route_state", 10, std::bind(&SumoAutowareCosim::route_state_callback, this, std::placeholders::_1));
 
     timer_ = rclcpp::create_timer(
-      this, get_clock(), 500ms, std::bind(&SumoAutowareCosim::on_timer, this));
+      this, get_clock(), 1000ms, std::bind(&SumoAutowareCosim::on_timer, this));
 
     init_redis_client();
     init_localization();
@@ -48,15 +49,17 @@ namespace sumo_autoware_cosim{
     if (state == 0){
       pub_localization();
 
-      if (route_state_msg.state != UNSET){
-        clear_route();
-      }
+      // if (route_state_msg.state != UNSET){
+      clear_route();
+      // }
+      set_autoware_control(false);
       set_operation_mode(STOP);
       RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
     } else{
-      if (route_state_msg.state != SET){
-        set_route_points();
-      }
+      // if (route_state_msg.state != SET){
+      set_route_points();
+      // }
+      set_autoware_control(true);
       set_operation_mode(AUTONOMOUS);
     }
   }
@@ -87,13 +90,13 @@ namespace sumo_autoware_cosim{
   }
 
   void SumoAutowareCosim::init_localization(){
-    localization_msg.pose.pose.position.x = 77603.84375;
-    localization_msg.pose.pose.position.y = 86526.0625;
+    localization_msg.pose.pose.position.x = 77635.2109375;
+    localization_msg.pose.pose.position.y = 86544.9921875;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = 0.18735418183937574;
-    localization_msg.pose.pose.orientation.w = 0.9822924261885043;
+    localization_msg.pose.pose.orientation.z = 0.3814770002986645;
+    localization_msg.pose.pose.orientation.w = 0.9243783306867014;
   }
 
   void SumoAutowareCosim::init_route_points(){
@@ -133,14 +136,14 @@ namespace sumo_autoware_cosim{
     wp3.orientation.z = -0.015441629002764135;
     wp3.orientation.w = 0.999880770939086;
 
-    wp4.position.x = 77538.734375;
-    wp4.position.y = 86518.5390625;
+    wp4.position.x = 77587.5625;
+    wp4.position.y = 86523.4140625;
     wp4.position.z = 0.0;
 
     wp4.orientation.x = 0.0;
     wp4.orientation.y = 0.0;
-    wp4.orientation.z = 0.06457478852556715;
-    wp4.orientation.w = 0.9979128702882223;
+    wp4.orientation.z = 0.08106215155563748;
+    wp4.orientation.w = 0.9967090486120666;
   }
 
   void SumoAutowareCosim::pub_localization(){
@@ -193,6 +196,20 @@ namespace sumo_autoware_cosim{
     }
 
     auto result = cli_set_operation_mode->async_send_request(request);
+  }
+
+  void SumoAutowareCosim::set_autoware_control(bool autoware_control){
+    auto request = std::make_shared<ChangeAutowareControl::Request>();
+    request->autoware_control = autoware_control;
+
+    while (!cli_set_autoware_control->wait_for_service(1s)) {
+      if (!rclcpp::ok()) {
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
+      }
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "routing service not available, waiting again...");
+    }
+
+    auto result = cli_set_autoware_control->async_send_request(request);
   }
 
   void SumoAutowareCosim::route_state_callback(RouteState::SharedPtr msg){

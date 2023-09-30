@@ -21,6 +21,7 @@
 #include <geometry_msgs/msg/pose.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
 #include <tier4_system_msgs/srv/change_operation_mode.hpp>
+#include <tier4_system_msgs/srv/change_autoware_control.hpp>
 #include <autoware_adapi_v1_msgs/srv/clear_route.hpp>
 #include <autoware_adapi_v1_msgs/msg/route_state.hpp>
 #include <autoware_adapi_v1_msgs/srv/set_route_points.hpp>
@@ -34,6 +35,7 @@ using namespace std;
 using geometry_msgs::msg::Pose;
 using geometry_msgs::msg::PoseWithCovarianceStamped;
 using tier4_system_msgs::srv::ChangeOperationMode;
+using tier4_system_msgs::srv::ChangeAutowareControl;
 using autoware_adapi_v1_msgs::msg::RouteState;
 using autoware_adapi_v1_msgs::srv::ClearRoute;
 using autoware_adapi_v1_msgs::srv::SetRoutePoints;
@@ -73,6 +75,7 @@ private:
   rclcpp::Client<ClearRoute>::SharedPtr cli_clear_route;
   rclcpp::Client<SetRoutePoints>::SharedPtr cli_set_route_points;
   rclcpp::Client<ChangeOperationMode>::SharedPtr cli_set_operation_mode;
+  rclcpp::Client<ChangeAutowareControl>::SharedPtr cli_set_autoware_control;
 
   void on_timer();
   void init_redis_client();
@@ -86,6 +89,7 @@ private:
   void clear_route();
 
   void set_operation_mode(uint8_t mode);
+  void set_autoware_control(bool autoware_control);
 
   void route_state_callback(RouteState::SharedPtr msg);
 
