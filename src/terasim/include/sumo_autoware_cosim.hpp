@@ -12,8 +12,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_TERASIM__SumoAutowareCosim_HPP_
-#define MCITY_TERASIM__SumoAutowareCosim_HPP_
+#ifndef MCITY_TERASIM__SUMOAUTOWARECOSIM_HPP_
+#define MCITY_TERASIM__SUMOAUTOWARECOSIM_HPP_
 
 #include <iostream>
 #include <rclcpp/rclcpp.hpp>

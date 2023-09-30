@@ -83,23 +83,23 @@ namespace cav_info_converter
     // handle error
     if (context == NULL || context->err) {
       if (context){
-        cout << "Error: " << context->errstr << endl;
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
       } else {
-        std::cout << "Can't allocate redis context" << endl;
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
       }
     } else {
-      cout << "Connected to redis server at 127.0.0.1:6379" << endl;
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
     }
   }
 
   void CavInfoConverter::set_key(string key, string value){
     // SET key
     redisReply *reply = (redisReply *)redisCommand(context, "SET %s %s", key.c_str(), value.c_str());
-    if (reply->type == REDIS_REPLY_STATUS){
-      cout << "SET " << key.c_str() << " : " << value.c_str() << endl;
-    }
     if (reply->type == REDIS_REPLY_ERROR){
-      cout << "SET " << key.c_str() << " error" << endl;
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Redis set key error: %s", key.c_str());
+    }
+    if (reply->type == REDIS_REPLY_STATUS){
+
     }
   }
 

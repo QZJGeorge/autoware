@@ -64,12 +64,12 @@ namespace traffic_signal_control{
     // handle error
     if (context == NULL || context->err) {
       if (context){
-        cout << "Error: " << context->errstr << endl;
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
       } else {
-        std::cout << "Can't allocate redis context" << endl;
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
       }
     } else {
-      cout << "Connected to redis server at 127.0.0.1:6379" << endl;
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
     }
   }
 
@@ -86,7 +86,7 @@ namespace traffic_signal_control{
     string av_tls = get_key("av_tls");
 
     if (av_tls == ""){
-      cout << "av_tls not availble, waiting..." << endl;
+      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "traffic signal not availble, waiting...");
       return;
     }
 
@@ -98,7 +98,6 @@ namespace traffic_signal_control{
     traffic_signal_array.stamp = this->get_clock()->now();
     traffic_signal_array.signals = signals;
 
-    cout << "publishing traffic signal" << endl;
     pub_signal_array->publish(traffic_signal_array);
   }
 }

@@ -47,7 +47,7 @@ public:
   ~TrafficSignalControl() = default;
 
 private:
-  // constants for common use
+  // constants for shared use
   uint8_t UNKNOWN = 0;
 
   // constants for color
@@ -72,8 +72,6 @@ private:
   uint8_t SOLID_OFF = 1;
   uint8_t SOLID_ON = 2;
   uint8_t FLASHING = 3;
-
-  const int TRAFFIC_LIGHT_NUM = 28;
 
   // nlohmann::json light_mappings;
   TrafficSignal traffic_signal;

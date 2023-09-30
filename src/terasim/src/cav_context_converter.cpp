@@ -173,11 +173,7 @@ namespace cav_context_converter
       bv_value_processed.erase(std::remove(bv_value_processed.begin(), bv_value_processed.end(), '\\'), bv_value_processed.end());
       bv_value_processed = bv_value_processed.substr(1, bv_value_processed.size()-2);
       bv_value_json = json::parse(bv_value_processed);
-      std::cout << "The JSON message is corrupted, fixed" << std::endl;
-    } else if (bv_value_json.is_object()) {
-      // std::cout << "The JSON is a valid object" << std::endl;
-    } else if (bv_value_json.is_array()) {
-      // std::cout << "The JSON is an array, discard" << std::endl;
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "The JSON message is corrupted, fixed");
     }
 
     bv_object.header.stamp = this->get_clock()->now();
@@ -201,22 +197,24 @@ namespace cav_context_converter
     // handle error
     if (context == NULL || context->err) {
       if (context){
-        cout << "Error: " << context->errstr << endl;
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
       } else {
-        std::cout << "Can't allocate redis context" << endl;
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
       }
     } else {
-      cout << "Connected to redis server at 127.0.0.1:6379" << endl;
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
     }
   }
 
   void CavContextConverter::set_key(string key, string value){
     // SET key
     redisReply *reply = (redisReply *)redisCommand(context, "SET %s %s", key.c_str(), value.c_str());
-    if (reply->type == REDIS_REPLY_STATUS)
-      cout << "SET " << key.c_str() << " : " << value.c_str() << endl;
-    if (reply->type == REDIS_REPLY_ERROR)
-      cout << "SET " << key.c_str() << " error" << endl;
+    if (reply->type == REDIS_REPLY_ERROR){
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Redis set key error: %s", key.c_str());
+    }
+    if (reply->type == REDIS_REPLY_STATUS){
+      
+    }
   }
 
   string CavContextConverter::get_key(string key){
@@ -233,11 +231,9 @@ namespace cav_context_converter
     string newString = post_process_cav_context_vehicle_info_ros(cav_context_vehicle_info_ros);
 
     if (newString == ""){
-      cout << "av_context not availble, waiting..." << endl;
+      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "av_context not available, waiting...");
       update_bv_in_autoware_sim(DELETEALL, "", "");
       return;
-    } else{
-      cout << "updating cav info in terasim" << endl;
     }
 
     json cav_context_vehicle_json = json::parse(newString);
@@ -246,7 +242,6 @@ namespace cav_context_converter
     // For bvs that exist in hitory but now out of range, remove them
     for (json::iterator bv = bv_history_copy.begin(); bv != bv_history_copy.end(); ++bv) {
         if (!cav_context_vehicle_json.contains(bv.key())) {
-          cout << "bv key" << bv.key() << endl;
           update_bv_in_autoware_sim(DELETE, bv.key(), bv.value().dump());
           bv_history.erase(bv.key());
         } 

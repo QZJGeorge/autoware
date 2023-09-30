@@ -52,6 +52,7 @@ namespace sumo_autoware_cosim{
         clear_route();
       }
       set_operation_mode(STOP);
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
     } else{
       if (route_state_msg.state != SET){
         set_route_points();
@@ -67,12 +68,12 @@ namespace sumo_autoware_cosim{
     // handle error
     if (context == NULL || context->err) {
       if (context){
-        cout << "Error: " << context->errstr << endl;
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
       } else {
-        std::cout << "Can't allocate redis context" << endl;
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
       }
     } else {
-      cout << "Connected to redis server at 127.0.0.1:6379" << endl;
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
     }
   }
 
@@ -158,7 +159,8 @@ namespace sumo_autoware_cosim{
 
     auto req = std::make_shared<ClearRoute::Request>();
     auto result_c =cli_clear_route->async_send_request(req);
-    cout << "clearing existing route..." << endl;
+
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Clearing existing route...");
   }
 
   void SumoAutowareCosim::set_route_points(){
@@ -176,6 +178,7 @@ namespace sumo_autoware_cosim{
     set_route_points_req->waypoints = {wp0, wp1, wp2, wp3};
 
     auto result_s = cli_set_route_points->async_send_request(set_route_points_req);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting new route...");
   }
 
   void SumoAutowareCosim::set_operation_mode(uint8_t mode){
@@ -194,25 +197,7 @@ namespace sumo_autoware_cosim{
 
   void SumoAutowareCosim::route_state_callback(RouteState::SharedPtr msg){
     route_state_msg = *msg;
-    auto state = route_state_msg.state;
-
-    if (state == UNKNOWN){
-      cout << "route state: unknown" << endl;
-    } else if (state == UNSET){
-      cout << "route state: unset" << endl;
-    } else if (state == SET){
-      cout << "route state: set" << endl;
-    } else if (state == ARRIVED){
-      cout << "route state: arrived" << endl;
-    } else if (state == CHANGING){
-      cout << "route state: changing" << endl;
-    }
   }
-
-  // void SumoAutowareCosim::mode_state_callback(OperationModeState::SharedPtr msg){
-  //   operation_mode_msg = *msg;
-  //   cout << "current operation mode: " << operation_mode_msg.mode << endl;
-  // }
 }
 
 RCLCPP_COMPONENTS_REGISTER_NODE(sumo_autoware_cosim::SumoAutowareCosim)
