@@ -1,9 +1,7 @@
 import os
-import redis
 import launch
-
 from launch_ros.actions import Node
-from launch.actions import DeclareLaunchArgument, Shutdown, IncludeLaunchDescription
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.substitutions import Command, LaunchConfiguration
 from launch.launch_description_sources import AnyLaunchDescriptionSource
 
