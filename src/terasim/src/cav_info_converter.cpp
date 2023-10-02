@@ -23,42 +23,19 @@ namespace cav_info_converter
     sub_ego_odom = this->create_subscription<Odometry>(
       "/localization/kinematic_state", 10, std::bind(&CavInfoConverter::odom_callback, this, std::placeholders::_1));
 
+    timer_ = rclcpp::create_timer(
+        this, get_clock(), 100ms, std::bind(&CavInfoConverter::on_timer, this));
+
     init_redis_client();
     signal(SIGINT, handleShutdown);  // Register the signal handler for clearing redis cashe before shutting down node
   }
 
-  double CavInfoConverter::get_ori_from_odom(Odometry::SharedPtr msg){
-    double quat_x = msg->pose.pose.orientation.x;
-    double quat_y = msg->pose.pose.orientation.y;
-    double quat_z = msg->pose.pose.orientation.z;
-    double quat_w = msg->pose.pose.orientation.w;
-
-    double yaw = std::atan2(2.0 * (quat_w * quat_z + quat_x * quat_y), 1.0 - 2.0 * (quat_y * quat_y + quat_z * quat_z));
-
-    // normalize to the range from -pi to pi
-    while(yaw > M_PI) yaw -= 2.*M_PI;
-    while(yaw < -M_PI) yaw += 2.*M_PI;
-
-    return yaw;
-  }
-
-  string CavInfoConverter::get_mgrs_from_odom(Odometry::SharedPtr msg){
-    std::string ANN_ARBOR = "17TKG";
-
-    int PRECISION = 4;  // increase precision to 4 decimal place
-    int easting = round(msg->pose.pose.position.x * pow(10, PRECISION));   // Your easting coordinate
-    int northing = round(msg->pose.pose.position.y * pow(10, PRECISION));  // Your northing coordinate
-
-    std::string mgrs = ANN_ARBOR + std::to_string(easting) + std::to_string(northing);
-    return mgrs;
-  }
-
-  void CavInfoConverter::odom_callback(Odometry::SharedPtr msg){
+  void CavInfoConverter::on_timer(){
     int zone = 17;                                 // ann arbor is in zone 17
     int prec = 10;                                 // we set conversion precision to 10 decimals
     bool north = true;                             // ann arbor is in northern hemisphere
-    double yaw = get_ori_from_odom(msg);           // convert from quaternion to angle
-    std::string mgrs = get_mgrs_from_odom(msg);    // get mgrs format string for conversion
+    double yaw = get_ori_from_odom(saved_odom_msg);           // convert from quaternion to angle
+    std::string mgrs = get_mgrs_from_odom(saved_odom_msg);    // get mgrs format string for conversion
 
     double lat, lon;
     // Convert the MGRS coordinates to UTM coordinates
@@ -74,6 +51,36 @@ namespace cav_info_converter
 
     set_key("av_state", av_state.dump());
     set_key("terasim_time", get_key("terasim_time"));
+  }
+
+  double CavInfoConverter::get_ori_from_odom(Odometry msg){
+    double quat_x = msg.pose.pose.orientation.x;
+    double quat_y = msg.pose.pose.orientation.y;
+    double quat_z = msg.pose.pose.orientation.z;
+    double quat_w = msg.pose.pose.orientation.w;
+
+    double yaw = std::atan2(2.0 * (quat_w * quat_z + quat_x * quat_y), 1.0 - 2.0 * (quat_y * quat_y + quat_z * quat_z));
+
+    // normalize to the range from -pi to pi
+    while(yaw > M_PI) yaw -= 2.*M_PI;
+    while(yaw < -M_PI) yaw += 2.*M_PI;
+
+    return yaw;
+  }
+
+  string CavInfoConverter::get_mgrs_from_odom(Odometry msg){
+    std::string ANN_ARBOR = "17TKG";
+
+    int PRECISION = 4;  // increase precision to 4 decimal place
+    int easting = round(msg.pose.pose.position.x * pow(10, PRECISION));   // Your easting coordinate
+    int northing = round(msg.pose.pose.position.y * pow(10, PRECISION));  // Your northing coordinate
+
+    std::string mgrs = ANN_ARBOR + std::to_string(easting) + std::to_string(northing);
+    return mgrs;
+  }
+
+  void CavInfoConverter::odom_callback(Odometry::SharedPtr msg){
+    saved_odom_msg = *msg;
   }
 
   void CavInfoConverter::init_redis_client(){

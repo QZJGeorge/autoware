@@ -58,19 +58,22 @@ public:
   }
 
 private:
+  rclcpp::TimerBase::SharedPtr timer_;
   rclcpp::Subscription<Odometry>::SharedPtr sub_ego_odom;
 
   redisContext *context;
+
+  Odometry saved_odom_msg;
 
   void on_timer();
   void init_redis_client();
   void set_key(string key, string value);
   void odom_callback(Odometry::SharedPtr msg);
 
-  double get_ori_from_odom(Odometry::SharedPtr msg);
+  double get_ori_from_odom(Odometry msg);
 
   string get_key(string key);
-  string get_mgrs_from_odom(Odometry::SharedPtr msg);
+  string get_mgrs_from_odom(Odometry msg);
 };
 
 }
