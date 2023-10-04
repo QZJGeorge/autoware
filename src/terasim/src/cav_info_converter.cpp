@@ -24,13 +24,17 @@ namespace cav_info_converter
       "/localization/kinematic_state", 10, std::bind(&CavInfoConverter::odom_callback, this, std::placeholders::_1));
 
     timer_ = rclcpp::create_timer(
-        this, get_clock(), 100ms, std::bind(&CavInfoConverter::on_timer, this));
+        this, get_clock(), 20ms, std::bind(&CavInfoConverter::on_timer, this));
 
     init_redis_client();
     signal(SIGINT, handleShutdown);  // Register the signal handler for clearing redis cashe before shutting down node
   }
 
   void CavInfoConverter::on_timer(){
+    if (odom_check == 0){
+      return;
+    }
+
     int zone = 17;                                 // ann arbor is in zone 17
     int prec = 10;                                 // we set conversion precision to 10 decimals
     bool north = true;                             // ann arbor is in northern hemisphere
@@ -51,6 +55,8 @@ namespace cav_info_converter
 
     set_key("av_state", av_state.dump());
     set_key("terasim_time", get_key("terasim_time"));
+
+    odom_check = 0;
   }
 
   double CavInfoConverter::get_ori_from_odom(Odometry msg){
@@ -81,6 +87,7 @@ namespace cav_info_converter
 
   void CavInfoConverter::odom_callback(Odometry::SharedPtr msg){
     saved_odom_msg = *msg;
+    odom_check = 1;
   }
 
   void CavInfoConverter::init_redis_client(){

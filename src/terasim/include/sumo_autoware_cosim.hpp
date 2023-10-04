@@ -18,6 +18,7 @@
 #include <iostream>
 #include <rclcpp/rclcpp.hpp>
 #include <hiredis/hiredis.h>
+#include <nav_msgs/msg/odometry.hpp>
 #include <geometry_msgs/msg/pose.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
 #include <tier4_system_msgs/srv/change_operation_mode.hpp>
@@ -25,6 +26,7 @@
 #include <autoware_adapi_v1_msgs/srv/clear_route.hpp>
 #include <autoware_adapi_v1_msgs/msg/route_state.hpp>
 #include <autoware_adapi_v1_msgs/srv/set_route_points.hpp>
+#include <autoware_auto_system_msgs/msg/autoware_state.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
 
 namespace sumo_autoware_cosim
@@ -39,6 +41,7 @@ using tier4_system_msgs::srv::ChangeAutowareControl;
 using autoware_adapi_v1_msgs::msg::RouteState;
 using autoware_adapi_v1_msgs::srv::ClearRoute;
 using autoware_adapi_v1_msgs::srv::SetRoutePoints;
+using autoware_auto_system_msgs::msg::AutowareState;
 
 class SumoAutowareCosim : public rclcpp::Node
 {
@@ -60,6 +63,8 @@ private:
   uint8_t LOCAL = 3;
   uint8_t REMOTE = 4;
 
+  int autoware_state = 1;
+
   Pose wp0, wp1, wp2, wp3, wp4;
 
   redisContext *context;
@@ -70,7 +75,9 @@ private:
   rclcpp::TimerBase::SharedPtr timer_;
 
   rclcpp::Publisher<PoseWithCovarianceStamped>::SharedPtr pub_local;
+
   rclcpp::Subscription<RouteState>::SharedPtr sub_route_state;
+  rclcpp::Subscription<AutowareState>::SharedPtr sub_autoware_state;
 
   rclcpp::Client<ClearRoute>::SharedPtr cli_clear_route;
   rclcpp::Client<SetRoutePoints>::SharedPtr cli_set_route_points;
@@ -91,6 +98,7 @@ private:
   void set_operation_mode(uint8_t mode);
   void set_autoware_control(bool autoware_control);
 
+  void autoware_state_callback(AutowareState::SharedPtr msg);
   void route_state_callback(RouteState::SharedPtr msg);
 
   string get_key(string key);

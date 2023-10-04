@@ -63,6 +63,7 @@ private:
 
   redisContext *context;
 
+  int odom_check = 0;
   Odometry saved_odom_msg;
 
   void on_timer();

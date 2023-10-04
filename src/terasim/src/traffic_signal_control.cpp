@@ -22,7 +22,7 @@ namespace traffic_signal_control{
     pub_signal_array = this->create_publisher<TrafficSignalArray>("/perception/traffic_light_recognition/traffic_signals", 10);
 
     timer_ = rclcpp::create_timer(
-      this, get_clock(), 100ms, std::bind(&TrafficSignalControl::on_timer, this));
+      this, get_clock(), 20ms, std::bind(&TrafficSignalControl::on_timer, this));
 
     init_redis_client();
   }

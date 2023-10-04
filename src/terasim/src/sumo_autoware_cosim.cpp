@@ -26,6 +26,8 @@ namespace sumo_autoware_cosim{
     cli_set_operation_mode = this->create_client<ChangeOperationMode>("/system/operation_mode/change_operation_mode");
     cli_set_autoware_control = this->create_client<ChangeAutowareControl>("/system/operation_mode/change_autoware_control");
 
+    sub_autoware_state = this->create_subscription<AutowareState>(
+      "/autoware/state", 10, std::bind(&SumoAutowareCosim::autoware_state_callback, this, std::placeholders::_1));
     sub_route_state = this->create_subscription<RouteState>(
       "/planning/mission_planning/route_state", 10, std::bind(&SumoAutowareCosim::route_state_callback, this, std::placeholders::_1));
 
@@ -38,29 +40,29 @@ namespace sumo_autoware_cosim{
   }
 
   void SumoAutowareCosim::on_timer(){
+    if (autoware_state == 1){
+      pub_localization();
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Autoware state unset, publishing initial localization...");
+    }
+
     string terasim_state = get_key("terasim_state");
     if (terasim_state == ""){
       pub_localization();
-      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "failed to read terasim state, please try again");
+      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to read terasim state, please try again");
       return;
     }
 
-    int state = stoi(terasim_state);
-    if (state == 0){
-      pub_localization();
-
-      // if (route_state_msg.state != UNSET){
+    int tera_state = stoi(terasim_state);
+    if (tera_state == 0){
       clear_route();
-      // }
       set_autoware_control(false);
       set_operation_mode(STOP);
       RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
     } else{
-      // if (route_state_msg.state != SET){
       set_route_points();
-      // }
       set_autoware_control(true);
       set_operation_mode(AUTONOMOUS);
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Setting route points and enable autoware control");
     }
   }
 
@@ -210,6 +212,10 @@ namespace sumo_autoware_cosim{
     }
 
     auto result = cli_set_autoware_control->async_send_request(request);
+  }
+
+  void SumoAutowareCosim::autoware_state_callback(AutowareState::SharedPtr msg){
+    autoware_state = msg->state;
   }
 
   void SumoAutowareCosim::route_state_callback(RouteState::SharedPtr msg){

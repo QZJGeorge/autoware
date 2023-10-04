@@ -21,6 +21,7 @@
   <depend>rclcpp_components</depend>
   <depend>autoware_adapi_v1_msgs</depend>
   <depend>autoware_perception_msgs</depend>
+  <depend>autoware_auto_system_msgs</depend>
   <depend>autoware_auto_perception_msgs</depend>
   <depend>tier4_system_msgs</depend>
   <depend>tier4_debug_msgs</depend>
