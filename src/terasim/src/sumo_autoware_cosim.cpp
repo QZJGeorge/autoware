@@ -102,14 +102,14 @@ namespace sumo_autoware_cosim{
   }
 
   void SumoAutowareCosim::init_route_points(){
-    wp0.position.x = 77656.75;
-    wp0.position.y = 86778.1953125;
+    wp0.position.x = 77649.625;
+    wp0.position.y = 86695.296;
     wp0.position.z = 0.0;
 
     wp0.orientation.x = 0.0;
     wp0.orientation.y = 0.0;
-    wp0.orientation.z = 0.6845353431369396;
-    wp0.orientation.w = 0.7289796732395165;
+    wp0.orientation.z = 0.68874525198885;
+    wp0.orientation.w = 0.7250034330007105;
 
     wp1.position.x = 77616.9609375;
     wp1.position.y = 86880.828125;

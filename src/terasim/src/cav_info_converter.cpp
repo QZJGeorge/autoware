@@ -50,8 +50,8 @@ namespace cav_info_converter
     av_state["x"] = lat;
     av_state["y"] = lon;
     av_state["orientation"] = yaw;
-    av_state["velocity"] = 0.0;
     av_state["resolution"] = 0.1;
+    av_state["velocity"] = saved_odom_msg.twist.twist.linear.x;
 
     set_key("av_state", av_state.dump());
     set_key("terasim_time", get_key("terasim_time"));
