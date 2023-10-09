@@ -20,7 +20,7 @@ namespace cav_context_converter
       : Node("coordinate_converter", options)
   {
     timer_ = rclcpp::create_timer(
-        this, get_clock(), 20ms, std::bind(&CavContextConverter::on_timer, this));
+        this, get_clock(), 50ms, std::bind(&CavContextConverter::on_timer, this));
 
     pub_bv_object = this->create_publisher<Object>("/simulation/dummy_perception_publisher/object_info", 10);
 
