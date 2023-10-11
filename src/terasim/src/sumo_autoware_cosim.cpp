@@ -92,13 +92,13 @@ namespace sumo_autoware_cosim{
   }
 
   void SumoAutowareCosim::init_localization(){
-    localization_msg.pose.pose.position.x = 77638.171875;
-    localization_msg.pose.pose.position.y = 86547.6015625;
+    localization_msg.pose.pose.position.x = 77639.3359375;
+    localization_msg.pose.pose.position.y = 86558.40625;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = 0.4171095366758908;
-    localization_msg.pose.pose.orientation.w = 0.9088562231805555;
+    localization_msg.pose.pose.orientation.z = 0.578428211916176;
+    localization_msg.pose.pose.orientation.w = 0.8157332919891497;
   }
 
   void SumoAutowareCosim::init_route_points(){

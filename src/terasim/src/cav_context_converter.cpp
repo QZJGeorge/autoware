@@ -156,7 +156,7 @@ namespace cav_context_converter
   void CavContextConverter::update_bv_in_autoware_sim(uint8_t action, string bv_key, string bv_value){
     Object bv_object;
     
-    if (action == 3){
+    if (action == DELETEALL){
       bv_object.action = action;
       pub_bv_object->publish(bv_object);
       return;
@@ -228,10 +228,17 @@ namespace cav_context_converter
 
   void CavContextConverter::on_timer(){
     string cav_context_vehicle_info_ros = get_key("av_context");
+
+    if (cav_context_vehicle_info_ros == last_cav_context_vehicle_info_ros){
+      return;
+    } else{
+      last_cav_context_vehicle_info_ros = cav_context_vehicle_info_ros;
+    }
+
     string newString = post_process_cav_context_vehicle_info_ros(cav_context_vehicle_info_ros);
 
     if (newString == ""){
-      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "av_context not available, waiting...");
+      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "cav_context not available, waiting...");
       update_bv_in_autoware_sim(DELETEALL, "", "");
       return;
     }
