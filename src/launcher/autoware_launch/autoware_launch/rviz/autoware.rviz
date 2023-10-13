@@ -1879,7 +1879,10 @@ Visualization Manager:
                           Enabled: true
                           Name: VirtualWall (Avoidance)
                           Namespaces:
-                            {}
+                            dead_line_factor_text: true
+                            dead_line_virtual_wall: true
+                            stop_factor_text: true
+                            stop_virtual_wall: true
                           Topic:
                             Depth: 5
                             Durability Policy: Volatile
@@ -1975,7 +1978,8 @@ Visualization Manager:
                           Enabled: true
                           Name: VirtualWall (BlindSpot)
                           Namespaces:
-                            {}
+                            56925_stop_factor_text: true
+                            56925_stop_virtual_wall: true
                           Topic:
                             Depth: 5
                             Durability Policy: Volatile
@@ -2023,6 +2027,14 @@ Visualization Manager:
                           Enabled: true
                           Name: VirtualWall (Intersection)
                           Namespaces:
+                            intersection52769_stop_factor_text: true
+                            intersection52769_stop_virtual_wall: true
+                            intersection53613_stop_factor_text: true
+                            intersection53613_stop_virtual_wall: true
+                            intersection54090_stop_factor_text: true
+                            intersection54090_stop_virtual_wall: true
+                            intersection59675_stop_factor_text: true
+                            intersection59675_stop_virtual_wall: true
                             intersection61863_stop_factor_text: true
                             intersection61863_stop_virtual_wall: true
                           Topic:
@@ -2084,7 +2096,12 @@ Visualization Manager:
                           Enabled: true
                           Name: VirtualWall (TrafficLight)
                           Namespaces:
-                            {}
+                            53613_stop_factor_text: true
+                            53613_stop_virtual_wall: true
+                            56925_stop_factor_text: true
+                            56925_stop_virtual_wall: true
+                            59675_stop_factor_text: true
+                            59675_stop_virtual_wall: true
                           Topic:
                             Depth: 5
                             Durability Policy: Volatile
@@ -2602,8 +2619,7 @@ Visualization Manager:
                           Enabled: true
                           Name: VirtualWall (SurroundObstacle)
                           Namespaces:
-                            stop_factor_text: true
-                            stop_virtual_wall: true
+                            {}
                           Topic:
                             Depth: 5
                             Durability Policy: Volatile
@@ -3189,11 +3205,11 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: -6.5868821144104
+      Scale: -3.0317697525024414
       Target Frame: viewer
       Value: TopDownOrtho (rviz_default_plugins)
-      X: -15.224220275878906
-      Y: 49.40913391113281
+      X: 48.669071197509766
+      Y: 144.8887176513672
     Saved:
       - Class: rviz_default_plugins/ThirdPersonFollower
         Distance: 18
