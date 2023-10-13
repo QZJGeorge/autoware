@@ -228,13 +228,11 @@ namespace cav_context_converter
 
   void CavContextConverter::on_timer(){
     string cav_context_vehicle_info_ros = get_key("av_context");
-
     if (cav_context_vehicle_info_ros == last_cav_context_vehicle_info_ros){
       return;
-    } else{
-      last_cav_context_vehicle_info_ros = cav_context_vehicle_info_ros;
-    }
-
+    } 
+    
+    last_cav_context_vehicle_info_ros = cav_context_vehicle_info_ros;
     string newString = post_process_cav_context_vehicle_info_ros(cav_context_vehicle_info_ros);
 
     if (newString == ""){
@@ -243,24 +241,24 @@ namespace cav_context_converter
       return;
     }
 
-    json cav_context_vehicle_json = json::parse(newString);
-    json bv_history_copy = bv_history;
+    json cav_context_current_json = json::parse(newString);
+    json cav_context_history_copy = cav_context_history_json;
 
     // For bvs that exist in hitory but now out of range, remove them
-    for (json::iterator bv = bv_history_copy.begin(); bv != bv_history_copy.end(); ++bv) {
-        if (!cav_context_vehicle_json.contains(bv.key())) {
+    for (json::iterator bv = cav_context_history_copy.begin(); bv != cav_context_history_copy.end(); ++bv) {
+        if (!cav_context_current_json.contains(bv.key())) {
           update_bv_in_autoware_sim(DELETE, bv.key(), bv.value().dump());
-          bv_history.erase(bv.key());
+          cav_context_history_json.erase(bv.key());
         } 
     }
 
     // Update bv info with new message, create new bvs
-    for (json::iterator bv = cav_context_vehicle_json.begin(); bv != cav_context_vehicle_json.end(); ++bv) {
-        if (bv_history.contains(bv.key())) {
-          bv_history[bv.key()] = bv.value().dump();
+    for (json::iterator bv = cav_context_current_json.begin(); bv != cav_context_current_json.end(); ++bv) {
+        if (cav_context_history_json.contains(bv.key())) {
+          cav_context_history_json[bv.key()] = bv.value().dump();
           update_bv_in_autoware_sim(MODIFY, bv.key(), bv.value().dump());
         } else {
-          bv_history.emplace(bv.key(), bv.value().dump());
+          cav_context_history_json.emplace(bv.key(), bv.value().dump());
           update_bv_in_autoware_sim(ADD, bv.key(), bv.value().dump());
         }
     }

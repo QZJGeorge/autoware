@@ -17,6 +17,7 @@
 
 #include <cmath>
 #include <string>
+#include <fstream>
 #include <iomanip>
 #include <iostream>
 #include <nlohmann/json.hpp>
@@ -73,7 +74,7 @@ private:
 
   string last_cav_context_vehicle_info_ros;
 
-  json bv_history = json::object();
+  json cav_context_history_json = json::object();
 
   void on_timer();
   void init_redis_client();
