@@ -241,6 +241,8 @@ namespace cav_context_converter
       return;
     }
 
+    uuid_list.clear();
+
     json cav_context_current_json = json::parse(newString);
     json cav_context_history_copy = cav_context_history_json;
 

@@ -20,6 +20,7 @@
 #include <fstream>
 #include <iomanip>
 #include <iostream>
+#include <algorithm>
 #include <nlohmann/json.hpp>
 #include <hiredis/hiredis.h>
 #include <GeographicLib/MGRS.hpp>
