@@ -133,7 +133,9 @@ namespace cav_context_converter
 
   TwistWithCovariance CavContextConverter::get_twist_with_varience(nlohmann::json bv_value_json){
     TwistWithCovariance bv_twist_with_covariance;
-    bv_twist_with_covariance.twist.linear.x = bv_value_json["speed_long"];
+    cout << bv_value_json["speed_long"] << endl;
+    // bv_twist_with_covariance.twist.linear.x = bv_value_json["speed_long"];
+    bv_twist_with_covariance.twist.linear.x = 0.0;
     return bv_twist_with_covariance;
   }
 
@@ -238,10 +240,9 @@ namespace cav_context_converter
     if (newString == ""){
       RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "cav_context not available, waiting...");
       update_bv_in_autoware_sim(DELETEALL, "", "");
+      cav_context_history_json.clear();
       return;
     }
-
-    uuid_list.clear();
 
     json cav_context_current_json = json::parse(newString);
     json cav_context_history_copy = cav_context_history_json;
