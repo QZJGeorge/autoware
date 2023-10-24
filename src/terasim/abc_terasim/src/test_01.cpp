@@ -41,7 +41,10 @@ namespace test_01{
       return;
     }
 
-    if (autoware_state == 1){
+    if (autoware_state == 0){
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Waiting for autoware to start up..");
+      return;
+    } else if (autoware_state == 1){
       publish_localization();
       RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Publishing initial localization...");
     } else if (autoware_state == 2){
