@@ -15,18 +15,6 @@ include_directories(
 # Add link directories (also for redis)
 link_directories(/usr/local/lib)
 
-#############################  TRAFFIC SIGNAL CONTROL  ##############################
-
-ament_auto_add_library(traffic_signal_control_component SHARED
-  src/traffic_signal_control.cpp
-)
-
-target_link_libraries(traffic_signal_control_component hiredis)
-
-rclcpp_components_register_node(traffic_signal_control_component
-  PLUGIN "traffic_signal_control::TrafficSignalControl"
-  EXECUTABLE traffic_signal_control
-)
 
 ############################  CAV INFO CONVERTER  ####################################
 
@@ -130,6 +118,45 @@ target_link_libraries(test_09_component hiredis Geographic)
 rclcpp_components_register_node(test_09_component
   PLUGIN "test_09::Test09"
   EXECUTABLE test_09
+)
+
+##########################  TEST_10 ####################################
+
+ament_auto_add_library(test_10_component SHARED
+  src/test_10.cpp
+)
+
+target_link_libraries(test_10_component hiredis Geographic)
+
+rclcpp_components_register_node(test_10_component
+  PLUGIN "test_10::Test10"
+  EXECUTABLE test_10
+)
+
+##########################  TEST_11 ####################################
+
+ament_auto_add_library(test_11_component SHARED
+  src/test_11.cpp
+)
+
+target_link_libraries(test_11_component hiredis Geographic)
+
+rclcpp_components_register_node(test_11_component
+  PLUGIN "test_11::Test11"
+  EXECUTABLE test_11
+)
+
+##########################  TEST_12 ####################################
+
+ament_auto_add_library(test_12_component SHARED
+  src/test_12.cpp
+)
+
+target_link_libraries(test_12_component hiredis Geographic)
+
+rclcpp_components_register_node(test_12_component
+  PLUGIN "test_12::Test12"
+  EXECUTABLE test_12
 )
 
 

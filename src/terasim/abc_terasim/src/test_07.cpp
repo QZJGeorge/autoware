@@ -19,135 +19,72 @@ namespace test_07{
   Test07::Test07(const rclcpp::NodeOptions & options)
   : Node("test_07", options)
   {
+    pub_goal = this->create_publisher<PoseStamped>("/planning/mission_planning/goal", 10);
     pub_local = this->create_publisher<PoseWithCovarianceStamped>("/initialpose", 10);
 
-    cli_clear_route = this->create_client<ClearRoute>("/planning/mission_planning/clear_route");
-    cli_set_route_points = this->create_client<SetRoutePoints>("/planning/mission_planning/set_route_points");
     cli_set_operation_mode = this->create_client<ChangeOperationMode>("/system/operation_mode/change_operation_mode");
     cli_set_autoware_control = this->create_client<ChangeAutowareControl>("/system/operation_mode/change_autoware_control");
 
     sub_autoware_state = this->create_subscription<AutowareState>(
       "/autoware/state", 10, std::bind(&Test07::autoware_state_callback, this, std::placeholders::_1));
-    sub_route_state = this->create_subscription<RouteState>(
-      "/planning/mission_planning/route_state", 10, std::bind(&Test07::route_state_callback, this, std::placeholders::_1));
 
     timer_ = rclcpp::create_timer(
       this, get_clock(), 1000ms, std::bind(&Test07::on_timer, this));
 
     init_redis_client();
-    init_localization();
-    init_route_points();
   }
 
   void Test07::on_timer(){
-    if (autoware_state == 1){
-      pub_localization();
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Autoware state unset, publishing initial localization...");
-    }
-
     string terasim_state = get_key("terasim_state");
-    if (terasim_state == ""){
-      pub_localization();
-      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to read terasim state, please try again");
+    if (terasim_state == "" || terasim_state == "0"){
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
       return;
     }
 
-    int tera_state = stoi(terasim_state);
-    if (tera_state == 0){
-      clear_route();
-      set_autoware_control(false);
-      set_operation_mode(STOP);
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
-    } else{
-      set_route_points();
+    if (autoware_state == 0){
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Waiting for autoware to start up..");
+      return;
+    } else if (autoware_state == 1){
+      publish_localization();
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Publishing initial localization...");
+    } else if (autoware_state == 2){
+      publish_goal();
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Setting goal point...");
+    } else if (autoware_state == 4){
       set_autoware_control(true);
       set_operation_mode(AUTONOMOUS);
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Setting route points and enable autoware control");
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Enabling autoware control...");
     }
   }
 
-  void Test07::init_redis_client(){
-    // Connecting to the Redis server on localhost
-    context = redisConnect("127.0.0.1", 6379);
-
-    // handle error
-    if (context == NULL || context->err) {
-      if (context){
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
-      } else {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
-      }
-    } else {
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
-    }
-  }
-
-  string Test07::get_key(string key){
-    // GET key
-    redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
-    string result = "";
-    if (reply->type == REDIS_REPLY_STRING)
-      result = reply->str;
-    return result;
-  }
-
-  void Test07::init_localization(){
-    localization_msg.pose.pose.position.x = 77556.03125;
-    localization_msg.pose.pose.position.y = 86623.046875;
+  void Test07::publish_localization(){
+    localization_msg.pose.pose.position.x = 77559.5703125;
+    localization_msg.pose.pose.position.y = 86610.1015625;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = 0.7818829738767389;
-    localization_msg.pose.pose.orientation.w = 0.6234252282043669;
-  }
+    localization_msg.pose.pose.orientation.z = 0.7967527613758144;
+    localization_msg.pose.pose.orientation.w = 0.6043054171857262;
 
-  void Test07::init_route_points(){
-    wp0.position.x = 77557.875;
-    wp0.position.y = 86747.5;
-    wp0.position.z = 0.0;
-
-    wp0.orientation.x = 0.0;
-    wp0.orientation.y = 0.0;
-    wp0.orientation.z = 0.6861936955947625;
-    wp0.orientation.w = 0.727418869789616;
-  }
-
-  void Test07::pub_localization(){
     localization_msg.header.stamp = this->get_clock()->now();
     localization_msg.header.frame_id = "map";
+
     pub_local->publish(localization_msg);
   }
 
-  void Test07::clear_route(){
-    while (!cli_clear_route->wait_for_service(1s)) {
-      if (!rclcpp::ok()) {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
-      }
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "routing service not available, waiting again...");
-    }
+  void Test07::publish_goal(){
+    goal_msg.pose.position.x = 77557.6953125;
+    goal_msg.pose.position.y = 86750.40625;
 
-    auto req = std::make_shared<ClearRoute::Request>();
-    auto result_c =cli_clear_route->async_send_request(req);
+    goal_msg.pose.orientation.x = 0.0;
+    goal_msg.pose.orientation.y = 0.0;
+    goal_msg.pose.orientation.z = 0.6915789093529723;
+    goal_msg.pose.orientation.w = 0.722300915227271;
 
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Clearing existing route...");
-  }
+    goal_msg.header.stamp = this->get_clock()->now();
+    goal_msg.header.frame_id = "map";
 
-  void Test07::set_route_points(){
-    while (!cli_set_route_points->wait_for_service(1s)) {
-      if (!rclcpp::ok()) {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
-      }
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "routing service not available, waiting again...");
-    }
-
-    auto set_route_points_req = std::make_shared<SetRoutePoints::Request>();
-
-    set_route_points_req->header.frame_id = "map";
-    set_route_points_req->goal = wp0;
-    // set_route_points_req->waypoints = {wp0, wp1, wp2, wp3};
-
-    auto result_s = cli_set_route_points->async_send_request(set_route_points_req);
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting new route...");
+    pub_goal->publish(goal_msg);
   }
 
   void Test07::set_operation_mode(uint8_t mode){
@@ -182,8 +119,29 @@ namespace test_07{
     autoware_state = msg->state;
   }
 
-  void Test07::route_state_callback(RouteState::SharedPtr msg){
-    route_state_msg = *msg;
+  void Test07::init_redis_client(){
+    // Connecting to the Redis server on localhost
+    context = redisConnect("127.0.0.1", 6379);
+
+    // handle error
+    if (context == NULL || context->err) {
+      if (context){
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
+      } else {
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
+      }
+    } else {
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
+    }
+  }
+
+  string Test07::get_key(string key){
+    // GET key
+    redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
+    string result = "";
+    if (reply->type == REDIS_REPLY_STRING)
+      result = reply->str;
+    return result;
   }
 }
 

@@ -2,30 +2,25 @@ import os
 import launch
 from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
-from launch.substitutions import Command, LaunchConfiguration
+from launch.substitutions import LaunchConfiguration
 from launch.launch_description_sources import AnyLaunchDescriptionSource
 
 def generate_launch_description():
     return launch.LaunchDescription([
         Node(
-            package='mcity_terasim',
+            package='abc_terasim',
             namespace='/terasim',
             executable='cav_info_converter',
         ),
         Node(
-            package='mcity_terasim',
+            package='abc_terasim',
             namespace='/terasim',
             executable='cav_context_converter',
         ),
         Node(
-            package='mcity_terasim',
+            package='abc_terasim',
             namespace='/terasim',
-            executable='traffic_signal_control',
-        ),
-        Node(
-            package='mcity_terasim',
-            namespace='/terasim',
-            executable='sumo_autoware_cosim',
+            executable='test_01',
         ),
         DeclareLaunchArgument(
             'map_path',
@@ -44,7 +39,7 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             'lanelet2_map_file',
-            default_value='lanelet2_mcity_v17.osm',
+            default_value='lanelet2_mcity_v20.osm',
             description='Lanelet2 map file'
         ),
         IncludeLaunchDescription(

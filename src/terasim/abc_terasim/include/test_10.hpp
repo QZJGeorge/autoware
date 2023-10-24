@@ -12,8 +12,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_TERASIM__TEST_08_HPP_
-#define MCITY_TERASIM__TEST_08_HPP_
+#ifndef MCITY_TERASIM__TEST_10_HPP_
+#define MCITY_TERASIM__TEST_10_HPP_
 
 #include <iostream>
 #include <rclcpp/rclcpp.hpp>
@@ -25,7 +25,7 @@
 #include <autoware_auto_system_msgs/msg/autoware_state.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
 
-namespace test_08
+namespace test_10
 {
 
 using namespace std;
@@ -36,11 +36,11 @@ using tier4_system_msgs::srv::ChangeOperationMode;
 using tier4_system_msgs::srv::ChangeAutowareControl;
 using autoware_auto_system_msgs::msg::AutowareState;
 
-class Test08 : public rclcpp::Node
+class Test10 : public rclcpp::Node
 {
 public:
-  explicit Test08(const rclcpp::NodeOptions & options);
-  ~Test08() = default;
+  explicit Test10(const rclcpp::NodeOptions & options);
+  ~Test10() = default;
 
 private:
   // constants for operation mode
