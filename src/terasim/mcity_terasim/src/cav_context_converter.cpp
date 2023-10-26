@@ -17,7 +17,7 @@
 namespace cav_context_converter
 {
   CavContextConverter::CavContextConverter(const rclcpp::NodeOptions &options)
-      : Node("coordinate_converter", options)
+      : Node("cav_context_converter", options)
   {
     timer_ = rclcpp::create_timer(
         this, get_clock(), 50ms, std::bind(&CavContextConverter::on_timer, this));
@@ -134,8 +134,8 @@ namespace cav_context_converter
   TwistWithCovariance CavContextConverter::get_twist_with_varience(nlohmann::json bv_value_json){
     TwistWithCovariance bv_twist_with_covariance;
     cout << bv_value_json["speed_long"] << endl;
-    // bv_twist_with_covariance.twist.linear.x = bv_value_json["speed_long"];
-    bv_twist_with_covariance.twist.linear.x = 0.0;
+    // bv_twist_with_covariance.twist.linear.x = 0.0;
+    bv_twist_with_covariance.twist.linear.x = bv_value_json["speed_long"];
     return bv_twist_with_covariance;
   }
 
@@ -167,6 +167,10 @@ namespace cav_context_converter
     if (bv_key == "CAV"){
       return;
     }
+
+    // if (bv_key != "BV_1.14"){
+    //   return;
+    // }
 
     json bv_value_json = json::parse(bv_value);
 

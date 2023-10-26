@@ -54,6 +54,20 @@ rclcpp_components_register_node(cav_context_converter_component
   EXECUTABLE cav_context_converter
 )
 
+##########################  CAV CONTEXT REPLAY  ##################################
+
+ament_auto_add_library(cav_context_replay_component SHARED
+  src/cav_context_replay.cpp
+)
+
+target_link_libraries(cav_context_replay_component hiredis)
+
+rclcpp_components_register_node(cav_context_replay_component
+  PLUGIN "cav_context_replay::CavContextReplay"
+  EXECUTABLE cav_context_replay
+)
+
+
 ##########################  SUMO AUTOWARE COSIM  ####################################
 
 ament_auto_add_library(sumo_autoware_cosim_component SHARED
