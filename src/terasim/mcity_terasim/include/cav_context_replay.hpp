@@ -43,11 +43,8 @@ public:
   ~CavContextReplay() = default;
 
 private:
-  rclcpp::TimerBase::SharedPtr timer_;
- 
   redisContext *context;
 
-  void on_timer();
   void read_file();
   void init_redis_client();
   void set_key(string key, string value);

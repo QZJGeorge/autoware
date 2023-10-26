@@ -24,7 +24,7 @@ namespace cav_info_converter
       "/localization/kinematic_state", 10, std::bind(&CavInfoConverter::odom_callback, this, std::placeholders::_1));
 
     timer_ = rclcpp::create_timer(
-        this, get_clock(), 20ms, std::bind(&CavInfoConverter::on_timer, this));
+        this, get_clock(), 50ms, std::bind(&CavInfoConverter::on_timer, this));
 
     init_redis_client();
     signal(SIGINT, handleShutdown);  // Register the signal handler for clearing redis cashe before shutting down node

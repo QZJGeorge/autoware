@@ -19,15 +19,8 @@ namespace cav_context_replay
   CavContextReplay::CavContextReplay(const rclcpp::NodeOptions &options)
       : Node("cav_context_replay", options)
   {
-    timer_ = rclcpp::create_timer(
-        this, get_clock(), 50ms, std::bind(&CavContextReplay::on_timer, this));
-
     init_redis_client();
     read_file();
-  }
-
-  void CavContextReplay::on_timer(){
-    
   }
 
   void CavContextReplay::read_file(){

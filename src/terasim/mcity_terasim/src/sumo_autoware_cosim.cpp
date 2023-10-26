@@ -20,16 +20,12 @@ namespace sumo_autoware_cosim{
   : Node("sumo_autoware_cosim", options)
   {
     pub_local = this->create_publisher<PoseWithCovarianceStamped>("/initialpose", 10);
+    sub_autoware_state = this->create_subscription<AutowareState>(
+      "/autoware/state", 10, std::bind(&SumoAutowareCosim::autoware_state_callback, this, std::placeholders::_1));
 
-    cli_clear_route = this->create_client<ClearRoute>("/planning/mission_planning/clear_route");
     cli_set_route_points = this->create_client<SetRoutePoints>("/planning/mission_planning/set_route_points");
     cli_set_operation_mode = this->create_client<ChangeOperationMode>("/system/operation_mode/change_operation_mode");
     cli_set_autoware_control = this->create_client<ChangeAutowareControl>("/system/operation_mode/change_autoware_control");
-
-    sub_autoware_state = this->create_subscription<AutowareState>(
-      "/autoware/state", 10, std::bind(&SumoAutowareCosim::autoware_state_callback, this, std::placeholders::_1));
-    sub_route_state = this->create_subscription<RouteState>(
-      "/planning/mission_planning/route_state", 10, std::bind(&SumoAutowareCosim::route_state_callback, this, std::placeholders::_1));
 
     timer_ = rclcpp::create_timer(
       this, get_clock(), 1000ms, std::bind(&SumoAutowareCosim::on_timer, this));
@@ -40,55 +36,26 @@ namespace sumo_autoware_cosim{
   }
 
   void SumoAutowareCosim::on_timer(){
-    if (autoware_state == 1){
-      pub_localization();
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Autoware state unset, publishing initial localization...");
-    }
-
     string terasim_status = get_key("terasim_status");
-    if (terasim_status == ""){
-      pub_localization();
-      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to read terasim state, please try again");
+    if (terasim_status == "" || terasim_status == "0"){
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
       return;
     }
 
-    int tera_state = stoi(terasim_status);
-    if (tera_state == 0){
-      clear_route();
-      set_autoware_control(false);
-      set_operation_mode(STOP);
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
-    } else{
+    if (autoware_state == 0){
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Waiting for autoware to start up..");
+      return;
+    } else if (autoware_state == 1){
+      pub_localization();
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Publishing initial localization...");
+    } else if (autoware_state == 2){
       set_route_points();
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Setting goal point...");
+    } else if (autoware_state == 4){
       set_autoware_control(true);
       set_operation_mode(AUTONOMOUS);
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Setting route points and enable autoware control");
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Enabling autoware control...");
     }
-  }
-
-  void SumoAutowareCosim::init_redis_client(){
-    // Connecting to the Redis server on localhost
-    context = redisConnect("127.0.0.1", 6379);
-
-    // handle error
-    if (context == NULL || context->err) {
-      if (context){
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
-      } else {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
-      }
-    } else {
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
-    }
-  }
-
-  string SumoAutowareCosim::get_key(string key){
-    // GET key
-    redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
-    string result = "";
-    if (reply->type == REDIS_REPLY_STRING)
-      result = reply->str;
-    return result;
   }
 
   void SumoAutowareCosim::init_localization(){
@@ -154,20 +121,6 @@ namespace sumo_autoware_cosim{
     pub_local->publish(localization_msg);
   }
 
-  void SumoAutowareCosim::clear_route(){
-    while (!cli_clear_route->wait_for_service(1s)) {
-      if (!rclcpp::ok()) {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
-      }
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "routing service not available, waiting again...");
-    }
-
-    auto req = std::make_shared<ClearRoute::Request>();
-    auto result_c =cli_clear_route->async_send_request(req);
-
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Clearing existing route...");
-  }
-
   void SumoAutowareCosim::set_route_points(){
     while (!cli_set_route_points->wait_for_service(1s)) {
       if (!rclcpp::ok()) {
@@ -218,8 +171,29 @@ namespace sumo_autoware_cosim{
     autoware_state = msg->state;
   }
 
-  void SumoAutowareCosim::route_state_callback(RouteState::SharedPtr msg){
-    route_state_msg = *msg;
+  void SumoAutowareCosim::init_redis_client(){
+    // Connecting to the Redis server on localhost
+    context = redisConnect("127.0.0.1", 6379);
+
+    // handle error
+    if (context == NULL || context->err) {
+      if (context){
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
+      } else {
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
+      }
+    } else {
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
+    }
+  }
+
+  string SumoAutowareCosim::get_key(string key){
+    // GET key
+    redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
+    string result = "";
+    if (reply->type == REDIS_REPLY_STRING)
+      result = reply->str;
+    return result;
   }
 }
 
