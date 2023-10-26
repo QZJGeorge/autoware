@@ -45,14 +45,14 @@ namespace sumo_autoware_cosim{
       RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Autoware state unset, publishing initial localization...");
     }
 
-    string terasim_state = get_key("terasim_state");
-    if (terasim_state == ""){
+    string terasim_status = get_key("terasim_status");
+    if (terasim_status == ""){
       pub_localization();
       RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to read terasim state, please try again");
       return;
     }
 
-    int tera_state = stoi(terasim_state);
+    int tera_state = stoi(terasim_status);
     if (tera_state == 0){
       clear_route();
       set_autoware_control(false);
