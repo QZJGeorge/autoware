@@ -12,23 +12,23 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "cav_context_converter.hpp"
+#include "abc_context_converter.hpp"
 
-namespace cav_context_converter
+namespace abc_context_converter
 {
-  CavContextConverter::CavContextConverter(const rclcpp::NodeOptions &options)
-      : Node("coordinate_converter", options)
+  AbcContextConverter::AbcContextConverter(const rclcpp::NodeOptions &options)
+      : Node("abc_context_converter", options)
   {
     timer_ = rclcpp::create_timer(
-        this, get_clock(), 50ms, std::bind(&CavContextConverter::on_timer, this));
+        this, get_clock(), 50ms, std::bind(&AbcContextConverter::on_timer, this));
 
     pub_bv_object = this->create_publisher<Object>("/simulation/dummy_perception_publisher/object_info", 10);
 
     init_redis_client();
   }
 
-  double CavContextConverter::get_ori_from_odom(Odometry::SharedPtr msg){
-    double quat_x = msg->pose.pose.orientation.x;
+  double AbcContextConverter::get_ori_from_odom(Odometry::SharedPtr msg){
+    double quat_x = msg->pose.pose.orientation.x;  
     double quat_y = msg->pose.pose.orientation.y;
     double quat_z = msg->pose.pose.orientation.z;
     double quat_w = msg->pose.pose.orientation.w;
@@ -42,7 +42,7 @@ namespace cav_context_converter
     return yaw;
   }
 
-  string CavContextConverter::get_mgrs_from_odom(Odometry::SharedPtr msg){
+  string AbcContextConverter::get_mgrs_from_odom(Odometry::SharedPtr msg){
     string ANN_ARBOR = "17TKG";
 
     int PRECISION = 4;  // increase precision to 4 decimal place
@@ -53,7 +53,7 @@ namespace cav_context_converter
     return mgrs;
   }
 
-  string CavContextConverter::get_cav_ego_positionheading_ros(double lat, double lon, double yaw){
+  string AbcContextConverter::get_cav_ego_positionheading_ros(double lat, double lon, double yaw){
     nlohmann::json cav_dic;
     cav_dic["x"] = lat;
     cav_dic["y"] = lon;
@@ -61,13 +61,13 @@ namespace cav_context_converter
     return cav_dic.dump();;
   }
 
-  string CavContextConverter::get_cav_ego_speed_ros(double velocity){
+  string AbcContextConverter::get_cav_ego_speed_ros(double velocity){
     nlohmann::json cav_dic;
     cav_dic["velocity"] = velocity;
     return cav_dic.dump();;
   }
 
-  string CavContextConverter::post_process_cav_context_vehicle_info_ros(string cav_context_vehicle_info_ros){
+  string AbcContextConverter::post_process_cav_context_vehicle_info_ros(string cav_context_vehicle_info_ros){
     string newString = cav_context_vehicle_info_ros;
 
     string::size_type n = 0;
@@ -82,7 +82,7 @@ namespace cav_context_converter
     return newString;
   }
 
-  UUID CavContextConverter::get_uuid_msg(string bv_key) {
+  UUID AbcContextConverter::get_uuid_msg(string bv_key) {
     boost::uuids::string_generator sgen;
     boost::uuids::uuid namespace_uuid = sgen("00000000-0000-0000-0000-000000000000");
     boost::uuids::name_generator_sha1 gen(namespace_uuid);
@@ -93,7 +93,7 @@ namespace cav_context_converter
     return msg;
   }
 
-  PoseWithCovariance CavContextConverter::get_pose_with_varience(nlohmann::json bv_value_json){
+  PoseWithCovariance AbcContextConverter::get_pose_with_varience(nlohmann::json bv_value_json){
     PoseWithCovariance bv_pose_with_covariance;
 
     double x = bv_value_json["x"];
@@ -131,13 +131,13 @@ namespace cav_context_converter
     return bv_pose_with_covariance;
   }
 
-  TwistWithCovariance CavContextConverter::get_twist_with_varience(nlohmann::json bv_value_json){
+  TwistWithCovariance AbcContextConverter::get_twist_with_varience(nlohmann::json bv_value_json){
     TwistWithCovariance bv_twist_with_covariance;
     bv_twist_with_covariance.twist.linear.x = bv_value_json["speed_long"];
     return bv_twist_with_covariance;
   }
 
-  Shape CavContextConverter::get_shape(nlohmann::json bv_value_json){
+  Shape AbcContextConverter::get_shape(nlohmann::json bv_value_json){
     Shape bv_shape;
     bv_shape.type = 0;
     bv_shape.dimensions.x = bv_value_json["length"];
@@ -146,14 +146,24 @@ namespace cav_context_converter
     return bv_shape;
   }
 
-  ObjectClassification CavContextConverter::get_classification(){
+  ObjectClassification AbcContextConverter::get_classification(string bv_key){
     ObjectClassification bv_classification;
-    bv_classification.label = 1;
     bv_classification.probability = 1.0;
+
+    if (str.find("VRU") != std::string::npos) {
+      bv_classification.label = PEDESTRIAN;
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Updating pedestrian info");
+    } else if (str.find("POV") != std::string::npos){
+      bv_classification.label = CAR;
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Updating background vehicle info");
+    } else{
+      bv_classification.label = UNKNOWN;
+      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Updating unknown object info");
+    }
     return bv_classification;
   }
 
-  void CavContextConverter::update_bv_in_autoware_sim(uint8_t action, string bv_key, string bv_value){
+  void AbcContextConverter::update_bv_in_autoware_sim(uint8_t action, string bv_key, string bv_value){
     Object bv_object;
     
     if (action == DELETEALL){
@@ -182,7 +192,7 @@ namespace cav_context_converter
     bv_object.initial_state.pose_covariance = get_pose_with_varience(bv_value_json);
     bv_object.initial_state.twist_covariance = get_twist_with_varience(bv_value_json);
     bv_object.shape = get_shape(bv_value_json);
-    bv_object.classification = get_classification();
+    bv_object.classification = get_classification(bv_key);
     bv_object.max_velocity = 33.33333;
     bv_object.min_velocity = -33.33333;
     bv_object.action = action;
@@ -190,7 +200,7 @@ namespace cav_context_converter
     pub_bv_object->publish(bv_object);
   }
 
-  void CavContextConverter::init_redis_client(){
+  void AbcContextConverter::init_redis_client(){
     // Connecting to the Redis server on localhost
     context = redisConnect("127.0.0.1", 6379);
 
@@ -206,7 +216,7 @@ namespace cav_context_converter
     }
   }
 
-  void CavContextConverter::set_key(string key, string value){
+  void AbcContextConverter::set_key(string key, string value){
     // SET key
     redisReply *reply = (redisReply *)redisCommand(context, "SET %s %s", key.c_str(), value.c_str());
     if (reply->type == REDIS_REPLY_ERROR){
@@ -217,7 +227,7 @@ namespace cav_context_converter
     }
   }
 
-  string CavContextConverter::get_key(string key){
+  string AbcContextConverter::get_key(string key){
     // GET key
     redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
     string result = "";
@@ -226,7 +236,7 @@ namespace cav_context_converter
     return result;
   }
 
-  void CavContextConverter::on_timer(){
+  void AbcContextConverter::on_timer(){
     string cav_context_vehicle_info_ros = get_key("av_context");
     if (cav_context_vehicle_info_ros == last_cav_context_vehicle_info_ros){
       return;
@@ -265,4 +275,4 @@ namespace cav_context_converter
   }
 }
 
-RCLCPP_COMPONENTS_REGISTER_NODE(cav_context_converter::CavContextConverter)
+RCLCPP_COMPONENTS_REGISTER_NODE(abc_context_converter::AbcContextConverter)

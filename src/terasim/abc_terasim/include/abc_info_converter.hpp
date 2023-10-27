@@ -12,8 +12,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_TERASIM__CAV_INFO_CONVERTER_HPP_
-#define MCITY_TERASIM__CAV_INFO_CONVERTER_HPP_
+#ifndef MCITY_TERASIM__ABC_INFO_CONVERTER_HPP_
+#define MCITY_TERASIM__ABC_INFO_CONVERTER_HPP_
 
 #include <cmath>
 #include <string>
@@ -32,18 +32,18 @@
 #include <nav_msgs/msg/odometry.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
 
-namespace cav_info_converter
+namespace abc_info_converter
 {
     
 using namespace std;
 using nlohmann::json;
 using nav_msgs::msg::Odometry;
 
-class CavInfoConverter : public rclcpp::Node
+class AbcInfoConverter : public rclcpp::Node
 {
 public:
-  explicit CavInfoConverter(const rclcpp::NodeOptions & options);
-  ~CavInfoConverter() = default;
+  explicit AbcInfoConverter(const rclcpp::NodeOptions & options);
+  ~AbcInfoConverter() = default;
 
   static void handleShutdown(int signal)
   {

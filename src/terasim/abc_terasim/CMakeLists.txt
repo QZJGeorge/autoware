@@ -18,28 +18,28 @@ link_directories(/usr/local/lib)
 
 ############################  CAV INFO CONVERTER  ####################################
 
-ament_auto_add_library(cav_info_converter_component SHARED
-  src/cav_info_converter.cpp
+ament_auto_add_library(abc_info_converter_component SHARED
+  src/abc_info_converter.cpp
 )
 
-target_link_libraries(cav_info_converter_component hiredis Geographic)
+target_link_libraries(abc_info_converter_component hiredis Geographic)
 
-rclcpp_components_register_node(cav_info_converter_component
-  PLUGIN "cav_info_converter::CavInfoConverter"
-  EXECUTABLE cav_info_converter
+rclcpp_components_register_node(abc_info_converter_component
+  PLUGIN "abc_info_converter::AbcInfoConverter"
+  EXECUTABLE abc_info_converter
 )
 
 ##########################  CAV CONTEXT CONVERTER  ##################################
 
-ament_auto_add_library(cav_context_converter_component SHARED
-  src/cav_context_converter.cpp
+ament_auto_add_library(abc_context_converter_component SHARED
+  src/abc_context_converter.cpp
 )
 
-target_link_libraries(cav_context_converter_component hiredis Geographic)
+target_link_libraries(abc_context_converter_component hiredis Geographic)
 
-rclcpp_components_register_node(cav_context_converter_component
-  PLUGIN "cav_context_converter::CavContextConverter"
-  EXECUTABLE cav_context_converter
+rclcpp_components_register_node(abc_context_converter_component
+  PLUGIN "abc_context_converter::AbcContextConverter"
+  EXECUTABLE abc_context_converter
 )
 
 ##########################  TEST_01 ####################################

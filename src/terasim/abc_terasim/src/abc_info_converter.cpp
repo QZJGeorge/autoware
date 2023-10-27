@@ -12,25 +12,25 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "cav_info_converter.hpp"
+#include "abc_info_converter.hpp"
 
-namespace cav_info_converter
+namespace abc_info_converter
 {
 
-  CavInfoConverter::CavInfoConverter(const rclcpp::NodeOptions &options)
-      : Node("cav_info_converter", options)
+  AbcInfoConverter::AbcInfoConverter(const rclcpp::NodeOptions &options)
+      : Node("abc_info_converter", options)
   {
     sub_ego_odom = this->create_subscription<Odometry>(
-      "/localization/kinematic_state", 10, std::bind(&CavInfoConverter::odom_callback, this, std::placeholders::_1));
+      "/localization/kinematic_state", 10, std::bind(&AbcInfoConverter::odom_callback, this, std::placeholders::_1));
 
     timer_ = rclcpp::create_timer(
-        this, get_clock(), 20ms, std::bind(&CavInfoConverter::on_timer, this));
+        this, get_clock(), 20ms, std::bind(&AbcInfoConverter::on_timer, this));
 
     init_redis_client();
     signal(SIGINT, handleShutdown);  // Register the signal handler for clearing redis cashe before shutting down node
   }
 
-  void CavInfoConverter::on_timer(){
+  void AbcInfoConverter::on_timer(){
     if (odom_check == 0){
       return;
     }
@@ -59,7 +59,7 @@ namespace cav_info_converter
     odom_check = 0;
   }
 
-  double CavInfoConverter::get_ori_from_odom(Odometry msg){
+  double AbcInfoConverter::get_ori_from_odom(Odometry msg){
     double quat_x = msg.pose.pose.orientation.x;
     double quat_y = msg.pose.pose.orientation.y;
     double quat_z = msg.pose.pose.orientation.z;
@@ -74,7 +74,7 @@ namespace cav_info_converter
     return yaw;
   }
 
-  string CavInfoConverter::get_mgrs_from_odom(Odometry msg){
+  string AbcInfoConverter::get_mgrs_from_odom(Odometry msg){
     std::string ANN_ARBOR = "17TKG";
 
     int PRECISION = 4;  // increase precision to 4 decimal place
@@ -85,12 +85,12 @@ namespace cav_info_converter
     return mgrs;
   }
 
-  void CavInfoConverter::odom_callback(Odometry::SharedPtr msg){
+  void AbcInfoConverter::odom_callback(Odometry::SharedPtr msg){
     saved_odom_msg = *msg;
     odom_check = 1;
   }
 
-  void CavInfoConverter::init_redis_client(){
+  void AbcInfoConverter::init_redis_client(){
     // Connecting to the Redis server on localhost
     context = redisConnect("127.0.0.1", 6379);
 
@@ -106,7 +106,7 @@ namespace cav_info_converter
     }
   }
 
-  void CavInfoConverter::set_key(string key, string value){
+  void AbcInfoConverter::set_key(string key, string value){
     // SET key
     redisReply *reply = (redisReply *)redisCommand(context, "SET %s %s", key.c_str(), value.c_str());
     if (reply->type == REDIS_REPLY_ERROR){
@@ -117,7 +117,7 @@ namespace cav_info_converter
     }
   }
 
-  string CavInfoConverter::get_key(string key){
+  string AbcInfoConverter::get_key(string key){
     // GET key
     redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
     std::string result = "";
@@ -127,4 +127,4 @@ namespace cav_info_converter
   }
 }
 
-RCLCPP_COMPONENTS_REGISTER_NODE(cav_info_converter::CavInfoConverter)
+RCLCPP_COMPONENTS_REGISTER_NODE(abc_info_converter::AbcInfoConverter)

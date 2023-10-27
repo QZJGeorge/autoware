@@ -35,8 +35,8 @@ namespace test_09{
   }
 
   void Test09::on_timer(){
-    string terasim_state = get_key("terasim_state");
-    if (terasim_state == "" || terasim_state == "0"){
+    string terasim_status = get_key("terasim_status");
+    if (terasim_status == "" || terasim_status == "0"){
       RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
       return;
     }

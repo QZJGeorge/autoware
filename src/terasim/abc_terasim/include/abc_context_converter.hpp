@@ -12,8 +12,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_TERASIM__CAX_CONTEXT_CONVERTER_HPP_
-#define MCITY_TERASIM__CAX_CONTEXT_CONVERTER_HPP_
+#ifndef MCITY_TERASIM__ABC_CONTEXT_CONVERTER_HPP_
+#define MCITY_TERASIM__ABC_CONTEXT_CONVERTER_HPP_
 
 #include <cmath>
 #include <string>
@@ -36,7 +36,7 @@
 #include <autoware_auto_perception_msgs/msg/shape.hpp>
 #include <autoware_auto_perception_msgs/msg/object_classification.hpp>
 
-namespace cav_context_converter
+namespace abc_context_converter
 {
     
 using namespace std;
@@ -51,21 +51,33 @@ using geometry_msgs::msg::TwistWithCovariance;
 using autoware_auto_perception_msgs::msg::Shape;
 using autoware_auto_perception_msgs::msg::ObjectClassification;
 
-class CavContextConverter : public rclcpp::Node
+class AbcContextConverter : public rclcpp::Node
 {
 public:
-  explicit CavContextConverter(const rclcpp::NodeOptions & options);
-  ~CavContextConverter() = default;
+  explicit AbcContextConverter(const rclcpp::NodeOptions & options);
+  ~AbcContextConverter() = default;
 
-private:
+private:  
+  // object action
   const uint8_t ADD=0;
   const uint8_t MODIFY=1;
   const uint8_t DELETE=2;
   const uint8_t DELETEALL=3;
 
+  // object shape
   uint8_t BOUNDING_BOX=0;
   uint8_t CYLINDER=1;
   uint8_t POLYGON=2;
+
+  // object classification
+  const uint8_t UNKNOWN = 0;
+  const uint8_t CAR = 1;
+  const uint8_t TRUCK = 2;
+  const uint8_t BUS = 3;
+  const uint8_t TRAILER = 4;
+  const uint8_t MOTORCYCLE = 5;
+  const uint8_t BICYCLE = 6;
+  const uint8_t PEDESTRIAN = 7;
 
   rclcpp::TimerBase::SharedPtr timer_;
   rclcpp::Publisher<Object>::SharedPtr pub_bv_object;
@@ -94,7 +106,7 @@ private:
   geometry_msgs::msg::PoseWithCovariance get_pose_with_varience(nlohmann::json bv_value_json);
   geometry_msgs::msg::TwistWithCovariance get_twist_with_varience(nlohmann::json bv_value_json);
   autoware_auto_perception_msgs::msg::Shape get_shape(nlohmann::json bv_value_json);
-  autoware_auto_perception_msgs::msg::ObjectClassification get_classification();
+  autoware_auto_perception_msgs::msg::ObjectClassification get_classification(string bv_key);
 };
 
 }
