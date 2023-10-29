@@ -44,7 +44,7 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             'lanelet2_map_file',
-            default_value='lanelet2_mcity_v24.osm',
+            default_value='lanelet2_mcity_v25.osm',
             description='Lanelet2 map file'
         ),
         IncludeLaunchDescription(
