@@ -1,0 +1,31 @@
+[35m[1mConsolidate compiler generated dependencies of target abc_info_converter[0m
+[35m[1mConsolidate compiler generated dependencies of target abc_info_converter_component[0m
+[ 18%] Built target abc_info_converter
+[ 18%] Built target test_10
+[ 18%] Built target abc_context_converter
+[ 18%] Built target test_08
+[ 22%] Built target test_01
+[ 29%] Built target test_05
+[ 31%] Built target test_06
+[ 36%] Built target test_07
+[ 40%] Built target test_09
+[ 50%] Built target test_12
+[ 50%] Built target test_11
+[ 52%] [32mBuilding CXX object CMakeFiles/abc_info_converter_component.dir/src/abc_info_converter.cpp.o[0m
+[ 54%] [32m[1mLinking CXX shared library libabc_info_converter_component.so[0m
+[ 54%] Built target abc_info_converter_component
+[35m[1mConsolidate compiler generated dependencies of target abc_context_converter_component[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/abc_context_converter_component.dir/src/abc_context_converter.cpp.o[0m
+[01m[K/home/zhijie/autoware/src/terasim/abc_terasim/src/abc_context_converter.cpp:[m[K In member function ‘[01m[Kautoware_auto_perception_msgs::msg::ObjectClassification abc_context_converter::AbcContextConverter::get_classification(std::string)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/abc_terasim/src/abc_context_converter.cpp:153:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstr[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd[m[K’?
+  153 |     if ([01;31m[Kstr[m[K.find("VRU") != std::string::npos) {
+      |         [01;31m[K^~~[m[K
+      |         [32m[Kstd[m[K
+[01m[K/home/zhijie/autoware/src/terasim/abc_terasim/src/abc_context_converter.cpp:149:71:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kbv_key[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Werror=unused-parameter]8;;[m[K]
+  149 | tClassification AbcContextConverter::get_classification([01;31m[Kstring bv_key[m[K){
+      |                                                         [01;31m[K~~~~~~~^~~~~~[m[K
+
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/abc_context_converter_component.dir/build.make:76: CMakeFiles/abc_context_converter_component.dir/src/abc_context_converter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/abc_context_converter_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

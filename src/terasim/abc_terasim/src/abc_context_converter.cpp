@@ -150,10 +150,10 @@ namespace abc_context_converter
     ObjectClassification bv_classification;
     bv_classification.probability = 1.0;
 
-    if (str.find("VRU") != std::string::npos) {
+    if (bv_key.find("VRU") != std::string::npos) {
       bv_classification.label = PEDESTRIAN;
       RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Updating pedestrian info");
-    } else if (str.find("POV") != std::string::npos){
+    } else if (bv_key.find("POV") != std::string::npos){
       bv_classification.label = CAR;
       RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Updating background vehicle info");
     } else{
