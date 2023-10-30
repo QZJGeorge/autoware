@@ -2,7 +2,7 @@ import os
 import launch
 from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
-from launch.substitutions import Command, LaunchConfiguration
+from launch.substitutions import LaunchConfiguration
 from launch.launch_description_sources import AnyLaunchDescriptionSource
 
 def generate_launch_description():

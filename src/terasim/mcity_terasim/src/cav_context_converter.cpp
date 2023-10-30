@@ -155,6 +155,15 @@ namespace cav_context_converter
     return bv_classification;
   }
 
+  bool CavContextConverter::in_range(string cav_value, string bv_value){
+    json cav_value_json = json::parse(cav_value);
+    json bv_value_json = json::parse(bv_value);
+    double x_diff = cav_value_json["x"].get<double>()-bv_value_json["x"].get<double>();
+    double y_diff = cav_value_json["y"].get<double>()-bv_value_json["y"].get<double>();
+    return std::sqrt(std::pow(x_diff, 2)+std::pow(y_diff, 2)) < 45.0;
+  }
+
+
   void CavContextConverter::update_bv_in_autoware_sim(uint8_t action, string bv_key, string bv_value){
     Object bv_object;
     
@@ -167,10 +176,6 @@ namespace cav_context_converter
     if (bv_key == "CAV"){
       return;
     }
-
-    // if (bv_key != "BV_1.14"){
-    //   return;
-    // }
 
     json bv_value_json = json::parse(bv_value);
 
@@ -251,6 +256,8 @@ namespace cav_context_converter
     json cav_context_current_json = json::parse(newString);
     json cav_context_history_copy = cav_context_history_json;
 
+    string cav_value = cav_context_current_json["CAV"].dump();
+
     // For bvs that exist in hitory but now out of range, remove them
     for (json::iterator bv = cav_context_history_copy.begin(); bv != cav_context_history_copy.end(); ++bv) {
         if (!cav_context_current_json.contains(bv.key())) {
@@ -261,13 +268,21 @@ namespace cav_context_converter
 
     // Update bv info with new message, create new bvs
     for (json::iterator bv = cav_context_current_json.begin(); bv != cav_context_current_json.end(); ++bv) {
+      string bv_value = bv.value().dump();
+      if(in_range(cav_value, bv_value)){
         if (cav_context_history_json.contains(bv.key())) {
-          cav_context_history_json[bv.key()] = bv.value().dump();
-          update_bv_in_autoware_sim(MODIFY, bv.key(), bv.value().dump());
-        } else {
-          cav_context_history_json.emplace(bv.key(), bv.value().dump());
-          update_bv_in_autoware_sim(ADD, bv.key(), bv.value().dump());
+          cav_context_history_json[bv.key()] = bv_value;
+          update_bv_in_autoware_sim(MODIFY, bv.key(), bv_value);
+        }else {
+          cav_context_history_json.emplace(bv.key(), bv_value);
+          update_bv_in_autoware_sim(ADD, bv.key(), bv_value);
         }
+      } else{
+        if (cav_context_history_json.contains(bv.key())) {
+          update_bv_in_autoware_sim(DELETE, bv.key(), bv.value().dump());
+          cav_context_history_json.erase(bv.key());
+        }
+      }
     }
   }
 }

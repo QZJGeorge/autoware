@@ -233,7 +233,8 @@ def launch_setup(context, *args, **kwargs):
             ],
         ),
         launch_arguments={
-            "use_pointcloud_container": LaunchConfiguration("use_pointcloud_container"),
+            # "use_pointcloud_container": LaunchConfiguration("use_pointcloud_container"),
+            "use_pointcloud_container": False,
             "container_name": LaunchConfiguration("container_name"),
             "use_multithread": "true",
         }.items(),
@@ -249,7 +250,8 @@ def launch_setup(context, *args, **kwargs):
             ]
         ),
         launch_arguments={
-            "use_pointcloud_container": LaunchConfiguration("use_pointcloud_container"),
+            # "use_pointcloud_container": LaunchConfiguration("use_pointcloud_container"),
+            "use_pointcloud_container": False,
             "container_name": LaunchConfiguration("container_name"),
             "use_multithread": "true",
             "polygon_type": "no_obstacle_segmentation_area_for_run_out",
@@ -294,7 +296,8 @@ def generate_launch_description():
     add_launch_arg("use_multithread", "false", "use multithread")
 
     # for points filter of run out module
-    add_launch_arg("use_pointcloud_container", "true")
+    # add_launch_arg("use_pointcloud_container", "true")
+    add_launch_arg("use_pointcloud_container", "false")
     add_launch_arg("container_name", "pointcloud_container")
 
     set_container_executable = SetLaunchConfiguration(

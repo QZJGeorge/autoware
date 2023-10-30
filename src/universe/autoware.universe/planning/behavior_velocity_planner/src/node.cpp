@@ -195,10 +195,10 @@ bool BehaviorVelocityPlannerNode::isDataReady(
     RCLCPP_INFO_THROTTLE(get_logger(), clock, 3000, "Waiting for predicted_objects");
     return false;
   }
-  if (!d.no_ground_pointcloud) {
-    RCLCPP_INFO_THROTTLE(get_logger(), clock, 3000, "Waiting for pointcloud");
-    return false;
-  }
+  // if (!d.no_ground_pointcloud) {
+  //   RCLCPP_INFO_THROTTLE(get_logger(), clock, 3000, "Waiting for pointcloud");
+  //   return false;
+  // }
   if (!map_ptr_) {
     RCLCPP_INFO_THROTTLE(get_logger(), clock, 3000, "Waiting for the initialization of map");
     return false;

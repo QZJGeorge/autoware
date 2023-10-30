@@ -83,6 +83,7 @@ private:
   void update_bv_in_autoware_sim(uint8_t action, std::string bv_key, std::string bv_value_string);
 
   double get_ori_from_odom(Odometry::SharedPtr msg);
+  bool in_range(string cav_value, string bv_value);
 
   string get_key(string key);
   string get_mgrs_from_odom(Odometry::SharedPtr msg);

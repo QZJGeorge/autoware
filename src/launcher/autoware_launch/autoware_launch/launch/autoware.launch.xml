@@ -4,7 +4,7 @@
   <arg name="map_path" description="point cloud and lanelet2 map directory path"/>
   <arg name="vehicle_model" description="vehicle model name"/>
   <arg name="sensor_model" description="sensor model name"/>
-  <arg name="use_pointcloud_container" default="true" description="launch pointcloud container"/>
+  <arg name="use_pointcloud_container" default="false" description="launch pointcloud container"/>
   <arg name="pointcloud_container_name" default="pointcloud_container"/>
   <arg name="data_path" default="$(env HOME)/autoware_data" description="packages data and artifacts directory path"/>
 
@@ -102,6 +102,8 @@
   <!-- Planning -->
   <group if="$(var launch_planning)">
     <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_planning_component.launch.xml"/>
+      <!-- <arg name="use_surround_obstacle_check" value="false"/>
+    </include> -->
   </group>
 
   <!-- Control -->

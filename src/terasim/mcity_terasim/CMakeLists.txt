@@ -94,6 +94,19 @@ rclcpp_components_register_node(gnss_to_pose_twist_component
   EXECUTABLE gnss_to_pose_twist
 )
 
+#############################  GNSS TO POSE TWIST  ###################################
+
+ament_auto_add_library(gnss_to_dummy_pose_twist_component SHARED
+  src/gnss_to_dummy_pose_twist.cpp
+)
+
+target_link_libraries(gnss_to_dummy_pose_twist_component Geographic)
+
+rclcpp_components_register_node(gnss_to_dummy_pose_twist_component
+  PLUGIN "gnss_to_dummy_pose_twist::GnssToDummyPoseTwist"
+  EXECUTABLE gnss_to_dummy_pose_twist
+)
+
 ########################################################################################
 
 ament_auto_package(
