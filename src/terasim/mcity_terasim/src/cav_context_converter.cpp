@@ -277,7 +277,7 @@ namespace cav_context_converter
           cav_context_history_json.emplace(bv.key(), bv_value);
           update_bv_in_autoware_sim(ADD, bv.key(), bv_value);
         }
-      } else{
+      }else{
         if (cav_context_history_json.contains(bv.key())) {
           update_bv_in_autoware_sim(DELETE, bv.key(), bv.value().dump());
           cav_context_history_json.erase(bv.key());

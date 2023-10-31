@@ -102,8 +102,6 @@
   <!-- Planning -->
   <group if="$(var launch_planning)">
     <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_planning_component.launch.xml"/>
-      <!-- <arg name="use_surround_obstacle_check" value="false"/>
-    </include> -->
   </group>
 
   <!-- Control -->

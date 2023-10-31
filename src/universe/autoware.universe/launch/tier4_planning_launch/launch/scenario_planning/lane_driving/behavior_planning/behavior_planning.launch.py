@@ -233,8 +233,7 @@ def launch_setup(context, *args, **kwargs):
             ],
         ),
         launch_arguments={
-            # "use_pointcloud_container": LaunchConfiguration("use_pointcloud_container"),
-            "use_pointcloud_container": False,
+            "use_pointcloud_container": LaunchConfiguration("use_pointcloud_container"),
             "container_name": LaunchConfiguration("container_name"),
             "use_multithread": "true",
         }.items(),
@@ -250,8 +249,7 @@ def launch_setup(context, *args, **kwargs):
             ]
         ),
         launch_arguments={
-            # "use_pointcloud_container": LaunchConfiguration("use_pointcloud_container"),
-            "use_pointcloud_container": False,
+            "use_pointcloud_container": LaunchConfiguration("use_pointcloud_container"),
             "container_name": LaunchConfiguration("container_name"),
             "use_multithread": "true",
             "polygon_type": "no_obstacle_segmentation_area_for_run_out",
