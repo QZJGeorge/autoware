@@ -1,0 +1,34 @@
+[0.232s] Invoking command in '/home/zhijie/autoware/build/sample_vehicle_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/vehicle/sample_vehicle_launch/sample_vehicle_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/sample_vehicle_description
+[0.346s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.637s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.822s] -- Configuring done
+[0.833s] -- Generating done
+[0.834s] -- Build files have been written to: /home/zhijie/autoware/build/sample_vehicle_description
+[1.253s] Invoked command in '/home/zhijie/autoware/build/sample_vehicle_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/vehicle/sample_vehicle_launch/sample_vehicle_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/sample_vehicle_description
+[1.254s] Invoking command in '/home/zhijie/autoware/build/sample_vehicle_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/sample_vehicle_description -- -j16 -l16
+[2.900s] Invoked command in '/home/zhijie/autoware/build/sample_vehicle_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/sample_vehicle_description -- -j16 -l16
+[3.055s] Invoking command in '/home/zhijie/autoware/build/sample_vehicle_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/sample_vehicle_description
+[8.006s] -- Install configuration: "Release"
+[8.006s] -- Execute custom install script
+[8.006s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/mesh/lexus.dae
+[8.006s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/mesh/lexus.jpg
+[8.006s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/urdf/vehicle.xacro
+[8.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/config/mirror.param.yaml
+[8.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/config/simulator_model.param.yaml
+[8.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/config/vehicle_info.param.yaml
+[8.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/ament_index/resource_index/package_run_dependencies/sample_vehicle_description
+[8.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/ament_index/resource_index/parent_prefix_path/sample_vehicle_description
+[8.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/environment/ament_prefix_path.sh
+[8.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/environment/ament_prefix_path.dsv
+[8.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/environment/path.sh
+[8.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/environment/path.dsv
+[8.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/local_setup.bash
+[8.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/local_setup.sh
+[8.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/local_setup.zsh
+[8.008s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/local_setup.dsv
+[8.008s] -- Symlinking: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/package.dsv
+[8.008s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/ament_index/resource_index/packages/sample_vehicle_description
+[8.008s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/cmake/sample_vehicle_descriptionConfig.cmake
+[8.008s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/cmake/sample_vehicle_descriptionConfig-version.cmake
+[8.008s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_vehicle_description/share/sample_vehicle_description/package.xml
+[8.035s] Invoked command in '/home/zhijie/autoware/build/sample_vehicle_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/sample_vehicle_description

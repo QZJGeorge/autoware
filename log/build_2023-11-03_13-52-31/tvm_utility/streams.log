@@ -1,0 +1,57 @@
+[0.071s] Invoking command in '/home/zhijie/autoware/build/tvm_utility': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/tvm_utility -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/tvm_utility
+[11.799s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[11.800s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[11.800s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[11.800s] -- Found ament_cmake_gtest: 1.3.5 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[11.800s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.800s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.800s] -- Configured cppcheck include dirs: /home/zhijie/autoware/src/universe/autoware.universe/common/tvm_utility/include
+[11.800s] -- Configured cppcheck exclude dirs and/or files: 
+[11.800s] -- Added test 'lint_cmake' to check CMake code style
+[11.800s] -- Added test 'xmllint' to check XML markup files
+[11.800s] -- Configuring done
+[11.801s] -- Generating done
+[11.801s] -- Build files have been written to: /home/zhijie/autoware/build/tvm_utility
+[11.801s] [33mCMake Warning at tvm_utility-extras.cmake:68 (message):
+[11.801s]   Skipped download for yolo_v2_tiny (enable by setting DOWNLOAD_ARTIFACTS)
+[11.801s] Call Stack (most recent call first):
+[11.801s]   CMakeLists.txt:53 (get_neural_network)
+[11.801s] 
+[11.801s] [0m
+[11.801s] [33mCMake Warning at CMakeLists.txt:90 (message):
+[11.802s]   No model is generated for
+[11.802s]   /home/zhijie/autoware/src/universe/autoware.universe/common/tvm_utility/test/yolo_v2_tiny,
+[11.802s]   skipping test
+[11.802s] 
+[11.802s] [0m
+[11.817s] Invoked command in '/home/zhijie/autoware/build/tvm_utility' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/tvm_utility -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/tvm_utility
+[11.817s] Invoking command in '/home/zhijie/autoware/build/tvm_utility': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tvm_utility -- -j16 -l16
+[19.272s] [100%] Built target tvm_utility
+[19.350s] Invoked command in '/home/zhijie/autoware/build/tvm_utility' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tvm_utility -- -j16 -l16
+[19.634s] Invoking command in '/home/zhijie/autoware/build/tvm_utility': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tvm_utility
+[24.236s] -- Install configuration: "Release"
+[24.237s] -- Execute custom install script
+[24.237s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/include/tvm_utility/pipeline.hpp
+[24.237s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/environment/library_path.sh
+[24.237s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/environment/library_path.dsv
+[24.237s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/lib/libtvm_utility.so
+[24.237s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/ament_index/resource_index/package_run_dependencies/tvm_utility
+[24.237s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/ament_index/resource_index/parent_prefix_path/tvm_utility
+[24.237s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/environment/ament_prefix_path.sh
+[24.237s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/environment/ament_prefix_path.dsv
+[24.237s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/environment/path.sh
+[24.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/environment/path.dsv
+[24.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/local_setup.bash
+[24.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/local_setup.sh
+[24.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/local_setup.zsh
+[24.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/local_setup.dsv
+[24.238s] -- Symlinking: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/package.dsv
+[24.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/ament_index/resource_index/packages/tvm_utility
+[24.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/cmake/tvm_utility-extras.cmake
+[24.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.239s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/cmake/ament_cmake_export_libraries-extras.cmake
+[24.239s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/cmake/tvm_utilityConfig.cmake
+[24.239s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/cmake/tvm_utilityConfig-version.cmake
+[24.239s] -- Up-to-date symlink: /home/zhijie/autoware/install/tvm_utility/share/tvm_utility/package.xml
+[24.303s] Invoked command in '/home/zhijie/autoware/build/tvm_utility' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tvm_utility

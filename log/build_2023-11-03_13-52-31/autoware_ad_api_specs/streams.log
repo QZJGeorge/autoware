@@ -1,0 +1,45 @@
+[0.019s] Invoking command in '/home/zhijie/autoware/build/autoware_ad_api_specs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/autoware_ad_api_specs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_ad_api_specs
+[2.405s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[2.405s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.405s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.405s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.405s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.405s] -- Configured cppcheck include dirs: 
+[2.406s] -- Configured cppcheck exclude dirs and/or files: 
+[2.406s] -- Added test 'lint_cmake' to check CMake code style
+[2.406s] -- Added test 'xmllint' to check XML markup files
+[2.406s] -- Configuring done
+[2.406s] -- Generating done
+[2.406s] -- Build files have been written to: /home/zhijie/autoware/build/autoware_ad_api_specs
+[2.426s] Invoked command in '/home/zhijie/autoware/build/autoware_ad_api_specs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/autoware_ad_api_specs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_ad_api_specs
+[2.427s] Invoking command in '/home/zhijie/autoware/build/autoware_ad_api_specs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_ad_api_specs -- -j16 -l16
+[4.019s] Invoked command in '/home/zhijie/autoware/build/autoware_ad_api_specs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_ad_api_specs -- -j16 -l16
+[4.050s] Invoking command in '/home/zhijie/autoware/build/autoware_ad_api_specs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_ad_api_specs
+[6.250s] -- Install configuration: "Release"
+[6.252s] -- Execute custom install script
+[6.256s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/include/autoware_ad_api_specs/fail_safe.hpp
+[6.257s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/include/autoware_ad_api_specs/interface.hpp
+[6.257s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/include/autoware_ad_api_specs/localization.hpp
+[6.257s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/include/autoware_ad_api_specs/motion.hpp
+[6.257s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/include/autoware_ad_api_specs/operation_mode.hpp
+[6.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/include/autoware_ad_api_specs/perception.hpp
+[6.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/include/autoware_ad_api_specs/planning.hpp
+[6.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/include/autoware_ad_api_specs/routing.hpp
+[6.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/include/autoware_ad_api_specs/vehicle.hpp
+[6.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/ament_index/resource_index/package_run_dependencies/autoware_ad_api_specs
+[6.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/ament_index/resource_index/parent_prefix_path/autoware_ad_api_specs
+[6.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/autoware_ad_api_specs/environment/ament_prefix_path.sh
+[6.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/autoware_ad_api_specs/environment/ament_prefix_path.dsv
+[6.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/autoware_ad_api_specs/environment/path.sh
+[6.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/autoware_ad_api_specs/environment/path.dsv
+[6.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/autoware_ad_api_specs/local_setup.bash
+[6.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/autoware_ad_api_specs/local_setup.sh
+[6.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/autoware_ad_api_specs/local_setup.zsh
+[6.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/autoware_ad_api_specs/local_setup.dsv
+[6.261s] -- Symlinking: /home/zhijie/autoware/install/autoware_ad_api_specs/share/autoware_ad_api_specs/package.dsv
+[6.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/ament_index/resource_index/packages/autoware_ad_api_specs
+[6.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/autoware_ad_api_specs/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/autoware_ad_api_specs/cmake/autoware_ad_api_specsConfig.cmake
+[6.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/autoware_ad_api_specs/cmake/autoware_ad_api_specsConfig-version.cmake
+[6.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_ad_api_specs/share/autoware_ad_api_specs/package.xml
+[6.308s] Invoked command in '/home/zhijie/autoware/build/autoware_ad_api_specs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_ad_api_specs

@@ -1,0 +1,205 @@
+[0.448s] Invoking command in '/home/zhijie/autoware/build/system_monitor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_external_api_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/system/system_monitor -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/system_monitor
+[25.167s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[25.167s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[25.167s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[25.167s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[25.167s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[25.167s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[25.167s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[25.167s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[25.167s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[25.167s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[25.167s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[25.168s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[25.168s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[25.168s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[25.168s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[25.168s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[25.168s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[25.168s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[25.168s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[25.168s] -- Found Qhull version 8.0.2
+[25.168s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[25.168s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[25.169s] -- NVML include dir: /usr/local/cuda/include
+[25.169s] -- NVML library : /usr/lib/x86_64-linux-gnu/libnvidia-ml.so
+[25.169s] -- HOST_SYSTEM_VERSION: 6.2.0-33-generic
+[25.169s] -- SYSTEM_PROCESSOR: x86_64
+[25.169s] -- CPU PLATFORM: intel
+[25.169s] -- GPU PLATFORM: nvml
+[29.267s] -- Added test 'copyright' to check source files copyright and LICENSE
+[29.281s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[29.288s] -- Configured cppcheck include dirs: /home/zhijie/autoware/src/universe/autoware.universe/system/system_monitor/include
+[29.288s] -- Configured cppcheck exclude dirs and/or files: 
+[29.292s] -- Added test 'lint_cmake' to check CMake code style
+[29.294s] -- Added test 'xmllint' to check XML markup files
+[29.299s] -- Configuring done
+[31.025s] -- Generating done
+[31.057s] -- Build files have been written to: /home/zhijie/autoware/build/system_monitor
+[31.097s] Invoked command in '/home/zhijie/autoware/build/system_monitor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_external_api_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/system/system_monitor -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/system_monitor
+[31.098s] Invoking command in '/home/zhijie/autoware/build/system_monitor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_external_api_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/system_monitor -- -j16 -l16
+[42.140s] [35m[1mConsolidate compiler generated dependencies of target cpu_monitor_lib[0m
+[42.140s] [  2%] [32mBuilding CXX object CMakeFiles/cpu_monitor_lib.dir/src/cpu_monitor/cpu_monitor_base.cpp.o[0m
+[42.142s] In file included from [01m[K/usr/include/boost/bind.hpp:30[m[K,
+[42.142s]                  from [01m[K/usr/include/boost/property_tree/json_parser/detail/parser.hpp:7[m[K,
+[42.142s]                  from [01m[K/usr/include/boost/property_tree/json_parser/detail/read.hpp:13[m[K,
+[42.142s]                  from [01m[K/usr/include/boost/property_tree/json_parser.hpp:16[m[K,
+[42.142s]                  from [01m[K/home/zhijie/autoware/src/universe/autoware.universe/system/system_monitor/src/cpu_monitor/cpu_monitor_base.cpp:26[m[K:
+[42.143s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[42.143s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[42.143s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[62.635s] [  4%] [32mBuilding CXX object CMakeFiles/cpu_monitor_lib.dir/src/cpu_monitor/intel_cpu_monitor.cpp.o[0m
+[80.045s] [  7%] [32m[1mLinking CXX shared library libcpu_monitor_lib.so[0m
+[80.895s] [  7%] Built target cpu_monitor_lib
+[80.912s] [35m[1mConsolidate compiler generated dependencies of target voltage_monitor[0m
+[80.943s] [  9%] [32mBuilding CXX object CMakeFiles/voltage_monitor.dir/rclcpp_components/node_main_voltage_monitor.cpp.o[0m
+[86.212s] [ 11%] [32m[1mLinking CXX executable voltage_monitor[0m
+[86.381s] [ 11%] Built target voltage_monitor
+[86.407s] [35m[1mConsolidate compiler generated dependencies of target hdd_monitor_lib[0m
+[86.417s] [35m[1mConsolidate compiler generated dependencies of target gpu_monitor[0m
+[86.445s] [ 14%] [32mBuilding CXX object CMakeFiles/gpu_monitor.dir/rclcpp_components/node_main_gpu_monitor.cpp.o[0m
+[86.468s] [ 16%] [32mBuilding CXX object CMakeFiles/hdd_monitor_lib.dir/src/hdd_monitor/hdd_monitor.cpp.o[0m
+[91.977s] [ 19%] [32m[1mLinking CXX executable gpu_monitor[0m
+[92.333s] [ 19%] Built target gpu_monitor
+[92.403s] [35m[1mConsolidate compiler generated dependencies of target process_monitor[0m
+[92.484s] [ 21%] [32mBuilding CXX object CMakeFiles/process_monitor.dir/rclcpp_components/node_main_process_monitor.cpp.o[0m
+[98.738s] [ 23%] [32m[1mLinking CXX executable process_monitor[0m
+[99.082s] [ 23%] Built target process_monitor
+[114.193s] [ 26%] [32m[1mLinking CXX shared library libhdd_monitor_lib.so[0m
+[115.107s] [ 26%] Built target hdd_monitor_lib
+[115.145s] [35m[1mConsolidate compiler generated dependencies of target ntp_monitor[0m
+[115.181s] [ 28%] [32mBuilding CXX object CMakeFiles/ntp_monitor.dir/rclcpp_components/node_main_ntp_monitor.cpp.o[0m
+[120.215s] [ 30%] [32m[1mLinking CXX executable ntp_monitor[0m
+[120.378s] [ 30%] Built target ntp_monitor
+[120.398s] [35m[1mConsolidate compiler generated dependencies of target mem_monitor_lib[0m
+[120.450s] [ 33%] [32mBuilding CXX object CMakeFiles/mem_monitor_lib.dir/src/mem_monitor/mem_monitor.cpp.o[0m
+[140.520s] [ 35%] [32m[1mLinking CXX shared library libmem_monitor_lib.so[0m
+[141.709s] [ 35%] Built target mem_monitor_lib
+[141.725s] [35m[1mConsolidate compiler generated dependencies of target net_monitor[0m
+[141.788s] [ 38%] [32mBuilding CXX object CMakeFiles/net_monitor.dir/rclcpp_components/node_main_net_monitor.cpp.o[0m
+[147.764s] [ 40%] [32m[1mLinking CXX executable net_monitor[0m
+[148.073s] [ 40%] Built target net_monitor
+[148.113s] [35m[1mConsolidate compiler generated dependencies of target net_monitor_lib[0m
+[148.190s] [ 42%] [32mBuilding CXX object CMakeFiles/net_monitor_lib.dir/src/net_monitor/net_monitor.cpp.o[0m
+[174.030s] [ 45%] [32mBuilding CXX object CMakeFiles/net_monitor_lib.dir/src/net_monitor/nl80211.cpp.o[0m
+[174.175s] [ 47%] [32m[1mLinking CXX shared library libnet_monitor_lib.so[0m
+[175.031s] [ 47%] Built target net_monitor_lib
+[175.048s] [35m[1mConsolidate compiler generated dependencies of target mem_monitor[0m
+[175.077s] [ 50%] [32mBuilding CXX object CMakeFiles/mem_monitor.dir/rclcpp_components/node_main_mem_monitor.cpp.o[0m
+[180.506s] [ 52%] [32m[1mLinking CXX executable mem_monitor[0m
+[180.704s] [ 52%] Built target mem_monitor
+[180.724s] [35m[1mConsolidate compiler generated dependencies of target ntp_monitor_lib[0m
+[180.786s] [ 54%] [32mBuilding CXX object CMakeFiles/ntp_monitor_lib.dir/src/ntp_monitor/ntp_monitor.cpp.o[0m
+[203.269s] [ 57%] [32m[1mLinking CXX shared library libntp_monitor_lib.so[0m
+[204.219s] [ 57%] Built target ntp_monitor_lib
+[204.237s] [35m[1mConsolidate compiler generated dependencies of target hdd_monitor[0m
+[204.264s] [ 59%] [32mBuilding CXX object CMakeFiles/hdd_monitor.dir/rclcpp_components/node_main_hdd_monitor.cpp.o[0m
+[209.239s] [ 61%] [32m[1mLinking CXX executable hdd_monitor[0m
+[209.410s] [ 61%] Built target hdd_monitor
+[209.428s] [35m[1mConsolidate compiler generated dependencies of target process_monitor_lib[0m
+[209.482s] [ 64%] [32mBuilding CXX object CMakeFiles/process_monitor_lib.dir/src/process_monitor/process_monitor.cpp.o[0m
+[232.192s] [ 66%] [32m[1mLinking CXX shared library libprocess_monitor_lib.so[0m
+[233.021s] [ 66%] Built target process_monitor_lib
+[233.040s] [35m[1mConsolidate compiler generated dependencies of target cpu_monitor[0m
+[233.042s] [35m[1mConsolidate compiler generated dependencies of target gpu_monitor_lib[0m
+[233.098s] [ 69%] [32mBuilding CXX object CMakeFiles/cpu_monitor.dir/rclcpp_components/node_main_cpu_monitor.cpp.o[0m
+[233.105s] [ 71%] [32mBuilding CXX object CMakeFiles/gpu_monitor_lib.dir/src/gpu_monitor/gpu_monitor_base.cpp.o[0m
+[233.119s] [ 73%] [32mBuilding CXX object CMakeFiles/gpu_monitor_lib.dir/src/gpu_monitor/nvml_gpu_monitor.cpp.o[0m
+[239.651s] [ 76%] [32m[1mLinking CXX executable cpu_monitor[0m
+[239.849s] [ 76%] Built target cpu_monitor
+[245.142s] [ 78%] [32m[1mLinking CXX shared library libgpu_monitor_lib.so[0m
+[245.675s] [ 78%] Built target gpu_monitor_lib
+[245.687s] [35m[1mConsolidate compiler generated dependencies of target voltage_monitor_lib[0m
+[245.728s] [ 80%] [32mBuilding CXX object CMakeFiles/voltage_monitor_lib.dir/src/voltage_monitor/voltage_monitor.cpp.o[0m
+[268.937s] [ 83%] [32m[1mLinking CXX shared library libvoltage_monitor_lib.so[0m
+[269.798s] [ 83%] Built target voltage_monitor_lib
+[269.816s] [35m[1mConsolidate compiler generated dependencies of target msr_reader[0m
+[269.858s] [ 85%] [32mBuilding CXX object CMakeFiles/msr_reader.dir/reader/msr_reader/msr_reader.cpp.o[0m
+[278.387s] [ 88%] [32m[1mLinking CXX executable msr_reader[0m
+[317.978s] [ 88%] Built target msr_reader
+[318.001s] [35m[1mConsolidate compiler generated dependencies of target hdd_reader[0m
+[318.004s] [35m[1mConsolidate compiler generated dependencies of target traffic_reader[0m
+[318.090s] [ 90%] [32mBuilding CXX object CMakeFiles/hdd_reader.dir/reader/hdd_reader/hdd_reader.cpp.o[0m
+[318.157s] [ 92%] [32mBuilding CXX object CMakeFiles/traffic_reader.dir/reader/traffic_reader/traffic_reader_main.cpp.o[0m
+[318.175s] [ 95%] [32mBuilding CXX object CMakeFiles/traffic_reader.dir/reader/traffic_reader/traffic_reader_service.cpp.o[0m
+[329.682s] [ 97%] [32m[1mLinking CXX executable hdd_reader[0m
+[331.413s] [100%] [32m[1mLinking CXX executable traffic_reader[0m
+[345.577s] [100%] Built target traffic_reader
+[370.090s] [100%] Built target hdd_reader
+[370.131s] Invoked command in '/home/zhijie/autoware/build/system_monitor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_external_api_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/system_monitor -- -j16 -l16
+[370.243s] Invoking command in '/home/zhijie/autoware/build/system_monitor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_external_api_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/system_monitor
+[398.257s] -- Install configuration: "Release"
+[398.257s] -- Execute custom install script
+[398.257s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/system_monitor/cpu_monitor
+[398.257s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/system_monitor/hdd_monitor
+[398.257s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/system_monitor/mem_monitor
+[398.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/system_monitor/net_monitor
+[398.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/system_monitor/ntp_monitor
+[398.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/system_monitor/process_monitor
+[398.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/system_monitor/gpu_monitor
+[398.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/system_monitor/voltage_monitor
+[398.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/hdd_reader/hdd_reader.hpp
+[398.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/msr_reader/msr_reader.hpp
+[398.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/cpu_monitor/arm_cpu_monitor.hpp
+[398.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/cpu_monitor/cpu_monitor_base.hpp
+[398.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/cpu_monitor/intel_cpu_monitor.hpp
+[398.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/cpu_monitor/raspi_cpu_monitor.hpp
+[398.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/cpu_monitor/tegra_cpu_monitor.hpp
+[398.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/cpu_monitor/unknown_cpu_monitor.hpp
+[398.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/gpu_monitor/gpu_monitor_base.hpp
+[398.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/gpu_monitor/nvml_gpu_monitor.hpp
+[398.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/gpu_monitor/tegra_gpu_monitor.hpp
+[398.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/gpu_monitor/unknown_gpu_monitor.hpp
+[398.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/hdd_monitor/hdd_monitor.hpp
+[398.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/mem_monitor/mem_monitor.hpp
+[398.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/net_monitor/net_monitor.hpp
+[398.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/net_monitor/nl80211.hpp
+[398.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/ntp_monitor/ntp_monitor.hpp
+[398.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/process_monitor/diag_task.hpp
+[398.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/process_monitor/process_monitor.hpp
+[398.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/system_monitor_utility.hpp
+[398.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/system_monitor/voltage_monitor/voltage_monitor.hpp
+[398.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/traffic_reader/traffic_reader_common.hpp
+[398.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/include/traffic_reader/traffic_reader_service.hpp
+[398.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/environment/library_path.sh
+[398.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/environment/library_path.dsv
+[398.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/libcpu_monitor_lib.so
+[398.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/libhdd_monitor_lib.so
+[398.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/libmem_monitor_lib.so
+[398.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/libnet_monitor_lib.so
+[398.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/libntp_monitor_lib.so
+[398.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/libprocess_monitor_lib.so
+[398.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/libgpu_monitor_lib.so
+[398.262s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/libvoltage_monitor_lib.so
+[398.262s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/system_monitor/msr_reader
+[398.262s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/system_monitor/hdd_reader
+[398.262s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/lib/system_monitor/traffic_reader
+[398.262s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/launch/system_monitor.launch.xml
+[398.262s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/config/cpu_monitor.param.yaml
+[398.262s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/config/gpu_monitor.param.yaml
+[398.262s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/config/hdd_monitor.param.yaml
+[398.263s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/config/mem_monitor.param.yaml
+[398.263s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/config/net_monitor.param.yaml
+[398.263s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/config/ntp_monitor.param.yaml
+[398.263s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/config/process_monitor.param.yaml
+[398.263s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/config/voltage_monitor.param.yaml
+[398.263s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/ament_index/resource_index/package_run_dependencies/system_monitor
+[398.263s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/ament_index/resource_index/parent_prefix_path/system_monitor
+[398.263s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/environment/ament_prefix_path.sh
+[398.263s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/environment/ament_prefix_path.dsv
+[398.264s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/environment/path.sh
+[398.264s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/environment/path.dsv
+[398.264s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/local_setup.bash
+[398.264s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/local_setup.sh
+[398.264s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/local_setup.zsh
+[398.264s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/local_setup.dsv
+[398.264s] -- Symlinking: /home/zhijie/autoware/install/system_monitor/share/system_monitor/package.dsv
+[398.264s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/ament_index/resource_index/packages/system_monitor
+[398.264s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/ament_index/resource_index/rclcpp_components/system_monitor
+[398.265s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/cmake/ament_cmake_export_dependencies-extras.cmake
+[398.265s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/cmake/ament_cmake_export_include_directories-extras.cmake
+[398.265s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/cmake/ament_cmake_export_libraries-extras.cmake
+[398.265s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/cmake/system_monitorConfig.cmake
+[398.265s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/cmake/system_monitorConfig-version.cmake
+[398.265s] -- Up-to-date symlink: /home/zhijie/autoware/install/system_monitor/share/system_monitor/package.xml
+[398.403s] Invoked command in '/home/zhijie/autoware/build/system_monitor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_external_api_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/system_monitor

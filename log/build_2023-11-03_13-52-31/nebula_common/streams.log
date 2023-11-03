@@ -1,0 +1,595 @@
+[0.028s] Invoking command in '/home/zhijie/autoware/build/nebula_common': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/nebula_common
+[8.543s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[8.543s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[8.544s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[8.548s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[8.548s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[8.548s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[8.548s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[8.548s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[8.549s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[8.549s] -- Found Qhull version 8.0.2
+[8.549s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[8.549s] -- looking for PCL_COMMON
+[8.549s] -- looking for PCL_KDTREE
+[8.549s] -- looking for PCL_OCTREE
+[8.549s] -- looking for PCL_SEARCH
+[8.549s] -- looking for PCL_SAMPLE_CONSENSUS
+[8.549s] -- looking for PCL_FILTERS
+[8.549s] -- looking for PCL_2D
+[8.550s] -- looking for PCL_GEOMETRY
+[8.550s] -- looking for PCL_IO
+[8.550s] -- looking for PCL_FEATURES
+[8.550s] -- looking for PCL_ML
+[8.550s] -- looking for PCL_SEGMENTATION
+[8.550s] -- looking for PCL_VISUALIZATION
+[8.550s] -- looking for PCL_SURFACE
+[8.550s] -- looking for PCL_REGISTRATION
+[8.550s] -- looking for PCL_KEYPOINTS
+[8.550s] -- looking for PCL_TRACKING
+[8.551s] -- looking for PCL_RECOGNITION
+[8.551s] -- looking for PCL_STEREO
+[8.551s] -- looking for PCL_APPS
+[8.551s] -- looking for PCL_IN_HAND_SCANNER
+[8.552s] -- looking for PCL_MODELER
+[8.552s] -- looking for PCL_POINT_CLOUD_EDITOR
+[8.552s] -- looking for PCL_OUTOFCORE
+[8.552s] -- looking for PCL_PEOPLE
+[8.552s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+[8.552s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[8.552s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[8.553s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[8.553s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.553s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.553s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[8.553s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[8.554s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[8.554s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.554s] -- Configuring done
+[8.554s] -- Generating done
+[8.554s] -- Build files have been written to: /home/zhijie/autoware/build/nebula_common
+[8.554s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[8.554s] [33mCMake Warning (dev) at CMakeLists.txt:6 (find_package):
+[8.554s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[8.554s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[8.555s]   command to set the policy and suppress this warning.
+[8.556s] 
+[8.556s]   CMake variable PCL_ROOT is set to:
+[8.556s] 
+[8.557s]     /usr
+[8.557s] 
+[8.557s]   For compatibility, CMake is ignoring the variable.
+[8.557s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[8.557s] [0m
+[8.568s] Invoked command in '/home/zhijie/autoware/build/nebula_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/nebula_common
+[8.569s] Invoking command in '/home/zhijie/autoware/build/nebula_common': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/nebula_common -- -j16 -l16
+[9.537s] [35m[1mConsolidate compiler generated dependencies of target nebula_common[0m
+[9.537s] [ 33%] [32mBuilding CXX object CMakeFiles/nebula_common.dir/src/nebula_common.cpp.o[0m
+[11.834s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[11.834s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[11.834s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[11.834s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[11.834s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.834s]   241 |     struct [01;35m[K{[m[K \
+[11.834s]       |            [01;35m[K^[m[K
+[11.834s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[11.835s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[11.835s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[11.835s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:337:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[11.835s]   337 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[11.835s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[11.977s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:289:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.977s]   289 |       [01;35m[K{[m[K \
+[11.978s]       |       [01;35m[K^[m[K
+[11.978s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:313:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_RGB[m[K’
+[11.978s]   313 |   [01;36m[KPCL_ADD_UNION_RGB[m[K \
+[11.978s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.978s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:368:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_RGB[m[K’
+[11.978s]   368 |     [01;36m[KPCL_ADD_RGB[m[K;
+[11.978s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[12.105s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.105s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.105s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.105s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.105s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:318:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.105s]   318 |     [01;35m[K{[m[K \
+[12.106s]       |     [01;35m[K^[m[K
+[12.106s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:411:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_INTENSITY[m[K’
+[12.106s]   411 |     [01;36m[KPCL_ADD_INTENSITY[m[K;
+[12.106s]       |     [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.106s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:411:22:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.106s]   411 |     PCL_ADD_INTENSITY[01;35m[K;[m[K
+[12.106s]       |                      [01;35m[K^[m[K
+[12.107s]       |                      [31m[K-[m[K
+[12.107s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:324:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.107s]   324 |     [01;35m[K{[m[K \
+[12.107s]       |     [01;35m[K^[m[K
+[12.107s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:437:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_INTENSITY_8U[m[K’
+[12.107s]   437 |     [01;36m[KPCL_ADD_INTENSITY_8U[m[K;
+[12.107s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[12.108s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:437:25:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.108s]   437 |     PCL_ADD_INTENSITY_8U[01;35m[K;[m[K
+[12.108s]       |                         [01;35m[K^[m[K
+[12.108s]       |                         [31m[K-[m[K
+[12.108s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:330:5:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.108s]   330 |     [01;35m[K{[m[K \
+[12.108s]       |     [01;35m[K^[m[K
+[12.109s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:469:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_INTENSITY_32U[m[K’
+[12.109s]   469 |     [01;36m[KPCL_ADD_INTENSITY_32U[m[K;
+[12.109s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.109s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:469:26:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.109s]   469 |     PCL_ADD_INTENSITY_32U[01;35m[K;[m[K
+[12.109s]       |                          [01;35m[K^[m[K
+[12.109s]       |                          [31m[K-[m[K
+[12.109s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.110s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.110s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.110s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.110s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.110s]   241 |     struct [01;35m[K{[m[K \
+[12.110s]       |            [01;35m[K^[m[K
+[12.110s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.111s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.111s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.111s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:497:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.111s]   497 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.111s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.111s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.111s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.112s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.112s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.112s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:501:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.112s]   501 |       [01;35m[K{[m[K
+[12.112s]       |       [01;35m[K^[m[K
+[12.112s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.112s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.112s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.113s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.113s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.113s]   241 |     struct [01;35m[K{[m[K \
+[12.113s]       |            [01;35m[K^[m[K
+[12.113s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.113s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.113s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.114s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:533:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.114s]   533 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.114s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.114s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.114s]   241 |     struct [01;35m[K{[m[K \
+[12.114s]       |            [01;35m[K^[m[K
+[12.114s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.114s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.114s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.115s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:573:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.115s]   573 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.115s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.115s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:289:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.115s]   289 |       [01;35m[K{[m[K \
+[12.115s]       |       [01;35m[K^[m[K
+[12.115s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:313:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_RGB[m[K’
+[12.116s]   313 |   [01;36m[KPCL_ADD_UNION_RGB[m[K \
+[12.116s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.116s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:574:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_RGB[m[K’
+[12.116s]   574 |     [01;36m[KPCL_ADD_RGB[m[K;
+[12.116s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[12.116s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.116s]   241 |     struct [01;35m[K{[m[K \
+[12.117s]       |            [01;35m[K^[m[K
+[12.117s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.117s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.117s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.117s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:629:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.117s]   629 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.117s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.118s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:289:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.118s]   289 |       [01;35m[K{[m[K \
+[12.118s]       |       [01;35m[K^[m[K
+[12.118s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:313:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_RGB[m[K’
+[12.118s]   313 |   [01;36m[KPCL_ADD_UNION_RGB[m[K \
+[12.118s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.118s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:630:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_RGB[m[K’
+[12.118s]   630 |     [01;36m[KPCL_ADD_RGB[m[K;
+[12.119s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[12.119s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.119s]   241 |     struct [01;35m[K{[m[K \
+[12.119s]       |            [01;35m[K^[m[K
+[12.119s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.119s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.120s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.120s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:636:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.120s]   636 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.120s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.120s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:289:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.120s]   289 |       [01;35m[K{[m[K \
+[12.120s]       |       [01;35m[K^[m[K
+[12.121s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:313:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_RGB[m[K’
+[12.121s]   313 |   [01;36m[KPCL_ADD_UNION_RGB[m[K \
+[12.121s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.121s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:637:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_RGB[m[K’
+[12.121s]   637 |     [01;36m[KPCL_ADD_RGB[m[K;
+[12.121s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[12.121s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.122s]   241 |     struct [01;35m[K{[m[K \
+[12.122s]       |            [01;35m[K^[m[K
+[12.122s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.122s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.122s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.122s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:741:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.123s]   741 |     [01;36m[KPCL_ADD_POINT4D[m[K; // this adds the members x,y,z
+[12.123s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.123s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.123s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.123s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.123s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.123s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:745:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.123s]   745 |       [01;35m[K{[m[K
+[12.124s]       |       [01;35m[K^[m[K
+[12.124s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.124s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.124s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.124s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.124s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.125s]   241 |     struct [01;35m[K{[m[K \
+[12.125s]       |            [01;35m[K^[m[K
+[12.125s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.125s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.125s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.125s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:782:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.126s]   782 |     [01;36m[KPCL_ADD_POINT4D[m[K;    // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.126s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.126s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.126s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.126s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.126s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.126s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:786:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.126s]   786 |       [01;35m[K{[m[K
+[12.127s]       |       [01;35m[K^[m[K
+[12.127s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.127s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.127s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.127s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.127s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.127s]   241 |     struct [01;35m[K{[m[K \
+[12.127s]       |            [01;35m[K^[m[K
+[12.127s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.128s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.128s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.128s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:867:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.128s]   867 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.128s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.129s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.129s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.129s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.129s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.129s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:871:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.129s]   871 |       [01;35m[K{[m[K
+[12.129s]       |       [01;35m[K^[m[K
+[12.129s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.129s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.130s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.130s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.130s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:266:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.130s]   266 |     struct [01;35m[K{[m[K \
+[12.130s]       |            [01;35m[K^[m[K
+[12.130s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:280:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_NORMAL4D[m[K’
+[12.131s]   280 |   [01;36m[KPCL_ADD_UNION_NORMAL4D[m[K \
+[12.131s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.131s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:883:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_NORMAL4D[m[K’
+[12.131s]   883 |     [01;36m[KPCL_ADD_NORMAL4D[m[K; // This adds the member normal[3] which can also be accessed using the point (which is float[4])
+[12.131s]       |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[12.131s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.131s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.131s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.131s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.132s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:887:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.133s]   887 |       [01;35m[K{[m[K
+[12.133s]       |       [01;35m[K^[m[K
+[12.134s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.135s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.135s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.135s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.135s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:266:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.135s]   266 |     struct [01;35m[K{[m[K \
+[12.136s]       |            [01;35m[K^[m[K
+[12.136s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:280:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_NORMAL4D[m[K’
+[12.136s]   280 |   [01;36m[KPCL_ADD_UNION_NORMAL4D[m[K \
+[12.136s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.136s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:924:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_NORMAL4D[m[K’
+[12.136s]   924 |     [01;36m[KPCL_ADD_NORMAL4D[m[K;
+[12.136s]       |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[12.136s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.137s]   241 |     struct [01;35m[K{[m[K \
+[12.137s]       |            [01;35m[K^[m[K
+[12.137s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.137s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.137s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.137s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:955:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.137s]   955 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.137s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.137s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:266:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.138s]   266 |     struct [01;35m[K{[m[K \
+[12.138s]       |            [01;35m[K^[m[K
+[12.138s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:280:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_NORMAL4D[m[K’
+[12.138s]   280 |   [01;36m[KPCL_ADD_UNION_NORMAL4D[m[K \
+[12.138s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.138s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:956:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_NORMAL4D[m[K’
+[12.138s]   956 |     [01;36m[KPCL_ADD_NORMAL4D[m[K; // This adds the member normal[3] which can also be accessed using the point (which is float[4])
+[12.138s]       |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[12.139s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.139s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.139s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.139s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.139s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:960:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.139s]   960 |       [01;35m[K{[m[K
+[12.139s]       |       [01;35m[K^[m[K
+[12.139s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.139s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.140s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.140s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.140s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.140s]   241 |     struct [01;35m[K{[m[K \
+[12.140s]       |            [01;35m[K^[m[K
+[12.140s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.140s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.140s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.140s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1001:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.141s]  1001 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.141s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.141s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:266:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.141s]   266 |     struct [01;35m[K{[m[K \
+[12.141s]       |            [01;35m[K^[m[K
+[12.141s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:280:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_NORMAL4D[m[K’
+[12.141s]   280 |   [01;36m[KPCL_ADD_UNION_NORMAL4D[m[K \
+[12.141s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.141s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1002:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_NORMAL4D[m[K’
+[12.142s]  1002 |     [01;36m[KPCL_ADD_NORMAL4D[m[K; // This adds the member normal[3] which can also be accessed using the point (which is float[4])
+[12.142s]       |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[12.142s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:289:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.142s]   289 |       [01;35m[K{[m[K \
+[12.142s]       |       [01;35m[K^[m[K
+[12.142s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1007:9:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_RGB[m[K’
+[12.142s]  1007 |         [01;36m[KPCL_ADD_UNION_RGB[m[K;
+[12.142s]       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.142s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.143s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.143s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.143s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.143s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1007:26:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.143s]  1007 |         PCL_ADD_UNION_RGB[01;35m[K;[m[K
+[12.143s]       |                          [01;35m[K^[m[K
+[12.143s]       |                          [31m[K-[m[K
+[12.143s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1006:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.143s]  1006 |       [01;35m[K{[m[K
+[12.144s]       |       [01;35m[K^[m[K
+[12.144s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.144s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.144s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.144s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.144s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.144s]   241 |     struct [01;35m[K{[m[K \
+[12.144s]       |            [01;35m[K^[m[K
+[12.144s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.145s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.145s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.145s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1085:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.145s]  1085 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.145s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.145s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:266:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.145s]   266 |     struct [01;35m[K{[m[K \
+[12.145s]       |            [01;35m[K^[m[K
+[12.145s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:280:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_NORMAL4D[m[K’
+[12.146s]   280 |   [01;36m[KPCL_ADD_UNION_NORMAL4D[m[K \
+[12.146s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.146s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1086:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_NORMAL4D[m[K’
+[12.146s]  1086 |     [01;36m[KPCL_ADD_NORMAL4D[m[K; // This adds the member normal[3] which can also be accessed using the point (which is float[4])
+[12.146s]       |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[12.146s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.146s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.146s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.146s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.146s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1090:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.147s]  1090 |       [01;35m[K{[m[K
+[12.147s]       |       [01;35m[K^[m[K
+[12.147s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.147s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.147s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.147s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.147s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.148s]   241 |     struct [01;35m[K{[m[K \
+[12.148s]       |            [01;35m[K^[m[K
+[12.148s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.148s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.148s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.148s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1135:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.148s]  1135 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.148s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.149s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:266:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.149s]   266 |     struct [01;35m[K{[m[K \
+[12.149s]       |            [01;35m[K^[m[K
+[12.149s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:280:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_NORMAL4D[m[K’
+[12.149s]   280 |   [01;36m[KPCL_ADD_UNION_NORMAL4D[m[K \
+[12.149s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.149s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1136:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_NORMAL4D[m[K’
+[12.149s]  1136 |     [01;36m[KPCL_ADD_NORMAL4D[m[K; // This adds the member normal[3] which can also be accessed using the point (which is float[4])
+[12.149s]       |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[12.149s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.150s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.150s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.150s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.150s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1140:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.150s]  1140 |       [01;35m[K{[m[K
+[12.150s]       |       [01;35m[K^[m[K
+[12.150s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.150s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.151s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.151s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.151s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.151s]   241 |     struct [01;35m[K{[m[K \
+[12.151s]       |            [01;35m[K^[m[K
+[12.151s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.151s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.151s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.151s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1187:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.152s]  1187 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.152s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.152s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.152s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.152s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.152s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.152s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1191:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.152s]  1191 |       [01;35m[K{[m[K
+[12.152s]       |       [01;35m[K^[m[K
+[12.153s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.153s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.154s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.154s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.154s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.154s]   241 |     struct [01;35m[K{[m[K \
+[12.154s]       |            [01;35m[K^[m[K
+[12.154s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.154s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.154s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.154s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1226:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.155s]  1226 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.155s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.155s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.155s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.155s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.155s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.155s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1230:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.155s]  1230 |       [01;35m[K{[m[K
+[12.155s]       |       [01;35m[K^[m[K
+[12.156s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1326:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.156s]  1326 |       [01;35m[K{[m[K
+[12.156s]       |       [01;35m[K^[m[K
+[12.156s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1519:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.156s]  1519 |       [01;35m[K{[m[K
+[12.156s]       |       [01;35m[K^[m[K
+[12.190s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1738:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.190s]  1738 |       [01;35m[K{[m[K
+[12.190s]       |       [01;35m[K^[m[K
+[12.190s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.190s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.191s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.191s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.191s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.191s]   241 |     struct [01;35m[K{[m[K \
+[12.191s]       |            [01;35m[K^[m[K
+[12.191s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.191s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.191s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.191s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1765:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.192s]  1765 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.192s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.192s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.192s]   241 |     struct [01;35m[K{[m[K \
+[12.192s]       |            [01;35m[K^[m[K
+[12.192s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.192s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.192s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.193s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1818:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.193s]  1818 |     [01;36m[KPCL_ADD_POINT4D[m[K; // This adds the members x,y,z which can also be accessed using the point (which is float[4])
+[12.193s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.193s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:266:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.193s]   266 |     struct [01;35m[K{[m[K \
+[12.193s]       |            [01;35m[K^[m[K
+[12.193s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:280:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_NORMAL4D[m[K’
+[12.193s]   280 |   [01;36m[KPCL_ADD_UNION_NORMAL4D[m[K \
+[12.193s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.194s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1819:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_NORMAL4D[m[K’
+[12.194s]  1819 |     [01;36m[KPCL_ADD_NORMAL4D[m[K; // This adds the member normal[3] which can also be accessed using the point (which is float[4])
+[12.194s]       |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[12.194s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:289:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.194s]   289 |       [01;35m[K{[m[K \
+[12.194s]       |       [01;35m[K^[m[K
+[12.194s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1824:9:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_RGB[m[K’
+[12.194s]  1824 |         [01;36m[KPCL_ADD_UNION_RGB[m[K;
+[12.194s]       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.195s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.195s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.195s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.195s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.195s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1824:26:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.195s]  1824 |         PCL_ADD_UNION_RGB[01;35m[K;[m[K
+[12.195s]       |                          [01;35m[K^[m[K
+[12.195s]       |                          [31m[K-[m[K
+[12.196s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1823:7:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.196s]  1823 |       [01;35m[K{[m[K
+[12.196s]       |       [01;35m[K^[m[K
+[12.196s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[12.196s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:5[m[K,
+[12.196s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/nebula_common.hpp:4[m[K,
+[12.196s]                  from [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/src/nebula_common.cpp:1[m[K:
+[12.196s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.196s]   241 |     struct [01;35m[K{[m[K \
+[12.197s]       |            [01;35m[K^[m[K
+[12.197s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.197s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.197s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.197s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1867:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.197s]  1867 |     [01;36m[KPCL_ADD_POINT4D[m[K;
+[12.197s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.474s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.474s]   241 |     struct [01;35m[K{[m[K \
+[12.474s]       |            [01;35m[K^[m[K
+[12.475s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.475s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.475s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.475s] [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:13:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.475s]    13 |   [01;36m[KPCL_ADD_POINT4D[m[K;
+[12.475s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.475s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.475s]   241 |     struct [01;35m[K{[m[K \
+[12.475s]       |            [01;35m[K^[m[K
+[12.476s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.476s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.476s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.476s] [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:21:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.476s]    21 |   [01;36m[KPCL_ADD_POINT4D[m[K;
+[12.476s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.476s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:241:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[12.476s]   241 |     struct [01;35m[K{[m[K \
+[12.476s]       |            [01;35m[K^[m[K
+[12.477s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:259:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_UNION_POINT4D[m[K’
+[12.477s]   259 |   [01;36m[KPCL_ADD_UNION_POINT4D[m[K \
+[12.477s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.477s] [01m[K/home/zhijie/autoware/src/sensor_component/external/nebula/nebula_common/include/nebula_common/point_types.hpp:48:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KPCL_ADD_POINT4D[m[K’
+[12.477s]    48 |   [01;36m[KPCL_ADD_POINT4D[m[K;
+[12.477s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[13.084s] [ 66%] [32mBuilding CXX object CMakeFiles/nebula_common.dir/src/velodyne/velodyne_calibration_decoder.cpp.o[0m
+[16.482s] [100%] [32m[1mLinking CXX shared library libnebula_common.so[0m
+[16.876s] [100%] Built target nebula_common
+[16.891s] Invoked command in '/home/zhijie/autoware/build/nebula_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/nebula_common -- -j16 -l16
+[16.919s] Invoking command in '/home/zhijie/autoware/build/nebula_common': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/nebula_common
+[19.149s] -- Install configuration: "Release"
+[19.149s] -- Execute custom install script
+[19.149s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/include/nebula_common/hesai/hesai_common.hpp
+[19.150s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/include/nebula_common/hesai/hesai_status.hpp
+[19.150s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/include/nebula_common/nebula_common.hpp
+[19.150s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/include/nebula_common/nebula_status.hpp
+[19.150s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/include/nebula_common/point_types.hpp
+[19.152s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/include/nebula_common/velodyne/velodyne_calibration_decoder.hpp
+[19.156s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/include/nebula_common/velodyne/velodyne_common.hpp
+[19.156s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/include/nebula_common/velodyne/velodyne_status.hpp
+[19.157s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/environment/library_path.sh
+[19.157s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/environment/library_path.dsv
+[19.157s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/lib/libnebula_common.so
+[19.157s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/ament_index/resource_index/package_run_dependencies/nebula_common
+[19.157s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/ament_index/resource_index/parent_prefix_path/nebula_common
+[19.157s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/environment/ament_prefix_path.sh
+[19.158s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/environment/ament_prefix_path.dsv
+[19.158s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/environment/path.sh
+[19.158s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/environment/path.dsv
+[19.158s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/local_setup.bash
+[19.158s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/local_setup.sh
+[19.158s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/local_setup.zsh
+[19.158s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/local_setup.dsv
+[19.158s] -- Symlinking: /home/zhijie/autoware/install/nebula_common/share/nebula_common/package.dsv
+[19.159s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/ament_index/resource_index/packages/nebula_common
+[19.159s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/cmake/ament_cmake_export_dependencies-extras.cmake
+[19.159s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/cmake/ament_cmake_export_include_directories-extras.cmake
+[19.159s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/cmake/ament_cmake_export_libraries-extras.cmake
+[19.159s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/cmake/nebula_commonConfig.cmake
+[19.159s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/cmake/nebula_commonConfig-version.cmake
+[19.160s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_common/share/nebula_common/package.xml
+[19.170s] Invoked command in '/home/zhijie/autoware/build/nebula_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/nebula_common

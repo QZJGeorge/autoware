@@ -1,0 +1,6 @@
+Invoking command in '/home/zhijie/autoware/build/heaphook': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/middleware/external/heaphook -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/heaphook
+Invoked command in '/home/zhijie/autoware/build/heaphook' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/middleware/external/heaphook -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/heaphook
+Invoking command in '/home/zhijie/autoware/build/heaphook': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/heaphook -- -j16 -l16
+Invoked command in '/home/zhijie/autoware/build/heaphook' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/heaphook -- -j16 -l16
+Invoking command in '/home/zhijie/autoware/build/heaphook': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/heaphook
+Invoked command in '/home/zhijie/autoware/build/heaphook' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/heaphook

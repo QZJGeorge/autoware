@@ -1,0 +1,58 @@
+[0.039s] Invoking command in '/home/zhijie/autoware/build/velodyne_monitor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/system/velodyne_monitor -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/velodyne_monitor
+[1.521s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[1.530s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.530s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.531s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.531s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.535s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.536s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.536s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.537s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.537s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.537s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.537s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.537s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.537s] -- Configured cppcheck include dirs: /home/zhijie/autoware/src/universe/autoware.universe/system/velodyne_monitor/include
+[1.538s] -- Configured cppcheck exclude dirs and/or files: 
+[1.538s] -- Added test 'lint_cmake' to check CMake code style
+[1.538s] -- Added test 'xmllint' to check XML markup files
+[1.538s] -- Configuring done
+[1.538s] -- Generating done
+[1.538s] -- Build files have been written to: /home/zhijie/autoware/build/velodyne_monitor
+[1.545s] Invoked command in '/home/zhijie/autoware/build/velodyne_monitor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/system/velodyne_monitor -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/velodyne_monitor
+[1.546s] Invoking command in '/home/zhijie/autoware/build/velodyne_monitor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/velodyne_monitor -- -j16 -l16
+[5.122s] [35m[1mConsolidate compiler generated dependencies of target velodyne_monitor[0m
+[5.137s] [ 33%] [32mBuilding CXX object CMakeFiles/velodyne_monitor.dir/src/velodyne_monitor_node.cpp.o[0m
+[13.650s] [ 66%] [32mBuilding CXX object CMakeFiles/velodyne_monitor.dir/src/velodyne_monitor.cpp.o[0m
+[30.349s] [100%] [32m[1mLinking CXX executable velodyne_monitor[0m
+[30.707s] [100%] Built target velodyne_monitor
+[30.716s] Invoked command in '/home/zhijie/autoware/build/velodyne_monitor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/velodyne_monitor -- -j16 -l16
+[30.739s] Invoking command in '/home/zhijie/autoware/build/velodyne_monitor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/velodyne_monitor
+[32.431s] -- Install configuration: "Release"
+[32.431s] -- Execute custom install script
+[32.431s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/include/velodyne_monitor/velodyne_monitor.hpp
+[32.431s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/lib/velodyne_monitor/velodyne_monitor
+[32.431s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/launch/velodyne_monitor.launch.xml
+[32.431s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/config/HDL-32E.param.yaml
+[32.431s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/config/VLP-16.param.yaml
+[32.431s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/config/VLP-32C.param.yaml
+[32.431s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/config/VLS-128.param.yaml
+[32.432s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/config/Velarray_M1600.param.yaml
+[32.432s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/ament_index/resource_index/package_run_dependencies/velodyne_monitor
+[32.432s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/ament_index/resource_index/parent_prefix_path/velodyne_monitor
+[32.432s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/environment/ament_prefix_path.sh
+[32.432s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/environment/ament_prefix_path.dsv
+[32.432s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/environment/path.sh
+[32.432s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/environment/path.dsv
+[32.432s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/local_setup.bash
+[32.432s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/local_setup.sh
+[32.432s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/local_setup.zsh
+[32.433s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/local_setup.dsv
+[32.433s] -- Symlinking: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/package.dsv
+[32.433s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/ament_index/resource_index/packages/velodyne_monitor
+[32.433s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/cmake/ament_cmake_export_dependencies-extras.cmake
+[32.433s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/cmake/ament_cmake_export_include_directories-extras.cmake
+[32.433s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/cmake/velodyne_monitorConfig.cmake
+[32.433s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/cmake/velodyne_monitorConfig-version.cmake
+[32.433s] -- Up-to-date symlink: /home/zhijie/autoware/install/velodyne_monitor/share/velodyne_monitor/package.xml
+[32.458s] Invoked command in '/home/zhijie/autoware/build/velodyne_monitor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/velodyne_monitor

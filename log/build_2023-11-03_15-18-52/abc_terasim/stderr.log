@@ -1,0 +1,8 @@
+[01m[K/home/zhijie/autoware/src/terasim/abc_terasim/src/abc_context_converter.cpp:[m[K In constructor ‘[01m[Kabc_context_converter::AbcContextConverter::AbcContextConverter(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/abc_terasim/src/abc_context_converter.cpp:27:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kcav_context_history_copy[m[K’ was not declared in this scope; did you mean ‘[01m[Kcav_context_history_json[m[K’?
+   27 |     for (json::iterator bvv = [01;31m[Kcav_context_history_copy[m[K.begin(); bvv != cav_context_history_copy.end(); ++bvv) {
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                               [32m[Kcav_context_history_json[m[K
+gmake[2]: *** [CMakeFiles/abc_context_converter_component.dir/build.make:76: CMakeFiles/abc_context_converter_component.dir/src/abc_context_converter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/abc_context_converter_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

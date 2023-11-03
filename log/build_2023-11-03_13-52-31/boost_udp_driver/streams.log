@@ -1,0 +1,110 @@
+[0.021s] Invoking command in '/home/zhijie/autoware/build/boost_udp_driver': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/zhijie/autoware/src/sensor_component/external/transport_drivers/udp_driver -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/boost_udp_driver
+[2.155s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[2.155s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.155s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.156s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.156s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.164s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.164s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.164s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.164s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[2.164s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.164s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.164s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.164s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.164s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.165s] -- Configured cppcheck include dirs: /home/zhijie/autoware/src/sensor_component/external/transport_drivers/udp_driver/include
+[2.165s] -- Configured cppcheck exclude dirs and/or files: 
+[2.165s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.165s] -- Configured cpplint exclude dirs and/or files: 
+[2.165s] -- Added test 'lint_cmake' to check CMake code style
+[2.165s] -- Added test 'uncrustify' to check C / C++ code style
+[2.165s] -- Configured uncrustify additional arguments: 
+[2.165s] -- Added test 'xmllint' to check XML markup files
+[2.165s] -- Configuring done
+[2.165s] -- Generating done
+[2.166s] -- Build files have been written to: /home/zhijie/autoware/build/boost_udp_driver
+[2.197s] Invoked command in '/home/zhijie/autoware/build/boost_udp_driver' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/zhijie/autoware/src/sensor_component/external/transport_drivers/udp_driver -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/boost_udp_driver
+[2.200s] Invoking command in '/home/zhijie/autoware/build/boost_udp_driver': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/zhijie/autoware/build/boost_udp_driver -- -j16 -l16
+[2.957s] [35m[1mConsolidate compiler generated dependencies of target boost_udp_driver[0m
+[2.958s] [  4%] [32mBuilding CXX object CMakeFiles/boost_udp_driver.dir/src/udp_socket.cpp.o[0m
+[7.779s] [  8%] [32mBuilding CXX object CMakeFiles/boost_udp_driver.dir/src/udp_driver.cpp.o[0m
+[11.087s] [ 12%] [32m[1mLinking CXX shared library libboost_udp_driver.so[0m
+[11.281s] [ 12%] Built target boost_udp_driver
+[11.295s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[11.311s] [ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[22.756s] [ 20%] [32m[1mLinking CXX static library libgtest.a[0m
+[22.870s] [ 20%] Built target gtest
+[22.948s] [35m[1mConsolidate compiler generated dependencies of target boost_udp_driver_nodes[0m
+[23.044s] [ 25%] [32mBuilding CXX object CMakeFiles/boost_udp_driver_nodes.dir/src/udp_receiver_node.cpp.o[0m
+[34.610s] [ 29%] [32mBuilding CXX object CMakeFiles/boost_udp_driver_nodes.dir/src/udp_sender_node.cpp.o[0m
+[52.364s] [ 33%] [32m[1mLinking CXX shared library libboost_udp_driver_nodes.so[0m
+[52.676s] [ 33%] Built target boost_udp_driver_nodes
+[52.690s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[52.704s] [ 37%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[53.377s] [ 41%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[53.404s] [ 41%] Built target gtest_main
+[53.415s] [35m[1mConsolidate compiler generated dependencies of target udp_bridge_node_exe[0m
+[53.440s] [ 45%] [32mBuilding CXX object CMakeFiles/udp_bridge_node_exe.dir/src/udp_bridge_node.cpp.o[0m
+[60.352s] [ 50%] [32m[1mLinking CXX executable udp_bridge_node_exe[0m
+[60.562s] [ 50%] Built target udp_bridge_node_exe
+[60.579s] [35m[1mConsolidate compiler generated dependencies of target test_udp_driver_nodes[0m
+[60.617s] [ 54%] [32mBuilding CXX object CMakeFiles/test_udp_driver_nodes.dir/test/test_udp_driver_nodes.cpp.o[0m
+[82.602s] [ 58%] [32m[1mLinking CXX executable test_udp_driver_nodes[0m
+[82.911s] [ 58%] Built target test_udp_driver_nodes
+[82.927s] [35m[1mConsolidate compiler generated dependencies of target test_udp_driver[0m
+[82.967s] [ 62%] [32mBuilding CXX object CMakeFiles/test_udp_driver.dir/test/test_udp_driver.cpp.o[0m
+[89.136s] [ 66%] [32m[1mLinking CXX executable test_udp_driver[0m
+[89.275s] [ 66%] Built target test_udp_driver
+[89.285s] [35m[1mConsolidate compiler generated dependencies of target test_udp_data[0m
+[89.289s] [35m[1mConsolidate compiler generated dependencies of target udp_sender_node_exe[0m
+[89.289s] [35m[1mConsolidate compiler generated dependencies of target test_udp_socket[0m
+[89.320s] [ 70%] [32mBuilding CXX object CMakeFiles/udp_sender_node_exe.dir/rclcpp_components/node_main_udp_sender_node_exe.cpp.o[0m
+[89.320s] [ 75%] [32mBuilding CXX object CMakeFiles/test_udp_data.dir/test/test_udp_data.cpp.o[0m
+[89.325s] [ 79%] [32mBuilding CXX object CMakeFiles/test_udp_socket.dir/test/test_udp_socket.cpp.o[0m
+[94.013s] [ 83%] [32m[1mLinking CXX executable test_udp_socket[0m
+[94.242s] [ 83%] Built target test_udp_socket
+[94.292s] [35m[1mConsolidate compiler generated dependencies of target udp_receiver_node_exe[0m
+[94.337s] [ 87%] [32mBuilding CXX object CMakeFiles/udp_receiver_node_exe.dir/rclcpp_components/node_main_udp_receiver_node_exe.cpp.o[0m
+[94.762s] [ 91%] [32m[1mLinking CXX executable udp_sender_node_exe[0m
+[94.957s] [ 91%] Built target udp_sender_node_exe
+[95.200s] [ 95%] [32m[1mLinking CXX executable test_udp_data[0m
+[95.481s] [ 95%] Built target test_udp_data
+[99.966s] [100%] [32m[1mLinking CXX executable udp_receiver_node_exe[0m
+[100.154s] [100%] Built target udp_receiver_node_exe
+[100.220s] Invoked command in '/home/zhijie/autoware/build/boost_udp_driver' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/zhijie/autoware/build/boost_udp_driver -- -j16 -l16
+[100.291s] Invoking command in '/home/zhijie/autoware/build/boost_udp_driver': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/zhijie/autoware/build/boost_udp_driver
+[103.003s] -- Install configuration: "Release"
+[103.003s] -- Execute custom install script
+[103.003s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/lib/boost_udp_driver/udp_receiver_node_exe
+[103.004s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/lib/boost_udp_driver/udp_sender_node_exe
+[103.004s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/include/boost_udp_driver/udp_driver.hpp
+[103.004s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/include/boost_udp_driver/udp_receiver_node.hpp
+[103.004s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/include/boost_udp_driver/udp_sender_node.hpp
+[103.004s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/include/boost_udp_driver/udp_socket.hpp
+[103.004s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/include/boost_udp_driver/visibility_control.hpp
+[103.004s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/environment/library_path.sh
+[103.004s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/environment/library_path.dsv
+[103.004s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/lib/libboost_udp_driver.so
+[103.004s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/lib/libboost_udp_driver_nodes.so
+[103.005s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/lib/boost_udp_driver/udp_bridge_node_exe
+[103.005s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/ament_index/resource_index/package_run_dependencies/boost_udp_driver
+[103.005s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/ament_index/resource_index/parent_prefix_path/boost_udp_driver
+[103.005s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/environment/ament_prefix_path.sh
+[103.005s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/environment/ament_prefix_path.dsv
+[103.005s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/environment/path.sh
+[103.005s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/environment/path.dsv
+[103.005s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/local_setup.bash
+[103.005s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/local_setup.sh
+[103.006s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/local_setup.zsh
+[103.006s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/local_setup.dsv
+[103.006s] -- Symlinking: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/package.dsv
+[103.006s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/ament_index/resource_index/packages/boost_udp_driver
+[103.006s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/ament_index/resource_index/rclcpp_components/boost_udp_driver
+[103.006s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[103.006s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[103.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[103.010s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/cmake/boost_udp_driverConfig.cmake
+[103.011s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/cmake/boost_udp_driverConfig-version.cmake
+[103.011s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_udp_driver/share/boost_udp_driver/package.xml
+[103.031s] Invoked command in '/home/zhijie/autoware/build/boost_udp_driver' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/zhijie/autoware/build/boost_udp_driver

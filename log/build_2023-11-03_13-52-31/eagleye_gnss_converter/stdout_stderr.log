@@ -1,0 +1,53 @@
+-- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/zhijie/autoware/src/universe/external/eagleye/eagleye_util/gnss_converter/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhijie/autoware/build/eagleye_gnss_converter
+[35m[1mConsolidate compiler generated dependencies of target gnss_converter[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/gnss_converter.dir/src/nmea2fix_core.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/gnss_converter.dir/src/gnss_converter_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable gnss_converter[0m
+[100%] Built target gnss_converter
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/launch/gnss_converter.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/include/gnss_converter/nmea2fix.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/lib/eagleye_gnss_converter/gnss_converter
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/ament_index/resource_index/package_run_dependencies/eagleye_gnss_converter
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/ament_index/resource_index/parent_prefix_path/eagleye_gnss_converter
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/ament_index/resource_index/packages/eagleye_gnss_converter
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/cmake/eagleye_gnss_converterConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/cmake/eagleye_gnss_converterConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_gnss_converter/share/eagleye_gnss_converter/package.xml

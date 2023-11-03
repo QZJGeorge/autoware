@@ -1,0 +1,52 @@
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found tlsf: 0.7.0 (/opt/ros/humble/share/tlsf/cmake)
+-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhijie/autoware/build/heaphook
+[35m[1mConsolidate compiler generated dependencies of target app[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/app.dir/src/app.cpp.o[0m
+[01m[K/home/zhijie/autoware/src/middleware/external/heaphook/src/app.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/zhijie/autoware/src/middleware/external/heaphook/src/app.cpp:48:26:[m[K [01;35m[Kwarning: [m[K‘[01m[Kptr[m[K’ may be used uninitialized in this function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   48 |     void * ptr2 = [01;35m[Krealloc(ptr, 1212)[m[K;
+      |                   [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[ 33%] [32m[1mLinking CXX executable app[0m
+[ 33%] Built target app
+[35m[1mConsolidate compiler generated dependencies of target preloaded_tlsf[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/preloaded_tlsf.dir/src/preloaded_tlsf.cpp.o[0m
+[ 66%] [32m[1mLinking CXX shared library libpreloaded_tlsf.so[0m
+[ 66%] Built target preloaded_tlsf
+[35m[1mConsolidate compiler generated dependencies of target preloaded_heaptrack[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/preloaded_heaptrack.dir/src/preloaded.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libpreloaded_heaptrack.so[0m
+[100%] Built target preloaded_heaptrack
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/lib/libpreloaded_heaptrack.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/lib/libpreloaded_tlsf.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/bin/app
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/ament_index/resource_index/package_run_dependencies/heaphook
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/ament_index/resource_index/parent_prefix_path/heaphook
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/heaphook/share/heaphook/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/ament_index/resource_index/packages/heaphook
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/cmake/heaphookConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/cmake/heaphookConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/package.xml

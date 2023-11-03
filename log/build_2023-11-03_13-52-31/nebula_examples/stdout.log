@@ -1,0 +1,121 @@
+-- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- looking for PCL_COMMON
+-- Found PCL: pcl_common;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization  
+-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Found Qhull version 8.0.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- looking for PCL_KDTREE
+-- looking for PCL_OCTREE
+-- looking for PCL_SEARCH
+-- looking for PCL_SAMPLE_CONSENSUS
+-- looking for PCL_FILTERS
+-- looking for PCL_2D
+-- looking for PCL_GEOMETRY
+-- looking for PCL_IO
+-- looking for PCL_FEATURES
+-- looking for PCL_ML
+-- looking for PCL_SEGMENTATION
+-- looking for PCL_VISUALIZATION
+-- looking for PCL_SURFACE
+-- looking for PCL_REGISTRATION
+-- looking for PCL_KEYPOINTS
+-- looking for PCL_TRACKING
+-- looking for PCL_RECOGNITION
+-- looking for PCL_STEREO
+-- looking for PCL_APPS
+-- looking for PCL_IN_HAND_SCANNER
+-- looking for PCL_MODELER
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- looking for PCL_OUTOFCORE
+-- looking for PCL_PEOPLE
+-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+-- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found nebula_decoders: 0.1.0 (/home/zhijie/autoware/install/nebula_decoders/share/nebula_decoders/cmake)
+-- Found nebula_ros: 0.1.0 (/home/zhijie/autoware/install/nebula_ros/share/nebula_ros/cmake)
+-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/zhijie/autoware/src/sensor_component/external/nebula/nebula_examples/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhijie/autoware/build/nebula_examples
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_offline_extract_pcd[0m
+[  8%] [32mBuilding CXX object CMakeFiles/hesai_ros_offline_extract_pcd.dir/src/hesai/hesai_ros_offline_extract_pcd.cpp.o[0m
+[ 16%] [32m[1mLinking CXX shared library libhesai_ros_offline_extract_pcd.so[0m
+[ 16%] Built target hesai_ros_offline_extract_pcd
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_offline_extract_bag_pcd[0m
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_offline_extract_pcd_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/hesai_ros_offline_extract_bag_pcd.dir/src/hesai/hesai_ros_offline_extract_bag_pcd.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/hesai_ros_offline_extract_pcd_node.dir/src/hesai/hesai_ros_offline_extract_pcd_main.cpp.o[0m
+[ 41%] [32m[1mLinking CXX executable hesai_ros_offline_extract_pcd_node[0m
+[ 41%] Built target hesai_ros_offline_extract_pcd_node
+[ 50%] [32m[1mLinking CXX shared library libhesai_ros_offline_extract_bag_pcd.so[0m
+[ 50%] Built target hesai_ros_offline_extract_bag_pcd
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_offline_extract_bag_pcd_node[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/hesai_ros_offline_extract_bag_pcd_node.dir/src/hesai/hesai_ros_offline_extract_bag_pcd_main.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable hesai_ros_offline_extract_bag_pcd_node[0m
+[ 66%] Built target hesai_ros_offline_extract_bag_pcd_node
+[35m[1mConsolidate compiler generated dependencies of target velodyne_ros_offline_extract_bag_pcd[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/velodyne_ros_offline_extract_bag_pcd.dir/src/velodyne/velodyne_ros_offline_extract_bag_pcd.cpp.o[0m
+[ 83%] [32m[1mLinking CXX shared library libvelodyne_ros_offline_extract_bag_pcd.so[0m
+[ 83%] Built target velodyne_ros_offline_extract_bag_pcd
+[35m[1mConsolidate compiler generated dependencies of target velodyne_ros_offline_extract_bag_pcd_node[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/velodyne_ros_offline_extract_bag_pcd_node.dir/src/velodyne/velodyne_ros_offline_extract_bag_pcd_main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable velodyne_ros_offline_extract_bag_pcd_node[0m
+[100%] Built target velodyne_ros_offline_extract_bag_pcd_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/include/hesai/hesai_ros_offline_extract_bag_pcd.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/include/hesai/hesai_ros_offline_extract_pcd.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/include/velodyne/velodyne_ros_offline_extract_bag_pcd.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/lib/libhesai_ros_offline_extract_pcd.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/lib/libhesai_ros_offline_extract_bag_pcd.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/lib/libvelodyne_ros_offline_extract_bag_pcd.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/lib/nebula_examples/hesai_ros_offline_extract_pcd_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/lib/nebula_examples/hesai_ros_offline_extract_bag_pcd_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/lib/nebula_examples/velodyne_ros_offline_extract_bag_pcd_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/launch/hesai_offline.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/launch/hesai_offline_bag_pcd.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/launch/velodyne_offline_bag_pcd.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/ament_index/resource_index/package_run_dependencies/nebula_examples
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/ament_index/resource_index/parent_prefix_path/nebula_examples
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/ament_index/resource_index/packages/nebula_examples
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/cmake/nebula_examplesConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/cmake/nebula_examplesConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_examples/share/nebula_examples/package.xml

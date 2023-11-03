@@ -1,0 +1,44 @@
+[0.033s] Invoking command in '/home/zhijie/autoware/build/kalman_filter': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/kalman_filter -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/kalman_filter
+[13.861s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[13.861s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[13.862s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[13.862s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[13.865s] -- Configured cppcheck include dirs: /home/zhijie/autoware/src/universe/autoware.universe/common/kalman_filter/include
+[13.865s] -- Configured cppcheck exclude dirs and/or files: 
+[13.866s] -- Configuring done
+[13.867s] -- Generating done
+[13.867s] -- Build files have been written to: /home/zhijie/autoware/build/kalman_filter
+[13.890s] Invoked command in '/home/zhijie/autoware/build/kalman_filter' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/kalman_filter -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/kalman_filter
+[13.894s] Invoking command in '/home/zhijie/autoware/build/kalman_filter': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/kalman_filter -- -j16 -l16
+[15.374s] [35m[1mConsolidate compiler generated dependencies of target kalman_filter[0m
+[15.374s] [ 33%] [32mBuilding CXX object CMakeFiles/kalman_filter.dir/src/kalman_filter.cpp.o[0m
+[15.374s] [ 66%] [32mBuilding CXX object CMakeFiles/kalman_filter.dir/src/time_delay_kalman_filter.cpp.o[0m
+[25.448s] [100%] [32m[1mLinking CXX shared library libkalman_filter.so[0m
+[25.613s] [100%] Built target kalman_filter
+[25.689s] Invoked command in '/home/zhijie/autoware/build/kalman_filter' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/kalman_filter -- -j16 -l16
+[25.767s] Invoking command in '/home/zhijie/autoware/build/kalman_filter': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/kalman_filter
+[25.805s] -- Install configuration: "Release"
+[25.806s] -- Execute custom install script
+[25.806s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/include/kalman_filter/kalman_filter.hpp
+[25.806s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/include/kalman_filter/time_delay_kalman_filter.hpp
+[25.806s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/environment/library_path.sh
+[25.806s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/environment/library_path.dsv
+[25.806s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/lib/libkalman_filter.so
+[25.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/ament_index/resource_index/package_run_dependencies/kalman_filter
+[25.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/ament_index/resource_index/parent_prefix_path/kalman_filter
+[25.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/environment/ament_prefix_path.sh
+[25.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/environment/ament_prefix_path.dsv
+[25.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/environment/path.sh
+[25.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/environment/path.dsv
+[25.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/local_setup.bash
+[25.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/local_setup.sh
+[25.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/local_setup.zsh
+[25.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/local_setup.dsv
+[25.808s] -- Symlinking: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/package.dsv
+[25.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/ament_index/resource_index/packages/kalman_filter
+[25.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/cmake/ament_cmake_export_include_directories-extras.cmake
+[25.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/cmake/ament_cmake_export_libraries-extras.cmake
+[25.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/cmake/kalman_filterConfig.cmake
+[25.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/cmake/kalman_filterConfig-version.cmake
+[25.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/kalman_filter/share/kalman_filter/package.xml
+[25.967s] Invoked command in '/home/zhijie/autoware/build/kalman_filter' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/kalman_filter

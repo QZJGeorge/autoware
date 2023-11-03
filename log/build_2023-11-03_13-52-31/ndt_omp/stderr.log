@@ -1,0 +1,23 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+In file included from [01m[K/home/zhijie/autoware/src/universe/external/ndt_omp/src/pclomp/gicp_omp.cpp:2[m[K:
+/home/zhijie/autoware/src/universe/external/ndt_omp/include/pclomp/gicp_omp_impl.hpp: In instantiation of ‘[01m[Kvoid pclomp::GeneralizedIterativeClosestPoint<PointSource, PointTarget>::estimateRigidTransformationBFGS(const PointCloudSource&, const std::vector<int, std::allocator<int> >&, const PointCloudTarget&, const std::vector<int, std::allocator<int> >&, Eigen::Matrix4f&) [with PointSource = pcl::PointXYZ; PointTarget = pcl::PointXYZ; pclomp::GeneralizedIterativeClosestPoint<PointSource, PointTarget>::PointCloudSource = pcl::PointCloud<pcl::PointXYZ>; pclomp::GeneralizedIterativeClosestPoint<PointSource, PointTarget>::PointCloudTarget = pcl::PointCloud<pcl::PointXYZ>; Eigen::Matrix4f = Eigen::Matrix<float, 4, 4>][m[K’:
+[01m[K/home/zhijie/autoware/src/universe/external/ndt_omp/src/pclomp/gicp_omp.cpp:4:24:[m[K   required from here
+[01m[K/home/zhijie/autoware/src/universe/external/ndt_omp/include/pclomp/gicp_omp_impl.hpp:230:31:[m[K [01;35m[Kwarning: [m[K‘[01m[KBFGSSpace::Status BFGS<FunctorType>::testGradient(BFGS<FunctorType>::Scalar) [with FunctorType = pclomp::GeneralizedIterativeClosestPoint<pcl::PointXYZ, pcl::PointXYZ>::OptimizationFunctorWithIndices; BFGS<FunctorType>::Scalar = double][m[K’ is deprecated: Use `testGradient()` instead (It will be removed in PCL 1.13) [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  230 |     result = [01;35m[Kbfgs.testGradient(gradient_tol)[m[K;
+      |              [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/zhijie/autoware/src/universe/external/ndt_omp/include/pclomp/gicp_omp.h:45[m[K,
+                 from [01m[K/home/zhijie/autoware/src/universe/external/ndt_omp/src/pclomp/gicp_omp.cpp:1[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/registration/bfgs.h:164:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  164 |   BFGSSpace::Status [01;36m[KtestGradient[m[K(Scalar) { return testGradient(); }
+      |                     [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/zhijie/autoware/src/universe/external/ndt_omp/src/pclomp/gicp_omp.cpp:2[m[K:
+/home/zhijie/autoware/src/universe/external/ndt_omp/include/pclomp/gicp_omp_impl.hpp: In instantiation of ‘[01m[Kvoid pclomp::GeneralizedIterativeClosestPoint<PointSource, PointTarget>::estimateRigidTransformationBFGS(const PointCloudSource&, const std::vector<int, std::allocator<int> >&, const PointCloudTarget&, const std::vector<int, std::allocator<int> >&, Eigen::Matrix4f&) [with PointSource = pcl::PointXYZI; PointTarget = pcl::PointXYZI; pclomp::GeneralizedIterativeClosestPoint<PointSource, PointTarget>::PointCloudSource = pcl::PointCloud<pcl::PointXYZI>; pclomp::GeneralizedIterativeClosestPoint<PointSource, PointTarget>::PointCloudTarget = pcl::PointCloud<pcl::PointXYZI>; Eigen::Matrix4f = Eigen::Matrix<float, 4, 4>][m[K’:
+[01m[K/home/zhijie/autoware/src/universe/external/ndt_omp/src/pclomp/gicp_omp.cpp:5:24:[m[K   required from here
+[01m[K/home/zhijie/autoware/src/universe/external/ndt_omp/include/pclomp/gicp_omp_impl.hpp:230:31:[m[K [01;35m[Kwarning: [m[K‘[01m[KBFGSSpace::Status BFGS<FunctorType>::testGradient(BFGS<FunctorType>::Scalar) [with FunctorType = pclomp::GeneralizedIterativeClosestPoint<pcl::PointXYZI, pcl::PointXYZI>::OptimizationFunctorWithIndices; BFGS<FunctorType>::Scalar = double][m[K’ is deprecated: Use `testGradient()` instead (It will be removed in PCL 1.13) [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  230 |     result = [01;35m[Kbfgs.testGradient(gradient_tol)[m[K;
+      |              [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/zhijie/autoware/src/universe/external/ndt_omp/include/pclomp/gicp_omp.h:45[m[K,
+                 from [01m[K/home/zhijie/autoware/src/universe/external/ndt_omp/src/pclomp/gicp_omp.cpp:1[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/registration/bfgs.h:164:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  164 |   BFGSSpace::Status [01;36m[KtestGradient[m[K(Scalar) { return testGradient(); }
+      |                     [01;36m[K^~~~~~~~~~~~[m[K

@@ -1,0 +1,265 @@
+[0.104s] Invoking command in '/home/zhijie/autoware/build/pointcloud_preprocessor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/lanelet2_extension:/home/zhijie/autoware/install/tier4_pcl_extensions:/home/zhijie/autoware/install/autoware_utils:/home/zhijie/autoware/install/autoware_point_types:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_planning_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/lanelet2_extension:/home/zhijie/autoware/install/tier4_pcl_extensions:/home/zhijie/autoware/install/autoware_utils:/home/zhijie/autoware/install/autoware_point_types:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_planning_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/lanelet2_extension/lib:/home/zhijie/autoware/install/tier4_pcl_extensions/lib:/home/zhijie/autoware/install/autoware_utils/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/autoware_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/sensing/pointcloud_preprocessor -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/pointcloud_preprocessor
+[18.230s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[18.230s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[18.231s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[18.231s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[18.232s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[18.232s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[18.232s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[18.232s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[18.233s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[18.233s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[18.233s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[18.233s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[18.234s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[18.237s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[18.237s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[18.237s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[18.238s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[18.238s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[18.238s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[18.238s] -- Found Qhull version 8.0.2
+[18.239s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[18.239s] -- Found mrt_cmake_modules: 1.0.9 (/opt/ros/humble/share/mrt_cmake_modules/cmake)
+[18.239s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: wserialization thread random serialization log_setup prg_exec_monitor wave system chrono filesystem locale timer date_time regex graph program_options unit_test_framework log atomic iostreams 
+[18.239s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[18.240s] -- Found launch_testing_ament_cmake: 1.0.4 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[18.243s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[18.244s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3.10
+[18.244s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[18.244s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[18.245s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  
+[18.245s] -- Using header-only CGAL
+[18.246s] -- Targetting Unix Makefiles
+[18.246s] -- Using /usr/bin/c++ compiler.
+[18.246s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.48")  
+[18.246s] -- Boost include dirs: /usr/include
+[18.247s] -- Boost libraries:    
+[18.247s] -- Using gcc version 4 or later. Adding -frounding-math
+[18.247s] -- Added test 'copyright' to check source files copyright and LICENSE
+[18.248s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[18.248s] -- Configured cppcheck include dirs: /home/zhijie/autoware/src/universe/autoware.universe/sensing/pointcloud_preprocessor/include;$<BUILD_INTERFACE:/home/zhijie/autoware/src/universe/autoware.universe/sensing/pointcloud_preprocessor/include>
+[18.248s] -- Configured cppcheck exclude dirs and/or files: 
+[18.248s] -- Added test 'lint_cmake' to check CMake code style
+[18.249s] -- Added test 'xmllint' to check XML markup files
+[18.249s] -- Configuring done
+[18.249s] -- Generating done
+[18.249s] -- Build files have been written to: /home/zhijie/autoware/build/pointcloud_preprocessor
+[18.272s] Invoked command in '/home/zhijie/autoware/build/pointcloud_preprocessor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/lanelet2_extension:/home/zhijie/autoware/install/tier4_pcl_extensions:/home/zhijie/autoware/install/autoware_utils:/home/zhijie/autoware/install/autoware_point_types:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_planning_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/lanelet2_extension:/home/zhijie/autoware/install/tier4_pcl_extensions:/home/zhijie/autoware/install/autoware_utils:/home/zhijie/autoware/install/autoware_point_types:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_planning_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/lanelet2_extension/lib:/home/zhijie/autoware/install/tier4_pcl_extensions/lib:/home/zhijie/autoware/install/autoware_utils/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/autoware_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/sensing/pointcloud_preprocessor -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/pointcloud_preprocessor
+[18.276s] Invoking command in '/home/zhijie/autoware/build/pointcloud_preprocessor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/lanelet2_extension:/home/zhijie/autoware/install/tier4_pcl_extensions:/home/zhijie/autoware/install/autoware_utils:/home/zhijie/autoware/install/autoware_point_types:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_planning_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/lanelet2_extension:/home/zhijie/autoware/install/tier4_pcl_extensions:/home/zhijie/autoware/install/autoware_utils:/home/zhijie/autoware/install/autoware_point_types:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_planning_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/lanelet2_extension/lib:/home/zhijie/autoware/install/tier4_pcl_extensions/lib:/home/zhijie/autoware/install/autoware_utils/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/autoware_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/pointcloud_preprocessor -- -j16 -l16
+[18.352s] [35m[1mConsolidate compiler generated dependencies of target time_synchronizer_node[0m
+[18.360s] [35m[1mConsolidate compiler generated dependencies of target faster_voxel_grid_downsample_filter[0m
+[18.386s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_preprocessor_filter_base[0m
+[18.392s] [  1%] [32mBuilding CXX object CMakeFiles/time_synchronizer_node.dir/rclcpp_components/node_main_time_synchronizer_node.cpp.o[0m
+[18.462s] [  3%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter_base.dir/src/filter.cpp.o[0m
+[18.495s] [  4%] [32mBuilding CXX object CMakeFiles/faster_voxel_grid_downsample_filter.dir/src/downsample_filter/faster_voxel_grid_downsample_filter.cpp.o[0m
+[19.482s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_accumulator_node[0m
+[19.585s] [  6%] [32mBuilding CXX object CMakeFiles/pointcloud_accumulator_node.dir/rclcpp_components/node_main_pointcloud_accumulator_node.cpp.o[0m
+[20.577s] [35m[1mConsolidate compiler generated dependencies of target passthrough_filter_uint16_node[0m
+[20.588s] [35m[1mConsolidate compiler generated dependencies of target passthrough_filter_node[0m
+[20.679s] [  7%] [32mBuilding CXX object CMakeFiles/passthrough_filter_node.dir/rclcpp_components/node_main_passthrough_filter_node.cpp.o[0m
+[20.684s] [  9%] [32mBuilding CXX object CMakeFiles/passthrough_filter_uint16_node.dir/rclcpp_components/node_main_passthrough_filter_uint16_node.cpp.o[0m
+[21.717s] [35m[1mConsolidate compiler generated dependencies of target dual_return_outlier_filter_node[0m
+[21.799s] [ 10%] [32mBuilding CXX object CMakeFiles/dual_return_outlier_filter_node.dir/rclcpp_components/node_main_dual_return_outlier_filter_node.cpp.o[0m
+[26.545s] [ 12%] [32m[1mLinking CXX executable time_synchronizer_node[0m
+[26.864s] [ 12%] Built target time_synchronizer_node
+[27.685s] [ 14%] [32m[1mLinking CXX executable passthrough_filter_node[0m
+[27.872s] [ 15%] [32m[1mLinking CXX executable pointcloud_accumulator_node[0m
+[28.089s] [ 15%] Built target passthrough_filter_node
+[28.174s] [ 15%] Built target pointcloud_accumulator_node
+[28.271s] [ 17%] [32m[1mLinking CXX executable passthrough_filter_uint16_node[0m
+[28.638s] [ 17%] Built target passthrough_filter_uint16_node
+[29.542s] [ 18%] [32m[1mLinking CXX executable dual_return_outlier_filter_node[0m
+[29.761s] [ 18%] Built target dual_return_outlier_filter_node
+[32.196s] [ 20%] [32m[1mLinking CXX shared library libfaster_voxel_grid_downsample_filter.so[0m
+[32.403s] [ 20%] Built target faster_voxel_grid_downsample_filter
+[58.134s] [ 21%] [32m[1mLinking CXX shared library libpointcloud_preprocessor_filter_base.so[0m
+[58.838s] [ 21%] Built target pointcloud_preprocessor_filter_base
+[58.855s] [35m[1mConsolidate compiler generated dependencies of target polygon_remover_node[0m
+[58.855s] [35m[1mConsolidate compiler generated dependencies of target vector_map_inside_area_filter_node[0m
+[58.882s] [ 23%] [32mBuilding CXX object CMakeFiles/polygon_remover_node.dir/rclcpp_components/node_main_polygon_remover_node.cpp.o[0m
+[58.894s] [ 25%] [32mBuilding CXX object CMakeFiles/vector_map_inside_area_filter_node.dir/rclcpp_components/node_main_vector_map_inside_area_filter_node.cpp.o[0m
+[63.441s] [ 26%] [32m[1mLinking CXX executable vector_map_inside_area_filter_node[0m
+[63.608s] [ 26%] Built target vector_map_inside_area_filter_node
+[63.624s] [35m[1mConsolidate compiler generated dependencies of target blockage_diag_node[0m
+[63.665s] [ 28%] [32mBuilding CXX object CMakeFiles/blockage_diag_node.dir/rclcpp_components/node_main_blockage_diag_node.cpp.o[0m
+[63.702s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_preprocessor_filter[0m
+[64.024s] [ 29%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/utility/utilities.cpp.o[0m
+[64.033s] [ 31%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/concatenate_data/concatenate_and_time_sync_nodelet.cpp.o[0m
+[64.037s] [ 32%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/concatenate_data/concatenate_pointclouds.cpp.o[0m
+[64.105s] [ 34%] [32m[1mLinking CXX executable polygon_remover_node[0m
+[64.456s] [ 34%] Built target polygon_remover_node
+[64.494s] [ 35%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/time_synchronizer/time_synchronizer_nodelet.cpp.o[0m
+[64.529s] [35m[1mConsolidate compiler generated dependencies of target distortion_corrector_node[0m
+[64.604s] [ 37%] [32mBuilding CXX object CMakeFiles/distortion_corrector_node.dir/rclcpp_components/node_main_distortion_corrector_node.cpp.o[0m
+[69.846s] [ 39%] [32m[1mLinking CXX executable blockage_diag_node[0m
+[70.150s] [ 39%] Built target blockage_diag_node
+[71.150s] [ 40%] [32m[1mLinking CXX executable distortion_corrector_node[0m
+[71.432s] [ 40%] Built target distortion_corrector_node
+[88.412s] [ 42%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/downsample_filter/random_downsample_filter_nodelet.cpp.o[0m
+[89.426s] [ 43%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/downsample_filter/voxel_grid_downsample_filter_nodelet.cpp.o[0m
+[90.450s] [ 45%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/crop_box_filter/crop_box_filter_nodelet.cpp.o[0m
+[94.308s] [ 46%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/downsample_filter/approximate_downsample_filter_nodelet.cpp.o[0m
+[126.435s] [ 48%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/passthrough_filter/passthrough_filter_nodelet.cpp.o[0m
+[153.143s] [ 50%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/passthrough_filter/passthrough_filter_uint16_nodelet.cpp.o[0m
+[158.161s] [ 51%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/passthrough_filter/passthrough_uint16.cpp.o[0m
+[160.199s] [ 53%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/outlier_filter/dual_return_outlier_filter_nodelet.cpp.o[0m
+[162.247s] [ 54%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/outlier_filter/radius_search_2d_outlier_filter_nodelet.cpp.o[0m
+[193.377s] [ 56%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/distortion_corrector/distortion_corrector.cpp.o[0m
+[195.725s] [ 57%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/blockage_diag/blockage_diag_nodelet.cpp.o[0m
+[197.742s] [ 59%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/vector_map_filter/lanelet2_map_filter_nodelet.cpp.o[0m
+[198.779s] [ 60%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/pointcloud_accumulator/pointcloud_accumulator_nodelet.cpp.o[0m
+[199.834s] [ 62%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/outlier_filter/voxel_grid_outlier_filter_nodelet.cpp.o[0m
+[200.900s] [ 64%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/outlier_filter/ring_outlier_filter_nodelet.cpp.o[0m
+[244.749s] [ 65%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/vector_map_filter/vector_map_inside_area_filter.cpp.o[0m
+[287.974s] [ 67%] [32mBuilding CXX object CMakeFiles/pointcloud_preprocessor_filter.dir/src/polygon_remover/polygon_remover.cpp.o[0m
+[328.125s] [ 68%] [32m[1mLinking CXX shared library libpointcloud_preprocessor_filter.so[0m
+[332.022s] [ 68%] Built target pointcloud_preprocessor_filter
+[332.039s] [35m[1mConsolidate compiler generated dependencies of target vector_map_filter_node[0m
+[332.066s] [ 70%] [32mBuilding CXX object CMakeFiles/vector_map_filter_node.dir/rclcpp_components/node_main_vector_map_filter_node.cpp.o[0m
+[336.894s] [ 71%] [32m[1mLinking CXX executable vector_map_filter_node[0m
+[337.123s] [ 71%] Built target vector_map_filter_node
+[337.189s] [35m[1mConsolidate compiler generated dependencies of target radius_search_2d_outlier_filter_node[0m
+[337.247s] [ 73%] [32mBuilding CXX object CMakeFiles/radius_search_2d_outlier_filter_node.dir/rclcpp_components/node_main_radius_search_2d_outlier_filter_node.cpp.o[0m
+[342.789s] [ 75%] [32m[1mLinking CXX executable radius_search_2d_outlier_filter_node[0m
+[342.940s] [ 75%] Built target radius_search_2d_outlier_filter_node
+[342.956s] [35m[1mConsolidate compiler generated dependencies of target voxel_grid_outlier_filter_node[0m
+[343.004s] [ 76%] [32mBuilding CXX object CMakeFiles/voxel_grid_outlier_filter_node.dir/rclcpp_components/node_main_voxel_grid_outlier_filter_node.cpp.o[0m
+[348.160s] [ 78%] [32m[1mLinking CXX executable voxel_grid_outlier_filter_node[0m
+[348.331s] [ 78%] Built target voxel_grid_outlier_filter_node
+[348.346s] [35m[1mConsolidate compiler generated dependencies of target ring_outlier_filter_node[0m
+[348.347s] [35m[1mConsolidate compiler generated dependencies of target approximate_downsample_filter_node[0m
+[348.373s] [ 79%] [32mBuilding CXX object CMakeFiles/approximate_downsample_filter_node.dir/rclcpp_components/node_main_approximate_downsample_filter_node.cpp.o[0m
+[348.377s] [ 81%] [32mBuilding CXX object CMakeFiles/ring_outlier_filter_node.dir/rclcpp_components/node_main_ring_outlier_filter_node.cpp.o[0m
+[352.571s] [ 82%] [32m[1mLinking CXX executable approximate_downsample_filter_node[0m
+[352.747s] [ 82%] Built target approximate_downsample_filter_node
+[352.763s] [35m[1mConsolidate compiler generated dependencies of target random_downsample_filter_node[0m
+[352.818s] [ 84%] [32mBuilding CXX object CMakeFiles/random_downsample_filter_node.dir/rclcpp_components/node_main_random_downsample_filter_node.cpp.o[0m
+[353.682s] [ 85%] [32m[1mLinking CXX executable ring_outlier_filter_node[0m
+[353.824s] [ 85%] Built target ring_outlier_filter_node
+[353.837s] [35m[1mConsolidate compiler generated dependencies of target voxel_grid_downsample_filter_node[0m
+[353.858s] [ 87%] [32mBuilding CXX object CMakeFiles/voxel_grid_downsample_filter_node.dir/rclcpp_components/node_main_voxel_grid_downsample_filter_node.cpp.o[0m
+[358.731s] [ 89%] [32m[1mLinking CXX executable random_downsample_filter_node[0m
+[359.099s] [ 89%] Built target random_downsample_filter_node
+[359.316s] [ 90%] [32m[1mLinking CXX executable voxel_grid_downsample_filter_node[0m
+[359.699s] [ 90%] Built target voxel_grid_downsample_filter_node
+[359.781s] [35m[1mConsolidate compiler generated dependencies of target crop_box_filter_node[0m
+[359.821s] [ 92%] [32mBuilding CXX object CMakeFiles/crop_box_filter_node.dir/rclcpp_components/node_main_crop_box_filter_node.cpp.o[0m
+[365.070s] [ 93%] [32m[1mLinking CXX executable crop_box_filter_node[0m
+[365.237s] [ 93%] Built target crop_box_filter_node
+[365.254s] [35m[1mConsolidate compiler generated dependencies of target concatenate_data_node[0m
+[365.280s] [ 95%] [32mBuilding CXX object CMakeFiles/concatenate_data_node.dir/rclcpp_components/node_main_concatenate_data_node.cpp.o[0m
+[370.384s] [ 96%] [32m[1mLinking CXX executable concatenate_data_node[0m
+[370.552s] [ 96%] Built target concatenate_data_node
+[370.569s] [35m[1mConsolidate compiler generated dependencies of target concatenate_pointclouds_node[0m
+[370.609s] [ 98%] [32mBuilding CXX object CMakeFiles/concatenate_pointclouds_node.dir/rclcpp_components/node_main_concatenate_pointclouds_node.cpp.o[0m
+[375.961s] [100%] [32m[1mLinking CXX executable concatenate_pointclouds_node[0m
+[376.157s] [100%] Built target concatenate_pointclouds_node
+[376.181s] Invoked command in '/home/zhijie/autoware/build/pointcloud_preprocessor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/lanelet2_extension:/home/zhijie/autoware/install/tier4_pcl_extensions:/home/zhijie/autoware/install/autoware_utils:/home/zhijie/autoware/install/autoware_point_types:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_planning_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/lanelet2_extension:/home/zhijie/autoware/install/tier4_pcl_extensions:/home/zhijie/autoware/install/autoware_utils:/home/zhijie/autoware/install/autoware_point_types:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_planning_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/lanelet2_extension/lib:/home/zhijie/autoware/install/tier4_pcl_extensions/lib:/home/zhijie/autoware/install/autoware_utils/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/autoware_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/pointcloud_preprocessor -- -j16 -l16
+[376.369s] Invoking command in '/home/zhijie/autoware/build/pointcloud_preprocessor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/lanelet2_extension:/home/zhijie/autoware/install/tier4_pcl_extensions:/home/zhijie/autoware/install/autoware_utils:/home/zhijie/autoware/install/autoware_point_types:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_planning_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/lanelet2_extension:/home/zhijie/autoware/install/tier4_pcl_extensions:/home/zhijie/autoware/install/autoware_utils:/home/zhijie/autoware/install/autoware_point_types:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_planning_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/lanelet2_extension/lib:/home/zhijie/autoware/install/tier4_pcl_extensions/lib:/home/zhijie/autoware/install/autoware_utils/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/autoware_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/pointcloud_preprocessor
+[400.269s] -- Install configuration: "Release"
+[400.270s] -- Execute custom install script
+[400.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/time_synchronizer_node
+[400.281s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/concatenate_pointclouds_node
+[400.281s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/concatenate_data_node
+[400.281s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/crop_box_filter_node
+[400.281s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/voxel_grid_downsample_filter_node
+[400.282s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/random_downsample_filter_node
+[400.282s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/approximate_downsample_filter_node
+[400.282s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/ring_outlier_filter_node
+[400.282s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/voxel_grid_outlier_filter_node
+[400.282s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/radius_search_2d_outlier_filter_node
+[400.282s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/dual_return_outlier_filter_node
+[400.282s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/passthrough_filter_node
+[400.282s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/passthrough_filter_uint16_node
+[400.282s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/pointcloud_accumulator_node
+[400.283s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/vector_map_filter_node
+[400.283s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/distortion_corrector_node
+[400.283s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/blockage_diag_node
+[400.283s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/polygon_remover_node
+[400.283s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/pointcloud_preprocessor/vector_map_inside_area_filter_node
+[400.283s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/blockage_diag/blockage_diag_nodelet.hpp
+[400.283s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/concatenate_data/concatenate_and_time_sync_nodelet.hpp
+[400.283s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/concatenate_data/concatenate_pointclouds.hpp
+[400.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/crop_box_filter/crop_box_filter_nodelet.hpp
+[400.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/distortion_corrector/distortion_corrector.hpp
+[400.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/downsample_filter/approximate_downsample_filter_nodelet.hpp
+[400.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/downsample_filter/faster_voxel_grid_downsample_filter.hpp
+[400.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/downsample_filter/random_downsample_filter_nodelet.hpp
+[400.306s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/downsample_filter/voxel_grid_downsample_filter_nodelet.hpp
+[400.306s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/filter.hpp
+[400.306s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/outlier_filter/dual_return_outlier_filter_nodelet.hpp
+[400.306s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/outlier_filter/radius_search_2d_outlier_filter_nodelet.hpp
+[400.307s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/outlier_filter/ring_outlier_filter_nodelet.hpp
+[400.307s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/outlier_filter/voxel_grid_outlier_filter_nodelet.hpp
+[400.307s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/passthrough_filter/passthrough_filter_nodelet.hpp
+[400.307s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/passthrough_filter/passthrough_filter_uint16_nodelet.hpp
+[400.307s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/passthrough_filter/passthrough_uint16.hpp
+[400.307s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/pointcloud_accumulator/pointcloud_accumulator_nodelet.hpp
+[400.307s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/polygon_remover/polygon_remover.hpp
+[400.307s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/time_synchronizer/time_synchronizer_nodelet.hpp
+[400.307s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/transform_info.hpp
+[400.307s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/utility/utilities.hpp
+[400.308s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/vector_map_filter/lanelet2_map_filter_nodelet.hpp
+[400.308s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_preprocessor/vector_map_filter/vector_map_inside_area_filter.hpp
+[400.308s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/blockage_diag/blockage_diag_nodelet.hpp
+[400.308s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/concatenate_data/concatenate_and_time_sync_nodelet.hpp
+[400.308s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/concatenate_data/concatenate_pointclouds.hpp
+[400.308s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/crop_box_filter/crop_box_filter_nodelet.hpp
+[400.308s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/distortion_corrector/distortion_corrector.hpp
+[400.308s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/downsample_filter/approximate_downsample_filter_nodelet.hpp
+[400.308s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/downsample_filter/faster_voxel_grid_downsample_filter.hpp
+[400.308s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/downsample_filter/random_downsample_filter_nodelet.hpp
+[400.308s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/downsample_filter/voxel_grid_downsample_filter_nodelet.hpp
+[400.309s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/filter.hpp
+[400.309s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/outlier_filter/dual_return_outlier_filter_nodelet.hpp
+[400.309s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/outlier_filter/radius_search_2d_outlier_filter_nodelet.hpp
+[400.309s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/outlier_filter/ring_outlier_filter_nodelet.hpp
+[400.309s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/outlier_filter/voxel_grid_outlier_filter_nodelet.hpp
+[400.309s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/passthrough_filter/passthrough_filter_nodelet.hpp
+[400.309s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/passthrough_filter/passthrough_filter_uint16_nodelet.hpp
+[400.309s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/passthrough_filter/passthrough_uint16.hpp
+[400.310s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/pointcloud_accumulator/pointcloud_accumulator_nodelet.hpp
+[400.310s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/polygon_remover/polygon_remover.hpp
+[400.310s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/time_synchronizer/time_synchronizer_nodelet.hpp
+[400.310s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/transform_info.hpp
+[400.310s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/utility/utilities.hpp
+[400.310s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/vector_map_filter/lanelet2_map_filter_nodelet.hpp
+[400.310s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/include/pointcloud_preprocessor/vector_map_filter/vector_map_inside_area_filter.hpp
+[400.310s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/environment/library_path.sh
+[400.310s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/environment/library_path.dsv
+[400.311s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/libpointcloud_preprocessor_filter.so
+[400.311s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/launch/blockage_diag.launch.xml
+[400.311s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/launch/dual_return_outlier_filter.launch.xml
+[400.311s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/launch/polygon_remover.launch.py
+[400.311s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/launch/preprocessor.launch.py
+[400.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/launch/preprocessor.launch.xml
+[400.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/launch/random_downsample_filter.launch.xml
+[400.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/launch/ring_passthrough_filter.launch.xml
+[400.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/ament_index/resource_index/package_run_dependencies/pointcloud_preprocessor
+[400.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/ament_index/resource_index/parent_prefix_path/pointcloud_preprocessor
+[400.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/environment/ament_prefix_path.sh
+[400.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/environment/ament_prefix_path.dsv
+[400.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/environment/path.sh
+[400.313s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/environment/path.dsv
+[400.313s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/local_setup.bash
+[400.313s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/local_setup.sh
+[400.313s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/local_setup.zsh
+[400.313s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/local_setup.dsv
+[400.313s] -- Symlinking: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/package.dsv
+[400.313s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/ament_index/resource_index/packages/pointcloud_preprocessor
+[400.313s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/ament_index/resource_index/rclcpp_components/pointcloud_preprocessor
+[400.313s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/cmake/ament_cmake_export_targets-extras.cmake
+[400.313s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/cmake/ament_cmake_export_dependencies-extras.cmake
+[400.313s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/cmake/ament_cmake_export_include_directories-extras.cmake
+[400.314s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/cmake/ament_cmake_export_libraries-extras.cmake
+[400.314s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/cmake/pointcloud_preprocessorConfig.cmake
+[400.314s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/cmake/pointcloud_preprocessorConfig-version.cmake
+[400.314s] -- Up-to-date symlink: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/package.xml
+[400.314s] -- Installing: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/libpointcloud_preprocessor_filter_base.so
+[400.314s] -- Set runtime path of "/home/zhijie/autoware/install/pointcloud_preprocessor/lib/libpointcloud_preprocessor_filter_base.so" to ""
+[400.314s] -- Installing: /home/zhijie/autoware/install/pointcloud_preprocessor/lib/libfaster_voxel_grid_downsample_filter.so
+[400.314s] -- Set runtime path of "/home/zhijie/autoware/install/pointcloud_preprocessor/lib/libfaster_voxel_grid_downsample_filter.so" to ""
+[400.314s] -- Up-to-date: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/cmake/export_pointcloud_preprocessorExport.cmake
+[400.314s] -- Up-to-date: /home/zhijie/autoware/install/pointcloud_preprocessor/share/pointcloud_preprocessor/cmake/export_pointcloud_preprocessorExport-release.cmake
+[400.337s] Invoked command in '/home/zhijie/autoware/build/pointcloud_preprocessor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/lanelet2_extension:/home/zhijie/autoware/install/tier4_pcl_extensions:/home/zhijie/autoware/install/autoware_utils:/home/zhijie/autoware/install/autoware_point_types:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_planning_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/lanelet2_extension:/home/zhijie/autoware/install/tier4_pcl_extensions:/home/zhijie/autoware/install/autoware_utils:/home/zhijie/autoware/install/autoware_point_types:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_planning_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/lanelet2_extension/lib:/home/zhijie/autoware/install/tier4_pcl_extensions/lib:/home/zhijie/autoware/install/autoware_utils/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/autoware_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/pointcloud_preprocessor

@@ -1,0 +1,296 @@
+[0.054s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_system_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/core/external/autoware_auto_msgs/autoware_auto_system_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_auto_system_msgs
+[0.100s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.249s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.356s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.362s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.406s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.712s] -- Found ament_cmake_cppcheck: 0.12.8 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[0.713s] -- Found ament_cmake_cpplint: 0.12.8 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[0.714s] -- Found ament_cmake_uncrustify: 0.12.8 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[0.715s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.986s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.371s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.399s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.426s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.426s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.426s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.530s] -- Found ament_cmake_flake8: 0.12.8 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[1.530s] -- Found ament_cmake_pep257: 0.12.8 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[1.530s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.543s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.543s] -- Added test 'lint_cmake' to check CMake code style
+[1.544s] -- Added test 'xmllint' to check XML markup files
+[1.554s] -- Configuring done
+[1.692s] -- Generating done
+[1.696s] -- Build files have been written to: /home/zhijie/autoware/build/autoware_auto_system_msgs
+[1.729s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_system_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/core/external/autoware_auto_msgs/autoware_auto_system_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_auto_system_msgs
+[1.730s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_system_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_auto_system_msgs -- -j16 -l16
+[5.589s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_system_msgs__rosidl_generator_c[0m
+[5.589s] [  1%] Built target autoware_auto_system_msgs__cpp
+[5.589s] [ 12%] Built target autoware_auto_system_msgs__rosidl_generator_c
+[5.590s] [ 12%] Built target ament_cmake_python_symlink_autoware_auto_system_msgs
+[5.590s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_system_msgs__rosidl_typesupport_cpp[0m
+[5.590s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_system_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[5.590s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_system_msgs__rosidl_typesupport_introspection_cpp[0m
+[5.590s] [ 13%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_system_msgs/msg/autoware_state__type_support.cpp.o[0m
+[5.590s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_system_msgs__rosidl_typesupport_fastrtps_c[0m
+[5.590s] [ 15%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_system_msgs/msg/control_diagnostic__type_support.cpp.o[0m
+[5.590s] [ 16%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_system_msgs/msg/diagnostic_header__type_support.cpp.o[0m
+[5.590s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_system_msgs__rosidl_typesupport_c[0m
+[5.590s] [ 17%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_system_msgs/msg/emergency_state__type_support.cpp.o[0m
+[5.590s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_system_msgs__rosidl_typesupport_introspection_c[0m
+[5.591s] [ 18%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_system_msgs/msg/driving_capability__type_support.cpp.o[0m
+[5.591s] [ 20%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_system_msgs/msg/detail/dds_fastrtps/control_diagnostic__type_support.cpp.o[0m
+[5.591s] [ 21%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_system_msgs/msg/detail/dds_fastrtps/autoware_state__type_support.cpp.o[0m
+[5.591s] [ 22%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_system_msgs/msg/hazard_status__type_support.cpp.o[0m
+[5.591s] [ 26%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_system_msgs/msg/detail/control_diagnostic__type_support.cpp.o[0m
+[5.591s] [ 25%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_system_msgs/msg/detail/dds_fastrtps/diagnostic_header__type_support.cpp.o[0m
+[5.591s] [ 25%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_system_msgs/msg/detail/dds_fastrtps/driving_capability__type_support.cpp.o[0m
+[5.591s] [ 29%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_system_msgs/msg/detail/autoware_state__type_support_c.cpp.o[0m
+[5.591s] [ 29%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_system_msgs/msg/detail/autoware_state__type_support.cpp.o[0m
+[5.592s] [ 40%] Built target autoware_auto_system_msgs__rosidl_typesupport_introspection_c
+[5.592s] [ 41%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_system_msgs/msg/detail/diagnostic_header__type_support.cpp.o[0m
+[5.592s] [ 53%] Built target autoware_auto_system_msgs__rosidl_typesupport_c
+[5.592s] [ 54%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_system_msgs/msg/detail/control_diagnostic__type_support_c.cpp.o[0m
+[5.592s] [ 55%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_system_msgs/msg/hazard_status_stamped__type_support.cpp.o[0m
+[5.592s] [ 56%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_system_msgs/msg/detail/dds_fastrtps/emergency_state__type_support.cpp.o[0m
+[5.592s] [ 58%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_system_msgs/msg/detail/dds_fastrtps/hazard_status__type_support.cpp.o[0m
+[5.592s] [ 59%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_system_msgs/msg/detail/dds_fastrtps/hazard_status_stamped__type_support.cpp.o[0m
+[5.592s] [ 60%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_system_msgs/msg/detail/driving_capability__type_support.cpp.o[0m
+[5.594s] [ 62%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_system_msgs/msg/detail/emergency_state__type_support.cpp.o[0m
+[5.643s] [ 63%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_system_msgs/msg/detail/diagnostic_header__type_support_c.cpp.o[0m
+[6.257s] [ 64%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_system_msgs/msg/detail/driving_capability__type_support_c.cpp.o[0m
+[6.656s] [ 65%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_system_msgs/msg/detail/hazard_status__type_support.cpp.o[0m
+[6.809s] [ 67%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_system_msgs/msg/detail/emergency_state__type_support_c.cpp.o[0m
+[6.861s] [ 68%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_system_msgs/msg/detail/hazard_status_stamped__type_support.cpp.o[0m
+[6.989s] [ 69%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_system_msgs/msg/detail/hazard_status__type_support_c.cpp.o[0m
+[7.084s] running egg_info
+[7.101s] writing autoware_auto_system_msgs.egg-info/PKG-INFO
+[7.101s] writing dependency_links to autoware_auto_system_msgs.egg-info/dependency_links.txt
+[7.102s] writing top-level names to autoware_auto_system_msgs.egg-info/top_level.txt
+[7.171s] reading manifest file 'autoware_auto_system_msgs.egg-info/SOURCES.txt'
+[7.181s] writing manifest file 'autoware_auto_system_msgs.egg-info/SOURCES.txt'
+[7.338s] [ 70%] [32mBuilding CXX object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_system_msgs/msg/detail/hazard_status_stamped__type_support_c.cpp.o[0m
+[7.681s] [ 70%] Built target ament_cmake_python_build_autoware_auto_system_msgs_egg
+[8.010s] [ 72%] [32m[1mLinking CXX shared library libautoware_auto_system_msgs__rosidl_typesupport_cpp.so[0m
+[8.469s] [ 73%] Built target autoware_auto_system_msgs__rosidl_typesupport_cpp
+[10.847s] [ 74%] [32m[1mLinking CXX shared library libautoware_auto_system_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[10.851s] [ 75%] [32m[1mLinking CXX shared library libautoware_auto_system_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[10.925s] [ 77%] [32m[1mLinking CXX shared library libautoware_auto_system_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.092s] [ 78%] Built target autoware_auto_system_msgs__rosidl_typesupport_fastrtps_c
+[11.151s] [ 79%] Built target autoware_auto_system_msgs__rosidl_typesupport_introspection_cpp
+[11.220s] [ 81%] Built target autoware_auto_system_msgs__rosidl_typesupport_fastrtps_cpp
+[11.349s] [ 81%] Built target autoware_auto_system_msgs
+[11.454s] [ 82%] Built target autoware_auto_system_msgs__py
+[11.508s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_system_msgs__rosidl_generator_py[0m
+[11.602s] [ 83%] [32mBuilding C object CMakeFiles/autoware_auto_system_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_system_msgs/msg/_autoware_state_s.c.o[0m
+[11.989s] [ 84%] [32mBuilding C object CMakeFiles/autoware_auto_system_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_system_msgs/msg/_hazard_status_stamped_s.c.o[0m
+[12.242s] [ 86%] [32mBuilding C object CMakeFiles/autoware_auto_system_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_system_msgs/msg/_hazard_status_s.c.o[0m
+[12.650s] [ 87%] [32mBuilding C object CMakeFiles/autoware_auto_system_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_system_msgs/msg/_emergency_state_s.c.o[0m
+[12.937s] [ 88%] [32mBuilding C object CMakeFiles/autoware_auto_system_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_system_msgs/msg/_driving_capability_s.c.o[0m
+[13.147s] [ 89%] [32mBuilding C object CMakeFiles/autoware_auto_system_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_system_msgs/msg/_diagnostic_header_s.c.o[0m
+[13.369s] [ 91%] [32mBuilding C object CMakeFiles/autoware_auto_system_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_system_msgs/msg/_control_diagnostic_s.c.o[0m
+[13.637s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_system_msgs/libautoware_auto_system_msgs__rosidl_generator_py.so[0m
+[13.794s] [ 92%] Built target autoware_auto_system_msgs__rosidl_generator_py
+[13.807s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_system_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[13.842s] [ 93%] [32mBuilding C object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/autoware_auto_system_msgs/_autoware_auto_system_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[14.127s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_system_msgs/autoware_auto_system_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.180s] [ 94%] Built target autoware_auto_system_msgs__rosidl_typesupport_fastrtps_c__pyext
+[14.217s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_system_msgs__rosidl_typesupport_c__pyext[0m
+[14.295s] [ 96%] [32mBuilding C object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/autoware_auto_system_msgs/_autoware_auto_system_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[14.565s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_system_msgs/autoware_auto_system_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.604s] [ 97%] Built target autoware_auto_system_msgs__rosidl_typesupport_c__pyext
+[14.627s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_system_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[14.661s] [ 98%] [32mBuilding C object CMakeFiles/autoware_auto_system_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/autoware_auto_system_msgs/_autoware_auto_system_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[15.078s] [100%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_system_msgs/autoware_auto_system_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[15.206s] [100%] Built target autoware_auto_system_msgs__rosidl_typesupport_introspection_c__pyext
+[15.307s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_system_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_auto_system_msgs -- -j16 -l16
+[16.101s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_system_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_auto_system_msgs
+[18.258s] -- Install configuration: "Release"
+[18.258s] -- Execute custom install script
+[18.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/ament_index/resource_index/rosidl_interfaces/autoware_auto_system_msgs
+[18.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/autoware_state.h
+[18.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/control_diagnostic.h
+[18.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/autoware_state__functions.h
+[18.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/autoware_state__struct.h
+[18.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/autoware_state__type_support.h
+[18.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/control_diagnostic__functions.h
+[18.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/control_diagnostic__struct.h
+[18.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/control_diagnostic__type_support.h
+[18.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/diagnostic_header__functions.h
+[18.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/diagnostic_header__struct.h
+[18.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/diagnostic_header__type_support.h
+[18.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/driving_capability__functions.h
+[18.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/driving_capability__struct.h
+[18.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/driving_capability__type_support.h
+[18.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/emergency_state__functions.h
+[18.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/emergency_state__struct.h
+[18.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/emergency_state__type_support.h
+[18.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status__functions.h
+[18.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status__struct.h
+[18.260s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status__type_support.h
+[18.261s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status_stamped__functions.h
+[18.265s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status_stamped__struct.h
+[18.265s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status_stamped__type_support.h
+[18.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/diagnostic_header.h
+[18.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/driving_capability.h
+[18.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/emergency_state.h
+[18.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/hazard_status.h
+[18.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/hazard_status_stamped.h
+[18.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/rosidl_generator_c__visibility_control.h
+[18.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/environment/library_path.sh
+[18.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/environment/library_path.dsv
+[18.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/autoware_state__rosidl_typesupport_fastrtps_c.h
+[18.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/control_diagnostic__rosidl_typesupport_fastrtps_c.h
+[18.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/diagnostic_header__rosidl_typesupport_fastrtps_c.h
+[18.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/driving_capability__rosidl_typesupport_fastrtps_c.h
+[18.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/emergency_state__rosidl_typesupport_fastrtps_c.h
+[18.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status__rosidl_typesupport_fastrtps_c.h
+[18.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status_stamped__rosidl_typesupport_fastrtps_c.h
+[18.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[18.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/autoware_state__rosidl_typesupport_introspection_c.h
+[18.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/control_diagnostic__rosidl_typesupport_introspection_c.h
+[18.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/diagnostic_header__rosidl_typesupport_introspection_c.h
+[18.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/driving_capability__rosidl_typesupport_introspection_c.h
+[18.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/emergency_state__rosidl_typesupport_introspection_c.h
+[18.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status__rosidl_typesupport_introspection_c.h
+[18.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status_stamped__rosidl_typesupport_introspection_c.h
+[18.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[18.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/autoware_state.hpp
+[18.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/control_diagnostic.hpp
+[18.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/autoware_state__builder.hpp
+[18.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/autoware_state__struct.hpp
+[18.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/autoware_state__traits.hpp
+[18.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/control_diagnostic__builder.hpp
+[18.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/control_diagnostic__struct.hpp
+[18.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/control_diagnostic__traits.hpp
+[18.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/diagnostic_header__builder.hpp
+[18.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/diagnostic_header__struct.hpp
+[18.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/diagnostic_header__traits.hpp
+[18.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/driving_capability__builder.hpp
+[18.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/driving_capability__struct.hpp
+[18.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/driving_capability__traits.hpp
+[18.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/emergency_state__builder.hpp
+[18.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/emergency_state__struct.hpp
+[18.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/emergency_state__traits.hpp
+[18.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status__builder.hpp
+[18.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status__struct.hpp
+[18.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status__traits.hpp
+[18.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status_stamped__builder.hpp
+[18.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status_stamped__struct.hpp
+[18.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status_stamped__traits.hpp
+[18.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/diagnostic_header.hpp
+[18.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/driving_capability.hpp
+[18.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/emergency_state.hpp
+[18.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/hazard_status.hpp
+[18.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/hazard_status_stamped.hpp
+[18.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/autoware_state__rosidl_typesupport_fastrtps_cpp.hpp
+[18.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/control_diagnostic__rosidl_typesupport_fastrtps_cpp.hpp
+[18.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/diagnostic_header__rosidl_typesupport_fastrtps_cpp.hpp
+[18.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/driving_capability__rosidl_typesupport_fastrtps_cpp.hpp
+[18.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/emergency_state__rosidl_typesupport_fastrtps_cpp.hpp
+[18.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status__rosidl_typesupport_fastrtps_cpp.hpp
+[18.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[18.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[18.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/autoware_state__rosidl_typesupport_introspection_cpp.hpp
+[18.273s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/control_diagnostic__rosidl_typesupport_introspection_cpp.hpp
+[18.273s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/diagnostic_header__rosidl_typesupport_introspection_cpp.hpp
+[18.273s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/driving_capability__rosidl_typesupport_introspection_cpp.hpp
+[18.273s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/emergency_state__rosidl_typesupport_introspection_cpp.hpp
+[18.273s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status__rosidl_typesupport_introspection_cpp.hpp
+[18.273s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/include/autoware_auto_system_msgs/autoware_auto_system_msgs/msg/detail/hazard_status_stamped__rosidl_typesupport_introspection_cpp.hpp
+[18.273s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/environment/pythonpath.sh
+[18.273s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/environment/pythonpath.dsv
+[18.274s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs-1.0.0-py3.10.egg-info/PKG-INFO
+[18.274s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs-1.0.0-py3.10.egg-info/SOURCES.txt
+[18.274s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs-1.0.0-py3.10.egg-info/dependency_links.txt
+[18.274s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs-1.0.0-py3.10.egg-info/top_level.txt
+[18.274s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/__init__.py
+[18.274s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/_autoware_auto_system_msgs_s.ep.rosidl_typesupport_c.c
+[18.274s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/_autoware_auto_system_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[18.274s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/_autoware_auto_system_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[18.275s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/autoware_auto_system_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[18.275s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/autoware_auto_system_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[18.275s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/autoware_auto_system_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[18.275s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/libautoware_auto_system_msgs__rosidl_generator_py.so
+[18.275s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/__init__.py
+[18.275s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_autoware_state.py
+[18.275s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_autoware_state_s.c
+[18.275s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_control_diagnostic.py
+[18.276s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_control_diagnostic_s.c
+[18.276s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_diagnostic_header.py
+[18.276s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_diagnostic_header_s.c
+[18.276s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_driving_capability.py
+[18.276s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_driving_capability_s.c
+[18.277s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_emergency_state.py
+[18.277s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_emergency_state_s.c
+[18.277s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_hazard_status.py
+[18.278s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_hazard_status_s.c
+[18.278s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_hazard_status_stamped.py
+[18.278s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg/_hazard_status_stamped_s.c
+[18.279s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/autoware_auto_system_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[18.279s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/autoware_auto_system_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[18.279s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/autoware_auto_system_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[18.280s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/msg/AutowareState.idl
+[18.280s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/msg/ControlDiagnostic.idl
+[18.281s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/msg/DiagnosticHeader.idl
+[18.281s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/msg/DrivingCapability.idl
+[18.281s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/msg/EmergencyState.idl
+[18.281s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/msg/HazardStatus.idl
+[18.289s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/msg/HazardStatusStamped.idl
+[18.297s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/ament_index/resource_index/package_run_dependencies/autoware_auto_system_msgs
+[18.297s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/ament_index/resource_index/parent_prefix_path/autoware_auto_system_msgs
+[18.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/environment/ament_prefix_path.sh
+[18.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/environment/ament_prefix_path.dsv
+[18.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/environment/path.sh
+[18.299s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/environment/path.dsv
+[18.299s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/local_setup.bash
+[18.299s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/local_setup.sh
+[18.300s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/local_setup.zsh
+[18.300s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/local_setup.dsv
+[18.300s] -- Symlinking: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/package.dsv
+[18.330s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/ament_index/resource_index/packages/autoware_auto_system_msgs
+[18.330s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/rosidl_cmake-extras.cmake
+[18.331s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.331s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.331s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[18.332s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[18.332s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[18.332s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[18.333s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/autoware_auto_system_msgsConfig.cmake
+[18.333s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/autoware_auto_system_msgsConfig-version.cmake
+[18.333s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/package.xml
+[18.334s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/lib/libautoware_auto_system_msgs__rosidl_generator_c.so
+[18.335s] -- Installing: /home/zhijie/autoware/install/autoware_auto_system_msgs/lib/libautoware_auto_system_msgs__rosidl_typesupport_fastrtps_c.so
+[18.335s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_system_msgs/lib/libautoware_auto_system_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[18.336s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/lib/libautoware_auto_system_msgs__rosidl_typesupport_introspection_c.so
+[18.336s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/lib/libautoware_auto_system_msgs__rosidl_typesupport_c.so
+[18.337s] -- Installing: /home/zhijie/autoware/install/autoware_auto_system_msgs/lib/libautoware_auto_system_msgs__rosidl_typesupport_fastrtps_cpp.so
+[18.338s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_system_msgs/lib/libautoware_auto_system_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[18.338s] -- Installing: /home/zhijie/autoware/install/autoware_auto_system_msgs/lib/libautoware_auto_system_msgs__rosidl_typesupport_introspection_cpp.so
+[18.338s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_system_msgs/lib/libautoware_auto_system_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[18.339s] -- Installing: /home/zhijie/autoware/install/autoware_auto_system_msgs/lib/libautoware_auto_system_msgs__rosidl_typesupport_cpp.so
+[18.339s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_system_msgs/lib/libautoware_auto_system_msgs__rosidl_typesupport_cpp.so" to ""
+[18.415s] Listing '/home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs'...
+[18.415s] Compiling '/home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/__init__.py'...
+[18.415s] Listing '/home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages/autoware_auto_system_msgs/msg'...
+[18.421s] -- Installing: /home/zhijie/autoware/install/autoware_auto_system_msgs/lib/libautoware_auto_system_msgs__rosidl_generator_py.so
+[18.422s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_system_msgs/lib/libautoware_auto_system_msgs__rosidl_generator_py.so" to ""
+[18.422s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/export_autoware_auto_system_msgs__rosidl_generator_cExport.cmake
+[18.422s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/export_autoware_auto_system_msgs__rosidl_generator_cExport-release.cmake
+[18.422s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/export_autoware_auto_system_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[18.422s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/export_autoware_auto_system_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[18.423s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/autoware_auto_system_msgs__rosidl_typesupport_introspection_cExport.cmake
+[18.423s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/autoware_auto_system_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[18.423s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/autoware_auto_system_msgs__rosidl_typesupport_cExport.cmake
+[18.423s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/autoware_auto_system_msgs__rosidl_typesupport_cExport-release.cmake
+[18.423s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/export_autoware_auto_system_msgs__rosidl_generator_cppExport.cmake
+[18.424s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/export_autoware_auto_system_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[18.424s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/export_autoware_auto_system_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[18.424s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/autoware_auto_system_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[18.424s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/autoware_auto_system_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[18.425s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/autoware_auto_system_msgs__rosidl_typesupport_cppExport.cmake
+[18.425s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/autoware_auto_system_msgs__rosidl_typesupport_cppExport-release.cmake
+[18.425s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/export_autoware_auto_system_msgs__rosidl_generator_pyExport.cmake
+[18.425s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_system_msgs/share/autoware_auto_system_msgs/cmake/export_autoware_auto_system_msgs__rosidl_generator_pyExport-release.cmake
+[18.432s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_system_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_auto_system_msgs

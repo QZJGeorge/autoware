@@ -1,0 +1,69 @@
+[0.124s] Invoking command in '/home/zhijie/autoware/build/autoware_utils': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/core/autoware_common/autoware_utils -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_utils
+[0.503s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[0.504s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.674s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.680s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.693s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.724s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.759s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.907s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.910s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.975s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.255s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.261s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.279s] -- Configuring done
+[1.321s] -- Generating done
+[1.324s] -- Build files have been written to: /home/zhijie/autoware/build/autoware_utils
+[1.338s] Invoked command in '/home/zhijie/autoware/build/autoware_utils' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/core/autoware_common/autoware_utils -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_utils
+[1.359s] Invoking command in '/home/zhijie/autoware/build/autoware_utils': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_utils -- -j16 -l16
+[3.628s] [35m[1mConsolidate compiler generated dependencies of target autoware_utils[0m
+[3.629s] [  8%] [32mBuilding CXX object CMakeFiles/autoware_utils.dir/src/autoware_utils.cpp.o[0m
+[3.629s] [ 16%] [32m[1mLinking CXX shared library libautoware_utils.so[0m
+[3.629s] [ 16%] Built target autoware_utils
+[3.629s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[3.629s] [ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[11.930s] [ 33%] [32m[1mLinking CXX static library libgtest.a[0m
+[11.965s] [ 33%] Built target gtest
+[11.979s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[11.998s] [ 41%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[13.176s] [ 50%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[13.208s] [ 50%] Built target gtest_main
+[13.225s] [35m[1mConsolidate compiler generated dependencies of target test_autoware_utils[0m
+[13.253s] [ 58%] [32mBuilding CXX object CMakeFiles/test_autoware_utils.dir/test/src/math/test_constants.cpp.o[0m
+[14.924s] [ 66%] [32mBuilding CXX object CMakeFiles/test_autoware_utils.dir/test/src/test_autoware_utils.cpp.o[0m
+[18.071s] [ 75%] [32mBuilding CXX object CMakeFiles/test_autoware_utils.dir/test/src/math/test_unit_conversion.cpp.o[0m
+[19.256s] [ 83%] [32mBuilding CXX object CMakeFiles/test_autoware_utils.dir/test/src/math/test_range.cpp.o[0m
+[22.209s] [ 91%] [32mBuilding CXX object CMakeFiles/test_autoware_utils.dir/test/src/math/test_normalization.cpp.o[0m
+[24.157s] [100%] [32m[1mLinking CXX executable test_autoware_utils[0m
+[24.341s] [100%] Built target test_autoware_utils
+[24.355s] Invoked command in '/home/zhijie/autoware/build/autoware_utils' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_utils -- -j16 -l16
+[24.399s] Invoking command in '/home/zhijie/autoware/build/autoware_utils': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_utils
+[24.601s] -- Install configuration: "Release"
+[24.601s] -- Execute custom install script
+[24.601s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/include/autoware_utils/autoware_utils.hpp
+[24.602s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/include/autoware_utils/math/constants.hpp
+[24.602s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/include/autoware_utils/math/normalization.hpp
+[24.602s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/include/autoware_utils/math/range.hpp
+[24.602s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/include/autoware_utils/math/unit_conversion.hpp
+[24.602s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/environment/library_path.sh
+[24.602s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/environment/library_path.dsv
+[24.602s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/lib/libautoware_utils.so
+[24.602s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/ament_index/resource_index/package_run_dependencies/autoware_utils
+[24.602s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/ament_index/resource_index/parent_prefix_path/autoware_utils
+[24.603s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/environment/ament_prefix_path.sh
+[24.603s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/environment/ament_prefix_path.dsv
+[24.603s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/environment/path.sh
+[24.603s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/environment/path.dsv
+[24.603s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/local_setup.bash
+[24.603s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/local_setup.sh
+[24.603s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/local_setup.zsh
+[24.603s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/local_setup.dsv
+[24.603s] -- Symlinking: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/package.dsv
+[24.603s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/ament_index/resource_index/packages/autoware_utils
+[24.604s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.604s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.604s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/cmake/ament_cmake_export_libraries-extras.cmake
+[24.604s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/cmake/autoware_utilsConfig.cmake
+[24.604s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/cmake/autoware_utilsConfig-version.cmake
+[24.604s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_utils/share/autoware_utils/package.xml
+[24.647s] Invoked command in '/home/zhijie/autoware/build/autoware_utils' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_utils

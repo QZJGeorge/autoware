@@ -1,0 +1,6 @@
+Invoking command in '/home/zhijie/autoware/build/ndt_omp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/external/ndt_omp -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/ndt_omp
+Invoked command in '/home/zhijie/autoware/build/ndt_omp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/external/ndt_omp -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/ndt_omp
+Invoking command in '/home/zhijie/autoware/build/ndt_omp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/ndt_omp -- -j16 -l16
+Invoked command in '/home/zhijie/autoware/build/ndt_omp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/ndt_omp -- -j16 -l16
+Invoking command in '/home/zhijie/autoware/build/ndt_omp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/ndt_omp
+Invoked command in '/home/zhijie/autoware/build/ndt_omp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/ndt_omp

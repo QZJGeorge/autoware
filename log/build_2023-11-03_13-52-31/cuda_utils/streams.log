@@ -1,0 +1,43 @@
+[0.057s] Invoking command in '/home/zhijie/autoware/build/cuda_utils': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/cuda_utils -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/cuda_utils
+[2.145s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[2.145s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.145s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.145s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.145s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.145s] -- Configured cppcheck include dirs: 
+[2.145s] -- Configured cppcheck exclude dirs and/or files: 
+[2.146s] -- Added test 'lint_cmake' to check CMake code style
+[2.146s] -- Added test 'xmllint' to check XML markup files
+[2.146s] -- Configuring done
+[2.146s] -- Generating done
+[2.146s] -- Build files have been written to: /home/zhijie/autoware/build/cuda_utils
+[2.175s] Invoked command in '/home/zhijie/autoware/build/cuda_utils' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/cuda_utils -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/cuda_utils
+[2.176s] Invoking command in '/home/zhijie/autoware/build/cuda_utils': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/cuda_utils -- -j16 -l16
+[3.745s] Invoked command in '/home/zhijie/autoware/build/cuda_utils' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/cuda_utils -- -j16 -l16
+[3.777s] Invoking command in '/home/zhijie/autoware/build/cuda_utils': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/cuda_utils
+[5.985s] -- Install configuration: "Release"
+[5.985s] -- Execute custom install script
+[5.985s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/include/cuda_utils/cuda_check_error.hpp
+[5.985s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/include/cuda_utils/cuda_unique_ptr.hpp
+[5.985s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/include/cuda_utils/stream_unique_ptr.hpp
+[5.985s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/include/cuda_utils/cuda_check_error.hpp
+[5.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/include/cuda_utils/cuda_unique_ptr.hpp
+[5.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/include/cuda_utils/stream_unique_ptr.hpp
+[5.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/ament_index/resource_index/package_run_dependencies/cuda_utils
+[5.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/ament_index/resource_index/parent_prefix_path/cuda_utils
+[5.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/environment/ament_prefix_path.sh
+[5.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/environment/ament_prefix_path.dsv
+[5.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/environment/path.sh
+[5.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/environment/path.dsv
+[5.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/local_setup.bash
+[5.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/local_setup.sh
+[5.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/local_setup.zsh
+[5.987s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/local_setup.dsv
+[5.987s] -- Symlinking: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/package.dsv
+[5.987s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/ament_index/resource_index/packages/cuda_utils
+[5.987s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.987s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.987s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/cmake/cuda_utilsConfig.cmake
+[5.987s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/cmake/cuda_utilsConfig-version.cmake
+[5.987s] -- Up-to-date symlink: /home/zhijie/autoware/install/cuda_utils/share/cuda_utils/package.xml
+[6.032s] Invoked command in '/home/zhijie/autoware/build/cuda_utils' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/cuda_utils

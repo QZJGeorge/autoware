@@ -1,0 +1,874 @@
+[0.041s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_vehicle_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/core/external/autoware_auto_msgs/autoware_auto_vehicle_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs
+[1.994s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.995s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.995s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.995s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.995s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.995s] -- Found ament_cmake_cppcheck: 0.12.8 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[1.995s] -- Found ament_cmake_cpplint: 0.12.8 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[1.995s] -- Found ament_cmake_uncrustify: 0.12.8 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[1.995s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.184s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.813s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.851s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.886s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.886s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.886s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.009s] -- Found ament_cmake_flake8: 0.12.8 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[3.010s] -- Found ament_cmake_pep257: 0.12.8 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[3.019s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.043s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.043s] -- Added test 'lint_cmake' to check CMake code style
+[3.044s] -- Added test 'xmllint' to check XML markup files
+[3.049s] -- Configuring done
+[3.229s] -- Generating done
+[3.234s] -- Build files have been written to: /home/zhijie/autoware/build/autoware_auto_vehicle_msgs
+[3.262s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_vehicle_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/core/external/autoware_auto_msgs/autoware_auto_vehicle_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_auto_vehicle_msgs
+[3.264s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_vehicle_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_auto_vehicle_msgs -- -j16 -l16
+[4.713s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[8.354s] [  0%] Built target autoware_auto_vehicle_msgs__cpp
+[8.381s] [  0%] Built target ament_cmake_python_symlink_autoware_auto_vehicle_msgs
+[8.396s] [  1%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[11.265s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp[0m
+[11.309s] [  1%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__type_support.cpp.o[0m
+[11.680s] [  1%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/horn_command__type_support.cpp.o[0m
+[12.275s] [  2%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/horn_report__type_support.cpp.o[0m
+[12.675s] [  2%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__type_support.cpp.o[0m
+[13.180s] [  3%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__type_support.cpp.o[0m
+[13.557s] [  3%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/steering_report__type_support.cpp.o[0m
+[14.109s] [  3%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__type_support.cpp.o[0m
+[14.492s] [  4%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__type_support.cpp.o[0m
+[14.866s] [  4%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__type_support.cpp.o[0m
+[15.253s] [  5%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__type_support.cpp.o[0m
+[15.676s] [  5%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__type_support.cpp.o[0m
+[16.056s] [  5%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__type_support.cpp.o[0m
+[16.646s] [  6%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__type_support.cpp.o[0m
+[17.234s] [  6%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/velocity_report__type_support.cpp.o[0m
+[17.635s] [  7%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__type_support.cpp.o[0m
+[18.031s] [  7%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/wipers_command__type_support.cpp.o[0m
+[18.477s] [  7%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/headlights_report__type_support.cpp.o[0m
+[18.479s] [  7%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/wipers_report__type_support.cpp.o[0m
+[19.096s] [  8%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__type_support.cpp.o[0m
+[19.121s] [  8%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__type_support.cpp.o[0m
+[19.787s] [  9%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/headlights_command__type_support.cpp.o[0m
+[19.895s] [  9%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__type_support.cpp.o[0m
+[20.688s] [ 10%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__type_support.cpp.o[0m
+[20.887s] [ 10%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__type_support.cpp.o[0m
+[21.763s] [ 10%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__type_support.cpp.o[0m
+[21.967s] [ 11%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/gear_report__type_support.cpp.o[0m
+[22.506s] [ 11%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/gear_command__type_support.cpp.o[0m
+[22.799s] [ 11%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/engage__type_support.cpp.o[0m
+[23.688s] [ 12%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__type_support.cpp.o[0m
+[24.673s] [ 13%] [32m[1mLinking CXX shared library libautoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[24.896s] [ 13%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp
+[25.487s] running egg_info
+[25.489s] writing autoware_auto_vehicle_msgs.egg-info/PKG-INFO
+[25.489s] writing dependency_links to autoware_auto_vehicle_msgs.egg-info/dependency_links.txt
+[25.490s] writing top-level names to autoware_auto_vehicle_msgs.egg-info/top_level.txt
+[25.495s] reading manifest file 'autoware_auto_vehicle_msgs.egg-info/SOURCES.txt'
+[25.499s] writing manifest file 'autoware_auto_vehicle_msgs.egg-info/SOURCES.txt'
+[25.553s] [ 13%] Built target ament_cmake_python_build_autoware_auto_vehicle_msgs_egg
+[25.580s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[30.373s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[30.429s] [ 14%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/control_mode_command__type_support.cpp.o[0m
+[31.047s] [ 14%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/raw_control_command__type_support.cpp.o[0m
+[31.687s] [ 15%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/stationary_locking_command__type_support.cpp.o[0m
+[32.310s] [ 15%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/steering_report__type_support.cpp.o[0m
+[32.975s] [ 15%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/turn_indicators_command__type_support.cpp.o[0m
+[33.611s] [ 16%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/turn_indicators_report__type_support.cpp.o[0m
+[34.241s] [ 16%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/vehicle_control_command__type_support.cpp.o[0m
+[34.868s] [ 16%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/vehicle_kinematic_state__type_support.cpp.o[0m
+[35.635s] [ 17%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/vehicle_odometry__type_support.cpp.o[0m
+[36.313s] [ 17%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/vehicle_state_command__type_support.cpp.o[0m
+[36.974s] [ 18%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/vehicle_state_report__type_support.cpp.o[0m
+[37.601s] [ 18%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/velocity_report__type_support.cpp.o[0m
+[38.217s] [ 18%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/wheel_encoder__type_support.cpp.o[0m
+[38.824s] [ 19%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/wipers_command__type_support.cpp.o[0m
+[39.394s] [ 19%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/wipers_report__type_support.cpp.o[0m
+[40.027s] [ 20%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/srv/detail/dds_fastrtps/autonomy_mode_change__type_support.cpp.o[0m
+[40.671s] [ 20%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/srv/detail/dds_fastrtps/control_mode_command__type_support.cpp.o[0m
+[41.303s] [ 21%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/horn_report__type_support.cpp.o[0m
+[41.932s] [ 21%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/horn_command__type_support.cpp.o[0m
+[42.547s] [ 21%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/headlights_report__type_support.cpp.o[0m
+[43.140s] [ 22%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/headlights_command__type_support.cpp.o[0m
+[43.738s] [ 22%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/hazard_lights_report__type_support.cpp.o[0m
+[44.179s] [ 23%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/hazard_lights_command__type_support.cpp.o[0m
+[44.602s] [ 23%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/hand_brake_report__type_support.cpp.o[0m
+[44.990s] [ 23%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/hand_brake_command__type_support.cpp.o[0m
+[45.382s] [ 24%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/gear_report__type_support.cpp.o[0m
+[45.776s] [ 24%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/gear_command__type_support.cpp.o[0m
+[46.161s] [ 25%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/engage__type_support.cpp.o[0m
+[46.613s] [ 25%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_vehicle_msgs/msg/detail/dds_fastrtps/control_mode_report__type_support.cpp.o[0m
+[47.240s] [ 25%] [32m[1mLinking CXX shared library libautoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[47.372s] [ 25%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp
+[47.388s] [ 26%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[50.087s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_cpp[0m
+[50.114s] [ 26%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/control_mode_command__type_support.cpp.o[0m
+[50.419s] [ 26%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/stationary_locking_command__type_support.cpp.o[0m
+[50.679s] [ 27%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/steering_report__type_support.cpp.o[0m
+[50.946s] [ 27%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/turn_indicators_command__type_support.cpp.o[0m
+[51.203s] [ 28%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/turn_indicators_report__type_support.cpp.o[0m
+[51.463s] [ 28%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/vehicle_control_command__type_support.cpp.o[0m
+[51.806s] [ 28%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/vehicle_kinematic_state__type_support.cpp.o[0m
+[52.169s] [ 29%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/vehicle_odometry__type_support.cpp.o[0m
+[52.621s] [ 29%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/vehicle_state_command__type_support.cpp.o[0m
+[53.052s] [ 30%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/vehicle_state_report__type_support.cpp.o[0m
+[53.475s] [ 30%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/velocity_report__type_support.cpp.o[0m
+[53.752s] [ 30%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/wheel_encoder__type_support.cpp.o[0m
+[54.024s] [ 31%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/wipers_command__type_support.cpp.o[0m
+[54.446s] [ 31%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/wipers_report__type_support.cpp.o[0m
+[54.855s] [ 32%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/srv/autonomy_mode_change__type_support.cpp.o[0m
+[55.277s] [ 32%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/srv/control_mode_command__type_support.cpp.o[0m
+[55.545s] [ 32%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/raw_control_command__type_support.cpp.o[0m
+[55.806s] [ 33%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/horn_report__type_support.cpp.o[0m
+[56.073s] [ 33%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/horn_command__type_support.cpp.o[0m
+[56.467s] [ 34%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/headlights_report__type_support.cpp.o[0m
+[56.836s] [ 34%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/headlights_command__type_support.cpp.o[0m
+[57.169s] [ 34%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/hazard_lights_report__type_support.cpp.o[0m
+[57.445s] [ 35%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/hazard_lights_command__type_support.cpp.o[0m
+[57.724s] [ 35%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/hand_brake_report__type_support.cpp.o[0m
+[58.149s] [ 35%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/hand_brake_command__type_support.cpp.o[0m
+[58.409s] [ 36%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/gear_report__type_support.cpp.o[0m
+[58.676s] [ 36%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/gear_command__type_support.cpp.o[0m
+[59.017s] [ 37%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/engage__type_support.cpp.o[0m
+[59.306s] [ 37%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_vehicle_msgs/msg/control_mode_report__type_support.cpp.o[0m
+[59.567s] [ 37%] [32m[1mLinking CXX shared library libautoware_auto_vehicle_msgs__rosidl_typesupport_cpp.so[0m
+[59.609s] [ 37%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_cpp
+[59.620s] [ 38%] [34m[1mGenerating C code for ROS interfaces[0m
+[63.301s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_generator_c[0m
+[63.321s] [ 38%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__functions.c.o[0m
+[63.402s] [ 38%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/steering_report__functions.c.o[0m
+[63.486s] [ 38%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__functions.c.o[0m
+[63.566s] [ 39%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__functions.c.o[0m
+[63.648s] [ 39%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__functions.c.o[0m
+[63.734s] [ 40%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__functions.c.o[0m
+[63.847s] [ 40%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__functions.c.o[0m
+[63.963s] [ 40%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__functions.c.o[0m
+[64.117s] [ 41%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__functions.c.o[0m
+[64.258s] [ 41%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/velocity_report__functions.c.o[0m
+[64.398s] [ 41%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__functions.c.o[0m
+[64.533s] [ 42%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/wipers_command__functions.c.o[0m
+[64.665s] [ 42%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/wipers_report__functions.c.o[0m
+[64.788s] [ 43%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__functions.c.o[0m
+[64.938s] [ 43%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__functions.c.o[0m
+[65.084s] [ 44%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__functions.c.o[0m
+[65.166s] [ 44%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__functions.c.o[0m
+[65.252s] [ 45%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/horn_report__functions.c.o[0m
+[65.337s] [ 45%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/horn_command__functions.c.o[0m
+[65.423s] [ 45%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/headlights_report__functions.c.o[0m
+[65.509s] [ 46%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/headlights_command__functions.c.o[0m
+[65.596s] [ 46%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__functions.c.o[0m
+[65.698s] [ 47%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__functions.c.o[0m
+[65.825s] [ 47%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__functions.c.o[0m
+[65.950s] [ 47%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__functions.c.o[0m
+[66.078s] [ 48%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/gear_report__functions.c.o[0m
+[66.206s] [ 48%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/gear_command__functions.c.o[0m
+[66.335s] [ 49%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/engage__functions.c.o[0m
+[66.467s] [ 49%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__functions.c.o[0m
+[66.600s] [ 49%] [32m[1mLinking C shared library libautoware_auto_vehicle_msgs__rosidl_generator_c.so[0m
+[66.663s] [ 49%] Built target autoware_auto_vehicle_msgs__rosidl_generator_c
+[66.679s] [ 50%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[69.915s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c[0m
+[70.041s] [ 50%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__type_support_c.cpp.o[0m
+[70.044s] [ 51%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/engage__type_support_c.cpp.o[0m
+[70.057s] [ 51%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__type_support_c.cpp.o[0m
+[70.619s] [ 51%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__type_support_c.cpp.o[0m
+[70.649s] [ 52%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__type_support_c.cpp.o[0m
+[70.657s] [ 52%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/steering_report__type_support_c.cpp.o[0m
+[71.210s] [ 53%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/horn_report__type_support_c.cpp.o[0m
+[71.233s] [ 53%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__type_support_c.cpp.o[0m
+[71.273s] [ 54%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__type_support_c.cpp.o[0m
+[71.286s] [ 54%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__type_support_c.cpp.o[0m
+[71.860s] [ 55%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__type_support_c.cpp.o[0m
+[71.870s] [ 55%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/horn_command__type_support_c.cpp.o[0m
+[71.965s] [ 55%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__type_support_c.cpp.o[0m
+[72.003s] [ 56%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__type_support_c.cpp.o[0m
+[72.455s] [ 56%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/velocity_report__type_support_c.cpp.o[0m
+[72.484s] [ 56%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__type_support_c.cpp.o[0m
+[72.687s] [ 56%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/wipers_command__type_support_c.cpp.o[0m
+[72.719s] [ 56%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/wipers_report__type_support_c.cpp.o[0m
+[73.129s] [ 57%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__type_support_c.cpp.o[0m
+[73.852s] [ 57%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__type_support_c.cpp.o[0m
+[74.441s] [ 58%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__type_support_c.cpp.o[0m
+[75.013s] [ 58%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/headlights_report__type_support_c.cpp.o[0m
+[75.610s] [ 59%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/headlights_command__type_support_c.cpp.o[0m
+[76.187s] [ 59%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__type_support_c.cpp.o[0m
+[76.812s] [ 60%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__type_support_c.cpp.o[0m
+[77.402s] [ 60%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__type_support_c.cpp.o[0m
+[78.018s] [ 60%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__type_support_c.cpp.o[0m
+[78.558s] [ 61%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/gear_report__type_support_c.cpp.o[0m
+[79.094s] [ 61%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_vehicle_msgs/msg/detail/gear_command__type_support_c.cpp.o[0m
+[79.436s] [ 61%] [32m[1mLinking CXX shared library libautoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[79.517s] [ 61%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c
+[79.527s] [ 62%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[81.879s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_c[0m
+[81.904s] [ 62%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/control_mode_command__type_support.cpp.o[0m
+[81.949s] [ 62%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/stationary_locking_command__type_support.cpp.o[0m
+[81.991s] [ 63%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/steering_report__type_support.cpp.o[0m
+[82.042s] [ 63%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/turn_indicators_command__type_support.cpp.o[0m
+[82.087s] [ 64%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/turn_indicators_report__type_support.cpp.o[0m
+[82.136s] [ 64%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/vehicle_control_command__type_support.cpp.o[0m
+[82.181s] [ 64%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/vehicle_kinematic_state__type_support.cpp.o[0m
+[82.246s] [ 65%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/vehicle_odometry__type_support.cpp.o[0m
+[82.289s] [ 65%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/vehicle_state_command__type_support.cpp.o[0m
+[82.340s] [ 66%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/vehicle_state_report__type_support.cpp.o[0m
+[82.383s] [ 66%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/velocity_report__type_support.cpp.o[0m
+[82.426s] [ 66%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/wheel_encoder__type_support.cpp.o[0m
+[82.467s] [ 67%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/wipers_command__type_support.cpp.o[0m
+[82.510s] [ 67%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/wipers_report__type_support.cpp.o[0m
+[82.551s] [ 68%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/srv/autonomy_mode_change__type_support.cpp.o[0m
+[82.596s] [ 68%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/srv/control_mode_command__type_support.cpp.o[0m
+[82.644s] [ 68%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/raw_control_command__type_support.cpp.o[0m
+[82.686s] [ 69%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/horn_report__type_support.cpp.o[0m
+[82.729s] [ 69%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/horn_command__type_support.cpp.o[0m
+[82.770s] [ 69%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/headlights_report__type_support.cpp.o[0m
+[82.812s] [ 70%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/headlights_command__type_support.cpp.o[0m
+[82.854s] [ 70%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/hazard_lights_report__type_support.cpp.o[0m
+[82.896s] [ 71%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/hazard_lights_command__type_support.cpp.o[0m
+[82.941s] [ 71%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/hand_brake_report__type_support.cpp.o[0m
+[82.983s] [ 71%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/hand_brake_command__type_support.cpp.o[0m
+[83.026s] [ 72%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/gear_report__type_support.cpp.o[0m
+[83.068s] [ 72%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/gear_command__type_support.cpp.o[0m
+[83.111s] [ 73%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/engage__type_support.cpp.o[0m
+[83.153s] [ 73%] [32mBuilding CXX object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/autoware_auto_vehicle_msgs/msg/control_mode_report__type_support.cpp.o[0m
+[83.196s] [ 73%] [32m[1mLinking CXX shared library libautoware_auto_vehicle_msgs__rosidl_typesupport_c.so[0m
+[83.264s] [ 73%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_c
+[83.280s] [ 74%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[87.587s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c[0m
+[87.606s] [ 74%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__type_support.c.o[0m
+[87.661s] [ 74%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/steering_report__type_support.c.o[0m
+[87.713s] [ 74%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__type_support.c.o[0m
+[87.766s] [ 75%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__type_support.c.o[0m
+[87.820s] [ 75%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__type_support.c.o[0m
+[87.874s] [ 76%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__type_support.c.o[0m
+[87.932s] [ 76%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__type_support.c.o[0m
+[87.989s] [ 76%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__type_support.c.o[0m
+[88.039s] [ 77%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__type_support.c.o[0m
+[88.089s] [ 77%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/velocity_report__type_support.c.o[0m
+[88.139s] [ 78%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__type_support.c.o[0m
+[88.193s] [ 78%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/wipers_command__type_support.c.o[0m
+[88.247s] [ 78%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/wipers_report__type_support.c.o[0m
+[88.301s] [ 79%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__type_support.c.o[0m
+[88.365s] [ 79%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__type_support.c.o[0m
+[88.429s] [ 80%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__type_support.c.o[0m
+[88.481s] [ 80%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__type_support.c.o[0m
+[88.535s] [ 80%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/horn_report__type_support.c.o[0m
+[88.588s] [ 81%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/horn_command__type_support.c.o[0m
+[88.642s] [ 81%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/headlights_report__type_support.c.o[0m
+[88.693s] [ 82%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/headlights_command__type_support.c.o[0m
+[88.747s] [ 82%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__type_support.c.o[0m
+[88.798s] [ 82%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__type_support.c.o[0m
+[88.849s] [ 83%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__type_support.c.o[0m
+[88.901s] [ 83%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__type_support.c.o[0m
+[88.948s] [ 84%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/gear_report__type_support.c.o[0m
+[89.004s] [ 84%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/gear_command__type_support.c.o[0m
+[89.055s] [ 84%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/engage__type_support.c.o[0m
+[89.109s] [ 85%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__type_support.c.o[0m
+[89.160s] [ 86%] [32m[1mLinking C shared library libautoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.so[0m
+[89.196s] [ 86%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c
+[89.215s] [ 86%] Built target autoware_auto_vehicle_msgs
+[89.235s] [ 86%] [34m[1mGenerating Python code for ROS interfaces[0m
+[98.517s] [ 86%] Built target autoware_auto_vehicle_msgs__py
+[98.571s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_generator_py[0m
+[98.647s] [ 87%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_control_mode_command_s.c.o[0m
+[98.940s] [ 88%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_steering_report_s.c.o[0m
+[99.229s] [ 88%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_turn_indicators_command_s.c.o[0m
+[99.492s] [ 89%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_turn_indicators_report_s.c.o[0m
+[99.845s] [ 89%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_vehicle_control_command_s.c.o[0m
+[100.073s] [ 89%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_vehicle_kinematic_state_s.c.o[0m
+[100.547s] [ 90%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_vehicle_odometry_s.c.o[0m
+[100.871s] [ 90%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_vehicle_state_command_s.c.o[0m
+[101.156s] [ 90%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_vehicle_state_report_s.c.o[0m
+[101.538s] [ 91%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_velocity_report_s.c.o[0m
+[101.837s] [ 91%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_wheel_encoder_s.c.o[0m
+[102.107s] [ 92%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_wipers_command_s.c.o[0m
+[102.562s] [ 92%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_wipers_report_s.c.o[0m
+[102.963s] [ 92%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/srv/_autonomy_mode_change_s.c.o[0m
+[103.232s] [ 93%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/srv/_control_mode_command_s.c.o[0m
+[103.427s] [ 93%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_stationary_locking_command_s.c.o[0m
+[103.616s] [ 93%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_raw_control_command_s.c.o[0m
+[103.818s] [ 94%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_horn_report_s.c.o[0m
+[103.986s] [ 94%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_horn_command_s.c.o[0m
+[104.145s] [ 95%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_headlights_report_s.c.o[0m
+[104.267s] [ 95%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_headlights_command_s.c.o[0m
+[104.386s] [ 95%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_hazard_lights_report_s.c.o[0m
+[104.569s] [ 96%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_hazard_lights_command_s.c.o[0m
+[104.748s] [ 96%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_hand_brake_report_s.c.o[0m
+[104.874s] [ 97%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_hand_brake_command_s.c.o[0m
+[104.993s] [ 97%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_gear_report_s.c.o[0m
+[105.109s] [ 97%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_gear_command_s.c.o[0m
+[105.220s] [ 98%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_engage_s.c.o[0m
+[105.336s] [ 98%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_control_mode_report_s.c.o[0m
+[105.451s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_vehicle_msgs/libautoware_auto_vehicle_msgs__rosidl_generator_py.so[0m
+[105.496s] [ 98%] Built target autoware_auto_vehicle_msgs__rosidl_generator_py
+[105.506s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[105.518s] [ 99%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/_autoware_auto_vehicle_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[105.942s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[105.990s] [ 99%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c__pyext
+[106.000s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_c__pyext[0m
+[106.013s] [100%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/_autoware_auto_vehicle_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[106.482s] [100%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[106.573s] [100%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_c__pyext
+[106.586s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[106.608s] [100%] [32mBuilding C object CMakeFiles/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/autoware_auto_vehicle_msgs/_autoware_auto_vehicle_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[107.337s] [100%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[107.416s] [100%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c__pyext
+[107.442s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_vehicle_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_auto_vehicle_msgs -- -j16 -l16
+[108.070s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_vehicle_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_auto_vehicle_msgs
+[111.853s] -- Install configuration: "Release"
+[111.853s] -- Execute custom install script
+[111.853s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/ament_index/resource_index/rosidl_interfaces/autoware_auto_vehicle_msgs
+[111.853s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/control_mode_command.h
+[111.853s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/control_mode_report.h
+[111.854s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__functions.h
+[111.854s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__struct.h
+[111.854s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__type_support.h
+[111.854s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__functions.h
+[111.854s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__struct.h
+[111.854s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__type_support.h
+[111.854s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/engage__functions.h
+[111.854s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/engage__struct.h
+[111.854s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/engage__type_support.h
+[111.855s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_command__functions.h
+[111.855s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_command__struct.h
+[111.855s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_command__type_support.h
+[111.855s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_report__functions.h
+[111.855s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_report__struct.h
+[111.855s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_report__type_support.h
+[111.855s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__functions.h
+[111.855s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__struct.h
+[111.855s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__type_support.h
+[111.856s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__functions.h
+[111.859s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__struct.h
+[111.859s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__type_support.h
+[111.859s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__functions.h
+[111.859s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__struct.h
+[111.859s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__type_support.h
+[111.859s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__functions.h
+[111.860s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__struct.h
+[111.860s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__type_support.h
+[111.860s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_command__functions.h
+[111.860s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_command__struct.h
+[111.860s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_command__type_support.h
+[111.860s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_report__functions.h
+[111.860s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_report__struct.h
+[111.860s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_report__type_support.h
+[111.860s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_command__functions.h
+[111.861s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_command__struct.h
+[111.861s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_command__type_support.h
+[111.861s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_report__functions.h
+[111.861s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_report__struct.h
+[111.861s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_report__type_support.h
+[111.861s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__functions.h
+[111.861s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__struct.h
+[111.862s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__type_support.h
+[111.862s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__functions.h
+[111.862s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__struct.h
+[111.862s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__type_support.h
+[111.862s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/steering_report__functions.h
+[111.862s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/steering_report__struct.h
+[111.862s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/steering_report__type_support.h
+[111.862s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__functions.h
+[111.863s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__struct.h
+[111.863s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__type_support.h
+[111.863s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__functions.h
+[111.863s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__struct.h
+[111.863s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__type_support.h
+[111.863s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__functions.h
+[111.863s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__struct.h
+[111.864s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__type_support.h
+[111.864s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__functions.h
+[111.864s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__struct.h
+[111.864s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__type_support.h
+[111.864s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__functions.h
+[111.864s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__struct.h
+[111.864s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__type_support.h
+[111.873s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__functions.h
+[111.873s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__struct.h
+[111.874s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__type_support.h
+[111.874s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__functions.h
+[111.874s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__struct.h
+[111.875s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__type_support.h
+[111.875s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/velocity_report__functions.h
+[111.875s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/velocity_report__struct.h
+[111.875s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/velocity_report__type_support.h
+[111.880s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__functions.h
+[111.880s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__struct.h
+[111.880s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__type_support.h
+[111.880s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_command__functions.h
+[111.880s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_command__struct.h
+[111.881s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_command__type_support.h
+[111.881s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_report__functions.h
+[111.881s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_report__struct.h
+[111.881s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_report__type_support.h
+[111.881s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/engage.h
+[111.881s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/gear_command.h
+[111.881s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/gear_report.h
+[111.882s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/hand_brake_command.h
+[111.888s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/hand_brake_report.h
+[111.889s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/hazard_lights_command.h
+[111.889s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/hazard_lights_report.h
+[111.889s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/headlights_command.h
+[111.889s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/headlights_report.h
+[111.889s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/horn_command.h
+[111.889s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/horn_report.h
+[111.889s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/raw_control_command.h
+[111.890s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/rosidl_generator_c__visibility_control.h
+[111.890s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/stationary_locking_command.h
+[111.890s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/steering_report.h
+[111.890s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/turn_indicators_command.h
+[111.895s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/turn_indicators_report.h
+[111.896s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/vehicle_control_command.h
+[111.896s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/vehicle_kinematic_state.h
+[111.896s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/vehicle_odometry.h
+[111.896s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/vehicle_state_command.h
+[111.896s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/vehicle_state_report.h
+[111.896s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/velocity_report.h
+[111.896s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/wheel_encoder.h
+[111.897s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/wipers_command.h
+[111.897s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/wipers_report.h
+[111.897s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/autonomy_mode_change.h
+[111.897s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/control_mode_command.h
+[111.897s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__functions.h
+[111.897s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__struct.h
+[111.898s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__type_support.h
+[111.898s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__functions.h
+[111.898s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__struct.h
+[111.898s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__type_support.h
+[111.898s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/environment/library_path.sh
+[111.898s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/environment/library_path.dsv
+[111.898s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__rosidl_typesupport_fastrtps_c.h
+[111.898s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__rosidl_typesupport_fastrtps_c.h
+[111.899s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/engage__rosidl_typesupport_fastrtps_c.h
+[111.899s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_command__rosidl_typesupport_fastrtps_c.h
+[111.899s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_report__rosidl_typesupport_fastrtps_c.h
+[111.899s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__rosidl_typesupport_fastrtps_c.h
+[111.899s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__rosidl_typesupport_fastrtps_c.h
+[111.899s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__rosidl_typesupport_fastrtps_c.h
+[111.899s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__rosidl_typesupport_fastrtps_c.h
+[111.899s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_command__rosidl_typesupport_fastrtps_c.h
+[111.900s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_report__rosidl_typesupport_fastrtps_c.h
+[111.900s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_command__rosidl_typesupport_fastrtps_c.h
+[111.900s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_report__rosidl_typesupport_fastrtps_c.h
+[111.900s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__rosidl_typesupport_fastrtps_c.h
+[111.900s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__rosidl_typesupport_fastrtps_c.h
+[111.900s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/steering_report__rosidl_typesupport_fastrtps_c.h
+[111.901s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__rosidl_typesupport_fastrtps_c.h
+[111.902s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__rosidl_typesupport_fastrtps_c.h
+[111.902s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_fastrtps_c.h
+[111.902s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__rosidl_typesupport_fastrtps_c.h
+[111.902s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__rosidl_typesupport_fastrtps_c.h
+[111.902s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__rosidl_typesupport_fastrtps_c.h
+[111.902s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__rosidl_typesupport_fastrtps_c.h
+[111.903s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/velocity_report__rosidl_typesupport_fastrtps_c.h
+[111.903s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__rosidl_typesupport_fastrtps_c.h
+[111.903s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_command__rosidl_typesupport_fastrtps_c.h
+[111.903s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_report__rosidl_typesupport_fastrtps_c.h
+[111.903s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[111.903s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__rosidl_typesupport_fastrtps_c.h
+[111.903s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__rosidl_typesupport_fastrtps_c.h
+[111.904s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__rosidl_typesupport_introspection_c.h
+[111.904s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__rosidl_typesupport_introspection_c.h
+[111.904s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/engage__rosidl_typesupport_introspection_c.h
+[111.904s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_command__rosidl_typesupport_introspection_c.h
+[111.904s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_report__rosidl_typesupport_introspection_c.h
+[111.904s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__rosidl_typesupport_introspection_c.h
+[111.904s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__rosidl_typesupport_introspection_c.h
+[111.904s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__rosidl_typesupport_introspection_c.h
+[111.905s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__rosidl_typesupport_introspection_c.h
+[111.905s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_command__rosidl_typesupport_introspection_c.h
+[111.905s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_report__rosidl_typesupport_introspection_c.h
+[111.905s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_command__rosidl_typesupport_introspection_c.h
+[111.905s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_report__rosidl_typesupport_introspection_c.h
+[111.905s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__rosidl_typesupport_introspection_c.h
+[111.905s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__rosidl_typesupport_introspection_c.h
+[111.906s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/steering_report__rosidl_typesupport_introspection_c.h
+[111.906s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__rosidl_typesupport_introspection_c.h
+[111.906s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__rosidl_typesupport_introspection_c.h
+[111.906s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_introspection_c.h
+[111.906s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__rosidl_typesupport_introspection_c.h
+[111.906s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__rosidl_typesupport_introspection_c.h
+[111.906s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__rosidl_typesupport_introspection_c.h
+[111.906s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__rosidl_typesupport_introspection_c.h
+[111.907s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/velocity_report__rosidl_typesupport_introspection_c.h
+[111.907s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__rosidl_typesupport_introspection_c.h
+[111.907s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_command__rosidl_typesupport_introspection_c.h
+[111.907s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_report__rosidl_typesupport_introspection_c.h
+[111.907s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[111.907s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__rosidl_typesupport_introspection_c.h
+[111.907s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__rosidl_typesupport_introspection_c.h
+[111.908s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/control_mode_command.hpp
+[111.908s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/control_mode_report.hpp
+[111.908s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__builder.hpp
+[111.908s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__struct.hpp
+[111.908s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__traits.hpp
+[111.908s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__builder.hpp
+[111.908s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__struct.hpp
+[111.908s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__traits.hpp
+[111.909s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/engage__builder.hpp
+[111.909s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/engage__struct.hpp
+[111.909s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/engage__traits.hpp
+[111.909s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_command__builder.hpp
+[111.909s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_command__struct.hpp
+[111.909s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_command__traits.hpp
+[111.909s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_report__builder.hpp
+[111.910s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_report__struct.hpp
+[111.910s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_report__traits.hpp
+[111.910s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__builder.hpp
+[111.910s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__struct.hpp
+[111.910s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__traits.hpp
+[111.910s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__builder.hpp
+[111.910s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__struct.hpp
+[111.910s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__traits.hpp
+[111.910s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__builder.hpp
+[111.911s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__struct.hpp
+[111.911s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__traits.hpp
+[111.911s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__builder.hpp
+[111.911s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__struct.hpp
+[111.911s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__traits.hpp
+[111.911s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_command__builder.hpp
+[111.911s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_command__struct.hpp
+[111.911s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_command__traits.hpp
+[111.911s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_report__builder.hpp
+[111.912s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_report__struct.hpp
+[111.912s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_report__traits.hpp
+[111.912s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_command__builder.hpp
+[111.912s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_command__struct.hpp
+[111.912s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_command__traits.hpp
+[111.912s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_report__builder.hpp
+[111.912s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_report__struct.hpp
+[111.912s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_report__traits.hpp
+[111.912s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__builder.hpp
+[111.913s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__struct.hpp
+[111.913s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__traits.hpp
+[111.913s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__builder.hpp
+[111.913s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__struct.hpp
+[111.913s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__traits.hpp
+[111.913s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/steering_report__builder.hpp
+[111.913s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/steering_report__struct.hpp
+[111.913s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/steering_report__traits.hpp
+[111.913s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__builder.hpp
+[111.914s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__struct.hpp
+[111.914s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__traits.hpp
+[111.914s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__builder.hpp
+[111.914s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__struct.hpp
+[111.914s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__traits.hpp
+[111.914s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__builder.hpp
+[111.914s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__struct.hpp
+[111.914s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__traits.hpp
+[111.914s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__builder.hpp
+[111.915s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__struct.hpp
+[111.915s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__traits.hpp
+[111.915s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__builder.hpp
+[111.915s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__struct.hpp
+[111.915s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__traits.hpp
+[111.916s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__builder.hpp
+[111.916s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__struct.hpp
+[111.916s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__traits.hpp
+[111.916s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__builder.hpp
+[111.917s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__struct.hpp
+[111.917s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__traits.hpp
+[111.917s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/velocity_report__builder.hpp
+[111.917s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/velocity_report__struct.hpp
+[111.917s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/velocity_report__traits.hpp
+[111.917s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__builder.hpp
+[111.918s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__struct.hpp
+[111.918s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__traits.hpp
+[111.918s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_command__builder.hpp
+[111.918s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_command__struct.hpp
+[111.918s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_command__traits.hpp
+[111.918s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_report__builder.hpp
+[111.918s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_report__struct.hpp
+[111.919s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_report__traits.hpp
+[111.919s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/engage.hpp
+[111.919s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/gear_command.hpp
+[111.919s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/gear_report.hpp
+[111.919s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/hand_brake_command.hpp
+[111.919s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/hand_brake_report.hpp
+[111.919s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/hazard_lights_command.hpp
+[111.920s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/hazard_lights_report.hpp
+[111.920s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/headlights_command.hpp
+[111.920s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/headlights_report.hpp
+[111.920s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/horn_command.hpp
+[111.920s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/horn_report.hpp
+[111.920s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/raw_control_command.hpp
+[111.921s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/stationary_locking_command.hpp
+[111.921s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/steering_report.hpp
+[111.921s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/turn_indicators_command.hpp
+[111.921s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/turn_indicators_report.hpp
+[111.921s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/vehicle_control_command.hpp
+[111.921s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/vehicle_kinematic_state.hpp
+[111.921s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/vehicle_odometry.hpp
+[111.922s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/vehicle_state_command.hpp
+[111.922s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/vehicle_state_report.hpp
+[111.922s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/velocity_report.hpp
+[111.922s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/wheel_encoder.hpp
+[111.923s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/wipers_command.hpp
+[111.923s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/wipers_report.hpp
+[111.923s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/autonomy_mode_change.hpp
+[111.924s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/control_mode_command.hpp
+[111.924s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__builder.hpp
+[111.924s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__struct.hpp
+[111.925s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__traits.hpp
+[111.925s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__builder.hpp
+[111.925s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__struct.hpp
+[111.926s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__traits.hpp
+[111.934s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__rosidl_typesupport_fastrtps_cpp.hpp
+[111.935s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__rosidl_typesupport_fastrtps_cpp.hpp
+[111.935s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/engage__rosidl_typesupport_fastrtps_cpp.hpp
+[111.935s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_command__rosidl_typesupport_fastrtps_cpp.hpp
+[111.936s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_report__rosidl_typesupport_fastrtps_cpp.hpp
+[111.936s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__rosidl_typesupport_fastrtps_cpp.hpp
+[111.936s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__rosidl_typesupport_fastrtps_cpp.hpp
+[111.936s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__rosidl_typesupport_fastrtps_cpp.hpp
+[111.936s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__rosidl_typesupport_fastrtps_cpp.hpp
+[111.936s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_command__rosidl_typesupport_fastrtps_cpp.hpp
+[111.936s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_report__rosidl_typesupport_fastrtps_cpp.hpp
+[111.937s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_command__rosidl_typesupport_fastrtps_cpp.hpp
+[111.937s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_report__rosidl_typesupport_fastrtps_cpp.hpp
+[111.937s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__rosidl_typesupport_fastrtps_cpp.hpp
+[111.937s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__rosidl_typesupport_fastrtps_cpp.hpp
+[111.937s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/steering_report__rosidl_typesupport_fastrtps_cpp.hpp
+[111.937s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__rosidl_typesupport_fastrtps_cpp.hpp
+[111.937s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__rosidl_typesupport_fastrtps_cpp.hpp
+[111.937s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_fastrtps_cpp.hpp
+[111.938s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__rosidl_typesupport_fastrtps_cpp.hpp
+[111.938s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__rosidl_typesupport_fastrtps_cpp.hpp
+[111.938s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__rosidl_typesupport_fastrtps_cpp.hpp
+[111.938s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__rosidl_typesupport_fastrtps_cpp.hpp
+[111.938s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/velocity_report__rosidl_typesupport_fastrtps_cpp.hpp
+[111.938s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__rosidl_typesupport_fastrtps_cpp.hpp
+[111.938s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_command__rosidl_typesupport_fastrtps_cpp.hpp
+[111.939s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_report__rosidl_typesupport_fastrtps_cpp.hpp
+[111.939s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[111.939s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__rosidl_typesupport_fastrtps_cpp.hpp
+[111.940s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__rosidl_typesupport_fastrtps_cpp.hpp
+[111.944s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_command__rosidl_typesupport_introspection_cpp.hpp
+[111.945s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/control_mode_report__rosidl_typesupport_introspection_cpp.hpp
+[111.945s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/engage__rosidl_typesupport_introspection_cpp.hpp
+[111.945s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_command__rosidl_typesupport_introspection_cpp.hpp
+[111.945s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/gear_report__rosidl_typesupport_introspection_cpp.hpp
+[111.945s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_command__rosidl_typesupport_introspection_cpp.hpp
+[111.946s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hand_brake_report__rosidl_typesupport_introspection_cpp.hpp
+[111.946s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__rosidl_typesupport_introspection_cpp.hpp
+[111.946s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_report__rosidl_typesupport_introspection_cpp.hpp
+[111.946s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_command__rosidl_typesupport_introspection_cpp.hpp
+[111.946s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/headlights_report__rosidl_typesupport_introspection_cpp.hpp
+[111.946s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_command__rosidl_typesupport_introspection_cpp.hpp
+[111.947s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/horn_report__rosidl_typesupport_introspection_cpp.hpp
+[111.947s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/raw_control_command__rosidl_typesupport_introspection_cpp.hpp
+[111.947s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/stationary_locking_command__rosidl_typesupport_introspection_cpp.hpp
+[111.947s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/steering_report__rosidl_typesupport_introspection_cpp.hpp
+[111.947s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_command__rosidl_typesupport_introspection_cpp.hpp
+[111.948s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/turn_indicators_report__rosidl_typesupport_introspection_cpp.hpp
+[111.948s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_control_command__rosidl_typesupport_introspection_cpp.hpp
+[111.948s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_kinematic_state__rosidl_typesupport_introspection_cpp.hpp
+[111.949s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_odometry__rosidl_typesupport_introspection_cpp.hpp
+[111.949s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_command__rosidl_typesupport_introspection_cpp.hpp
+[111.949s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/vehicle_state_report__rosidl_typesupport_introspection_cpp.hpp
+[111.955s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/velocity_report__rosidl_typesupport_introspection_cpp.hpp
+[111.958s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wheel_encoder__rosidl_typesupport_introspection_cpp.hpp
+[111.958s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_command__rosidl_typesupport_introspection_cpp.hpp
+[111.958s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/msg/detail/wipers_report__rosidl_typesupport_introspection_cpp.hpp
+[111.958s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/autonomy_mode_change__rosidl_typesupport_introspection_cpp.hpp
+[111.958s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/include/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs/srv/detail/control_mode_command__rosidl_typesupport_introspection_cpp.hpp
+[111.958s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/environment/pythonpath.sh
+[111.958s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/environment/pythonpath.dsv
+[111.959s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs-1.0.0-py3.10.egg-info/PKG-INFO
+[111.959s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs-1.0.0-py3.10.egg-info/SOURCES.txt
+[111.959s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs-1.0.0-py3.10.egg-info/dependency_links.txt
+[111.960s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs-1.0.0-py3.10.egg-info/top_level.txt
+[111.965s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/__init__.py
+[111.971s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/_autoware_auto_vehicle_msgs_s.ep.rosidl_typesupport_c.c
+[111.971s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/_autoware_auto_vehicle_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[111.971s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/_autoware_auto_vehicle_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[111.971s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[111.971s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[111.971s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[111.977s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/libautoware_auto_vehicle_msgs__rosidl_generator_py.so
+[111.977s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/__init__.py
+[111.977s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_control_mode_command.py
+[111.977s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_control_mode_command_s.c
+[111.977s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_control_mode_report.py
+[111.978s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_control_mode_report_s.c
+[111.978s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_engage.py
+[111.978s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_engage_s.c
+[111.978s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_gear_command.py
+[111.978s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_gear_command_s.c
+[111.978s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_gear_report.py
+[111.978s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_gear_report_s.c
+[111.978s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_hand_brake_command.py
+[111.979s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_hand_brake_command_s.c
+[111.979s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_hand_brake_report.py
+[111.979s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_hand_brake_report_s.c
+[111.979s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_hazard_lights_command.py
+[111.979s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_hazard_lights_command_s.c
+[111.993s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_hazard_lights_report.py
+[111.993s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_hazard_lights_report_s.c
+[111.993s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_headlights_command.py
+[111.993s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_headlights_command_s.c
+[111.994s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_headlights_report.py
+[111.994s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_headlights_report_s.c
+[111.994s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_horn_command.py
+[111.994s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_horn_command_s.c
+[111.994s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_horn_report.py
+[111.994s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_horn_report_s.c
+[111.994s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_raw_control_command.py
+[111.994s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_raw_control_command_s.c
+[111.995s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_stationary_locking_command.py
+[111.995s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_stationary_locking_command_s.c
+[111.995s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_steering_report.py
+[111.995s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_steering_report_s.c
+[111.996s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_turn_indicators_command.py
+[111.996s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_turn_indicators_command_s.c
+[111.996s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_turn_indicators_report.py
+[111.996s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_turn_indicators_report_s.c
+[111.997s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_control_command.py
+[111.997s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_control_command_s.c
+[111.998s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_kinematic_state.py
+[111.998s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_kinematic_state_s.c
+[111.998s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_odometry.py
+[111.998s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_odometry_s.c
+[111.999s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_state_command.py
+[111.999s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_state_command_s.c
+[112.000s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_state_report.py
+[112.000s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_state_report_s.c
+[112.000s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_velocity_report.py
+[112.001s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_velocity_report_s.c
+[112.001s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_wheel_encoder.py
+[112.001s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_wheel_encoder_s.c
+[112.002s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_wipers_command.py
+[112.002s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_wipers_command_s.c
+[112.003s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_wipers_report.py
+[112.003s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_wipers_report_s.c
+[112.003s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/srv/__init__.py
+[112.004s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/srv/_autonomy_mode_change.py
+[112.004s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/srv/_autonomy_mode_change_s.c
+[112.004s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/srv/_control_mode_command.py
+[112.005s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/srv/_control_mode_command_s.c
+[112.005s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[112.006s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[112.006s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[112.006s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/ControlModeCommand.idl
+[112.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/ControlModeReport.idl
+[112.007s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/Engage.idl
+[112.008s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/GearCommand.idl
+[112.008s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/GearReport.idl
+[112.009s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/HandBrakeCommand.idl
+[112.009s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/HandBrakeReport.idl
+[112.010s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/HazardLightsCommand.idl
+[112.010s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/HazardLightsReport.idl
+[112.011s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/HeadlightsCommand.idl
+[112.011s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/HeadlightsReport.idl
+[112.011s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/HornCommand.idl
+[112.012s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/HornReport.idl
+[112.012s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/RawControlCommand.idl
+[112.013s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/StationaryLockingCommand.idl
+[112.013s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/SteeringReport.idl
+[112.014s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/TurnIndicatorsCommand.idl
+[112.014s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/TurnIndicatorsReport.idl
+[112.015s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/VehicleControlCommand.idl
+[112.015s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/VehicleKinematicState.idl
+[112.015s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/VehicleOdometry.idl
+[112.016s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/VehicleStateCommand.idl
+[112.017s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/VehicleStateReport.idl
+[112.018s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/VelocityReport.idl
+[112.018s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/WheelEncoder.idl
+[112.019s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/WipersCommand.idl
+[112.020s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/msg/WipersReport.idl
+[112.020s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/srv/AutonomyModeChange.idl
+[112.021s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/srv/ControlModeCommand.idl
+[112.021s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/srv/ControlModeCommand.srv
+[112.024s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/srv/ControlModeCommand_Request.msg
+[112.025s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/srv/ControlModeCommand_Response.msg
+[112.026s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/ament_index/resource_index/package_run_dependencies/autoware_auto_vehicle_msgs
+[112.027s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/ament_index/resource_index/parent_prefix_path/autoware_auto_vehicle_msgs
+[112.027s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/environment/ament_prefix_path.sh
+[112.028s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/environment/ament_prefix_path.dsv
+[112.028s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/environment/path.sh
+[112.028s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/environment/path.dsv
+[112.029s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/local_setup.bash
+[112.029s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/local_setup.sh
+[112.030s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/local_setup.zsh
+[112.030s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/local_setup.dsv
+[112.030s] -- Symlinking: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/package.dsv
+[112.044s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/ament_index/resource_index/packages/autoware_auto_vehicle_msgs
+[112.044s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/rosidl_cmake-extras.cmake
+[112.044s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[112.045s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[112.047s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[112.047s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[112.048s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[112.048s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[112.053s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/autoware_auto_vehicle_msgsConfig.cmake
+[112.053s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/autoware_auto_vehicle_msgsConfig-version.cmake
+[112.053s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/package.xml
+[112.053s] -- Installing: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_generator_c.so
+[112.053s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_generator_c.so" to ""
+[112.054s] -- Installing: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.so
+[112.054s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[112.054s] -- Installing: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.so
+[112.055s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c.so" to ""
+[112.056s] -- Installing: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_typesupport_c.so
+[112.057s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_typesupport_c.so" to ""
+[112.058s] -- Installing: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.so
+[112.060s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[112.060s] -- Installing: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.so
+[112.062s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[112.062s] -- Installing: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_typesupport_cpp.so
+[112.062s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_typesupport_cpp.so" to ""
+[112.184s] Listing '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs'...
+[112.184s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/__init__.py'...
+[112.184s] Listing '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg'...
+[112.184s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/__init__.py'...
+[112.184s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_control_mode_command.py'...
+[112.185s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_control_mode_report.py'...
+[112.185s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_engage.py'...
+[112.185s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_gear_command.py'...
+[112.185s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_gear_report.py'...
+[112.185s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_hand_brake_command.py'...
+[112.185s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_hand_brake_report.py'...
+[112.185s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_hazard_lights_command.py'...
+[112.185s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_hazard_lights_report.py'...
+[112.186s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_headlights_command.py'...
+[112.186s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_headlights_report.py'...
+[112.186s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_horn_command.py'...
+[112.186s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_horn_report.py'...
+[112.186s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_raw_control_command.py'...
+[112.186s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_stationary_locking_command.py'...
+[112.186s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_steering_report.py'...
+[112.187s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_turn_indicators_command.py'...
+[112.187s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_turn_indicators_report.py'...
+[112.187s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_control_command.py'...
+[112.187s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_kinematic_state.py'...
+[112.187s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_odometry.py'...
+[112.187s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_state_command.py'...
+[112.187s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_vehicle_state_report.py'...
+[112.187s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_velocity_report.py'...
+[112.187s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_wheel_encoder.py'...
+[112.188s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_wipers_command.py'...
+[112.188s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/msg/_wipers_report.py'...
+[112.188s] Listing '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/srv'...
+[112.188s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/srv/__init__.py'...
+[112.188s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/srv/_autonomy_mode_change.py'...
+[112.188s] Compiling '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages/autoware_auto_vehicle_msgs/srv/_control_mode_command.py'...
+[112.194s] -- Installing: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_generator_py.so
+[112.194s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib/libautoware_auto_vehicle_msgs__rosidl_generator_py.so" to ""
+[112.195s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/export_autoware_auto_vehicle_msgs__rosidl_generator_cExport.cmake
+[112.195s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/export_autoware_auto_vehicle_msgs__rosidl_generator_cExport-release.cmake
+[112.195s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/export_autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[112.195s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/export_autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[112.196s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cExport.cmake
+[112.196s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[112.196s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/autoware_auto_vehicle_msgs__rosidl_typesupport_cExport.cmake
+[112.196s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/autoware_auto_vehicle_msgs__rosidl_typesupport_cExport-release.cmake
+[112.197s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/export_autoware_auto_vehicle_msgs__rosidl_generator_cppExport.cmake
+[112.197s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/export_autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[112.197s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/export_autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[112.199s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[112.199s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[112.199s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/autoware_auto_vehicle_msgs__rosidl_typesupport_cppExport.cmake
+[112.199s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/autoware_auto_vehicle_msgs__rosidl_typesupport_cppExport-release.cmake
+[112.206s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/export_autoware_auto_vehicle_msgs__rosidl_generator_pyExport.cmake
+[112.206s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/cmake/export_autoware_auto_vehicle_msgs__rosidl_generator_pyExport-release.cmake
+[112.207s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_vehicle_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_auto_vehicle_msgs

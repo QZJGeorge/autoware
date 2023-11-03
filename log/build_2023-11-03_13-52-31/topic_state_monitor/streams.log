@@ -1,0 +1,64 @@
+[0.098s] Invoking command in '/home/zhijie/autoware/build/topic_state_monitor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/system/topic_state_monitor -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/topic_state_monitor
+[11.838s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[11.838s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[11.838s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[11.839s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[11.839s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[11.839s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[11.839s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.839s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[11.839s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[11.839s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[11.839s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[11.839s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.839s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.840s] -- Configured cppcheck include dirs: /home/zhijie/autoware/src/universe/autoware.universe/system/topic_state_monitor/include
+[11.840s] -- Configured cppcheck exclude dirs and/or files: 
+[11.840s] -- Added test 'lint_cmake' to check CMake code style
+[11.840s] -- Added test 'xmllint' to check XML markup files
+[11.840s] -- Configuring done
+[11.840s] -- Generating done
+[11.840s] -- Build files have been written to: /home/zhijie/autoware/build/topic_state_monitor
+[11.851s] Invoked command in '/home/zhijie/autoware/build/topic_state_monitor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/system/topic_state_monitor -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/topic_state_monitor
+[11.852s] Invoking command in '/home/zhijie/autoware/build/topic_state_monitor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/topic_state_monitor -- -j16 -l16
+[16.887s] [35m[1mConsolidate compiler generated dependencies of target topic_state_monitor[0m
+[16.887s] [ 20%] [32mBuilding CXX object CMakeFiles/topic_state_monitor.dir/src/topic_state_monitor/topic_state_monitor.cpp.o[0m
+[16.887s] [ 40%] [32mBuilding CXX object CMakeFiles/topic_state_monitor.dir/src/topic_state_monitor_core.cpp.o[0m
+[33.158s] [ 60%] [32m[1mLinking CXX shared library libtopic_state_monitor.so[0m
+[33.306s] [ 60%] Built target topic_state_monitor
+[33.315s] [35m[1mConsolidate compiler generated dependencies of target topic_state_monitor_node[0m
+[33.331s] [ 80%] [32mBuilding CXX object CMakeFiles/topic_state_monitor_node.dir/rclcpp_components/node_main_topic_state_monitor_node.cpp.o[0m
+[36.798s] [100%] [32m[1mLinking CXX executable topic_state_monitor_node[0m
+[36.906s] [100%] Built target topic_state_monitor_node
+[36.916s] Invoked command in '/home/zhijie/autoware/build/topic_state_monitor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/topic_state_monitor -- -j16 -l16
+[36.964s] Invoking command in '/home/zhijie/autoware/build/topic_state_monitor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/topic_state_monitor
+[46.437s] -- Install configuration: "Release"
+[46.437s] -- Execute custom install script
+[46.437s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/lib/topic_state_monitor/topic_state_monitor_node
+[46.437s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/include/topic_state_monitor/topic_state_monitor.hpp
+[46.437s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/include/topic_state_monitor/topic_state_monitor_core.hpp
+[46.438s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/library_path.sh
+[46.438s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/library_path.dsv
+[46.438s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/lib/libtopic_state_monitor.so
+[46.438s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/launch/topic_state_monitor.launch.xml
+[46.438s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/launch/topic_state_monitor_tf.launch.xml
+[46.438s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/ament_index/resource_index/package_run_dependencies/topic_state_monitor
+[46.438s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/ament_index/resource_index/parent_prefix_path/topic_state_monitor
+[46.438s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/ament_prefix_path.sh
+[46.438s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/ament_prefix_path.dsv
+[46.438s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/path.sh
+[46.438s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/path.dsv
+[46.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/local_setup.bash
+[46.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/local_setup.sh
+[46.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/local_setup.zsh
+[46.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/local_setup.dsv
+[46.439s] -- Symlinking: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/package.dsv
+[46.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/ament_index/resource_index/packages/topic_state_monitor
+[46.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/ament_index/resource_index/rclcpp_components/topic_state_monitor
+[46.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/ament_cmake_export_dependencies-extras.cmake
+[46.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/ament_cmake_export_include_directories-extras.cmake
+[46.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/ament_cmake_export_libraries-extras.cmake
+[46.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/topic_state_monitorConfig.cmake
+[46.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/topic_state_monitorConfig-version.cmake
+[46.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/package.xml
+[46.522s] Invoked command in '/home/zhijie/autoware/build/topic_state_monitor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/topic_state_monitor

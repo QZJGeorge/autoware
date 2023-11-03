@@ -1,0 +1,237 @@
+[0.048s] Invoking command in '/home/zhijie/autoware/build/tier4_simulation_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/external/tier4_autoware_msgs/tier4_simulation_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/tier4_simulation_msgs
+[5.831s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[5.832s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.832s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.832s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.832s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.832s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.832s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.832s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.832s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.832s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.833s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.833s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.833s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.833s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[5.833s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.833s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.833s] -- Added test 'lint_cmake' to check CMake code style
+[5.833s] -- Added test 'xmllint' to check XML markup files
+[5.833s] -- Configuring done
+[5.834s] -- Generating done
+[5.834s] -- Build files have been written to: /home/zhijie/autoware/build/tier4_simulation_msgs
+[5.924s] Invoked command in '/home/zhijie/autoware/build/tier4_simulation_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/external/tier4_autoware_msgs/tier4_simulation_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/tier4_simulation_msgs
+[5.926s] Invoking command in '/home/zhijie/autoware/build/tier4_simulation_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_simulation_msgs -- -j16 -l16
+[6.118s] [  1%] Built target tier4_simulation_msgs__cpp
+[6.118s] [  1%] Built target ament_cmake_python_symlink_tier4_simulation_msgs
+[6.118s] [35m[1mConsolidate compiler generated dependencies of target tier4_simulation_msgs__rosidl_typesupport_introspection_cpp[0m
+[6.119s] [  3%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tier4_simulation_msgs/msg/detail/fault_injection_event__type_support.cpp.o[0m
+[6.676s] [  5%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tier4_simulation_msgs/msg/detail/user_defined_value_type__type_support.cpp.o[0m
+[7.272s] [  7%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tier4_simulation_msgs/msg/detail/user_defined_value__type_support.cpp.o[0m
+[7.947s] [  9%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tier4_simulation_msgs/msg/detail/simulation_events__type_support.cpp.o[0m
+[8.718s] [ 10%] [32m[1mLinking CXX shared library libtier4_simulation_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[8.881s] [ 12%] Built target tier4_simulation_msgs__rosidl_typesupport_introspection_cpp
+[9.648s] running egg_info
+[9.650s] writing tier4_simulation_msgs.egg-info/PKG-INFO
+[9.650s] writing dependency_links to tier4_simulation_msgs.egg-info/dependency_links.txt
+[9.650s] writing top-level names to tier4_simulation_msgs.egg-info/top_level.txt
+[9.655s] reading manifest file 'tier4_simulation_msgs.egg-info/SOURCES.txt'
+[9.658s] writing manifest file 'tier4_simulation_msgs.egg-info/SOURCES.txt'
+[9.705s] [ 12%] Built target ament_cmake_python_build_tier4_simulation_msgs_egg
+[9.727s] [35m[1mConsolidate compiler generated dependencies of target tier4_simulation_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[9.781s] [ 14%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tier4_simulation_msgs/msg/detail/dds_fastrtps/fault_injection_event__type_support.cpp.o[0m
+[10.567s] [ 16%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tier4_simulation_msgs/msg/detail/dds_fastrtps/user_defined_value_type__type_support.cpp.o[0m
+[11.226s] [ 18%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tier4_simulation_msgs/msg/detail/dds_fastrtps/user_defined_value__type_support.cpp.o[0m
+[11.872s] [ 20%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tier4_simulation_msgs/msg/detail/dds_fastrtps/simulation_events__type_support.cpp.o[0m
+[12.558s] [ 21%] [32m[1mLinking CXX shared library libtier4_simulation_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[12.679s] [ 23%] Built target tier4_simulation_msgs__rosidl_typesupport_fastrtps_cpp
+[12.697s] [35m[1mConsolidate compiler generated dependencies of target tier4_simulation_msgs__rosidl_typesupport_cpp[0m
+[12.718s] [ 25%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tier4_simulation_msgs/msg/fault_injection_event__type_support.cpp.o[0m
+[13.117s] [ 27%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tier4_simulation_msgs/msg/user_defined_value_type__type_support.cpp.o[0m
+[13.528s] [ 29%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tier4_simulation_msgs/msg/user_defined_value__type_support.cpp.o[0m
+[13.926s] [ 30%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tier4_simulation_msgs/msg/simulation_events__type_support.cpp.o[0m
+[14.334s] [ 32%] [32m[1mLinking CXX shared library libtier4_simulation_msgs__rosidl_typesupport_cpp.so[0m
+[14.395s] [ 34%] Built target tier4_simulation_msgs__rosidl_typesupport_cpp
+[14.410s] [35m[1mConsolidate compiler generated dependencies of target tier4_simulation_msgs__rosidl_generator_c[0m
+[14.427s] [ 45%] Built target tier4_simulation_msgs__rosidl_generator_c
+[14.444s] [35m[1mConsolidate compiler generated dependencies of target tier4_simulation_msgs__rosidl_typesupport_fastrtps_c[0m
+[14.466s] [ 47%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tier4_simulation_msgs/msg/detail/fault_injection_event__type_support_c.cpp.o[0m
+[15.040s] [ 49%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tier4_simulation_msgs/msg/detail/user_defined_value_type__type_support_c.cpp.o[0m
+[15.527s] [ 50%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tier4_simulation_msgs/msg/detail/user_defined_value__type_support_c.cpp.o[0m
+[15.978s] [ 52%] [32mBuilding CXX object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tier4_simulation_msgs/msg/detail/simulation_events__type_support_c.cpp.o[0m
+[16.409s] [ 54%] [32m[1mLinking CXX shared library libtier4_simulation_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[16.521s] [ 56%] Built target tier4_simulation_msgs__rosidl_typesupport_fastrtps_c
+[16.535s] [35m[1mConsolidate compiler generated dependencies of target tier4_simulation_msgs__rosidl_typesupport_c[0m
+[16.550s] [ 67%] Built target tier4_simulation_msgs__rosidl_typesupport_c
+[16.567s] [35m[1mConsolidate compiler generated dependencies of target tier4_simulation_msgs__rosidl_typesupport_introspection_c[0m
+[16.584s] [ 78%] Built target tier4_simulation_msgs__rosidl_typesupport_introspection_c
+[16.613s] [ 78%] Built target tier4_simulation_msgs
+[16.644s] [ 80%] Built target tier4_simulation_msgs__py
+[16.660s] [35m[1mConsolidate compiler generated dependencies of target tier4_simulation_msgs__rosidl_generator_py[0m
+[16.681s] [ 81%] [32mBuilding C object CMakeFiles/tier4_simulation_msgs__rosidl_generator_py.dir/rosidl_generator_py/tier4_simulation_msgs/msg/_fault_injection_event_s.c.o[0m
+[16.868s] [ 83%] [32mBuilding C object CMakeFiles/tier4_simulation_msgs__rosidl_generator_py.dir/rosidl_generator_py/tier4_simulation_msgs/msg/_user_defined_value_type_s.c.o[0m
+[17.049s] [ 85%] [32mBuilding C object CMakeFiles/tier4_simulation_msgs__rosidl_generator_py.dir/rosidl_generator_py/tier4_simulation_msgs/msg/_user_defined_value_s.c.o[0m
+[17.234s] [ 87%] [32mBuilding C object CMakeFiles/tier4_simulation_msgs__rosidl_generator_py.dir/rosidl_generator_py/tier4_simulation_msgs/msg/_simulation_events_s.c.o[0m
+[17.438s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/tier4_simulation_msgs/libtier4_simulation_msgs__rosidl_generator_py.so[0m
+[17.513s] [ 89%] Built target tier4_simulation_msgs__rosidl_generator_py
+[17.528s] [35m[1mConsolidate compiler generated dependencies of target tier4_simulation_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[17.546s] [ 90%] [32mBuilding C object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tier4_simulation_msgs/_tier4_simulation_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[17.778s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/tier4_simulation_msgs/tier4_simulation_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[17.831s] [ 92%] Built target tier4_simulation_msgs__rosidl_typesupport_fastrtps_c__pyext
+[17.845s] [35m[1mConsolidate compiler generated dependencies of target tier4_simulation_msgs__rosidl_typesupport_c__pyext[0m
+[17.862s] [ 94%] [32mBuilding C object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tier4_simulation_msgs/_tier4_simulation_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[18.088s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/tier4_simulation_msgs/tier4_simulation_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[18.138s] [ 96%] Built target tier4_simulation_msgs__rosidl_typesupport_c__pyext
+[18.152s] [35m[1mConsolidate compiler generated dependencies of target tier4_simulation_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[18.170s] [ 98%] [32mBuilding C object CMakeFiles/tier4_simulation_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tier4_simulation_msgs/_tier4_simulation_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[18.396s] [100%] [32m[1mLinking C shared library rosidl_generator_py/tier4_simulation_msgs/tier4_simulation_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[18.446s] [100%] Built target tier4_simulation_msgs__rosidl_typesupport_introspection_c__pyext
+[18.461s] Invoked command in '/home/zhijie/autoware/build/tier4_simulation_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_simulation_msgs -- -j16 -l16
+[18.635s] Invoking command in '/home/zhijie/autoware/build/tier4_simulation_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_simulation_msgs
+[23.581s] -- Install configuration: "Release"
+[23.581s] -- Execute custom install script
+[23.581s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/ament_index/resource_index/rosidl_interfaces/tier4_simulation_msgs
+[23.582s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/fault_injection_event__functions.h
+[23.583s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/fault_injection_event__struct.h
+[23.583s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/fault_injection_event__type_support.h
+[23.583s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/simulation_events__functions.h
+[23.583s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/simulation_events__struct.h
+[23.583s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/simulation_events__type_support.h
+[23.584s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value__functions.h
+[23.584s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value__struct.h
+[23.584s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value__type_support.h
+[23.584s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value_type__functions.h
+[23.584s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value_type__struct.h
+[23.584s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value_type__type_support.h
+[23.584s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/fault_injection_event.h
+[23.584s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/rosidl_generator_c__visibility_control.h
+[23.584s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/simulation_events.h
+[23.585s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/user_defined_value.h
+[23.585s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/user_defined_value_type.h
+[23.585s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/environment/library_path.sh
+[23.585s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/environment/library_path.dsv
+[23.585s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/fault_injection_event__rosidl_typesupport_fastrtps_c.h
+[23.585s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/simulation_events__rosidl_typesupport_fastrtps_c.h
+[23.585s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value__rosidl_typesupport_fastrtps_c.h
+[23.585s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value_type__rosidl_typesupport_fastrtps_c.h
+[23.585s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[23.585s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/fault_injection_event__builder.hpp
+[23.586s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/fault_injection_event__struct.hpp
+[23.586s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/fault_injection_event__traits.hpp
+[23.586s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/simulation_events__builder.hpp
+[23.586s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/simulation_events__struct.hpp
+[23.586s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/simulation_events__traits.hpp
+[23.586s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value__builder.hpp
+[23.586s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value__struct.hpp
+[23.586s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value__traits.hpp
+[23.586s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value_type__builder.hpp
+[23.587s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value_type__struct.hpp
+[23.587s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value_type__traits.hpp
+[23.587s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/fault_injection_event.hpp
+[23.587s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/simulation_events.hpp
+[23.587s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/user_defined_value.hpp
+[23.587s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/user_defined_value_type.hpp
+[23.587s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/fault_injection_event__rosidl_typesupport_fastrtps_cpp.hpp
+[23.587s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/simulation_events__rosidl_typesupport_fastrtps_cpp.hpp
+[23.587s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value__rosidl_typesupport_fastrtps_cpp.hpp
+[23.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value_type__rosidl_typesupport_fastrtps_cpp.hpp
+[23.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[23.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/fault_injection_event__rosidl_typesupport_introspection_c.h
+[23.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/simulation_events__rosidl_typesupport_introspection_c.h
+[23.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value__rosidl_typesupport_introspection_c.h
+[23.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value_type__rosidl_typesupport_introspection_c.h
+[23.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[23.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/fault_injection_event__rosidl_typesupport_introspection_cpp.hpp
+[23.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/simulation_events__rosidl_typesupport_introspection_cpp.hpp
+[23.589s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value__rosidl_typesupport_introspection_cpp.hpp
+[23.589s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/include/tier4_simulation_msgs/tier4_simulation_msgs/msg/detail/user_defined_value_type__rosidl_typesupport_introspection_cpp.hpp
+[23.589s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/environment/pythonpath.sh
+[23.589s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/environment/pythonpath.dsv
+[23.589s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[23.589s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[23.589s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[23.589s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[23.590s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/__init__.py
+[23.590s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/_tier4_simulation_msgs_s.ep.rosidl_typesupport_c.c
+[23.590s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/_tier4_simulation_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[23.590s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/_tier4_simulation_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[23.590s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/libtier4_simulation_msgs__rosidl_generator_py.so
+[23.590s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/msg/__init__.py
+[23.590s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/msg/_fault_injection_event.py
+[23.590s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/msg/_fault_injection_event_s.c
+[23.590s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/msg/_simulation_events.py
+[23.591s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/msg/_simulation_events_s.c
+[23.591s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/msg/_user_defined_value.py
+[23.591s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/msg/_user_defined_value_s.c
+[23.591s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/msg/_user_defined_value_type.py
+[23.591s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/msg/_user_defined_value_type_s.c
+[23.591s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/tier4_simulation_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[23.591s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/tier4_simulation_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[23.591s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/tier4_simulation_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[23.591s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/tier4_simulation_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[23.591s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/tier4_simulation_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[23.592s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/tier4_simulation_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[23.592s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/msg/FaultInjectionEvent.idl
+[23.592s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/msg/SimulationEvents.idl
+[23.592s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/msg/UserDefinedValue.idl
+[23.592s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/msg/UserDefinedValueType.idl
+[23.592s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/msg/FaultInjectionEvent.msg
+[23.592s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/msg/SimulationEvents.msg
+[23.592s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/msg/UserDefinedValue.msg
+[23.592s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/msg/UserDefinedValueType.msg
+[23.593s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/ament_index/resource_index/package_run_dependencies/tier4_simulation_msgs
+[23.593s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/ament_index/resource_index/parent_prefix_path/tier4_simulation_msgs
+[23.593s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/environment/ament_prefix_path.sh
+[23.593s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/environment/ament_prefix_path.dsv
+[23.593s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/environment/path.sh
+[23.593s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/environment/path.dsv
+[23.593s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/local_setup.bash
+[23.593s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/local_setup.sh
+[23.593s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/local_setup.zsh
+[23.593s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/local_setup.dsv
+[23.594s] -- Symlinking: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/package.dsv
+[23.594s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/ament_index/resource_index/packages/tier4_simulation_msgs
+[23.594s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/rosidl_cmake-extras.cmake
+[23.594s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[23.594s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[23.594s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[23.599s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[23.599s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[23.600s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[23.600s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/tier4_simulation_msgsConfig.cmake
+[23.600s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/tier4_simulation_msgsConfig-version.cmake
+[23.600s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/package.xml
+[23.600s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/lib/libtier4_simulation_msgs__rosidl_generator_c.so
+[23.600s] -- Installing: /home/zhijie/autoware/install/tier4_simulation_msgs/lib/libtier4_simulation_msgs__rosidl_typesupport_fastrtps_c.so
+[23.600s] -- Set runtime path of "/home/zhijie/autoware/install/tier4_simulation_msgs/lib/libtier4_simulation_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[23.600s] -- Installing: /home/zhijie/autoware/install/tier4_simulation_msgs/lib/libtier4_simulation_msgs__rosidl_typesupport_fastrtps_cpp.so
+[23.600s] -- Set runtime path of "/home/zhijie/autoware/install/tier4_simulation_msgs/lib/libtier4_simulation_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[23.601s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/lib/libtier4_simulation_msgs__rosidl_typesupport_introspection_c.so
+[23.601s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/lib/libtier4_simulation_msgs__rosidl_typesupport_c.so
+[23.601s] -- Installing: /home/zhijie/autoware/install/tier4_simulation_msgs/lib/libtier4_simulation_msgs__rosidl_typesupport_introspection_cpp.so
+[23.601s] -- Set runtime path of "/home/zhijie/autoware/install/tier4_simulation_msgs/lib/libtier4_simulation_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[23.601s] -- Installing: /home/zhijie/autoware/install/tier4_simulation_msgs/lib/libtier4_simulation_msgs__rosidl_typesupport_cpp.so
+[23.601s] -- Set runtime path of "/home/zhijie/autoware/install/tier4_simulation_msgs/lib/libtier4_simulation_msgs__rosidl_typesupport_cpp.so" to ""
+[23.638s] Listing '/home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs'...
+[23.639s] Compiling '/home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/__init__.py'...
+[23.639s] Listing '/home/zhijie/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages/tier4_simulation_msgs/msg'...
+[23.646s] -- Installing: /home/zhijie/autoware/install/tier4_simulation_msgs/lib/libtier4_simulation_msgs__rosidl_generator_py.so
+[23.646s] -- Set runtime path of "/home/zhijie/autoware/install/tier4_simulation_msgs/lib/libtier4_simulation_msgs__rosidl_generator_py.so" to ""
+[23.646s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/export_tier4_simulation_msgs__rosidl_generator_cExport.cmake
+[23.647s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/export_tier4_simulation_msgs__rosidl_generator_cExport-release.cmake
+[23.647s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/export_tier4_simulation_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[23.647s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/export_tier4_simulation_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[23.647s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/export_tier4_simulation_msgs__rosidl_generator_cppExport.cmake
+[23.648s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/export_tier4_simulation_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[23.648s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/export_tier4_simulation_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[23.648s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/tier4_simulation_msgs__rosidl_typesupport_introspection_cExport.cmake
+[23.648s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/tier4_simulation_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[23.648s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/tier4_simulation_msgs__rosidl_typesupport_cExport.cmake
+[23.648s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/tier4_simulation_msgs__rosidl_typesupport_cExport-release.cmake
+[23.649s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/tier4_simulation_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[23.649s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/tier4_simulation_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[23.649s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/tier4_simulation_msgs__rosidl_typesupport_cppExport.cmake
+[23.649s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/tier4_simulation_msgs__rosidl_typesupport_cppExport-release.cmake
+[23.649s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/export_tier4_simulation_msgs__rosidl_generator_pyExport.cmake
+[23.650s] -- Up-to-date: /home/zhijie/autoware/install/tier4_simulation_msgs/share/tier4_simulation_msgs/cmake/export_tier4_simulation_msgs__rosidl_generator_pyExport-release.cmake
+[23.658s] Invoked command in '/home/zhijie/autoware/build/tier4_simulation_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_simulation_msgs

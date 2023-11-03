@@ -1,0 +1,68 @@
+[0.103s] Invoking command in '/home/zhijie/autoware/build/fake_test_node': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_common:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_common:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/fake_test_node -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/fake_test_node
+[1.237s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[1.238s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.238s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.238s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.238s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.238s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.238s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.238s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.238s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.238s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.703s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.727s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.753s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.755s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.755s] -- Configured cppcheck include dirs: /home/zhijie/autoware/src/universe/autoware.universe/common/fake_test_node/include
+[1.755s] -- Configured cppcheck exclude dirs and/or files: 
+[1.756s] -- Added test 'lint_cmake' to check CMake code style
+[1.756s] -- Added test 'xmllint' to check XML markup files
+[1.781s] -- Configuring done
+[1.858s] -- Generating done
+[1.861s] -- Build files have been written to: /home/zhijie/autoware/build/fake_test_node
+[1.878s] Invoked command in '/home/zhijie/autoware/build/fake_test_node' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_common:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_common:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/fake_test_node -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/fake_test_node
+[1.879s] Invoking command in '/home/zhijie/autoware/build/fake_test_node': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_common:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_common:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/fake_test_node -- -j16 -l16
+[12.072s] [35m[1mConsolidate compiler generated dependencies of target fake_test_node[0m
+[12.072s] [ 12%] [32mBuilding CXX object CMakeFiles/fake_test_node.dir/src/fake_test_node.cpp.o[0m
+[15.214s] [ 25%] [32m[1mLinking CXX shared library libfake_test_node.so[0m
+[15.374s] [ 25%] Built target fake_test_node
+[15.384s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[15.397s] [ 37%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[24.493s] [ 50%] [32m[1mLinking CXX static library libgtest.a[0m
+[24.524s] [ 50%] Built target gtest
+[24.533s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[24.545s] [ 62%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[25.553s] [ 75%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[25.593s] [ 75%] Built target gtest_main
+[25.608s] [35m[1mConsolidate compiler generated dependencies of target test_fake_test_node[0m
+[25.634s] [ 87%] [32mBuilding CXX object CMakeFiles/test_fake_test_node.dir/test/test_fake_test_node.cpp.o[0m
+[49.279s] [100%] [32m[1mLinking CXX executable test_fake_test_node[0m
+[49.618s] [100%] Built target test_fake_test_node
+[49.632s] Invoked command in '/home/zhijie/autoware/build/fake_test_node' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_common:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_common:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/fake_test_node -- -j16 -l16
+[49.670s] Invoking command in '/home/zhijie/autoware/build/fake_test_node': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_common:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_common:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/fake_test_node
+[66.712s] -- Install configuration: "Release"
+[66.712s] -- Execute custom install script
+[66.712s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/include/fake_test_node/fake_test_node.hpp
+[66.712s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/include/fake_test_node/visibility_control.hpp
+[66.713s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/environment/library_path.sh
+[66.713s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/environment/library_path.dsv
+[66.713s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/lib/libfake_test_node.so
+[66.713s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/ament_index/resource_index/package_run_dependencies/fake_test_node
+[66.713s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/ament_index/resource_index/parent_prefix_path/fake_test_node
+[66.713s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/environment/ament_prefix_path.sh
+[66.713s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/environment/ament_prefix_path.dsv
+[66.713s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/environment/path.sh
+[66.713s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/environment/path.dsv
+[66.713s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/local_setup.bash
+[66.713s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/local_setup.sh
+[66.714s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/local_setup.zsh
+[66.714s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/local_setup.dsv
+[66.714s] -- Symlinking: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/package.dsv
+[66.714s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/ament_index/resource_index/packages/fake_test_node
+[66.714s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[66.714s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[66.714s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/cmake/ament_cmake_export_libraries-extras.cmake
+[66.714s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/cmake/fake_test_nodeConfig.cmake
+[66.714s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/cmake/fake_test_nodeConfig-version.cmake
+[66.714s] -- Up-to-date symlink: /home/zhijie/autoware/install/fake_test_node/share/fake_test_node/package.xml
+[66.766s] Invoked command in '/home/zhijie/autoware/build/fake_test_node' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_common:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_common:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/fake_test_node

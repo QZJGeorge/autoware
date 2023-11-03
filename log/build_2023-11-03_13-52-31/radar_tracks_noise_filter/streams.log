@@ -1,0 +1,61 @@
+[0.024s] Invoking command in '/home/zhijie/autoware/build/radar_tracks_noise_filter': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/sensing/radar_tracks_noise_filter -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/radar_tracks_noise_filter
+[3.100s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[3.100s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.100s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.100s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.100s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.100s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.100s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.101s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.101s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[3.101s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.101s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.101s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.101s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.101s] -- Configured cppcheck include dirs: /home/zhijie/autoware/src/universe/autoware.universe/sensing/radar_tracks_noise_filter/include
+[3.101s] -- Configured cppcheck exclude dirs and/or files: 
+[3.101s] -- Added test 'lint_cmake' to check CMake code style
+[3.102s] -- Added test 'xmllint' to check XML markup files
+[3.102s] -- Configuring done
+[3.102s] -- Generating done
+[3.102s] -- Build files have been written to: /home/zhijie/autoware/build/radar_tracks_noise_filter
+[3.129s] Invoked command in '/home/zhijie/autoware/build/radar_tracks_noise_filter' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/sensing/radar_tracks_noise_filter -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/radar_tracks_noise_filter
+[3.130s] Invoking command in '/home/zhijie/autoware/build/radar_tracks_noise_filter': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/radar_tracks_noise_filter -- -j16 -l16
+[21.087s] [35m[1mConsolidate compiler generated dependencies of target radar_tracks_noise_filter_node_component[0m
+[21.087s] [ 25%] [32mBuilding CXX object CMakeFiles/radar_tracks_noise_filter_node_component.dir/src/radar_tracks_noise_filter_node/radar_tracks_noise_filter_node.cpp.o[0m
+[21.088s] [ 50%] [32m[1mLinking CXX shared library libradar_tracks_noise_filter_node_component.so[0m
+[21.088s] [ 50%] Built target radar_tracks_noise_filter_node_component
+[21.088s] [35m[1mConsolidate compiler generated dependencies of target radar_tracks_noise_filter_node[0m
+[21.088s] [ 75%] [32mBuilding CXX object CMakeFiles/radar_tracks_noise_filter_node.dir/rclcpp_components/node_main_radar_tracks_noise_filter_node.cpp.o[0m
+[22.038s] [100%] [32m[1mLinking CXX executable radar_tracks_noise_filter_node[0m
+[22.145s] [100%] Built target radar_tracks_noise_filter_node
+[22.158s] Invoked command in '/home/zhijie/autoware/build/radar_tracks_noise_filter' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/radar_tracks_noise_filter -- -j16 -l16
+[22.184s] Invoking command in '/home/zhijie/autoware/build/radar_tracks_noise_filter': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/radar_tracks_noise_filter
+[24.650s] -- Install configuration: "Release"
+[24.652s] -- Execute custom install script
+[24.656s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/lib/radar_tracks_noise_filter/radar_tracks_noise_filter_node
+[24.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/include/radar_tracks_noise_filter/radar_tracks_noise_filter_node.hpp
+[24.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/environment/library_path.sh
+[24.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/environment/library_path.dsv
+[24.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/lib/libradar_tracks_noise_filter_node_component.so
+[24.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/launch/radar_tracks_noise_filter.launch.xml
+[24.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/ament_index/resource_index/package_run_dependencies/radar_tracks_noise_filter
+[24.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/ament_index/resource_index/parent_prefix_path/radar_tracks_noise_filter
+[24.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/environment/ament_prefix_path.sh
+[24.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/environment/ament_prefix_path.dsv
+[24.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/environment/path.sh
+[24.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/environment/path.dsv
+[24.659s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/local_setup.bash
+[24.659s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/local_setup.sh
+[24.659s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/local_setup.zsh
+[24.659s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/local_setup.dsv
+[24.659s] -- Symlinking: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/package.dsv
+[24.660s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/ament_index/resource_index/packages/radar_tracks_noise_filter
+[24.660s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/ament_index/resource_index/rclcpp_components/radar_tracks_noise_filter
+[24.660s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.660s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.660s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/cmake/ament_cmake_export_libraries-extras.cmake
+[24.661s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/cmake/radar_tracks_noise_filterConfig.cmake
+[24.661s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/cmake/radar_tracks_noise_filterConfig-version.cmake
+[24.661s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_tracks_noise_filter/share/radar_tracks_noise_filter/package.xml
+[24.676s] Invoked command in '/home/zhijie/autoware/build/radar_tracks_noise_filter' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/radar_tracks_noise_filter

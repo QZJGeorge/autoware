@@ -1,0 +1,236 @@
+[0.057s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_control_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/core/external/autoware_auto_msgs/autoware_auto_control_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_auto_control_msgs
+[0.107s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.267s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.374s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.377s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.414s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.594s] -- Found ament_cmake_cppcheck: 0.12.8 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[0.596s] -- Found ament_cmake_cpplint: 0.12.8 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[0.597s] -- Found ament_cmake_uncrustify: 0.12.8 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[0.600s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.814s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.091s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.119s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.147s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.147s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.147s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.174s] -- Found ament_cmake_flake8: 0.12.8 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[1.176s] -- Found ament_cmake_pep257: 0.12.8 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[1.179s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.200s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.201s] -- Added test 'lint_cmake' to check CMake code style
+[1.201s] -- Added test 'xmllint' to check XML markup files
+[1.208s] -- Configuring done
+[1.281s] -- Generating done
+[1.285s] -- Build files have been written to: /home/zhijie/autoware/build/autoware_auto_control_msgs
+[1.306s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_control_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/core/external/autoware_auto_msgs/autoware_auto_control_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_auto_control_msgs
+[1.307s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_control_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_auto_control_msgs -- -j16 -l16
+[1.722s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_control_msgs__rosidl_generator_c[0m
+[1.722s] [  1%] Built target autoware_auto_control_msgs__cpp
+[1.722s] [ 12%] Built target autoware_auto_control_msgs__rosidl_generator_c
+[1.722s] [ 12%] Built target ament_cmake_python_symlink_autoware_auto_control_msgs
+[1.722s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_control_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[1.722s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_control_msgs__rosidl_typesupport_cpp[0m
+[1.722s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_control_msgs__rosidl_typesupport_introspection_cpp[0m
+[1.722s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_control_msgs__rosidl_typesupport_fastrtps_c[0m
+[1.722s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_control_msgs__rosidl_typesupport_introspection_c[0m
+[1.722s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_control_msgs__rosidl_typesupport_c[0m
+[1.723s] [ 14%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_control_msgs/msg/ackermann_lateral_command__type_support.cpp.o[0m
+[1.723s] [ 16%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_control_msgs/msg/high_level_control_command__type_support.cpp.o[0m
+[1.723s] [ 18%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_control_msgs/msg/ackermann_control_command__type_support.cpp.o[0m
+[1.723s] [ 20%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_control_msgs/msg/detail/dds_fastrtps/ackermann_control_command__type_support.cpp.o[0m
+[1.723s] [ 21%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_auto_control_msgs/msg/longitudinal_command__type_support.cpp.o[0m
+[1.723s] [ 23%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_control_msgs/msg/detail/ackermann_control_command__type_support.cpp.o[0m
+[1.723s] [ 25%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_control_msgs/msg/detail/dds_fastrtps/ackermann_lateral_command__type_support.cpp.o[0m
+[1.723s] [ 27%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_control_msgs/msg/detail/ackermann_lateral_command__type_support.cpp.o[0m
+[1.723s] [ 29%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_control_msgs/msg/detail/high_level_control_command__type_support.cpp.o[0m
+[1.723s] [ 30%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_auto_control_msgs/msg/detail/longitudinal_command__type_support.cpp.o[0m
+[1.723s] [ 41%] Built target autoware_auto_control_msgs__rosidl_typesupport_c
+[1.724s] [ 43%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_control_msgs/msg/detail/dds_fastrtps/high_level_control_command__type_support.cpp.o[0m
+[1.724s] [ 45%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_control_msgs/msg/detail/ackermann_lateral_command__type_support_c.cpp.o[0m
+[1.724s] [ 47%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_control_msgs/msg/detail/ackermann_control_command__type_support_c.cpp.o[0m
+[1.724s] [ 58%] Built target autoware_auto_control_msgs__rosidl_typesupport_introspection_c
+[1.724s] [ 60%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_control_msgs/msg/detail/high_level_control_command__type_support_c.cpp.o[0m
+[1.724s] [ 61%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_auto_control_msgs/msg/detail/dds_fastrtps/longitudinal_command__type_support.cpp.o[0m
+[2.373s] [ 63%] [32mBuilding CXX object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_auto_control_msgs/msg/detail/longitudinal_command__type_support_c.cpp.o[0m
+[2.838s] [ 65%] [32m[1mLinking CXX shared library libautoware_auto_control_msgs__rosidl_typesupport_cpp.so[0m
+[3.161s] [ 67%] Built target autoware_auto_control_msgs__rosidl_typesupport_cpp
+[3.814s] running egg_info
+[3.815s] writing autoware_auto_control_msgs.egg-info/PKG-INFO
+[3.815s] writing dependency_links to autoware_auto_control_msgs.egg-info/dependency_links.txt
+[3.815s] writing top-level names to autoware_auto_control_msgs.egg-info/top_level.txt
+[3.879s] reading manifest file 'autoware_auto_control_msgs.egg-info/SOURCES.txt'
+[3.890s] writing manifest file 'autoware_auto_control_msgs.egg-info/SOURCES.txt'
+[4.309s] [ 67%] Built target ament_cmake_python_build_autoware_auto_control_msgs_egg
+[4.311s] [ 69%] [32m[1mLinking CXX shared library libautoware_auto_control_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.853s] [ 70%] Built target autoware_auto_control_msgs__rosidl_typesupport_fastrtps_cpp
+[5.386s] [ 72%] [32m[1mLinking CXX shared library libautoware_auto_control_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[5.479s] [ 74%] [32m[1mLinking CXX shared library libautoware_auto_control_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[6.076s] [ 76%] Built target autoware_auto_control_msgs__rosidl_typesupport_introspection_cpp
+[6.229s] [ 78%] Built target autoware_auto_control_msgs__rosidl_typesupport_fastrtps_c
+[6.495s] [ 78%] Built target autoware_auto_control_msgs
+[6.815s] [ 80%] Built target autoware_auto_control_msgs__py
+[7.042s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_control_msgs__rosidl_generator_py[0m
+[7.309s] [ 81%] [32mBuilding C object CMakeFiles/autoware_auto_control_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_control_msgs/msg/_ackermann_control_command_s.c.o[0m
+[7.336s] [ 83%] [32mBuilding C object CMakeFiles/autoware_auto_control_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_control_msgs/msg/_longitudinal_command_s.c.o[0m
+[7.390s] [ 85%] [32mBuilding C object CMakeFiles/autoware_auto_control_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_control_msgs/msg/_ackermann_lateral_command_s.c.o[0m
+[7.438s] [ 87%] [32mBuilding C object CMakeFiles/autoware_auto_control_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_auto_control_msgs/msg/_high_level_control_command_s.c.o[0m
+[8.918s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_control_msgs/libautoware_auto_control_msgs__rosidl_generator_py.so[0m
+[9.100s] [ 89%] Built target autoware_auto_control_msgs__rosidl_generator_py
+[9.187s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_control_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[9.314s] [ 90%] [32mBuilding C object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/autoware_auto_control_msgs/_autoware_auto_control_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.829s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_control_msgs/autoware_auto_control_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[10.032s] [ 92%] Built target autoware_auto_control_msgs__rosidl_typesupport_fastrtps_c__pyext
+[10.055s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_control_msgs__rosidl_typesupport_c__pyext[0m
+[10.114s] [ 94%] [32mBuilding C object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/autoware_auto_control_msgs/_autoware_auto_control_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[10.489s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_control_msgs/autoware_auto_control_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[10.659s] [ 96%] Built target autoware_auto_control_msgs__rosidl_typesupport_c__pyext
+[10.729s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_control_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[10.803s] [ 98%] [32mBuilding C object CMakeFiles/autoware_auto_control_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/autoware_auto_control_msgs/_autoware_auto_control_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[11.194s] [100%] [32m[1mLinking C shared library rosidl_generator_py/autoware_auto_control_msgs/autoware_auto_control_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.271s] [100%] Built target autoware_auto_control_msgs__rosidl_typesupport_introspection_c__pyext
+[11.329s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_control_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_auto_control_msgs -- -j16 -l16
+[13.053s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_control_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_auto_control_msgs
+[14.265s] -- Install configuration: "Release"
+[14.266s] -- Execute custom install script
+[14.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/ament_index/resource_index/rosidl_interfaces/autoware_auto_control_msgs
+[14.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/ackermann_control_command.h
+[14.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/ackermann_lateral_command.h
+[14.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_control_command__functions.h
+[14.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_control_command__struct.h
+[14.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_control_command__type_support.h
+[14.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_lateral_command__functions.h
+[14.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_lateral_command__struct.h
+[14.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_lateral_command__type_support.h
+[14.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/high_level_control_command__functions.h
+[14.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/high_level_control_command__struct.h
+[14.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/high_level_control_command__type_support.h
+[14.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/longitudinal_command__functions.h
+[14.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/longitudinal_command__struct.h
+[14.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/longitudinal_command__type_support.h
+[14.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/high_level_control_command.h
+[14.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/longitudinal_command.h
+[14.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/rosidl_generator_c__visibility_control.h
+[14.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/environment/library_path.sh
+[14.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/environment/library_path.dsv
+[14.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_control_command__rosidl_typesupport_fastrtps_c.h
+[14.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_lateral_command__rosidl_typesupport_fastrtps_c.h
+[14.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/high_level_control_command__rosidl_typesupport_fastrtps_c.h
+[14.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/longitudinal_command__rosidl_typesupport_fastrtps_c.h
+[14.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[14.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_control_command__rosidl_typesupport_introspection_c.h
+[14.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_lateral_command__rosidl_typesupport_introspection_c.h
+[14.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/high_level_control_command__rosidl_typesupport_introspection_c.h
+[14.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/longitudinal_command__rosidl_typesupport_introspection_c.h
+[14.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[14.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/ackermann_control_command.hpp
+[14.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/ackermann_lateral_command.hpp
+[14.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_control_command__builder.hpp
+[14.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_control_command__struct.hpp
+[14.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_control_command__traits.hpp
+[14.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_lateral_command__builder.hpp
+[14.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_lateral_command__struct.hpp
+[14.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_lateral_command__traits.hpp
+[14.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/high_level_control_command__builder.hpp
+[14.269s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/high_level_control_command__struct.hpp
+[14.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/high_level_control_command__traits.hpp
+[14.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/longitudinal_command__builder.hpp
+[14.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/longitudinal_command__struct.hpp
+[14.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/longitudinal_command__traits.hpp
+[14.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/high_level_control_command.hpp
+[14.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/longitudinal_command.hpp
+[14.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_control_command__rosidl_typesupport_fastrtps_cpp.hpp
+[14.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_lateral_command__rosidl_typesupport_fastrtps_cpp.hpp
+[14.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/high_level_control_command__rosidl_typesupport_fastrtps_cpp.hpp
+[14.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/longitudinal_command__rosidl_typesupport_fastrtps_cpp.hpp
+[14.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[14.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_control_command__rosidl_typesupport_introspection_cpp.hpp
+[14.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/ackermann_lateral_command__rosidl_typesupport_introspection_cpp.hpp
+[14.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/high_level_control_command__rosidl_typesupport_introspection_cpp.hpp
+[14.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/include/autoware_auto_control_msgs/autoware_auto_control_msgs/msg/detail/longitudinal_command__rosidl_typesupport_introspection_cpp.hpp
+[14.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/environment/pythonpath.sh
+[14.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/environment/pythonpath.dsv
+[14.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs-1.0.0-py3.10.egg-info/PKG-INFO
+[14.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs-1.0.0-py3.10.egg-info/SOURCES.txt
+[14.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs-1.0.0-py3.10.egg-info/dependency_links.txt
+[14.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs-1.0.0-py3.10.egg-info/top_level.txt
+[14.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/__init__.py
+[14.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/_autoware_auto_control_msgs_s.ep.rosidl_typesupport_c.c
+[14.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/_autoware_auto_control_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[14.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/_autoware_auto_control_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[14.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/autoware_auto_control_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[14.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/autoware_auto_control_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[14.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/autoware_auto_control_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[14.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/libautoware_auto_control_msgs__rosidl_generator_py.so
+[14.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/msg/__init__.py
+[14.301s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/msg/_ackermann_control_command.py
+[14.301s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/msg/_ackermann_control_command_s.c
+[14.301s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/msg/_ackermann_lateral_command.py
+[14.301s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/msg/_ackermann_lateral_command_s.c
+[14.301s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/msg/_high_level_control_command.py
+[14.301s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/msg/_high_level_control_command_s.c
+[14.302s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/msg/_longitudinal_command.py
+[14.302s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/msg/_longitudinal_command_s.c
+[14.302s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/autoware_auto_control_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[14.302s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/autoware_auto_control_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[14.302s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/autoware_auto_control_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[14.302s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/msg/AckermannControlCommand.idl
+[14.302s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/msg/AckermannLateralCommand.idl
+[14.302s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/msg/HighLevelControlCommand.idl
+[14.302s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/msg/LongitudinalCommand.idl
+[14.302s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/ament_index/resource_index/package_run_dependencies/autoware_auto_control_msgs
+[14.303s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/ament_index/resource_index/parent_prefix_path/autoware_auto_control_msgs
+[14.303s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/environment/ament_prefix_path.sh
+[14.303s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/environment/ament_prefix_path.dsv
+[14.303s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/environment/path.sh
+[14.303s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/environment/path.dsv
+[14.303s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/local_setup.bash
+[14.303s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/local_setup.sh
+[14.303s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/local_setup.zsh
+[14.303s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/local_setup.dsv
+[14.303s] -- Symlinking: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/package.dsv
+[14.304s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/ament_index/resource_index/packages/autoware_auto_control_msgs
+[14.304s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/rosidl_cmake-extras.cmake
+[14.304s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.304s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.305s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[14.305s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[14.305s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[14.305s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[14.305s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/autoware_auto_control_msgsConfig.cmake
+[14.305s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/autoware_auto_control_msgsConfig-version.cmake
+[14.305s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/package.xml
+[14.305s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/lib/libautoware_auto_control_msgs__rosidl_generator_c.so
+[14.305s] -- Installing: /home/zhijie/autoware/install/autoware_auto_control_msgs/lib/libautoware_auto_control_msgs__rosidl_typesupport_fastrtps_c.so
+[14.305s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_control_msgs/lib/libautoware_auto_control_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[14.305s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/lib/libautoware_auto_control_msgs__rosidl_typesupport_introspection_c.so
+[14.306s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/lib/libautoware_auto_control_msgs__rosidl_typesupport_c.so
+[14.306s] -- Installing: /home/zhijie/autoware/install/autoware_auto_control_msgs/lib/libautoware_auto_control_msgs__rosidl_typesupport_fastrtps_cpp.so
+[14.306s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_control_msgs/lib/libautoware_auto_control_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[14.306s] -- Installing: /home/zhijie/autoware/install/autoware_auto_control_msgs/lib/libautoware_auto_control_msgs__rosidl_typesupport_introspection_cpp.so
+[14.306s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_control_msgs/lib/libautoware_auto_control_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[14.306s] -- Installing: /home/zhijie/autoware/install/autoware_auto_control_msgs/lib/libautoware_auto_control_msgs__rosidl_typesupport_cpp.so
+[14.306s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_control_msgs/lib/libautoware_auto_control_msgs__rosidl_typesupport_cpp.so" to ""
+[14.356s] Listing '/home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs'...
+[14.356s] Compiling '/home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/__init__.py'...
+[14.357s] Listing '/home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages/autoware_auto_control_msgs/msg'...
+[14.364s] -- Installing: /home/zhijie/autoware/install/autoware_auto_control_msgs/lib/libautoware_auto_control_msgs__rosidl_generator_py.so
+[14.365s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_auto_control_msgs/lib/libautoware_auto_control_msgs__rosidl_generator_py.so" to ""
+[14.365s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/export_autoware_auto_control_msgs__rosidl_generator_cExport.cmake
+[14.365s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/export_autoware_auto_control_msgs__rosidl_generator_cExport-release.cmake
+[14.365s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/export_autoware_auto_control_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[14.365s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/export_autoware_auto_control_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[14.366s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/autoware_auto_control_msgs__rosidl_typesupport_introspection_cExport.cmake
+[14.366s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/autoware_auto_control_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[14.366s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/autoware_auto_control_msgs__rosidl_typesupport_cExport.cmake
+[14.366s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/autoware_auto_control_msgs__rosidl_typesupport_cExport-release.cmake
+[14.367s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/export_autoware_auto_control_msgs__rosidl_generator_cppExport.cmake
+[14.367s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/export_autoware_auto_control_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[14.367s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/export_autoware_auto_control_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[14.367s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/autoware_auto_control_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[14.367s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/autoware_auto_control_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[14.368s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/autoware_auto_control_msgs__rosidl_typesupport_cppExport.cmake
+[14.368s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/autoware_auto_control_msgs__rosidl_typesupport_cppExport-release.cmake
+[14.368s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/export_autoware_auto_control_msgs__rosidl_generator_pyExport.cmake
+[14.368s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake/export_autoware_auto_control_msgs__rosidl_generator_pyExport-release.cmake
+[14.373s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_control_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_auto_control_msgs

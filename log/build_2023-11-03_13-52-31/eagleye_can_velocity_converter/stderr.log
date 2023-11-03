@@ -1,0 +1,13 @@
+[01m[K/home/zhijie/autoware/src/universe/external/eagleye/eagleye_util/can_velocity_converter/src/can_velocity_converter.cpp:[m[K In function ‘[01m[Kvoid can_callback(can_msgs::msg::Frame_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/zhijie/autoware/src/universe/external/eagleye/eagleye_util/can_velocity_converter/src/can_velocity_converter.cpp:55:14:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kconst _id_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   55 |   if([01;35m[Kmsg->id == can_id[m[K){
+      |      [01;35m[K~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/universe/external/eagleye/eagleye_util/can_velocity_converter/src/can_velocity_converter.cpp:77:38:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K-[m[K’ inside ‘[01m[K>>[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+   77 |       if(tmp_unsigned_data >> [01;35m[Klength - 1[m[K == 0 ){
+      |                               [01;35m[K~~~~~~~^~~[m[K
+[01m[K/home/zhijie/autoware/src/universe/external/eagleye/eagleye_util/can_velocity_converter/src/can_velocity_converter.cpp:81:51:[m[K [01;35m[Kwarning: [m[Kleft shift of negative value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wshift-negative-value-Wshift-negative-value]8;;[m[K]
+   81 |         tmp_signed_data = tmp_unsigned_data | ([01;35m[K~0 << length[m[K);
+      |                                                [01;35m[K~~~^~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/universe/external/eagleye/eagleye_util/can_velocity_converter/src/can_velocity_converter.cpp:72:35:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcan_data[m[K’ may be used uninitialized in this function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   72 |     tmp_unsigned_data = ([01;35m[Kcan_data >> (msg->dlc * 8 - start_bit - length)[m[K) & data_mask;
+      |                          [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

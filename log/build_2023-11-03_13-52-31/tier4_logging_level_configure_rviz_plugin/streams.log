@@ -1,0 +1,79 @@
+[0.065s] Invoking command in '/home/zhijie/autoware/build/tier4_logging_level_configure_rviz_plugin': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/tier4_logging_level_configure_rviz_plugin -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin
+[7.485s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[7.485s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[7.485s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.485s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.486s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.486s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.486s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.486s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.486s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[7.486s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[7.486s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[7.486s] -- Found OGRE
+[7.486s] --   static     : OFF
+[7.487s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[7.487s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[7.487s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[7.487s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[7.487s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[7.487s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[7.487s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[7.487s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[7.487s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[7.487s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[7.488s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[7.488s] -- Could not find freeimage library
+[7.488s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[7.488s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[7.488s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[7.488s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[7.488s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.488s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.488s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.489s] -- Configured cppcheck include dirs: /home/zhijie/autoware/src/universe/autoware.universe/common/tier4_logging_level_configure_rviz_plugin/include
+[7.489s] -- Configured cppcheck exclude dirs and/or files: 
+[7.489s] -- Added test 'lint_cmake' to check CMake code style
+[7.489s] -- Added test 'xmllint' to check XML markup files
+[7.489s] -- Configuring done
+[7.489s] -- Generating done
+[7.489s] -- Build files have been written to: /home/zhijie/autoware/build/tier4_logging_level_configure_rviz_plugin
+[7.509s] Invoked command in '/home/zhijie/autoware/build/tier4_logging_level_configure_rviz_plugin' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/tier4_logging_level_configure_rviz_plugin -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin
+[7.510s] Invoking command in '/home/zhijie/autoware/build/tier4_logging_level_configure_rviz_plugin': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_logging_level_configure_rviz_plugin -- -j16 -l16
+[19.497s] [ 25%] [34m[1mAutomatic MOC for target tier4_logging_level_configure_rviz_plugin[0m
+[19.497s] [ 25%] Built target tier4_logging_level_configure_rviz_plugin_autogen
+[19.498s] [35m[1mConsolidate compiler generated dependencies of target tier4_logging_level_configure_rviz_plugin[0m
+[19.498s] [ 50%] [32mBuilding CXX object CMakeFiles/tier4_logging_level_configure_rviz_plugin.dir/tier4_logging_level_configure_rviz_plugin_autogen/mocs_compilation.cpp.o[0m
+[19.498s] [ 75%] [32mBuilding CXX object CMakeFiles/tier4_logging_level_configure_rviz_plugin.dir/src/logging_level_configure.cpp.o[0m
+[19.498s] [100%] [32m[1mLinking CXX shared library libtier4_logging_level_configure_rviz_plugin.so[0m
+[21.689s] [100%] Built target tier4_logging_level_configure_rviz_plugin
+[21.710s] Invoked command in '/home/zhijie/autoware/build/tier4_logging_level_configure_rviz_plugin' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_logging_level_configure_rviz_plugin -- -j16 -l16
+[21.821s] Invoking command in '/home/zhijie/autoware/build/tier4_logging_level_configure_rviz_plugin': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_logging_level_configure_rviz_plugin
+[22.806s] -- Install configuration: "Release"
+[22.806s] -- Execute custom install script
+[22.806s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/plugins/plugin_description.xml
+[22.806s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/include/tier4_logging_level_configure_rviz_plugin/logging_level_configure.hpp
+[22.806s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/environment/library_path.sh
+[22.806s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/environment/library_path.dsv
+[22.806s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/lib/libtier4_logging_level_configure_rviz_plugin.so
+[22.806s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/plugins/plugin_description.xml
+[22.806s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/ament_index/resource_index/package_run_dependencies/tier4_logging_level_configure_rviz_plugin
+[22.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/ament_index/resource_index/parent_prefix_path/tier4_logging_level_configure_rviz_plugin
+[22.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/environment/ament_prefix_path.sh
+[22.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/environment/ament_prefix_path.dsv
+[22.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/environment/path.sh
+[22.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/environment/path.dsv
+[22.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/local_setup.bash
+[22.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/local_setup.sh
+[22.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/local_setup.zsh
+[22.807s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/local_setup.dsv
+[22.807s] -- Symlinking: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/package.dsv
+[22.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/ament_index/resource_index/packages/tier4_logging_level_configure_rviz_plugin
+[22.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/ament_index/resource_index/rviz_common__pluginlib__plugin/tier4_logging_level_configure_rviz_plugin
+[22.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/cmake/ament_cmake_export_dependencies-extras.cmake
+[22.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/cmake/ament_cmake_export_include_directories-extras.cmake
+[22.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/cmake/ament_cmake_export_libraries-extras.cmake
+[22.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/cmake/tier4_logging_level_configure_rviz_pluginConfig.cmake
+[22.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/cmake/tier4_logging_level_configure_rviz_pluginConfig-version.cmake
+[22.808s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_logging_level_configure_rviz_plugin/share/tier4_logging_level_configure_rviz_plugin/package.xml
+[22.818s] Invoked command in '/home/zhijie/autoware/build/tier4_logging_level_configure_rviz_plugin' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_logging_level_configure_rviz_plugin

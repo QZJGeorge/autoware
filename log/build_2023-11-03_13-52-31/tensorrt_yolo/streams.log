@@ -1,0 +1,92 @@
+[0.023s] Invoking command in '/home/zhijie/autoware/build/tensorrt_yolo': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/perception/tensorrt_yolo -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/tensorrt_yolo
+[2.803s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[2.803s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.803s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.804s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.804s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.804s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.804s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.804s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.804s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[2.804s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.804s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.804s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.804s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.805s] -- Configured cppcheck include dirs: /home/zhijie/autoware/src/universe/autoware.universe/perception/tensorrt_yolo/include;/home/zhijie/autoware/src/universe/autoware.universe/perception/tensorrt_yolo/lib/include
+[2.805s] -- Configured cppcheck exclude dirs and/or files: 
+[2.805s] -- Added test 'lint_cmake' to check CMake code style
+[2.805s] -- Added test 'xmllint' to check XML markup files
+[2.805s] -- Configuring done
+[2.805s] -- Generating done
+[2.805s] -- Build files have been written to: /home/zhijie/autoware/build/tensorrt_yolo
+[2.809s] Invoked command in '/home/zhijie/autoware/build/tensorrt_yolo' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/perception/tensorrt_yolo -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/tensorrt_yolo
+[2.811s] Invoking command in '/home/zhijie/autoware/build/tensorrt_yolo': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tensorrt_yolo -- -j16 -l16
+[16.679s] [  6%] [34m[1mBuilding NVCC (Device) object CMakeFiles/mish_plugin.dir/lib/src/plugins/mish_plugin_generated_mish.cu.o[0m
+[16.679s] [35m[1mConsolidate compiler generated dependencies of target mish_plugin[0m
+[16.679s] [ 13%] [32mBuilding CXX object CMakeFiles/mish_plugin.dir/lib/src/plugins/mish_plugin.cpp.o[0m
+[16.679s] [ 20%] [32m[1mLinking CXX shared library libmish_plugin.so[0m
+[16.680s] [ 20%] Built target mish_plugin
+[16.680s] [35m[1mConsolidate compiler generated dependencies of target tensorrt_yolo_node[0m
+[16.680s] [ 26%] [32mBuilding CXX object CMakeFiles/tensorrt_yolo_node.dir/rclcpp_components/node_main_tensorrt_yolo_node.cpp.o[0m
+[16.680s] [ 33%] [32m[1mLinking CXX executable tensorrt_yolo_node[0m
+[16.680s] [ 33%] Built target tensorrt_yolo_node
+[16.680s] [ 40%] [34m[1mBuilding NVCC (Device) object CMakeFiles/nms_plugin.dir/lib/src/plugins/nms_plugin_generated_nms.cu.o[0m
+[28.583s] [35m[1mConsolidate compiler generated dependencies of target nms_plugin[0m
+[28.673s] [ 46%] [32mBuilding CXX object CMakeFiles/nms_plugin.dir/lib/src/plugins/nms_plugin.cpp.o[0m
+[29.183s] [ 53%] [32m[1mLinking CXX shared library libnms_plugin.so[0m
+[29.415s] [ 53%] Built target nms_plugin
+[29.471s] [ 60%] [34m[1mBuilding NVCC (Device) object CMakeFiles/yolo_layer_plugin.dir/lib/src/plugins/yolo_layer_plugin_generated_yolo_layer.cu.o[0m
+[34.745s] [35m[1mConsolidate compiler generated dependencies of target yolo_layer_plugin[0m
+[34.783s] [ 66%] [32mBuilding CXX object CMakeFiles/yolo_layer_plugin.dir/lib/src/plugins/yolo_layer_plugin.cpp.o[0m
+[35.716s] [ 73%] [32m[1mLinking CXX shared library libyolo_layer_plugin.so[0m
+[35.991s] [ 73%] Built target yolo_layer_plugin
+[36.062s] [35m[1mConsolidate compiler generated dependencies of target yolo[0m
+[36.124s] [ 80%] [32mBuilding CXX object CMakeFiles/yolo.dir/lib/src/trt_yolo.cpp.o[0m
+[41.090s] [ 86%] [32m[1mLinking CXX shared library libyolo.so[0m
+[41.361s] [ 86%] Built target yolo
+[41.411s] [35m[1mConsolidate compiler generated dependencies of target tensorrt_yolo_nodelet[0m
+[41.460s] [ 93%] [32mBuilding CXX object CMakeFiles/tensorrt_yolo_nodelet.dir/src/nodelet.cpp.o[0m
+[54.607s] [100%] [32m[1mLinking CXX shared library libtensorrt_yolo_nodelet.so[0m
+[55.163s] [100%] Built target tensorrt_yolo_nodelet
+[55.192s] Invoked command in '/home/zhijie/autoware/build/tensorrt_yolo' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tensorrt_yolo -- -j16 -l16
+[55.642s] Invoking command in '/home/zhijie/autoware/build/tensorrt_yolo': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/tensorrt_yolo
+[58.045s] -- Install configuration: "Release"
+[58.045s] -- Execute custom install script
+[58.045s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/tensorrt_yolo/tensorrt_yolo_node
+[58.046s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/include/tensorrt_yolo/nodelet.hpp
+[58.046s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/library_path.sh
+[58.046s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/library_path.dsv
+[58.046s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libyolo.so
+[58.046s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libtensorrt_yolo_nodelet.so
+[58.046s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov3.param.yaml
+[58.046s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov4-tiny.param.yaml
+[58.046s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov4.param.yaml
+[58.046s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov5l.param.yaml
+[58.047s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov5m.param.yaml
+[58.047s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov5s.param.yaml
+[58.047s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov5x.param.yaml
+[58.047s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/launch/tensorrt_yolo.launch.xml
+[58.047s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/launch/yolo.launch.xml
+[58.047s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/ament_index/resource_index/package_run_dependencies/tensorrt_yolo
+[58.047s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/ament_index/resource_index/parent_prefix_path/tensorrt_yolo
+[58.047s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/ament_prefix_path.sh
+[58.047s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/ament_prefix_path.dsv
+[58.047s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/path.sh
+[58.048s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/path.dsv
+[58.048s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/local_setup.bash
+[58.048s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/local_setup.sh
+[58.048s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/local_setup.zsh
+[58.048s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/local_setup.dsv
+[58.048s] -- Symlinking: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/package.dsv
+[58.048s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/ament_index/resource_index/packages/tensorrt_yolo
+[58.048s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/ament_index/resource_index/rclcpp_components/tensorrt_yolo
+[58.048s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/ament_cmake_export_dependencies-extras.cmake
+[58.049s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/ament_cmake_export_include_directories-extras.cmake
+[58.049s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/ament_cmake_export_libraries-extras.cmake
+[58.049s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/tensorrt_yoloConfig.cmake
+[58.049s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/tensorrt_yoloConfig-version.cmake
+[58.049s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/package.xml
+[58.049s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libmish_plugin.so
+[58.049s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libyolo_layer_plugin.so
+[58.049s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libnms_plugin.so
+[58.066s] Invoked command in '/home/zhijie/autoware/build/tensorrt_yolo' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/tensorrt_yolo

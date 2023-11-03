@@ -20,7 +20,7 @@ def generate_launch_description():
         Node(
             package='abc_terasim',
             namespace='/terasim',
-            executable='test_09',
+            executable='test_01',
         ),
         DeclareLaunchArgument(
             'map_path',
@@ -39,7 +39,7 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             'lanelet2_map_file',
-            default_value='lanelet2_mcity_v23.osm',
+            default_value='lanelet2_mcity_v27.osm',
             description='Lanelet2 map file'
         ),
         IncludeLaunchDescription(

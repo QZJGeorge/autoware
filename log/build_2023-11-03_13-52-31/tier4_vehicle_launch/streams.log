@@ -1,0 +1,34 @@
+[0.030s] Invoking command in '/home/zhijie/autoware/build/tier4_vehicle_launch': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/launch/tier4_vehicle_launch -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/tier4_vehicle_launch
+[2.005s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[2.005s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.005s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.005s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.005s] -- Added test 'lint_cmake' to check CMake code style
+[2.006s] -- Added test 'xmllint' to check XML markup files
+[2.006s] -- Configuring done
+[2.006s] -- Generating done
+[2.006s] -- Build files have been written to: /home/zhijie/autoware/build/tier4_vehicle_launch
+[2.082s] Invoked command in '/home/zhijie/autoware/build/tier4_vehicle_launch' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/launch/tier4_vehicle_launch -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/tier4_vehicle_launch
+[2.082s] Invoking command in '/home/zhijie/autoware/build/tier4_vehicle_launch': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_vehicle_launch -- -j16 -l16
+[14.277s] Invoked command in '/home/zhijie/autoware/build/tier4_vehicle_launch' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_vehicle_launch -- -j16 -l16
+[14.478s] Invoking command in '/home/zhijie/autoware/build/tier4_vehicle_launch': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_vehicle_launch
+[23.213s] -- Install configuration: "Release"
+[23.213s] -- Execute custom install script
+[23.214s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/launch/vehicle.launch.xml
+[23.214s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/urdf/vehicle.xacro
+[23.214s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/ament_index/resource_index/package_run_dependencies/tier4_vehicle_launch
+[23.214s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/ament_index/resource_index/parent_prefix_path/tier4_vehicle_launch
+[23.214s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/environment/ament_prefix_path.sh
+[23.214s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/environment/ament_prefix_path.dsv
+[23.214s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/environment/path.sh
+[23.214s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/environment/path.dsv
+[23.214s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/local_setup.bash
+[23.215s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/local_setup.sh
+[23.215s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/local_setup.zsh
+[23.215s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/local_setup.dsv
+[23.215s] -- Symlinking: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/package.dsv
+[23.215s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/ament_index/resource_index/packages/tier4_vehicle_launch
+[23.215s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/cmake/tier4_vehicle_launchConfig.cmake
+[23.216s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/cmake/tier4_vehicle_launchConfig-version.cmake
+[23.216s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/package.xml
+[23.241s] Invoked command in '/home/zhijie/autoware/build/tier4_vehicle_launch' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_vehicle_launch

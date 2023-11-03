@@ -1,0 +1,33 @@
+[0.195s] Invoking command in '/home/zhijie/autoware/build/sample_sensor_kit_description': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/sensor_kit/sample_sensor_kit_launch/sample_sensor_kit_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/sample_sensor_kit_description
+[0.223s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.488s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.692s] -- Configuring done
+[0.698s] -- Generating done
+[0.700s] -- Build files have been written to: /home/zhijie/autoware/build/sample_sensor_kit_description
+[0.716s] Invoked command in '/home/zhijie/autoware/build/sample_sensor_kit_description' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/sensor_kit/sample_sensor_kit_launch/sample_sensor_kit_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/sample_sensor_kit_description
+[0.717s] Invoking command in '/home/zhijie/autoware/build/sample_sensor_kit_description': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/sample_sensor_kit_description -- -j16 -l16
+[4.839s] Invoked command in '/home/zhijie/autoware/build/sample_sensor_kit_description' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/sample_sensor_kit_description -- -j16 -l16
+[5.163s] Invoking command in '/home/zhijie/autoware/build/sample_sensor_kit_description': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/sample_sensor_kit_description
+[36.688s] -- Install configuration: "Release"
+[36.689s] -- Execute custom install script
+[36.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/urdf/sensor_kit.xacro
+[36.696s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/urdf/sensors.xacro
+[36.697s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/config/sensor_kit_calibration.yaml
+[36.697s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/config/sensors_calibration.yaml
+[36.697s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/ament_index/resource_index/package_run_dependencies/sample_sensor_kit_description
+[36.697s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/ament_index/resource_index/parent_prefix_path/sample_sensor_kit_description
+[36.698s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/environment/ament_prefix_path.sh
+[36.698s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/environment/ament_prefix_path.dsv
+[36.698s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/environment/path.sh
+[36.698s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/environment/path.dsv
+[36.698s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/local_setup.bash
+[36.698s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/local_setup.sh
+[36.699s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/local_setup.zsh
+[36.699s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/local_setup.dsv
+[36.699s] -- Symlinking: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/package.dsv
+[36.699s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/ament_index/resource_index/packages/sample_sensor_kit_description
+[36.699s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/cmake/ament_cmake_export_dependencies-extras.cmake
+[36.700s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/cmake/sample_sensor_kit_descriptionConfig.cmake
+[36.700s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/cmake/sample_sensor_kit_descriptionConfig-version.cmake
+[36.700s] -- Up-to-date symlink: /home/zhijie/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/package.xml
+[36.729s] Invoked command in '/home/zhijie/autoware/build/sample_sensor_kit_description' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/sample_sensor_kit_description

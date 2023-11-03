@@ -1,0 +1,199 @@
+[0.015s] Invoking command in '/home/zhijie/autoware/build/autoware_external_api_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/universe/external/tier4_ad_api_adaptor/autoware_external_api_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_external_api_msgs
+[16.969s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[16.969s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[16.969s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[16.969s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[16.969s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[16.970s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[16.970s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[16.970s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[16.970s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[16.970s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[16.970s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[16.970s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[16.970s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[16.970s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[16.970s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[16.970s] -- Added test 'copyright' to check source files copyright and LICENSE
+[16.970s] -- Added test 'lint_cmake' to check CMake code style
+[16.971s] -- Added test 'xmllint' to check XML markup files
+[16.971s] -- Configuring done
+[16.971s] -- Generating done
+[16.971s] -- Build files have been written to: /home/zhijie/autoware/build/autoware_external_api_msgs
+[17.048s] Invoked command in '/home/zhijie/autoware/build/autoware_external_api_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/universe/external/tier4_ad_api_adaptor/autoware_external_api_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_external_api_msgs
+[17.051s] Invoking command in '/home/zhijie/autoware/build/autoware_external_api_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_external_api_msgs -- -j16 -l16
+[17.189s] [  2%] Built target autoware_external_api_msgs__cpp
+[17.348s] [  2%] Built target ament_cmake_python_symlink_autoware_external_api_msgs
+[17.405s] [35m[1mConsolidate compiler generated dependencies of target autoware_external_api_msgs__rosidl_typesupport_introspection_cpp[0m
+[17.480s] [  5%] [32mBuilding CXX object CMakeFiles/autoware_external_api_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_external_api_msgs/msg/detail/response_status__type_support.cpp.o[0m
+[18.254s] [  7%] [32mBuilding CXX object CMakeFiles/autoware_external_api_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_external_api_msgs/srv/detail/get_version__type_support.cpp.o[0m
+[19.225s] [ 10%] [32m[1mLinking CXX shared library libautoware_external_api_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[19.474s] [ 12%] Built target autoware_external_api_msgs__rosidl_typesupport_introspection_cpp
+[20.269s] running egg_info
+[20.271s] writing autoware_external_api_msgs.egg-info/PKG-INFO
+[20.273s] writing dependency_links to autoware_external_api_msgs.egg-info/dependency_links.txt
+[20.274s] writing top-level names to autoware_external_api_msgs.egg-info/top_level.txt
+[20.281s] reading manifest file 'autoware_external_api_msgs.egg-info/SOURCES.txt'
+[20.298s] writing manifest file 'autoware_external_api_msgs.egg-info/SOURCES.txt'
+[20.374s] [ 12%] Built target ament_cmake_python_build_autoware_external_api_msgs_egg
+[20.452s] [35m[1mConsolidate compiler generated dependencies of target autoware_external_api_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[20.506s] [ 15%] [32mBuilding CXX object CMakeFiles/autoware_external_api_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_external_api_msgs/msg/detail/dds_fastrtps/response_status__type_support.cpp.o[0m
+[21.313s] [ 17%] [32mBuilding CXX object CMakeFiles/autoware_external_api_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_external_api_msgs/srv/detail/dds_fastrtps/get_version__type_support.cpp.o[0m
+[22.019s] [ 20%] [32m[1mLinking CXX shared library libautoware_external_api_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[22.151s] [ 23%] Built target autoware_external_api_msgs__rosidl_typesupport_fastrtps_cpp
+[22.172s] [35m[1mConsolidate compiler generated dependencies of target autoware_external_api_msgs__rosidl_typesupport_cpp[0m
+[22.202s] [ 25%] [32mBuilding CXX object CMakeFiles/autoware_external_api_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_external_api_msgs/msg/response_status__type_support.cpp.o[0m
+[22.618s] [ 28%] [32mBuilding CXX object CMakeFiles/autoware_external_api_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_external_api_msgs/srv/get_version__type_support.cpp.o[0m
+[22.988s] [ 30%] [32m[1mLinking CXX shared library libautoware_external_api_msgs__rosidl_typesupport_cpp.so[0m
+[23.044s] [ 33%] Built target autoware_external_api_msgs__rosidl_typesupport_cpp
+[23.058s] [35m[1mConsolidate compiler generated dependencies of target autoware_external_api_msgs__rosidl_generator_c[0m
+[23.074s] [ 43%] Built target autoware_external_api_msgs__rosidl_generator_c
+[23.085s] [35m[1mConsolidate compiler generated dependencies of target autoware_external_api_msgs__rosidl_typesupport_fastrtps_c[0m
+[23.100s] [ 46%] [32mBuilding CXX object CMakeFiles/autoware_external_api_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_external_api_msgs/msg/detail/response_status__type_support_c.cpp.o[0m
+[23.478s] [ 48%] [32mBuilding CXX object CMakeFiles/autoware_external_api_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_external_api_msgs/srv/detail/get_version__type_support_c.cpp.o[0m
+[23.857s] [ 51%] [32m[1mLinking CXX shared library libautoware_external_api_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[23.931s] [ 53%] Built target autoware_external_api_msgs__rosidl_typesupport_fastrtps_c
+[23.940s] [35m[1mConsolidate compiler generated dependencies of target autoware_external_api_msgs__rosidl_typesupport_c[0m
+[23.950s] [ 64%] Built target autoware_external_api_msgs__rosidl_typesupport_c
+[23.960s] [35m[1mConsolidate compiler generated dependencies of target autoware_external_api_msgs__rosidl_typesupport_introspection_c[0m
+[23.971s] [ 74%] Built target autoware_external_api_msgs__rosidl_typesupport_introspection_c
+[23.989s] [ 74%] Built target autoware_external_api_msgs
+[24.007s] [ 76%] Built target autoware_external_api_msgs__py
+[24.017s] [35m[1mConsolidate compiler generated dependencies of target autoware_external_api_msgs__rosidl_generator_py[0m
+[24.029s] [ 79%] [32mBuilding C object CMakeFiles/autoware_external_api_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_external_api_msgs/msg/_response_status_s.c.o[0m
+[24.139s] [ 82%] [32mBuilding C object CMakeFiles/autoware_external_api_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_external_api_msgs/srv/_get_version_s.c.o[0m
+[24.261s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/autoware_external_api_msgs/libautoware_external_api_msgs__rosidl_generator_py.so[0m
+[24.299s] [ 84%] Built target autoware_external_api_msgs__rosidl_generator_py
+[24.309s] [35m[1mConsolidate compiler generated dependencies of target autoware_external_api_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[24.320s] [ 87%] [32mBuilding C object CMakeFiles/autoware_external_api_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/autoware_external_api_msgs/_autoware_external_api_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[24.448s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/autoware_external_api_msgs/autoware_external_api_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[24.488s] [ 89%] Built target autoware_external_api_msgs__rosidl_typesupport_fastrtps_c__pyext
+[24.497s] [35m[1mConsolidate compiler generated dependencies of target autoware_external_api_msgs__rosidl_typesupport_c__pyext[0m
+[24.508s] [ 92%] [32mBuilding C object CMakeFiles/autoware_external_api_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/autoware_external_api_msgs/_autoware_external_api_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[24.636s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/autoware_external_api_msgs/autoware_external_api_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[24.675s] [ 94%] Built target autoware_external_api_msgs__rosidl_typesupport_c__pyext
+[24.684s] [35m[1mConsolidate compiler generated dependencies of target autoware_external_api_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[24.696s] [ 97%] [32mBuilding C object CMakeFiles/autoware_external_api_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/autoware_external_api_msgs/_autoware_external_api_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[24.825s] [100%] [32m[1mLinking C shared library rosidl_generator_py/autoware_external_api_msgs/autoware_external_api_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[24.865s] [100%] Built target autoware_external_api_msgs__rosidl_typesupport_introspection_c__pyext
+[24.877s] Invoked command in '/home/zhijie/autoware/build/autoware_external_api_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_external_api_msgs -- -j16 -l16
+[24.975s] Invoking command in '/home/zhijie/autoware/build/autoware_external_api_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_external_api_msgs
+[28.135s] -- Install configuration: "Release"
+[28.136s] -- Execute custom install script
+[28.136s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/ament_index/resource_index/rosidl_interfaces/autoware_external_api_msgs
+[28.136s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/detail/response_status__functions.h
+[28.136s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/detail/response_status__struct.h
+[28.136s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/detail/response_status__type_support.h
+[28.137s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/response_status.h
+[28.137s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/rosidl_generator_c__visibility_control.h
+[28.137s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/srv/detail/get_version__functions.h
+[28.137s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/srv/detail/get_version__struct.h
+[28.137s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/srv/detail/get_version__type_support.h
+[28.137s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/srv/get_version.h
+[28.137s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/environment/library_path.sh
+[28.137s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/environment/library_path.dsv
+[28.138s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/detail/response_status__rosidl_typesupport_fastrtps_c.h
+[28.138s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[28.138s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/srv/detail/get_version__rosidl_typesupport_fastrtps_c.h
+[28.138s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/detail/response_status__builder.hpp
+[28.138s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/detail/response_status__struct.hpp
+[28.139s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/detail/response_status__traits.hpp
+[28.144s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/response_status.hpp
+[28.144s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/srv/detail/get_version__builder.hpp
+[28.144s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/srv/detail/get_version__struct.hpp
+[28.144s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/srv/detail/get_version__traits.hpp
+[28.145s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/srv/get_version.hpp
+[28.145s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/detail/response_status__rosidl_typesupport_fastrtps_cpp.hpp
+[28.145s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[28.145s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/srv/detail/get_version__rosidl_typesupport_fastrtps_cpp.hpp
+[28.145s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/detail/response_status__rosidl_typesupport_introspection_c.h
+[28.146s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[28.146s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/srv/detail/get_version__rosidl_typesupport_introspection_c.h
+[28.146s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/msg/detail/response_status__rosidl_typesupport_introspection_cpp.hpp
+[28.146s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/include/autoware_external_api_msgs/autoware_external_api_msgs/srv/detail/get_version__rosidl_typesupport_introspection_cpp.hpp
+[28.146s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/environment/pythonpath.sh
+[28.146s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/environment/pythonpath.dsv
+[28.147s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[28.147s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[28.147s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[28.147s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[28.147s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/__init__.py
+[28.148s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/_autoware_external_api_msgs_s.ep.rosidl_typesupport_c.c
+[28.148s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/_autoware_external_api_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[28.148s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/_autoware_external_api_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[28.148s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/autoware_external_api_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[28.148s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/autoware_external_api_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[28.148s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/autoware_external_api_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[28.149s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/libautoware_external_api_msgs__rosidl_generator_py.so
+[28.149s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/msg/__init__.py
+[28.149s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/msg/_response_status.py
+[28.149s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/msg/_response_status_s.c
+[28.149s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/srv/__init__.py
+[28.149s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/srv/_get_version.py
+[28.150s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/srv/_get_version_s.c
+[28.150s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/autoware_external_api_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[28.150s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/autoware_external_api_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[28.150s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/autoware_external_api_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[28.150s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/msg/ResponseStatus.idl
+[28.150s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/srv/GetVersion.idl
+[28.150s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/msg/ResponseStatus.msg
+[28.151s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/srv/GetVersion.srv
+[28.151s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/srv/GetVersion_Request.msg
+[28.151s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/srv/GetVersion_Response.msg
+[28.151s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/ament_index/resource_index/package_run_dependencies/autoware_external_api_msgs
+[28.151s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/ament_index/resource_index/parent_prefix_path/autoware_external_api_msgs
+[28.152s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/environment/ament_prefix_path.sh
+[28.152s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/environment/ament_prefix_path.dsv
+[28.152s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/environment/path.sh
+[28.152s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/environment/path.dsv
+[28.152s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/local_setup.bash
+[28.152s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/local_setup.sh
+[28.152s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/local_setup.zsh
+[28.153s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/local_setup.dsv
+[28.153s] -- Symlinking: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/package.dsv
+[28.153s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/ament_index/resource_index/packages/autoware_external_api_msgs
+[28.153s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/rosidl_cmake-extras.cmake
+[28.153s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[28.153s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[28.154s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[28.157s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[28.157s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[28.157s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[28.158s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/autoware_external_api_msgsConfig.cmake
+[28.158s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/autoware_external_api_msgsConfig-version.cmake
+[28.158s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/package.xml
+[28.158s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/lib/libautoware_external_api_msgs__rosidl_generator_c.so
+[28.159s] -- Installing: /home/zhijie/autoware/install/autoware_external_api_msgs/lib/libautoware_external_api_msgs__rosidl_typesupport_fastrtps_c.so
+[28.159s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_external_api_msgs/lib/libautoware_external_api_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[28.159s] -- Installing: /home/zhijie/autoware/install/autoware_external_api_msgs/lib/libautoware_external_api_msgs__rosidl_typesupport_fastrtps_cpp.so
+[28.160s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_external_api_msgs/lib/libautoware_external_api_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[28.160s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/lib/libautoware_external_api_msgs__rosidl_typesupport_introspection_c.so
+[28.160s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/lib/libautoware_external_api_msgs__rosidl_typesupport_c.so
+[28.161s] -- Installing: /home/zhijie/autoware/install/autoware_external_api_msgs/lib/libautoware_external_api_msgs__rosidl_typesupport_introspection_cpp.so
+[28.161s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_external_api_msgs/lib/libautoware_external_api_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[28.163s] -- Installing: /home/zhijie/autoware/install/autoware_external_api_msgs/lib/libautoware_external_api_msgs__rosidl_typesupport_cpp.so
+[28.164s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_external_api_msgs/lib/libautoware_external_api_msgs__rosidl_typesupport_cpp.so" to ""
+[28.164s] Listing '/home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs'...
+[28.164s] Compiling '/home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/__init__.py'...
+[28.165s] Listing '/home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/msg'...
+[28.165s] Listing '/home/zhijie/autoware/install/autoware_external_api_msgs/local/lib/python3.10/dist-packages/autoware_external_api_msgs/srv'...
+[28.165s] -- Installing: /home/zhijie/autoware/install/autoware_external_api_msgs/lib/libautoware_external_api_msgs__rosidl_generator_py.so
+[28.166s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_external_api_msgs/lib/libautoware_external_api_msgs__rosidl_generator_py.so" to ""
+[28.166s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/export_autoware_external_api_msgs__rosidl_generator_cExport.cmake
+[28.166s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/export_autoware_external_api_msgs__rosidl_generator_cExport-release.cmake
+[28.166s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/export_autoware_external_api_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[28.167s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/export_autoware_external_api_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[28.170s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/export_autoware_external_api_msgs__rosidl_generator_cppExport.cmake
+[28.171s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/export_autoware_external_api_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[28.171s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/export_autoware_external_api_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[28.172s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/autoware_external_api_msgs__rosidl_typesupport_introspection_cExport.cmake
+[28.172s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/autoware_external_api_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[28.173s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/autoware_external_api_msgs__rosidl_typesupport_cExport.cmake
+[28.173s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/autoware_external_api_msgs__rosidl_typesupport_cExport-release.cmake
+[28.173s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/autoware_external_api_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[28.173s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/autoware_external_api_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[28.174s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/autoware_external_api_msgs__rosidl_typesupport_cppExport.cmake
+[28.174s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/autoware_external_api_msgs__rosidl_typesupport_cppExport-release.cmake
+[28.174s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/export_autoware_external_api_msgs__rosidl_generator_pyExport.cmake
+[28.175s] -- Up-to-date: /home/zhijie/autoware/install/autoware_external_api_msgs/share/autoware_external_api_msgs/cmake/export_autoware_external_api_msgs__rosidl_generator_pyExport-release.cmake
+[28.175s] Invoked command in '/home/zhijie/autoware/build/autoware_external_api_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_external_api_msgs

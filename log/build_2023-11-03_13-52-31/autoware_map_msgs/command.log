@@ -1,0 +1,6 @@
+Invoking command in '/home/zhijie/autoware/build/autoware_map_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/core/autoware_msgs/autoware_map_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_map_msgs
+Invoked command in '/home/zhijie/autoware/build/autoware_map_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/core/autoware_msgs/autoware_map_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_map_msgs
+Invoking command in '/home/zhijie/autoware/build/autoware_map_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_map_msgs -- -j16 -l16
+Invoked command in '/home/zhijie/autoware/build/autoware_map_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_map_msgs -- -j16 -l16
+Invoking command in '/home/zhijie/autoware/build/autoware_map_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_map_msgs
+Invoked command in '/home/zhijie/autoware/build/autoware_map_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_map_msgs

@@ -1,0 +1,355 @@
+[0.050s] Invoking command in '/home/zhijie/autoware/build/autoware_map_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/core/autoware_msgs/autoware_map_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_map_msgs
+[1.549s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.550s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.550s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.550s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.550s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.550s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.550s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.550s] -- Found ament_cmake_cppcheck: 0.12.8 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[1.550s] -- Found ament_cmake_cpplint: 0.12.8 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[1.550s] -- Found ament_cmake_uncrustify: 0.12.8 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[1.550s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.523s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.801s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.835s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.880s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.881s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.881s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.281s] -- Found ament_cmake_flake8: 0.12.8 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[4.282s] -- Found ament_cmake_pep257: 0.12.8 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[4.308s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.481s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.482s] -- Added test 'lint_cmake' to check CMake code style
+[4.483s] -- Added test 'xmllint' to check XML markup files
+[4.550s] -- Configuring done
+[5.405s] -- Generating done
+[5.413s] -- Build files have been written to: /home/zhijie/autoware/build/autoware_map_msgs
+[5.568s] Invoked command in '/home/zhijie/autoware/build/autoware_map_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/core/autoware_msgs/autoware_map_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/autoware_map_msgs
+[5.569s] Invoking command in '/home/zhijie/autoware/build/autoware_map_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_map_msgs -- -j16 -l16
+[11.033s] [35m[1mConsolidate compiler generated dependencies of target autoware_map_msgs__rosidl_generator_c[0m
+[11.034s] [  1%] Built target autoware_map_msgs__cpp
+[11.034s] [ 12%] Built target autoware_map_msgs__rosidl_generator_c
+[11.045s] [ 12%] Built target ament_cmake_python_symlink_autoware_map_msgs
+[11.045s] [35m[1mConsolidate compiler generated dependencies of target autoware_map_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[11.045s] [35m[1mConsolidate compiler generated dependencies of target autoware_map_msgs__rosidl_typesupport_cpp[0m
+[11.045s] [35m[1mConsolidate compiler generated dependencies of target autoware_map_msgs__rosidl_typesupport_introspection_cpp[0m
+[11.045s] [35m[1mConsolidate compiler generated dependencies of target autoware_map_msgs__rosidl_typesupport_introspection_c[0m
+[11.045s] [35m[1mConsolidate compiler generated dependencies of target autoware_map_msgs__rosidl_typesupport_fastrtps_c[0m
+[11.046s] [35m[1mConsolidate compiler generated dependencies of target autoware_map_msgs__rosidl_typesupport_c[0m
+[11.046s] [ 13%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_map_msgs/msg/detail/dds_fastrtps/area_info__type_support.cpp.o[0m
+[11.046s] [ 14%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_map_msgs/msg/detail/dds_fastrtps/lanelet_map_bin__type_support.cpp.o[0m
+[11.046s] [ 15%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_map_msgs/msg/detail/area_info__type_support.cpp.o[0m
+[11.046s] [ 16%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_map_msgs/msg/detail/lanelet_map_bin__type_support.cpp.o[0m
+[11.046s] [ 17%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_map_msgs/msg/area_info__type_support.cpp.o[0m
+[11.046s] [ 18%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_map_msgs/msg/detail/point_cloud_map_cell_with_id__type_support.cpp.o[0m
+[11.046s] [ 20%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data__type_support.cpp.o[0m
+[11.046s] [ 21%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_map_msgs/msg/point_cloud_map_cell_with_id__type_support.cpp.o[0m
+[11.046s] [ 23%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_map_msgs/msg/lanelet_map_bin__type_support.cpp.o[0m
+[11.047s] [ 23%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_map_msgs/msg/detail/dds_fastrtps/point_cloud_map_cell_with_id__type_support.cpp.o[0m
+[11.047s] [ 34%] Built target autoware_map_msgs__rosidl_typesupport_c
+[11.047s] [ 35%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data_with_id__type_support.cpp.o[0m
+[11.047s] [ 36%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_map_msgs/msg/detail/area_info__type_support_c.cpp.o[0m
+[11.047s] [ 37%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_map_msgs/msg/detail/dds_fastrtps/point_cloud_map_cell_meta_data__type_support.cpp.o[0m
+[11.047s] [ 49%] Built target autoware_map_msgs__rosidl_typesupport_introspection_c
+[11.047s] [ 50%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_map_msgs/msg/detail/lanelet_map_bin__type_support_c.cpp.o[0m
+[11.047s] [ 51%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_map_msgs/msg/detail/point_cloud_map_cell_with_id__type_support_c.cpp.o[0m
+[11.047s] running egg_info
+[11.047s] writing autoware_map_msgs.egg-info/PKG-INFO
+[11.048s] writing dependency_links to autoware_map_msgs.egg-info/dependency_links.txt
+[11.048s] writing top-level names to autoware_map_msgs.egg-info/top_level.txt
+[11.048s] reading manifest file 'autoware_map_msgs.egg-info/SOURCES.txt'
+[11.048s] writing manifest file 'autoware_map_msgs.egg-info/SOURCES.txt'
+[11.048s] [ 52%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_map_msgs/msg/point_cloud_map_cell_meta_data_with_id__type_support.cpp.o[0m
+[11.048s] [ 52%] Built target ament_cmake_python_build_autoware_map_msgs_egg
+[11.048s] [ 53%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_map_msgs/srv/detail/dds_fastrtps/get_partial_point_cloud_map__type_support.cpp.o[0m
+[11.048s] [ 54%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data_with_id__type_support_c.cpp.o[0m
+[11.048s] [ 55%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_map_msgs/srv/get_differential_point_cloud_map__type_support.cpp.o[0m
+[11.048s] [ 56%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_map_msgs/srv/detail/get_selected_point_cloud_map__type_support.cpp.o[0m
+[11.453s] [ 57%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_map_msgs/srv/get_partial_point_cloud_map__type_support.cpp.o[0m
+[11.671s] [ 58%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_map_msgs/srv/detail/get_partial_point_cloud_map__type_support_c.cpp.o[0m
+[11.989s] [ 60%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_map_msgs/srv/detail/dds_fastrtps/get_selected_point_cloud_map__type_support.cpp.o[0m
+[12.157s] [ 61%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_map_msgs/srv/get_selected_point_cloud_map__type_support.cpp.o[0m
+[12.510s] [ 62%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_map_msgs/srv/detail/get_differential_point_cloud_map__type_support.cpp.o[0m
+[12.562s] [ 63%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_map_msgs/srv/detail/get_selected_point_cloud_map__type_support_c.cpp.o[0m
+[12.630s] [ 64%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_map_msgs/msg/point_cloud_map_meta_data__type_support.cpp.o[0m
+[13.102s] [ 65%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/autoware_map_msgs/msg/point_cloud_map_cell_meta_data__type_support.cpp.o[0m
+[13.219s] [ 66%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_map_msgs/srv/detail/dds_fastrtps/get_differential_point_cloud_map__type_support.cpp.o[0m
+[13.371s] [ 67%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_map_msgs/srv/detail/get_differential_point_cloud_map__type_support_c.cpp.o[0m
+[13.555s] [ 68%] [32m[1mLinking CXX shared library libautoware_map_msgs__rosidl_typesupport_cpp.so[0m
+[13.651s] [ 69%] Built target autoware_map_msgs__rosidl_typesupport_cpp
+[13.677s] [ 70%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_map_msgs/srv/detail/get_partial_point_cloud_map__type_support.cpp.o[0m
+[14.012s] [ 71%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_map_msgs/msg/detail/point_cloud_map_meta_data__type_support_c.cpp.o[0m
+[14.181s] [ 72%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_map_msgs/msg/detail/dds_fastrtps/point_cloud_map_meta_data__type_support.cpp.o[0m
+[14.542s] [ 73%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data__type_support_c.cpp.o[0m
+[14.602s] [ 74%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/autoware_map_msgs/msg/detail/point_cloud_map_meta_data__type_support.cpp.o[0m
+[15.075s] [ 75%] [32mBuilding CXX object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/autoware_map_msgs/msg/detail/dds_fastrtps/point_cloud_map_cell_meta_data_with_id__type_support.cpp.o[0m
+[15.327s] [ 76%] [32m[1mLinking CXX shared library libautoware_map_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[15.558s] [ 77%] Built target autoware_map_msgs__rosidl_typesupport_fastrtps_c
+[15.577s] [ 78%] [32m[1mLinking CXX shared library libautoware_map_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[15.726s] [ 80%] Built target autoware_map_msgs__rosidl_typesupport_introspection_cpp
+[15.845s] [ 81%] [32m[1mLinking CXX shared library libautoware_map_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[15.998s] [ 82%] Built target autoware_map_msgs__rosidl_typesupport_fastrtps_cpp
+[16.097s] [ 82%] Built target autoware_map_msgs
+[16.139s] [ 83%] Built target autoware_map_msgs__py
+[16.155s] [35m[1mConsolidate compiler generated dependencies of target autoware_map_msgs__rosidl_generator_py[0m
+[16.215s] [ 84%] [32mBuilding C object CMakeFiles/autoware_map_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_map_msgs/msg/_area_info_s.c.o[0m
+[16.375s] [ 85%] [32mBuilding C object CMakeFiles/autoware_map_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_map_msgs/srv/_get_selected_point_cloud_map_s.c.o[0m
+[16.598s] [ 86%] [32mBuilding C object CMakeFiles/autoware_map_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_map_msgs/srv/_get_differential_point_cloud_map_s.c.o[0m
+[16.848s] [ 87%] [32mBuilding C object CMakeFiles/autoware_map_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_map_msgs/srv/_get_partial_point_cloud_map_s.c.o[0m
+[17.073s] [ 88%] [32mBuilding C object CMakeFiles/autoware_map_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_map_msgs/msg/_point_cloud_map_meta_data_s.c.o[0m
+[17.254s] [ 89%] [32mBuilding C object CMakeFiles/autoware_map_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_map_msgs/msg/_point_cloud_map_cell_meta_data_with_id_s.c.o[0m
+[17.438s] [ 90%] [32mBuilding C object CMakeFiles/autoware_map_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_map_msgs/msg/_point_cloud_map_cell_meta_data_s.c.o[0m
+[17.608s] [ 91%] [32mBuilding C object CMakeFiles/autoware_map_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_map_msgs/msg/_point_cloud_map_cell_with_id_s.c.o[0m
+[17.842s] [ 92%] [32mBuilding C object CMakeFiles/autoware_map_msgs__rosidl_generator_py.dir/rosidl_generator_py/autoware_map_msgs/msg/_lanelet_map_bin_s.c.o[0m
+[18.066s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/autoware_map_msgs/libautoware_map_msgs__rosidl_generator_py.so[0m
+[18.149s] [ 93%] Built target autoware_map_msgs__rosidl_generator_py
+[18.168s] [35m[1mConsolidate compiler generated dependencies of target autoware_map_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[18.216s] [ 94%] [32mBuilding C object CMakeFiles/autoware_map_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/autoware_map_msgs/_autoware_map_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[18.640s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/autoware_map_msgs/autoware_map_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[18.722s] [ 95%] Built target autoware_map_msgs__rosidl_typesupport_fastrtps_c__pyext
+[18.736s] [35m[1mConsolidate compiler generated dependencies of target autoware_map_msgs__rosidl_typesupport_c__pyext[0m
+[18.765s] [ 96%] [32mBuilding C object CMakeFiles/autoware_map_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/autoware_map_msgs/_autoware_map_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[19.144s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/autoware_map_msgs/autoware_map_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[19.244s] [ 97%] Built target autoware_map_msgs__rosidl_typesupport_c__pyext
+[19.262s] [35m[1mConsolidate compiler generated dependencies of target autoware_map_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[19.279s] [ 98%] [32mBuilding C object CMakeFiles/autoware_map_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/autoware_map_msgs/_autoware_map_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[19.661s] [100%] [32m[1mLinking C shared library rosidl_generator_py/autoware_map_msgs/autoware_map_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[19.732s] [100%] Built target autoware_map_msgs__rosidl_typesupport_introspection_c__pyext
+[19.752s] Invoked command in '/home/zhijie/autoware/build/autoware_map_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_map_msgs -- -j16 -l16
+[20.213s] Invoking command in '/home/zhijie/autoware/build/autoware_map_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_map_msgs
+[35.633s] -- Install configuration: "Release"
+[35.634s] -- Execute custom install script
+[35.634s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/ament_index/resource_index/rosidl_interfaces/autoware_map_msgs
+[35.634s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/area_info.h
+[35.634s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/area_info__functions.h
+[35.635s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/area_info__struct.h
+[35.635s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/area_info__type_support.h
+[35.635s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/lanelet_map_bin__functions.h
+[35.635s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/lanelet_map_bin__struct.h
+[35.635s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/lanelet_map_bin__type_support.h
+[35.635s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data__functions.h
+[35.635s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data__struct.h
+[35.635s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data__type_support.h
+[35.636s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data_with_id__functions.h
+[35.636s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data_with_id__struct.h
+[35.636s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data_with_id__type_support.h
+[35.636s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_with_id__functions.h
+[35.636s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_with_id__struct.h
+[35.636s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_with_id__type_support.h
+[35.636s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_meta_data__functions.h
+[35.636s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_meta_data__struct.h
+[35.637s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_meta_data__type_support.h
+[35.637s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/lanelet_map_bin.h
+[35.637s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/point_cloud_map_cell_meta_data.h
+[35.637s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/point_cloud_map_cell_meta_data_with_id.h
+[35.637s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/point_cloud_map_cell_with_id.h
+[35.637s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/point_cloud_map_meta_data.h
+[35.637s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/rosidl_generator_c__visibility_control.h
+[35.637s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_differential_point_cloud_map__functions.h
+[35.638s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_differential_point_cloud_map__struct.h
+[35.638s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_differential_point_cloud_map__type_support.h
+[35.638s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_partial_point_cloud_map__functions.h
+[35.638s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_partial_point_cloud_map__struct.h
+[35.638s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_partial_point_cloud_map__type_support.h
+[35.638s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_selected_point_cloud_map__functions.h
+[35.638s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_selected_point_cloud_map__struct.h
+[35.638s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_selected_point_cloud_map__type_support.h
+[35.639s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/get_differential_point_cloud_map.h
+[35.639s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/get_partial_point_cloud_map.h
+[35.639s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/get_selected_point_cloud_map.h
+[35.639s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/environment/library_path.sh
+[35.639s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/environment/library_path.dsv
+[35.639s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/area_info__rosidl_typesupport_fastrtps_c.h
+[35.639s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/lanelet_map_bin__rosidl_typesupport_fastrtps_c.h
+[35.639s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data__rosidl_typesupport_fastrtps_c.h
+[35.640s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data_with_id__rosidl_typesupport_fastrtps_c.h
+[35.640s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_with_id__rosidl_typesupport_fastrtps_c.h
+[35.640s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_meta_data__rosidl_typesupport_fastrtps_c.h
+[35.640s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[35.640s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_differential_point_cloud_map__rosidl_typesupport_fastrtps_c.h
+[35.640s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_partial_point_cloud_map__rosidl_typesupport_fastrtps_c.h
+[35.640s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_selected_point_cloud_map__rosidl_typesupport_fastrtps_c.h
+[35.640s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/area_info.hpp
+[35.641s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/area_info__builder.hpp
+[35.641s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/area_info__struct.hpp
+[35.641s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/area_info__traits.hpp
+[35.641s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/lanelet_map_bin__builder.hpp
+[35.641s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/lanelet_map_bin__struct.hpp
+[35.641s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/lanelet_map_bin__traits.hpp
+[35.641s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data__builder.hpp
+[35.641s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data__struct.hpp
+[35.641s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data__traits.hpp
+[35.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data_with_id__builder.hpp
+[35.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data_with_id__struct.hpp
+[35.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data_with_id__traits.hpp
+[35.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_with_id__builder.hpp
+[35.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_with_id__struct.hpp
+[35.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_with_id__traits.hpp
+[35.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_meta_data__builder.hpp
+[35.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_meta_data__struct.hpp
+[35.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_meta_data__traits.hpp
+[35.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/lanelet_map_bin.hpp
+[35.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/point_cloud_map_cell_meta_data.hpp
+[35.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/point_cloud_map_cell_meta_data_with_id.hpp
+[35.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/point_cloud_map_cell_with_id.hpp
+[35.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/point_cloud_map_meta_data.hpp
+[35.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_differential_point_cloud_map__builder.hpp
+[35.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_differential_point_cloud_map__struct.hpp
+[35.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_differential_point_cloud_map__traits.hpp
+[35.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_partial_point_cloud_map__builder.hpp
+[35.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_partial_point_cloud_map__struct.hpp
+[35.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_partial_point_cloud_map__traits.hpp
+[35.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_selected_point_cloud_map__builder.hpp
+[35.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_selected_point_cloud_map__struct.hpp
+[35.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_selected_point_cloud_map__traits.hpp
+[35.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/get_differential_point_cloud_map.hpp
+[35.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/get_partial_point_cloud_map.hpp
+[35.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/get_selected_point_cloud_map.hpp
+[35.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/area_info__rosidl_typesupport_fastrtps_cpp.hpp
+[35.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/lanelet_map_bin__rosidl_typesupport_fastrtps_cpp.hpp
+[35.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data__rosidl_typesupport_fastrtps_cpp.hpp
+[35.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data_with_id__rosidl_typesupport_fastrtps_cpp.hpp
+[35.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_with_id__rosidl_typesupport_fastrtps_cpp.hpp
+[35.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_meta_data__rosidl_typesupport_fastrtps_cpp.hpp
+[35.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[35.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_differential_point_cloud_map__rosidl_typesupport_fastrtps_cpp.hpp
+[35.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_partial_point_cloud_map__rosidl_typesupport_fastrtps_cpp.hpp
+[35.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_selected_point_cloud_map__rosidl_typesupport_fastrtps_cpp.hpp
+[35.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/area_info__rosidl_typesupport_introspection_c.h
+[35.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/lanelet_map_bin__rosidl_typesupport_introspection_c.h
+[35.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data__rosidl_typesupport_introspection_c.h
+[35.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data_with_id__rosidl_typesupport_introspection_c.h
+[35.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_with_id__rosidl_typesupport_introspection_c.h
+[35.647s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_meta_data__rosidl_typesupport_introspection_c.h
+[35.647s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[35.647s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_differential_point_cloud_map__rosidl_typesupport_introspection_c.h
+[35.647s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_partial_point_cloud_map__rosidl_typesupport_introspection_c.h
+[35.647s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_selected_point_cloud_map__rosidl_typesupport_introspection_c.h
+[35.647s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/area_info__rosidl_typesupport_introspection_cpp.hpp
+[35.647s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/lanelet_map_bin__rosidl_typesupport_introspection_cpp.hpp
+[35.647s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data__rosidl_typesupport_introspection_cpp.hpp
+[35.648s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data_with_id__rosidl_typesupport_introspection_cpp.hpp
+[35.648s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_cell_with_id__rosidl_typesupport_introspection_cpp.hpp
+[35.648s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/msg/detail/point_cloud_map_meta_data__rosidl_typesupport_introspection_cpp.hpp
+[35.648s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_differential_point_cloud_map__rosidl_typesupport_introspection_cpp.hpp
+[35.648s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_partial_point_cloud_map__rosidl_typesupport_introspection_cpp.hpp
+[35.648s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/include/autoware_map_msgs/autoware_map_msgs/srv/detail/get_selected_point_cloud_map__rosidl_typesupport_introspection_cpp.hpp
+[35.648s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/environment/pythonpath.sh
+[35.648s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/environment/pythonpath.dsv
+[35.649s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs-1.0.0-py3.10.egg-info/PKG-INFO
+[35.649s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs-1.0.0-py3.10.egg-info/SOURCES.txt
+[35.649s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs-1.0.0-py3.10.egg-info/dependency_links.txt
+[35.649s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs-1.0.0-py3.10.egg-info/top_level.txt
+[35.649s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/__init__.py
+[35.649s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/_autoware_map_msgs_s.ep.rosidl_typesupport_c.c
+[35.649s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/_autoware_map_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[35.650s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/_autoware_map_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[35.650s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/autoware_map_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[35.650s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/autoware_map_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[35.650s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/autoware_map_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[35.650s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/libautoware_map_msgs__rosidl_generator_py.so
+[35.650s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg/__init__.py
+[35.650s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg/_area_info.py
+[35.651s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg/_area_info_s.c
+[35.651s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg/_lanelet_map_bin.py
+[35.651s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg/_lanelet_map_bin_s.c
+[35.651s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg/_point_cloud_map_cell_meta_data.py
+[35.651s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg/_point_cloud_map_cell_meta_data_s.c
+[35.651s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg/_point_cloud_map_cell_meta_data_with_id.py
+[35.651s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg/_point_cloud_map_cell_meta_data_with_id_s.c
+[35.652s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg/_point_cloud_map_cell_with_id.py
+[35.652s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg/_point_cloud_map_cell_with_id_s.c
+[35.652s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg/_point_cloud_map_meta_data.py
+[35.652s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg/_point_cloud_map_meta_data_s.c
+[35.652s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/srv/__init__.py
+[35.652s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/srv/_get_differential_point_cloud_map.py
+[35.652s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/srv/_get_differential_point_cloud_map_s.c
+[35.653s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/srv/_get_partial_point_cloud_map.py
+[35.653s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/srv/_get_partial_point_cloud_map_s.c
+[35.653s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/srv/_get_selected_point_cloud_map.py
+[35.653s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/srv/_get_selected_point_cloud_map_s.c
+[35.653s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/autoware_map_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[35.653s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/autoware_map_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[35.654s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/autoware_map_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[35.654s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/msg/AreaInfo.idl
+[35.654s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/msg/LaneletMapBin.idl
+[35.654s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/msg/PointCloudMapCellWithID.idl
+[35.654s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/msg/PointCloudMapCellMetaData.idl
+[35.654s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/msg/PointCloudMapCellMetaDataWithID.idl
+[35.654s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/msg/PointCloudMapMetaData.idl
+[35.655s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/srv/GetPartialPointCloudMap.idl
+[35.655s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/srv/GetDifferentialPointCloudMap.idl
+[35.655s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/srv/GetSelectedPointCloudMap.idl
+[35.655s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/msg/AreaInfo.msg
+[35.655s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/msg/LaneletMapBin.msg
+[35.655s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/msg/PointCloudMapCellWithID.msg
+[35.655s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/msg/PointCloudMapCellMetaData.msg
+[35.655s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/msg/PointCloudMapCellMetaDataWithID.msg
+[35.656s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/msg/PointCloudMapMetaData.msg
+[35.656s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/srv/GetPartialPointCloudMap.srv
+[35.656s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/srv/GetPartialPointCloudMap_Request.msg
+[35.656s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/srv/GetPartialPointCloudMap_Response.msg
+[35.656s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/srv/GetDifferentialPointCloudMap.srv
+[35.656s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/srv/GetDifferentialPointCloudMap_Request.msg
+[35.656s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/srv/GetDifferentialPointCloudMap_Response.msg
+[35.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/srv/GetSelectedPointCloudMap.srv
+[35.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/srv/GetSelectedPointCloudMap_Request.msg
+[35.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/srv/GetSelectedPointCloudMap_Response.msg
+[35.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/ament_index/resource_index/package_run_dependencies/autoware_map_msgs
+[35.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/ament_index/resource_index/parent_prefix_path/autoware_map_msgs
+[35.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/environment/ament_prefix_path.sh
+[35.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/environment/ament_prefix_path.dsv
+[35.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/environment/path.sh
+[35.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/environment/path.dsv
+[35.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/local_setup.bash
+[35.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/local_setup.sh
+[35.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/local_setup.zsh
+[35.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/local_setup.dsv
+[35.658s] -- Symlinking: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/package.dsv
+[35.667s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/ament_index/resource_index/packages/autoware_map_msgs
+[35.667s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/rosidl_cmake-extras.cmake
+[35.667s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[35.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[35.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[35.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[35.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[35.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[35.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/autoware_map_msgsConfig.cmake
+[35.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/autoware_map_msgsConfig-version.cmake
+[35.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/package.xml
+[35.671s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/lib/libautoware_map_msgs__rosidl_generator_c.so
+[35.671s] -- Installing: /home/zhijie/autoware/install/autoware_map_msgs/lib/libautoware_map_msgs__rosidl_typesupport_fastrtps_c.so
+[35.672s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_map_msgs/lib/libautoware_map_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[35.673s] -- Installing: /home/zhijie/autoware/install/autoware_map_msgs/lib/libautoware_map_msgs__rosidl_typesupport_fastrtps_cpp.so
+[35.673s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_map_msgs/lib/libautoware_map_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[35.674s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/lib/libautoware_map_msgs__rosidl_typesupport_introspection_c.so
+[35.674s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/lib/libautoware_map_msgs__rosidl_typesupport_c.so
+[35.675s] -- Installing: /home/zhijie/autoware/install/autoware_map_msgs/lib/libautoware_map_msgs__rosidl_typesupport_introspection_cpp.so
+[35.675s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_map_msgs/lib/libautoware_map_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[35.676s] -- Installing: /home/zhijie/autoware/install/autoware_map_msgs/lib/libautoware_map_msgs__rosidl_typesupport_cpp.so
+[35.676s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_map_msgs/lib/libautoware_map_msgs__rosidl_typesupport_cpp.so" to ""
+[35.727s] Listing '/home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs'...
+[35.727s] Compiling '/home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/__init__.py'...
+[35.727s] Listing '/home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/msg'...
+[35.728s] Listing '/home/zhijie/autoware/install/autoware_map_msgs/local/lib/python3.10/dist-packages/autoware_map_msgs/srv'...
+[35.735s] -- Installing: /home/zhijie/autoware/install/autoware_map_msgs/lib/libautoware_map_msgs__rosidl_generator_py.so
+[35.736s] -- Set runtime path of "/home/zhijie/autoware/install/autoware_map_msgs/lib/libautoware_map_msgs__rosidl_generator_py.so" to ""
+[35.736s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/export_autoware_map_msgs__rosidl_generator_cExport.cmake
+[35.736s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/export_autoware_map_msgs__rosidl_generator_cExport-release.cmake
+[35.736s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/export_autoware_map_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[35.736s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/export_autoware_map_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[35.737s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/export_autoware_map_msgs__rosidl_generator_cppExport.cmake
+[35.737s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/export_autoware_map_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[35.737s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/export_autoware_map_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[35.737s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/autoware_map_msgs__rosidl_typesupport_introspection_cExport.cmake
+[35.737s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/autoware_map_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[35.737s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/autoware_map_msgs__rosidl_typesupport_cExport.cmake
+[35.738s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/autoware_map_msgs__rosidl_typesupport_cExport-release.cmake
+[35.738s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/autoware_map_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[35.738s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/autoware_map_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[35.738s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/autoware_map_msgs__rosidl_typesupport_cppExport.cmake
+[35.738s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/autoware_map_msgs__rosidl_typesupport_cppExport-release.cmake
+[35.739s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/export_autoware_map_msgs__rosidl_generator_pyExport.cmake
+[35.739s] -- Up-to-date: /home/zhijie/autoware/install/autoware_map_msgs/share/autoware_map_msgs/cmake/export_autoware_map_msgs__rosidl_generator_pyExport-release.cmake
+[35.771s] Invoked command in '/home/zhijie/autoware/build/autoware_map_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_map_msgs

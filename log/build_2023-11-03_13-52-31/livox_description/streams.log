@@ -1,0 +1,29 @@
+[0.087s] Invoking command in '/home/zhijie/autoware/build/livox_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/sensor_component/external/sensor_component_description/livox_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/livox_description
+[3.857s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[3.857s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.857s] -- Configuring done
+[3.857s] -- Generating done
+[3.857s] -- Build files have been written to: /home/zhijie/autoware/build/livox_description
+[3.932s] Invoked command in '/home/zhijie/autoware/build/livox_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/sensor_component/external/sensor_component_description/livox_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/livox_description
+[3.955s] Invoking command in '/home/zhijie/autoware/build/livox_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/livox_description -- -j16 -l16
+[5.030s] Invoked command in '/home/zhijie/autoware/build/livox_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/livox_description -- -j16 -l16
+[5.104s] Invoking command in '/home/zhijie/autoware/build/livox_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/livox_description
+[5.172s] -- Install configuration: "Release"
+[5.172s] -- Execute custom install script
+[5.172s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/livox_description/urdf/livox_horizon.xacro
+[5.172s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/ament_index/resource_index/package_run_dependencies/livox_description
+[5.172s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/ament_index/resource_index/parent_prefix_path/livox_description
+[5.172s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/livox_description/environment/ament_prefix_path.sh
+[5.172s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/livox_description/environment/ament_prefix_path.dsv
+[5.172s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/livox_description/environment/path.sh
+[5.173s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/livox_description/environment/path.dsv
+[5.173s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/livox_description/local_setup.bash
+[5.173s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/livox_description/local_setup.sh
+[5.173s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/livox_description/local_setup.zsh
+[5.173s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/livox_description/local_setup.dsv
+[5.173s] -- Symlinking: /home/zhijie/autoware/install/livox_description/share/livox_description/package.dsv
+[5.173s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/ament_index/resource_index/packages/livox_description
+[5.173s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/livox_description/cmake/livox_descriptionConfig.cmake
+[5.173s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/livox_description/cmake/livox_descriptionConfig-version.cmake
+[5.174s] -- Up-to-date symlink: /home/zhijie/autoware/install/livox_description/share/livox_description/package.xml
+[5.209s] Invoked command in '/home/zhijie/autoware/build/livox_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/livox_description

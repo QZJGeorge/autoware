@@ -1,0 +1,86 @@
+-- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/zhijie/autoware/src/universe/autoware.universe/perception/tensorrt_yolo/include;/home/zhijie/autoware/src/universe/autoware.universe/perception/tensorrt_yolo/lib/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhijie/autoware/build/tensorrt_yolo
+[  6%] [34m[1mBuilding NVCC (Device) object CMakeFiles/mish_plugin.dir/lib/src/plugins/mish_plugin_generated_mish.cu.o[0m
+[35m[1mConsolidate compiler generated dependencies of target mish_plugin[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/mish_plugin.dir/lib/src/plugins/mish_plugin.cpp.o[0m
+[ 20%] [32m[1mLinking CXX shared library libmish_plugin.so[0m
+[ 20%] Built target mish_plugin
+[35m[1mConsolidate compiler generated dependencies of target tensorrt_yolo_node[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/tensorrt_yolo_node.dir/rclcpp_components/node_main_tensorrt_yolo_node.cpp.o[0m
+[ 33%] [32m[1mLinking CXX executable tensorrt_yolo_node[0m
+[ 33%] Built target tensorrt_yolo_node
+[ 40%] [34m[1mBuilding NVCC (Device) object CMakeFiles/nms_plugin.dir/lib/src/plugins/nms_plugin_generated_nms.cu.o[0m
+[35m[1mConsolidate compiler generated dependencies of target nms_plugin[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/nms_plugin.dir/lib/src/plugins/nms_plugin.cpp.o[0m
+[ 53%] [32m[1mLinking CXX shared library libnms_plugin.so[0m
+[ 53%] Built target nms_plugin
+[ 60%] [34m[1mBuilding NVCC (Device) object CMakeFiles/yolo_layer_plugin.dir/lib/src/plugins/yolo_layer_plugin_generated_yolo_layer.cu.o[0m
+[35m[1mConsolidate compiler generated dependencies of target yolo_layer_plugin[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/yolo_layer_plugin.dir/lib/src/plugins/yolo_layer_plugin.cpp.o[0m
+[ 73%] [32m[1mLinking CXX shared library libyolo_layer_plugin.so[0m
+[ 73%] Built target yolo_layer_plugin
+[35m[1mConsolidate compiler generated dependencies of target yolo[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/yolo.dir/lib/src/trt_yolo.cpp.o[0m
+[ 86%] [32m[1mLinking CXX shared library libyolo.so[0m
+[ 86%] Built target yolo
+[35m[1mConsolidate compiler generated dependencies of target tensorrt_yolo_nodelet[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/tensorrt_yolo_nodelet.dir/src/nodelet.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libtensorrt_yolo_nodelet.so[0m
+[100%] Built target tensorrt_yolo_nodelet
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/tensorrt_yolo/tensorrt_yolo_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/include/tensorrt_yolo/nodelet.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libyolo.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libtensorrt_yolo_nodelet.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov3.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov4-tiny.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov4.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov5l.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov5m.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov5s.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov5x.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/launch/tensorrt_yolo.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/launch/yolo.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/ament_index/resource_index/package_run_dependencies/tensorrt_yolo
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/ament_index/resource_index/parent_prefix_path/tensorrt_yolo
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/ament_index/resource_index/packages/tensorrt_yolo
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/ament_index/resource_index/rclcpp_components/tensorrt_yolo
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/tensorrt_yoloConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/tensorrt_yoloConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/package.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libmish_plugin.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libyolo_layer_plugin.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libnms_plugin.so

@@ -1,0 +1,52 @@
+[0.093s] Invoking command in '/home/zhijie/autoware/build/time_utils': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/time_utils -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/time_utils
+[2.225s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[2.225s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.225s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.225s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.225s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.225s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.226s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.226s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.226s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.226s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.226s] -- Configured cppcheck include dirs: /home/zhijie/autoware/src/universe/autoware.universe/common/time_utils/include
+[2.226s] -- Configured cppcheck exclude dirs and/or files: 
+[2.226s] -- Added test 'lint_cmake' to check CMake code style
+[2.226s] -- Added test 'xmllint' to check XML markup files
+[2.226s] -- Configuring done
+[2.226s] -- Generating done
+[2.226s] -- Build files have been written to: /home/zhijie/autoware/build/time_utils
+[2.245s] Invoked command in '/home/zhijie/autoware/build/time_utils' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/time_utils -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/time_utils
+[2.246s] Invoking command in '/home/zhijie/autoware/build/time_utils': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/time_utils -- -j16 -l16
+[5.291s] [35m[1mConsolidate compiler generated dependencies of target time_utils[0m
+[5.292s] [ 50%] [32mBuilding CXX object CMakeFiles/time_utils.dir/src/time_utils/time_utils.cpp.o[0m
+[5.292s] [100%] [32m[1mLinking CXX shared library libtime_utils.so[0m
+[5.293s] [100%] Built target time_utils
+[5.318s] Invoked command in '/home/zhijie/autoware/build/time_utils' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/time_utils -- -j16 -l16
+[5.675s] Invoking command in '/home/zhijie/autoware/build/time_utils': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/time_utils
+[16.238s] -- Install configuration: "Release"
+[16.238s] -- Execute custom install script
+[16.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/include/time_utils/stopwatch.hpp
+[16.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/include/time_utils/time_utils.hpp
+[16.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/include/time_utils/visibility_control.hpp
+[16.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/environment/library_path.sh
+[16.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/environment/library_path.dsv
+[16.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/lib/libtime_utils.so
+[16.238s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/ament_index/resource_index/package_run_dependencies/time_utils
+[16.239s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/ament_index/resource_index/parent_prefix_path/time_utils
+[16.239s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/environment/ament_prefix_path.sh
+[16.239s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/environment/ament_prefix_path.dsv
+[16.239s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/environment/path.sh
+[16.239s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/environment/path.dsv
+[16.239s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/local_setup.bash
+[16.239s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/local_setup.sh
+[16.239s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/local_setup.zsh
+[16.240s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/local_setup.dsv
+[16.240s] -- Symlinking: /home/zhijie/autoware/install/time_utils/share/time_utils/package.dsv
+[16.240s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/ament_index/resource_index/packages/time_utils
+[16.241s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.242s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/cmake/ament_cmake_export_libraries-extras.cmake
+[16.246s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/cmake/time_utilsConfig.cmake
+[16.246s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/cmake/time_utilsConfig-version.cmake
+[16.250s] -- Up-to-date symlink: /home/zhijie/autoware/install/time_utils/share/time_utils/package.xml
+[16.272s] Invoked command in '/home/zhijie/autoware/build/time_utils' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/time_utils

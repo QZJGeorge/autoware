@@ -152,13 +152,10 @@ namespace abc_context_converter
 
     if (bv_key.find("VRU") != std::string::npos) {
       bv_classification.label = PEDESTRIAN;
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Updating pedestrian info");
     } else if (bv_key.find("POV") != std::string::npos){
       bv_classification.label = CAR;
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Updating background vehicle info");
     } else{
       bv_classification.label = UNKNOWN;
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Updating unknown object info");
     }
     return bv_classification;
   }
@@ -169,10 +166,6 @@ namespace abc_context_converter
     if (action == DELETEALL){
       bv_object.action = action;
       pub_bv_object->publish(bv_object);
-      return;
-    }
-
-    if (bv_key == "CAV"){
       return;
     }
 
@@ -258,17 +251,22 @@ namespace abc_context_converter
     for (json::iterator bv = cav_context_history_copy.begin(); bv != cav_context_history_copy.end(); ++bv) {
         if (!cav_context_current_json.contains(bv.key())) {
           update_bv_in_autoware_sim(DELETE, bv.key(), bv.value().dump());
+          RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "delete %s", bv.key().c_str());
           cav_context_history_json.erase(bv.key());
         } 
     }
 
     // Update bv info with new message, create new bvs
     for (json::iterator bv = cav_context_current_json.begin(); bv != cav_context_current_json.end(); ++bv) {
-        if (cav_context_history_json.contains(bv.key())) {
+        if (bv.key() == "CAV"){
+          continue;
+        } else if (cav_context_history_json.contains(bv.key())) {
           cav_context_history_json[bv.key()] = bv.value().dump();
+          RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "modify %s", bv.key().c_str());
           update_bv_in_autoware_sim(MODIFY, bv.key(), bv.value().dump());
         } else {
           cav_context_history_json.emplace(bv.key(), bv.value().dump());
+          RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "add %s", bv.key().c_str());
           update_bv_in_autoware_sim(ADD, bv.key(), bv.value().dump());
         }
     }
