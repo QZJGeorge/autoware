@@ -1,8 +1,0 @@
-In file included from [01m[K/usr/include/boost/bind.hpp:30[m[K,
-                 from [01m[K/usr/include/boost/property_tree/json_parser/detail/parser.hpp:7[m[K,
-                 from [01m[K/usr/include/boost/property_tree/json_parser/detail/read.hpp:13[m[K,
-                 from [01m[K/usr/include/boost/property_tree/json_parser.hpp:16[m[K,
-                 from [01m[K/home/zhijie/autoware/src/universe/autoware.universe/system/system_monitor/src/cpu_monitor/cpu_monitor_base.cpp:26[m[K:
-[01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
-   36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
-      | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K

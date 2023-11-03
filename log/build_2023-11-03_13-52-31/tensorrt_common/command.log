@@ -1,6 +1,0 @@
-Invoking command in '/home/zhijie/autoware/build/tensorrt_common': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/tensorrt_common -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/tensorrt_common
-Invoked command in '/home/zhijie/autoware/build/tensorrt_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/autoware.universe/common/tensorrt_common -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/tensorrt_common
-Invoking command in '/home/zhijie/autoware/build/tensorrt_common': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tensorrt_common -- -j16 -l16
-Invoked command in '/home/zhijie/autoware/build/tensorrt_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tensorrt_common -- -j16 -l16
-Invoking command in '/home/zhijie/autoware/build/tensorrt_common': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tensorrt_common
-Invoked command in '/home/zhijie/autoware/build/tensorrt_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tensorrt_common

@@ -1,6 +1,0 @@
-Invoking command in '/home/zhijie/autoware/build/rtklib_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/external/rtklib_ros_bridge/rtklib_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/rtklib_msgs
-Invoked command in '/home/zhijie/autoware/build/rtklib_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/universe/external/rtklib_ros_bridge/rtklib_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/rtklib_msgs
-Invoking command in '/home/zhijie/autoware/build/rtklib_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/rtklib_msgs -- -j16 -l16
-Invoked command in '/home/zhijie/autoware/build/rtklib_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/rtklib_msgs -- -j16 -l16
-Invoking command in '/home/zhijie/autoware/build/rtklib_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/rtklib_msgs
-Invoked command in '/home/zhijie/autoware/build/rtklib_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/rtklib_msgs

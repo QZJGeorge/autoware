@@ -1,4 +1,0 @@
-[01m[K/home/zhijie/autoware/src/middleware/external/heaphook/src/app.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
-[01m[K/home/zhijie/autoware/src/middleware/external/heaphook/src/app.cpp:48:26:[m[K [01;35m[Kwarning: [m[K‘[01m[Kptr[m[K’ may be used uninitialized in this function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
-   48 |     void * ptr2 = [01;35m[Krealloc(ptr, 1212)[m[K;
-      |                   [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
