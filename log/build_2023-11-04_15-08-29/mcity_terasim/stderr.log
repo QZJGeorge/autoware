@@ -1,7 +1,0 @@
-[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:[m[K In constructor ‘[01m[Kgnss_to_dummy_pose_twist::GnssToDummyPoseTwist::GnssToDummyPoseTwist(const rclcpp::NodeOptions&)[m[K’:
-[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:30:55:[m[K [01;31m[Kerror: [m[K‘[01m[KGnssToPoseTwist[m[K’ has not been declared
-   30 |       "/localization/kinematic_state", 10, std::bind(&[01;31m[KGnssToPoseTwist[m[K::odom_callback, this, std::placeholders::_1));
-      |                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/gnss_to_dummy_pose_twist_component.dir/build.make:76: CMakeFiles/gnss_to_dummy_pose_twist_component.dir/src/gnss_to_dummy_pose_twist.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:490: CMakeFiles/gnss_to_dummy_pose_twist_component.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

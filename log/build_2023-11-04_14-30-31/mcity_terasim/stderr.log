@@ -1,8 +1,0 @@
-In file included from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:15[m[K:
-[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/include/gnss_to_dummy_pose_twist.hpp:100:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
-  100 |   OccupancyGrid calc_map([01;31m[K)[m[K
-      |                          [01;31m[K^[m[K
-      |                           [32m[K;[m[K
-gmake[2]: *** [CMakeFiles/gnss_to_dummy_pose_twist_component.dir/build.make:76: CMakeFiles/gnss_to_dummy_pose_twist_component.dir/src/gnss_to_dummy_pose_twist.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:490: CMakeFiles/gnss_to_dummy_pose_twist_component.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
