@@ -1,0 +1,29 @@
+[0.041s] Invoking command in '/home/zhijie/autoware/build/eagleye_fix2kml': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/eagleye_msgs:/home/zhijie/autoware/install/rtklib_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/eagleye_msgs:/home/zhijie/autoware/install/rtklib_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/eagleye_msgs/lib:/home/zhijie/autoware/install/rtklib_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/eagleye_fix2kml -- -j16 -l16
+[0.152s] [35m[1mConsolidate compiler generated dependencies of target fix2kml[0m
+[0.152s] [100%] Built target fix2kml
+[0.225s] Invoked command in '/home/zhijie/autoware/build/eagleye_fix2kml' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/eagleye_msgs:/home/zhijie/autoware/install/rtklib_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/eagleye_msgs:/home/zhijie/autoware/install/rtklib_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/eagleye_msgs/lib:/home/zhijie/autoware/install/rtklib_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/eagleye_fix2kml -- -j16 -l16
+[0.355s] Invoking command in '/home/zhijie/autoware/build/eagleye_fix2kml': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/eagleye_msgs:/home/zhijie/autoware/install/rtklib_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/eagleye_msgs:/home/zhijie/autoware/install/rtklib_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/eagleye_msgs/lib:/home/zhijie/autoware/install/rtklib_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/eagleye_fix2kml
+[0.408s] -- Install configuration: "Release"
+[0.408s] -- Execute custom install script
+[0.408s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/include/fix2kml/KmlGenerator.hpp
+[0.408s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/lib/eagleye_fix2kml/fix2kml
+[0.408s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/launch/fix2kml.xml
+[0.408s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/kml/networklink.kml
+[0.408s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/ament_index/resource_index/package_run_dependencies/eagleye_fix2kml
+[0.409s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/ament_index/resource_index/parent_prefix_path/eagleye_fix2kml
+[0.409s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/environment/ament_prefix_path.sh
+[0.410s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/environment/ament_prefix_path.dsv
+[0.410s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/environment/path.sh
+[0.411s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/environment/path.dsv
+[0.411s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/local_setup.bash
+[0.412s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/local_setup.sh
+[0.414s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/local_setup.zsh
+[0.415s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/local_setup.dsv
+[0.415s] -- Symlinking: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/package.dsv
+[0.431s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/ament_index/resource_index/packages/eagleye_fix2kml
+[0.432s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.438s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/cmake/eagleye_fix2kmlConfig.cmake
+[0.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/cmake/eagleye_fix2kmlConfig-version.cmake
+[0.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_fix2kml/share/eagleye_fix2kml/package.xml
+[0.477s] Invoked command in '/home/zhijie/autoware/build/eagleye_fix2kml' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/eagleye_msgs:/home/zhijie/autoware/install/rtklib_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/eagleye_msgs:/home/zhijie/autoware/install/rtklib_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/eagleye_msgs/lib:/home/zhijie/autoware/install/rtklib_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/eagleye_fix2kml

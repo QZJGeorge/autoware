@@ -1,0 +1,32 @@
+[35m[1mConsolidate compiler generated dependencies of target gnss_poser_node[0m
+[ 50%] Built target gnss_poser_node
+[35m[1mConsolidate compiler generated dependencies of target gnss_poser[0m
+[100%] Built target gnss_poser
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/lib/gnss_poser/gnss_poser
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/include/gnss_poser/gnss_poser_core.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/lib/libgnss_poser_node.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/config/gnss_poser.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/launch/gnss_poser.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/ament_index/resource_index/package_run_dependencies/gnss_poser
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/ament_index/resource_index/parent_prefix_path/gnss_poser
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/ament_index/resource_index/packages/gnss_poser
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/ament_index/resource_index/rclcpp_components/gnss_poser
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/cmake/gnss_poserConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/cmake/gnss_poserConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/gnss_poser/share/gnss_poser/package.xml

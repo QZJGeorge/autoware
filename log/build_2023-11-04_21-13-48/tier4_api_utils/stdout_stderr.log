@@ -1,0 +1,30 @@
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[ 33%] Built target gtest
+[ 66%] Built target gtest_main
+[35m[1mConsolidate compiler generated dependencies of target tier4_api_utils_test[0m
+[100%] Built target tier4_api_utils_test
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/include/tier4_api_utils/rclcpp/client.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/include/tier4_api_utils/rclcpp/proxy.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/include/tier4_api_utils/rclcpp/service.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/include/tier4_api_utils/tier4_api_utils.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/include/tier4_api_utils/types/response.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/ament_index/resource_index/package_run_dependencies/tier4_api_utils
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/ament_index/resource_index/parent_prefix_path/tier4_api_utils
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/ament_index/resource_index/packages/tier4_api_utils
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/cmake/tier4_api_utilsConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/cmake/tier4_api_utilsConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/package.xml

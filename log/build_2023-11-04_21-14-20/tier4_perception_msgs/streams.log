@@ -1,0 +1,326 @@
+[0.127s] Invoking command in '/home/zhijie/autoware/build/tier4_perception_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_perception_msgs -- -j16 -l16
+[0.222s] [  0%] Built target tier4_perception_msgs__cpp
+[0.242s] [  0%] Built target ament_cmake_python_symlink_tier4_perception_msgs
+[0.295s] [ 12%] Built target tier4_perception_msgs__rosidl_generator_c
+[0.296s] [ 24%] Built target tier4_perception_msgs__rosidl_typesupport_fastrtps_cpp
+[0.308s] [ 36%] Built target tier4_perception_msgs__rosidl_typesupport_cpp
+[0.328s] [ 48%] Built target tier4_perception_msgs__rosidl_typesupport_introspection_cpp
+[0.455s] [ 60%] Built target tier4_perception_msgs__rosidl_typesupport_fastrtps_c
+[0.507s] [ 72%] Built target tier4_perception_msgs__rosidl_typesupport_introspection_c
+[0.507s] [ 84%] Built target tier4_perception_msgs__rosidl_typesupport_c
+[0.603s] [ 84%] Built target tier4_perception_msgs
+[0.691s] [ 85%] Built target tier4_perception_msgs__py
+[0.751s] running egg_info
+[0.753s] writing tier4_perception_msgs.egg-info/PKG-INFO
+[0.753s] writing dependency_links to tier4_perception_msgs.egg-info/dependency_links.txt
+[0.754s] writing top-level names to tier4_perception_msgs.egg-info/top_level.txt
+[0.758s] reading manifest file 'tier4_perception_msgs.egg-info/SOURCES.txt'
+[0.759s] writing manifest file 'tier4_perception_msgs.egg-info/SOURCES.txt'
+[0.824s] [ 96%] Built target tier4_perception_msgs__rosidl_generator_py
+[0.825s] [ 96%] Built target ament_cmake_python_build_tier4_perception_msgs_egg
+[0.857s] [ 97%] Built target tier4_perception_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.921s] [ 99%] Built target tier4_perception_msgs__rosidl_typesupport_introspection_c__pyext
+[0.933s] [100%] Built target tier4_perception_msgs__rosidl_typesupport_c__pyext
+[1.043s] Invoked command in '/home/zhijie/autoware/build/tier4_perception_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_perception_msgs -- -j16 -l16
+[7.717s] Invoking command in '/home/zhijie/autoware/build/tier4_perception_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_perception_msgs
+[8.421s] -- Install configuration: "Release"
+[8.422s] -- Execute custom install script
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/ament_index/resource_index/rosidl_interfaces/tier4_perception_msgs
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_object_with_feature__functions.h
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_object_with_feature__struct.h
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_object_with_feature__type_support.h
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_objects_with_feature__functions.h
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_objects_with_feature__struct.h
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_objects_with_feature__type_support.h
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object__functions.h
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object__struct.h
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object__type_support.h
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object_array__functions.h
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object_array__struct.h
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object_array__type_support.h
+[8.423s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/feature__functions.h
+[8.424s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/feature__struct.h
+[8.424s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/feature__type_support.h
+[8.424s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/predicted_path__functions.h
+[8.424s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/predicted_path__struct.h
+[8.424s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/predicted_path__type_support.h
+[8.424s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/semantic__functions.h
+[8.424s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/semantic__struct.h
+[8.424s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/semantic__type_support.h
+[8.424s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/shape__functions.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/shape__struct.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/shape__type_support.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/state__functions.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/state__struct.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/state__type_support.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_element__functions.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_element__struct.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_element__type_support.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi__functions.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi__struct.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi__type_support.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi_array__functions.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi_array__struct.h
+[8.425s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi_array__type_support.h
+[8.426s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal__functions.h
+[8.426s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal__struct.h
+[8.426s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal__type_support.h
+[8.426s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal_array__functions.h
+[8.426s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal_array__struct.h
+[8.426s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal_array__type_support.h
+[8.426s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detected_object_with_feature.h
+[8.426s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detected_objects_with_feature.h
+[8.427s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/dynamic_object.h
+[8.427s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/dynamic_object_array.h
+[8.428s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/feature.h
+[8.428s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/predicted_path.h
+[8.428s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.428s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/semantic.h
+[8.428s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/shape.h
+[8.428s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/state.h
+[8.428s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/traffic_light_element.h
+[8.428s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/traffic_light_roi.h
+[8.428s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/traffic_light_roi_array.h
+[8.428s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/traffic_signal.h
+[8.428s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/traffic_signal_array.h
+[8.429s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/environment/library_path.sh
+[8.429s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/environment/library_path.dsv
+[8.429s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_object_with_feature__rosidl_typesupport_fastrtps_c.h
+[8.429s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_objects_with_feature__rosidl_typesupport_fastrtps_c.h
+[8.429s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object__rosidl_typesupport_fastrtps_c.h
+[8.429s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object_array__rosidl_typesupport_fastrtps_c.h
+[8.429s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/feature__rosidl_typesupport_fastrtps_c.h
+[8.429s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/predicted_path__rosidl_typesupport_fastrtps_c.h
+[8.429s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/semantic__rosidl_typesupport_fastrtps_c.h
+[8.429s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/shape__rosidl_typesupport_fastrtps_c.h
+[8.429s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/state__rosidl_typesupport_fastrtps_c.h
+[8.430s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_element__rosidl_typesupport_fastrtps_c.h
+[8.430s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi__rosidl_typesupport_fastrtps_c.h
+[8.430s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi_array__rosidl_typesupport_fastrtps_c.h
+[8.430s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal__rosidl_typesupport_fastrtps_c.h
+[8.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal_array__rosidl_typesupport_fastrtps_c.h
+[8.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_object_with_feature__rosidl_typesupport_introspection_c.h
+[8.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_objects_with_feature__rosidl_typesupport_introspection_c.h
+[8.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object__rosidl_typesupport_introspection_c.h
+[8.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object_array__rosidl_typesupport_introspection_c.h
+[8.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/feature__rosidl_typesupport_introspection_c.h
+[8.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/predicted_path__rosidl_typesupport_introspection_c.h
+[8.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/semantic__rosidl_typesupport_introspection_c.h
+[8.439s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/shape__rosidl_typesupport_introspection_c.h
+[8.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/state__rosidl_typesupport_introspection_c.h
+[8.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_element__rosidl_typesupport_introspection_c.h
+[8.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi__rosidl_typesupport_introspection_c.h
+[8.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi_array__rosidl_typesupport_introspection_c.h
+[8.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal__rosidl_typesupport_introspection_c.h
+[8.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal_array__rosidl_typesupport_introspection_c.h
+[8.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_object_with_feature__builder.hpp
+[8.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_object_with_feature__struct.hpp
+[8.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_object_with_feature__traits.hpp
+[8.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_objects_with_feature__builder.hpp
+[8.440s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_objects_with_feature__struct.hpp
+[8.441s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_objects_with_feature__traits.hpp
+[8.441s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object__builder.hpp
+[8.441s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object__struct.hpp
+[8.441s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object__traits.hpp
+[8.441s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object_array__builder.hpp
+[8.441s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object_array__struct.hpp
+[8.441s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object_array__traits.hpp
+[8.441s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/feature__builder.hpp
+[8.441s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/feature__struct.hpp
+[8.441s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/feature__traits.hpp
+[8.441s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/predicted_path__builder.hpp
+[8.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/predicted_path__struct.hpp
+[8.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/predicted_path__traits.hpp
+[8.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/semantic__builder.hpp
+[8.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/semantic__struct.hpp
+[8.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/semantic__traits.hpp
+[8.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/shape__builder.hpp
+[8.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/shape__struct.hpp
+[8.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/shape__traits.hpp
+[8.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/state__builder.hpp
+[8.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/state__struct.hpp
+[8.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/state__traits.hpp
+[8.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_element__builder.hpp
+[8.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_element__struct.hpp
+[8.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_element__traits.hpp
+[8.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi__builder.hpp
+[8.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi__struct.hpp
+[8.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi__traits.hpp
+[8.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi_array__builder.hpp
+[8.447s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi_array__struct.hpp
+[8.450s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi_array__traits.hpp
+[8.455s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal__builder.hpp
+[8.456s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal__struct.hpp
+[8.456s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal__traits.hpp
+[8.456s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal_array__builder.hpp
+[8.456s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal_array__struct.hpp
+[8.456s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal_array__traits.hpp
+[8.456s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detected_object_with_feature.hpp
+[8.456s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detected_objects_with_feature.hpp
+[8.456s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/dynamic_object.hpp
+[8.456s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/dynamic_object_array.hpp
+[8.456s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/feature.hpp
+[8.456s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/predicted_path.hpp
+[8.457s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/semantic.hpp
+[8.457s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/shape.hpp
+[8.457s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/state.hpp
+[8.457s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/traffic_light_element.hpp
+[8.457s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/traffic_light_roi.hpp
+[8.457s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/traffic_light_roi_array.hpp
+[8.457s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/traffic_signal.hpp
+[8.457s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/traffic_signal_array.hpp
+[8.457s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_object_with_feature__rosidl_typesupport_fastrtps_cpp.hpp
+[8.457s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_objects_with_feature__rosidl_typesupport_fastrtps_cpp.hpp
+[8.457s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object__rosidl_typesupport_fastrtps_cpp.hpp
+[8.458s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object_array__rosidl_typesupport_fastrtps_cpp.hpp
+[8.458s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/feature__rosidl_typesupport_fastrtps_cpp.hpp
+[8.458s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/predicted_path__rosidl_typesupport_fastrtps_cpp.hpp
+[8.458s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/semantic__rosidl_typesupport_fastrtps_cpp.hpp
+[8.458s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/shape__rosidl_typesupport_fastrtps_cpp.hpp
+[8.458s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/state__rosidl_typesupport_fastrtps_cpp.hpp
+[8.458s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_element__rosidl_typesupport_fastrtps_cpp.hpp
+[8.458s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi__rosidl_typesupport_fastrtps_cpp.hpp
+[8.458s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi_array__rosidl_typesupport_fastrtps_cpp.hpp
+[8.458s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal__rosidl_typesupport_fastrtps_cpp.hpp
+[8.459s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal_array__rosidl_typesupport_fastrtps_cpp.hpp
+[8.459s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.459s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_object_with_feature__rosidl_typesupport_introspection_cpp.hpp
+[8.459s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/detected_objects_with_feature__rosidl_typesupport_introspection_cpp.hpp
+[8.459s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object__rosidl_typesupport_introspection_cpp.hpp
+[8.459s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/dynamic_object_array__rosidl_typesupport_introspection_cpp.hpp
+[8.459s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/feature__rosidl_typesupport_introspection_cpp.hpp
+[8.459s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/predicted_path__rosidl_typesupport_introspection_cpp.hpp
+[8.459s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/semantic__rosidl_typesupport_introspection_cpp.hpp
+[8.459s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/shape__rosidl_typesupport_introspection_cpp.hpp
+[8.459s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/state__rosidl_typesupport_introspection_cpp.hpp
+[8.459s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_element__rosidl_typesupport_introspection_cpp.hpp
+[8.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi__rosidl_typesupport_introspection_cpp.hpp
+[8.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_light_roi_array__rosidl_typesupport_introspection_cpp.hpp
+[8.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal__rosidl_typesupport_introspection_cpp.hpp
+[8.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/include/tier4_perception_msgs/tier4_perception_msgs/msg/detail/traffic_signal_array__rosidl_typesupport_introspection_cpp.hpp
+[8.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/environment/pythonpath.sh
+[8.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/environment/pythonpath.dsv
+[8.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[8.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[8.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[8.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[8.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/__init__.py
+[8.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/_tier4_perception_msgs_s.ep.rosidl_typesupport_c.c
+[8.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/_tier4_perception_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/_tier4_perception_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[8.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/libtier4_perception_msgs__rosidl_generator_py.so
+[8.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/__init__.py
+[8.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_detected_object_with_feature.py
+[8.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_detected_object_with_feature_s.c
+[8.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_detected_objects_with_feature.py
+[8.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_detected_objects_with_feature_s.c
+[8.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_dynamic_object.py
+[8.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_dynamic_object_array.py
+[8.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_dynamic_object_array_s.c
+[8.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_dynamic_object_s.c
+[8.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_feature.py
+[8.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_feature_s.c
+[8.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_predicted_path.py
+[8.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_predicted_path_s.c
+[8.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_semantic.py
+[8.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_semantic_s.c
+[8.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_shape.py
+[8.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_shape_s.c
+[8.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_state.py
+[8.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_state_s.c
+[8.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_traffic_light_element.py
+[8.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_traffic_light_element_s.c
+[8.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_traffic_light_roi.py
+[8.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_traffic_light_roi_array.py
+[8.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_traffic_light_roi_array_s.c
+[8.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_traffic_light_roi_s.c
+[8.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_traffic_signal.py
+[8.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_traffic_signal_array.py
+[8.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_traffic_signal_array_s.c
+[8.473s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg/_traffic_signal_s.c
+[8.473s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/tier4_perception_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.473s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/tier4_perception_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.473s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/tier4_perception_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.473s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/tier4_perception_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.473s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/tier4_perception_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.473s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/tier4_perception_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.473s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/DetectedObjectWithFeature.idl
+[8.473s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/DetectedObjectsWithFeature.idl
+[8.473s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/DynamicObject.idl
+[8.473s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/DynamicObjectArray.idl
+[8.473s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/Feature.idl
+[8.474s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/PredictedPath.idl
+[8.474s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/Semantic.idl
+[8.474s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/Shape.idl
+[8.474s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/State.idl
+[8.474s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/TrafficLightElement.idl
+[8.474s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/TrafficLightRoi.idl
+[8.474s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/TrafficLightRoiArray.idl
+[8.474s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/TrafficSignal.idl
+[8.474s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/msg/TrafficSignalArray.idl
+[8.474s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/object_recognition/DetectedObjectWithFeature.msg
+[8.474s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/object_recognition/DetectedObjectsWithFeature.msg
+[8.474s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/object_recognition/DynamicObject.msg
+[8.474s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/object_recognition/DynamicObjectArray.msg
+[8.475s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/object_recognition/Feature.msg
+[8.475s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/object_recognition/PredictedPath.msg
+[8.475s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/object_recognition/Semantic.msg
+[8.475s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/object_recognition/Shape.msg
+[8.475s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/object_recognition/State.msg
+[8.475s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/traffic_light/TrafficLightElement.msg
+[8.475s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/traffic_light/TrafficLightRoi.msg
+[8.475s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/traffic_light/TrafficLightRoiArray.msg
+[8.475s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/traffic_light/TrafficSignal.msg
+[8.475s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/traffic_light/TrafficSignalArray.msg
+[8.475s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/ament_index/resource_index/package_run_dependencies/tier4_perception_msgs
+[8.488s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/ament_index/resource_index/parent_prefix_path/tier4_perception_msgs
+[8.488s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/environment/ament_prefix_path.sh
+[8.488s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/environment/ament_prefix_path.dsv
+[8.488s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/environment/path.sh
+[8.488s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/environment/path.dsv
+[8.488s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/local_setup.bash
+[8.489s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/local_setup.sh
+[8.489s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/local_setup.zsh
+[8.489s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/local_setup.dsv
+[8.489s] -- Symlinking: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/package.dsv
+[8.552s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/ament_index/resource_index/packages/tier4_perception_msgs
+[8.552s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/rosidl_cmake-extras.cmake
+[8.552s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.553s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.553s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[8.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[8.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/tier4_perception_msgsConfig.cmake
+[8.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/tier4_perception_msgsConfig-version.cmake
+[8.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/package.xml
+[8.564s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/lib/libtier4_perception_msgs__rosidl_generator_c.so
+[8.564s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/lib/libtier4_perception_msgs__rosidl_typesupport_fastrtps_c.so
+[8.564s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/lib/libtier4_perception_msgs__rosidl_typesupport_introspection_c.so
+[8.564s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/lib/libtier4_perception_msgs__rosidl_typesupport_c.so
+[8.565s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/lib/libtier4_perception_msgs__rosidl_typesupport_fastrtps_cpp.so
+[8.565s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/lib/libtier4_perception_msgs__rosidl_typesupport_introspection_cpp.so
+[8.565s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/lib/libtier4_perception_msgs__rosidl_typesupport_cpp.so
+[8.718s] Listing '/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs'...
+[8.718s] Listing '/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages/tier4_perception_msgs/msg'...
+[8.735s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/lib/libtier4_perception_msgs__rosidl_generator_py.so
+[8.736s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/export_tier4_perception_msgs__rosidl_generator_cExport.cmake
+[8.737s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/export_tier4_perception_msgs__rosidl_generator_cExport-release.cmake
+[8.737s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/export_tier4_perception_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[8.737s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/export_tier4_perception_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[8.737s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/tier4_perception_msgs__rosidl_typesupport_introspection_cExport.cmake
+[8.737s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/tier4_perception_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[8.738s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/tier4_perception_msgs__rosidl_typesupport_cExport.cmake
+[8.738s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/tier4_perception_msgs__rosidl_typesupport_cExport-release.cmake
+[8.738s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/export_tier4_perception_msgs__rosidl_generator_cppExport.cmake
+[8.739s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/export_tier4_perception_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.739s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/export_tier4_perception_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[8.739s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/tier4_perception_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[8.739s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/tier4_perception_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[8.740s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/tier4_perception_msgs__rosidl_typesupport_cppExport.cmake
+[8.740s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/tier4_perception_msgs__rosidl_typesupport_cppExport-release.cmake
+[8.740s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/export_tier4_perception_msgs__rosidl_generator_pyExport.cmake
+[8.740s] -- Up-to-date: /home/zhijie/autoware/install/tier4_perception_msgs/share/tier4_perception_msgs/cmake/export_tier4_perception_msgs__rosidl_generator_pyExport-release.cmake
+[8.746s] Invoked command in '/home/zhijie/autoware/build/tier4_perception_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_perception_msgs

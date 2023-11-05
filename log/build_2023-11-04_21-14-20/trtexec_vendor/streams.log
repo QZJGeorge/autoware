@@ -1,0 +1,25 @@
+[0.091s] Invoking command in '/home/zhijie/autoware/build/trtexec_vendor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/trtexec_vendor -- -j16 -l16
+[0.196s] [35m[1mConsolidate compiler generated dependencies of target trtexec_vendor[0m
+[0.222s] [100%] Built target trtexec_vendor
+[0.233s] Invoked command in '/home/zhijie/autoware/build/trtexec_vendor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/trtexec_vendor -- -j16 -l16
+[0.318s] Invoking command in '/home/zhijie/autoware/build/trtexec_vendor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/trtexec_vendor
+[0.414s] -- Install configuration: "Release"
+[0.414s] -- Execute custom install script
+[0.414s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/bin/trtexec
+[0.414s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/trtexec_vendor/environment/trtexec_vendor.sh
+[0.414s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/ament_index/resource_index/package_run_dependencies/trtexec_vendor
+[0.414s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/ament_index/resource_index/parent_prefix_path/trtexec_vendor
+[0.414s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/trtexec_vendor/environment/ament_prefix_path.sh
+[0.414s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/trtexec_vendor/environment/ament_prefix_path.dsv
+[0.414s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/trtexec_vendor/environment/path.sh
+[0.414s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/trtexec_vendor/environment/path.dsv
+[0.415s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/trtexec_vendor/local_setup.bash
+[0.415s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/trtexec_vendor/local_setup.sh
+[0.415s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/trtexec_vendor/local_setup.zsh
+[0.415s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/trtexec_vendor/local_setup.dsv
+[0.415s] -- Symlinking: /home/zhijie/autoware/install/trtexec_vendor/share/trtexec_vendor/package.dsv
+[0.415s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/ament_index/resource_index/packages/trtexec_vendor
+[0.415s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/trtexec_vendor/cmake/trtexec_vendorConfig.cmake
+[0.415s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/trtexec_vendor/cmake/trtexec_vendorConfig-version.cmake
+[0.415s] -- Up-to-date symlink: /home/zhijie/autoware/install/trtexec_vendor/share/trtexec_vendor/package.xml
+[0.474s] Invoked command in '/home/zhijie/autoware/build/trtexec_vendor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/trtexec_vendor

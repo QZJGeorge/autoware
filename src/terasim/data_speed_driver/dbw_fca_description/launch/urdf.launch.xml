@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="urdf_model" default="pacifica" />
+  <include file="$(find-pkg-prefix dataspeed_dbw_common)/lib/dataspeed_dbw_common/scripts/command.in.py">
+    <arg name="param" value="xacro_robot_description" />
+    <arg name="command" value="$(exec-in-pkg xacro xacro)" />
+    <arg name="args" value="$(find-pkg-share dbw_fca_description)/urdf/$(var urdf_model).urdf.xacro" />
+  </include>
+  <node pkg="robot_state_publisher" exec="robot_state_publisher" name="robot_state_publisher">
+    <param name="robot_description" value="$(var xacro_robot_description)" />
+    <param name="publish_frequency" value="30.0" />
+  </node>
+</launch>

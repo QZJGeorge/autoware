@@ -1,0 +1,55 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Extracting file: meshes.tar.gz
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhijie/autoware/build/dbw_fca_description
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/meshes/jeep_18/body.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/meshes/jeep_18/body_collision.stl
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/meshes/jeep_18/hood_logo.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/meshes/jeep_18/hood_logo_texture.png
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/meshes/jeep_18/wheel.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/meshes/pacifica_18/body.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/meshes/pacifica_18/body_collision.stl
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/meshes/pacifica_18/door_logo.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/meshes/pacifica_18/door_logo_texture.png
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/meshes/pacifica_18/hood_logo.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/meshes/pacifica_18/hood_logo_texture.png
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/meshes/pacifica_18/wheel.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/urdf/jeep.urdf.xacro
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/urdf/jeep_18_structure.urdf.xacro
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/urdf/pacifica.urdf.xacro
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/urdf/pacifica_18_structure.urdf.xacro
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/launch/rviz2.launch.xml
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/launch/rviz2.rviz
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/launch/urdf.launch.xml
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/ament_index/resource_index/package_run_dependencies/dbw_fca_description
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/ament_index/resource_index/parent_prefix_path/dbw_fca_description
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/environment/path.sh
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/environment/path.dsv
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/local_setup.bash
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/local_setup.sh
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/local_setup.zsh
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/package.dsv
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/ament_index/resource_index/packages/dbw_fca_description
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/cmake/dbw_fca_descriptionConfig.cmake
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/cmake/dbw_fca_descriptionConfig-version.cmake
+-- Symlinking: /home/zhijie/autoware/install/dbw_fca_description/share/dbw_fca_description/package.xml

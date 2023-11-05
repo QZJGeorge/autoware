@@ -1,0 +1,60 @@
+[35m[1mConsolidate compiler generated dependencies of target image_projection_based_fusion[0m
+[ 36%] Built target image_projection_based_fusion
+[35m[1mConsolidate compiler generated dependencies of target pointpainting_fusion_node[0m
+[ 45%] Built target pointpainting_fusion_node
+[ 54%] Built target pointpainting_cuda_lib
+[35m[1mConsolidate compiler generated dependencies of target roi_pointcloud_fusion_node[0m
+[ 63%] Built target roi_pointcloud_fusion_node
+[35m[1mConsolidate compiler generated dependencies of target pointpainting_lib[0m
+[ 81%] Built target pointpainting_lib
+[35m[1mConsolidate compiler generated dependencies of target roi_cluster_fusion_node[0m
+[ 90%] Built target roi_cluster_fusion_node
+[35m[1mConsolidate compiler generated dependencies of target roi_detected_object_fusion_node[0m
+[100%] Built target roi_detected_object_fusion_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/lib/image_projection_based_fusion/roi_detected_object_fusion_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/lib/image_projection_based_fusion/roi_cluster_fusion_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/lib/image_projection_based_fusion/roi_pointcloud_fusion_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/lib/image_projection_based_fusion/pointpainting_fusion_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/include/image_projection_based_fusion/debugger.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/include/image_projection_based_fusion/fusion_node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/include/image_projection_based_fusion/pointpainting_fusion/node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/include/image_projection_based_fusion/pointpainting_fusion/pointpainting_trt.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/include/image_projection_based_fusion/pointpainting_fusion/preprocess_kernel.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/include/image_projection_based_fusion/pointpainting_fusion/voxel_generator.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/include/image_projection_based_fusion/roi_cluster_fusion/node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/include/image_projection_based_fusion/roi_detected_object_fusion/node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/include/image_projection_based_fusion/roi_pointcloud_fusion/node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/include/image_projection_based_fusion/utils/geometry.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/include/image_projection_based_fusion/utils/utils.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/lib/libimage_projection_based_fusion.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/lib/libpointpainting_lib.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/launch/pointpainting_fusion.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/launch/roi_cluster_fusion.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/launch/roi_detected_object_fusion.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/launch/roi_pointcloud_fusion.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/config/pointpainting.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/config/roi_detected_object_fusion.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/config/roi_sync.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/ament_index/resource_index/package_run_dependencies/image_projection_based_fusion
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/ament_index/resource_index/parent_prefix_path/image_projection_based_fusion
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/ament_index/resource_index/packages/image_projection_based_fusion
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/ament_index/resource_index/rclcpp_components/image_projection_based_fusion
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/cmake/image_projection_based_fusionConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/cmake/image_projection_based_fusionConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/image_projection_based_fusion/share/image_projection_based_fusion/package.xml

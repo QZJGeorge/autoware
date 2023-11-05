@@ -1,0 +1,25 @@
+[0.176s] Invoking command in '/home/zhijie/autoware/build/autoware_testing': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_testing -- -j16 -l16
+[0.741s] Invoked command in '/home/zhijie/autoware/build/autoware_testing' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_testing -- -j16 -l16
+[1.056s] Invoking command in '/home/zhijie/autoware/build/autoware_testing': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_testing
+[1.297s] -- Install configuration: "Release"
+[1.297s] -- Execute custom install script
+[1.297s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/cmake/add_smoke_test.cmake
+[1.297s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/autoware_testing/__init__.py
+[1.297s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/autoware_testing/smoke_test.py
+[1.297s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/ament_index/resource_index/package_run_dependencies/autoware_testing
+[1.297s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/ament_index/resource_index/parent_prefix_path/autoware_testing
+[1.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/environment/ament_prefix_path.sh
+[1.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/environment/ament_prefix_path.dsv
+[1.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/environment/path.sh
+[1.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/environment/path.dsv
+[1.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/local_setup.bash
+[1.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/local_setup.sh
+[1.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/local_setup.zsh
+[1.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/local_setup.dsv
+[1.298s] -- Symlinking: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/package.dsv
+[1.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/ament_index/resource_index/packages/autoware_testing
+[1.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/cmake/autoware_testing-extras.cmake
+[1.298s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/cmake/autoware_testingConfig.cmake
+[1.299s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/cmake/autoware_testingConfig-version.cmake
+[1.299s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_testing/share/autoware_testing/package.xml
+[1.343s] Invoked command in '/home/zhijie/autoware/build/autoware_testing' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_testing

@@ -1,0 +1,24 @@
+[0.019s] Invoking command in '/home/zhijie/autoware/build/autoware_cmake': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_cmake -- -j16 -l16
+[0.162s] Invoked command in '/home/zhijie/autoware/build/autoware_cmake' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_cmake -- -j16 -l16
+[0.259s] Invoking command in '/home/zhijie/autoware/build/autoware_cmake': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_cmake
+[0.284s] -- Install configuration: "Release"
+[0.285s] -- Execute custom install script
+[0.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake/autoware_package.cmake
+[0.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/ament_index/resource_index/package_run_dependencies/autoware_cmake
+[0.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/ament_index/resource_index/parent_prefix_path/autoware_cmake
+[0.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/environment/ament_prefix_path.sh
+[0.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/environment/ament_prefix_path.dsv
+[0.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/environment/path.sh
+[0.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/environment/path.dsv
+[0.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/local_setup.bash
+[0.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/local_setup.sh
+[0.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/local_setup.zsh
+[0.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/local_setup.dsv
+[0.285s] -- Symlinking: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/package.dsv
+[0.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/ament_index/resource_index/packages/autoware_cmake
+[0.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake/autoware_cmake-extras.cmake
+[0.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake/autoware_cmakeConfig.cmake
+[0.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake/autoware_cmakeConfig-version.cmake
+[0.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/package.xml
+[0.422s] Invoked command in '/home/zhijie/autoware/build/autoware_cmake' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_cmake

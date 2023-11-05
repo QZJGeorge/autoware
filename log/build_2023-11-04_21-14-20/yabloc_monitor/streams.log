@@ -1,0 +1,27 @@
+[0.110s] Invoking command in '/home/zhijie/autoware/build/yabloc_monitor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/yabloc_monitor -- -j16 -l16
+[0.441s] [35m[1mConsolidate compiler generated dependencies of target yabloc_monitor[0m
+[0.441s] [100%] Built target yabloc_monitor
+[0.468s] Invoked command in '/home/zhijie/autoware/build/yabloc_monitor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/yabloc_monitor -- -j16 -l16
+[0.836s] Invoking command in '/home/zhijie/autoware/build/yabloc_monitor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/yabloc_monitor
+[0.995s] -- Install configuration: "Release"
+[0.995s] -- Execute custom install script
+[0.995s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/lib/yabloc_monitor/yabloc_monitor
+[0.995s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/launch/yabloc_monitor.launch.xml
+[0.995s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/config/yabloc_monitor.param.yaml
+[0.995s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/ament_index/resource_index/package_run_dependencies/yabloc_monitor
+[0.996s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/ament_index/resource_index/parent_prefix_path/yabloc_monitor
+[0.996s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/environment/ament_prefix_path.sh
+[0.996s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/environment/ament_prefix_path.dsv
+[0.996s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/environment/path.sh
+[0.996s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/environment/path.dsv
+[0.996s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/local_setup.bash
+[0.996s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/local_setup.sh
+[0.996s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/local_setup.zsh
+[0.997s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/local_setup.dsv
+[0.997s] -- Symlinking: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/package.dsv
+[0.997s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/ament_index/resource_index/packages/yabloc_monitor
+[0.997s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.997s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/cmake/yabloc_monitorConfig.cmake
+[0.997s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/cmake/yabloc_monitorConfig-version.cmake
+[0.997s] -- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_monitor/share/yabloc_monitor/package.xml
+[1.170s] Invoked command in '/home/zhijie/autoware/build/yabloc_monitor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/yabloc_monitor

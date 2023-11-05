@@ -1,0 +1,66 @@
+[35m[1mConsolidate compiler generated dependencies of target ekf_localizer_lib[0m
+[ 25%] Built target ekf_localizer_lib
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[ 31%] Built target gtest
+[35m[1mConsolidate compiler generated dependencies of target ekf_localizer[0m
+[ 37%] Built target ekf_localizer
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[ 43%] Built target gtest_main
+[35m[1mConsolidate compiler generated dependencies of target test_aged_object_queue[0m
+[ 50%] Built target test_aged_object_queue
+[35m[1mConsolidate compiler generated dependencies of target test_warning_message[0m
+[ 56%] Built target test_warning_message
+[35m[1mConsolidate compiler generated dependencies of target test_string[0m
+[ 62%] Built target test_string
+[35m[1mConsolidate compiler generated dependencies of target test_state_transition[0m
+[ 68%] Built target test_state_transition
+[35m[1mConsolidate compiler generated dependencies of target test_numeric[0m
+[ 75%] Built target test_numeric
+[35m[1mConsolidate compiler generated dependencies of target test_measurement[0m
+[ 81%] Built target test_measurement
+[35m[1mConsolidate compiler generated dependencies of target test_mahalanobis[0m
+[ 87%] Built target test_mahalanobis
+[35m[1mConsolidate compiler generated dependencies of target test_diagnostics[0m
+[ 93%] Built target test_diagnostics
+[35m[1mConsolidate compiler generated dependencies of target test_covariance[0m
+[100%] Built target test_covariance
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/aged_object_queue.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/covariance.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/diagnostics.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/ekf_localizer.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/hyper_parameters.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/mahalanobis.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/matrix_types.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/measurement.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/numeric.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/state_index.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/state_transition.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/string.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/warning.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/include/ekf_localizer/warning_message.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/lib/libekf_localizer_lib.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/lib/ekf_localizer/ekf_localizer
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/config/ekf_localizer.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/launch/ekf_localizer.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ament_index/resource_index/package_run_dependencies/ekf_localizer
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ament_index/resource_index/parent_prefix_path/ekf_localizer
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ament_index/resource_index/packages/ekf_localizer
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/cmake/ekf_localizerConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/cmake/ekf_localizerConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/ekf_localizer/share/ekf_localizer/package.xml

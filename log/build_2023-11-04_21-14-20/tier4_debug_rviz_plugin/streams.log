@@ -1,0 +1,37 @@
+[0.096s] Invoking command in '/home/zhijie/autoware/build/tier4_debug_rviz_plugin': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_debug_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_debug_rviz_plugin -- -j16 -l16
+[0.158s] [ 20%] [34m[1mAutomatic MOC for target tier4_debug_rviz_plugin[0m
+[0.173s] [ 20%] Built target tier4_debug_rviz_plugin_autogen
+[0.196s] [35m[1mConsolidate compiler generated dependencies of target tier4_debug_rviz_plugin[0m
+[0.225s] [100%] Built target tier4_debug_rviz_plugin
+[0.261s] Invoked command in '/home/zhijie/autoware/build/tier4_debug_rviz_plugin' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_debug_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_debug_rviz_plugin -- -j16 -l16
+[0.393s] Invoking command in '/home/zhijie/autoware/build/tier4_debug_rviz_plugin': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_debug_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_debug_rviz_plugin
+[0.421s] -- Install configuration: "Release"
+[0.421s] -- Execute custom install script
+[0.421s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/plugins/plugin_description.xml
+[0.421s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/include/tier4_debug_rviz_plugin/float32_multi_array_stamped_pie_chart.hpp
+[0.421s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/include/tier4_debug_rviz_plugin/jsk_overlay_utils.hpp
+[0.421s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/environment/library_path.sh
+[0.421s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/environment/library_path.dsv
+[0.421s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/lib/libtier4_debug_rviz_plugin.so
+[0.421s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/icons/classes/Float32MultiArrayStampedPieChart.png
+[0.421s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/plugins/plugin_description.xml
+[0.421s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/ament_index/resource_index/package_run_dependencies/tier4_debug_rviz_plugin
+[0.421s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/ament_index/resource_index/parent_prefix_path/tier4_debug_rviz_plugin
+[0.421s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/environment/ament_prefix_path.sh
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/environment/ament_prefix_path.dsv
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/environment/path.sh
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/environment/path.dsv
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/local_setup.bash
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/local_setup.sh
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/local_setup.zsh
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/local_setup.dsv
+[0.422s] -- Symlinking: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/package.dsv
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/ament_index/resource_index/packages/tier4_debug_rviz_plugin
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/ament_index/resource_index/rviz_common__pluginlib__plugin/tier4_debug_rviz_plugin
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/cmake/ament_cmake_export_libraries-extras.cmake
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/cmake/tier4_debug_rviz_pluginConfig.cmake
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/cmake/tier4_debug_rviz_pluginConfig-version.cmake
+[0.422s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_debug_rviz_plugin/share/tier4_debug_rviz_plugin/package.xml
+[0.527s] Invoked command in '/home/zhijie/autoware/build/tier4_debug_rviz_plugin' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_debug_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_debug_rviz_plugin

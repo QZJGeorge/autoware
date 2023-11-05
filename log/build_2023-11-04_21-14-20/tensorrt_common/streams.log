@@ -1,0 +1,31 @@
+[0.208s] Invoking command in '/home/zhijie/autoware/build/tensorrt_common': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tensorrt_common -- -j16 -l16
+[0.309s] [100%] Built target tensorrt_common
+[0.382s] Invoked command in '/home/zhijie/autoware/build/tensorrt_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tensorrt_common -- -j16 -l16
+[0.459s] Invoking command in '/home/zhijie/autoware/build/tensorrt_common': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tensorrt_common
+[0.495s] -- Install configuration: "Release"
+[0.495s] -- Execute custom install script
+[0.495s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/include/tensorrt_common/tensorrt_common/logger.hpp
+[0.495s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/include/tensorrt_common/tensorrt_common/simple_profiler.hpp
+[0.495s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/include/tensorrt_common/tensorrt_common/tensorrt_common.hpp
+[0.496s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/ament_index/resource_index/package_run_dependencies/tensorrt_common
+[0.496s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/ament_index/resource_index/parent_prefix_path/tensorrt_common
+[0.496s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/environment/ament_prefix_path.sh
+[0.502s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/environment/ament_prefix_path.dsv
+[0.502s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/environment/path.sh
+[0.502s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/environment/path.dsv
+[0.502s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/local_setup.bash
+[0.502s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/local_setup.sh
+[0.502s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/local_setup.zsh
+[0.502s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/local_setup.dsv
+[0.502s] -- Symlinking: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/package.dsv
+[0.502s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/ament_index/resource_index/packages/tensorrt_common
+[0.502s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.503s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/cmake/ament_cmake_export_targets-extras.cmake
+[0.503s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.503s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/cmake/tensorrt_commonConfig.cmake
+[0.503s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/cmake/tensorrt_commonConfig-version.cmake
+[0.506s] -- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/package.xml
+[0.510s] -- Up-to-date: /home/zhijie/autoware/install/tensorrt_common/lib/libtensorrt_common.so
+[0.510s] -- Up-to-date: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/cmake/export_tensorrt_commonExport.cmake
+[0.510s] -- Up-to-date: /home/zhijie/autoware/install/tensorrt_common/share/tensorrt_common/cmake/export_tensorrt_commonExport-release.cmake
+[0.566s] Invoked command in '/home/zhijie/autoware/build/tensorrt_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tensorrt_common

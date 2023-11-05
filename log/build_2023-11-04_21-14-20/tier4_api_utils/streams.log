@@ -1,0 +1,31 @@
+[0.150s] Invoking command in '/home/zhijie/autoware/build/tier4_api_utils': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_api_utils -- -j16 -l16
+[0.278s] [ 33%] Built target gtest_main
+[0.293s] [ 66%] Built target gtest
+[0.352s] [100%] Built target tier4_api_utils_test
+[0.452s] Invoked command in '/home/zhijie/autoware/build/tier4_api_utils' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_api_utils -- -j16 -l16
+[0.788s] Invoking command in '/home/zhijie/autoware/build/tier4_api_utils': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_api_utils
+[0.829s] -- Install configuration: "Release"
+[0.829s] -- Execute custom install script
+[0.829s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/include/tier4_api_utils/rclcpp/client.hpp
+[0.829s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/include/tier4_api_utils/rclcpp/proxy.hpp
+[0.829s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/include/tier4_api_utils/rclcpp/service.hpp
+[0.830s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/include/tier4_api_utils/tier4_api_utils.hpp
+[0.830s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/include/tier4_api_utils/types/response.hpp
+[0.830s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/ament_index/resource_index/package_run_dependencies/tier4_api_utils
+[0.830s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/ament_index/resource_index/parent_prefix_path/tier4_api_utils
+[0.830s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/environment/ament_prefix_path.sh
+[0.830s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/environment/ament_prefix_path.dsv
+[0.830s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/environment/path.sh
+[0.830s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/environment/path.dsv
+[0.830s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/local_setup.bash
+[0.830s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/local_setup.sh
+[0.830s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/local_setup.zsh
+[0.830s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/local_setup.dsv
+[0.831s] -- Symlinking: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/package.dsv
+[0.831s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/ament_index/resource_index/packages/tier4_api_utils
+[0.831s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.831s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.831s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/cmake/tier4_api_utilsConfig.cmake
+[0.831s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/cmake/tier4_api_utilsConfig-version.cmake
+[0.831s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_api_utils/share/tier4_api_utils/package.xml
+[0.877s] Invoked command in '/home/zhijie/autoware/build/tier4_api_utils' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_external_api_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_external_api_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_external_api_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_api_utils

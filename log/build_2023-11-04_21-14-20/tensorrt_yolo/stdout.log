@@ -1,0 +1,51 @@
+[35m[1mConsolidate compiler generated dependencies of target mish_plugin[0m
+[ 20%] Built target mish_plugin
+[35m[1mConsolidate compiler generated dependencies of target tensorrt_yolo_node[0m
+[ 33%] Built target tensorrt_yolo_node
+[35m[1mConsolidate compiler generated dependencies of target nms_plugin[0m
+[ 53%] Built target nms_plugin
+[35m[1mConsolidate compiler generated dependencies of target yolo_layer_plugin[0m
+[ 73%] Built target yolo_layer_plugin
+[35m[1mConsolidate compiler generated dependencies of target yolo[0m
+[ 86%] Built target yolo
+[35m[1mConsolidate compiler generated dependencies of target tensorrt_yolo_nodelet[0m
+[100%] Built target tensorrt_yolo_nodelet
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/tensorrt_yolo/tensorrt_yolo_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/include/tensorrt_yolo/nodelet.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libyolo.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libtensorrt_yolo_nodelet.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov3.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov4-tiny.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov4.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov5l.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov5m.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov5s.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/config/yolov5x.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/launch/tensorrt_yolo.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/launch/yolo.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/ament_index/resource_index/package_run_dependencies/tensorrt_yolo
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/ament_index/resource_index/parent_prefix_path/tensorrt_yolo
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/ament_index/resource_index/packages/tensorrt_yolo
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/ament_index/resource_index/rclcpp_components/tensorrt_yolo
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/tensorrt_yoloConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/cmake/tensorrt_yoloConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/share/tensorrt_yolo/package.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libmish_plugin.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libyolo_layer_plugin.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolo/lib/libnms_plugin.so

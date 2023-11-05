@@ -1,0 +1,41 @@
+[0.008s] Invoking command in '/home/zhijie/autoware/build/dataspeed_ulc': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/dataspeed_dbw_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/dataspeed_dbw_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can/lib:/home/zhijie/autoware/install/dataspeed_ulc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dataspeed_ulc_can/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_ulc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/terasim/data_speed_driver/dataspeed_ulc -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/dataspeed_ulc
+[0.043s] -- The C compiler identification is GNU 11.4.0
+[0.081s] -- The CXX compiler identification is GNU 11.4.0
+[0.086s] -- Detecting C compiler ABI info
+[0.132s] -- Detecting C compiler ABI info - done
+[0.143s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.143s] -- Detecting C compile features
+[0.144s] -- Detecting C compile features - done
+[0.147s] -- Detecting CXX compiler ABI info
+[0.203s] -- Detecting CXX compiler ABI info - done
+[0.214s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.214s] -- Detecting CXX compile features
+[0.215s] -- Detecting CXX compile features - done
+[0.218s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.354s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.402s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.481s] -- Configuring done
+[0.483s] -- Generating done
+[0.484s] -- Build files have been written to: /home/zhijie/autoware/build/dataspeed_ulc
+[0.488s] Invoked command in '/home/zhijie/autoware/build/dataspeed_ulc' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/dataspeed_dbw_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/dataspeed_dbw_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can/lib:/home/zhijie/autoware/install/dataspeed_ulc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dataspeed_ulc_can/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_ulc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/terasim/data_speed_driver/dataspeed_ulc -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/dataspeed_ulc
+[0.489s] Invoking command in '/home/zhijie/autoware/build/dataspeed_ulc': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/dataspeed_dbw_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/dataspeed_dbw_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can/lib:/home/zhijie/autoware/install/dataspeed_ulc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dataspeed_ulc_can/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_ulc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/dataspeed_ulc -- -j16 -l16
+[0.515s] Invoked command in '/home/zhijie/autoware/build/dataspeed_ulc' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/dataspeed_dbw_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/dataspeed_dbw_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can/lib:/home/zhijie/autoware/install/dataspeed_ulc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dataspeed_ulc_can/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_ulc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/dataspeed_ulc -- -j16 -l16
+[0.529s] Invoking command in '/home/zhijie/autoware/build/dataspeed_ulc': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/dataspeed_dbw_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/dataspeed_dbw_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can/lib:/home/zhijie/autoware/install/dataspeed_ulc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dataspeed_ulc_can/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_ulc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/dataspeed_ulc
+[0.534s] -- Install configuration: "Release"
+[0.534s] -- Execute custom install script
+[0.534s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/ament_index/resource_index/package_run_dependencies/dataspeed_ulc
+[0.540s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/ament_index/resource_index/parent_prefix_path/dataspeed_ulc
+[0.547s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/dataspeed_ulc/environment/ament_prefix_path.sh
+[0.552s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/dataspeed_ulc/environment/ament_prefix_path.dsv
+[0.558s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/dataspeed_ulc/environment/path.sh
+[0.564s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/dataspeed_ulc/environment/path.dsv
+[0.571s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/dataspeed_ulc/local_setup.bash
+[0.576s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/dataspeed_ulc/local_setup.sh
+[0.583s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/dataspeed_ulc/local_setup.zsh
+[0.589s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/dataspeed_ulc/local_setup.dsv
+[0.595s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/dataspeed_ulc/package.dsv
+[0.601s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/ament_index/resource_index/packages/dataspeed_ulc
+[0.607s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/dataspeed_ulc/cmake/dataspeed_ulcConfig.cmake
+[0.614s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/dataspeed_ulc/cmake/dataspeed_ulcConfig-version.cmake
+[0.620s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_ulc/share/dataspeed_ulc/package.xml
+[0.630s] Invoked command in '/home/zhijie/autoware/build/dataspeed_ulc' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/dataspeed_dbw_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/dataspeed_dbw_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dataspeed_ulc_can/lib:/home/zhijie/autoware/install/dataspeed_ulc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dataspeed_ulc_can/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_ulc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/dataspeed_ulc

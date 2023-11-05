@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target app[0m
+[ 33%] Built target app
+[35m[1mConsolidate compiler generated dependencies of target preloaded_tlsf[0m
+[ 66%] Built target preloaded_tlsf
+[35m[1mConsolidate compiler generated dependencies of target preloaded_heaptrack[0m
+[100%] Built target preloaded_heaptrack
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/lib/libpreloaded_heaptrack.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/lib/libpreloaded_tlsf.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/bin/app
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/ament_index/resource_index/package_run_dependencies/heaphook
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/ament_index/resource_index/parent_prefix_path/heaphook
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/heaphook/share/heaphook/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/ament_index/resource_index/packages/heaphook
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/cmake/heaphookConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/cmake/heaphookConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/heaphook/share/heaphook/package.xml

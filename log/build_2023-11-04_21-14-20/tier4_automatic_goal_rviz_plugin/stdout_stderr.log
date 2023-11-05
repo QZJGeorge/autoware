@@ -1,0 +1,37 @@
+[ 10%] [34m[1mAutomatic MOC for target tier4_automatic_goal_rviz_plugin[0m
+[ 10%] Built target tier4_automatic_goal_rviz_plugin_autogen
+[35m[1mConsolidate compiler generated dependencies of target tier4_automatic_goal_rviz_plugin[0m
+[ 60%] Built target tier4_automatic_goal_rviz_plugin
+[ 70%] [34m[1mAutomatic MOC for target automatic_goal_sender[0m
+[ 70%] Built target automatic_goal_sender_autogen
+[35m[1mConsolidate compiler generated dependencies of target automatic_goal_sender[0m
+[100%] Built target automatic_goal_sender
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/plugins/plugin_description.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/lib/libtier4_automatic_goal_rviz_plugin.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/lib/tier4_automatic_goal_rviz_plugin/automatic_goal_sender
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/launch/automatic_goal_sender.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/icons/classes/AutowareAutomaticGoalPanel.png
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/icons/classes/AutowareAutomaticGoalTool.png
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/plugins/plugin_description.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/ament_index/resource_index/package_run_dependencies/tier4_automatic_goal_rviz_plugin
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/ament_index/resource_index/parent_prefix_path/tier4_automatic_goal_rviz_plugin
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/ament_index/resource_index/packages/tier4_automatic_goal_rviz_plugin
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/ament_index/resource_index/rviz_common__pluginlib__plugin/tier4_automatic_goal_rviz_plugin
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/cmake/tier4_automatic_goal_rviz_pluginConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/cmake/tier4_automatic_goal_rviz_pluginConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tier4_automatic_goal_rviz_plugin/share/tier4_automatic_goal_rviz_plugin/package.xml

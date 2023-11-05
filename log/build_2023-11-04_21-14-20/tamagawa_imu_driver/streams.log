@@ -1,0 +1,33 @@
+[0.200s] Invoking command in '/home/zhijie/autoware/build/tamagawa_imu_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tamagawa_imu_driver -- -j16 -l16
+[0.517s] [35m[1mConsolidate compiler generated dependencies of target tag_serial_driver[0m
+[0.518s] [ 50%] Built target tag_serial_driver
+[0.518s] [35m[1mConsolidate compiler generated dependencies of target tag_can_driver[0m
+[0.518s] [100%] Built target tag_can_driver
+[0.520s] Invoked command in '/home/zhijie/autoware/build/tamagawa_imu_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tamagawa_imu_driver -- -j16 -l16
+[0.673s] Invoking command in '/home/zhijie/autoware/build/tamagawa_imu_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tamagawa_imu_driver
+[0.684s] -- Install configuration: "Release"
+[0.684s] -- Execute custom install script
+[0.688s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/lib/tamagawa_imu_driver/tag_serial_driver
+[0.689s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/lib/tamagawa_imu_driver/tag_can_driver
+[0.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/launch/can.launch.xml
+[0.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/launch/serial_AU7554N.launch.xml
+[0.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/launch/serial_TAG250_Nxx00.launch.xml
+[0.691s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/launch/serial_TAG250_Nxx40.launch.xml
+[0.691s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/launch/serial_TAG264.launch.xml
+[0.692s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/ament_index/resource_index/package_run_dependencies/tamagawa_imu_driver
+[0.692s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/ament_index/resource_index/parent_prefix_path/tamagawa_imu_driver
+[0.693s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/environment/ament_prefix_path.sh
+[0.693s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/environment/ament_prefix_path.dsv
+[0.693s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/environment/path.sh
+[0.694s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/environment/path.dsv
+[0.694s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/local_setup.bash
+[0.695s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/local_setup.sh
+[0.695s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/local_setup.zsh
+[0.695s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/local_setup.dsv
+[0.696s] -- Symlinking: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/package.dsv
+[0.711s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/ament_index/resource_index/packages/tamagawa_imu_driver
+[0.711s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.712s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/cmake/tamagawa_imu_driverConfig.cmake
+[0.713s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/cmake/tamagawa_imu_driverConfig-version.cmake
+[0.713s] -- Up-to-date symlink: /home/zhijie/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/package.xml
+[0.763s] Invoked command in '/home/zhijie/autoware/build/tamagawa_imu_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tamagawa_imu_driver

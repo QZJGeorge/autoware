@@ -1,0 +1,35 @@
+[0.027s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_vehicle_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_auto_vehicle_msgs -- -j16 -l16
+[0.260s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_generator_c[0m
+[0.260s] [  0%] Built target autoware_auto_vehicle_msgs__cpp
+[0.260s] [ 12%] Built target autoware_auto_vehicle_msgs__rosidl_generator_c
+[0.260s] [ 12%] Built target ament_cmake_python_symlink_autoware_auto_vehicle_msgs
+[0.260s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_cpp[0m
+[0.260s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c[0m
+[0.260s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.260s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.260s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.261s] [ 24%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_cpp
+[0.261s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_c[0m
+[0.261s] [ 37%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c
+[0.261s] [ 56%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_cpp
+[0.261s] [ 62%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_cpp
+[0.261s] [ 74%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c
+[0.261s] [ 86%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_c
+[0.276s] [ 86%] Built target autoware_auto_vehicle_msgs
+[0.304s] [ 86%] Built target autoware_auto_vehicle_msgs__py
+[0.352s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_generator_py[0m
+[0.406s] [ 98%] Built target autoware_auto_vehicle_msgs__rosidl_generator_py
+[0.424s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[0.428s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.442s] [35m[1mConsolidate compiler generated dependencies of target autoware_auto_vehicle_msgs__rosidl_typesupport_c__pyext[0m
+[0.443s] [ 98%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_introspection_c__pyext
+[0.446s] [ 99%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.469s] [100%] Built target autoware_auto_vehicle_msgs__rosidl_typesupport_c__pyext
+[0.578s] running egg_info
+[0.580s] writing autoware_auto_vehicle_msgs.egg-info/PKG-INFO
+[0.580s] writing dependency_links to autoware_auto_vehicle_msgs.egg-info/dependency_links.txt
+[0.581s] writing top-level names to autoware_auto_vehicle_msgs.egg-info/top_level.txt
+[0.584s] reading manifest file 'autoware_auto_vehicle_msgs.egg-info/SOURCES.txt'
+[0.586s] writing manifest file 'autoware_auto_vehicle_msgs.egg-info/SOURCES.txt'
+[0.641s] [100%] Built target ament_cmake_python_build_autoware_auto_vehicle_msgs_egg
+[0.661s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_vehicle_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_auto_vehicle_msgs -- -j16 -l16

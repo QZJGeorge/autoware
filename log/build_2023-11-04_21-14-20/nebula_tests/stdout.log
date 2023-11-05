@@ -1,0 +1,54 @@
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[35m[1mConsolidate compiler generated dependencies of target velodyne_ros_decoder_test_vlp16[0m
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_decoder_test_at128[0m
+[  5%] Built target gtest
+[ 11%] Built target gtest_main
+[ 16%] Built target hesai_ros_decoder_test_at128
+[ 22%] Built target velodyne_ros_decoder_test_vlp16
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_decoder_test_main_at128[0m
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_decoder_test_xt32m[0m
+[35m[1mConsolidate compiler generated dependencies of target velodyne_ros_decoder_test_vls128[0m
+[35m[1mConsolidate compiler generated dependencies of target velodyne_ros_decoder_test_main_vlp16[0m
+[ 27%] Built target hesai_ros_decoder_test_main_at128
+[ 33%] Built target hesai_ros_decoder_test_xt32m
+[ 38%] Built target velodyne_ros_decoder_test_vls128
+[ 44%] Built target velodyne_ros_decoder_test_main_vlp16
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_decoder_test_main_xt32m[0m
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_decoder_test_40p[0m
+[35m[1mConsolidate compiler generated dependencies of target velodyne_ros_decoder_test_main_vls128[0m
+[ 50%] Built target hesai_ros_decoder_test_main_xt32m
+[ 55%] Built target velodyne_ros_decoder_test_main_vls128
+[ 61%] Built target hesai_ros_decoder_test_40p
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_decoder_test_64[0m
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_decoder_test_main_40p[0m
+[ 66%] Built target hesai_ros_decoder_test_64
+[ 72%] Built target hesai_ros_decoder_test_main_40p
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_decoder_test_main_64[0m
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_decoder_test_qt64[0m
+[ 77%] Built target hesai_ros_decoder_test_main_64
+[ 83%] Built target hesai_ros_decoder_test_qt64
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_decoder_test_main_qt64[0m
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_decoder_test_xt32[0m
+[ 88%] Built target hesai_ros_decoder_test_main_qt64
+[ 94%] Built target hesai_ros_decoder_test_xt32
+[35m[1mConsolidate compiler generated dependencies of target hesai_ros_decoder_test_main_xt32[0m
+[100%] Built target hesai_ros_decoder_test_main_xt32
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/ament_index/resource_index/package_run_dependencies/nebula_tests
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/ament_index/resource_index/parent_prefix_path/nebula_tests
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/nebula_tests/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/nebula_tests/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/nebula_tests/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/nebula_tests/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/nebula_tests/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/nebula_tests/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/nebula_tests/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/nebula_tests/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/nebula_tests/share/nebula_tests/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/ament_index/resource_index/packages/nebula_tests
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/nebula_tests/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/nebula_tests/cmake/nebula_testsConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/nebula_tests/cmake/nebula_testsConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/nebula_tests/share/nebula_tests/package.xml

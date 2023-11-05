@@ -1,0 +1,57 @@
+[35m[1mConsolidate compiler generated dependencies of target shape_estimation_lib[0m
+[ 76%] Built target shape_estimation_lib
+[35m[1mConsolidate compiler generated dependencies of target shape_estimation[0m
+[ 88%] Built target shape_estimation
+[35m[1mConsolidate compiler generated dependencies of target shape_estimation_node[0m
+[100%] Built target shape_estimation_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/lib/shape_estimation/shape_estimation
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/corrector/bus_corrector.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/corrector/car_corrector.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/corrector/corrector.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/corrector/corrector_interface.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/corrector/no_corrector.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/corrector/reference_shape_size_corrector.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/corrector/trailer_corrector.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/corrector/truck_corrector.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/corrector/utils.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/corrector/vehicle_corrector.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/filter/bus_filter.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/filter/car_filter.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/filter/filter.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/filter/filter_interface.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/filter/no_filter.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/filter/trailer_filter.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/filter/truck_filter.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/filter/utils.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/model/bounding_box.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/model/convex_hull.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/model/cylinder.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/model/model.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/model/model_interface.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/include/shape_estimation/shape_estimator.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/lib/libshape_estimation_lib.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/lib/libshape_estimation_node.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/launch/shape_estimation.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/ament_index/resource_index/package_run_dependencies/shape_estimation
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/ament_index/resource_index/parent_prefix_path/shape_estimation
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/ament_index/resource_index/packages/shape_estimation
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/ament_index/resource_index/rclcpp_components/shape_estimation
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/cmake/shape_estimationConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/cmake/shape_estimationConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/shape_estimation/share/shape_estimation/package.xml

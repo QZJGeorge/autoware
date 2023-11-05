@@ -1,0 +1,350 @@
+[0.064s] Invoking command in '/home/zhijie/autoware/build/eagleye_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/rtklib_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/eagleye_msgs -- -j16 -l16
+[0.215s] [  0%] Built target eagleye_msgs__cpp
+[0.270s] [ 12%] Built target eagleye_msgs__rosidl_generator_c
+[0.271s] [35m[1mConsolidate compiler generated dependencies of target eagleye_msgs__rosidl_typesupport_cpp[0m
+[0.299s] [ 12%] Built target ament_cmake_python_symlink_eagleye_msgs
+[0.314s] [35m[1mConsolidate compiler generated dependencies of target eagleye_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.321s] [35m[1mConsolidate compiler generated dependencies of target eagleye_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.344s] [35m[1mConsolidate compiler generated dependencies of target eagleye_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.366s] [ 24%] Built target eagleye_msgs__rosidl_typesupport_cpp
+[0.450s] [ 48%] Built target eagleye_msgs__rosidl_typesupport_fastrtps_cpp
+[0.456s] [ 60%] Built target eagleye_msgs__rosidl_typesupport_fastrtps_c
+[0.479s] [ 48%] Built target eagleye_msgs__rosidl_typesupport_introspection_c
+[0.479s] [ 72%] Built target eagleye_msgs__rosidl_typesupport_introspection_cpp
+[0.480s] [ 84%] Built target eagleye_msgs__rosidl_typesupport_c
+[0.528s] [ 84%] Built target eagleye_msgs
+[0.615s] [ 85%] Built target eagleye_msgs__py
+[0.640s] [35m[1mConsolidate compiler generated dependencies of target eagleye_msgs__rosidl_generator_py[0m
+[0.672s] [ 96%] Built target eagleye_msgs__rosidl_generator_py
+[0.702s] [35m[1mConsolidate compiler generated dependencies of target eagleye_msgs__rosidl_typesupport_c__pyext[0m
+[0.702s] [35m[1mConsolidate compiler generated dependencies of target eagleye_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[0.709s] [35m[1mConsolidate compiler generated dependencies of target eagleye_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.739s] [ 98%] Built target eagleye_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.740s] [ 98%] Built target eagleye_msgs__rosidl_typesupport_c__pyext
+[0.743s] [100%] Built target eagleye_msgs__rosidl_typesupport_introspection_c__pyext
+[1.003s] running egg_info
+[1.020s] writing eagleye_msgs.egg-info/PKG-INFO
+[1.020s] writing dependency_links to eagleye_msgs.egg-info/dependency_links.txt
+[1.020s] writing top-level names to eagleye_msgs.egg-info/top_level.txt
+[1.020s] reading manifest file 'eagleye_msgs.egg-info/SOURCES.txt'
+[1.020s] writing manifest file 'eagleye_msgs.egg-info/SOURCES.txt'
+[1.102s] [100%] Built target ament_cmake_python_build_eagleye_msgs_egg
+[1.147s] Invoked command in '/home/zhijie/autoware/build/eagleye_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/rtklib_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/eagleye_msgs -- -j16 -l16
+[8.167s] Invoking command in '/home/zhijie/autoware/build/eagleye_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/rtklib_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/eagleye_msgs
+[8.641s] -- Install configuration: "Release"
+[8.641s] -- Execute custom install script
+[8.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/ament_index/resource_index/rosidl_interfaces/eagleye_msgs
+[8.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/acc_x_offset.h
+[8.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/acc_x_scale_factor.h
+[8.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/acc_y_offset.h
+[8.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/angular_velocity_offset.h
+[8.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_offset__functions.h
+[8.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_offset__struct.h
+[8.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_offset__type_support.h
+[8.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_scale_factor__functions.h
+[8.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_scale_factor__struct.h
+[8.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_scale_factor__type_support.h
+[8.642s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_y_offset__functions.h
+[8.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_y_offset__struct.h
+[8.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_y_offset__type_support.h
+[8.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/angular_velocity_offset__functions.h
+[8.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/angular_velocity_offset__struct.h
+[8.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/angular_velocity_offset__type_support.h
+[8.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/distance__functions.h
+[8.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/distance__struct.h
+[8.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/distance__type_support.h
+[8.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/heading__functions.h
+[8.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/heading__struct.h
+[8.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/heading__type_support.h
+[8.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/height__functions.h
+[8.643s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/height__struct.h
+[8.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/height__type_support.h
+[8.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/pitching__functions.h
+[8.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/pitching__struct.h
+[8.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/pitching__type_support.h
+[8.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/position__functions.h
+[8.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/position__struct.h
+[8.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/position__type_support.h
+[8.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/rolling__functions.h
+[8.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/rolling__struct.h
+[8.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/rolling__type_support.h
+[8.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/slip_angle__functions.h
+[8.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/slip_angle__struct.h
+[8.644s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/slip_angle__type_support.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status__functions.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status__struct.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status__type_support.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status_stamped__functions.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status_stamped__struct.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status_stamped__type_support.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/velocity_scale_factor__functions.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/velocity_scale_factor__struct.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/velocity_scale_factor__type_support.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/yawrate_offset__functions.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/yawrate_offset__struct.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/yawrate_offset__type_support.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/distance.h
+[8.645s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/heading.h
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/height.h
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/pitching.h
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/position.h
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/rolling.h
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/slip_angle.h
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/status.h
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/status_stamped.h
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/velocity_scale_factor.h
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/yawrate_offset.h
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/environment/library_path.sh
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/environment/library_path.dsv
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_offset__rosidl_typesupport_fastrtps_c.h
+[8.646s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_scale_factor__rosidl_typesupport_fastrtps_c.h
+[8.647s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_y_offset__rosidl_typesupport_fastrtps_c.h
+[8.647s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/angular_velocity_offset__rosidl_typesupport_fastrtps_c.h
+[8.647s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/distance__rosidl_typesupport_fastrtps_c.h
+[8.661s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/heading__rosidl_typesupport_fastrtps_c.h
+[8.661s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/height__rosidl_typesupport_fastrtps_c.h
+[8.661s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/pitching__rosidl_typesupport_fastrtps_c.h
+[8.662s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/position__rosidl_typesupport_fastrtps_c.h
+[8.662s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/rolling__rosidl_typesupport_fastrtps_c.h
+[8.662s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/slip_angle__rosidl_typesupport_fastrtps_c.h
+[8.662s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h
+[8.662s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status_stamped__rosidl_typesupport_fastrtps_c.h
+[8.662s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/velocity_scale_factor__rosidl_typesupport_fastrtps_c.h
+[8.662s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/yawrate_offset__rosidl_typesupport_fastrtps_c.h
+[8.662s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.662s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_offset__rosidl_typesupport_introspection_c.h
+[8.662s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_scale_factor__rosidl_typesupport_introspection_c.h
+[8.662s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_y_offset__rosidl_typesupport_introspection_c.h
+[8.662s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/angular_velocity_offset__rosidl_typesupport_introspection_c.h
+[8.663s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/distance__rosidl_typesupport_introspection_c.h
+[8.663s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/heading__rosidl_typesupport_introspection_c.h
+[8.663s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/height__rosidl_typesupport_introspection_c.h
+[8.663s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/pitching__rosidl_typesupport_introspection_c.h
+[8.663s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/position__rosidl_typesupport_introspection_c.h
+[8.663s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/rolling__rosidl_typesupport_introspection_c.h
+[8.663s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/slip_angle__rosidl_typesupport_introspection_c.h
+[8.663s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status__rosidl_typesupport_introspection_c.h
+[8.663s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status_stamped__rosidl_typesupport_introspection_c.h
+[8.663s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/velocity_scale_factor__rosidl_typesupport_introspection_c.h
+[8.663s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/yawrate_offset__rosidl_typesupport_introspection_c.h
+[8.663s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.663s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/acc_x_offset.hpp
+[8.664s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/acc_x_scale_factor.hpp
+[8.664s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/acc_y_offset.hpp
+[8.664s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/angular_velocity_offset.hpp
+[8.664s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_offset__builder.hpp
+[8.664s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_offset__struct.hpp
+[8.664s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_offset__traits.hpp
+[8.664s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_scale_factor__builder.hpp
+[8.664s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_scale_factor__struct.hpp
+[8.664s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_scale_factor__traits.hpp
+[8.664s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_y_offset__builder.hpp
+[8.665s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_y_offset__struct.hpp
+[8.665s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_y_offset__traits.hpp
+[8.665s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/angular_velocity_offset__builder.hpp
+[8.665s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/angular_velocity_offset__struct.hpp
+[8.665s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/angular_velocity_offset__traits.hpp
+[8.665s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/distance__builder.hpp
+[8.665s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/distance__struct.hpp
+[8.665s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/distance__traits.hpp
+[8.665s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/heading__builder.hpp
+[8.665s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/heading__struct.hpp
+[8.666s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/heading__traits.hpp
+[8.666s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/height__builder.hpp
+[8.666s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/height__struct.hpp
+[8.666s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/height__traits.hpp
+[8.666s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/pitching__builder.hpp
+[8.666s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/pitching__struct.hpp
+[8.666s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/pitching__traits.hpp
+[8.666s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/position__builder.hpp
+[8.666s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/position__struct.hpp
+[8.666s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/position__traits.hpp
+[8.666s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/rolling__builder.hpp
+[8.667s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/rolling__struct.hpp
+[8.667s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/rolling__traits.hpp
+[8.667s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/slip_angle__builder.hpp
+[8.667s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/slip_angle__struct.hpp
+[8.667s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/slip_angle__traits.hpp
+[8.667s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status__builder.hpp
+[8.667s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status__struct.hpp
+[8.667s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status__traits.hpp
+[8.667s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status_stamped__builder.hpp
+[8.667s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status_stamped__struct.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status_stamped__traits.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/velocity_scale_factor__builder.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/velocity_scale_factor__struct.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/velocity_scale_factor__traits.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/yawrate_offset__builder.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/yawrate_offset__struct.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/yawrate_offset__traits.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/distance.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/heading.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/height.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/pitching.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/position.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/rolling.hpp
+[8.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/slip_angle.hpp
+[8.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/status.hpp
+[8.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/status_stamped.hpp
+[8.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/velocity_scale_factor.hpp
+[8.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/yawrate_offset.hpp
+[8.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_offset__rosidl_typesupport_fastrtps_cpp.hpp
+[8.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_scale_factor__rosidl_typesupport_fastrtps_cpp.hpp
+[8.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_y_offset__rosidl_typesupport_fastrtps_cpp.hpp
+[8.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/angular_velocity_offset__rosidl_typesupport_fastrtps_cpp.hpp
+[8.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/distance__rosidl_typesupport_fastrtps_cpp.hpp
+[8.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/heading__rosidl_typesupport_fastrtps_cpp.hpp
+[8.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/height__rosidl_typesupport_fastrtps_cpp.hpp
+[8.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/pitching__rosidl_typesupport_fastrtps_cpp.hpp
+[8.669s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/rolling__rosidl_typesupport_fastrtps_cpp.hpp
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/slip_angle__rosidl_typesupport_fastrtps_cpp.hpp
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/velocity_scale_factor__rosidl_typesupport_fastrtps_cpp.hpp
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/yawrate_offset__rosidl_typesupport_fastrtps_cpp.hpp
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_offset__rosidl_typesupport_introspection_cpp.hpp
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_x_scale_factor__rosidl_typesupport_introspection_cpp.hpp
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/acc_y_offset__rosidl_typesupport_introspection_cpp.hpp
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/angular_velocity_offset__rosidl_typesupport_introspection_cpp.hpp
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/distance__rosidl_typesupport_introspection_cpp.hpp
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/heading__rosidl_typesupport_introspection_cpp.hpp
+[8.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/height__rosidl_typesupport_introspection_cpp.hpp
+[8.671s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/pitching__rosidl_typesupport_introspection_cpp.hpp
+[8.671s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp
+[8.673s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/rolling__rosidl_typesupport_introspection_cpp.hpp
+[8.673s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/slip_angle__rosidl_typesupport_introspection_cpp.hpp
+[8.673s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status__rosidl_typesupport_introspection_cpp.hpp
+[8.673s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/status_stamped__rosidl_typesupport_introspection_cpp.hpp
+[8.673s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/velocity_scale_factor__rosidl_typesupport_introspection_cpp.hpp
+[8.673s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/include/eagleye_msgs/eagleye_msgs/msg/detail/yawrate_offset__rosidl_typesupport_introspection_cpp.hpp
+[8.674s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/environment/pythonpath.sh
+[8.674s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/environment/pythonpath.dsv
+[8.674s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[8.674s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.674s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.674s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[8.688s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/__init__.py
+[8.688s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/_eagleye_msgs_s.ep.rosidl_typesupport_c.c
+[8.688s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/_eagleye_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.688s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/_eagleye_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[8.688s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/eagleye_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.688s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/eagleye_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.688s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/eagleye_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.688s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/libeagleye_msgs__rosidl_generator_py.so
+[8.688s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/__init__.py
+[8.688s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_acc_x_offset.py
+[8.689s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_acc_x_offset_s.c
+[8.689s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_acc_x_scale_factor.py
+[8.689s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_acc_x_scale_factor_s.c
+[8.689s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_acc_y_offset.py
+[8.689s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_acc_y_offset_s.c
+[8.689s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_angular_velocity_offset.py
+[8.689s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_angular_velocity_offset_s.c
+[8.689s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_distance.py
+[8.689s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_distance_s.c
+[8.689s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_heading.py
+[8.689s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_heading_s.c
+[8.689s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_height.py
+[8.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_height_s.c
+[8.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_pitching.py
+[8.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_pitching_s.c
+[8.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_position.py
+[8.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_position_s.c
+[8.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_rolling.py
+[8.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_rolling_s.c
+[8.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_slip_angle.py
+[8.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_slip_angle_s.c
+[8.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_status.py
+[8.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_status_s.c
+[8.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_status_stamped.py
+[8.690s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_status_stamped_s.c
+[8.691s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_velocity_scale_factor.py
+[8.691s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_velocity_scale_factor_s.c
+[8.697s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_yawrate_offset.py
+[8.697s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg/_yawrate_offset_s.c
+[8.698s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/eagleye_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.698s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/eagleye_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.699s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/eagleye_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.699s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/AccXOffset.idl
+[8.699s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/AccXScaleFactor.idl
+[8.700s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/AccYOffset.idl
+[8.700s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/AngularVelocityOffset.idl
+[8.700s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Distance.idl
+[8.700s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Heading.idl
+[8.701s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Height.idl
+[8.701s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Pitching.idl
+[8.701s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Position.idl
+[8.701s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Rolling.idl
+[8.702s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/SlipAngle.idl
+[8.702s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Status.idl
+[8.702s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/StatusStamped.idl
+[8.702s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/VelocityScaleFactor.idl
+[8.703s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/YawrateOffset.idl
+[8.703s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/AccXOffset.msg
+[8.703s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/AccXScaleFactor.msg
+[8.703s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/AccYOffset.msg
+[8.704s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/AngularVelocityOffset.msg
+[8.704s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Distance.msg
+[8.704s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Heading.msg
+[8.704s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Height.msg
+[8.705s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Pitching.msg
+[8.705s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Position.msg
+[8.705s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Rolling.msg
+[8.711s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/SlipAngle.msg
+[8.718s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/Status.msg
+[8.718s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/StatusStamped.msg
+[8.718s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/VelocityScaleFactor.msg
+[8.718s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/msg/YawrateOffset.msg
+[8.719s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/ament_index/resource_index/package_run_dependencies/eagleye_msgs
+[8.720s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/ament_index/resource_index/parent_prefix_path/eagleye_msgs
+[8.720s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/environment/ament_prefix_path.sh
+[8.720s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/environment/ament_prefix_path.dsv
+[8.720s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/environment/path.sh
+[8.721s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/environment/path.dsv
+[8.721s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/local_setup.bash
+[8.721s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/local_setup.sh
+[8.722s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/local_setup.zsh
+[8.722s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/local_setup.dsv
+[8.722s] -- Symlinking: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/package.dsv
+[8.749s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/ament_index/resource_index/packages/eagleye_msgs
+[8.749s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/rosidl_cmake-extras.cmake
+[8.750s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.750s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.750s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[8.751s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[8.751s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.752s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.752s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/eagleye_msgsConfig.cmake
+[8.752s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/eagleye_msgsConfig-version.cmake
+[8.752s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/package.xml
+[8.753s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/lib/libeagleye_msgs__rosidl_generator_c.so
+[8.754s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/lib/libeagleye_msgs__rosidl_typesupport_fastrtps_c.so
+[8.755s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/lib/libeagleye_msgs__rosidl_typesupport_introspection_c.so
+[8.756s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/lib/libeagleye_msgs__rosidl_typesupport_c.so
+[8.756s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/lib/libeagleye_msgs__rosidl_typesupport_fastrtps_cpp.so
+[8.757s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/lib/libeagleye_msgs__rosidl_typesupport_introspection_cpp.so
+[8.757s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/lib/libeagleye_msgs__rosidl_typesupport_cpp.so
+[8.884s] Listing '/home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs'...
+[8.884s] Listing '/home/zhijie/autoware/install/eagleye_msgs/local/lib/python3.10/dist-packages/eagleye_msgs/msg'...
+[8.888s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/lib/libeagleye_msgs__rosidl_generator_py.so
+[8.889s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/export_eagleye_msgs__rosidl_generator_cExport.cmake
+[8.889s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/export_eagleye_msgs__rosidl_generator_cExport-release.cmake
+[8.889s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/export_eagleye_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[8.890s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/export_eagleye_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[8.890s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/eagleye_msgs__rosidl_typesupport_introspection_cExport.cmake
+[8.891s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/eagleye_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[8.891s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/eagleye_msgs__rosidl_typesupport_cExport.cmake
+[8.892s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/eagleye_msgs__rosidl_typesupport_cExport-release.cmake
+[8.892s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/export_eagleye_msgs__rosidl_generator_cppExport.cmake
+[8.893s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/export_eagleye_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.893s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/export_eagleye_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[8.893s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/eagleye_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[8.893s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/eagleye_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[8.894s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/eagleye_msgs__rosidl_typesupport_cppExport.cmake
+[8.894s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/eagleye_msgs__rosidl_typesupport_cppExport-release.cmake
+[8.895s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/export_eagleye_msgs__rosidl_generator_pyExport.cmake
+[8.895s] -- Up-to-date: /home/zhijie/autoware/install/eagleye_msgs/share/eagleye_msgs/cmake/export_eagleye_msgs__rosidl_generator_pyExport-release.cmake
+[8.904s] Invoked command in '/home/zhijie/autoware/build/eagleye_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/rtklib_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/eagleye_msgs

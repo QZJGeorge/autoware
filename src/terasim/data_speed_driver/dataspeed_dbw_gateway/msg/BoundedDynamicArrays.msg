@@ -1,0 +1,19 @@
+
+float32[<=10] t_float
+float64[<=10] t_double
+char[<=10] t_char
+bool[<=10] t_bool
+byte[<=10] t_octet
+uint8[<=10] t_u8
+int8[<=10] t_i8
+uint16[<=10] t_u16
+int16[<=10] t_i16
+uint32[<=10] t_u32
+int32[<=10] t_i32
+uint64[<=10] t_u64
+int64[<=10] t_i64
+string[<=10] t_string
+wstring[<=10] t_wstring
+string<=8[<=10] t_bounded_string
+wstring<=8[<=10] t_bounded_wstring
+ExampleMessage[<=10] t_message

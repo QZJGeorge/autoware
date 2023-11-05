@@ -1,0 +1,13 @@
+# Temporary files
+*~
+
+# Python
+*.py[cod]
+
+# VS Code project files
+.vscode/
+
+# Uncompressed meshes and textures
+*_description/**/*.dae
+*_description/**/*.stl
+*_description/**/*.png

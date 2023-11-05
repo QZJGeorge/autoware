@@ -1,0 +1,19 @@
+
+float32[] t_float
+float64[] t_double
+char[] t_char
+bool[] t_bool
+byte[] t_octet
+uint8[] t_u8
+int8[] t_i8
+uint16[] t_u16
+int16[] t_i16
+uint32[] t_u32
+int32[] t_i32
+uint64[] t_u64
+int64[] t_i64
+string[] t_string
+wstring[] t_wstring
+string<=8[] t_bounded_string
+wstring<=8[] t_bounded_wstring
+ExampleMessage[] t_message

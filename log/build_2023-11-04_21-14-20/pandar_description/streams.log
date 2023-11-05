@@ -1,0 +1,24 @@
+[0.122s] Invoking command in '/home/zhijie/autoware/build/pandar_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/pandar_description -- -j16 -l16
+[0.244s] Invoked command in '/home/zhijie/autoware/build/pandar_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/pandar_description -- -j16 -l16
+[0.616s] Invoking command in '/home/zhijie/autoware/build/pandar_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/pandar_description
+[0.628s] -- Install configuration: "Release"
+[0.629s] -- Execute custom install script
+[0.629s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/urdf/pandar_40p.xacro
+[0.629s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/urdf/pandar_qt.xacro
+[0.629s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/urdf/pandar_xt32.xacro
+[0.630s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/ament_index/resource_index/package_run_dependencies/pandar_description
+[0.630s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/ament_index/resource_index/parent_prefix_path/pandar_description
+[0.630s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/environment/ament_prefix_path.sh
+[0.630s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/environment/ament_prefix_path.dsv
+[0.630s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/environment/path.sh
+[0.630s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/environment/path.dsv
+[0.631s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/local_setup.bash
+[0.631s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/local_setup.sh
+[0.633s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/local_setup.zsh
+[0.634s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/local_setup.dsv
+[0.634s] -- Symlinking: /home/zhijie/autoware/install/pandar_description/share/pandar_description/package.dsv
+[0.640s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/ament_index/resource_index/packages/pandar_description
+[0.640s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/cmake/pandar_descriptionConfig.cmake
+[0.640s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/cmake/pandar_descriptionConfig-version.cmake
+[0.640s] -- Up-to-date symlink: /home/zhijie/autoware/install/pandar_description/share/pandar_description/package.xml
+[0.703s] Invoked command in '/home/zhijie/autoware/build/pandar_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/pandar_description

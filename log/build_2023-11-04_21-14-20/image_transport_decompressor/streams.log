@@ -1,0 +1,35 @@
+[0.082s] Invoking command in '/home/zhijie/autoware/build/image_transport_decompressor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/image_transport_decompressor -- -j16 -l16
+[0.336s] [35m[1mConsolidate compiler generated dependencies of target image_transport_decompressor[0m
+[0.354s] [35m[1mConsolidate compiler generated dependencies of target image_transport_decompressor_node[0m
+[0.398s] [ 50%] Built target image_transport_decompressor
+[0.421s] [100%] Built target image_transport_decompressor_node
+[0.482s] Invoked command in '/home/zhijie/autoware/build/image_transport_decompressor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/image_transport_decompressor -- -j16 -l16
+[0.903s] Invoking command in '/home/zhijie/autoware/build/image_transport_decompressor': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/image_transport_decompressor
+[0.929s] -- Install configuration: "Release"
+[0.930s] -- Execute custom install script
+[0.931s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/lib/image_transport_decompressor/image_transport_decompressor_node
+[0.931s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/include/image_transport_decompressor/image_transport_decompressor.hpp
+[0.932s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/environment/library_path.sh
+[0.932s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/environment/library_path.dsv
+[0.933s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/lib/libimage_transport_decompressor.so
+[0.938s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/launch/image_transport_decompressor.launch.xml
+[0.938s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/ament_index/resource_index/package_run_dependencies/image_transport_decompressor
+[0.939s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/ament_index/resource_index/parent_prefix_path/image_transport_decompressor
+[0.939s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/environment/ament_prefix_path.sh
+[0.939s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/environment/ament_prefix_path.dsv
+[0.939s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/environment/path.sh
+[0.940s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/environment/path.dsv
+[0.940s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/local_setup.bash
+[0.941s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/local_setup.sh
+[0.941s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/local_setup.zsh
+[0.941s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/local_setup.dsv
+[0.942s] -- Symlinking: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/package.dsv
+[0.985s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/ament_index/resource_index/packages/image_transport_decompressor
+[0.985s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/ament_index/resource_index/rclcpp_components/image_transport_decompressor
+[0.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.987s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/cmake/ament_cmake_export_libraries-extras.cmake
+[0.987s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/cmake/image_transport_decompressorConfig.cmake
+[0.987s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/cmake/image_transport_decompressorConfig-version.cmake
+[0.988s] -- Up-to-date symlink: /home/zhijie/autoware/install/image_transport_decompressor/share/image_transport_decompressor/package.xml
+[0.994s] Invoked command in '/home/zhijie/autoware/build/image_transport_decompressor' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/image_transport_decompressor

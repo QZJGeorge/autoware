@@ -1,0 +1,412 @@
+[0.166s] Invoking command in '/home/zhijie/autoware/build/dbw_polaris_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/dbw_polaris_msgs -- -j16 -l16
+[0.201s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.212s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.219s] [  1%] Built target ament_cmake_python_symlink_dbw_polaris_msgs
+[0.613s] running egg_info
+[0.613s] creating dbw_polaris_msgs.egg-info
+[0.614s] writing dbw_polaris_msgs.egg-info/PKG-INFO
+[0.614s] writing dependency_links to dbw_polaris_msgs.egg-info/dependency_links.txt
+[0.614s] writing top-level names to dbw_polaris_msgs.egg-info/top_level.txt
+[0.614s] writing manifest file 'dbw_polaris_msgs.egg-info/SOURCES.txt'
+[0.614s] reading manifest file 'dbw_polaris_msgs.egg-info/SOURCES.txt'
+[0.614s] writing manifest file 'dbw_polaris_msgs.egg-info/SOURCES.txt'
+[0.633s] [  1%] Built target ament_cmake_python_build_dbw_polaris_msgs_egg
+[2.886s] [  1%] Built target dbw_polaris_msgs__cpp
+[2.916s] [  2%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.924s] [  2%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.950s] [  3%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.047s] [  4%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_c.dir/rosidl_generator_c/dbw_polaris_msgs/msg/detail/brake_report__functions.c.o[0m
+[3.051s] [  5%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_c.dir/rosidl_generator_c/dbw_polaris_msgs/msg/detail/brake_cmd__functions.c.o[0m
+[3.073s] [  6%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_c.dir/rosidl_generator_c/dbw_polaris_msgs/msg/detail/gear_cmd__functions.c.o[0m
+[3.122s] [  7%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_c.dir/rosidl_generator_c/dbw_polaris_msgs/msg/detail/gear_reject__functions.c.o[0m
+[3.122s] [  8%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_c.dir/rosidl_generator_c/dbw_polaris_msgs/msg/detail/gear__functions.c.o[0m
+[3.146s] [  9%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_c.dir/rosidl_generator_c/dbw_polaris_msgs/msg/detail/gear_report__functions.c.o[0m
+[3.151s] [ 10%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_c.dir/rosidl_generator_c/dbw_polaris_msgs/msg/detail/steering_cmd__functions.c.o[0m
+[3.184s] [ 10%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_c.dir/rosidl_generator_c/dbw_polaris_msgs/msg/detail/steering_report__functions.c.o[0m
+[3.190s] [ 11%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_c.dir/rosidl_generator_c/dbw_polaris_msgs/msg/detail/throttle_cmd__functions.c.o[0m
+[3.208s] [ 12%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_c.dir/rosidl_generator_c/dbw_polaris_msgs/msg/detail/throttle_report__functions.c.o[0m
+[3.244s] [ 13%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_c.dir/rosidl_generator_c/dbw_polaris_msgs/msg/detail/watchdog_counter__functions.c.o[0m
+[3.483s] [ 14%] [32m[1mLinking C shared library libdbw_polaris_msgs__rosidl_generator_c.so[0m
+[3.554s] [ 14%] Built target dbw_polaris_msgs__rosidl_generator_c
+[3.585s] [ 15%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.588s] [ 16%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.608s] [ 17%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.044s] [ 18%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dbw_polaris_msgs/msg/detail/brake_cmd__type_support.cpp.o[0m
+[6.069s] [ 19%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dbw_polaris_msgs/msg/detail/gear_cmd__type_support.cpp.o[0m
+[6.069s] [ 19%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dbw_polaris_msgs/msg/detail/brake_report__type_support.cpp.o[0m
+[6.111s] [ 20%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dbw_polaris_msgs/msg/detail/dds_fastrtps/brake_cmd__type_support.cpp.o[0m
+[6.120s] [ 21%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dbw_polaris_msgs/msg/brake_report__type_support.cpp.o[0m
+[6.127s] [ 22%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dbw_polaris_msgs/msg/detail/dds_fastrtps/brake_report__type_support.cpp.o[0m
+[6.127s] [ 23%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dbw_polaris_msgs/msg/gear_cmd__type_support.cpp.o[0m
+[6.135s] [ 25%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dbw_polaris_msgs/msg/gear_reject__type_support.cpp.o[0m
+[6.135s] [ 25%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dbw_polaris_msgs/msg/detail/gear__type_support.cpp.o[0m
+[6.160s] [ 27%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dbw_polaris_msgs/msg/brake_cmd__type_support.cpp.o[0m
+[6.161s] [ 27%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dbw_polaris_msgs/msg/gear__type_support.cpp.o[0m
+[6.161s] [ 28%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dbw_polaris_msgs/msg/detail/gear_reject__type_support.cpp.o[0m
+[6.168s] [ 29%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dbw_polaris_msgs/msg/gear_report__type_support.cpp.o[0m
+[6.571s] [ 30%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/dbw_polaris_msgs/msg/brake_cmd__type_support.cpp.o[0m
+[6.766s] [ 31%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/dbw_polaris_msgs/msg/brake_report__type_support.cpp.o[0m
+[6.865s] [ 31%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/dbw_polaris_msgs/msg/gear_cmd__type_support.cpp.o[0m
+[6.980s] [ 32%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dbw_polaris_msgs/msg/detail/gear_report__type_support.cpp.o[0m
+[7.066s] [ 33%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/dbw_polaris_msgs/msg/gear__type_support.cpp.o[0m
+[7.155s] [ 34%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dbw_polaris_msgs/msg/detail/steering_cmd__type_support.cpp.o[0m
+[7.196s] [ 35%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dbw_polaris_msgs/msg/detail/dds_fastrtps/gear_cmd__type_support.cpp.o[0m
+[7.263s] [ 36%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/dbw_polaris_msgs/msg/gear_reject__type_support.cpp.o[0m
+[7.294s] [ 37%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dbw_polaris_msgs/msg/detail/steering_report__type_support.cpp.o[0m
+[7.318s] [ 38%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dbw_polaris_msgs/msg/detail/brake_cmd__type_support_c.cpp.o[0m
+[7.365s] [ 39%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dbw_polaris_msgs/msg/steering_cmd__type_support.cpp.o[0m
+[7.436s] [ 40%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/dbw_polaris_msgs/msg/gear_report__type_support.cpp.o[0m
+[7.505s] [ 41%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dbw_polaris_msgs/msg/detail/throttle_cmd__type_support.cpp.o[0m
+[7.520s] [ 41%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dbw_polaris_msgs/msg/steering_report__type_support.cpp.o[0m
+[7.592s] [ 42%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/dbw_polaris_msgs/msg/steering_cmd__type_support.cpp.o[0m
+[7.600s] [ 43%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dbw_polaris_msgs/msg/detail/throttle_report__type_support.cpp.o[0m
+[7.656s] [ 44%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dbw_polaris_msgs/msg/detail/dds_fastrtps/gear__type_support.cpp.o[0m
+[7.692s] [ 45%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/dbw_polaris_msgs/msg/steering_report__type_support.cpp.o[0m
+[7.765s] [ 46%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dbw_polaris_msgs/msg/detail/brake_report__type_support_c.cpp.o[0m
+[7.830s] [ 47%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dbw_polaris_msgs/msg/detail/watchdog_counter__type_support.cpp.o[0m
+[7.857s] [ 48%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/dbw_polaris_msgs/msg/throttle_cmd__type_support.cpp.o[0m
+[7.915s] [ 49%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/dbw_polaris_msgs/msg/throttle_report__type_support.cpp.o[0m
+[7.987s] [ 50%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dbw_polaris_msgs/msg/detail/dds_fastrtps/gear_reject__type_support.cpp.o[0m
+[8.039s] [ 51%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/dbw_polaris_msgs/msg/watchdog_counter__type_support.cpp.o[0m
+[8.093s] [ 52%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dbw_polaris_msgs/msg/throttle_cmd__type_support.cpp.o[0m
+[8.197s] [ 53%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dbw_polaris_msgs/msg/detail/dds_fastrtps/gear_report__type_support.cpp.o[0m
+[8.224s] [ 54%] [32m[1mLinking CXX shared library libdbw_polaris_msgs__rosidl_typesupport_c.so[0m
+[8.249s] [ 55%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dbw_polaris_msgs/msg/detail/gear_cmd__type_support_c.cpp.o[0m
+[8.409s] [ 55%] Built target dbw_polaris_msgs__rosidl_typesupport_c
+[8.474s] [ 56%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dbw_polaris_msgs/msg/detail/gear__type_support_c.cpp.o[0m
+[8.524s] [ 56%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dbw_polaris_msgs/msg/detail/gear_reject__type_support_c.cpp.o[0m
+[8.571s] [ 57%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dbw_polaris_msgs/msg/throttle_report__type_support.cpp.o[0m
+[8.633s] [ 58%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dbw_polaris_msgs/msg/detail/gear_report__type_support_c.cpp.o[0m
+[8.704s] [ 59%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dbw_polaris_msgs/msg/detail/dds_fastrtps/steering_cmd__type_support.cpp.o[0m
+[8.792s] [ 60%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dbw_polaris_msgs/msg/detail/dds_fastrtps/steering_report__type_support.cpp.o[0m
+[8.877s] [ 61%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dbw_polaris_msgs/msg/detail/steering_cmd__type_support_c.cpp.o[0m
+[8.883s] [ 62%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dbw_polaris_msgs/msg/detail/dds_fastrtps/throttle_cmd__type_support.cpp.o[0m
+[9.002s] [ 63%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dbw_polaris_msgs/msg/detail/brake_cmd__type_support.c.o[0m
+[9.067s] [ 64%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dbw_polaris_msgs/msg/watchdog_counter__type_support.cpp.o[0m
+[9.096s] [ 64%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dbw_polaris_msgs/msg/detail/dds_fastrtps/throttle_report__type_support.cpp.o[0m
+[9.200s] [ 65%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dbw_polaris_msgs/msg/detail/brake_report__type_support.c.o[0m
+[9.388s] [ 66%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dbw_polaris_msgs/msg/detail/gear_cmd__type_support.c.o[0m
+[9.533s] [ 67%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dbw_polaris_msgs/msg/detail/gear__type_support.c.o[0m
+[9.533s] [ 69%] [32m[1mLinking CXX shared library libdbw_polaris_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[9.533s] [ 69%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dbw_polaris_msgs/msg/detail/dds_fastrtps/watchdog_counter__type_support.cpp.o[0m
+[9.541s] [ 70%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dbw_polaris_msgs/msg/detail/steering_report__type_support_c.cpp.o[0m
+[9.724s] [ 71%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dbw_polaris_msgs/msg/detail/gear_reject__type_support.c.o[0m
+[9.804s] [ 71%] Built target dbw_polaris_msgs__rosidl_typesupport_introspection_cpp
+[9.872s] [ 72%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dbw_polaris_msgs/msg/detail/gear_report__type_support.c.o[0m
+[9.872s] [ 73%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dbw_polaris_msgs/msg/detail/throttle_cmd__type_support_c.cpp.o[0m
+[9.891s] [ 73%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dbw_polaris_msgs/msg/detail/steering_cmd__type_support.c.o[0m
+[9.915s] [ 74%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dbw_polaris_msgs/msg/detail/steering_report__type_support.c.o[0m
+[9.944s] [ 75%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dbw_polaris_msgs/msg/detail/throttle_report__type_support_c.cpp.o[0m
+[10.025s] [ 76%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dbw_polaris_msgs/msg/detail/throttle_cmd__type_support.c.o[0m
+[10.025s] [ 77%] [32mBuilding CXX object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dbw_polaris_msgs/msg/detail/watchdog_counter__type_support_c.cpp.o[0m
+[10.033s] [ 78%] [32m[1mLinking CXX shared library libdbw_polaris_msgs__rosidl_typesupport_cpp.so[0m
+[10.048s] [ 79%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dbw_polaris_msgs/msg/detail/throttle_report__type_support.c.o[0m
+[10.093s] [ 80%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dbw_polaris_msgs/msg/detail/watchdog_counter__type_support.c.o[0m
+[10.261s] [ 80%] Built target dbw_polaris_msgs__rosidl_typesupport_cpp
+[10.263s] [ 81%] [32m[1mLinking C shared library libdbw_polaris_msgs__rosidl_typesupport_introspection_c.so[0m
+[10.396s] [ 81%] Built target dbw_polaris_msgs__rosidl_typesupport_introspection_c
+[10.964s] [ 82%] [32m[1mLinking CXX shared library libdbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.076s] [ 83%] [32m[1mLinking CXX shared library libdbw_polaris_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[11.272s] [ 83%] Built target dbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp
+[11.368s] [ 83%] Built target dbw_polaris_msgs__rosidl_typesupport_fastrtps_c
+[11.575s] [ 83%] Built target dbw_polaris_msgs
+[11.703s] [ 84%] [34m[1mGenerating Python code for ROS interfaces[0m
+[21.313s] [ 84%] Built target dbw_polaris_msgs__py
+[21.429s] [ 85%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_py.dir/rosidl_generator_py/dbw_polaris_msgs/msg/_brake_cmd_s.c.o[0m
+[21.749s] [ 86%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_py.dir/rosidl_generator_py/dbw_polaris_msgs/msg/_watchdog_counter_s.c.o[0m
+[21.947s] [ 87%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_py.dir/rosidl_generator_py/dbw_polaris_msgs/msg/_throttle_report_s.c.o[0m
+[22.194s] [ 88%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_py.dir/rosidl_generator_py/dbw_polaris_msgs/msg/_throttle_cmd_s.c.o[0m
+[22.414s] [ 89%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_py.dir/rosidl_generator_py/dbw_polaris_msgs/msg/_steering_report_s.c.o[0m
+[22.659s] [ 90%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_py.dir/rosidl_generator_py/dbw_polaris_msgs/msg/_steering_cmd_s.c.o[0m
+[23.095s] [ 90%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_py.dir/rosidl_generator_py/dbw_polaris_msgs/msg/_gear_report_s.c.o[0m
+[23.335s] [ 91%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_py.dir/rosidl_generator_py/dbw_polaris_msgs/msg/_gear_reject_s.c.o[0m
+[23.659s] [ 92%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_py.dir/rosidl_generator_py/dbw_polaris_msgs/msg/_gear_s.c.o[0m
+[23.892s] [ 93%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_py.dir/rosidl_generator_py/dbw_polaris_msgs/msg/_gear_cmd_s.c.o[0m
+[24.145s] [ 94%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_generator_py.dir/rosidl_generator_py/dbw_polaris_msgs/msg/_brake_report_s.c.o[0m
+[24.434s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/dbw_polaris_msgs/libdbw_polaris_msgs__rosidl_generator_py.so[0m
+[24.513s] [ 95%] Built target dbw_polaris_msgs__rosidl_generator_py
+[24.587s] [ 96%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/dbw_polaris_msgs/_dbw_polaris_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[24.978s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/dbw_polaris_msgs/dbw_polaris_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[25.059s] [ 97%] Built target dbw_polaris_msgs__rosidl_typesupport_fastrtps_c__pyext
+[25.088s] [ 97%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dbw_polaris_msgs/_dbw_polaris_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[25.498s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/dbw_polaris_msgs/dbw_polaris_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[25.575s] [ 98%] Built target dbw_polaris_msgs__rosidl_typesupport_c__pyext
+[25.627s] [ 99%] [32mBuilding C object CMakeFiles/dbw_polaris_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/dbw_polaris_msgs/_dbw_polaris_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[26.003s] [100%] [32m[1mLinking C shared library rosidl_generator_py/dbw_polaris_msgs/dbw_polaris_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[26.069s] [100%] Built target dbw_polaris_msgs__rosidl_typesupport_introspection_c__pyext
+[26.138s] Invoked command in '/home/zhijie/autoware/build/dbw_polaris_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/dbw_polaris_msgs -- -j16 -l16
+[27.658s] Invoking command in '/home/zhijie/autoware/build/dbw_polaris_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/dbw_polaris_msgs
+[27.706s] -- Install configuration: "Release"
+[27.706s] -- Execute custom install script
+[27.706s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/ament_index/resource_index/rosidl_interfaces/dbw_polaris_msgs
+[27.706s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/brake_cmd.h
+[27.707s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/brake_report.h
+[27.727s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_cmd__functions.h
+[27.768s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_cmd__struct.h
+[27.792s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_cmd__type_support.h
+[27.817s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_report__functions.h
+[27.840s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_report__struct.h
+[27.868s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_report__type_support.h
+[27.882s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear__functions.h
+[27.895s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear__struct.h
+[27.911s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear__type_support.h
+[27.949s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_cmd__functions.h
+[27.957s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_cmd__struct.h
+[27.973s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_cmd__type_support.h
+[27.979s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_reject__functions.h
+[27.994s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_reject__struct.h
+[28.004s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_reject__type_support.h
+[28.016s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_report__functions.h
+[28.029s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_report__struct.h
+[28.048s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_report__type_support.h
+[28.060s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_cmd__functions.h
+[28.083s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_cmd__struct.h
+[28.094s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_cmd__type_support.h
+[28.106s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_report__functions.h
+[28.117s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_report__struct.h
+[28.135s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_report__type_support.h
+[28.146s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_cmd__functions.h
+[28.159s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_cmd__struct.h
+[28.171s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_cmd__type_support.h
+[28.183s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_report__functions.h
+[28.193s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_report__struct.h
+[28.204s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_report__type_support.h
+[28.221s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/watchdog_counter__functions.h
+[28.239s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/watchdog_counter__struct.h
+[28.253s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/watchdog_counter__type_support.h
+[28.265s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/gear.h
+[28.277s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/gear_cmd.h
+[28.291s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/gear_reject.h
+[28.303s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/gear_report.h
+[28.328s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/rosidl_generator_c__visibility_control.h
+[28.343s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/steering_cmd.h
+[28.371s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/steering_report.h
+[28.382s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/throttle_cmd.h
+[28.394s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/throttle_report.h
+[28.410s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/watchdog_counter.h
+[28.424s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/environment/library_path.sh
+[28.437s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/environment/library_path.dsv
+[28.450s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_cmd__rosidl_typesupport_fastrtps_c.h
+[28.461s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_report__rosidl_typesupport_fastrtps_c.h
+[28.472s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear__rosidl_typesupport_fastrtps_c.h
+[28.486s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_cmd__rosidl_typesupport_fastrtps_c.h
+[28.500s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_reject__rosidl_typesupport_fastrtps_c.h
+[28.512s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_report__rosidl_typesupport_fastrtps_c.h
+[28.526s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_cmd__rosidl_typesupport_fastrtps_c.h
+[28.548s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_report__rosidl_typesupport_fastrtps_c.h
+[28.569s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_cmd__rosidl_typesupport_fastrtps_c.h
+[28.582s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_report__rosidl_typesupport_fastrtps_c.h
+[28.597s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/watchdog_counter__rosidl_typesupport_fastrtps_c.h
+[28.606s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[28.616s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_cmd__rosidl_typesupport_introspection_c.h
+[28.627s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_report__rosidl_typesupport_introspection_c.h
+[28.660s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear__rosidl_typesupport_introspection_c.h
+[28.666s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_cmd__rosidl_typesupport_introspection_c.h
+[28.679s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_reject__rosidl_typesupport_introspection_c.h
+[28.689s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_report__rosidl_typesupport_introspection_c.h
+[28.702s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_cmd__rosidl_typesupport_introspection_c.h
+[28.713s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_report__rosidl_typesupport_introspection_c.h
+[28.724s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_cmd__rosidl_typesupport_introspection_c.h
+[28.737s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_report__rosidl_typesupport_introspection_c.h
+[28.752s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/watchdog_counter__rosidl_typesupport_introspection_c.h
+[28.763s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[28.787s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/brake_cmd.hpp
+[28.797s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/brake_report.hpp
+[28.809s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_cmd__builder.hpp
+[28.821s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_cmd__struct.hpp
+[28.836s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_cmd__traits.hpp
+[28.856s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_report__builder.hpp
+[28.871s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_report__struct.hpp
+[28.893s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_report__traits.hpp
+[28.905s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear__builder.hpp
+[28.924s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear__struct.hpp
+[28.939s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear__traits.hpp
+[28.957s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_cmd__builder.hpp
+[28.962s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_cmd__struct.hpp
+[28.979s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_cmd__traits.hpp
+[29.003s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_reject__builder.hpp
+[29.021s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_reject__struct.hpp
+[29.026s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_reject__traits.hpp
+[29.044s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_report__builder.hpp
+[29.054s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_report__struct.hpp
+[29.083s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_report__traits.hpp
+[29.093s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_cmd__builder.hpp
+[29.139s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_cmd__struct.hpp
+[29.168s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_cmd__traits.hpp
+[29.205s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_report__builder.hpp
+[29.205s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_report__struct.hpp
+[29.247s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_report__traits.hpp
+[29.257s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_cmd__builder.hpp
+[29.273s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_cmd__struct.hpp
+[29.286s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_cmd__traits.hpp
+[29.295s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_report__builder.hpp
+[29.306s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_report__struct.hpp
+[29.349s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_report__traits.hpp
+[29.389s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/watchdog_counter__builder.hpp
+[29.396s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/watchdog_counter__struct.hpp
+[29.425s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/watchdog_counter__traits.hpp
+[29.456s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/gear.hpp
+[29.490s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/gear_cmd.hpp
+[29.500s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/gear_reject.hpp
+[29.514s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/gear_report.hpp
+[29.549s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/steering_cmd.hpp
+[29.584s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/steering_report.hpp
+[29.599s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/throttle_cmd.hpp
+[29.629s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/throttle_report.hpp
+[29.629s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/watchdog_counter.hpp
+[29.634s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[29.649s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_report__rosidl_typesupport_fastrtps_cpp.hpp
+[29.665s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear__rosidl_typesupport_fastrtps_cpp.hpp
+[29.697s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[29.697s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_reject__rosidl_typesupport_fastrtps_cpp.hpp
+[29.705s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_report__rosidl_typesupport_fastrtps_cpp.hpp
+[29.740s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[29.767s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_report__rosidl_typesupport_fastrtps_cpp.hpp
+[29.787s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[29.816s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_report__rosidl_typesupport_fastrtps_cpp.hpp
+[29.845s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/watchdog_counter__rosidl_typesupport_fastrtps_cpp.hpp
+[29.869s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[29.901s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_cmd__rosidl_typesupport_introspection_cpp.hpp
+[29.921s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/brake_report__rosidl_typesupport_introspection_cpp.hpp
+[29.940s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear__rosidl_typesupport_introspection_cpp.hpp
+[29.958s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_cmd__rosidl_typesupport_introspection_cpp.hpp
+[29.978s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_reject__rosidl_typesupport_introspection_cpp.hpp
+[29.993s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/gear_report__rosidl_typesupport_introspection_cpp.hpp
+[30.014s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_cmd__rosidl_typesupport_introspection_cpp.hpp
+[30.028s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/steering_report__rosidl_typesupport_introspection_cpp.hpp
+[30.053s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_cmd__rosidl_typesupport_introspection_cpp.hpp
+[30.067s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/throttle_report__rosidl_typesupport_introspection_cpp.hpp
+[30.096s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/include/dbw_polaris_msgs/dbw_polaris_msgs/msg/detail/watchdog_counter__rosidl_typesupport_introspection_cpp.hpp
+[30.122s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/environment/pythonpath.sh
+[30.145s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/environment/pythonpath.dsv
+[30.159s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs-2.1.3-py3.10.egg-info/PKG-INFO
+[30.182s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs-2.1.3-py3.10.egg-info/SOURCES.txt
+[30.205s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs-2.1.3-py3.10.egg-info/dependency_links.txt
+[30.218s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs-2.1.3-py3.10.egg-info/top_level.txt
+[30.244s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/__init__.py
+[30.267s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/_dbw_polaris_msgs_s.ep.rosidl_typesupport_c.c
+[30.279s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/_dbw_polaris_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[30.323s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/_dbw_polaris_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[30.348s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/dbw_polaris_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[30.371s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/dbw_polaris_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[30.384s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/dbw_polaris_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[30.398s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/libdbw_polaris_msgs__rosidl_generator_py.so
+[30.412s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/__init__.py
+[30.427s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_brake_cmd.py
+[30.447s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_brake_cmd_s.c
+[30.462s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_brake_report.py
+[30.496s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_brake_report_s.c
+[30.507s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_gear.py
+[30.518s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_gear_cmd.py
+[30.557s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_gear_cmd_s.c
+[30.596s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_gear_reject.py
+[30.613s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_gear_reject_s.c
+[30.629s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_gear_report.py
+[30.655s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_gear_report_s.c
+[30.675s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_gear_s.c
+[30.699s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_steering_cmd.py
+[30.712s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_steering_cmd_s.c
+[30.730s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_steering_report.py
+[30.747s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_steering_report_s.c
+[30.765s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_throttle_cmd.py
+[30.807s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_throttle_cmd_s.c
+[30.830s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_throttle_report.py
+[30.853s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_throttle_report_s.c
+[30.866s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_watchdog_counter.py
+[30.888s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_watchdog_counter_s.c
+[30.902s] -- Up-to-date symlink: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/dbw_polaris_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[30.902s] -- Up-to-date symlink: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/dbw_polaris_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[30.902s] -- Up-to-date symlink: /home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/dbw_polaris_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[30.905s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/BrakeCmd.idl
+[30.921s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/BrakeReport.idl
+[30.934s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/GearCmd.idl
+[30.945s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/Gear.idl
+[30.957s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/GearReject.idl
+[30.985s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/GearReport.idl
+[31.000s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/SteeringCmd.idl
+[31.043s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/SteeringReport.idl
+[31.068s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/ThrottleCmd.idl
+[31.096s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/ThrottleReport.idl
+[31.105s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/WatchdogCounter.idl
+[31.125s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/BrakeCmd.msg
+[31.150s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/BrakeReport.msg
+[31.205s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/GearCmd.msg
+[31.228s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/Gear.msg
+[31.242s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/GearReject.msg
+[31.253s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/GearReport.msg
+[31.270s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/SteeringCmd.msg
+[31.286s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/SteeringReport.msg
+[31.310s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/ThrottleCmd.msg
+[31.345s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/ThrottleReport.msg
+[31.393s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/msg/WatchdogCounter.msg
+[31.396s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/ament_index/resource_index/package_run_dependencies/dbw_polaris_msgs
+[31.408s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/ament_index/resource_index/parent_prefix_path/dbw_polaris_msgs
+[31.433s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/environment/ament_prefix_path.sh
+[31.456s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/environment/ament_prefix_path.dsv
+[31.471s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/environment/path.sh
+[31.484s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/environment/path.dsv
+[31.509s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/local_setup.bash
+[31.521s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/local_setup.sh
+[31.531s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/local_setup.zsh
+[31.545s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/local_setup.dsv
+[31.568s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/package.dsv
+[31.596s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/ament_index/resource_index/packages/dbw_polaris_msgs
+[31.620s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/rosidl_cmake-extras.cmake
+[31.634s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[31.644s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[31.669s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[31.683s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[31.698s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[31.709s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[31.747s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/dbw_polaris_msgsConfig.cmake
+[31.759s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/dbw_polaris_msgsConfig-version.cmake
+[31.778s] -- Symlinking: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/package.xml
+[31.812s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_generator_c.so
+[31.812s] -- Set runtime path of "/home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_generator_c.so" to ""
+[31.812s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_typesupport_fastrtps_c.so
+[31.812s] -- Set runtime path of "/home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[31.812s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_typesupport_introspection_c.so
+[31.813s] -- Set runtime path of "/home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_typesupport_introspection_c.so" to ""
+[31.813s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_typesupport_c.so
+[31.813s] -- Set runtime path of "/home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_typesupport_c.so" to ""
+[31.813s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.so
+[31.813s] -- Set runtime path of "/home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[31.813s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_typesupport_introspection_cpp.so
+[31.813s] -- Set runtime path of "/home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[31.813s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_typesupport_cpp.so
+[31.814s] -- Set runtime path of "/home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_typesupport_cpp.so" to ""
+[31.874s] Listing '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs'...
+[31.874s] Compiling '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/__init__.py'...
+[31.875s] Listing '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg'...
+[31.875s] Compiling '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/__init__.py'...
+[31.875s] Compiling '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_brake_cmd.py'...
+[31.875s] Compiling '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_brake_report.py'...
+[31.875s] Compiling '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_gear.py'...
+[31.875s] Compiling '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_gear_cmd.py'...
+[31.875s] Compiling '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_gear_reject.py'...
+[31.875s] Compiling '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_gear_report.py'...
+[31.875s] Compiling '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_steering_cmd.py'...
+[31.875s] Compiling '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_steering_report.py'...
+[31.876s] Compiling '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_throttle_cmd.py'...
+[31.876s] Compiling '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_throttle_report.py'...
+[31.876s] Compiling '/home/zhijie/autoware/install/dbw_polaris_msgs/local/lib/python3.10/dist-packages/dbw_polaris_msgs/msg/_watchdog_counter.py'...
+[31.882s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_generator_py.so
+[31.883s] -- Set runtime path of "/home/zhijie/autoware/install/dbw_polaris_msgs/lib/libdbw_polaris_msgs__rosidl_generator_py.so" to ""
+[31.883s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/export_dbw_polaris_msgs__rosidl_generator_cExport.cmake
+[31.883s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/export_dbw_polaris_msgs__rosidl_generator_cExport-release.cmake
+[31.883s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/export_dbw_polaris_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[31.883s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/export_dbw_polaris_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[31.883s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/dbw_polaris_msgs__rosidl_typesupport_introspection_cExport.cmake
+[31.883s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/dbw_polaris_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[31.884s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/dbw_polaris_msgs__rosidl_typesupport_cExport.cmake
+[31.884s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/dbw_polaris_msgs__rosidl_typesupport_cExport-release.cmake
+[31.884s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/export_dbw_polaris_msgs__rosidl_generator_cppExport.cmake
+[31.884s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/export_dbw_polaris_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[31.884s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/export_dbw_polaris_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[31.884s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/dbw_polaris_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[31.885s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/dbw_polaris_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[31.885s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/dbw_polaris_msgs__rosidl_typesupport_cppExport.cmake
+[31.885s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/dbw_polaris_msgs__rosidl_typesupport_cppExport-release.cmake
+[31.885s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/export_dbw_polaris_msgs__rosidl_generator_pyExport.cmake
+[31.885s] -- Installing: /home/zhijie/autoware/install/dbw_polaris_msgs/share/dbw_polaris_msgs/cmake/export_dbw_polaris_msgs__rosidl_generator_pyExport-release.cmake
+[31.902s] Invoked command in '/home/zhijie/autoware/build/dbw_polaris_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/dbw_polaris_msgs

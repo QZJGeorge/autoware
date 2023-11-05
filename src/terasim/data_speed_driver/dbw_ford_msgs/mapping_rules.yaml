@@ -1,0 +1,153 @@
+# This file defines mappings between ROS 1 and ROS 2 interfaces.
+# It is used with the ros1_bridge to allow for communcation between ROS 1 and ROS 2.
+
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'AmbientLight'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'AmbientLight'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'BrakeCmd'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'BrakeCmd'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'BrakeInfoReport'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'BrakeInfoReport'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'BrakeReport'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'BrakeReport'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'DriverAssistReport'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'DriverAssistReport'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'FuelLevelReport'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'FuelLevelReport'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'GearCmd'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'GearCmd'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'Gear'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'Gear'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'GearNum'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'GearNum'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'GearReject'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'GearReject'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'GearReport'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'GearReport'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'HillStartAssist'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'HillStartAssist'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'Ignition'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'Ignition'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'Misc1Report'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'Misc1Report'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'ParkingBrake'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'ParkingBrake'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'QualityFactor'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'QualityFactor'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'SteeringCmd'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'SteeringCmd'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'SteeringReport'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'SteeringReport'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'SurroundReport'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'SurroundReport'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'ThrottleCmd'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'ThrottleCmd'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'ThrottleInfoReport'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'ThrottleInfoReport'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'ThrottleReport'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'ThrottleReport'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'TirePressureReport'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'TirePressureReport'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'TurnSignalCmd'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'MiscCmd'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'TurnSignal'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'TurnSignal'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'TwistCmd'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'TwistCmd'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'WatchdogCounter'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'WatchdogCounter'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'WheelPositionReport'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'WheelPositionReport'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'WheelSpeedReport'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'WheelSpeedReport'
+-
+  ros1_package_name: 'dbw_mkz_msgs'
+  ros1_message_name: 'Wiper'
+  ros2_package_name: 'dbw_ford_msgs'
+  ros2_message_name: 'Wiper'

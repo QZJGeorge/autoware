@@ -1,0 +1,141 @@
+[0.029s] Invoking command in '/home/zhijie/autoware/build/mcity_terasim': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dummy_perception_publisher:/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/dbw_ford_msgs:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/autoware_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_common_msgs:/home/zhijie/autoware/install/autoware_auto_system_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/home/zhijie/autoware/install/autoware_auto_control_msgs:/home/zhijie/autoware/install/autoware_adapi_v1_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dummy_perception_publisher:/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/dbw_ford_msgs:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/autoware_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_common_msgs:/home/zhijie/autoware/install/autoware_auto_system_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/home/zhijie/autoware/install/autoware_auto_control_msgs:/home/zhijie/autoware/install/autoware_adapi_v1_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dummy_perception_publisher/lib:/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/tier4_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/tier4_system_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/dbw_ford_msgs/lib:/home/zhijie/autoware/install/dataspeed_ulc_msgs/lib:/home/zhijie/autoware/install/autoware_perception_msgs/lib:/home/zhijie/autoware/install/autoware_common_msgs/lib:/home/zhijie/autoware/install/autoware_auto_system_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:/home/zhijie/autoware/install/autoware_auto_control_msgs/lib:/home/zhijie/autoware/install/autoware_adapi_v1_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dummy_perception_publisher/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dbw_ford_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_ulc_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_adapi_v1_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/mcity_terasim -- -j16 -l16
+[0.050s] -- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[0.161s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.234s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.236s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.241s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.249s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.261s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.354s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.356s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.378s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.497s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.498s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.242s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.266s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[3.483s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.486s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.595s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.599s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.603s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.702s] -- Found Qhull version 8.0.2
+[3.809s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.372s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.471s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.472s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.473s] -- Configured cppcheck include dirs: /home/zhijie/autoware/src/terasim/mcity_terasim/include
+[5.473s] -- Configured cppcheck exclude dirs and/or files: 
+[5.474s] -- Added test 'lint_cmake' to check CMake code style
+[5.474s] -- Added test 'xmllint' to check XML markup files
+[5.476s] -- Configuring done
+[5.589s] -- Generating done
+[5.592s] -- Build files have been written to: /home/zhijie/autoware/build/mcity_terasim
+[5.619s] [35m[1mConsolidate compiler generated dependencies of target traffic_signal_control[0m
+[5.619s] [35m[1mConsolidate compiler generated dependencies of target cav_context_converter[0m
+[5.619s] [35m[1mConsolidate compiler generated dependencies of target traffic_signal_control_component[0m
+[5.619s] [35m[1mConsolidate compiler generated dependencies of target gnss_to_pose_twist[0m
+[5.621s] [35m[1mConsolidate compiler generated dependencies of target cav_info_converter[0m
+[5.622s] [35m[1mConsolidate compiler generated dependencies of target sumo_autoware_cosim[0m
+[5.622s] [35m[1mConsolidate compiler generated dependencies of target cav_context_replay[0m
+[5.623s] [35m[1mConsolidate compiler generated dependencies of target gnss_to_dummy_pose_twist[0m
+[5.628s] [  3%] [32mBuilding CXX object CMakeFiles/dbw_ulc_converter.dir/rclcpp_components/node_main_dbw_ulc_converter.cpp.o[0m
+[5.634s] [  9%] Built target traffic_signal_control_component
+[5.634s] [ 15%] Built target gnss_to_pose_twist
+[5.635s] [ 21%] Built target traffic_signal_control
+[5.635s] [ 28%] Built target cav_context_converter
+[5.636s] [ 34%] Built target cav_info_converter
+[5.637s] [ 46%] Built target cav_context_replay
+[5.637s] [ 46%] Built target gnss_to_dummy_pose_twist
+[5.641s] [ 53%] Built target sumo_autoware_cosim
+[5.642s] [35m[1mConsolidate compiler generated dependencies of target cav_info_converter_component[0m
+[5.657s] [ 59%] Built target cav_info_converter_component
+[5.666s] [35m[1mConsolidate compiler generated dependencies of target cav_context_converter_component[0m
+[5.684s] [ 65%] Built target cav_context_converter_component
+[5.693s] [35m[1mConsolidate compiler generated dependencies of target cav_context_replay_component[0m
+[5.707s] [ 71%] Built target cav_context_replay_component
+[5.716s] [35m[1mConsolidate compiler generated dependencies of target sumo_autoware_cosim_component[0m
+[5.730s] [ 78%] Built target sumo_autoware_cosim_component
+[5.738s] [35m[1mConsolidate compiler generated dependencies of target gnss_to_pose_twist_component[0m
+[5.752s] [ 84%] Built target gnss_to_pose_twist_component
+[5.761s] [35m[1mConsolidate compiler generated dependencies of target gnss_to_dummy_pose_twist_component[0m
+[5.775s] [ 90%] Built target gnss_to_dummy_pose_twist_component
+[5.791s] [ 93%] [32mBuilding CXX object CMakeFiles/dbw_ulc_converter_component.dir/src/dbw_ulc_converter.cpp.o[0m
+[7.573s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:34:51:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kautoware_auto_vehicle_msgs::msg::SteeringReport dbw_ulc_converter::DbwUlcConverter::get_steer_msg(float)[m[K’
+[7.573s]    34 |   autoware_auto_vehicle_msgs::msg::SteeringReport [01;31m[KDbwUlcConverter[m[K::get_steer_msg(float steering_tire_angle){
+[7.573s]       |                                                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.573s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:34:51:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kautoware_auto_vehicle_msgs::msg::SteeringReport dbw_ulc_converter::DbwUlcConverter::get_steer_msg(float)[m[K’
+[7.573s] In file included from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:15[m[K:
+[7.573s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/include/dbw_ulc_converter.hpp:37:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dbw_ulc_converter::DbwUlcConverter[m[K’ defined here
+[7.573s]    37 | class [01;36m[KDbwUlcConverter[m[K : public rclcpp::Node
+[7.573s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[7.573s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:41:10:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdataspeed_ulc_msgs::msg::UlcCmd dbw_ulc_converter::DbwUlcConverter::get_ulc_cmd(float, float)[m[K’
+[7.573s]    41 |   UlcCmd [01;31m[KDbwUlcConverter[m[K::get_ulc_cmd(float speed, float steering_wheel_angle){
+[7.573s]       |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.573s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:41:10:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kdataspeed_ulc_msgs::msg::UlcCmd dbw_ulc_converter::DbwUlcConverter::get_ulc_cmd(float, float)[m[K’
+[7.573s] In file included from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:15[m[K:
+[7.573s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/include/dbw_ulc_converter.hpp:37:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dbw_ulc_converter::DbwUlcConverter[m[K’ defined here
+[7.574s]    37 | class [01;36m[KDbwUlcConverter[m[K : public rclcpp::Node
+[7.574s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[7.578s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:[m[K In function ‘[01m[Kvoid dbw_ulc_converter::steer_callback(dbw_ford_msgs::msg::SteeringReport_<std::allocator<void> >::SharedPtr)[m[K’:
+[7.578s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:63:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksaved_steer_msg[m[K’ was not declared in this scope
+[7.578s]    63 |     [01;31m[Ksaved_steer_msg[m[K = *msg;
+[7.578s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.581s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:64:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksteer_status[m[K’ was not declared in this scope; did you mean ‘[01m[Ksi_status[m[K’?
+[7.581s]    64 |     [01;31m[Ksteer_status[m[K = true;
+[7.581s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[7.581s]       |     [32m[Ksi_status[m[K
+[7.587s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:[m[K In function ‘[01m[Kvoid dbw_ulc_converter::control_cmd_callback(autoware_auto_control_msgs::msg::AckermannControlCommand_<std::allocator<void> >::SharedPtr)[m[K’:
+[7.587s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:68:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksaved_control_cmd_msg[m[K’ was not declared in this scope
+[7.587s]    68 |     [01;31m[Ksaved_control_cmd_msg[m[K = *msg;
+[7.587s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[7.590s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:69:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_status[m[K’ was not declared in this scope
+[7.590s]    69 |     [01;31m[Kcontrol_status[m[K = true;
+[7.590s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.593s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:[m[K In function ‘[01m[Kvoid dbw_ulc_converter::on_timer()[m[K’:
+[7.593s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:73:10:[m[K [01;31m[Kerror: [m[K‘[01m[Ksteer_status[m[K’ was not declared in this scope; did you mean ‘[01m[Ksi_status[m[K’?
+[7.593s]    73 |     if (![01;31m[Ksteer_status[m[K || !control_status){
+[7.593s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[7.593s]       |          [32m[Ksi_status[m[K
+[7.596s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:73:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_status[m[K’ was not declared in this scope
+[7.596s]    73 |     if (!steer_status || ![01;31m[Kcontrol_status[m[K){
+[7.596s]       |                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.599s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:77:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksteer_status[m[K’ was not declared in this scope; did you mean ‘[01m[Ksi_status[m[K’?
+[7.599s]    77 |     [01;31m[Ksteer_status[m[K = false;
+[7.599s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[7.599s]       |     [32m[Ksi_status[m[K
+[7.602s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:78:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_status[m[K’ was not declared in this scope
+[7.602s]    78 |     [01;31m[Kcontrol_status[m[K = false;
+[7.602s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.606s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:80:20:[m[K [01;31m[Kerror: [m[K‘[01m[Ksaved_control_cmd_msg[m[K’ was not declared in this scope
+[7.606s]    80 |     double speed = [01;31m[Ksaved_control_cmd_msg[m[K.LongitudinalCommand.speed;
+[7.606s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[7.609s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:81:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ksaved_steer_msg[m[K’ was not declared in this scope
+[7.609s]    81 |     double steering_tire_angle = [01;31m[Ksaved_steer_msg[m[K.steering_wheel_angle / 12.0;
+[7.609s]       |                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.612s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:83:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_steer_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Ksteer_msg[m[K’?
+[7.612s]    83 |     auto steer_msg = [01;31m[Kget_steer_msg[m[K(steering_tire_angle);
+[7.612s]       |                      [01;31m[K^~~~~~~~~~~~~[m[K
+[7.612s]       |                      [32m[Ksteer_msg[m[K
+[7.613s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:84:36:[m[K [01;31m[Kerror: [m[K‘[01m[Ksspeed[m[K’ was not declared in this scope; did you mean ‘[01m[Kspeed[m[K’?
+[7.613s]    84 |     auto ulc_cmd_msg = get_ulc_cmd([01;31m[Ksspeed[m[K, steering_tire_angle);
+[7.613s]       |                                    [01;31m[K^~~~~~[m[K
+[7.613s]       |                                    [32m[Kspeed[m[K
+[7.616s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:84:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_ulc_cmd[m[K’ was not declared in this scope
+[7.616s]    84 |     auto ulc_cmd_msg = [01;31m[Kget_ulc_cmd[m[K(sspeed, steering_tire_angle);
+[7.616s]       |                        [01;31m[K^~~~~~~~~~~[m[K
+[7.618s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:86:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_steer[m[K’ was not declared in this scope
+[7.618s]    86 |     [01;31m[Kpub_steer[m[K->publish(steer_msg);
+[7.618s]       |     [01;31m[K^~~~~~~~~[m[K
+[7.620s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_ulc_cmd[m[K’ was not declared in this scope
+[7.620s]    87 |     [01;31m[Kpub_ulc_cmd[m[K->publish(ulc_cmd_msg);
+[7.620s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[7.620s] [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:80:12:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kspeed[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+[7.620s]    80 |     double [01;31m[Kspeed[m[K = saved_control_cmd_msg.LongitudinalCommand.speed;
+[7.620s]       |            [01;31m[K^~~~~[m[K
+[8.055s] [ 96%] [32m[1mLinking CXX executable dbw_ulc_converter[0m
+[8.125s] [ 96%] Built target dbw_ulc_converter
+[9.929s] cc1plus: all warnings being treated as errors
+[9.951s] gmake[2]: *** [CMakeFiles/dbw_ulc_converter_component.dir/build.make:76: CMakeFiles/dbw_ulc_converter_component.dir/src/dbw_ulc_converter.cpp.o] Error 1
+[9.951s] gmake[1]: *** [CMakeFiles/Makefile2:552: CMakeFiles/dbw_ulc_converter_component.dir/all] Error 2
+[9.952s] gmake: *** [Makefile:146: all] Error 2
+[9.954s] Invoked command in '/home/zhijie/autoware/build/mcity_terasim' returned '2': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dummy_perception_publisher:/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/dbw_ford_msgs:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/autoware_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_common_msgs:/home/zhijie/autoware/install/autoware_auto_system_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/home/zhijie/autoware/install/autoware_auto_control_msgs:/home/zhijie/autoware/install/autoware_adapi_v1_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dummy_perception_publisher:/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/dbw_ford_msgs:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/autoware_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_common_msgs:/home/zhijie/autoware/install/autoware_auto_system_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/home/zhijie/autoware/install/autoware_auto_control_msgs:/home/zhijie/autoware/install/autoware_adapi_v1_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dummy_perception_publisher/lib:/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/tier4_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/tier4_system_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/dbw_ford_msgs/lib:/home/zhijie/autoware/install/dataspeed_ulc_msgs/lib:/home/zhijie/autoware/install/autoware_perception_msgs/lib:/home/zhijie/autoware/install/autoware_common_msgs/lib:/home/zhijie/autoware/install/autoware_auto_system_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:/home/zhijie/autoware/install/autoware_auto_control_msgs/lib:/home/zhijie/autoware/install/autoware_adapi_v1_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dummy_perception_publisher/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dbw_ford_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_ulc_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_adapi_v1_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/mcity_terasim -- -j16 -l16

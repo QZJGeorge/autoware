@@ -1,0 +1,26 @@
+[0.392s] Invoking command in '/home/zhijie/autoware/build/awsim_sensor_kit_description': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/awsim_sensor_kit_description -- -j16 -l16
+[0.493s] Invoked command in '/home/zhijie/autoware/build/awsim_sensor_kit_description' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/awsim_sensor_kit_description -- -j16 -l16
+[0.599s] Invoking command in '/home/zhijie/autoware/build/awsim_sensor_kit_description': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/awsim_sensor_kit_description
+[0.649s] -- Install configuration: "Release"
+[0.650s] -- Execute custom install script
+[0.652s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/urdf/sensor_kit.xacro
+[0.656s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/urdf/sensors.xacro
+[0.656s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/config/sensor_kit_calibration.yaml
+[0.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/config/sensors_calibration.yaml
+[0.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/ament_index/resource_index/package_run_dependencies/awsim_sensor_kit_description
+[0.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/ament_index/resource_index/parent_prefix_path/awsim_sensor_kit_description
+[0.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/environment/ament_prefix_path.sh
+[0.657s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/environment/ament_prefix_path.dsv
+[0.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/environment/path.sh
+[0.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/environment/path.dsv
+[0.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/local_setup.bash
+[0.658s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/local_setup.sh
+[0.660s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/local_setup.zsh
+[0.660s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/local_setup.dsv
+[0.660s] -- Symlinking: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/package.dsv
+[0.668s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/ament_index/resource_index/packages/awsim_sensor_kit_description
+[0.670s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.671s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/cmake/awsim_sensor_kit_descriptionConfig.cmake
+[0.671s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/cmake/awsim_sensor_kit_descriptionConfig-version.cmake
+[0.675s] -- Up-to-date symlink: /home/zhijie/autoware/install/awsim_sensor_kit_description/share/awsim_sensor_kit_description/package.xml
+[0.729s] Invoked command in '/home/zhijie/autoware/build/awsim_sensor_kit_description' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/awsim_sensor_kit_description

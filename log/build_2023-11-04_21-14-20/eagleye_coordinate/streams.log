@@ -1,0 +1,32 @@
+[0.069s] Invoking command in '/home/zhijie/autoware/build/eagleye_coordinate': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/eagleye_coordinate -- -j16 -l16
+[0.236s] [35m[1mConsolidate compiler generated dependencies of target eagleye_coordinate[0m
+[0.299s] [100%] Built target eagleye_coordinate
+[0.341s] Invoked command in '/home/zhijie/autoware/build/eagleye_coordinate' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/eagleye_coordinate -- -j16 -l16
+[0.874s] Invoking command in '/home/zhijie/autoware/build/eagleye_coordinate': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/eagleye_coordinate
+[0.884s] -- Install configuration: "Release"
+[0.884s] -- Execute custom install script
+[0.885s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/include/eagleye_coordinate/eagleye_coordinate.hpp
+[0.886s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/environment/library_path.sh
+[0.887s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/environment/library_path.dsv
+[0.888s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate//libeagleye_coordinate.so
+[0.888s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/include/eagleye_coordinate/eagleye_coordinate.hpp
+[0.898s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/lib/libeagleye_coordinate.so
+[0.901s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/ament_index/resource_index/package_run_dependencies/eagleye_coordinate
+[0.903s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/ament_index/resource_index/parent_prefix_path/eagleye_coordinate
+[0.903s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/environment/ament_prefix_path.sh
+[0.903s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/environment/ament_prefix_path.dsv
+[0.905s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/environment/path.sh
+[0.905s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/environment/path.dsv
+[0.906s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/local_setup.bash
+[0.906s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/local_setup.sh
+[0.910s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/local_setup.zsh
+[0.910s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/local_setup.dsv
+[0.911s] -- Symlinking: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/package.dsv
+[0.922s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/ament_index/resource_index/packages/eagleye_coordinate
+[0.923s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.923s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/cmake/ament_cmake_export_libraries-extras.cmake
+[0.924s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.924s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/cmake/eagleye_coordinateConfig.cmake
+[0.925s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/cmake/eagleye_coordinateConfig-version.cmake
+[0.925s] -- Up-to-date symlink: /home/zhijie/autoware/install/eagleye_coordinate/share/eagleye_coordinate/package.xml
+[0.985s] Invoked command in '/home/zhijie/autoware/build/eagleye_coordinate' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/eagleye_coordinate

@@ -1,0 +1,30 @@
+[0.098s] Invoking command in '/home/zhijie/autoware/build/rtklib_bridge': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/rtklib_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/rtklib_bridge -- -j16 -l16
+[0.152s] [35m[1mConsolidate compiler generated dependencies of target rtklib_bridge[0m
+[0.176s] [100%] Built target rtklib_bridge
+[0.245s] Invoked command in '/home/zhijie/autoware/build/rtklib_bridge' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/rtklib_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/rtklib_bridge -- -j16 -l16
+[0.319s] Invoking command in '/home/zhijie/autoware/build/rtklib_bridge': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/rtklib_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/rtklib_bridge
+[0.331s] -- Install configuration: "Release"
+[0.342s] -- Execute custom install script
+[0.342s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/lib/rtklib_bridge/rtklib_bridge
+[0.344s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/param/param.yaml
+[0.345s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/launch/rtklib_bridge.launch.xml
+[0.348s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/include/hgeoid.hpp
+[0.349s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/lib/rtklib_bridge/rtklib_bridge
+[0.355s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/ament_index/resource_index/package_run_dependencies/rtklib_bridge
+[0.356s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/ament_index/resource_index/parent_prefix_path/rtklib_bridge
+[0.366s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/environment/ament_prefix_path.sh
+[0.368s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/environment/ament_prefix_path.dsv
+[0.368s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/environment/path.sh
+[0.370s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/environment/path.dsv
+[0.371s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/local_setup.bash
+[0.371s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/local_setup.sh
+[0.371s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/local_setup.zsh
+[0.374s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/local_setup.dsv
+[0.374s] -- Symlinking: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/package.dsv
+[0.383s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/ament_index/resource_index/packages/rtklib_bridge
+[0.384s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.384s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.385s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/cmake/rtklib_bridgeConfig.cmake
+[0.385s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/cmake/rtklib_bridgeConfig-version.cmake
+[0.388s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_bridge/share/rtklib_bridge/package.xml
+[0.437s] Invoked command in '/home/zhijie/autoware/build/rtklib_bridge' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/rtklib_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/rtklib_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/rtklib_bridge

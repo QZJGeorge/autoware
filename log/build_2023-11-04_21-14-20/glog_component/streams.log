@@ -1,0 +1,34 @@
+[0.236s] Invoking command in '/home/zhijie/autoware/build/glog_component': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/glog_component -- -j16 -l16
+[0.404s] [35m[1mConsolidate compiler generated dependencies of target glog_component[0m
+[0.458s] [ 50%] Built target glog_component
+[0.512s] [35m[1mConsolidate compiler generated dependencies of target glog_component_node[0m
+[0.555s] [100%] Built target glog_component_node
+[0.576s] Invoked command in '/home/zhijie/autoware/build/glog_component' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/glog_component -- -j16 -l16
+[0.968s] Invoking command in '/home/zhijie/autoware/build/glog_component': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/glog_component
+[0.998s] -- Install configuration: "Release"
+[0.998s] -- Execute custom install script
+[0.999s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/lib/glog_component/glog_component_node
+[0.999s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/include/glog_component/glog_component.hpp
+[1.008s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/environment/library_path.sh
+[1.008s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/environment/library_path.dsv
+[1.008s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/lib/libglog_component.so
+[1.009s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/ament_index/resource_index/package_run_dependencies/glog_component
+[1.009s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/ament_index/resource_index/parent_prefix_path/glog_component
+[1.009s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/environment/ament_prefix_path.sh
+[1.009s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/environment/ament_prefix_path.dsv
+[1.009s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/environment/path.sh
+[1.009s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/environment/path.dsv
+[1.009s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/local_setup.bash
+[1.009s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/local_setup.sh
+[1.009s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/local_setup.zsh
+[1.010s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/local_setup.dsv
+[1.010s] -- Symlinking: /home/zhijie/autoware/install/glog_component/share/glog_component/package.dsv
+[1.016s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/ament_index/resource_index/packages/glog_component
+[1.016s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/ament_index/resource_index/rclcpp_components/glog_component
+[1.017s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.017s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.017s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/cmake/ament_cmake_export_libraries-extras.cmake
+[1.017s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/cmake/glog_componentConfig.cmake
+[1.018s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/cmake/glog_componentConfig-version.cmake
+[1.018s] -- Up-to-date symlink: /home/zhijie/autoware/install/glog_component/share/glog_component/package.xml
+[1.154s] Invoked command in '/home/zhijie/autoware/build/glog_component' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/glog_component

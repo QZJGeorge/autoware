@@ -1,0 +1,33 @@
+[35m[1mConsolidate compiler generated dependencies of target traffic_light_occlusion_predictor[0m
+[ 60%] Built target traffic_light_occlusion_predictor
+[35m[1mConsolidate compiler generated dependencies of target traffic_light_occlusion_predictor_node[0m
+[100%] Built target traffic_light_occlusion_predictor_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/lib/traffic_light_occlusion_predictor/traffic_light_occlusion_predictor_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/include/traffic_light_occlusion_predictor/nodelet.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/include/traffic_light_occlusion_predictor/occlusion_predictor.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/lib/libtraffic_light_occlusion_predictor.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/config/traffic_light_occlusion_predictor.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/launch/traffic_light_occlusion_predictor.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/ament_index/resource_index/package_run_dependencies/traffic_light_occlusion_predictor
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/ament_index/resource_index/parent_prefix_path/traffic_light_occlusion_predictor
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/ament_index/resource_index/packages/traffic_light_occlusion_predictor
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/ament_index/resource_index/rclcpp_components/traffic_light_occlusion_predictor
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/cmake/traffic_light_occlusion_predictorConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/cmake/traffic_light_occlusion_predictorConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_occlusion_predictor/share/traffic_light_occlusion_predictor/package.xml

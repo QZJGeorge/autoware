@@ -1,0 +1,33 @@
+[35m[1mConsolidate compiler generated dependencies of target radar_object_fusion_to_detected_object_node_component[0m
+[ 60%] Built target radar_object_fusion_to_detected_object_node_component
+[35m[1mConsolidate compiler generated dependencies of target radar_object_fusion_to_detected_object_node[0m
+[100%] Built target radar_object_fusion_to_detected_object_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/lib/radar_fusion_to_detected_object/radar_object_fusion_to_detected_object_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/include/radar_fusion_to_detected_object.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/include/radar_object_fusion_to_detected_object/radar_object_fusion_to_detected_object_node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/lib/libradar_object_fusion_to_detected_object_node_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/config/radar_object_fusion_to_detected_object.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/launch/radar_object_fusion_to_detected_object.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/ament_index/resource_index/package_run_dependencies/radar_fusion_to_detected_object
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/ament_index/resource_index/parent_prefix_path/radar_fusion_to_detected_object
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/ament_index/resource_index/packages/radar_fusion_to_detected_object
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/ament_index/resource_index/rclcpp_components/radar_fusion_to_detected_object
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/cmake/radar_fusion_to_detected_objectConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/cmake/radar_fusion_to_detected_objectConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_fusion_to_detected_object/share/radar_fusion_to_detected_object/package.xml

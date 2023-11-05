@@ -1,0 +1,35 @@
+[0.138s] Invoking command in '/home/zhijie/autoware/build/rtc_replayer': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_rtc_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_rtc_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_rtc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_rtc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/rtc_replayer -- -j16 -l16
+[0.165s] [35m[1mConsolidate compiler generated dependencies of target rtc_replayer[0m
+[0.184s] [ 50%] Built target rtc_replayer
+[0.199s] [35m[1mConsolidate compiler generated dependencies of target rtc_replayer_node[0m
+[0.216s] [100%] Built target rtc_replayer_node
+[0.285s] Invoked command in '/home/zhijie/autoware/build/rtc_replayer' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_rtc_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_rtc_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_rtc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_rtc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/rtc_replayer -- -j16 -l16
+[0.389s] Invoking command in '/home/zhijie/autoware/build/rtc_replayer': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_rtc_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_rtc_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_rtc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_rtc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/rtc_replayer
+[0.397s] -- Install configuration: "Release"
+[0.400s] -- Execute custom install script
+[0.400s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/lib/rtc_replayer/rtc_replayer_node
+[0.400s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/include/rtc_replayer/rtc_replayer_node.hpp
+[0.401s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/environment/library_path.sh
+[0.401s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/environment/library_path.dsv
+[0.401s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/lib/librtc_replayer.so
+[0.403s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/launch/rtc_replayer.launch.xml
+[0.404s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/ament_index/resource_index/package_run_dependencies/rtc_replayer
+[0.407s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/ament_index/resource_index/parent_prefix_path/rtc_replayer
+[0.407s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/environment/ament_prefix_path.sh
+[0.407s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/environment/ament_prefix_path.dsv
+[0.408s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/environment/path.sh
+[0.408s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/environment/path.dsv
+[0.408s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/local_setup.bash
+[0.408s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/local_setup.sh
+[0.409s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/local_setup.zsh
+[0.409s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/local_setup.dsv
+[0.409s] -- Symlinking: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/package.dsv
+[0.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/ament_index/resource_index/packages/rtc_replayer
+[0.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/ament_index/resource_index/rclcpp_components/rtc_replayer
+[0.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/cmake/ament_cmake_export_libraries-extras.cmake
+[0.419s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/cmake/rtc_replayerConfig.cmake
+[0.419s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/cmake/rtc_replayerConfig-version.cmake
+[0.419s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtc_replayer/share/rtc_replayer/package.xml
+[0.465s] Invoked command in '/home/zhijie/autoware/build/rtc_replayer' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_rtc_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_rtc_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_rtc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_rtc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/rtc_replayer

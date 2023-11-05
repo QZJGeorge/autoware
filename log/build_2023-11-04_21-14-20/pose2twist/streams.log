@@ -1,0 +1,28 @@
+[0.146s] Invoking command in '/home/zhijie/autoware/build/pose2twist': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_debug_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/pose2twist -- -j16 -l16
+[0.241s] [35m[1mConsolidate compiler generated dependencies of target pose2twist[0m
+[0.278s] [100%] Built target pose2twist
+[0.304s] Invoked command in '/home/zhijie/autoware/build/pose2twist' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_debug_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/pose2twist -- -j16 -l16
+[0.396s] Invoking command in '/home/zhijie/autoware/build/pose2twist': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_debug_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/pose2twist
+[0.461s] -- Install configuration: "Release"
+[0.461s] -- Execute custom install script
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/include/pose2twist/pose2twist_core.hpp
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/lib/pose2twist/pose2twist
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/launch/pose2twist.launch.xml
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/ament_index/resource_index/package_run_dependencies/pose2twist
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/ament_index/resource_index/parent_prefix_path/pose2twist
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/environment/ament_prefix_path.sh
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/environment/ament_prefix_path.dsv
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/environment/path.sh
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/environment/path.dsv
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/local_setup.bash
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/local_setup.sh
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/local_setup.zsh
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/local_setup.dsv
+[0.462s] -- Symlinking: /home/zhijie/autoware/install/pose2twist/share/pose2twist/package.dsv
+[0.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/ament_index/resource_index/packages/pose2twist
+[0.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/cmake/pose2twistConfig.cmake
+[0.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/cmake/pose2twistConfig-version.cmake
+[0.463s] -- Up-to-date symlink: /home/zhijie/autoware/install/pose2twist/share/pose2twist/package.xml
+[0.526s] Invoked command in '/home/zhijie/autoware/build/pose2twist' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_debug_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/pose2twist

@@ -1,0 +1,38 @@
+[0.182s] Invoking command in '/home/zhijie/autoware/build/osqp_interface': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/osqp_interface -- -j16 -l16
+[0.200s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[0.201s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[0.201s] [35m[1mConsolidate compiler generated dependencies of target osqp_interface[0m
+[0.201s] [ 20%] Built target gtest_main
+[0.202s] [ 40%] Built target gtest
+[0.202s] [ 70%] Built target osqp_interface
+[0.203s] [35m[1mConsolidate compiler generated dependencies of target test_osqp_interface[0m
+[0.207s] [100%] Built target test_osqp_interface
+[0.210s] Invoked command in '/home/zhijie/autoware/build/osqp_interface' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/osqp_interface -- -j16 -l16
+[0.245s] Invoking command in '/home/zhijie/autoware/build/osqp_interface': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/osqp_interface
+[0.257s] -- Install configuration: "Release"
+[0.257s] -- Execute custom install script
+[0.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/environment/library_path.sh
+[0.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/environment/library_path.dsv
+[0.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/include/osqp_interface/csc_matrix_conv.hpp
+[0.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/include/osqp_interface/osqp_interface.hpp
+[0.258s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/include/osqp_interface/visibility_control.hpp
+[0.259s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/lib/libosqp_interface.so
+[0.262s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/ament_index/resource_index/package_run_dependencies/osqp_interface
+[0.263s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/ament_index/resource_index/parent_prefix_path/osqp_interface
+[0.263s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/environment/ament_prefix_path.sh
+[0.264s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/environment/ament_prefix_path.dsv
+[0.266s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/environment/path.sh
+[0.267s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/environment/path.dsv
+[0.268s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/local_setup.bash
+[0.270s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/local_setup.sh
+[0.271s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/local_setup.zsh
+[0.272s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/local_setup.dsv
+[0.272s] -- Symlinking: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/package.dsv
+[0.300s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/ament_index/resource_index/packages/osqp_interface
+[0.301s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.302s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[0.302s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.303s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/cmake/osqp_interfaceConfig.cmake
+[0.303s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/cmake/osqp_interfaceConfig-version.cmake
+[0.303s] -- Up-to-date symlink: /home/zhijie/autoware/install/osqp_interface/share/osqp_interface/package.xml
+[0.398s] Invoked command in '/home/zhijie/autoware/build/osqp_interface' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/osqp_interface

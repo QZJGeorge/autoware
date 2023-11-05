@@ -7,15 +7,10 @@ from launch.launch_description_sources import AnyLaunchDescriptionSource
 
 def generate_launch_description():
     return LaunchDescription([
-        # Node(
-        #     package='mcity_terasim',
-        #     namespace='/terasim',
-        #     executable='gnss_to_pose_twist',
-        # ),
         Node(
             package='mcity_terasim',
             namespace='/terasim',
-            executable='gnss_to_dummy_pose_twist',
+            executable='gnss_to_pose_twist',
         ),
         Node(
             package='tf2_ros',
@@ -40,7 +35,7 @@ def generate_launch_description():
         # ),
         # DeclareLaunchArgument(
         #     'lanelet2_map_file',
-        #     default_value='lanelet2_mcity_v25.osm',
+        #     default_value='lanelet2_mcity_v28.osm',
         #     description='Lanelet2 map file'
         # ),
         # IncludeLaunchDescription(

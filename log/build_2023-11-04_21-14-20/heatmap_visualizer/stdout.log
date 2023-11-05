@@ -1,0 +1,32 @@
+[35m[1mConsolidate compiler generated dependencies of target heatmap_visualizer_component[0m
+[ 60%] Built target heatmap_visualizer_component
+[35m[1mConsolidate compiler generated dependencies of target heatmap_visualizer[0m
+[100%] Built target heatmap_visualizer
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/lib/heatmap_visualizer/heatmap_visualizer
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/include/heatmap_visualizer/heatmap_visualizer_node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/include/heatmap_visualizer/utils.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/lib/libheatmap_visualizer_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/launch/heatmap_visualizer.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/ament_index/resource_index/package_run_dependencies/heatmap_visualizer
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/ament_index/resource_index/parent_prefix_path/heatmap_visualizer
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/ament_index/resource_index/packages/heatmap_visualizer
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/ament_index/resource_index/rclcpp_components/heatmap_visualizer
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/cmake/heatmap_visualizerConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/cmake/heatmap_visualizerConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/heatmap_visualizer/share/heatmap_visualizer/package.xml

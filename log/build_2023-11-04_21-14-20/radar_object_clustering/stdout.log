@@ -1,0 +1,31 @@
+[35m[1mConsolidate compiler generated dependencies of target radar_object_clustering_node_component[0m
+[ 50%] Built target radar_object_clustering_node_component
+[35m[1mConsolidate compiler generated dependencies of target radar_object_clustering_node[0m
+[100%] Built target radar_object_clustering_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/lib/radar_object_clustering/radar_object_clustering_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/include/radar_object_clustering/radar_object_clustering_node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/lib/libradar_object_clustering_node_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/launch/radar_object_clustering.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/ament_index/resource_index/package_run_dependencies/radar_object_clustering
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/ament_index/resource_index/parent_prefix_path/radar_object_clustering
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/ament_index/resource_index/packages/radar_object_clustering
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/ament_index/resource_index/rclcpp_components/radar_object_clustering
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/cmake/radar_object_clusteringConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/cmake/radar_object_clusteringConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/radar_object_clustering/share/radar_object_clustering/package.xml

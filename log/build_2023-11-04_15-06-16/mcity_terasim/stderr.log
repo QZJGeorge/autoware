@@ -1,0 +1,21 @@
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:[m[K In constructor ‘[01m[Kgnss_to_dummy_pose_twist::GnssToDummyPoseTwist::GnssToDummyPoseTwist(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:30:55:[m[K [01;31m[Kerror: [m[K‘[01m[KGnssToPoseTwist[m[K’ has not been declared
+   30 |       "/localization/kinematic_state", 10, std::bind(&[01;31m[KGnssToPoseTwist[m[K::odom_callback, this, std::placeholders::_1));
+      |                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:[m[K At global scope:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:36:3:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kodom_callback[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   36 |   [01;31m[KGnssToDummyPoseTwist[m[K::odom_callback(Odometry::SharedPtr msg){
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:36:3:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kint gnss_to_dummy_pose_twist::GnssToDummyPoseTwist::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:36:3:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kint gnss_to_dummy_pose_twist::GnssToDummyPoseTwist::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’
+In file included from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:15[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/include/gnss_to_dummy_pose_twist.hpp:53:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass gnss_to_dummy_pose_twist::GnssToDummyPoseTwist[m[K’ defined here
+   53 | class [01;36m[KGnssToDummyPoseTwist[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:[m[K In member function ‘[01m[Kvoid gnss_to_dummy_pose_twist::GnssToDummyPoseTwist::pub_localization()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:63:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing PoseWithCovarianceStamped = struct geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktwist[m[K’
+   63 |     pose_with_cov.[01;31m[Ktwist[m[K = saved_odom_msg.twist;
+      |                   [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/gnss_to_dummy_pose_twist_component.dir/build.make:76: CMakeFiles/gnss_to_dummy_pose_twist_component.dir/src/gnss_to_dummy_pose_twist.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:490: CMakeFiles/gnss_to_dummy_pose_twist_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

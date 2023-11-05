@@ -1,0 +1,87 @@
+[0.637s] Invoking command in '/home/zhijie/autoware/build/nebula_ros': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/nebula_hw_interfaces:/home/zhijie/autoware/install/nebula_decoders:/home/zhijie/autoware/install/boost_udp_driver:/home/zhijie/autoware/install/velodyne_msgs:/home/zhijie/autoware/install/pandar_msgs:/home/zhijie/autoware/install/nebula_common:/home/zhijie/autoware/install/boost_tcp_driver:/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/nebula_hw_interfaces:/home/zhijie/autoware/install/nebula_decoders:/home/zhijie/autoware/install/boost_udp_driver:/home/zhijie/autoware/install/velodyne_msgs:/home/zhijie/autoware/install/pandar_msgs:/home/zhijie/autoware/install/nebula_common:/home/zhijie/autoware/install/boost_tcp_driver:/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/nebula_hw_interfaces/lib:/home/zhijie/autoware/install/nebula_decoders/lib:/home/zhijie/autoware/install/boost_udp_driver/lib:/home/zhijie/autoware/install/velodyne_msgs/lib:/home/zhijie/autoware/install/pandar_msgs/lib:/home/zhijie/autoware/install/nebula_common/lib:/home/zhijie/autoware/install/boost_tcp_driver/lib:/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/pandar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/nebula_ros -- -j16 -l16
+[0.949s] [35m[1mConsolidate compiler generated dependencies of target hesai_hw_interface_ros_wrapper_node[0m
+[0.957s] [35m[1mConsolidate compiler generated dependencies of target velodyne_hw_ros_wrapper_node[0m
+[0.960s] [35m[1mConsolidate compiler generated dependencies of target hesai_hw_ros_wrapper[0m
+[0.968s] [35m[1mConsolidate compiler generated dependencies of target hesai_hw_monitor_ros_wrapper_node[0m
+[0.981s] [35m[1mConsolidate compiler generated dependencies of target velodyne_hw_monitor_ros_wrapper_node[0m
+[0.989s] [35m[1mConsolidate compiler generated dependencies of target hesai_driver_ros_wrapper_node[0m
+[1.017s] [35m[1mConsolidate compiler generated dependencies of target velodyne_driver_ros_wrapper_node[0m
+[1.144s] [  8%] Built target hesai_hw_interface_ros_wrapper_node
+[1.156s] [ 16%] Built target hesai_hw_monitor_ros_wrapper_node
+[1.173s] [ 25%] Built target hesai_driver_ros_wrapper_node
+[1.173s] [ 33%] Built target hesai_hw_ros_wrapper
+[1.189s] [ 41%] Built target velodyne_hw_ros_wrapper_node
+[1.204s] [ 50%] Built target velodyne_hw_monitor_ros_wrapper_node
+[1.207s] [ 58%] Built target velodyne_driver_ros_wrapper_node
+[1.265s] [35m[1mConsolidate compiler generated dependencies of target hesai_hw_monitor_ros_wrapper[0m
+[1.392s] [ 66%] Built target hesai_hw_monitor_ros_wrapper
+[1.507s] [35m[1mConsolidate compiler generated dependencies of target hesai_driver_ros_wrapper[0m
+[1.623s] [ 75%] Built target hesai_driver_ros_wrapper
+[1.720s] [35m[1mConsolidate compiler generated dependencies of target velodyne_hw_ros_wrapper[0m
+[1.882s] [ 83%] Built target velodyne_hw_ros_wrapper
+[1.996s] [35m[1mConsolidate compiler generated dependencies of target velodyne_hw_monitor_ros_wrapper[0m
+[2.178s] [ 91%] Built target velodyne_hw_monitor_ros_wrapper
+[2.294s] [35m[1mConsolidate compiler generated dependencies of target velodyne_driver_ros_wrapper[0m
+[2.420s] [100%] Built target velodyne_driver_ros_wrapper
+[2.548s] Invoked command in '/home/zhijie/autoware/build/nebula_ros' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/nebula_hw_interfaces:/home/zhijie/autoware/install/nebula_decoders:/home/zhijie/autoware/install/boost_udp_driver:/home/zhijie/autoware/install/velodyne_msgs:/home/zhijie/autoware/install/pandar_msgs:/home/zhijie/autoware/install/nebula_common:/home/zhijie/autoware/install/boost_tcp_driver:/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/nebula_hw_interfaces:/home/zhijie/autoware/install/nebula_decoders:/home/zhijie/autoware/install/boost_udp_driver:/home/zhijie/autoware/install/velodyne_msgs:/home/zhijie/autoware/install/pandar_msgs:/home/zhijie/autoware/install/nebula_common:/home/zhijie/autoware/install/boost_tcp_driver:/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/nebula_hw_interfaces/lib:/home/zhijie/autoware/install/nebula_decoders/lib:/home/zhijie/autoware/install/boost_udp_driver/lib:/home/zhijie/autoware/install/velodyne_msgs/lib:/home/zhijie/autoware/install/pandar_msgs/lib:/home/zhijie/autoware/install/nebula_common/lib:/home/zhijie/autoware/install/boost_tcp_driver/lib:/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/pandar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/nebula_ros -- -j16 -l16
+[3.864s] Invoking command in '/home/zhijie/autoware/build/nebula_ros': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/nebula_hw_interfaces:/home/zhijie/autoware/install/nebula_decoders:/home/zhijie/autoware/install/boost_udp_driver:/home/zhijie/autoware/install/velodyne_msgs:/home/zhijie/autoware/install/pandar_msgs:/home/zhijie/autoware/install/nebula_common:/home/zhijie/autoware/install/boost_tcp_driver:/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/nebula_hw_interfaces:/home/zhijie/autoware/install/nebula_decoders:/home/zhijie/autoware/install/boost_udp_driver:/home/zhijie/autoware/install/velodyne_msgs:/home/zhijie/autoware/install/pandar_msgs:/home/zhijie/autoware/install/nebula_common:/home/zhijie/autoware/install/boost_tcp_driver:/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/nebula_hw_interfaces/lib:/home/zhijie/autoware/install/nebula_decoders/lib:/home/zhijie/autoware/install/boost_udp_driver/lib:/home/zhijie/autoware/install/velodyne_msgs/lib:/home/zhijie/autoware/install/pandar_msgs/lib:/home/zhijie/autoware/install/nebula_common/lib:/home/zhijie/autoware/install/boost_tcp_driver/lib:/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/pandar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/nebula_ros
+[4.397s] -- Install configuration: "Release"
+[4.397s] -- Execute custom install script
+[4.398s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/lib/nebula_ros/hesai_hw_interface_ros_wrapper_node
+[4.415s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/lib/nebula_ros/hesai_hw_monitor_ros_wrapper_node
+[4.416s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/lib/nebula_ros/hesai_driver_ros_wrapper_node
+[4.416s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/lib/nebula_ros/velodyne_hw_ros_wrapper_node
+[4.416s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/lib/nebula_ros/velodyne_hw_monitor_ros_wrapper_node
+[4.416s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/lib/nebula_ros/velodyne_driver_ros_wrapper_node
+[4.416s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/include/nebula_ros/common/nebula_driver_ros_wrapper_base.hpp
+[4.416s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/include/nebula_ros/common/nebula_hw_interface_ros_wrapper_base.hpp
+[4.416s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/include/nebula_ros/common/nebula_hw_monitor_ros_wrapper_base.hpp
+[4.416s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/include/nebula_ros/hesai/hesai_decoder_ros_wrapper.hpp
+[4.416s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/include/nebula_ros/hesai/hesai_hw_interface_ros_wrapper.hpp
+[4.416s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/include/nebula_ros/hesai/hesai_hw_monitor_ros_wrapper.hpp
+[4.416s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/include/nebula_ros/velodyne/velodyne_decoder_ros_wrapper.hpp
+[4.417s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/include/nebula_ros/velodyne/velodyne_hw_interface_ros_wrapper.hpp
+[4.417s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/include/nebula_ros/velodyne/velodyne_hw_monitor_ros_wrapper.hpp
+[4.417s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/environment/library_path.sh
+[4.417s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/environment/library_path.dsv
+[4.417s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/lib/libhesai_hw_ros_wrapper.so
+[4.417s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/lib/libhesai_hw_monitor_ros_wrapper.so
+[4.417s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/lib/libhesai_driver_ros_wrapper.so
+[4.417s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/lib/libvelodyne_hw_ros_wrapper.so
+[4.417s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/lib/libvelodyne_hw_monitor_ros_wrapper.so
+[4.417s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/lib/libvelodyne_driver_ros_wrapper.so
+[4.417s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/config/BaseParams.yaml
+[4.417s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/config/hesai/Pandar128E4X.yaml
+[4.417s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/config/hesai/Pandar40P.yaml
+[4.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/config/hesai/Pandar64.yaml
+[4.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/config/hesai/PandarAT128.yaml
+[4.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/config/hesai/PandarQT128.yaml
+[4.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/config/hesai/PandarQT64.yaml
+[4.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/config/hesai/PandarXT32.yaml
+[4.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/config/hesai/PandarXT32M.yaml
+[4.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/config/velodyne/VLP16.yaml
+[4.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/config/velodyne/VLP32.yaml
+[4.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/config/velodyne/VLS128.yaml
+[4.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/launch/hesai_launch_all_hw.xml
+[4.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/launch/nebula_launch.py
+[4.418s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/launch/velodyne_launch_all_hw.xml
+[4.419s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/ament_index/resource_index/package_run_dependencies/nebula_ros
+[4.419s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/ament_index/resource_index/parent_prefix_path/nebula_ros
+[4.419s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/environment/ament_prefix_path.sh
+[4.419s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/environment/ament_prefix_path.dsv
+[4.419s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/environment/path.sh
+[4.419s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/environment/path.dsv
+[4.419s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/local_setup.bash
+[4.419s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/local_setup.sh
+[4.419s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/local_setup.zsh
+[4.419s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/local_setup.dsv
+[4.419s] -- Symlinking: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/package.dsv
+[4.420s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/ament_index/resource_index/packages/nebula_ros
+[4.420s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/ament_index/resource_index/rclcpp_components/nebula_ros
+[4.420s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.420s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.420s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/cmake/ament_cmake_export_libraries-extras.cmake
+[4.420s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/cmake/nebula_rosConfig.cmake
+[4.420s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/cmake/nebula_rosConfig-version.cmake
+[4.420s] -- Up-to-date symlink: /home/zhijie/autoware/install/nebula_ros/share/nebula_ros/package.xml
+[4.431s] Invoked command in '/home/zhijie/autoware/build/nebula_ros' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/nebula_hw_interfaces:/home/zhijie/autoware/install/nebula_decoders:/home/zhijie/autoware/install/boost_udp_driver:/home/zhijie/autoware/install/velodyne_msgs:/home/zhijie/autoware/install/pandar_msgs:/home/zhijie/autoware/install/nebula_common:/home/zhijie/autoware/install/boost_tcp_driver:/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/nebula_hw_interfaces:/home/zhijie/autoware/install/nebula_decoders:/home/zhijie/autoware/install/boost_udp_driver:/home/zhijie/autoware/install/velodyne_msgs:/home/zhijie/autoware/install/pandar_msgs:/home/zhijie/autoware/install/nebula_common:/home/zhijie/autoware/install/boost_tcp_driver:/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/nebula_hw_interfaces/lib:/home/zhijie/autoware/install/nebula_decoders/lib:/home/zhijie/autoware/install/boost_udp_driver/lib:/home/zhijie/autoware/install/velodyne_msgs/lib:/home/zhijie/autoware/install/pandar_msgs/lib:/home/zhijie/autoware/install/nebula_common/lib:/home/zhijie/autoware/install/boost_tcp_driver/lib:/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/velodyne_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/pandar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/nebula_ros

@@ -1,0 +1,29 @@
+[0.112s] Invoking command in '/home/zhijie/autoware/build/stop_filter': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_debug_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/stop_filter -- -j16 -l16
+[0.164s] [35m[1mConsolidate compiler generated dependencies of target stop_filter[0m
+[0.188s] [100%] Built target stop_filter
+[0.253s] Invoked command in '/home/zhijie/autoware/build/stop_filter' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_debug_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/stop_filter -- -j16 -l16
+[0.325s] Invoking command in '/home/zhijie/autoware/build/stop_filter': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_debug_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/stop_filter
+[0.337s] -- Install configuration: "Release"
+[0.338s] -- Execute custom install script
+[0.338s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/include/stop_filter/stop_filter.hpp
+[0.338s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/lib/stop_filter/stop_filter
+[0.345s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/launch/stop_filter.launch.xml
+[0.346s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/config/stop_filter.param.yaml
+[0.346s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/ament_index/resource_index/package_run_dependencies/stop_filter
+[0.346s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/ament_index/resource_index/parent_prefix_path/stop_filter
+[0.346s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/environment/ament_prefix_path.sh
+[0.346s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/environment/ament_prefix_path.dsv
+[0.346s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/environment/path.sh
+[0.346s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/environment/path.dsv
+[0.347s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/local_setup.bash
+[0.347s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/local_setup.sh
+[0.347s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/local_setup.zsh
+[0.347s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/local_setup.dsv
+[0.347s] -- Symlinking: /home/zhijie/autoware/install/stop_filter/share/stop_filter/package.dsv
+[0.353s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/ament_index/resource_index/packages/stop_filter
+[0.358s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.359s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.359s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/cmake/stop_filterConfig.cmake
+[0.359s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/cmake/stop_filterConfig-version.cmake
+[0.359s] -- Up-to-date symlink: /home/zhijie/autoware/install/stop_filter/share/stop_filter/package.xml
+[0.423s] Invoked command in '/home/zhijie/autoware/build/stop_filter' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_debug_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/stop_filter

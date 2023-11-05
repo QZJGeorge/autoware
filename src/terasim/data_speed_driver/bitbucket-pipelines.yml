@@ -1,0 +1,39 @@
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: Foxy
+          image: dataspeedinc/ros:foxy
+          size: 2x # 8GB RAM
+          script:
+            - source `find /opt/ros -maxdepth 2 -name setup.bash | sort | head -1` && echo $ROS_DISTRO # Source ROS environment
+            - mkdir src && mv `find -maxdepth 1 -not -name . -not -name src` src/ # Move everything into the src directory
+            - apt update && rosdep install --from-paths src --ignore-src -y # Install dependencies missing from the docker image
+            - colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+            - colcon test
+            - for x in build/**/test_results; do cp -r $x/ .; done && mv test_results $BITBUCKET_CLONE_DIR/test-results # Create top level test-results folder for Pipelines
+            - colcon test-result --verbose
+      - step:
+          name: Galactic
+          image: dataspeedinc/ros:galactic
+          size: 2x # 8GB RAM
+          script:
+            - source `find /opt/ros -maxdepth 2 -name setup.bash | sort | head -1` && echo $ROS_DISTRO # Source ROS environment
+            - mkdir src && mv `find -maxdepth 1 -not -name . -not -name src` src/ # Move everything into the src directory
+            - apt update && rosdep install --from-paths src --ignore-src -y # Install dependencies missing from the docker image
+            - colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+            - colcon test
+            - for x in build/**/test_results; do cp -r $x/ .; done && mv test_results $BITBUCKET_CLONE_DIR/test-results # Create top level test-results folder for Pipelines
+            - colcon test-result --verbose
+      - step:
+          name: Humble
+          image: dataspeedinc/ros:humble
+          size: 2x # 8GB RAM
+          script:
+            - source `find /opt/ros -maxdepth 2 -name setup.bash | sort | head -1` && echo $ROS_DISTRO # Source ROS environment
+            - mkdir src && mv `find -maxdepth 1 -not -name . -not -name src` src/ # Move everything into the src directory
+            - apt update && rosdep install --from-paths src --ignore-src -y # Install dependencies missing from the docker image
+            - colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+            - colcon test
+            - for x in build/**/test_results; do cp -r $x/ .; done && mv test_results $BITBUCKET_CLONE_DIR/test-results # Create top level test-results folder for Pipelines
+            - colcon test-result --verbose

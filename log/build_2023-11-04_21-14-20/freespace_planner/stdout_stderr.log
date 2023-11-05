@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target freespace_planner_node[0m
+[ 20%] Built target freespace_planner_node
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[ 40%] Built target gtest
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[ 60%] Built target gtest_main
+[35m[1mConsolidate compiler generated dependencies of target freespace_planner[0m
+[ 80%] Built target freespace_planner
+[35m[1mConsolidate compiler generated dependencies of target test_freespace_planner[0m
+[100%] Built target test_freespace_planner
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/lib/freespace_planner/freespace_planner
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/include/freespace_planner/freespace_planner_node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/lib/libfreespace_planner_node.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/launch/freespace_planner.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/config/freespace_planner.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/ament_index/resource_index/package_run_dependencies/freespace_planner
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/ament_index/resource_index/parent_prefix_path/freespace_planner
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/ament_index/resource_index/packages/freespace_planner
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/ament_index/resource_index/rclcpp_components/freespace_planner
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/cmake/freespace_plannerConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/cmake/freespace_plannerConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/freespace_planner/share/freespace_planner/package.xml

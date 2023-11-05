@@ -1,0 +1,1131 @@
+[0.000000] (-) TimerEvent: {}
+[0.000081] (-) JobUnselected: {'identifier': 'abc_terasim'}
+[0.000103] (-) JobUnselected: {'identifier': 'accel_brake_map_calibrator'}
+[0.000298] (-) JobUnselected: {'identifier': 'ad_api_adaptors'}
+[0.000388] (-) JobUnselected: {'identifier': 'ad_api_visualizers'}
+[0.000757] (-) JobUnselected: {'identifier': 'ar_tag_based_localizer'}
+[0.000773] (-) JobUnselected: {'identifier': 'automatic_pose_initializer'}
+[0.000842] (-) JobUnselected: {'identifier': 'autonomous_emergency_braking'}
+[0.000864] (-) JobUnselected: {'identifier': 'autoware_ad_api_specs'}
+[0.000882] (-) JobUnselected: {'identifier': 'autoware_adapi_v1_msgs'}
+[0.000896] (-) JobUnselected: {'identifier': 'autoware_adapi_version_msgs'}
+[0.001198] (-) JobUnselected: {'identifier': 'autoware_auto_common'}
+[0.001226] (-) JobUnselected: {'identifier': 'autoware_auto_control_msgs'}
+[0.001242] (-) JobUnselected: {'identifier': 'autoware_auto_geometry'}
+[0.001256] (-) JobUnselected: {'identifier': 'autoware_auto_geometry_msgs'}
+[0.001495] (-) JobUnselected: {'identifier': 'autoware_auto_mapping_msgs'}
+[0.001509] (-) JobUnselected: {'identifier': 'autoware_auto_msgs'}
+[0.001599] (-) JobUnselected: {'identifier': 'autoware_auto_msgs_adapter'}
+[0.001617] (-) JobUnselected: {'identifier': 'autoware_auto_perception_msgs'}
+[0.001657] (-) JobUnselected: {'identifier': 'autoware_auto_perception_rviz_plugin'}
+[0.001828] (-) JobUnselected: {'identifier': 'autoware_auto_planning_msgs'}
+[0.001858] (-) JobUnselected: {'identifier': 'autoware_auto_system_msgs'}
+[0.001871] (-) JobUnselected: {'identifier': 'autoware_auto_tf2'}
+[0.001889] (-) JobUnselected: {'identifier': 'autoware_auto_vehicle_msgs'}
+[0.002400] (-) JobUnselected: {'identifier': 'autoware_cmake'}
+[0.002414] (-) JobUnselected: {'identifier': 'autoware_common_msgs'}
+[0.002444] (-) JobUnselected: {'identifier': 'autoware_control_msgs'}
+[0.002492] (-) JobUnselected: {'identifier': 'autoware_external_api_msgs'}
+[0.002603] (-) JobUnselected: {'identifier': 'autoware_iv_external_api_adaptor'}
+[0.002628] (-) JobUnselected: {'identifier': 'autoware_iv_internal_api_adaptor'}
+[0.002641] (-) JobUnselected: {'identifier': 'autoware_launch'}
+[0.002654] (-) JobUnselected: {'identifier': 'autoware_lint_common'}
+[0.002717] (-) JobUnselected: {'identifier': 'autoware_localization_msgs'}
+[0.002747] (-) JobUnselected: {'identifier': 'autoware_map_msgs'}
+[0.002764] (-) JobUnselected: {'identifier': 'autoware_perception_msgs'}
+[0.002841] (-) JobUnselected: {'identifier': 'autoware_planning_msgs'}
+[0.002856] (-) JobUnselected: {'identifier': 'autoware_point_types'}
+[0.002878] (-) JobUnselected: {'identifier': 'autoware_sensing_msgs'}
+[0.002891] (-) JobUnselected: {'identifier': 'autoware_testing'}
+[0.002947] (-) JobUnselected: {'identifier': 'autoware_utils'}
+[0.002961] (-) JobUnselected: {'identifier': 'awapi_awiv_adapter'}
+[0.003018] (-) JobUnselected: {'identifier': 'awsim_sensor_kit_description'}
+[0.003032] (-) JobUnselected: {'identifier': 'awsim_sensor_kit_launch'}
+[0.003049] (-) JobUnselected: {'identifier': 'bag_time_manager_rviz_plugin'}
+[0.003145] (-) JobUnselected: {'identifier': 'behavior_path_planner'}
+[0.003175] (-) JobUnselected: {'identifier': 'behavior_velocity_blind_spot_module'}
+[0.003190] (-) JobUnselected: {'identifier': 'behavior_velocity_crosswalk_module'}
+[0.003209] (-) JobUnselected: {'identifier': 'behavior_velocity_detection_area_module'}
+[0.003223] (-) JobUnselected: {'identifier': 'behavior_velocity_intersection_module'}
+[0.003236] (-) JobUnselected: {'identifier': 'behavior_velocity_no_drivable_lane_module'}
+[0.003506] (-) JobUnselected: {'identifier': 'behavior_velocity_no_stopping_area_module'}
+[0.003519] (-) JobUnselected: {'identifier': 'behavior_velocity_occlusion_spot_module'}
+[0.003531] (-) JobUnselected: {'identifier': 'behavior_velocity_out_of_lane_module'}
+[0.003840] (-) JobUnselected: {'identifier': 'behavior_velocity_planner'}
+[0.003853] (-) JobUnselected: {'identifier': 'behavior_velocity_planner_common'}
+[0.003866] (-) JobUnselected: {'identifier': 'behavior_velocity_run_out_module'}
+[0.003910] (-) JobUnselected: {'identifier': 'behavior_velocity_speed_bump_module'}
+[0.003937] (-) JobUnselected: {'identifier': 'behavior_velocity_stop_line_module'}
+[0.003995] (-) JobUnselected: {'identifier': 'behavior_velocity_template_module'}
+[0.004013] (-) JobUnselected: {'identifier': 'behavior_velocity_traffic_light_module'}
+[0.004031] (-) JobUnselected: {'identifier': 'behavior_velocity_virtual_traffic_light_module'}
+[0.004094] (-) JobUnselected: {'identifier': 'behavior_velocity_walkway_module'}
+[0.004108] (-) JobUnselected: {'identifier': 'bezier_sampler'}
+[0.004126] (-) JobUnselected: {'identifier': 'bluetooth_monitor'}
+[0.004143] (-) JobUnselected: {'identifier': 'boost_io_context'}
+[0.004156] (-) JobUnselected: {'identifier': 'boost_serial_driver'}
+[0.004213] (-) JobUnselected: {'identifier': 'boost_tcp_driver'}
+[0.004227] (-) JobUnselected: {'identifier': 'boost_udp_driver'}
+[0.004283] (-) JobUnselected: {'identifier': 'bytetrack'}
+[0.004297] (-) JobUnselected: {'identifier': 'camera_description'}
+[0.004318] (-) JobUnselected: {'identifier': 'cluster_merger'}
+[0.004332] (-) JobUnselected: {'identifier': 'common_awsim_sensor_launch'}
+[0.004344] (-) JobUnselected: {'identifier': 'common_sensor_launch'}
+[0.004489] (-) JobUnselected: {'identifier': 'compare_map_segmentation'}
+[0.004502] (-) JobUnselected: {'identifier': 'component_interface_specs'}
+[0.004669] (-) JobUnselected: {'identifier': 'component_interface_tools'}
+[0.004682] (-) JobUnselected: {'identifier': 'component_interface_utils'}
+[0.004735] (-) JobUnselected: {'identifier': 'component_state_monitor'}
+[0.004789] (-) JobUnselected: {'identifier': 'control_performance_analysis'}
+[0.004825] (-) JobUnselected: {'identifier': 'control_validator'}
+[0.004858] (-) JobUnselected: {'identifier': 'costmap_generator'}
+[0.004889] (-) JobUnselected: {'identifier': 'crosswalk_traffic_light_estimator'}
+[0.004921] (-) JobUnselected: {'identifier': 'cuda_utils'}
+[0.004952] (-) JobUnselected: {'identifier': 'dataspeed_can'}
+[0.004984] (-) JobUnselected: {'identifier': 'dataspeed_can_msg_filters'}
+[0.005015] (-) JobUnselected: {'identifier': 'dataspeed_can_msgs'}
+[0.005046] (-) JobUnselected: {'identifier': 'dataspeed_can_tools'}
+[0.005078] (-) JobUnselected: {'identifier': 'dataspeed_can_usb'}
+[0.005133] (-) JobUnselected: {'identifier': 'dataspeed_dbw_common'}
+[0.005178] (-) JobUnselected: {'identifier': 'dataspeed_dbw_gateway'}
+[0.005221] (-) JobUnselected: {'identifier': 'dataspeed_dbw_msgs'}
+[0.005253] (-) JobUnselected: {'identifier': 'dataspeed_ulc'}
+[0.005295] (-) JobUnselected: {'identifier': 'dataspeed_ulc_can'}
+[0.005327] (-) JobUnselected: {'identifier': 'dataspeed_ulc_msgs'}
+[0.005358] (-) JobUnselected: {'identifier': 'dbw_fca'}
+[0.005743] (-) JobUnselected: {'identifier': 'dbw_fca_can'}
+[0.005756] (-) JobUnselected: {'identifier': 'dbw_fca_description'}
+[0.005769] (-) JobUnselected: {'identifier': 'dbw_fca_joystick_demo'}
+[0.005786] (-) JobUnselected: {'identifier': 'dbw_fca_msgs'}
+[0.005799] (-) JobUnselected: {'identifier': 'dbw_ford'}
+[0.006282] (-) JobUnselected: {'identifier': 'dbw_ford_can'}
+[0.006295] (-) JobUnselected: {'identifier': 'dbw_ford_description'}
+[0.006317] (-) JobUnselected: {'identifier': 'dbw_ford_input_test'}
+[0.006330] (-) JobUnselected: {'identifier': 'dbw_ford_joystick_demo'}
+[0.006341] (-) JobUnselected: {'identifier': 'dbw_ford_msgs'}
+[0.006352] (-) JobUnselected: {'identifier': 'dbw_polaris'}
+[0.006363] (-) JobUnselected: {'identifier': 'dbw_polaris_can'}
+[0.006375] (-) JobUnselected: {'identifier': 'dbw_polaris_description'}
+[0.006386] (-) JobUnselected: {'identifier': 'dbw_polaris_joystick_demo'}
+[0.006397] (-) JobUnselected: {'identifier': 'dbw_polaris_msgs'}
+[0.006414] (-) JobUnselected: {'identifier': 'default_ad_api'}
+[0.006428] (-) JobUnselected: {'identifier': 'detected_object_feature_remover'}
+[0.006442] (-) JobUnselected: {'identifier': 'detected_object_validation'}
+[0.006454] (-) JobUnselected: {'identifier': 'detection_by_tracker'}
+[0.006472] (-) JobUnselected: {'identifier': 'diagnostic_converter'}
+[0.006491] (-) JobUnselected: {'identifier': 'dummy_diag_publisher'}
+[0.006504] (-) JobUnselected: {'identifier': 'dummy_infrastructure'}
+[0.006516] (-) JobUnselected: {'identifier': 'dummy_perception_publisher'}
+[0.006534] (-) JobUnselected: {'identifier': 'eagleye_can_velocity_converter'}
+[0.006554] (-) JobUnselected: {'identifier': 'eagleye_coordinate'}
+[0.006568] (-) JobUnselected: {'identifier': 'eagleye_fix2kml'}
+[0.006585] (-) JobUnselected: {'identifier': 'eagleye_fix2pose'}
+[0.006598] (-) JobUnselected: {'identifier': 'eagleye_gnss_converter'}
+[0.006615] (-) JobUnselected: {'identifier': 'eagleye_msgs'}
+[0.006629] (-) JobUnselected: {'identifier': 'eagleye_navigation'}
+[0.006647] (-) JobUnselected: {'identifier': 'eagleye_rt'}
+[0.006661] (-) JobUnselected: {'identifier': 'eagleye_tf'}
+[0.006673] (-) JobUnselected: {'identifier': 'ekf_localizer'}
+[0.006696] (-) JobUnselected: {'identifier': 'elevation_map_loader'}
+[0.006709] (-) JobUnselected: {'identifier': 'emergency_handler'}
+[0.006723] (-) JobUnselected: {'identifier': 'euclidean_cluster'}
+[0.006740] (-) JobUnselected: {'identifier': 'external_cmd_converter'}
+[0.006753] (-) JobUnselected: {'identifier': 'external_cmd_selector'}
+[0.006766] (-) JobUnselected: {'identifier': 'external_velocity_limit_selector'}
+[0.006784] (-) JobUnselected: {'identifier': 'fake_test_node'}
+[0.006798] (-) JobUnselected: {'identifier': 'fault_injection'}
+[0.006811] (-) JobUnselected: {'identifier': 'freespace_planner'}
+[0.006830] (-) JobUnselected: {'identifier': 'freespace_planning_algorithms'}
+[0.006843] (-) JobUnselected: {'identifier': 'frenet_planner'}
+[0.006856] (-) JobUnselected: {'identifier': 'front_vehicle_velocity_estimator'}
+[0.006879] (-) JobUnselected: {'identifier': 'geography_utils'}
+[0.006893] (-) JobUnselected: {'identifier': 'global_parameter_loader'}
+[0.006906] (-) JobUnselected: {'identifier': 'glog_component'}
+[0.006923] (-) JobUnselected: {'identifier': 'gnss_poser'}
+[0.006943] (-) JobUnselected: {'identifier': 'goal_distance_calculator'}
+[0.006957] (-) JobUnselected: {'identifier': 'grid_map_utils'}
+[0.006974] (-) JobUnselected: {'identifier': 'ground_segmentation'}
+[0.007248] (-) JobUnselected: {'identifier': 'gyro_odometer'}
+[0.007269] (-) JobUnselected: {'identifier': 'heaphook'}
+[0.007288] (-) JobUnselected: {'identifier': 'heatmap_visualizer'}
+[0.007307] (-) JobUnselected: {'identifier': 'image_diagnostics'}
+[0.007325] (-) JobUnselected: {'identifier': 'image_projection_based_fusion'}
+[0.007343] (-) JobUnselected: {'identifier': 'image_transport_decompressor'}
+[0.007361] (-) JobUnselected: {'identifier': 'imu_corrector'}
+[0.007380] (-) JobUnselected: {'identifier': 'imu_description'}
+[0.007398] (-) JobUnselected: {'identifier': 'individual_params'}
+[0.007417] (-) JobUnselected: {'identifier': 'interpolation'}
+[0.007435] (-) JobUnselected: {'identifier': 'joy_controller'}
+[0.007453] (-) JobUnselected: {'identifier': 'kalman_filter'}
+[0.007471] (-) JobUnselected: {'identifier': 'kinematic_evaluator'}
+[0.007489] (-) JobUnselected: {'identifier': 'landmark_tf_caster'}
+[0.007507] (-) JobUnselected: {'identifier': 'lane_departure_checker'}
+[0.007525] (-) JobUnselected: {'identifier': 'lanelet2_extension'}
+[0.007543] (-) JobUnselected: {'identifier': 'lanelet2_map_preprocessor'}
+[0.007561] (-) JobUnselected: {'identifier': 'lidar_apollo_instance_segmentation'}
+[0.007579] (-) JobUnselected: {'identifier': 'lidar_apollo_segmentation_tvm'}
+[0.007599] (-) JobUnselected: {'identifier': 'lidar_apollo_segmentation_tvm_nodes'}
+[0.007618] (-) JobUnselected: {'identifier': 'lidar_centerpoint'}
+[0.007636] (-) JobUnselected: {'identifier': 'lidar_centerpoint_tvm'}
+[0.007654] (-) JobUnselected: {'identifier': 'livox_description'}
+[0.007673] (-) JobUnselected: {'identifier': 'livox_tag_filter'}
+[0.007692] (-) JobUnselected: {'identifier': 'llh_converter'}
+[0.007710] (-) JobUnselected: {'identifier': 'localization_error_monitor'}
+[0.007728] (-) JobUnselected: {'identifier': 'localization_evaluator'}
+[0.007747] (-) JobUnselected: {'identifier': 'map_based_prediction'}
+[0.007764] (-) JobUnselected: {'identifier': 'map_height_fitter'}
+[0.007782] (-) JobUnselected: {'identifier': 'map_loader'}
+[0.007800] (-) JobUnselected: {'identifier': 'map_projection_loader'}
+[0.007818] (-) JobUnselected: {'identifier': 'map_tf_generator'}
+[0.007835] (-) JobUnselected: {'identifier': 'mission_planner'}
+[0.007854] (-) JobUnselected: {'identifier': 'morai_msgs'}
+[0.007872] (-) JobUnselected: {'identifier': 'motion_utils'}
+[0.007889] (-) JobUnselected: {'identifier': 'motion_velocity_smoother'}
+[0.007907] (-) JobUnselected: {'identifier': 'mpc_lateral_controller'}
+[0.007925] (-) JobUnselected: {'identifier': 'mrm_comfortable_stop_operator'}
+[0.007943] (-) JobUnselected: {'identifier': 'mrm_emergency_stop_operator'}
+[0.007962] (-) JobUnselected: {'identifier': 'multi_object_tracker'}
+[0.007982] (-) JobUnselected: {'identifier': 'mussp'}
+[0.008001] (-) JobUnselected: {'identifier': 'ndt_omp'}
+[0.008018] (-) JobUnselected: {'identifier': 'ndt_scan_matcher'}
+[0.008036] (-) JobUnselected: {'identifier': 'nebula_common'}
+[0.008054] (-) JobUnselected: {'identifier': 'nebula_decoders'}
+[0.008073] (-) JobUnselected: {'identifier': 'nebula_examples'}
+[0.008091] (-) JobUnselected: {'identifier': 'nebula_hw_interfaces'}
+[0.008109] (-) JobUnselected: {'identifier': 'nebula_ros'}
+[0.008127] (-) JobUnselected: {'identifier': 'nebula_sensor_driver'}
+[0.008145] (-) JobUnselected: {'identifier': 'nebula_tests'}
+[0.008163] (-) JobUnselected: {'identifier': 'object_merger'}
+[0.008181] (-) JobUnselected: {'identifier': 'object_range_splitter'}
+[0.008199] (-) JobUnselected: {'identifier': 'object_recognition_utils'}
+[0.008217] (-) JobUnselected: {'identifier': 'object_velocity_splitter'}
+[0.008235] (-) JobUnselected: {'identifier': 'obstacle_avoidance_planner'}
+[0.008252] (-) JobUnselected: {'identifier': 'obstacle_collision_checker'}
+[0.008270] (-) JobUnselected: {'identifier': 'obstacle_cruise_planner'}
+[0.008289] (-) JobUnselected: {'identifier': 'obstacle_stop_planner'}
+[0.008306] (-) JobUnselected: {'identifier': 'obstacle_velocity_limiter'}
+[0.008324] (-) JobUnselected: {'identifier': 'occupancy_grid_map_outlier_filter'}
+[0.008343] (-) JobUnselected: {'identifier': 'operation_mode_transition_manager'}
+[0.008361] (-) JobUnselected: {'identifier': 'osqp_interface'}
+[0.008379] (-) JobUnselected: {'identifier': 'pacmod_interface'}
+[0.008397] (-) JobUnselected: {'identifier': 'pandar_description'}
+[0.008416] (-) JobUnselected: {'identifier': 'pandar_msgs'}
+[0.008433] (-) JobUnselected: {'identifier': 'path_distance_calculator'}
+[0.008451] (-) JobUnselected: {'identifier': 'path_sampler'}
+[0.008543] (-) JobUnselected: {'identifier': 'path_smoother'}
+[0.008562] (-) JobUnselected: {'identifier': 'perception_utils'}
+[0.008581] (-) JobUnselected: {'identifier': 'pid_longitudinal_controller'}
+[0.008599] (-) JobUnselected: {'identifier': 'planning_debug_tools'}
+[0.008616] (-) JobUnselected: {'identifier': 'planning_evaluator'}
+[0.008635] (-) JobUnselected: {'identifier': 'planning_test_utils'}
+[0.008653] (-) JobUnselected: {'identifier': 'planning_validator'}
+[0.008671] (-) JobUnselected: {'identifier': 'pointcloud_preprocessor'}
+[0.008689] (-) JobUnselected: {'identifier': 'pointcloud_to_laserscan'}
+[0.008707] (-) JobUnselected: {'identifier': 'polar_grid'}
+[0.008725] (-) JobUnselected: {'identifier': 'pose2twist'}
+[0.008743] (-) JobUnselected: {'identifier': 'pose_initializer'}
+[0.008760] (-) JobUnselected: {'identifier': 'probabilistic_occupancy_grid_map'}
+[0.008779] (-) JobUnselected: {'identifier': 'pure_pursuit'}
+[0.008798] (-) JobUnselected: {'identifier': 'qp_interface'}
+[0.008817] (-) JobUnselected: {'identifier': 'radar_crossing_objects_noise_filter'}
+[0.008834] (-) JobUnselected: {'identifier': 'radar_fusion_to_detected_object'}
+[0.008853] (-) JobUnselected: {'identifier': 'radar_object_clustering'}
+[0.008871] (-) JobUnselected: {'identifier': 'radar_object_tracker'}
+[0.008889] (-) JobUnselected: {'identifier': 'radar_scan_to_pointcloud2'}
+[0.008907] (-) JobUnselected: {'identifier': 'radar_static_pointcloud_filter'}
+[0.008925] (-) JobUnselected: {'identifier': 'radar_threshold_filter'}
+[0.008942] (-) JobUnselected: {'identifier': 'radar_tracks_msgs_converter'}
+[0.008960] (-) JobUnselected: {'identifier': 'radar_tracks_noise_filter'}
+[0.008977] (-) JobUnselected: {'identifier': 'raw_vehicle_cmd_converter'}
+[0.008995] (-) JobUnselected: {'identifier': 'route_handler'}
+[0.009013] (-) JobUnselected: {'identifier': 'rtc_auto_mode_manager'}
+[0.009031] (-) JobUnselected: {'identifier': 'rtc_interface'}
+[0.009049] (-) JobUnselected: {'identifier': 'rtc_manager_rviz_plugin'}
+[0.009066] (-) JobUnselected: {'identifier': 'rtc_replayer'}
+[0.009104] (-) JobUnselected: {'identifier': 'rtklib_bridge'}
+[0.009124] (-) JobUnselected: {'identifier': 'rtklib_msgs'}
+[0.009157] (-) JobUnselected: {'identifier': 'sample_sensor_kit_description'}
+[0.009175] (-) JobUnselected: {'identifier': 'sample_sensor_kit_launch'}
+[0.009193] (-) JobUnselected: {'identifier': 'sample_vehicle_description'}
+[0.009211] (-) JobUnselected: {'identifier': 'sample_vehicle_launch'}
+[0.009228] (-) JobUnselected: {'identifier': 'sampler_common'}
+[0.009247] (-) JobUnselected: {'identifier': 'scenario_selector'}
+[0.009264] (-) JobUnselected: {'identifier': 'shape_estimation'}
+[0.009283] (-) JobUnselected: {'identifier': 'shift_decider'}
+[0.009301] (-) JobUnselected: {'identifier': 'signal_processing'}
+[0.009319] (-) JobUnselected: {'identifier': 'simple_object_merger'}
+[0.009337] (-) JobUnselected: {'identifier': 'simple_planning_simulator'}
+[0.009354] (-) JobUnselected: {'identifier': 'simulator_compatibility_test'}
+[0.009372] (-) JobUnselected: {'identifier': 'static_centerline_optimizer'}
+[0.009390] (-) JobUnselected: {'identifier': 'steer_offset_estimator'}
+[0.009408] (-) JobUnselected: {'identifier': 'stop_filter'}
+[0.009426] (-) JobUnselected: {'identifier': 'surround_obstacle_checker'}
+[0.009444] (-) JobUnselected: {'identifier': 'system_diagnostic_graph'}
+[0.009461] (-) JobUnselected: {'identifier': 'system_diagnostic_monitor'}
+[0.009479] (-) JobUnselected: {'identifier': 'system_error_monitor'}
+[0.009497] (-) JobUnselected: {'identifier': 'system_monitor'}
+[0.009515] (-) JobUnselected: {'identifier': 'tamagawa_imu_driver'}
+[0.009533] (-) JobUnselected: {'identifier': 'tensorrt_classifier'}
+[0.009550] (-) JobUnselected: {'identifier': 'tensorrt_common'}
+[0.009568] (-) JobUnselected: {'identifier': 'tensorrt_yolo'}
+[0.009586] (-) JobUnselected: {'identifier': 'tensorrt_yolox'}
+[0.009605] (-) JobUnselected: {'identifier': 'tier4_adapi_rviz_plugin'}
+[0.009622] (-) JobUnselected: {'identifier': 'tier4_api_msgs'}
+[0.009640] (-) JobUnselected: {'identifier': 'tier4_api_utils'}
+[0.009658] (-) JobUnselected: {'identifier': 'tier4_auto_msgs_converter'}
+[0.009676] (-) JobUnselected: {'identifier': 'tier4_automatic_goal_rviz_plugin'}
+[0.009694] (-) JobUnselected: {'identifier': 'tier4_autoware_api_launch'}
+[0.009712] (-) JobUnselected: {'identifier': 'tier4_autoware_utils'}
+[0.009730] (-) JobUnselected: {'identifier': 'tier4_calibration_rviz_plugin'}
+[0.009748] (-) JobUnselected: {'identifier': 'tier4_control_launch'}
+[0.009766] (-) JobUnselected: {'identifier': 'tier4_control_msgs'}
+[0.009784] (-) JobUnselected: {'identifier': 'tier4_control_rviz_plugin'}
+[0.009802] (-) JobUnselected: {'identifier': 'tier4_datetime_rviz_plugin'}
+[0.009820] (-) JobUnselected: {'identifier': 'tier4_debug_msgs'}
+[0.009838] (-) JobUnselected: {'identifier': 'tier4_debug_rviz_plugin'}
+[0.009856] (-) JobUnselected: {'identifier': 'tier4_debug_tools'}
+[0.009874] (-) JobUnselected: {'identifier': 'tier4_external_api_msgs'}
+[0.009892] (-) JobUnselected: {'identifier': 'tier4_hmi_msgs'}
+[0.009910] (-) JobUnselected: {'identifier': 'tier4_localization_launch'}
+[0.009928] (-) JobUnselected: {'identifier': 'tier4_localization_msgs'}
+[0.009946] (-) JobUnselected: {'identifier': 'tier4_localization_rviz_plugin'}
+[0.009981] (-) JobUnselected: {'identifier': 'tier4_logging_level_configure_rviz_plugin'}
+[0.009999] (-) JobUnselected: {'identifier': 'tier4_map_launch'}
+[0.010032] (-) JobUnselected: {'identifier': 'tier4_map_msgs'}
+[0.010049] (-) JobUnselected: {'identifier': 'tier4_pcl_extensions'}
+[0.010067] (-) JobUnselected: {'identifier': 'tier4_perception_launch'}
+[0.010086] (-) JobUnselected: {'identifier': 'tier4_perception_msgs'}
+[0.010103] (-) JobUnselected: {'identifier': 'tier4_perception_rviz_plugin'}
+[0.010121] (-) JobUnselected: {'identifier': 'tier4_planning_launch'}
+[0.010140] (-) JobUnselected: {'identifier': 'tier4_planning_msgs'}
+[0.010158] (-) JobUnselected: {'identifier': 'tier4_planning_rviz_plugin'}
+[0.010176] (-) JobUnselected: {'identifier': 'tier4_rtc_msgs'}
+[0.010194] (-) JobUnselected: {'identifier': 'tier4_screen_capture_rviz_plugin'}
+[0.010212] (-) JobUnselected: {'identifier': 'tier4_sensing_launch'}
+[0.010230] (-) JobUnselected: {'identifier': 'tier4_simulated_clock_rviz_plugin'}
+[0.010248] (-) JobUnselected: {'identifier': 'tier4_simulation_msgs'}
+[0.010266] (-) JobUnselected: {'identifier': 'tier4_simulator_launch'}
+[0.010284] (-) JobUnselected: {'identifier': 'tier4_state_rviz_plugin'}
+[0.010316] (-) JobUnselected: {'identifier': 'tier4_system_launch'}
+[0.010337] (-) JobUnselected: {'identifier': 'tier4_system_msgs'}
+[0.010355] (-) JobUnselected: {'identifier': 'tier4_system_rviz_plugin'}
+[0.010374] (-) JobUnselected: {'identifier': 'tier4_target_object_type_rviz_plugin'}
+[0.010397] (-) JobUnselected: {'identifier': 'tier4_traffic_light_rviz_plugin'}
+[0.010557] (-) JobUnselected: {'identifier': 'tier4_v2x_msgs'}
+[0.010572] (-) JobUnselected: {'identifier': 'tier4_vehicle_launch'}
+[0.010592] (-) JobUnselected: {'identifier': 'tier4_vehicle_msgs'}
+[0.010619] (-) JobUnselected: {'identifier': 'tier4_vehicle_rviz_plugin'}
+[0.010631] (-) JobUnselected: {'identifier': 'time_utils'}
+[0.011512] (-) JobUnselected: {'identifier': 'topic_state_monitor'}
+[0.011525] (-) JobUnselected: {'identifier': 'traffic_light_arbiter'}
+[0.011544] (-) JobUnselected: {'identifier': 'traffic_light_classifier'}
+[0.011580] (-) JobUnselected: {'identifier': 'traffic_light_fine_detector'}
+[0.011593] (-) JobUnselected: {'identifier': 'traffic_light_map_based_detector'}
+[0.011605] (-) JobUnselected: {'identifier': 'traffic_light_multi_camera_fusion'}
+[0.011628] (-) JobUnselected: {'identifier': 'traffic_light_occlusion_predictor'}
+[0.011656] (-) JobUnselected: {'identifier': 'traffic_light_recognition_marker_publisher'}
+[0.011677] (-) JobUnselected: {'identifier': 'traffic_light_ssd_fine_detector'}
+[0.011771] (-) JobUnselected: {'identifier': 'traffic_light_utils'}
+[0.011791] (-) JobUnselected: {'identifier': 'traffic_light_visualization'}
+[0.011825] (-) JobUnselected: {'identifier': 'trajectory_follower_base'}
+[0.012011] (-) JobUnselected: {'identifier': 'trajectory_follower_node'}
+[0.012104] (-) JobUnselected: {'identifier': 'trtexec_vendor'}
+[0.012116] (-) JobUnselected: {'identifier': 'tvm_utility'}
+[0.012129] (-) JobUnselected: {'identifier': 'twist2accel'}
+[0.012165] (-) JobUnselected: {'identifier': 'vehicle_cmd_gate'}
+[0.012401] (-) JobUnselected: {'identifier': 'vehicle_info_util'}
+[0.012431] (-) JobUnselected: {'identifier': 'vehicle_velocity_converter'}
+[0.012443] (-) JobUnselected: {'identifier': 'velodyne_description'}
+[0.012455] (-) JobUnselected: {'identifier': 'velodyne_monitor'}
+[0.012466] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.012478] (-) JobUnselected: {'identifier': 'vls_description'}
+[0.012490] (-) JobUnselected: {'identifier': 'yabloc_common'}
+[0.012502] (-) JobUnselected: {'identifier': 'yabloc_image_processing'}
+[0.012513] (-) JobUnselected: {'identifier': 'yabloc_monitor'}
+[0.012525] (-) JobUnselected: {'identifier': 'yabloc_particle_filter'}
+[0.012536] (-) JobUnselected: {'identifier': 'yabloc_pose_initializer'}
+[0.012550] (mcity_terasim) JobQueued: {'identifier': 'mcity_terasim', 'dependencies': OrderedDict([('autoware_adapi_v1_msgs', '/home/zhijie/autoware/install/autoware_adapi_v1_msgs'), ('autoware_auto_control_msgs', '/home/zhijie/autoware/install/autoware_auto_control_msgs'), ('autoware_auto_geometry_msgs', '/home/zhijie/autoware/install/autoware_auto_geometry_msgs'), ('autoware_auto_mapping_msgs', '/home/zhijie/autoware/install/autoware_auto_mapping_msgs'), ('autoware_auto_system_msgs', '/home/zhijie/autoware/install/autoware_auto_system_msgs'), ('autoware_common_msgs', '/home/zhijie/autoware/install/autoware_common_msgs'), ('autoware_lint_common', '/home/zhijie/autoware/install/autoware_lint_common'), ('autoware_perception_msgs', '/home/zhijie/autoware/install/autoware_perception_msgs'), ('dataspeed_ulc_msgs', '/home/zhijie/autoware/install/dataspeed_ulc_msgs'), ('dbw_ford_msgs', '/home/zhijie/autoware/install/dbw_ford_msgs'), ('tier4_debug_msgs', '/home/zhijie/autoware/install/tier4_debug_msgs'), ('autoware_auto_perception_msgs', '/home/zhijie/autoware/install/autoware_auto_perception_msgs'), ('autoware_auto_planning_msgs', '/home/zhijie/autoware/install/autoware_auto_planning_msgs'), ('autoware_cmake', '/home/zhijie/autoware/install/autoware_cmake'), ('tier4_system_msgs', '/home/zhijie/autoware/install/tier4_system_msgs'), ('autoware_auto_vehicle_msgs', '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs'), ('tier4_perception_msgs', '/home/zhijie/autoware/install/tier4_perception_msgs'), ('tier4_autoware_utils', '/home/zhijie/autoware/install/tier4_autoware_utils'), ('dummy_perception_publisher', '/home/zhijie/autoware/install/dummy_perception_publisher')])}
+[0.012583] (mcity_terasim) JobStarted: {'identifier': 'mcity_terasim'}
+[0.038073] (mcity_terasim) JobProgress: {'identifier': 'mcity_terasim', 'progress': 'cmake'}
+[0.038507] (mcity_terasim) Command: {'cmd': ['/usr/bin/cmake', '/home/zhijie/autoware/src/terasim/mcity_terasim', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/mcity_terasim'], 'cwd': '/home/zhijie/autoware/build/mcity_terasim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zhijie'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zhijie/autoware/install/dummy_perception_publisher/lib:/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/tier4_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/tier4_system_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/dbw_ford_msgs/lib:/home/zhijie/autoware/install/dataspeed_ulc_msgs/lib:/home/zhijie/autoware/install/autoware_perception_msgs/lib:/home/zhijie/autoware/install/autoware_common_msgs/lib:/home/zhijie/autoware/install/autoware_auto_system_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:/home/zhijie/autoware/install/autoware_auto_control_msgs/lib:/home/zhijie/autoware/install/autoware_adapi_v1_msgs/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zhijie'), ('OLDPWD', '/home/zhijie'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1592'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zhijie'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhijie'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/opt/ros/humble/bin:/home/zhijie/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zhijie/.local/bin:/home/zhijie/.local/bin'), ('SESSION_MANAGER', 'local/zhijie-Alienware-Aurora-R11:@/tmp/.ICE-unix/1572,unix/zhijie-Alienware-Aurora-R11:/tmp/.ICE-unix/1572'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fb199be2_c2aa_4d81_9924_1cebf3e93243'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zhijie/autoware/install/dummy_perception_publisher:/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/dbw_ford_msgs:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/autoware_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_common_msgs:/home/zhijie/autoware/install/autoware_auto_system_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/home/zhijie/autoware/install/autoware_auto_control_msgs:/home/zhijie/autoware/install/autoware_adapi_v1_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zhijie/autoware/build/mcity_terasim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/opt/apps/com.qq.weixin.deepin/entries'), ('PYTHONPATH', '/home/zhijie/autoware/install/dummy_perception_publisher/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dbw_ford_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_ulc_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_adapi_v1_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zhijie/autoware/install/dummy_perception_publisher:/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/dbw_ford_msgs:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/autoware_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_common_msgs:/home/zhijie/autoware/install/autoware_auto_system_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/home/zhijie/autoware/install/autoware_auto_control_msgs:/home/zhijie/autoware/install/autoware_adapi_v1_msgs:/opt/ros/humble')]), 'shell': False}
+[0.049126] (mcity_terasim) StdoutLine: {'line': b'-- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)\n'}
+[0.099340] (-) TimerEvent: {}
+[0.158203] (mcity_terasim) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.199444] (-) TimerEvent: {}
+[0.230930] (mcity_terasim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.232714] (mcity_terasim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.237048] (mcity_terasim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.245385] (mcity_terasim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.258956] (mcity_terasim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299550] (-) TimerEvent: {}
+[0.352363] (mcity_terasim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.353736] (mcity_terasim) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.376308] (mcity_terasim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.399647] (-) TimerEvent: {}
+[0.499848] (-) TimerEvent: {}
+[0.600067] (-) TimerEvent: {}
+[0.700309] (-) TimerEvent: {}
+[0.800562] (-) TimerEvent: {}
+[0.900761] (-) TimerEvent: {}
+[1.000957] (-) TimerEvent: {}
+[1.101157] (-) TimerEvent: {}
+[1.201357] (-) TimerEvent: {}
+[1.301558] (-) TimerEvent: {}
+[1.401764] (-) TimerEvent: {}
+[1.501965] (-) TimerEvent: {}
+[1.602154] (-) TimerEvent: {}
+[1.702337] (-) TimerEvent: {}
+[1.802523] (-) TimerEvent: {}
+[1.902714] (-) TimerEvent: {}
+[2.002900] (-) TimerEvent: {}
+[2.103095] (-) TimerEvent: {}
+[2.203278] (-) TimerEvent: {}
+[2.303466] (-) TimerEvent: {}
+[2.403652] (-) TimerEvent: {}
+[2.474811] (mcity_terasim) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.475719] (mcity_terasim) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.503746] (-) TimerEvent: {}
+[2.603928] (-) TimerEvent: {}
+[2.704127] (-) TimerEvent: {}
+[2.804356] (-) TimerEvent: {}
+[2.904554] (-) TimerEvent: {}
+[3.004775] (-) TimerEvent: {}
+[3.104984] (-) TimerEvent: {}
+[3.205176] (-) TimerEvent: {}
+[3.214612] (mcity_terasim) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.237685] (mcity_terasim) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[3.305264] (-) TimerEvent: {}
+[3.405477] (-) TimerEvent: {}
+[3.447527] (mcity_terasim) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.451437] (mcity_terasim) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.505554] (-) TimerEvent: {}
+[3.560403] (mcity_terasim) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.564499] (mcity_terasim) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.568522] (mcity_terasim) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.605635] (-) TimerEvent: {}
+[3.669751] (mcity_terasim) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.705738] (-) TimerEvent: {}
+[3.774565] (mcity_terasim) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.805840] (-) TimerEvent: {}
+[3.906046] (-) TimerEvent: {}
+[4.006269] (-) TimerEvent: {}
+[4.106478] (-) TimerEvent: {}
+[4.206672] (-) TimerEvent: {}
+[4.306884] (-) TimerEvent: {}
+[4.407059] (-) TimerEvent: {}
+[4.507234] (-) TimerEvent: {}
+[4.607465] (-) TimerEvent: {}
+[4.707673] (-) TimerEvent: {}
+[4.807839] (-) TimerEvent: {}
+[4.908015] (-) TimerEvent: {}
+[5.008199] (-) TimerEvent: {}
+[5.108382] (-) TimerEvent: {}
+[5.208605] (-) TimerEvent: {}
+[5.308819] (-) TimerEvent: {}
+[5.316944] (mcity_terasim) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.402132] (mcity_terasim) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.402918] (mcity_terasim) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.404314] (mcity_terasim) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/zhijie/autoware/src/terasim/mcity_terasim/include\n'}
+[5.404388] (mcity_terasim) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.404642] (mcity_terasim) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.404877] (mcity_terasim) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.406824] (mcity_terasim) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.408910] (-) TimerEvent: {}
+[5.506830] (mcity_terasim) StdoutLine: {'line': b'-- Generating done\n'}
+[5.509002] (-) TimerEvent: {}
+[5.509769] (mcity_terasim) StdoutLine: {'line': b'-- Build files have been written to: /home/zhijie/autoware/build/mcity_terasim\n'}
+[5.521161] (mcity_terasim) CommandEnded: {'returncode': 0}
+[5.521912] (mcity_terasim) JobProgress: {'identifier': 'mcity_terasim', 'progress': 'build'}
+[5.522642] (mcity_terasim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zhijie/autoware/build/mcity_terasim', '--', '-j16', '-l16'], 'cwd': '/home/zhijie/autoware/build/mcity_terasim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zhijie'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zhijie/autoware/install/dummy_perception_publisher/lib:/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/tier4_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/tier4_system_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/dbw_ford_msgs/lib:/home/zhijie/autoware/install/dataspeed_ulc_msgs/lib:/home/zhijie/autoware/install/autoware_perception_msgs/lib:/home/zhijie/autoware/install/autoware_common_msgs/lib:/home/zhijie/autoware/install/autoware_auto_system_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:/home/zhijie/autoware/install/autoware_auto_control_msgs/lib:/home/zhijie/autoware/install/autoware_adapi_v1_msgs/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zhijie'), ('OLDPWD', '/home/zhijie'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1592'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zhijie'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhijie'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/opt/ros/humble/bin:/home/zhijie/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zhijie/.local/bin:/home/zhijie/.local/bin'), ('SESSION_MANAGER', 'local/zhijie-Alienware-Aurora-R11:@/tmp/.ICE-unix/1572,unix/zhijie-Alienware-Aurora-R11:/tmp/.ICE-unix/1572'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fb199be2_c2aa_4d81_9924_1cebf3e93243'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zhijie/autoware/install/dummy_perception_publisher:/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/dbw_ford_msgs:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/autoware_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_common_msgs:/home/zhijie/autoware/install/autoware_auto_system_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/home/zhijie/autoware/install/autoware_auto_control_msgs:/home/zhijie/autoware/install/autoware_adapi_v1_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zhijie/autoware/build/mcity_terasim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/opt/apps/com.qq.weixin.deepin/entries'), ('PYTHONPATH', '/home/zhijie/autoware/install/dummy_perception_publisher/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dbw_ford_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_ulc_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_adapi_v1_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zhijie/autoware/install/dummy_perception_publisher:/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/dbw_ford_msgs:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/autoware_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_common_msgs:/home/zhijie/autoware/install/autoware_auto_system_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/home/zhijie/autoware/install/autoware_auto_control_msgs:/home/zhijie/autoware/install/autoware_adapi_v1_msgs:/opt/ros/humble')]), 'shell': False}
+[5.556458] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cav_info_converter\x1b[0m\n'}
+[5.556635] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cav_context_replay\x1b[0m\n'}
+[5.556756] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target traffic_signal_control\x1b[0m\n'}
+[5.556837] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cav_context_converter\x1b[0m\n'}
+[5.556912] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sumo_autoware_cosim\x1b[0m\n'}
+[5.556985] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target traffic_signal_control_component\x1b[0m\n'}
+[5.557060] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gnss_to_pose_twist\x1b[0m\n'}
+[5.557154] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gnss_to_dummy_pose_twist\x1b[0m\n'}
+[5.570381] (mcity_terasim) StdoutLine: {'line': b'[ 39%] Built target cav_context_converter\n'}
+[5.570585] (mcity_terasim) StdoutLine: {'line': b'[ 39%] Built target sumo_autoware_cosim\n'}
+[5.570673] (mcity_terasim) StdoutLine: {'line': b'[ 39%] Built target traffic_signal_control\n'}
+[5.570748] (mcity_terasim) StdoutLine: {'line': b'[ 39%] Built target gnss_to_pose_twist\n'}
+[5.570825] (mcity_terasim) StdoutLine: {'line': b'[ 39%] Built target cav_context_replay\n'}
+[5.570900] (mcity_terasim) StdoutLine: {'line': b'[ 42%] Built target gnss_to_dummy_pose_twist\n'}
+[5.572135] (mcity_terasim) StdoutLine: {'line': b'[ 50%] Built target cav_info_converter\n'}
+[5.574043] (mcity_terasim) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/traffic_signal_control_component.dir/src/traffic_signal_control.cpp.o\x1b[0m\n'}
+[5.609102] (-) TimerEvent: {}
+[5.709374] (-) TimerEvent: {}
+[5.809572] (-) TimerEvent: {}
+[5.909772] (-) TimerEvent: {}
+[6.009988] (-) TimerEvent: {}
+[6.110260] (-) TimerEvent: {}
+[6.210490] (-) TimerEvent: {}
+[6.310722] (-) TimerEvent: {}
+[6.410960] (-) TimerEvent: {}
+[6.511199] (-) TimerEvent: {}
+[6.611405] (-) TimerEvent: {}
+[6.711640] (-) TimerEvent: {}
+[6.811873] (-) TimerEvent: {}
+[6.912081] (-) TimerEvent: {}
+[7.012334] (-) TimerEvent: {}
+[7.112569] (-) TimerEvent: {}
+[7.212804] (-) TimerEvent: {}
+[7.313042] (-) TimerEvent: {}
+[7.413254] (-) TimerEvent: {}
+[7.513484] (-) TimerEvent: {}
+[7.613714] (-) TimerEvent: {}
+[7.713945] (-) TimerEvent: {}
+[7.814201] (-) TimerEvent: {}
+[7.914450] (-) TimerEvent: {}
+[8.014690] (-) TimerEvent: {}
+[8.114937] (-) TimerEvent: {}
+[8.215166] (-) TimerEvent: {}
+[8.315403] (-) TimerEvent: {}
+[8.415638] (-) TimerEvent: {}
+[8.515877] (-) TimerEvent: {}
+[8.616113] (-) TimerEvent: {}
+[8.716351] (-) TimerEvent: {}
+[8.816587] (-) TimerEvent: {}
+[8.916818] (-) TimerEvent: {}
+[9.017067] (-) TimerEvent: {}
+[9.117278] (-) TimerEvent: {}
+[9.217507] (-) TimerEvent: {}
+[9.317757] (-) TimerEvent: {}
+[9.417959] (-) TimerEvent: {}
+[9.518190] (-) TimerEvent: {}
+[9.618416] (-) TimerEvent: {}
+[9.718638] (-) TimerEvent: {}
+[9.818849] (-) TimerEvent: {}
+[9.919135] (-) TimerEvent: {}
+[10.019361] (-) TimerEvent: {}
+[10.119593] (-) TimerEvent: {}
+[10.219823] (-) TimerEvent: {}
+[10.320052] (-) TimerEvent: {}
+[10.420277] (-) TimerEvent: {}
+[10.520501] (-) TimerEvent: {}
+[10.620726] (-) TimerEvent: {}
+[10.720950] (-) TimerEvent: {}
+[10.821176] (-) TimerEvent: {}
+[10.921401] (-) TimerEvent: {}
+[11.021661] (-) TimerEvent: {}
+[11.121887] (-) TimerEvent: {}
+[11.222115] (-) TimerEvent: {}
+[11.322347] (-) TimerEvent: {}
+[11.422588] (-) TimerEvent: {}
+[11.522816] (-) TimerEvent: {}
+[11.623042] (-) TimerEvent: {}
+[11.723277] (-) TimerEvent: {}
+[11.823505] (-) TimerEvent: {}
+[11.923733] (-) TimerEvent: {}
+[11.941867] (mcity_terasim) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libtraffic_signal_control_component.so\x1b[0m\n'}
+[12.023846] (-) TimerEvent: {}
+[12.061742] (mcity_terasim) StdoutLine: {'line': b'[ 57%] Built target traffic_signal_control_component\n'}
+[12.069630] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cav_info_converter_component\x1b[0m\n'}
+[12.082900] (mcity_terasim) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/cav_info_converter_component.dir/src/cav_info_converter.cpp.o\x1b[0m\n'}
+[12.123929] (-) TimerEvent: {}
+[12.224157] (-) TimerEvent: {}
+[12.324404] (-) TimerEvent: {}
+[12.424684] (-) TimerEvent: {}
+[12.524978] (-) TimerEvent: {}
+[12.625231] (-) TimerEvent: {}
+[12.725483] (-) TimerEvent: {}
+[12.825717] (-) TimerEvent: {}
+[12.925953] (-) TimerEvent: {}
+[13.026187] (-) TimerEvent: {}
+[13.126418] (-) TimerEvent: {}
+[13.226656] (-) TimerEvent: {}
+[13.326911] (-) TimerEvent: {}
+[13.427143] (-) TimerEvent: {}
+[13.527382] (-) TimerEvent: {}
+[13.627617] (-) TimerEvent: {}
+[13.727852] (-) TimerEvent: {}
+[13.828083] (-) TimerEvent: {}
+[13.928322] (-) TimerEvent: {}
+[14.028568] (-) TimerEvent: {}
+[14.128799] (-) TimerEvent: {}
+[14.229033] (-) TimerEvent: {}
+[14.329244] (-) TimerEvent: {}
+[14.429476] (-) TimerEvent: {}
+[14.529685] (-) TimerEvent: {}
+[14.629924] (-) TimerEvent: {}
+[14.730155] (-) TimerEvent: {}
+[14.830383] (-) TimerEvent: {}
+[14.930617] (-) TimerEvent: {}
+[15.030877] (-) TimerEvent: {}
+[15.131120] (-) TimerEvent: {}
+[15.231359] (-) TimerEvent: {}
+[15.331590] (-) TimerEvent: {}
+[15.431812] (-) TimerEvent: {}
+[15.532127] (-) TimerEvent: {}
+[15.632364] (-) TimerEvent: {}
+[15.732599] (-) TimerEvent: {}
+[15.832822] (-) TimerEvent: {}
+[15.933057] (-) TimerEvent: {}
+[16.033327] (-) TimerEvent: {}
+[16.133560] (-) TimerEvent: {}
+[16.233791] (-) TimerEvent: {}
+[16.334021] (-) TimerEvent: {}
+[16.434250] (-) TimerEvent: {}
+[16.534480] (-) TimerEvent: {}
+[16.634712] (-) TimerEvent: {}
+[16.734946] (-) TimerEvent: {}
+[16.835179] (-) TimerEvent: {}
+[16.935411] (-) TimerEvent: {}
+[17.035642] (-) TimerEvent: {}
+[17.135901] (-) TimerEvent: {}
+[17.236141] (-) TimerEvent: {}
+[17.336350] (-) TimerEvent: {}
+[17.436593] (-) TimerEvent: {}
+[17.536817] (-) TimerEvent: {}
+[17.637043] (-) TimerEvent: {}
+[17.737285] (-) TimerEvent: {}
+[17.837511] (-) TimerEvent: {}
+[17.937739] (-) TimerEvent: {}
+[18.037963] (-) TimerEvent: {}
+[18.138187] (-) TimerEvent: {}
+[18.238414] (-) TimerEvent: {}
+[18.338641] (-) TimerEvent: {}
+[18.438868] (-) TimerEvent: {}
+[18.539096] (-) TimerEvent: {}
+[18.639293] (-) TimerEvent: {}
+[18.739525] (-) TimerEvent: {}
+[18.839750] (-) TimerEvent: {}
+[18.939978] (-) TimerEvent: {}
+[19.040205] (-) TimerEvent: {}
+[19.140434] (-) TimerEvent: {}
+[19.240664] (-) TimerEvent: {}
+[19.340893] (-) TimerEvent: {}
+[19.441124] (-) TimerEvent: {}
+[19.541355] (-) TimerEvent: {}
+[19.641590] (-) TimerEvent: {}
+[19.741819] (-) TimerEvent: {}
+[19.842046] (-) TimerEvent: {}
+[19.942279] (-) TimerEvent: {}
+[20.042508] (-) TimerEvent: {}
+[20.142743] (-) TimerEvent: {}
+[20.242971] (-) TimerEvent: {}
+[20.288014] (mcity_terasim) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libcav_info_converter_component.so\x1b[0m\n'}
+[20.343085] (-) TimerEvent: {}
+[20.443104] (mcity_terasim) StdoutLine: {'line': b'[ 64%] Built target cav_info_converter_component\n'}
+[20.443256] (-) TimerEvent: {}
+[20.451591] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cav_context_converter_component\x1b[0m\n'}
+[20.468187] (mcity_terasim) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/cav_context_converter_component.dir/src/cav_context_converter.cpp.o\x1b[0m\n'}
+[20.543379] (-) TimerEvent: {}
+[20.643634] (-) TimerEvent: {}
+[20.743861] (-) TimerEvent: {}
+[20.844088] (-) TimerEvent: {}
+[20.944320] (-) TimerEvent: {}
+[21.044555] (-) TimerEvent: {}
+[21.144793] (-) TimerEvent: {}
+[21.245030] (-) TimerEvent: {}
+[21.345241] (-) TimerEvent: {}
+[21.445444] (-) TimerEvent: {}
+[21.545644] (-) TimerEvent: {}
+[21.645883] (-) TimerEvent: {}
+[21.746143] (-) TimerEvent: {}
+[21.846378] (-) TimerEvent: {}
+[21.946618] (-) TimerEvent: {}
+[22.046854] (-) TimerEvent: {}
+[22.147092] (-) TimerEvent: {}
+[22.247322] (-) TimerEvent: {}
+[22.347559] (-) TimerEvent: {}
+[22.447808] (-) TimerEvent: {}
+[22.548047] (-) TimerEvent: {}
+[22.648286] (-) TimerEvent: {}
+[22.748520] (-) TimerEvent: {}
+[22.848756] (-) TimerEvent: {}
+[22.948993] (-) TimerEvent: {}
+[23.049202] (-) TimerEvent: {}
+[23.149442] (-) TimerEvent: {}
+[23.249680] (-) TimerEvent: {}
+[23.349913] (-) TimerEvent: {}
+[23.450148] (-) TimerEvent: {}
+[23.550383] (-) TimerEvent: {}
+[23.650618] (-) TimerEvent: {}
+[23.750852] (-) TimerEvent: {}
+[23.851093] (-) TimerEvent: {}
+[23.951325] (-) TimerEvent: {}
+[24.051574] (-) TimerEvent: {}
+[24.151804] (-) TimerEvent: {}
+[24.252036] (-) TimerEvent: {}
+[24.352270] (-) TimerEvent: {}
+[24.452502] (-) TimerEvent: {}
+[24.552740] (-) TimerEvent: {}
+[24.652968] (-) TimerEvent: {}
+[24.753221] (-) TimerEvent: {}
+[24.853458] (-) TimerEvent: {}
+[24.953687] (-) TimerEvent: {}
+[25.053909] (-) TimerEvent: {}
+[25.154136] (-) TimerEvent: {}
+[25.254364] (-) TimerEvent: {}
+[25.354592] (-) TimerEvent: {}
+[25.454822] (-) TimerEvent: {}
+[25.555046] (-) TimerEvent: {}
+[25.655276] (-) TimerEvent: {}
+[25.755504] (-) TimerEvent: {}
+[25.855734] (-) TimerEvent: {}
+[25.955963] (-) TimerEvent: {}
+[26.056186] (-) TimerEvent: {}
+[26.156432] (-) TimerEvent: {}
+[26.256657] (-) TimerEvent: {}
+[26.356882] (-) TimerEvent: {}
+[26.457153] (-) TimerEvent: {}
+[26.557346] (-) TimerEvent: {}
+[26.657574] (-) TimerEvent: {}
+[26.757802] (-) TimerEvent: {}
+[26.858034] (-) TimerEvent: {}
+[26.958266] (-) TimerEvent: {}
+[27.058489] (-) TimerEvent: {}
+[27.158717] (-) TimerEvent: {}
+[27.258918] (-) TimerEvent: {}
+[27.359163] (-) TimerEvent: {}
+[27.459401] (-) TimerEvent: {}
+[27.559630] (-) TimerEvent: {}
+[27.560110] (mcity_terasim) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libcav_context_converter_component.so\x1b[0m\n'}
+[27.659748] (-) TimerEvent: {}
+[27.700644] (mcity_terasim) StdoutLine: {'line': b'[ 71%] Built target cav_context_converter_component\n'}
+[27.708672] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cav_context_replay_component\x1b[0m\n'}
+[27.721653] (mcity_terasim) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/cav_context_replay_component.dir/src/cav_context_replay.cpp.o\x1b[0m\n'}
+[27.759850] (-) TimerEvent: {}
+[27.860067] (-) TimerEvent: {}
+[27.960297] (-) TimerEvent: {}
+[28.060546] (-) TimerEvent: {}
+[28.160801] (-) TimerEvent: {}
+[28.261034] (-) TimerEvent: {}
+[28.361284] (-) TimerEvent: {}
+[28.461517] (-) TimerEvent: {}
+[28.561749] (-) TimerEvent: {}
+[28.661982] (-) TimerEvent: {}
+[28.762216] (-) TimerEvent: {}
+[28.862450] (-) TimerEvent: {}
+[28.962682] (-) TimerEvent: {}
+[29.062888] (-) TimerEvent: {}
+[29.163131] (-) TimerEvent: {}
+[29.263376] (-) TimerEvent: {}
+[29.363620] (-) TimerEvent: {}
+[29.463885] (-) TimerEvent: {}
+[29.564134] (-) TimerEvent: {}
+[29.664366] (-) TimerEvent: {}
+[29.764602] (-) TimerEvent: {}
+[29.864845] (-) TimerEvent: {}
+[29.965089] (-) TimerEvent: {}
+[30.065341] (-) TimerEvent: {}
+[30.165575] (-) TimerEvent: {}
+[30.265807] (-) TimerEvent: {}
+[30.366034] (-) TimerEvent: {}
+[30.366378] (mcity_terasim) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libcav_context_replay_component.so\x1b[0m\n'}
+[30.466146] (-) TimerEvent: {}
+[30.481167] (mcity_terasim) StdoutLine: {'line': b'[ 78%] Built target cav_context_replay_component\n'}
+[30.489231] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sumo_autoware_cosim_component\x1b[0m\n'}
+[30.502081] (mcity_terasim) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/sumo_autoware_cosim_component.dir/src/sumo_autoware_cosim.cpp.o\x1b[0m\n'}
+[30.566257] (-) TimerEvent: {}
+[30.666490] (-) TimerEvent: {}
+[30.766717] (-) TimerEvent: {}
+[30.866977] (-) TimerEvent: {}
+[30.967204] (-) TimerEvent: {}
+[31.067435] (-) TimerEvent: {}
+[31.167668] (-) TimerEvent: {}
+[31.267901] (-) TimerEvent: {}
+[31.368149] (-) TimerEvent: {}
+[31.468382] (-) TimerEvent: {}
+[31.568613] (-) TimerEvent: {}
+[31.668849] (-) TimerEvent: {}
+[31.769092] (-) TimerEvent: {}
+[31.869387] (-) TimerEvent: {}
+[31.969629] (-) TimerEvent: {}
+[32.069832] (-) TimerEvent: {}
+[32.170083] (-) TimerEvent: {}
+[32.270318] (-) TimerEvent: {}
+[32.370552] (-) TimerEvent: {}
+[32.470787] (-) TimerEvent: {}
+[32.571040] (-) TimerEvent: {}
+[32.671273] (-) TimerEvent: {}
+[32.771522] (-) TimerEvent: {}
+[32.871762] (-) TimerEvent: {}
+[32.971997] (-) TimerEvent: {}
+[33.072228] (-) TimerEvent: {}
+[33.172464] (-) TimerEvent: {}
+[33.272701] (-) TimerEvent: {}
+[33.372934] (-) TimerEvent: {}
+[33.473173] (-) TimerEvent: {}
+[33.573374] (-) TimerEvent: {}
+[33.673608] (-) TimerEvent: {}
+[33.773844] (-) TimerEvent: {}
+[33.874081] (-) TimerEvent: {}
+[33.974316] (-) TimerEvent: {}
+[34.074550] (-) TimerEvent: {}
+[34.174787] (-) TimerEvent: {}
+[34.275024] (-) TimerEvent: {}
+[34.375260] (-) TimerEvent: {}
+[34.475507] (-) TimerEvent: {}
+[34.575743] (-) TimerEvent: {}
+[34.675978] (-) TimerEvent: {}
+[34.776212] (-) TimerEvent: {}
+[34.876448] (-) TimerEvent: {}
+[34.976683] (-) TimerEvent: {}
+[35.076917] (-) TimerEvent: {}
+[35.177152] (-) TimerEvent: {}
+[35.277392] (-) TimerEvent: {}
+[35.377596] (-) TimerEvent: {}
+[35.477832] (-) TimerEvent: {}
+[35.578067] (-) TimerEvent: {}
+[35.678298] (-) TimerEvent: {}
+[35.778531] (-) TimerEvent: {}
+[35.878774] (-) TimerEvent: {}
+[35.979004] (-) TimerEvent: {}
+[36.079265] (-) TimerEvent: {}
+[36.179489] (-) TimerEvent: {}
+[36.279713] (-) TimerEvent: {}
+[36.379939] (-) TimerEvent: {}
+[36.480182] (-) TimerEvent: {}
+[36.580405] (-) TimerEvent: {}
+[36.680646] (-) TimerEvent: {}
+[36.780870] (-) TimerEvent: {}
+[36.881099] (-) TimerEvent: {}
+[36.981296] (-) TimerEvent: {}
+[37.081521] (-) TimerEvent: {}
+[37.181746] (-) TimerEvent: {}
+[37.281971] (-) TimerEvent: {}
+[37.382214] (-) TimerEvent: {}
+[37.482444] (-) TimerEvent: {}
+[37.582669] (-) TimerEvent: {}
+[37.682895] (-) TimerEvent: {}
+[37.783122] (-) TimerEvent: {}
+[37.883345] (-) TimerEvent: {}
+[37.983574] (-) TimerEvent: {}
+[38.083801] (-) TimerEvent: {}
+[38.184030] (-) TimerEvent: {}
+[38.284255] (-) TimerEvent: {}
+[38.384482] (-) TimerEvent: {}
+[38.484707] (-) TimerEvent: {}
+[38.584932] (-) TimerEvent: {}
+[38.685166] (-) TimerEvent: {}
+[38.785395] (-) TimerEvent: {}
+[38.885634] (-) TimerEvent: {}
+[38.985875] (-) TimerEvent: {}
+[39.086113] (-) TimerEvent: {}
+[39.186341] (-) TimerEvent: {}
+[39.286569] (-) TimerEvent: {}
+[39.386805] (-) TimerEvent: {}
+[39.487034] (-) TimerEvent: {}
+[39.587258] (-) TimerEvent: {}
+[39.687485] (-) TimerEvent: {}
+[39.775736] (mcity_terasim) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libsumo_autoware_cosim_component.so\x1b[0m\n'}
+[39.787575] (-) TimerEvent: {}
+[39.887785] (-) TimerEvent: {}
+[39.933556] (mcity_terasim) StdoutLine: {'line': b'[ 85%] Built target sumo_autoware_cosim_component\n'}
+[39.941598] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gnss_to_pose_twist_component\x1b[0m\n'}
+[39.954595] (mcity_terasim) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding CXX object CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o\x1b[0m\n'}
+[39.987863] (-) TimerEvent: {}
+[40.088084] (-) TimerEvent: {}
+[40.188328] (-) TimerEvent: {}
+[40.288591] (-) TimerEvent: {}
+[40.388858] (-) TimerEvent: {}
+[40.489125] (-) TimerEvent: {}
+[40.589381] (-) TimerEvent: {}
+[40.689638] (-) TimerEvent: {}
+[40.789901] (-) TimerEvent: {}
+[40.890167] (-) TimerEvent: {}
+[40.990431] (-) TimerEvent: {}
+[41.090690] (-) TimerEvent: {}
+[41.190957] (-) TimerEvent: {}
+[41.291223] (-) TimerEvent: {}
+[41.391481] (-) TimerEvent: {}
+[41.491731] (-) TimerEvent: {}
+[41.591991] (-) TimerEvent: {}
+[41.692257] (-) TimerEvent: {}
+[41.792521] (-) TimerEvent: {}
+[41.892783] (-) TimerEvent: {}
+[41.993060] (-) TimerEvent: {}
+[42.093354] (-) TimerEvent: {}
+[42.193615] (-) TimerEvent: {}
+[42.293878] (-) TimerEvent: {}
+[42.394140] (-) TimerEvent: {}
+[42.494403] (-) TimerEvent: {}
+[42.594665] (-) TimerEvent: {}
+[42.694916] (-) TimerEvent: {}
+[42.795169] (-) TimerEvent: {}
+[42.895433] (-) TimerEvent: {}
+[42.995694] (-) TimerEvent: {}
+[43.095954] (-) TimerEvent: {}
+[43.196214] (-) TimerEvent: {}
+[43.296481] (-) TimerEvent: {}
+[43.396743] (-) TimerEvent: {}
+[43.497003] (-) TimerEvent: {}
+[43.597321] (-) TimerEvent: {}
+[43.697587] (-) TimerEvent: {}
+[43.797852] (-) TimerEvent: {}
+[43.898116] (-) TimerEvent: {}
+[43.998379] (-) TimerEvent: {}
+[44.098643] (-) TimerEvent: {}
+[44.198903] (-) TimerEvent: {}
+[44.299168] (-) TimerEvent: {}
+[44.399435] (-) TimerEvent: {}
+[44.499700] (-) TimerEvent: {}
+[44.599951] (-) TimerEvent: {}
+[44.700200] (-) TimerEvent: {}
+[44.800447] (-) TimerEvent: {}
+[44.900696] (-) TimerEvent: {}
+[45.000946] (-) TimerEvent: {}
+[45.101201] (-) TimerEvent: {}
+[45.201465] (-) TimerEvent: {}
+[45.301725] (-) TimerEvent: {}
+[45.401984] (-) TimerEvent: {}
+[45.502238] (-) TimerEvent: {}
+[45.602498] (-) TimerEvent: {}
+[45.702759] (-) TimerEvent: {}
+[45.803023] (-) TimerEvent: {}
+[45.903282] (-) TimerEvent: {}
+[46.003551] (-) TimerEvent: {}
+[46.103816] (-) TimerEvent: {}
+[46.204078] (-) TimerEvent: {}
+[46.304340] (-) TimerEvent: {}
+[46.404602] (-) TimerEvent: {}
+[46.504866] (-) TimerEvent: {}
+[46.605129] (-) TimerEvent: {}
+[46.705389] (-) TimerEvent: {}
+[46.805654] (-) TimerEvent: {}
+[46.905920] (-) TimerEvent: {}
+[47.006186] (-) TimerEvent: {}
+[47.106451] (-) TimerEvent: {}
+[47.206712] (-) TimerEvent: {}
+[47.306977] (-) TimerEvent: {}
+[47.407239] (-) TimerEvent: {}
+[47.507502] (-) TimerEvent: {}
+[47.607766] (-) TimerEvent: {}
+[47.708029] (-) TimerEvent: {}
+[47.808293] (-) TimerEvent: {}
+[47.908559] (-) TimerEvent: {}
+[48.008816] (-) TimerEvent: {}
+[48.109072] (-) TimerEvent: {}
+[48.209335] (-) TimerEvent: {}
+[48.309590] (-) TimerEvent: {}
+[48.409850] (-) TimerEvent: {}
+[48.510107] (-) TimerEvent: {}
+[48.610362] (-) TimerEvent: {}
+[48.710621] (-) TimerEvent: {}
+[48.810879] (-) TimerEvent: {}
+[48.911136] (-) TimerEvent: {}
+[49.011393] (-) TimerEvent: {}
+[49.111648] (-) TimerEvent: {}
+[49.211901] (-) TimerEvent: {}
+[49.312155] (-) TimerEvent: {}
+[49.412412] (-) TimerEvent: {}
+[49.512670] (-) TimerEvent: {}
+[49.612929] (-) TimerEvent: {}
+[49.713194] (-) TimerEvent: {}
+[49.813454] (-) TimerEvent: {}
+[49.913709] (-) TimerEvent: {}
+[50.013966] (-) TimerEvent: {}
+[50.114222] (-) TimerEvent: {}
+[50.214479] (-) TimerEvent: {}
+[50.314737] (-) TimerEvent: {}
+[50.414992] (-) TimerEvent: {}
+[50.515251] (-) TimerEvent: {}
+[50.615508] (-) TimerEvent: {}
+[50.715769] (-) TimerEvent: {}
+[50.816034] (-) TimerEvent: {}
+[50.916290] (-) TimerEvent: {}
+[51.016547] (-) TimerEvent: {}
+[51.116804] (-) TimerEvent: {}
+[51.217061] (-) TimerEvent: {}
+[51.317323] (-) TimerEvent: {}
+[51.417579] (-) TimerEvent: {}
+[51.517839] (-) TimerEvent: {}
+[51.618099] (-) TimerEvent: {}
+[51.718374] (-) TimerEvent: {}
+[51.818631] (-) TimerEvent: {}
+[51.918887] (-) TimerEvent: {}
+[52.019144] (-) TimerEvent: {}
+[52.119401] (-) TimerEvent: {}
+[52.219661] (-) TimerEvent: {}
+[52.319917] (-) TimerEvent: {}
+[52.420169] (-) TimerEvent: {}
+[52.520424] (-) TimerEvent: {}
+[52.620684] (-) TimerEvent: {}
+[52.720940] (-) TimerEvent: {}
+[52.821220] (-) TimerEvent: {}
+[52.921477] (-) TimerEvent: {}
+[53.021729] (-) TimerEvent: {}
+[53.121984] (-) TimerEvent: {}
+[53.222244] (-) TimerEvent: {}
+[53.322498] (-) TimerEvent: {}
+[53.422757] (-) TimerEvent: {}
+[53.523014] (-) TimerEvent: {}
+[53.623271] (-) TimerEvent: {}
+[53.723528] (-) TimerEvent: {}
+[53.823784] (-) TimerEvent: {}
+[53.924043] (-) TimerEvent: {}
+[54.024324] (-) TimerEvent: {}
+[54.124553] (-) TimerEvent: {}
+[54.185524] (mcity_terasim) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX shared library libgnss_to_pose_twist_component.so\x1b[0m\n'}
+[54.224666] (-) TimerEvent: {}
+[54.324904] (-) TimerEvent: {}
+[54.405382] (mcity_terasim) StdoutLine: {'line': b'[ 92%] Built target gnss_to_pose_twist_component\n'}
+[54.413384] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gnss_to_dummy_pose_twist_component\x1b[0m\n'}
+[54.424995] (-) TimerEvent: {}
+[54.426044] (mcity_terasim) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding CXX object CMakeFiles/gnss_to_dummy_pose_twist_component.dir/src/gnss_to_dummy_pose_twist.cpp.o\x1b[0m\n'}
+[54.525124] (-) TimerEvent: {}
+[54.625352] (-) TimerEvent: {}
+[54.725585] (-) TimerEvent: {}
+[54.825823] (-) TimerEvent: {}
+[54.926054] (-) TimerEvent: {}
+[55.026311] (-) TimerEvent: {}
+[55.126549] (-) TimerEvent: {}
+[55.226783] (-) TimerEvent: {}
+[55.327018] (-) TimerEvent: {}
+[55.427250] (-) TimerEvent: {}
+[55.527484] (-) TimerEvent: {}
+[55.627720] (-) TimerEvent: {}
+[55.727962] (-) TimerEvent: {}
+[55.828204] (-) TimerEvent: {}
+[55.928438] (-) TimerEvent: {}
+[56.028678] (-) TimerEvent: {}
+[56.128918] (-) TimerEvent: {}
+[56.229164] (-) TimerEvent: {}
+[56.329396] (-) TimerEvent: {}
+[56.429625] (-) TimerEvent: {}
+[56.529862] (-) TimerEvent: {}
+[56.630098] (-) TimerEvent: {}
+[56.730336] (-) TimerEvent: {}
+[56.830567] (-) TimerEvent: {}
+[56.930800] (-) TimerEvent: {}
+[57.031038] (-) TimerEvent: {}
+[57.131278] (-) TimerEvent: {}
+[57.231517] (-) TimerEvent: {}
+[57.331746] (-) TimerEvent: {}
+[57.431980] (-) TimerEvent: {}
+[57.532216] (-) TimerEvent: {}
+[57.632453] (-) TimerEvent: {}
+[57.732688] (-) TimerEvent: {}
+[57.832922] (-) TimerEvent: {}
+[57.933165] (-) TimerEvent: {}
+[58.033399] (-) TimerEvent: {}
+[58.133611] (-) TimerEvent: {}
+[58.233849] (-) TimerEvent: {}
+[58.334087] (-) TimerEvent: {}
+[58.434323] (-) TimerEvent: {}
+[58.534560] (-) TimerEvent: {}
+[58.634793] (-) TimerEvent: {}
+[58.735026] (-) TimerEvent: {}
+[58.835256] (-) TimerEvent: {}
+[58.935489] (-) TimerEvent: {}
+[59.035723] (-) TimerEvent: {}
+[59.135960] (-) TimerEvent: {}
+[59.236193] (-) TimerEvent: {}
+[59.336427] (-) TimerEvent: {}
+[59.436664] (-) TimerEvent: {}
+[59.536899] (-) TimerEvent: {}
+[59.637136] (-) TimerEvent: {}
+[59.737374] (-) TimerEvent: {}
+[59.837613] (-) TimerEvent: {}
+[59.937848] (-) TimerEvent: {}
+[60.038077] (-) TimerEvent: {}
+[60.138307] (-) TimerEvent: {}
+[60.238543] (-) TimerEvent: {}
+[60.338765] (-) TimerEvent: {}
+[60.438988] (-) TimerEvent: {}
+[60.539211] (-) TimerEvent: {}
+[60.639436] (-) TimerEvent: {}
+[60.739656] (-) TimerEvent: {}
+[60.839879] (-) TimerEvent: {}
+[60.940101] (-) TimerEvent: {}
+[61.040327] (-) TimerEvent: {}
+[61.140550] (-) TimerEvent: {}
+[61.240771] (-) TimerEvent: {}
+[61.340992] (-) TimerEvent: {}
+[61.441228] (-) TimerEvent: {}
+[61.541453] (-) TimerEvent: {}
+[61.641686] (-) TimerEvent: {}
+[61.741935] (-) TimerEvent: {}
+[61.842161] (-) TimerEvent: {}
+[61.942382] (-) TimerEvent: {}
+[62.042608] (-) TimerEvent: {}
+[62.142833] (-) TimerEvent: {}
+[62.243062] (-) TimerEvent: {}
+[62.343284] (-) TimerEvent: {}
+[62.443511] (-) TimerEvent: {}
+[62.543758] (-) TimerEvent: {}
+[62.643971] (-) TimerEvent: {}
+[62.744287] (-) TimerEvent: {}
+[62.844512] (-) TimerEvent: {}
+[62.944753] (-) TimerEvent: {}
+[63.044978] (-) TimerEvent: {}
+[63.145181] (-) TimerEvent: {}
+[63.245408] (-) TimerEvent: {}
+[63.345637] (-) TimerEvent: {}
+[63.445885] (-) TimerEvent: {}
+[63.546120] (-) TimerEvent: {}
+[63.646349] (-) TimerEvent: {}
+[63.746572] (-) TimerEvent: {}
+[63.846802] (-) TimerEvent: {}
+[63.947028] (-) TimerEvent: {}
+[64.047251] (-) TimerEvent: {}
+[64.147480] (-) TimerEvent: {}
+[64.247738] (-) TimerEvent: {}
+[64.335210] (mcity_terasim) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libgnss_to_dummy_pose_twist_component.so\x1b[0m\n'}
+[64.347851] (-) TimerEvent: {}
+[64.448221] (-) TimerEvent: {}
+[64.504526] (mcity_terasim) StdoutLine: {'line': b'[100%] Built target gnss_to_dummy_pose_twist_component\n'}
+[64.512319] (mcity_terasim) CommandEnded: {'returncode': 0}
+[64.547221] (mcity_terasim) JobProgress: {'identifier': 'mcity_terasim', 'progress': 'install'}
+[64.548276] (-) TimerEvent: {}
+[64.552874] (mcity_terasim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zhijie/autoware/build/mcity_terasim'], 'cwd': '/home/zhijie/autoware/build/mcity_terasim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zhijie'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zhijie/autoware/install/dummy_perception_publisher/lib:/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/tier4_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/tier4_system_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/dbw_ford_msgs/lib:/home/zhijie/autoware/install/dataspeed_ulc_msgs/lib:/home/zhijie/autoware/install/autoware_perception_msgs/lib:/home/zhijie/autoware/install/autoware_common_msgs/lib:/home/zhijie/autoware/install/autoware_auto_system_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:/home/zhijie/autoware/install/autoware_auto_control_msgs/lib:/home/zhijie/autoware/install/autoware_adapi_v1_msgs/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zhijie'), ('OLDPWD', '/home/zhijie'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1592'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zhijie'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhijie'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/opt/ros/humble/bin:/home/zhijie/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zhijie/.local/bin:/home/zhijie/.local/bin'), ('SESSION_MANAGER', 'local/zhijie-Alienware-Aurora-R11:@/tmp/.ICE-unix/1572,unix/zhijie-Alienware-Aurora-R11:/tmp/.ICE-unix/1572'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fb199be2_c2aa_4d81_9924_1cebf3e93243'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zhijie/autoware/install/dummy_perception_publisher:/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/dbw_ford_msgs:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/autoware_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_common_msgs:/home/zhijie/autoware/install/autoware_auto_system_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/home/zhijie/autoware/install/autoware_auto_control_msgs:/home/zhijie/autoware/install/autoware_adapi_v1_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zhijie/autoware/build/mcity_terasim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/opt/apps/com.qq.weixin.deepin/entries'), ('PYTHONPATH', '/home/zhijie/autoware/install/dummy_perception_publisher/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dbw_ford_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_ulc_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_adapi_v1_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zhijie/autoware/install/dummy_perception_publisher:/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/dbw_ford_msgs:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/autoware_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_common_msgs:/home/zhijie/autoware/install/autoware_auto_system_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/home/zhijie/autoware/install/autoware_auto_control_msgs:/home/zhijie/autoware/install/autoware_adapi_v1_msgs:/opt/ros/humble')]), 'shell': False}
+[64.558059] (mcity_terasim) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[64.558430] (mcity_terasim) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[64.558728] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/mcity_terasim/traffic_signal_control\n'}
+[64.558937] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/mcity_terasim/cav_info_converter\n'}
+[64.559087] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/mcity_terasim/cav_context_converter\n'}
+[64.559223] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/mcity_terasim/cav_context_replay\n'}
+[64.559369] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/mcity_terasim/sumo_autoware_cosim\n'}
+[64.559464] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/mcity_terasim/gnss_to_pose_twist\n'}
+[64.559644] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/mcity_terasim/gnss_to_dummy_pose_twist\n'}
+[64.559842] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/include/cav_context_converter.hpp\n'}
+[64.559909] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/include/cav_context_replay.hpp\n'}
+[64.559973] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/include/cav_info_converter.hpp\n'}
+[64.560033] (mcity_terasim) StdoutLine: {'line': b'-- Symlinking: /home/zhijie/autoware/install/mcity_terasim/include/dbw_ulc_converter.hpp\n'}
+[64.566331] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/include/gnss_to_dummy_pose_twist.hpp\n'}
+[64.566449] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/include/gnss_to_pose_twist.hpp\n'}
+[64.566523] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/include/sumo_autoware_cosim.hpp\n'}
+[64.566572] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/include/traffic_signal_control.hpp\n'}
+[64.566640] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/environment/library_path.sh\n'}
+[64.566703] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/environment/library_path.dsv\n'}
+[64.566921] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/libtraffic_signal_control_component.so\n'}
+[64.567015] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/libcav_info_converter_component.so\n'}
+[64.567085] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/libcav_context_converter_component.so\n'}
+[64.567164] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/libcav_context_replay_component.so\n'}
+[64.567252] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/libsumo_autoware_cosim_component.so\n'}
+[64.567341] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/libgnss_to_pose_twist_component.so\n'}
+[64.567429] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/libgnss_to_dummy_pose_twist_component.so\n'}
+[64.567683] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/launch/cosim.launch.py\n'}
+[64.567753] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/launch/real.launch.py\n'}
+[64.567964] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/include/cav_context_converter.hpp\n'}
+[64.568032] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/include/cav_context_replay.hpp\n'}
+[64.568099] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/include/cav_info_converter.hpp\n'}
+[64.568160] (mcity_terasim) StdoutLine: {'line': b'-- Symlinking: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/include/dbw_ulc_converter.hpp\n'}
+[64.574089] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/include/gnss_to_dummy_pose_twist.hpp\n'}
+[64.574197] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/include/gnss_to_pose_twist.hpp\n'}
+[64.574263] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/include/sumo_autoware_cosim.hpp\n'}
+[64.574312] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/include/traffic_signal_control.hpp\n'}
+[64.574372] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/ament_index/resource_index/package_run_dependencies/mcity_terasim\n'}
+[64.574489] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/ament_index/resource_index/parent_prefix_path/mcity_terasim\n'}
+[64.574586] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/environment/ament_prefix_path.sh\n'}
+[64.574716] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/environment/ament_prefix_path.dsv\n'}
+[64.574803] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/environment/path.sh\n'}
+[64.574877] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/environment/path.dsv\n'}
+[64.574974] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/local_setup.bash\n'}
+[64.575070] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/local_setup.sh\n'}
+[64.575166] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/local_setup.zsh\n'}
+[64.575260] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/local_setup.dsv\n'}
+[64.575334] (mcity_terasim) StdoutLine: {'line': b'-- Symlinking: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/package.dsv\n'}
+[64.581501] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/ament_index/resource_index/packages/mcity_terasim\n'}
+[64.581612] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/ament_index/resource_index/rclcpp_components/mcity_terasim\n'}
+[64.581689] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[64.581857] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[64.581946] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[64.582112] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/cmake/mcity_terasimConfig.cmake\n'}
+[64.582200] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/cmake/mcity_terasimConfig-version.cmake\n'}
+[64.582268] (mcity_terasim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/package.xml\n'}
+[64.583377] (mcity_terasim) CommandEnded: {'returncode': 0}
+[64.639463] (mcity_terasim) JobEnded: {'identifier': 'mcity_terasim', 'rc': 0}
+[64.639934] (-) EventReactorShutdown: {}

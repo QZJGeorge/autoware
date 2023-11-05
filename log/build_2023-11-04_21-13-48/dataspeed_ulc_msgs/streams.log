@@ -1,0 +1,99 @@
+[0.189s] Invoking command in '/home/zhijie/autoware/build/dataspeed_ulc_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/terasim/data_speed_driver/dataspeed_ulc_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/dataspeed_ulc_msgs
+[0.242s] -- The C compiler identification is GNU 11.4.0
+[0.422s] -- The CXX compiler identification is GNU 11.4.0
+[0.431s] -- Detecting C compiler ABI info
+[0.537s] -- Detecting C compiler ABI info - done
+[0.560s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.560s] -- Detecting C compile features
+[0.560s] -- Detecting C compile features - done
+[0.560s] -- Detecting CXX compiler ABI info
+[0.635s] -- Detecting CXX compiler ABI info - done
+[0.639s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.644s] -- Detecting CXX compile features
+[0.646s] -- Detecting CXX compile features - done
+[0.646s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.684s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.777s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.827s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.828s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.839s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.856s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.867s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[1.206s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.436s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.799s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.828s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.829s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.868s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.868s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.868s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.868s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.892s] -- Found PythonExtra: .so  
+[1.961s] -- Configuring done
+[2.002s] -- Generating done
+[2.007s] -- Build files have been written to: /home/zhijie/autoware/build/dataspeed_ulc_msgs
+[2.051s] Invoked command in '/home/zhijie/autoware/build/dataspeed_ulc_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/terasim/data_speed_driver/dataspeed_ulc_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/dataspeed_ulc_msgs
+[2.054s] Invoking command in '/home/zhijie/autoware/build/dataspeed_ulc_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/dataspeed_ulc_msgs -- -j16 -l16
+[2.135s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.135s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.143s] [  5%] Built target ament_cmake_python_symlink_dataspeed_ulc_msgs
+[2.522s] running egg_info
+[2.523s] creating dataspeed_ulc_msgs.egg-info
+[2.523s] writing dataspeed_ulc_msgs.egg-info/PKG-INFO
+[2.523s] writing dependency_links to dataspeed_ulc_msgs.egg-info/dependency_links.txt
+[2.523s] writing top-level names to dataspeed_ulc_msgs.egg-info/top_level.txt
+[2.524s] writing manifest file 'dataspeed_ulc_msgs.egg-info/SOURCES.txt'
+[2.527s] reading manifest file 'dataspeed_ulc_msgs.egg-info/SOURCES.txt'
+[2.527s] writing manifest file 'dataspeed_ulc_msgs.egg-info/SOURCES.txt'
+[2.559s] [  5%] Built target ament_cmake_python_build_dataspeed_ulc_msgs_egg
+[2.625s] [ 10%] [32mBuilding C object CMakeFiles/dataspeed_ulc_msgs__rosidl_generator_c.dir/rosidl_generator_c/dataspeed_ulc_msgs/msg/detail/ulc_report__functions.c.o[0m
+[2.626s] [ 10%] [32mBuilding C object CMakeFiles/dataspeed_ulc_msgs__rosidl_generator_c.dir/rosidl_generator_c/dataspeed_ulc_msgs/msg/detail/ulc_cmd__functions.c.o[0m
+[2.646s] [ 10%] Built target dataspeed_ulc_msgs__cpp
+[2.653s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.653s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.654s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.746s] [ 20%] [32m[1mLinking C shared library libdataspeed_ulc_msgs__rosidl_generator_c.so[0m
+[2.784s] [ 20%] Built target dataspeed_ulc_msgs__rosidl_generator_c
+[2.791s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.794s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.794s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.937s] [ 33%] [32mBuilding CXX object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dataspeed_ulc_msgs/msg/ulc_report__type_support.cpp.o[0m
+[2.937s] [ 33%] [32mBuilding CXX object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dataspeed_ulc_msgs/msg/ulc_cmd__type_support.cpp.o[0m
+[2.965s] [ 35%] [32mBuilding CXX object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dataspeed_ulc_msgs/msg/detail/dds_fastrtps/ulc_cmd__type_support.cpp.o[0m
+[2.967s] [ 38%] [32mBuilding CXX object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dataspeed_ulc_msgs/msg/detail/dds_fastrtps/ulc_report__type_support.cpp.o[0m
+[3.052s] [ 43%] [32mBuilding CXX object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dataspeed_ulc_msgs/msg/detail/ulc_report__type_support.cpp.o[0m
+[3.052s] [ 43%] [32mBuilding CXX object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dataspeed_ulc_msgs/msg/detail/ulc_cmd__type_support.cpp.o[0m
+[3.201s] [ 46%] [32m[1mLinking CXX shared library libdataspeed_ulc_msgs__rosidl_typesupport_cpp.so[0m
+[3.204s] [ 51%] [32mBuilding CXX object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/dataspeed_ulc_msgs/msg/ulc_cmd__type_support.cpp.o[0m
+[3.204s] [ 51%] [32mBuilding CXX object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/dataspeed_ulc_msgs/msg/ulc_report__type_support.cpp.o[0m
+[3.224s] [ 56%] [32mBuilding C object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dataspeed_ulc_msgs/msg/detail/ulc_cmd__type_support.c.o[0m
+[3.224s] [ 56%] [32mBuilding C object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dataspeed_ulc_msgs/msg/detail/ulc_report__type_support.c.o[0m
+[3.234s] [ 58%] [32m[1mLinking CXX shared library libdataspeed_ulc_msgs__rosidl_typesupport_c.so[0m
+[3.246s] [ 61%] [32mBuilding CXX object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dataspeed_ulc_msgs/msg/detail/ulc_report__type_support_c.cpp.o[0m
+[3.246s] [ 64%] [32mBuilding CXX object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dataspeed_ulc_msgs/msg/detail/ulc_cmd__type_support_c.cpp.o[0m
+[3.246s] [ 64%] Built target dataspeed_ulc_msgs__rosidl_typesupport_cpp
+[3.262s] [ 66%] [32m[1mLinking C shared library libdataspeed_ulc_msgs__rosidl_typesupport_introspection_c.so[0m
+[3.274s] [ 66%] Built target dataspeed_ulc_msgs__rosidl_typesupport_c
+[3.284s] [ 66%] Built target dataspeed_ulc_msgs__rosidl_typesupport_introspection_c
+[3.377s] [ 69%] [32m[1mLinking CXX shared library libdataspeed_ulc_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.433s] [ 69%] Built target dataspeed_ulc_msgs__rosidl_typesupport_fastrtps_cpp
+[3.451s] [ 71%] [32m[1mLinking CXX shared library libdataspeed_ulc_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[3.492s] [ 71%] Built target dataspeed_ulc_msgs__rosidl_typesupport_introspection_cpp
+[3.556s] [ 74%] [32m[1mLinking CXX shared library libdataspeed_ulc_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[3.602s] [ 74%] Built target dataspeed_ulc_msgs__rosidl_typesupport_fastrtps_c
+[3.614s] [ 74%] Built target dataspeed_ulc_msgs
+[3.626s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.035s] [ 76%] Built target dataspeed_ulc_msgs__py
+[4.048s] [ 82%] [32mBuilding C object CMakeFiles/dataspeed_ulc_msgs__rosidl_generator_py.dir/rosidl_generator_py/dataspeed_ulc_msgs/msg/_ulc_cmd_s.c.o[0m
+[4.048s] [ 82%] [32mBuilding C object CMakeFiles/dataspeed_ulc_msgs__rosidl_generator_py.dir/rosidl_generator_py/dataspeed_ulc_msgs/msg/_ulc_report_s.c.o[0m
+[4.169s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/dataspeed_ulc_msgs/libdataspeed_ulc_msgs__rosidl_generator_py.so[0m
+[4.195s] [ 84%] Built target dataspeed_ulc_msgs__rosidl_generator_py
+[4.208s] [ 92%] [32mBuilding C object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/dataspeed_ulc_msgs/_dataspeed_ulc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.208s] [ 92%] [32mBuilding C object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/dataspeed_ulc_msgs/_dataspeed_ulc_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.208s] [ 92%] [32mBuilding C object CMakeFiles/dataspeed_ulc_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dataspeed_ulc_msgs/_dataspeed_ulc_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[4.296s] [100%] [32m[1mLinking C shared library rosidl_generator_py/dataspeed_ulc_msgs/dataspeed_ulc_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.296s] [100%] [32m[1mLinking C shared library rosidl_generator_py/dataspeed_ulc_msgs/dataspeed_ulc_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.296s] [100%] [32m[1mLinking C shared library rosidl_generator_py/dataspeed_ulc_msgs/dataspeed_ulc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.321s] [100%] Built target dataspeed_ulc_msgs__rosidl_typesupport_fastrtps_c__pyext
+[4.321s] [100%] Built target dataspeed_ulc_msgs__rosidl_typesupport_introspection_c__pyext
+[4.321s] [100%] Built target dataspeed_ulc_msgs__rosidl_typesupport_c__pyext

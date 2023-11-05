@@ -1,0 +1,32 @@
+[0.113s] Invoking command in '/home/zhijie/autoware/build/tier4_api_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/tier4_planning_msgs:/home/zhijie/autoware/install/autoware_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/tier4_planning_msgs:/home/zhijie/autoware/install/autoware_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_system_msgs/lib:/home/zhijie/autoware/install/tier4_planning_msgs/lib:/home/zhijie/autoware/install/autoware_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_api_msgs -- -j16 -l16
+[0.170s] [  0%] Built target tier4_api_msgs__cpp
+[0.177s] [  0%] Built target ament_cmake_python_symlink_tier4_api_msgs
+[0.179s] [ 12%] Built target tier4_api_msgs__rosidl_generator_c
+[0.190s] [35m[1mConsolidate compiler generated dependencies of target tier4_api_msgs__rosidl_typesupport_cpp[0m
+[0.199s] [35m[1mConsolidate compiler generated dependencies of target tier4_api_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.199s] [35m[1mConsolidate compiler generated dependencies of target tier4_api_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.200s] [35m[1mConsolidate compiler generated dependencies of target tier4_api_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.227s] [ 24%] Built target tier4_api_msgs__rosidl_typesupport_cpp
+[0.228s] [ 35%] Built target tier4_api_msgs__rosidl_typesupport_fastrtps_cpp
+[0.228s] [ 47%] Built target tier4_api_msgs__rosidl_typesupport_introspection_cpp
+[0.228s] [ 59%] Built target tier4_api_msgs__rosidl_typesupport_introspection_c
+[0.238s] [ 71%] Built target tier4_api_msgs__rosidl_typesupport_fastrtps_c
+[0.238s] [ 83%] Built target tier4_api_msgs__rosidl_typesupport_c
+[0.264s] [ 83%] Built target tier4_api_msgs
+[0.280s] [ 84%] Built target tier4_api_msgs__py
+[0.299s] [35m[1mConsolidate compiler generated dependencies of target tier4_api_msgs__rosidl_generator_py[0m
+[0.321s] [ 95%] Built target tier4_api_msgs__rosidl_generator_py
+[0.337s] [35m[1mConsolidate compiler generated dependencies of target tier4_api_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.339s] [35m[1mConsolidate compiler generated dependencies of target tier4_api_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[0.349s] [35m[1mConsolidate compiler generated dependencies of target tier4_api_msgs__rosidl_typesupport_c__pyext[0m
+[0.350s] [ 97%] Built target tier4_api_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.352s] [ 99%] Built target tier4_api_msgs__rosidl_typesupport_introspection_c__pyext
+[0.372s] [100%] Built target tier4_api_msgs__rosidl_typesupport_c__pyext
+[0.598s] running egg_info
+[0.600s] writing tier4_api_msgs.egg-info/PKG-INFO
+[0.600s] writing dependency_links to tier4_api_msgs.egg-info/dependency_links.txt
+[0.600s] writing top-level names to tier4_api_msgs.egg-info/top_level.txt
+[0.605s] reading manifest file 'tier4_api_msgs.egg-info/SOURCES.txt'
+[0.605s] writing manifest file 'tier4_api_msgs.egg-info/SOURCES.txt'
+[0.644s] [100%] Built target ament_cmake_python_build_tier4_api_msgs_egg
+[0.692s] Invoked command in '/home/zhijie/autoware/build/tier4_api_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/tier4_planning_msgs:/home/zhijie/autoware/install/autoware_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/tier4_planning_msgs:/home/zhijie/autoware/install/autoware_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_system_msgs/lib:/home/zhijie/autoware/install/tier4_planning_msgs/lib:/home/zhijie/autoware/install/autoware_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_api_msgs -- -j16 -l16

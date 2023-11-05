@@ -1,0 +1,298 @@
+[0.062s] Invoking command in '/home/zhijie/autoware/build/tier4_vehicle_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_control_msgs:/home/zhijie/autoware/install/autoware_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_control_msgs:/home/zhijie/autoware/install/autoware_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_control_msgs/lib:/home/zhijie/autoware/install/autoware_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_control_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_vehicle_msgs -- -j16 -l16
+[0.204s] [  0%] Built target tier4_vehicle_msgs__cpp
+[0.213s] [ 12%] Built target tier4_vehicle_msgs__rosidl_generator_c
+[0.220s] [ 12%] Built target ament_cmake_python_symlink_tier4_vehicle_msgs
+[0.271s] [ 24%] Built target tier4_vehicle_msgs__rosidl_typesupport_cpp
+[0.295s] [ 47%] Built target tier4_vehicle_msgs__rosidl_typesupport_fastrtps_cpp
+[0.295s] [ 47%] Built target tier4_vehicle_msgs__rosidl_typesupport_introspection_cpp
+[0.337s] [ 59%] Built target tier4_vehicle_msgs__rosidl_typesupport_c
+[0.340s] [ 71%] Built target tier4_vehicle_msgs__rosidl_typesupport_introspection_c
+[0.349s] [ 83%] Built target tier4_vehicle_msgs__rosidl_typesupport_fastrtps_c
+[0.398s] [ 83%] Built target tier4_vehicle_msgs
+[0.441s] [ 84%] Built target tier4_vehicle_msgs__py
+[0.488s] [ 95%] Built target tier4_vehicle_msgs__rosidl_generator_py
+[0.534s] [ 96%] Built target tier4_vehicle_msgs__rosidl_typesupport_c__pyext
+[0.541s] [ 98%] Built target tier4_vehicle_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.542s] [100%] Built target tier4_vehicle_msgs__rosidl_typesupport_introspection_c__pyext
+[0.659s] running egg_info
+[0.660s] writing tier4_vehicle_msgs.egg-info/PKG-INFO
+[0.660s] writing dependency_links to tier4_vehicle_msgs.egg-info/dependency_links.txt
+[0.661s] writing top-level names to tier4_vehicle_msgs.egg-info/top_level.txt
+[0.665s] reading manifest file 'tier4_vehicle_msgs.egg-info/SOURCES.txt'
+[0.666s] writing manifest file 'tier4_vehicle_msgs.egg-info/SOURCES.txt'
+[0.697s] [100%] Built target ament_cmake_python_build_tier4_vehicle_msgs_egg
+[0.719s] Invoked command in '/home/zhijie/autoware/build/tier4_vehicle_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_control_msgs:/home/zhijie/autoware/install/autoware_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_control_msgs:/home/zhijie/autoware/install/autoware_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_control_msgs/lib:/home/zhijie/autoware/install/autoware_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_control_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_vehicle_msgs -- -j16 -l16
+[2.442s] Invoking command in '/home/zhijie/autoware/build/tier4_vehicle_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_control_msgs:/home/zhijie/autoware/install/autoware_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_control_msgs:/home/zhijie/autoware/install/autoware_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_control_msgs/lib:/home/zhijie/autoware/install/autoware_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_control_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_vehicle_msgs
+[2.536s] -- Install configuration: "Release"
+[2.537s] -- Execute custom install script
+[2.539s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/ament_index/resource_index/rosidl_interfaces/tier4_vehicle_msgs
+[2.539s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/actuation_command.h
+[2.539s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/actuation_command_stamped.h
+[2.539s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/actuation_status.h
+[2.539s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/actuation_status_stamped.h
+[2.539s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/battery_status.h
+[2.539s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command__functions.h
+[2.540s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command__struct.h
+[2.540s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command__type_support.h
+[2.540s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command_stamped__functions.h
+[2.540s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command_stamped__struct.h
+[2.540s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command_stamped__type_support.h
+[2.540s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status__functions.h
+[2.540s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status__struct.h
+[2.540s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status__type_support.h
+[2.540s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status_stamped__functions.h
+[2.540s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status_stamped__struct.h
+[2.540s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status_stamped__type_support.h
+[2.540s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/battery_status__functions.h
+[2.541s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/battery_status__struct.h
+[2.541s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/battery_status__type_support.h
+[2.541s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift__functions.h
+[2.541s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift__struct.h
+[2.541s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift__type_support.h
+[2.541s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift_stamped__functions.h
+[2.541s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift_stamped__struct.h
+[2.541s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift_stamped__type_support.h
+[2.541s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering__functions.h
+[2.541s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering__struct.h
+[2.541s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering__type_support.h
+[2.541s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering_wheel_status_stamped__functions.h
+[2.542s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering_wheel_status_stamped__struct.h
+[2.542s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering_wheel_status_stamped__type_support.h
+[2.542s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/turn_signal__functions.h
+[2.542s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/turn_signal__struct.h
+[2.542s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/turn_signal__type_support.h
+[2.542s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/vehicle_emergency_stamped__functions.h
+[2.542s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/vehicle_emergency_stamped__struct.h
+[2.542s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/vehicle_emergency_stamped__type_support.h
+[2.542s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.542s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/shift.h
+[2.542s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/shift_stamped.h
+[2.543s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/steering.h
+[2.543s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/steering_wheel_status_stamped.h
+[2.543s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/turn_signal.h
+[2.543s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/vehicle_emergency_stamped.h
+[2.543s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/srv/detail/update_accel_brake_map__functions.h
+[2.543s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/srv/detail/update_accel_brake_map__struct.h
+[2.543s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/srv/detail/update_accel_brake_map__type_support.h
+[2.543s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/srv/update_accel_brake_map.h
+[2.543s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/environment/library_path.sh
+[2.543s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/environment/library_path.dsv
+[2.543s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command__rosidl_typesupport_fastrtps_c.h
+[2.543s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command_stamped__rosidl_typesupport_fastrtps_c.h
+[2.544s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status__rosidl_typesupport_fastrtps_c.h
+[2.544s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status_stamped__rosidl_typesupport_fastrtps_c.h
+[2.544s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/battery_status__rosidl_typesupport_fastrtps_c.h
+[2.544s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift__rosidl_typesupport_fastrtps_c.h
+[2.544s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift_stamped__rosidl_typesupport_fastrtps_c.h
+[2.544s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering__rosidl_typesupport_fastrtps_c.h
+[2.544s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering_wheel_status_stamped__rosidl_typesupport_fastrtps_c.h
+[2.544s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/turn_signal__rosidl_typesupport_fastrtps_c.h
+[2.544s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/vehicle_emergency_stamped__rosidl_typesupport_fastrtps_c.h
+[2.544s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.544s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/srv/detail/update_accel_brake_map__rosidl_typesupport_fastrtps_c.h
+[2.544s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command__rosidl_typesupport_introspection_c.h
+[2.545s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command_stamped__rosidl_typesupport_introspection_c.h
+[2.545s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status__rosidl_typesupport_introspection_c.h
+[2.545s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status_stamped__rosidl_typesupport_introspection_c.h
+[2.545s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/battery_status__rosidl_typesupport_introspection_c.h
+[2.545s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift__rosidl_typesupport_introspection_c.h
+[2.545s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift_stamped__rosidl_typesupport_introspection_c.h
+[2.545s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering__rosidl_typesupport_introspection_c.h
+[2.545s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering_wheel_status_stamped__rosidl_typesupport_introspection_c.h
+[2.545s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/turn_signal__rosidl_typesupport_introspection_c.h
+[2.545s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/vehicle_emergency_stamped__rosidl_typesupport_introspection_c.h
+[2.545s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.545s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/srv/detail/update_accel_brake_map__rosidl_typesupport_introspection_c.h
+[2.546s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/actuation_command.hpp
+[2.546s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/actuation_command_stamped.hpp
+[2.546s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/actuation_status.hpp
+[2.546s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/actuation_status_stamped.hpp
+[2.546s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/battery_status.hpp
+[2.546s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command__builder.hpp
+[2.546s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command__struct.hpp
+[2.546s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command__traits.hpp
+[2.546s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command_stamped__builder.hpp
+[2.546s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command_stamped__struct.hpp
+[2.547s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command_stamped__traits.hpp
+[2.547s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status__builder.hpp
+[2.547s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status__struct.hpp
+[2.547s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status__traits.hpp
+[2.547s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status_stamped__builder.hpp
+[2.547s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status_stamped__struct.hpp
+[2.547s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status_stamped__traits.hpp
+[2.547s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/battery_status__builder.hpp
+[2.547s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/battery_status__struct.hpp
+[2.547s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/battery_status__traits.hpp
+[2.547s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift__builder.hpp
+[2.555s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift__struct.hpp
+[2.556s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift__traits.hpp
+[2.556s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift_stamped__builder.hpp
+[2.556s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift_stamped__struct.hpp
+[2.556s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift_stamped__traits.hpp
+[2.556s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering__builder.hpp
+[2.556s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering__struct.hpp
+[2.556s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering__traits.hpp
+[2.556s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering_wheel_status_stamped__builder.hpp
+[2.556s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering_wheel_status_stamped__struct.hpp
+[2.556s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering_wheel_status_stamped__traits.hpp
+[2.557s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/turn_signal__builder.hpp
+[2.557s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/turn_signal__struct.hpp
+[2.557s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/turn_signal__traits.hpp
+[2.557s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/vehicle_emergency_stamped__builder.hpp
+[2.557s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/vehicle_emergency_stamped__struct.hpp
+[2.557s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/vehicle_emergency_stamped__traits.hpp
+[2.557s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/shift.hpp
+[2.557s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/shift_stamped.hpp
+[2.557s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/steering.hpp
+[2.557s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/steering_wheel_status_stamped.hpp
+[2.557s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/turn_signal.hpp
+[2.557s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/vehicle_emergency_stamped.hpp
+[2.558s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/srv/detail/update_accel_brake_map__builder.hpp
+[2.558s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/srv/detail/update_accel_brake_map__struct.hpp
+[2.558s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/srv/detail/update_accel_brake_map__traits.hpp
+[2.558s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/srv/update_accel_brake_map.hpp
+[2.558s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command__rosidl_typesupport_fastrtps_cpp.hpp
+[2.558s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[2.558s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status__rosidl_typesupport_fastrtps_cpp.hpp
+[2.558s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[2.558s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/battery_status__rosidl_typesupport_fastrtps_cpp.hpp
+[2.558s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift__rosidl_typesupport_fastrtps_cpp.hpp
+[2.558s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[2.558s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering__rosidl_typesupport_fastrtps_cpp.hpp
+[2.559s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering_wheel_status_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[2.559s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/turn_signal__rosidl_typesupport_fastrtps_cpp.hpp
+[2.559s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/vehicle_emergency_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[2.559s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.559s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/srv/detail/update_accel_brake_map__rosidl_typesupport_fastrtps_cpp.hpp
+[2.559s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command__rosidl_typesupport_introspection_cpp.hpp
+[2.559s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_command_stamped__rosidl_typesupport_introspection_cpp.hpp
+[2.560s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status__rosidl_typesupport_introspection_cpp.hpp
+[2.560s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/actuation_status_stamped__rosidl_typesupport_introspection_cpp.hpp
+[2.560s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/battery_status__rosidl_typesupport_introspection_cpp.hpp
+[2.560s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift__rosidl_typesupport_introspection_cpp.hpp
+[2.560s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/shift_stamped__rosidl_typesupport_introspection_cpp.hpp
+[2.561s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering__rosidl_typesupport_introspection_cpp.hpp
+[2.561s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/steering_wheel_status_stamped__rosidl_typesupport_introspection_cpp.hpp
+[2.561s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/turn_signal__rosidl_typesupport_introspection_cpp.hpp
+[2.561s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/msg/detail/vehicle_emergency_stamped__rosidl_typesupport_introspection_cpp.hpp
+[2.561s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/include/tier4_vehicle_msgs/tier4_vehicle_msgs/srv/detail/update_accel_brake_map__rosidl_typesupport_introspection_cpp.hpp
+[2.561s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/environment/pythonpath.sh
+[2.561s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/environment/pythonpath.dsv
+[2.561s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[2.561s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[2.561s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[2.562s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[2.562s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/__init__.py
+[2.562s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/_tier4_vehicle_msgs_s.ep.rosidl_typesupport_c.c
+[2.562s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/_tier4_vehicle_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.562s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/_tier4_vehicle_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.562s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/libtier4_vehicle_msgs__rosidl_generator_py.so
+[2.562s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/__init__.py
+[2.562s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_actuation_command.py
+[2.562s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_actuation_command_s.c
+[2.562s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_actuation_command_stamped.py
+[2.563s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_actuation_command_stamped_s.c
+[2.563s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_actuation_status.py
+[2.563s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_actuation_status_s.c
+[2.563s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_actuation_status_stamped.py
+[2.563s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_actuation_status_stamped_s.c
+[2.563s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_battery_status.py
+[2.563s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_battery_status_s.c
+[2.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_shift.py
+[2.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_shift_s.c
+[2.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_shift_stamped.py
+[2.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_shift_stamped_s.c
+[2.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_steering.py
+[2.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_steering_s.c
+[2.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_steering_wheel_status_stamped.py
+[2.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_steering_wheel_status_stamped_s.c
+[2.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_turn_signal.py
+[2.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_turn_signal_s.c
+[2.564s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_vehicle_emergency_stamped.py
+[2.565s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg/_vehicle_emergency_stamped_s.c
+[2.565s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/srv/__init__.py
+[2.565s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/srv/_update_accel_brake_map.py
+[2.565s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/srv/_update_accel_brake_map_s.c
+[2.565s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/tier4_vehicle_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.565s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/tier4_vehicle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.565s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/tier4_vehicle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.565s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/tier4_vehicle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.565s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/tier4_vehicle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.565s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/tier4_vehicle_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.565s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/ActuationCommand.idl
+[2.566s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/ActuationCommandStamped.idl
+[2.566s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/ActuationStatus.idl
+[2.566s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/ActuationStatusStamped.idl
+[2.566s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/BatteryStatus.idl
+[2.566s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/Shift.idl
+[2.566s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/ShiftStamped.idl
+[2.566s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/TurnSignal.idl
+[2.566s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/Steering.idl
+[2.566s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/SteeringWheelStatusStamped.idl
+[2.566s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/VehicleEmergencyStamped.idl
+[2.566s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/srv/UpdateAccelBrakeMap.idl
+[2.567s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/ActuationCommand.msg
+[2.567s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/ActuationCommandStamped.msg
+[2.568s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/ActuationStatus.msg
+[2.568s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/ActuationStatusStamped.msg
+[2.568s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/BatteryStatus.msg
+[2.568s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/Shift.msg
+[2.569s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/ShiftStamped.msg
+[2.569s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/TurnSignal.msg
+[2.569s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/Steering.msg
+[2.570s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/SteeringWheelStatusStamped.msg
+[2.570s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/msg/VehicleEmergencyStamped.msg
+[2.570s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/srv/UpdateAccelBrakeMap.srv
+[2.570s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/srv/UpdateAccelBrakeMap_Request.msg
+[2.572s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/srv/UpdateAccelBrakeMap_Response.msg
+[2.572s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/ament_index/resource_index/package_run_dependencies/tier4_vehicle_msgs
+[2.572s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/ament_index/resource_index/parent_prefix_path/tier4_vehicle_msgs
+[2.584s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/environment/ament_prefix_path.sh
+[2.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/environment/ament_prefix_path.dsv
+[2.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/environment/path.sh
+[2.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/environment/path.dsv
+[2.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/local_setup.bash
+[2.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/local_setup.sh
+[2.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/local_setup.zsh
+[2.588s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/local_setup.dsv
+[2.588s] -- Symlinking: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/package.dsv
+[2.608s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/ament_index/resource_index/packages/tier4_vehicle_msgs
+[2.609s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/rosidl_cmake-extras.cmake
+[2.609s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.609s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.609s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.610s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.610s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.610s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.614s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/tier4_vehicle_msgsConfig.cmake
+[2.614s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/tier4_vehicle_msgsConfig-version.cmake
+[2.614s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/package.xml
+[2.615s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/lib/libtier4_vehicle_msgs__rosidl_generator_c.so
+[2.615s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/lib/libtier4_vehicle_msgs__rosidl_typesupport_fastrtps_c.so
+[2.615s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/lib/libtier4_vehicle_msgs__rosidl_typesupport_introspection_c.so
+[2.615s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/lib/libtier4_vehicle_msgs__rosidl_typesupport_c.so
+[2.615s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/lib/libtier4_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.615s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/lib/libtier4_vehicle_msgs__rosidl_typesupport_introspection_cpp.so
+[2.616s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/lib/libtier4_vehicle_msgs__rosidl_typesupport_cpp.so
+[2.672s] Listing '/home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs'...
+[2.672s] Listing '/home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/msg'...
+[2.672s] Listing '/home/zhijie/autoware/install/tier4_vehicle_msgs/local/lib/python3.10/dist-packages/tier4_vehicle_msgs/srv'...
+[2.686s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/lib/libtier4_vehicle_msgs__rosidl_generator_py.so
+[2.686s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/export_tier4_vehicle_msgs__rosidl_generator_cExport.cmake
+[2.686s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/export_tier4_vehicle_msgs__rosidl_generator_cExport-release.cmake
+[2.686s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/export_tier4_vehicle_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.687s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/export_tier4_vehicle_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[2.687s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/tier4_vehicle_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.687s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/tier4_vehicle_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[2.687s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/tier4_vehicle_msgs__rosidl_typesupport_cExport.cmake
+[2.687s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/tier4_vehicle_msgs__rosidl_typesupport_cExport-release.cmake
+[2.687s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/export_tier4_vehicle_msgs__rosidl_generator_cppExport.cmake
+[2.687s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/export_tier4_vehicle_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.687s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/export_tier4_vehicle_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[2.687s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/tier4_vehicle_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.687s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/tier4_vehicle_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[2.687s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/tier4_vehicle_msgs__rosidl_typesupport_cppExport.cmake
+[2.688s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/tier4_vehicle_msgs__rosidl_typesupport_cppExport-release.cmake
+[2.688s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/export_tier4_vehicle_msgs__rosidl_generator_pyExport.cmake
+[2.688s] -- Up-to-date: /home/zhijie/autoware/install/tier4_vehicle_msgs/share/tier4_vehicle_msgs/cmake/export_tier4_vehicle_msgs__rosidl_generator_pyExport-release.cmake
+[2.729s] Invoked command in '/home/zhijie/autoware/build/tier4_vehicle_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/tier4_control_msgs:/home/zhijie/autoware/install/autoware_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/tier4_control_msgs:/home/zhijie/autoware/install/autoware_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/tier4_control_msgs/lib:/home/zhijie/autoware/install/autoware_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/tier4_control_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_vehicle_msgs

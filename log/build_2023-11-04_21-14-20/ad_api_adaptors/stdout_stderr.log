@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target initial_pose_adaptor[0m
+[ 50%] Built target initial_pose_adaptor
+[35m[1mConsolidate compiler generated dependencies of target routing_adaptor[0m
+[100%] Built target routing_adaptor
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/lib/ad_api_adaptors/initial_pose_adaptor
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/lib/ad_api_adaptors/routing_adaptor
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/config/initial_pose.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/launch/rviz_adaptors.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ament_index/resource_index/package_run_dependencies/ad_api_adaptors
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ament_index/resource_index/parent_prefix_path/ad_api_adaptors
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ament_index/resource_index/packages/ad_api_adaptors
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/cmake/ad_api_adaptorsConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/cmake/ad_api_adaptorsConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/ad_api_adaptors/share/ad_api_adaptors/package.xml

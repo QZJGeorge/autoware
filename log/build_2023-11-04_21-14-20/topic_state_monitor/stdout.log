@@ -1,0 +1,33 @@
+[35m[1mConsolidate compiler generated dependencies of target topic_state_monitor[0m
+[ 60%] Built target topic_state_monitor
+[35m[1mConsolidate compiler generated dependencies of target topic_state_monitor_node[0m
+[100%] Built target topic_state_monitor_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/lib/topic_state_monitor/topic_state_monitor_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/include/topic_state_monitor/topic_state_monitor.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/include/topic_state_monitor/topic_state_monitor_core.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/lib/libtopic_state_monitor.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/launch/topic_state_monitor.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/launch/topic_state_monitor_tf.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/ament_index/resource_index/package_run_dependencies/topic_state_monitor
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/ament_index/resource_index/parent_prefix_path/topic_state_monitor
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/ament_index/resource_index/packages/topic_state_monitor
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/ament_index/resource_index/rclcpp_components/topic_state_monitor
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/topic_state_monitorConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/topic_state_monitorConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/topic_state_monitor/share/topic_state_monitor/package.xml

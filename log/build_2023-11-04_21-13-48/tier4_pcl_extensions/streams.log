@@ -1,0 +1,31 @@
+[0.098s] Invoking command in '/home/zhijie/autoware/build/tier4_pcl_extensions': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_pcl_extensions -- -j16 -l16
+[0.135s] [35m[1mConsolidate compiler generated dependencies of target tier4_pcl_extensions[0m
+[0.178s] [100%] Built target tier4_pcl_extensions
+[0.264s] Invoked command in '/home/zhijie/autoware/build/tier4_pcl_extensions' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_pcl_extensions -- -j16 -l16
+[0.417s] Invoking command in '/home/zhijie/autoware/build/tier4_pcl_extensions': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_pcl_extensions
+[0.441s] -- Install configuration: "Release"
+[0.441s] -- Execute custom install script
+[0.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/include/tier4_pcl_extensions/voxel_grid_nearest_centroid.hpp
+[0.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/include/tier4_pcl_extensions/voxel_grid_nearest_centroid_impl.hpp
+[0.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/environment/library_path.sh
+[0.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/environment/library_path.dsv
+[0.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/lib/libtier4_pcl_extensions.so
+[0.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/ament_index/resource_index/package_run_dependencies/tier4_pcl_extensions
+[0.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/ament_index/resource_index/parent_prefix_path/tier4_pcl_extensions
+[0.442s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/environment/ament_prefix_path.sh
+[0.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/environment/ament_prefix_path.dsv
+[0.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/environment/path.sh
+[0.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/environment/path.dsv
+[0.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/local_setup.bash
+[0.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/local_setup.sh
+[0.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/local_setup.zsh
+[0.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/local_setup.dsv
+[0.443s] -- Symlinking: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/package.dsv
+[0.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/ament_index/resource_index/packages/tier4_pcl_extensions
+[0.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.443s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.444s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/cmake/ament_cmake_export_libraries-extras.cmake
+[0.444s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/cmake/tier4_pcl_extensionsConfig.cmake
+[0.444s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/cmake/tier4_pcl_extensionsConfig-version.cmake
+[0.444s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_pcl_extensions/share/tier4_pcl_extensions/package.xml
+[0.497s] Invoked command in '/home/zhijie/autoware/build/tier4_pcl_extensions' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_pcl_extensions

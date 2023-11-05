@@ -1,0 +1,22 @@
+[0.057s] Invoking command in '/home/zhijie/autoware/build/autoware_lint_common': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_lint_common -- -j16 -l16
+[0.187s] Invoked command in '/home/zhijie/autoware/build/autoware_lint_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_lint_common -- -j16 -l16
+[0.293s] Invoking command in '/home/zhijie/autoware/build/autoware_lint_common': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_lint_common
+[0.833s] -- Install configuration: "Release"
+[0.833s] -- Execute custom install script
+[0.833s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/ament_index/resource_index/package_run_dependencies/autoware_lint_common
+[0.833s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/ament_index/resource_index/parent_prefix_path/autoware_lint_common
+[0.833s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/autoware_lint_common/environment/ament_prefix_path.sh
+[0.834s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/autoware_lint_common/environment/ament_prefix_path.dsv
+[0.834s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/autoware_lint_common/environment/path.sh
+[0.834s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/autoware_lint_common/environment/path.dsv
+[0.834s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/autoware_lint_common/local_setup.bash
+[0.834s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/autoware_lint_common/local_setup.sh
+[0.834s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/autoware_lint_common/local_setup.zsh
+[0.834s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/autoware_lint_common/local_setup.dsv
+[0.834s] -- Symlinking: /home/zhijie/autoware/install/autoware_lint_common/share/autoware_lint_common/package.dsv
+[0.834s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/ament_index/resource_index/packages/autoware_lint_common
+[0.834s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/autoware_lint_common/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.834s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/autoware_lint_common/cmake/autoware_lint_commonConfig.cmake
+[0.834s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/autoware_lint_common/cmake/autoware_lint_commonConfig-version.cmake
+[0.834s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_lint_common/share/autoware_lint_common/package.xml
+[0.838s] Invoked command in '/home/zhijie/autoware/build/autoware_lint_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_lint_common

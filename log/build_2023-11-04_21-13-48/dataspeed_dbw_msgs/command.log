@@ -1,0 +1,1 @@
+Invoking command in '/home/zhijie/autoware/build/dataspeed_dbw_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/terasim/data_speed_driver/dataspeed_dbw_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/dataspeed_dbw_msgs

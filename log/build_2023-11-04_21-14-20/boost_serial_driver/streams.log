@@ -1,0 +1,50 @@
+[0.372s] Invoking command in '/home/zhijie/autoware/build/boost_serial_driver': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/zhijie/autoware/build/boost_serial_driver -- -j16 -l16
+[0.437s] [35m[1mConsolidate compiler generated dependencies of target boost_serial_driver[0m
+[0.460s] [ 20%] Built target boost_serial_driver
+[0.500s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[0.512s] [ 33%] Built target gtest
+[0.552s] [35m[1mConsolidate compiler generated dependencies of target boost_serial_driver_nodes[0m
+[0.571s] [ 46%] Built target boost_serial_driver_nodes
+[0.604s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[0.608s] [ 60%] Built target gtest_main
+[0.642s] [35m[1mConsolidate compiler generated dependencies of target serial_bridge[0m
+[0.659s] [ 73%] Built target serial_bridge
+[0.688s] [35m[1mConsolidate compiler generated dependencies of target test_serial_port[0m
+[0.715s] [ 86%] Built target test_serial_port
+[0.742s] [35m[1mConsolidate compiler generated dependencies of target test_serial_driver[0m
+[0.767s] [100%] Built target test_serial_driver
+[0.839s] Invoked command in '/home/zhijie/autoware/build/boost_serial_driver' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/zhijie/autoware/build/boost_serial_driver -- -j16 -l16
+[0.938s] Invoking command in '/home/zhijie/autoware/build/boost_serial_driver': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/zhijie/autoware/build/boost_serial_driver
+[0.961s] -- Install configuration: "Release"
+[0.961s] -- Execute custom install script
+[0.961s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/lib/boost_serial_driver/serial_bridge
+[0.961s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/include/boost_serial_driver/serial_bridge_node.hpp
+[0.961s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/include/boost_serial_driver/serial_driver.hpp
+[0.962s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/include/boost_serial_driver/serial_port.hpp
+[0.965s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/include/boost_serial_driver/visibility_control.hpp
+[0.976s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/environment/library_path.sh
+[0.977s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/environment/library_path.dsv
+[0.979s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/lib/libboost_serial_driver.so
+[0.985s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/lib/libboost_serial_driver_nodes.so
+[0.985s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/launch/serial_driver_bridge_node.launch.py
+[0.985s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/params/example.params.yaml
+[0.997s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/ament_index/resource_index/package_run_dependencies/boost_serial_driver
+[0.997s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/ament_index/resource_index/parent_prefix_path/boost_serial_driver
+[0.997s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/environment/ament_prefix_path.sh
+[0.998s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/environment/ament_prefix_path.dsv
+[0.998s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/environment/path.sh
+[0.998s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/environment/path.dsv
+[0.998s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/local_setup.bash
+[0.998s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/local_setup.sh
+[0.999s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/local_setup.zsh
+[1.003s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/local_setup.dsv
+[1.003s] -- Symlinking: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/package.dsv
+[1.012s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/ament_index/resource_index/packages/boost_serial_driver
+[1.012s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/ament_index/resource_index/rclcpp_components/boost_serial_driver
+[1.012s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.012s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.013s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[1.013s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/cmake/boost_serial_driverConfig.cmake
+[1.013s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/cmake/boost_serial_driverConfig-version.cmake
+[1.014s] -- Up-to-date symlink: /home/zhijie/autoware/install/boost_serial_driver/share/boost_serial_driver/package.xml
+[1.036s] Invoked command in '/home/zhijie/autoware/build/boost_serial_driver' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/zhijie/autoware/build/boost_serial_driver

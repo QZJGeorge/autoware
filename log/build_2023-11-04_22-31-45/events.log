@@ -1,0 +1,593 @@
+[0.000000] (-) TimerEvent: {}
+[0.000143] (-) JobUnselected: {'identifier': 'abc_terasim'}
+[0.000241] (-) JobUnselected: {'identifier': 'accel_brake_map_calibrator'}
+[0.000258] (-) JobUnselected: {'identifier': 'ad_api_adaptors'}
+[0.000277] (-) JobUnselected: {'identifier': 'ad_api_visualizers'}
+[0.000313] (-) JobUnselected: {'identifier': 'ar_tag_based_localizer'}
+[0.000327] (-) JobUnselected: {'identifier': 'automatic_pose_initializer'}
+[0.000564] (-) JobUnselected: {'identifier': 'autonomous_emergency_braking'}
+[0.000597] (-) JobUnselected: {'identifier': 'autoware_ad_api_specs'}
+[0.000656] (-) JobUnselected: {'identifier': 'autoware_adapi_v1_msgs'}
+[0.000681] (-) JobUnselected: {'identifier': 'autoware_adapi_version_msgs'}
+[0.000717] (-) JobUnselected: {'identifier': 'autoware_auto_common'}
+[0.000833] (-) JobUnselected: {'identifier': 'autoware_auto_control_msgs'}
+[0.000846] (-) JobUnselected: {'identifier': 'autoware_auto_geometry'}
+[0.000874] (-) JobUnselected: {'identifier': 'autoware_auto_geometry_msgs'}
+[0.000888] (-) JobUnselected: {'identifier': 'autoware_auto_mapping_msgs'}
+[0.000909] (-) JobUnselected: {'identifier': 'autoware_auto_msgs'}
+[0.001198] (-) JobUnselected: {'identifier': 'autoware_auto_msgs_adapter'}
+[0.001211] (-) JobUnselected: {'identifier': 'autoware_auto_perception_msgs'}
+[0.001437] (-) JobUnselected: {'identifier': 'autoware_auto_perception_rviz_plugin'}
+[0.001454] (-) JobUnselected: {'identifier': 'autoware_auto_planning_msgs'}
+[0.001482] (-) JobUnselected: {'identifier': 'autoware_auto_system_msgs'}
+[0.001531] (-) JobUnselected: {'identifier': 'autoware_auto_tf2'}
+[0.001612] (-) JobUnselected: {'identifier': 'autoware_auto_vehicle_msgs'}
+[0.001626] (-) JobUnselected: {'identifier': 'autoware_cmake'}
+[0.001648] (-) JobUnselected: {'identifier': 'autoware_common_msgs'}
+[0.001661] (-) JobUnselected: {'identifier': 'autoware_control_msgs'}
+[0.001720] (-) JobUnselected: {'identifier': 'autoware_external_api_msgs'}
+[0.001734] (-) JobUnselected: {'identifier': 'autoware_iv_external_api_adaptor'}
+[0.001751] (-) JobUnselected: {'identifier': 'autoware_iv_internal_api_adaptor'}
+[0.001815] (-) JobUnselected: {'identifier': 'autoware_launch'}
+[0.001829] (-) JobUnselected: {'identifier': 'autoware_lint_common'}
+[0.001846] (-) JobUnselected: {'identifier': 'autoware_localization_msgs'}
+[0.001864] (-) JobUnselected: {'identifier': 'autoware_map_msgs'}
+[0.001922] (-) JobUnselected: {'identifier': 'autoware_perception_msgs'}
+[0.001937] (-) JobUnselected: {'identifier': 'autoware_planning_msgs'}
+[0.001953] (-) JobUnselected: {'identifier': 'autoware_point_types'}
+[0.002037] (-) JobUnselected: {'identifier': 'autoware_sensing_msgs'}
+[0.002068] (-) JobUnselected: {'identifier': 'autoware_testing'}
+[0.002084] (-) JobUnselected: {'identifier': 'autoware_utils'}
+[0.002103] (-) JobUnselected: {'identifier': 'awapi_awiv_adapter'}
+[0.002116] (-) JobUnselected: {'identifier': 'awsim_sensor_kit_description'}
+[0.002208] (-) JobUnselected: {'identifier': 'awsim_sensor_kit_launch'}
+[0.002237] (-) JobUnselected: {'identifier': 'bag_time_manager_rviz_plugin'}
+[0.002250] (-) JobUnselected: {'identifier': 'behavior_path_planner'}
+[0.002262] (-) JobUnselected: {'identifier': 'behavior_velocity_blind_spot_module'}
+[0.002284] (-) JobUnselected: {'identifier': 'behavior_velocity_crosswalk_module'}
+[0.002297] (-) JobUnselected: {'identifier': 'behavior_velocity_detection_area_module'}
+[0.002564] (-) JobUnselected: {'identifier': 'behavior_velocity_intersection_module'}
+[0.002577] (-) JobUnselected: {'identifier': 'behavior_velocity_no_drivable_lane_module'}
+[0.002796] (-) JobUnselected: {'identifier': 'behavior_velocity_no_stopping_area_module'}
+[0.002809] (-) JobUnselected: {'identifier': 'behavior_velocity_occlusion_spot_module'}
+[0.002926] (-) JobUnselected: {'identifier': 'behavior_velocity_out_of_lane_module'}
+[0.002940] (-) JobUnselected: {'identifier': 'behavior_velocity_planner'}
+[0.002960] (-) JobUnselected: {'identifier': 'behavior_velocity_planner_common'}
+[0.003019] (-) JobUnselected: {'identifier': 'behavior_velocity_run_out_module'}
+[0.003039] (-) JobUnselected: {'identifier': 'behavior_velocity_speed_bump_module'}
+[0.003101] (-) JobUnselected: {'identifier': 'behavior_velocity_stop_line_module'}
+[0.003115] (-) JobUnselected: {'identifier': 'behavior_velocity_template_module'}
+[0.003131] (-) JobUnselected: {'identifier': 'behavior_velocity_traffic_light_module'}
+[0.003149] (-) JobUnselected: {'identifier': 'behavior_velocity_virtual_traffic_light_module'}
+[0.003206] (-) JobUnselected: {'identifier': 'behavior_velocity_walkway_module'}
+[0.003219] (-) JobUnselected: {'identifier': 'bezier_sampler'}
+[0.003231] (-) JobUnselected: {'identifier': 'bluetooth_monitor'}
+[0.003248] (-) JobUnselected: {'identifier': 'boost_io_context'}
+[0.003302] (-) JobUnselected: {'identifier': 'boost_serial_driver'}
+[0.003314] (-) JobUnselected: {'identifier': 'boost_tcp_driver'}
+[0.003327] (-) JobUnselected: {'identifier': 'boost_udp_driver'}
+[0.003347] (-) JobUnselected: {'identifier': 'bytetrack'}
+[0.003360] (-) JobUnselected: {'identifier': 'camera_description'}
+[0.003373] (-) JobUnselected: {'identifier': 'cluster_merger'}
+[0.003519] (-) JobUnselected: {'identifier': 'common_awsim_sensor_launch'}
+[0.003532] (-) JobUnselected: {'identifier': 'common_sensor_launch'}
+[0.003706] (-) JobUnselected: {'identifier': 'compare_map_segmentation'}
+[0.003719] (-) JobUnselected: {'identifier': 'component_interface_specs'}
+[0.003770] (-) JobUnselected: {'identifier': 'component_interface_tools'}
+[0.003819] (-) JobUnselected: {'identifier': 'component_interface_utils'}
+[0.003853] (-) JobUnselected: {'identifier': 'component_state_monitor'}
+[0.003888] (-) JobUnselected: {'identifier': 'control_performance_analysis'}
+[0.003919] (-) JobUnselected: {'identifier': 'control_validator'}
+[0.003948] (-) JobUnselected: {'identifier': 'costmap_generator'}
+[0.003991] (-) JobUnselected: {'identifier': 'crosswalk_traffic_light_estimator'}
+[0.004021] (-) JobUnselected: {'identifier': 'cuda_utils'}
+[0.004051] (-) JobUnselected: {'identifier': 'dataspeed_can'}
+[0.004081] (-) JobUnselected: {'identifier': 'dataspeed_can_msg_filters'}
+[0.004111] (-) JobUnselected: {'identifier': 'dataspeed_can_msgs'}
+[0.004140] (-) JobUnselected: {'identifier': 'dataspeed_can_tools'}
+[0.004183] (-) JobUnselected: {'identifier': 'dataspeed_can_usb'}
+[0.004213] (-) JobUnselected: {'identifier': 'dataspeed_dbw_common'}
+[0.004242] (-) JobUnselected: {'identifier': 'dataspeed_dbw_gateway'}
+[0.004285] (-) JobUnselected: {'identifier': 'dataspeed_dbw_msgs'}
+[0.004315] (-) JobUnselected: {'identifier': 'dataspeed_ulc'}
+[0.004707] (-) JobUnselected: {'identifier': 'dataspeed_ulc_can'}
+[0.004720] (-) JobUnselected: {'identifier': 'dataspeed_ulc_msgs'}
+[0.004738] (-) JobUnselected: {'identifier': 'dbw_fca'}
+[0.004752] (-) JobUnselected: {'identifier': 'dbw_fca_can'}
+[0.004770] (-) JobUnselected: {'identifier': 'dbw_fca_description'}
+[0.004785] (-) JobUnselected: {'identifier': 'dbw_fca_joystick_demo'}
+[0.004801] (-) JobUnselected: {'identifier': 'dbw_fca_msgs'}
+[0.005288] (-) JobUnselected: {'identifier': 'dbw_ford'}
+[0.005301] (-) JobUnselected: {'identifier': 'dbw_ford_can'}
+[0.005322] (-) JobUnselected: {'identifier': 'dbw_ford_description'}
+[0.005335] (-) JobUnselected: {'identifier': 'dbw_ford_input_test'}
+[0.005346] (-) JobUnselected: {'identifier': 'dbw_ford_joystick_demo'}
+[0.005357] (-) JobUnselected: {'identifier': 'dbw_ford_msgs'}
+[0.005368] (-) JobUnselected: {'identifier': 'dbw_polaris'}
+[0.005379] (-) JobUnselected: {'identifier': 'dbw_polaris_can'}
+[0.005390] (-) JobUnselected: {'identifier': 'dbw_polaris_description'}
+[0.005401] (-) JobUnselected: {'identifier': 'dbw_polaris_joystick_demo'}
+[0.005414] (-) JobUnselected: {'identifier': 'dbw_polaris_msgs'}
+[0.005430] (-) JobUnselected: {'identifier': 'default_ad_api'}
+[0.005443] (-) JobUnselected: {'identifier': 'detected_object_feature_remover'}
+[0.005459] (-) JobUnselected: {'identifier': 'detected_object_validation'}
+[0.005472] (-) JobUnselected: {'identifier': 'detection_by_tracker'}
+[0.005485] (-) JobUnselected: {'identifier': 'diagnostic_converter'}
+[0.005502] (-) JobUnselected: {'identifier': 'dummy_diag_publisher'}
+[0.005515] (-) JobUnselected: {'identifier': 'dummy_infrastructure'}
+[0.005535] (-) JobUnselected: {'identifier': 'dummy_perception_publisher'}
+[0.005549] (-) JobUnselected: {'identifier': 'eagleye_can_velocity_converter'}
+[0.005562] (-) JobUnselected: {'identifier': 'eagleye_coordinate'}
+[0.005574] (-) JobUnselected: {'identifier': 'eagleye_fix2kml'}
+[0.005591] (-) JobUnselected: {'identifier': 'eagleye_fix2pose'}
+[0.005606] (-) JobUnselected: {'identifier': 'eagleye_gnss_converter'}
+[0.005619] (-) JobUnselected: {'identifier': 'eagleye_msgs'}
+[0.005631] (-) JobUnselected: {'identifier': 'eagleye_navigation'}
+[0.005644] (-) JobUnselected: {'identifier': 'eagleye_rt'}
+[0.005656] (-) JobUnselected: {'identifier': 'eagleye_tf'}
+[0.005670] (-) JobUnselected: {'identifier': 'ekf_localizer'}
+[0.005684] (-) JobUnselected: {'identifier': 'elevation_map_loader'}
+[0.005696] (-) JobUnselected: {'identifier': 'emergency_handler'}
+[0.005709] (-) JobUnselected: {'identifier': 'euclidean_cluster'}
+[0.005724] (-) JobUnselected: {'identifier': 'external_cmd_converter'}
+[0.005738] (-) JobUnselected: {'identifier': 'external_cmd_selector'}
+[0.005751] (-) JobUnselected: {'identifier': 'external_velocity_limit_selector'}
+[0.005768] (-) JobUnselected: {'identifier': 'fake_test_node'}
+[0.005788] (-) JobUnselected: {'identifier': 'fault_injection'}
+[0.005804] (-) JobUnselected: {'identifier': 'freespace_planner'}
+[0.005818] (-) JobUnselected: {'identifier': 'freespace_planning_algorithms'}
+[0.005831] (-) JobUnselected: {'identifier': 'frenet_planner'}
+[0.005844] (-) JobUnselected: {'identifier': 'front_vehicle_velocity_estimator'}
+[0.005856] (-) JobUnselected: {'identifier': 'geography_utils'}
+[0.005869] (-) JobUnselected: {'identifier': 'global_parameter_loader'}
+[0.005887] (-) JobUnselected: {'identifier': 'glog_component'}
+[0.005901] (-) JobUnselected: {'identifier': 'gnss_poser'}
+[0.005914] (-) JobUnselected: {'identifier': 'goal_distance_calculator'}
+[0.005928] (-) JobUnselected: {'identifier': 'grid_map_utils'}
+[0.005945] (-) JobUnselected: {'identifier': 'ground_segmentation'}
+[0.005962] (-) JobUnselected: {'identifier': 'gyro_odometer'}
+[0.005984] (-) JobUnselected: {'identifier': 'heaphook'}
+[0.006023] (-) JobUnselected: {'identifier': 'heatmap_visualizer'}
+[0.006038] (-) JobUnselected: {'identifier': 'image_diagnostics'}
+[0.006052] (-) JobUnselected: {'identifier': 'image_projection_based_fusion'}
+[0.006065] (-) JobUnselected: {'identifier': 'image_transport_decompressor'}
+[0.006087] (-) JobUnselected: {'identifier': 'imu_corrector'}
+[0.006100] (-) JobUnselected: {'identifier': 'imu_description'}
+[0.006115] (-) JobUnselected: {'identifier': 'individual_params'}
+[0.006127] (-) JobUnselected: {'identifier': 'interpolation'}
+[0.006140] (-) JobUnselected: {'identifier': 'joy_controller'}
+[0.006153] (-) JobUnselected: {'identifier': 'kalman_filter'}
+[0.006170] (-) JobUnselected: {'identifier': 'kinematic_evaluator'}
+[0.006184] (-) JobUnselected: {'identifier': 'landmark_tf_caster'}
+[0.006198] (-) JobUnselected: {'identifier': 'lane_departure_checker'}
+[0.006214] (-) JobUnselected: {'identifier': 'lanelet2_extension'}
+[0.006228] (-) JobUnselected: {'identifier': 'lanelet2_map_preprocessor'}
+[0.006241] (-) JobUnselected: {'identifier': 'lidar_apollo_instance_segmentation'}
+[0.006254] (-) JobUnselected: {'identifier': 'lidar_apollo_segmentation_tvm'}
+[0.006267] (-) JobUnselected: {'identifier': 'lidar_apollo_segmentation_tvm_nodes'}
+[0.006280] (-) JobUnselected: {'identifier': 'lidar_centerpoint'}
+[0.006547] (-) JobUnselected: {'identifier': 'lidar_centerpoint_tvm'}
+[0.006567] (-) JobUnselected: {'identifier': 'livox_description'}
+[0.006588] (-) JobUnselected: {'identifier': 'livox_tag_filter'}
+[0.006606] (-) JobUnselected: {'identifier': 'llh_converter'}
+[0.006627] (-) JobUnselected: {'identifier': 'localization_error_monitor'}
+[0.006645] (-) JobUnselected: {'identifier': 'localization_evaluator'}
+[0.006663] (-) JobUnselected: {'identifier': 'map_based_prediction'}
+[0.006681] (-) JobUnselected: {'identifier': 'map_height_fitter'}
+[0.006699] (-) JobUnselected: {'identifier': 'map_loader'}
+[0.006720] (-) JobUnselected: {'identifier': 'map_projection_loader'}
+[0.006738] (-) JobUnselected: {'identifier': 'map_tf_generator'}
+[0.006758] (-) JobUnselected: {'identifier': 'mission_planner'}
+[0.006776] (-) JobUnselected: {'identifier': 'morai_msgs'}
+[0.006796] (-) JobUnselected: {'identifier': 'motion_utils'}
+[0.006817] (-) JobUnselected: {'identifier': 'motion_velocity_smoother'}
+[0.006835] (-) JobUnselected: {'identifier': 'mpc_lateral_controller'}
+[0.006853] (-) JobUnselected: {'identifier': 'mrm_comfortable_stop_operator'}
+[0.006872] (-) JobUnselected: {'identifier': 'mrm_emergency_stop_operator'}
+[0.006890] (-) JobUnselected: {'identifier': 'multi_object_tracker'}
+[0.006909] (-) JobUnselected: {'identifier': 'mussp'}
+[0.006930] (-) JobUnselected: {'identifier': 'ndt_omp'}
+[0.006950] (-) JobUnselected: {'identifier': 'ndt_scan_matcher'}
+[0.006968] (-) JobUnselected: {'identifier': 'nebula_common'}
+[0.006986] (-) JobUnselected: {'identifier': 'nebula_decoders'}
+[0.007006] (-) JobUnselected: {'identifier': 'nebula_examples'}
+[0.007024] (-) JobUnselected: {'identifier': 'nebula_hw_interfaces'}
+[0.007042] (-) JobUnselected: {'identifier': 'nebula_ros'}
+[0.007060] (-) JobUnselected: {'identifier': 'nebula_sensor_driver'}
+[0.007078] (-) JobUnselected: {'identifier': 'nebula_tests'}
+[0.007099] (-) JobUnselected: {'identifier': 'object_merger'}
+[0.007117] (-) JobUnselected: {'identifier': 'object_range_splitter'}
+[0.007135] (-) JobUnselected: {'identifier': 'object_recognition_utils'}
+[0.007153] (-) JobUnselected: {'identifier': 'object_velocity_splitter'}
+[0.007171] (-) JobUnselected: {'identifier': 'obstacle_avoidance_planner'}
+[0.007189] (-) JobUnselected: {'identifier': 'obstacle_collision_checker'}
+[0.007207] (-) JobUnselected: {'identifier': 'obstacle_cruise_planner'}
+[0.007227] (-) JobUnselected: {'identifier': 'obstacle_stop_planner'}
+[0.007246] (-) JobUnselected: {'identifier': 'obstacle_velocity_limiter'}
+[0.007264] (-) JobUnselected: {'identifier': 'occupancy_grid_map_outlier_filter'}
+[0.007283] (-) JobUnselected: {'identifier': 'operation_mode_transition_manager'}
+[0.007301] (-) JobUnselected: {'identifier': 'osqp_interface'}
+[0.007319] (-) JobUnselected: {'identifier': 'pacmod_interface'}
+[0.007337] (-) JobUnselected: {'identifier': 'pandar_description'}
+[0.007355] (-) JobUnselected: {'identifier': 'pandar_msgs'}
+[0.007375] (-) JobUnselected: {'identifier': 'path_distance_calculator'}
+[0.007393] (-) JobUnselected: {'identifier': 'path_sampler'}
+[0.007411] (-) JobUnselected: {'identifier': 'path_smoother'}
+[0.007429] (-) JobUnselected: {'identifier': 'perception_utils'}
+[0.007446] (-) JobUnselected: {'identifier': 'pid_longitudinal_controller'}
+[0.007464] (-) JobUnselected: {'identifier': 'planning_debug_tools'}
+[0.007482] (-) JobUnselected: {'identifier': 'planning_evaluator'}
+[0.007500] (-) JobUnselected: {'identifier': 'planning_test_utils'}
+[0.007518] (-) JobUnselected: {'identifier': 'planning_validator'}
+[0.007536] (-) JobUnselected: {'identifier': 'pointcloud_preprocessor'}
+[0.007557] (-) JobUnselected: {'identifier': 'pointcloud_to_laserscan'}
+[0.007575] (-) JobUnselected: {'identifier': 'polar_grid'}
+[0.007593] (-) JobUnselected: {'identifier': 'pose2twist'}
+[0.007611] (-) JobUnselected: {'identifier': 'pose_initializer'}
+[0.007629] (-) JobUnselected: {'identifier': 'probabilistic_occupancy_grid_map'}
+[0.007647] (-) JobUnselected: {'identifier': 'pure_pursuit'}
+[0.007666] (-) JobUnselected: {'identifier': 'qp_interface'}
+[0.007684] (-) JobUnselected: {'identifier': 'radar_crossing_objects_noise_filter'}
+[0.007704] (-) JobUnselected: {'identifier': 'radar_fusion_to_detected_object'}
+[0.007723] (-) JobUnselected: {'identifier': 'radar_object_clustering'}
+[0.007741] (-) JobUnselected: {'identifier': 'radar_object_tracker'}
+[0.007759] (-) JobUnselected: {'identifier': 'radar_scan_to_pointcloud2'}
+[0.007777] (-) JobUnselected: {'identifier': 'radar_static_pointcloud_filter'}
+[0.007796] (-) JobUnselected: {'identifier': 'radar_threshold_filter'}
+[0.007816] (-) JobUnselected: {'identifier': 'radar_tracks_msgs_converter'}
+[0.007835] (-) JobUnselected: {'identifier': 'radar_tracks_noise_filter'}
+[0.007855] (-) JobUnselected: {'identifier': 'raw_vehicle_cmd_converter'}
+[0.007874] (-) JobUnselected: {'identifier': 'route_handler'}
+[0.007892] (-) JobUnselected: {'identifier': 'rtc_auto_mode_manager'}
+[0.007910] (-) JobUnselected: {'identifier': 'rtc_interface'}
+[0.007929] (-) JobUnselected: {'identifier': 'rtc_manager_rviz_plugin'}
+[0.007946] (-) JobUnselected: {'identifier': 'rtc_replayer'}
+[0.007964] (-) JobUnselected: {'identifier': 'rtklib_bridge'}
+[0.007984] (-) JobUnselected: {'identifier': 'rtklib_msgs'}
+[0.008001] (-) JobUnselected: {'identifier': 'sample_sensor_kit_description'}
+[0.008020] (-) JobUnselected: {'identifier': 'sample_sensor_kit_launch'}
+[0.008038] (-) JobUnselected: {'identifier': 'sample_vehicle_description'}
+[0.008058] (-) JobUnselected: {'identifier': 'sample_vehicle_launch'}
+[0.008076] (-) JobUnselected: {'identifier': 'sampler_common'}
+[0.008096] (-) JobUnselected: {'identifier': 'scenario_selector'}
+[0.008117] (-) JobUnselected: {'identifier': 'shape_estimation'}
+[0.008135] (-) JobUnselected: {'identifier': 'shift_decider'}
+[0.008153] (-) JobUnselected: {'identifier': 'signal_processing'}
+[0.008172] (-) JobUnselected: {'identifier': 'simple_object_merger'}
+[0.008190] (-) JobUnselected: {'identifier': 'simple_planning_simulator'}
+[0.008208] (-) JobUnselected: {'identifier': 'simulator_compatibility_test'}
+[0.008226] (-) JobUnselected: {'identifier': 'static_centerline_optimizer'}
+[0.008244] (-) JobUnselected: {'identifier': 'steer_offset_estimator'}
+[0.008262] (-) JobUnselected: {'identifier': 'stop_filter'}
+[0.008280] (-) JobUnselected: {'identifier': 'surround_obstacle_checker'}
+[0.008301] (-) JobUnselected: {'identifier': 'system_diagnostic_graph'}
+[0.008319] (-) JobUnselected: {'identifier': 'system_diagnostic_monitor'}
+[0.008337] (-) JobUnselected: {'identifier': 'system_error_monitor'}
+[0.008355] (-) JobUnselected: {'identifier': 'system_monitor'}
+[0.008373] (-) JobUnselected: {'identifier': 'tamagawa_imu_driver'}
+[0.008391] (-) JobUnselected: {'identifier': 'tensorrt_classifier'}
+[0.008409] (-) JobUnselected: {'identifier': 'tensorrt_common'}
+[0.008429] (-) JobUnselected: {'identifier': 'tensorrt_yolo'}
+[0.008448] (-) JobUnselected: {'identifier': 'tensorrt_yolox'}
+[0.008465] (-) JobUnselected: {'identifier': 'tier4_adapi_rviz_plugin'}
+[0.008483] (-) JobUnselected: {'identifier': 'tier4_api_msgs'}
+[0.008501] (-) JobUnselected: {'identifier': 'tier4_api_utils'}
+[0.008519] (-) JobUnselected: {'identifier': 'tier4_auto_msgs_converter'}
+[0.008538] (-) JobUnselected: {'identifier': 'tier4_automatic_goal_rviz_plugin'}
+[0.008556] (-) JobUnselected: {'identifier': 'tier4_autoware_api_launch'}
+[0.008577] (-) JobUnselected: {'identifier': 'tier4_autoware_utils'}
+[0.008596] (-) JobUnselected: {'identifier': 'tier4_calibration_rviz_plugin'}
+[0.008614] (-) JobUnselected: {'identifier': 'tier4_control_launch'}
+[0.008632] (-) JobUnselected: {'identifier': 'tier4_control_msgs'}
+[0.008665] (-) JobUnselected: {'identifier': 'tier4_control_rviz_plugin'}
+[0.008683] (-) JobUnselected: {'identifier': 'tier4_datetime_rviz_plugin'}
+[0.008700] (-) JobUnselected: {'identifier': 'tier4_debug_msgs'}
+[0.008718] (-) JobUnselected: {'identifier': 'tier4_debug_rviz_plugin'}
+[0.008736] (-) JobUnselected: {'identifier': 'tier4_debug_tools'}
+[0.008754] (-) JobUnselected: {'identifier': 'tier4_external_api_msgs'}
+[0.008772] (-) JobUnselected: {'identifier': 'tier4_hmi_msgs'}
+[0.008792] (-) JobUnselected: {'identifier': 'tier4_localization_launch'}
+[0.008810] (-) JobUnselected: {'identifier': 'tier4_localization_msgs'}
+[0.008828] (-) JobUnselected: {'identifier': 'tier4_localization_rviz_plugin'}
+[0.008845] (-) JobUnselected: {'identifier': 'tier4_logging_level_configure_rviz_plugin'}
+[0.008865] (-) JobUnselected: {'identifier': 'tier4_map_launch'}
+[0.008883] (-) JobUnselected: {'identifier': 'tier4_map_msgs'}
+[0.008900] (-) JobUnselected: {'identifier': 'tier4_pcl_extensions'}
+[0.008918] (-) JobUnselected: {'identifier': 'tier4_perception_launch'}
+[0.008935] (-) JobUnselected: {'identifier': 'tier4_perception_msgs'}
+[0.008953] (-) JobUnselected: {'identifier': 'tier4_perception_rviz_plugin'}
+[0.008971] (-) JobUnselected: {'identifier': 'tier4_planning_launch'}
+[0.008989] (-) JobUnselected: {'identifier': 'tier4_planning_msgs'}
+[0.009006] (-) JobUnselected: {'identifier': 'tier4_planning_rviz_plugin'}
+[0.009024] (-) JobUnselected: {'identifier': 'tier4_rtc_msgs'}
+[0.009042] (-) JobUnselected: {'identifier': 'tier4_screen_capture_rviz_plugin'}
+[0.009059] (-) JobUnselected: {'identifier': 'tier4_sensing_launch'}
+[0.009077] (-) JobUnselected: {'identifier': 'tier4_simulated_clock_rviz_plugin'}
+[0.009095] (-) JobUnselected: {'identifier': 'tier4_simulation_msgs'}
+[0.009113] (-) JobUnselected: {'identifier': 'tier4_simulator_launch'}
+[0.009131] (-) JobUnselected: {'identifier': 'tier4_state_rviz_plugin'}
+[0.009162] (-) JobUnselected: {'identifier': 'tier4_system_launch'}
+[0.009180] (-) JobUnselected: {'identifier': 'tier4_system_msgs'}
+[0.009197] (-) JobUnselected: {'identifier': 'tier4_system_rviz_plugin'}
+[0.009215] (-) JobUnselected: {'identifier': 'tier4_target_object_type_rviz_plugin'}
+[0.009235] (-) JobUnselected: {'identifier': 'tier4_traffic_light_rviz_plugin'}
+[0.009255] (-) JobUnselected: {'identifier': 'tier4_v2x_msgs'}
+[0.009273] (-) JobUnselected: {'identifier': 'tier4_vehicle_launch'}
+[0.009291] (-) JobUnselected: {'identifier': 'tier4_vehicle_msgs'}
+[0.009308] (-) JobUnselected: {'identifier': 'tier4_vehicle_rviz_plugin'}
+[0.009326] (-) JobUnselected: {'identifier': 'time_utils'}
+[0.009344] (-) JobUnselected: {'identifier': 'topic_state_monitor'}
+[0.009364] (-) JobUnselected: {'identifier': 'traffic_light_arbiter'}
+[0.009381] (-) JobUnselected: {'identifier': 'traffic_light_classifier'}
+[0.009399] (-) JobUnselected: {'identifier': 'traffic_light_fine_detector'}
+[0.009419] (-) JobUnselected: {'identifier': 'traffic_light_map_based_detector'}
+[0.009437] (-) JobUnselected: {'identifier': 'traffic_light_multi_camera_fusion'}
+[0.009460] (-) JobUnselected: {'identifier': 'traffic_light_occlusion_predictor'}
+[0.009620] (-) JobUnselected: {'identifier': 'traffic_light_recognition_marker_publisher'}
+[0.009633] (-) JobUnselected: {'identifier': 'traffic_light_ssd_fine_detector'}
+[0.009646] (-) JobUnselected: {'identifier': 'traffic_light_utils'}
+[0.009665] (-) JobUnselected: {'identifier': 'traffic_light_visualization'}
+[0.009690] (-) JobUnselected: {'identifier': 'trajectory_follower_base'}
+[0.009703] (-) JobUnselected: {'identifier': 'trajectory_follower_node'}
+[0.010656] (-) JobUnselected: {'identifier': 'trtexec_vendor'}
+[0.010670] (-) JobUnselected: {'identifier': 'tvm_utility'}
+[0.010698] (-) JobUnselected: {'identifier': 'twist2accel'}
+[0.010729] (-) JobUnselected: {'identifier': 'vehicle_cmd_gate'}
+[0.010741] (-) JobUnselected: {'identifier': 'vehicle_info_util'}
+[0.010753] (-) JobUnselected: {'identifier': 'vehicle_velocity_converter'}
+[0.010766] (-) JobUnselected: {'identifier': 'velodyne_description'}
+[0.010799] (-) JobUnselected: {'identifier': 'velodyne_monitor'}
+[0.010817] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.010829] (-) JobUnselected: {'identifier': 'vls_description'}
+[0.010841] (-) JobUnselected: {'identifier': 'yabloc_common'}
+[0.010927] (-) JobUnselected: {'identifier': 'yabloc_image_processing'}
+[0.010940] (-) JobUnselected: {'identifier': 'yabloc_monitor'}
+[0.010974] (-) JobUnselected: {'identifier': 'yabloc_particle_filter'}
+[0.011184] (-) JobUnselected: {'identifier': 'yabloc_pose_initializer'}
+[0.011279] (mcity_terasim) JobQueued: {'identifier': 'mcity_terasim', 'dependencies': OrderedDict([('autoware_adapi_v1_msgs', '/home/zhijie/autoware/install/autoware_adapi_v1_msgs'), ('autoware_auto_control_msgs', '/home/zhijie/autoware/install/autoware_auto_control_msgs'), ('autoware_auto_geometry_msgs', '/home/zhijie/autoware/install/autoware_auto_geometry_msgs'), ('autoware_auto_mapping_msgs', '/home/zhijie/autoware/install/autoware_auto_mapping_msgs'), ('autoware_auto_system_msgs', '/home/zhijie/autoware/install/autoware_auto_system_msgs'), ('autoware_common_msgs', '/home/zhijie/autoware/install/autoware_common_msgs'), ('autoware_lint_common', '/home/zhijie/autoware/install/autoware_lint_common'), ('autoware_perception_msgs', '/home/zhijie/autoware/install/autoware_perception_msgs'), ('dataspeed_ulc_msgs', '/home/zhijie/autoware/install/dataspeed_ulc_msgs'), ('dbw_ford_msgs', '/home/zhijie/autoware/install/dbw_ford_msgs'), ('tier4_debug_msgs', '/home/zhijie/autoware/install/tier4_debug_msgs'), ('autoware_auto_perception_msgs', '/home/zhijie/autoware/install/autoware_auto_perception_msgs'), ('autoware_auto_planning_msgs', '/home/zhijie/autoware/install/autoware_auto_planning_msgs'), ('autoware_cmake', '/home/zhijie/autoware/install/autoware_cmake'), ('tier4_system_msgs', '/home/zhijie/autoware/install/tier4_system_msgs'), ('autoware_auto_vehicle_msgs', '/home/zhijie/autoware/install/autoware_auto_vehicle_msgs'), ('tier4_perception_msgs', '/home/zhijie/autoware/install/tier4_perception_msgs'), ('tier4_autoware_utils', '/home/zhijie/autoware/install/tier4_autoware_utils'), ('dummy_perception_publisher', '/home/zhijie/autoware/install/dummy_perception_publisher')])}
+[0.011329] (mcity_terasim) JobStarted: {'identifier': 'mcity_terasim'}
+[0.037005] (mcity_terasim) JobProgress: {'identifier': 'mcity_terasim', 'progress': 'cmake'}
+[0.037631] (mcity_terasim) JobProgress: {'identifier': 'mcity_terasim', 'progress': 'build'}
+[0.038507] (mcity_terasim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zhijie/autoware/build/mcity_terasim', '--', '-j16', '-l16'], 'cwd': '/home/zhijie/autoware/build/mcity_terasim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zhijie'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zhijie/autoware/install/dummy_perception_publisher/lib:/home/zhijie/autoware/install/tier4_autoware_utils/lib:/home/zhijie/autoware/install/tier4_perception_msgs/lib:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/lib:/home/zhijie/autoware/install/tier4_system_msgs/lib:/home/zhijie/autoware/install/autoware_auto_planning_msgs/lib:/home/zhijie/autoware/install/autoware_auto_perception_msgs/lib:/home/zhijie/autoware/install/tier4_debug_msgs/lib:/home/zhijie/autoware/install/dbw_ford_msgs/lib:/home/zhijie/autoware/install/dataspeed_ulc_msgs/lib:/home/zhijie/autoware/install/autoware_perception_msgs/lib:/home/zhijie/autoware/install/autoware_common_msgs/lib:/home/zhijie/autoware/install/autoware_auto_system_msgs/lib:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/lib:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib:/home/zhijie/autoware/install/autoware_auto_control_msgs/lib:/home/zhijie/autoware/install/autoware_adapi_v1_msgs/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zhijie'), ('OLDPWD', '/home/zhijie'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1592'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zhijie'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhijie'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/opt/ros/humble/bin:/home/zhijie/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zhijie/.local/bin:/home/zhijie/.local/bin'), ('SESSION_MANAGER', 'local/zhijie-Alienware-Aurora-R11:@/tmp/.ICE-unix/1572,unix/zhijie-Alienware-Aurora-R11:/tmp/.ICE-unix/1572'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fb199be2_c2aa_4d81_9924_1cebf3e93243'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zhijie/autoware/install/dummy_perception_publisher:/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/dbw_ford_msgs:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/autoware_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_common_msgs:/home/zhijie/autoware/install/autoware_auto_system_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/home/zhijie/autoware/install/autoware_auto_control_msgs:/home/zhijie/autoware/install/autoware_adapi_v1_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zhijie/autoware/build/mcity_terasim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/opt/apps/com.qq.weixin.deepin/entries'), ('PYTHONPATH', '/home/zhijie/autoware/install/dummy_perception_publisher/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_planning_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/tier4_debug_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dbw_ford_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_ulc_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_perception_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_system_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_mapping_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_auto_control_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/autoware_adapi_v1_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zhijie/autoware/install/dummy_perception_publisher:/home/zhijie/autoware/install/tier4_autoware_utils:/home/zhijie/autoware/install/tier4_perception_msgs:/home/zhijie/autoware/install/autoware_auto_vehicle_msgs:/home/zhijie/autoware/install/tier4_system_msgs:/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_auto_planning_msgs:/home/zhijie/autoware/install/autoware_auto_perception_msgs:/home/zhijie/autoware/install/tier4_debug_msgs:/home/zhijie/autoware/install/dbw_ford_msgs:/home/zhijie/autoware/install/dataspeed_ulc_msgs:/home/zhijie/autoware/install/autoware_perception_msgs:/home/zhijie/autoware/install/autoware_lint_common:/home/zhijie/autoware/install/autoware_common_msgs:/home/zhijie/autoware/install/autoware_auto_system_msgs:/home/zhijie/autoware/install/autoware_auto_mapping_msgs:/home/zhijie/autoware/install/autoware_auto_geometry_msgs:/home/zhijie/autoware/install/autoware_auto_control_msgs:/home/zhijie/autoware/install/autoware_adapi_v1_msgs:/opt/ros/humble')]), 'shell': False}
+[0.061148] (mcity_terasim) StdoutLine: {'line': b'-- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)\n'}
+[0.098494] (-) TimerEvent: {}
+[0.172217] (mcity_terasim) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.198562] (-) TimerEvent: {}
+[0.245795] (mcity_terasim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.247719] (mcity_terasim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.252142] (mcity_terasim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.260537] (mcity_terasim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.272366] (mcity_terasim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.298656] (-) TimerEvent: {}
+[0.365490] (mcity_terasim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.367009] (mcity_terasim) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.389231] (mcity_terasim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.398753] (-) TimerEvent: {}
+[0.498910] (-) TimerEvent: {}
+[0.599115] (-) TimerEvent: {}
+[0.699340] (-) TimerEvent: {}
+[0.799537] (-) TimerEvent: {}
+[0.899727] (-) TimerEvent: {}
+[0.999987] (-) TimerEvent: {}
+[1.100239] (-) TimerEvent: {}
+[1.200521] (-) TimerEvent: {}
+[1.300785] (-) TimerEvent: {}
+[1.401018] (-) TimerEvent: {}
+[1.501242] (-) TimerEvent: {}
+[1.601458] (-) TimerEvent: {}
+[1.701684] (-) TimerEvent: {}
+[1.801951] (-) TimerEvent: {}
+[1.902183] (-) TimerEvent: {}
+[2.002411] (-) TimerEvent: {}
+[2.102713] (-) TimerEvent: {}
+[2.202950] (-) TimerEvent: {}
+[2.303167] (-) TimerEvent: {}
+[2.403375] (-) TimerEvent: {}
+[2.503619] (-) TimerEvent: {}
+[2.508959] (mcity_terasim) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.509883] (mcity_terasim) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.603821] (-) TimerEvent: {}
+[2.704399] (-) TimerEvent: {}
+[2.804619] (-) TimerEvent: {}
+[2.904889] (-) TimerEvent: {}
+[3.005116] (-) TimerEvent: {}
+[3.105343] (-) TimerEvent: {}
+[3.205557] (-) TimerEvent: {}
+[3.253441] (mcity_terasim) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.277704] (mcity_terasim) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[3.305662] (-) TimerEvent: {}
+[3.405864] (-) TimerEvent: {}
+[3.494008] (mcity_terasim) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.497920] (mcity_terasim) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.505954] (-) TimerEvent: {}
+[3.606153] (-) TimerEvent: {}
+[3.606504] (mcity_terasim) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.610508] (mcity_terasim) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.614439] (mcity_terasim) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.706263] (-) TimerEvent: {}
+[3.713545] (mcity_terasim) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.806382] (-) TimerEvent: {}
+[3.820022] (mcity_terasim) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.906487] (-) TimerEvent: {}
+[4.006737] (-) TimerEvent: {}
+[4.106959] (-) TimerEvent: {}
+[4.207174] (-) TimerEvent: {}
+[4.307397] (-) TimerEvent: {}
+[4.407621] (-) TimerEvent: {}
+[4.507844] (-) TimerEvent: {}
+[4.608063] (-) TimerEvent: {}
+[4.708272] (-) TimerEvent: {}
+[4.808481] (-) TimerEvent: {}
+[4.908660] (-) TimerEvent: {}
+[5.008838] (-) TimerEvent: {}
+[5.109047] (-) TimerEvent: {}
+[5.209246] (-) TimerEvent: {}
+[5.309433] (-) TimerEvent: {}
+[5.383715] (mcity_terasim) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.409546] (-) TimerEvent: {}
+[5.482424] (mcity_terasim) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.483221] (mcity_terasim) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.484804] (mcity_terasim) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/zhijie/autoware/src/terasim/mcity_terasim/include\n'}
+[5.484880] (mcity_terasim) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.485124] (mcity_terasim) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.485378] (mcity_terasim) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.487432] (mcity_terasim) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.509628] (-) TimerEvent: {}
+[5.600424] (mcity_terasim) StdoutLine: {'line': b'-- Generating done\n'}
+[5.603514] (mcity_terasim) StdoutLine: {'line': b'-- Build files have been written to: /home/zhijie/autoware/build/mcity_terasim\n'}
+[5.609743] (-) TimerEvent: {}
+[5.630670] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target traffic_signal_control\x1b[0m\n'}
+[5.630869] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cav_context_converter\x1b[0m\n'}
+[5.630961] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target traffic_signal_control_component\x1b[0m\n'}
+[5.631050] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gnss_to_pose_twist\x1b[0m\n'}
+[5.632793] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cav_info_converter\x1b[0m\n'}
+[5.633125] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sumo_autoware_cosim\x1b[0m\n'}
+[5.633520] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cav_context_replay\x1b[0m\n'}
+[5.634581] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gnss_to_dummy_pose_twist\x1b[0m\n'}
+[5.639797] (mcity_terasim) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/dbw_ulc_converter.dir/rclcpp_components/node_main_dbw_ulc_converter.cpp.o\x1b[0m\n'}
+[5.645368] (mcity_terasim) StdoutLine: {'line': b'[  9%] Built target traffic_signal_control_component\n'}
+[5.645598] (mcity_terasim) StdoutLine: {'line': b'[ 15%] Built target gnss_to_pose_twist\n'}
+[5.646083] (mcity_terasim) StdoutLine: {'line': b'[ 21%] Built target traffic_signal_control\n'}
+[5.646546] (mcity_terasim) StdoutLine: {'line': b'[ 28%] Built target cav_context_converter\n'}
+[5.647574] (mcity_terasim) StdoutLine: {'line': b'[ 34%] Built target cav_info_converter\n'}
+[5.648325] (mcity_terasim) StdoutLine: {'line': b'[ 46%] Built target cav_context_replay\n'}
+[5.648455] (mcity_terasim) StdoutLine: {'line': b'[ 46%] Built target gnss_to_dummy_pose_twist\n'}
+[5.652238] (mcity_terasim) StdoutLine: {'line': b'[ 53%] Built target sumo_autoware_cosim\n'}
+[5.653745] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cav_info_converter_component\x1b[0m\n'}
+[5.668391] (mcity_terasim) StdoutLine: {'line': b'[ 59%] Built target cav_info_converter_component\n'}
+[5.677588] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cav_context_converter_component\x1b[0m\n'}
+[5.695527] (mcity_terasim) StdoutLine: {'line': b'[ 65%] Built target cav_context_converter_component\n'}
+[5.704272] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cav_context_replay_component\x1b[0m\n'}
+[5.709837] (-) TimerEvent: {}
+[5.718418] (mcity_terasim) StdoutLine: {'line': b'[ 71%] Built target cav_context_replay_component\n'}
+[5.727162] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sumo_autoware_cosim_component\x1b[0m\n'}
+[5.741262] (mcity_terasim) StdoutLine: {'line': b'[ 78%] Built target sumo_autoware_cosim_component\n'}
+[5.749866] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gnss_to_pose_twist_component\x1b[0m\n'}
+[5.763852] (mcity_terasim) StdoutLine: {'line': b'[ 84%] Built target gnss_to_pose_twist_component\n'}
+[5.772549] (mcity_terasim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gnss_to_dummy_pose_twist_component\x1b[0m\n'}
+[5.786629] (mcity_terasim) StdoutLine: {'line': b'[ 90%] Built target gnss_to_dummy_pose_twist_component\n'}
+[5.802839] (mcity_terasim) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/dbw_ulc_converter_component.dir/src/dbw_ulc_converter.cpp.o\x1b[0m\n'}
+[5.809935] (-) TimerEvent: {}
+[5.910183] (-) TimerEvent: {}
+[6.010383] (-) TimerEvent: {}
+[6.110615] (-) TimerEvent: {}
+[6.210820] (-) TimerEvent: {}
+[6.311053] (-) TimerEvent: {}
+[6.411286] (-) TimerEvent: {}
+[6.511520] (-) TimerEvent: {}
+[6.611762] (-) TimerEvent: {}
+[6.711970] (-) TimerEvent: {}
+[6.812192] (-) TimerEvent: {}
+[6.912422] (-) TimerEvent: {}
+[7.012650] (-) TimerEvent: {}
+[7.112910] (-) TimerEvent: {}
+[7.213175] (-) TimerEvent: {}
+[7.313432] (-) TimerEvent: {}
+[7.413689] (-) TimerEvent: {}
+[7.513957] (-) TimerEvent: {}
+[7.584330] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:34:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kautoware_auto_vehicle_msgs::msg::SteeringReport dbw_ulc_converter::DbwUlcConverter::get_steer_msg(float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.584476] (mcity_terasim) StderrLine: {'line': b'   34 |   autoware_auto_vehicle_msgs::msg::SteeringReport \x1b[01;31m\x1b[KDbwUlcConverter\x1b[m\x1b[K::get_steer_msg(float steering_tire_angle){\n'}
+[7.584532] (mcity_terasim) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.584582] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:34:51:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kautoware_auto_vehicle_msgs::msg::SteeringReport dbw_ulc_converter::DbwUlcConverter::get_steer_msg(float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.584630] (mcity_terasim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:15\x1b[m\x1b[K:\n'}
+[7.584677] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/include/dbw_ulc_converter.hpp:37:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dbw_ulc_converter::DbwUlcConverter\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[7.584723] (mcity_terasim) StderrLine: {'line': b'   37 | class \x1b[01;36m\x1b[KDbwUlcConverter\x1b[m\x1b[K : public rclcpp::Node\n'}
+[7.584768] (mcity_terasim) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.584813] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:41:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kdataspeed_ulc_msgs::msg::UlcCmd dbw_ulc_converter::DbwUlcConverter::get_ulc_cmd(float, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.584859] (mcity_terasim) StderrLine: {'line': b'   41 |   UlcCmd \x1b[01;31m\x1b[KDbwUlcConverter\x1b[m\x1b[K::get_ulc_cmd(float speed, float steering_wheel_angle){\n'}
+[7.584905] (mcity_terasim) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.584949] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:41:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kdataspeed_ulc_msgs::msg::UlcCmd dbw_ulc_converter::DbwUlcConverter::get_ulc_cmd(float, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.584994] (mcity_terasim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:15\x1b[m\x1b[K:\n'}
+[7.585038] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/include/dbw_ulc_converter.hpp:37:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dbw_ulc_converter::DbwUlcConverter\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[7.585083] (mcity_terasim) StderrLine: {'line': b'   37 | class \x1b[01;36m\x1b[KDbwUlcConverter\x1b[m\x1b[K : public rclcpp::Node\n'}
+[7.585127] (mcity_terasim) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.589558] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid dbw_ulc_converter::steer_callback(dbw_ford_msgs::msg::SteeringReport_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.589646] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:63:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksaved_steer_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.589710] (mcity_terasim) StderrLine: {'line': b'   63 |     \x1b[01;31m\x1b[Ksaved_steer_msg\x1b[m\x1b[K = *msg;\n'}
+[7.589759] (mcity_terasim) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.592274] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:64:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksteer_status\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksi_status\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.592354] (mcity_terasim) StderrLine: {'line': b'   64 |     \x1b[01;31m\x1b[Ksteer_status\x1b[m\x1b[K = true;\n'}
+[7.592406] (mcity_terasim) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.592454] (mcity_terasim) StderrLine: {'line': b'      |     \x1b[32m\x1b[Ksi_status\x1b[m\x1b[K\n'}
+[7.598136] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid dbw_ulc_converter::control_cmd_callback(autoware_auto_control_msgs::msg::AckermannControlCommand_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.598253] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:68:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksaved_control_cmd_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.598318] (mcity_terasim) StderrLine: {'line': b'   68 |     \x1b[01;31m\x1b[Ksaved_control_cmd_msg\x1b[m\x1b[K = *msg;\n'}
+[7.598368] (mcity_terasim) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.601374] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:69:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_status\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.601454] (mcity_terasim) StderrLine: {'line': b'   69 |     \x1b[01;31m\x1b[Kcontrol_status\x1b[m\x1b[K = true;\n'}
+[7.601506] (mcity_terasim) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.604024] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid dbw_ulc_converter::on_timer()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.604180] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:73:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksteer_status\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksi_status\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.604239] (mcity_terasim) StderrLine: {'line': b'   73 |     if (!\x1b[01;31m\x1b[Ksteer_status\x1b[m\x1b[K || !control_status){\n'}
+[7.604289] (mcity_terasim) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.604336] (mcity_terasim) StderrLine: {'line': b'      |          \x1b[32m\x1b[Ksi_status\x1b[m\x1b[K\n'}
+[7.607449] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:73:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_status\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.607548] (mcity_terasim) StderrLine: {'line': b'   73 |     if (!steer_status || !\x1b[01;31m\x1b[Kcontrol_status\x1b[m\x1b[K){\n'}
+[7.607600] (mcity_terasim) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.610246] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:77:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksteer_status\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksi_status\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.610334] (mcity_terasim) StderrLine: {'line': b'   77 |     \x1b[01;31m\x1b[Ksteer_status\x1b[m\x1b[K = false;\n'}
+[7.610386] (mcity_terasim) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.610434] (mcity_terasim) StderrLine: {'line': b'      |     \x1b[32m\x1b[Ksi_status\x1b[m\x1b[K\n'}
+[7.613373] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:78:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_status\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.613450] (mcity_terasim) StderrLine: {'line': b'   78 |     \x1b[01;31m\x1b[Kcontrol_status\x1b[m\x1b[K = false;\n'}
+[7.613502] (mcity_terasim) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.613985] (-) TimerEvent: {}
+[7.617610] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:80:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksaved_control_cmd_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.617707] (mcity_terasim) StderrLine: {'line': b'   80 |     double speed = \x1b[01;31m\x1b[Ksaved_control_cmd_msg\x1b[m\x1b[K.LongitudinalCommand.speed;\n'}
+[7.617761] (mcity_terasim) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.620736] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:81:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksaved_steer_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.620813] (mcity_terasim) StderrLine: {'line': b'   81 |     double steering_tire_angle = \x1b[01;31m\x1b[Ksaved_steer_msg\x1b[m\x1b[K.steering_wheel_angle / 12.0;\n'}
+[7.620874] (mcity_terasim) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.623090] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:83:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_steer_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksteer_msg\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.623169] (mcity_terasim) StderrLine: {'line': b'   83 |     auto steer_msg = \x1b[01;31m\x1b[Kget_steer_msg\x1b[m\x1b[K(steering_tire_angle);\n'}
+[7.623221] (mcity_terasim) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.623269] (mcity_terasim) StderrLine: {'line': b'      |                      \x1b[32m\x1b[Ksteer_msg\x1b[m\x1b[K\n'}
+[7.624680] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:84:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksspeed\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kspeed\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.624758] (mcity_terasim) StderrLine: {'line': b'   84 |     auto ulc_cmd_msg = get_ulc_cmd(\x1b[01;31m\x1b[Ksspeed\x1b[m\x1b[K, steering_tire_angle);\n'}
+[7.624810] (mcity_terasim) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.624858] (mcity_terasim) StderrLine: {'line': b'      |                                    \x1b[32m\x1b[Kspeed\x1b[m\x1b[K\n'}
+[7.627056] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:84:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_ulc_cmd\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.627142] (mcity_terasim) StderrLine: {'line': b'   84 |     auto ulc_cmd_msg = \x1b[01;31m\x1b[Kget_ulc_cmd\x1b[m\x1b[K(sspeed, steering_tire_angle);\n'}
+[7.627194] (mcity_terasim) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.629168] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:86:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_steer\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.629244] (mcity_terasim) StderrLine: {'line': b'   86 |     \x1b[01;31m\x1b[Kpub_steer\x1b[m\x1b[K->publish(steer_msg);\n'}
+[7.629296] (mcity_terasim) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.631518] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:87:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_ulc_cmd\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.631595] (mcity_terasim) StderrLine: {'line': b'   87 |     \x1b[01;31m\x1b[Kpub_ulc_cmd\x1b[m\x1b[K->publish(ulc_cmd_msg);\n'}
+[7.631647] (mcity_terasim) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.631695] (mcity_terasim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:80:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kspeed\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Werror=unused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.631752] (mcity_terasim) StderrLine: {'line': b'   80 |     double \x1b[01;31m\x1b[Kspeed\x1b[m\x1b[K = saved_control_cmd_msg.LongitudinalCommand.speed;\n'}
+[7.631799] (mcity_terasim) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.714083] (-) TimerEvent: {}
+[7.814311] (-) TimerEvent: {}
+[7.914531] (-) TimerEvent: {}
+[8.014784] (-) TimerEvent: {}
+[8.066070] (mcity_terasim) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX executable dbw_ulc_converter\x1b[0m\n'}
+[8.114902] (-) TimerEvent: {}
+[8.136026] (mcity_terasim) StdoutLine: {'line': b'[ 96%] Built target dbw_ulc_converter\n'}
+[8.215016] (-) TimerEvent: {}
+[8.315252] (-) TimerEvent: {}
+[8.415501] (-) TimerEvent: {}
+[8.515735] (-) TimerEvent: {}
+[8.615972] (-) TimerEvent: {}
+[8.716228] (-) TimerEvent: {}
+[8.816484] (-) TimerEvent: {}
+[8.916735] (-) TimerEvent: {}
+[9.016990] (-) TimerEvent: {}
+[9.117247] (-) TimerEvent: {}
+[9.217502] (-) TimerEvent: {}
+[9.317753] (-) TimerEvent: {}
+[9.418030] (-) TimerEvent: {}
+[9.518267] (-) TimerEvent: {}
+[9.618473] (-) TimerEvent: {}
+[9.718723] (-) TimerEvent: {}
+[9.818981] (-) TimerEvent: {}
+[9.919237] (-) TimerEvent: {}
+[9.940702] (mcity_terasim) StderrLine: {'line': b'cc1plus: all warnings being treated as errors\n'}
+[9.962688] (mcity_terasim) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/dbw_ulc_converter_component.dir/build.make:76: CMakeFiles/dbw_ulc_converter_component.dir/src/dbw_ulc_converter.cpp.o] Error 1\n'}
+[9.962943] (mcity_terasim) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:552: CMakeFiles/dbw_ulc_converter_component.dir/all] Error 2\n'}
+[9.963160] (mcity_terasim) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[9.964511] (mcity_terasim) CommandEnded: {'returncode': 2}
+[10.014216] (mcity_terasim) JobEnded: {'identifier': 'mcity_terasim', 'rc': 2}
+[10.019421] (-) TimerEvent: {}
+[10.024745] (-) EventReactorShutdown: {}

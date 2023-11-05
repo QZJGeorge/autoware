@@ -94,17 +94,17 @@ rclcpp_components_register_node(gnss_to_pose_twist_component
   EXECUTABLE gnss_to_pose_twist
 )
 
-#############################  GNSS TO POSE TWIST  ###################################
+#############################  DBW ULC CONVERTER$$ ###################################
 
-ament_auto_add_library(gnss_to_dummy_pose_twist_component SHARED
-  src/gnss_to_dummy_pose_twist.cpp
+ament_auto_add_library(dbw_ulc_converter_component SHARED
+  src/dbw_ulc_converter.cpp
 )
 
-target_link_libraries(gnss_to_dummy_pose_twist_component Geographic)
+target_link_libraries(dbw_ulc_converter_component Geographic)
 
-rclcpp_components_register_node(gnss_to_dummy_pose_twist_component
-  PLUGIN "gnss_to_dummy_pose_twist::GnssToDummyPoseTwist"
-  EXECUTABLE gnss_to_dummy_pose_twist
+rclcpp_components_register_node(dbw_ulc_converter_component
+  PLUGIN "dbw_ulc_converter::DbwUlcConverter"
+  EXECUTABLE dbw_ulc_converter
 )
 
 ########################################################################################

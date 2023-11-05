@@ -1,0 +1,15 @@
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:33:17:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Knav_msgs::msg::OccupancyGrid gnss_to_dummy_pose_twist::GnssToDummyPoseTwist::calc_map()[m[K’
+   33 |   OccupancyGrid [01;31m[KGnssToDummyPoseTwist[m[K::calc_map(){
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:33:17:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Knav_msgs::msg::OccupancyGrid gnss_to_dummy_pose_twist::GnssToDummyPoseTwist::calc_map()[m[K’
+In file included from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:15[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/include/gnss_to_dummy_pose_twist.hpp:53:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass gnss_to_dummy_pose_twist::GnssToDummyPoseTwist[m[K’ defined here
+   53 | class [01;36m[KGnssToDummyPoseTwist[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:[m[K In member function ‘[01m[Kvoid gnss_to_dummy_pose_twist::GnssToDummyPoseTwist::pub_localization()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_dummy_pose_twist.cpp:79:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kcalc_map[m[K’ was not declared in this scope
+   79 |     auto map = [01;31m[Kcalc_map[m[K();
+      |                [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gnss_to_dummy_pose_twist_component.dir/build.make:76: CMakeFiles/gnss_to_dummy_pose_twist_component.dir/src/gnss_to_dummy_pose_twist.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:490: CMakeFiles/gnss_to_dummy_pose_twist_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,41 @@
+[0.361s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_common': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_auto_common -- -j16 -l16
+[0.439s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[0.440s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[0.440s] [ 13%] Built target gtest
+[0.440s] [ 26%] Built target gtest_main
+[0.440s] [35m[1mConsolidate compiler generated dependencies of target test_common_gtest[0m
+[0.448s] [100%] Built target test_common_gtest
+[0.461s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_common' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_auto_common -- -j16 -l16
+[0.499s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_common': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_auto_common
+[0.512s] -- Install configuration: "Release"
+[0.512s] -- Execute custom install script
+[0.512s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/include/common/type_traits.hpp
+[0.513s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/include/common/types.hpp
+[0.513s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/include/common/visibility_control.hpp
+[0.513s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/include/helper_functions/angle_utils.hpp
+[0.513s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/include/helper_functions/bool_comparisons.hpp
+[0.513s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/include/helper_functions/byte_reader.hpp
+[0.513s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/include/helper_functions/crtp.hpp
+[0.513s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/include/helper_functions/float_comparisons.hpp
+[0.515s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/include/helper_functions/mahalanobis_distance.hpp
+[0.515s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/include/helper_functions/message_adapters.hpp
+[0.515s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/include/helper_functions/template_utils.hpp
+[0.518s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/include/helper_functions/type_name.hpp
+[0.519s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/ament_index/resource_index/package_run_dependencies/autoware_auto_common
+[0.520s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/ament_index/resource_index/parent_prefix_path/autoware_auto_common
+[0.524s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/environment/ament_prefix_path.sh
+[0.525s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/environment/ament_prefix_path.dsv
+[0.525s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/environment/path.sh
+[0.529s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/environment/path.dsv
+[0.529s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/local_setup.bash
+[0.529s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/local_setup.sh
+[0.530s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/local_setup.zsh
+[0.530s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/local_setup.dsv
+[0.531s] -- Symlinking: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/package.dsv
+[0.558s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/ament_index/resource_index/packages/autoware_auto_common
+[0.559s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.559s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.560s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/cmake/autoware_auto_commonConfig.cmake
+[0.560s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/cmake/autoware_auto_commonConfig-version.cmake
+[0.561s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_common/share/autoware_auto_common/package.xml
+[0.665s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_common' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_auto_common

@@ -1,0 +1,60 @@
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:[m[K In function ‘[01m[Kvoid dbw_ulc_converter::steer_callback(dbw_ford_msgs::msg::SteeringReport_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:63:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksaved_steer_msg[m[K’ was not declared in this scope
+   63 |     [01;31m[Ksaved_steer_msg[m[K = *msg;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:64:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksteer_status[m[K’ was not declared in this scope; did you mean ‘[01m[Ksi_status[m[K’?
+   64 |     [01;31m[Ksteer_status[m[K = true;
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[Ksi_status[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:[m[K In function ‘[01m[Kvoid dbw_ulc_converter::control_cmd_callback(autoware_auto_control_msgs::msg::AckermannControlCommand_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:68:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksaved_control_cmd_msg[m[K’ was not declared in this scope
+   68 |     [01;31m[Ksaved_control_cmd_msg[m[K = *msg;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:69:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_status[m[K’ was not declared in this scope
+   69 |     [01;31m[Kcontrol_status[m[K = true;
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:[m[K In function ‘[01m[Kvoid dbw_ulc_converter::on_timer()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:73:10:[m[K [01;31m[Kerror: [m[K‘[01m[Ksteer_status[m[K’ was not declared in this scope; did you mean ‘[01m[Ksi_status[m[K’?
+   73 |     if (![01;31m[Ksteer_status[m[K || !control_status){
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+      |          [32m[Ksi_status[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:73:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_status[m[K’ was not declared in this scope
+   73 |     if (!steer_status || ![01;31m[Kcontrol_status[m[K){
+      |                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:77:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksteer_status[m[K’ was not declared in this scope; did you mean ‘[01m[Ksi_status[m[K’?
+   77 |     [01;31m[Ksteer_status[m[K = false;
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[Ksi_status[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:78:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_status[m[K’ was not declared in this scope
+   78 |     [01;31m[Kcontrol_status[m[K = false;
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:80:20:[m[K [01;31m[Kerror: [m[K‘[01m[Ksaved_control_cmd_msg[m[K’ was not declared in this scope
+   80 |     double speed = [01;31m[Ksaved_control_cmd_msg[m[K.LongitudinalCommand.speed;
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:81:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ksaved_steer_msg[m[K’ was not declared in this scope
+   81 |     double steering_tire_angle = [01;31m[Ksaved_steer_msg[m[K.steering_wheel_angle / 12.0;
+      |                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:83:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_steer_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Ksteer_msg[m[K’?
+   83 |     auto steer_msg = [01;31m[Kget_steer_msg[m[K(steering_tire_angle);
+      |                      [01;31m[K^~~~~~~~~~~~~[m[K
+      |                      [32m[Ksteer_msg[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:84:36:[m[K [01;31m[Kerror: [m[K‘[01m[Ksspeed[m[K’ was not declared in this scope; did you mean ‘[01m[Kspeed[m[K’?
+   84 |     auto ulc_cmd_msg = get_ulc_cmd([01;31m[Ksspeed[m[K, steering_tire_angle);
+      |                                    [01;31m[K^~~~~~[m[K
+      |                                    [32m[Kspeed[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:84:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_ulc_cmd[m[K’ was not declared in this scope
+   84 |     auto ulc_cmd_msg = [01;31m[Kget_ulc_cmd[m[K(sspeed, steering_tire_angle);
+      |                        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:86:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_steer[m[K’ was not declared in this scope
+   86 |     [01;31m[Kpub_steer[m[K->publish(steer_msg);
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_ulc_cmd[m[K’ was not declared in this scope
+   87 |     [01;31m[Kpub_ulc_cmd[m[K->publish(ulc_cmd_msg);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/dbw_ulc_converter.cpp:80:12:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kspeed[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+   80 |     double [01;31m[Kspeed[m[K = saved_control_cmd_msg.LongitudinalCommand.speed;
+      |            [01;31m[K^~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/dbw_ulc_converter_component.dir/build.make:76: CMakeFiles/dbw_ulc_converter_component.dir/src/dbw_ulc_converter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:552: CMakeFiles/dbw_ulc_converter_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

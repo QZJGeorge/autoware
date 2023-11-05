@@ -1,0 +1,36 @@
+[0.056s] Invoking command in '/home/zhijie/autoware/build/radar_threshold_filter': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/radar_threshold_filter -- -j16 -l16
+[0.119s] [35m[1mConsolidate compiler generated dependencies of target radar_threshold_filter_node_component[0m
+[0.131s] [ 50%] Built target radar_threshold_filter_node_component
+[0.158s] [35m[1mConsolidate compiler generated dependencies of target radar_threshold_filter_node[0m
+[0.178s] [100%] Built target radar_threshold_filter_node
+[0.283s] Invoked command in '/home/zhijie/autoware/build/radar_threshold_filter' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/radar_threshold_filter -- -j16 -l16
+[0.437s] Invoking command in '/home/zhijie/autoware/build/radar_threshold_filter': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/radar_threshold_filter
+[0.460s] -- Install configuration: "Release"
+[0.460s] -- Execute custom install script
+[0.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/lib/radar_threshold_filter/radar_threshold_filter_node
+[0.460s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/include/radar_threshold_filter/radar_threshold_filter_node.hpp
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/environment/library_path.sh
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/environment/library_path.dsv
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/lib/libradar_threshold_filter_node_component.so
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/config/radar_threshold_filter.param.yaml
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/launch/radar_threshold_filter.launch.xml
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/ament_index/resource_index/package_run_dependencies/radar_threshold_filter
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/ament_index/resource_index/parent_prefix_path/radar_threshold_filter
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/environment/ament_prefix_path.sh
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/environment/ament_prefix_path.dsv
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/environment/path.sh
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/environment/path.dsv
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/local_setup.bash
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/local_setup.sh
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/local_setup.zsh
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/local_setup.dsv
+[0.461s] -- Symlinking: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/package.dsv
+[0.461s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/ament_index/resource_index/packages/radar_threshold_filter
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/ament_index/resource_index/rclcpp_components/radar_threshold_filter
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/cmake/ament_cmake_export_libraries-extras.cmake
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/cmake/radar_threshold_filterConfig.cmake
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/cmake/radar_threshold_filterConfig-version.cmake
+[0.462s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_threshold_filter/share/radar_threshold_filter/package.xml
+[0.528s] Invoked command in '/home/zhijie/autoware/build/radar_threshold_filter' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/radar_threshold_filter

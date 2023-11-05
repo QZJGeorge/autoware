@@ -1,0 +1,32 @@
+[35m[1mConsolidate compiler generated dependencies of target traffic_light_multi_camera_fusion[0m
+[ 50%] Built target traffic_light_multi_camera_fusion
+[35m[1mConsolidate compiler generated dependencies of target traffic_light_multi_camera_fusion_node[0m
+[100%] Built target traffic_light_multi_camera_fusion_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/lib/traffic_light_multi_camera_fusion/traffic_light_multi_camera_fusion_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/include/traffic_light_multi_camera_fusion/node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/lib/libtraffic_light_multi_camera_fusion.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/launch/traffic_light_multi_camera_fusion.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/config/traffic_light_multi_camera_fusion.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/ament_index/resource_index/package_run_dependencies/traffic_light_multi_camera_fusion
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/ament_index/resource_index/parent_prefix_path/traffic_light_multi_camera_fusion
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/ament_index/resource_index/packages/traffic_light_multi_camera_fusion
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/ament_index/resource_index/rclcpp_components/traffic_light_multi_camera_fusion
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/cmake/traffic_light_multi_camera_fusionConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/cmake/traffic_light_multi_camera_fusionConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/traffic_light_multi_camera_fusion/share/traffic_light_multi_camera_fusion/package.xml

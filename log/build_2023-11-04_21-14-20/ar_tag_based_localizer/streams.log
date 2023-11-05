@@ -1,0 +1,29 @@
+[0.055s] Invoking command in '/home/zhijie/autoware/build/ar_tag_based_localizer': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/ar_tag_based_localizer -- -j16 -l16
+[0.296s] [35m[1mConsolidate compiler generated dependencies of target ar_tag_based_localizer[0m
+[0.296s] [100%] Built target ar_tag_based_localizer
+[0.339s] Invoked command in '/home/zhijie/autoware/build/ar_tag_based_localizer' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/ar_tag_based_localizer -- -j16 -l16
+[0.527s] Invoking command in '/home/zhijie/autoware/build/ar_tag_based_localizer': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/ar_tag_based_localizer
+[0.626s] -- Install configuration: "Release"
+[0.626s] -- Execute custom install script
+[0.626s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/include/ar_tag_based_localizer/ar_tag_based_localizer_core.hpp
+[0.626s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/lib/ar_tag_based_localizer/ar_tag_based_localizer
+[0.626s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/launch/ar_tag_based_localizer.launch.xml
+[0.626s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/config/ar_tag_based_localizer.param.yaml
+[0.626s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ament_index/resource_index/package_run_dependencies/ar_tag_based_localizer
+[0.627s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ament_index/resource_index/parent_prefix_path/ar_tag_based_localizer
+[0.627s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/environment/ament_prefix_path.sh
+[0.627s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/environment/ament_prefix_path.dsv
+[0.627s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/environment/path.sh
+[0.627s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/environment/path.dsv
+[0.627s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/local_setup.bash
+[0.627s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/local_setup.sh
+[0.627s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/local_setup.zsh
+[0.628s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/local_setup.dsv
+[0.628s] -- Symlinking: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/package.dsv
+[0.628s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ament_index/resource_index/packages/ar_tag_based_localizer
+[0.628s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.628s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.628s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/cmake/ar_tag_based_localizerConfig.cmake
+[0.628s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/cmake/ar_tag_based_localizerConfig-version.cmake
+[0.628s] -- Up-to-date symlink: /home/zhijie/autoware/install/ar_tag_based_localizer/share/ar_tag_based_localizer/package.xml
+[0.661s] Invoked command in '/home/zhijie/autoware/build/ar_tag_based_localizer' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/ar_tag_based_localizer

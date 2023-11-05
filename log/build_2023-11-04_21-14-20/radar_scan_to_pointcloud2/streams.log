@@ -1,0 +1,36 @@
+[0.056s] Invoking command in '/home/zhijie/autoware/build/radar_scan_to_pointcloud2': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/radar_scan_to_pointcloud2 -- -j16 -l16
+[0.147s] [35m[1mConsolidate compiler generated dependencies of target radar_scan_to_pointcloud2_node_component[0m
+[0.191s] [ 50%] Built target radar_scan_to_pointcloud2_node_component
+[0.204s] [35m[1mConsolidate compiler generated dependencies of target radar_scan_to_pointcloud2_node[0m
+[0.219s] [100%] Built target radar_scan_to_pointcloud2_node
+[0.327s] Invoked command in '/home/zhijie/autoware/build/radar_scan_to_pointcloud2' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/radar_scan_to_pointcloud2 -- -j16 -l16
+[0.486s] Invoking command in '/home/zhijie/autoware/build/radar_scan_to_pointcloud2': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/radar_scan_to_pointcloud2
+[0.509s] -- Install configuration: "Release"
+[0.509s] -- Execute custom install script
+[0.510s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/lib/radar_scan_to_pointcloud2/radar_scan_to_pointcloud2_node
+[0.510s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/include/radar_scan_to_pointcloud2/radar_scan_to_pointcloud2_node.hpp
+[0.510s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/environment/library_path.sh
+[0.510s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/environment/library_path.dsv
+[0.510s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/lib/libradar_scan_to_pointcloud2_node_component.so
+[0.510s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/launch/radar_scan_to_pointcloud2.launch.xml
+[0.510s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/config/radar_scan_to_pointcloud2.param.yaml
+[0.510s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/ament_index/resource_index/package_run_dependencies/radar_scan_to_pointcloud2
+[0.510s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/ament_index/resource_index/parent_prefix_path/radar_scan_to_pointcloud2
+[0.510s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/environment/ament_prefix_path.sh
+[0.511s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/environment/ament_prefix_path.dsv
+[0.511s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/environment/path.sh
+[0.511s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/environment/path.dsv
+[0.511s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/local_setup.bash
+[0.511s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/local_setup.sh
+[0.511s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/local_setup.zsh
+[0.511s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/local_setup.dsv
+[0.511s] -- Symlinking: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/package.dsv
+[0.513s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/ament_index/resource_index/packages/radar_scan_to_pointcloud2
+[0.517s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/ament_index/resource_index/rclcpp_components/radar_scan_to_pointcloud2
+[0.517s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.517s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.517s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/cmake/ament_cmake_export_libraries-extras.cmake
+[0.517s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/cmake/radar_scan_to_pointcloud2Config.cmake
+[0.518s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/cmake/radar_scan_to_pointcloud2Config-version.cmake
+[0.518s] -- Up-to-date symlink: /home/zhijie/autoware/install/radar_scan_to_pointcloud2/share/radar_scan_to_pointcloud2/package.xml
+[0.627s] Invoked command in '/home/zhijie/autoware/build/radar_scan_to_pointcloud2' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/radar_scan_to_pointcloud2

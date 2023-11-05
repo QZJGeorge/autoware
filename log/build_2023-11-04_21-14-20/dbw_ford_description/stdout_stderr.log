@@ -1,0 +1,80 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Extracting file: meshes.tar.gz
+-- Extracting file: body.tar.gz
+-- Extracting file: wheel.tar.gz
+-- Extracting file: body.tar.gz
+-- Extracting file: wheel.tar.gz
+-- Extracting file: body.tar.gz
+-- Extracting file: wheel.tar.gz
+-- Extracting file: body.tar.gz
+-- Extracting file: wheel.tar.gz
+-- Extracting file: body_collision.tar.gz
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhijie/autoware/build/dbw_ford_description
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/body_collision.stl
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/f150_14/body.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/f150_14/body_collision.stl
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/f150_14/hood_logo.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/f150_14/hood_logo_texture.png
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/f150_14/wheel.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/fusion_13/back_window_texture.png
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/fusion_13/body.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/fusion_13/wheel.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/fusion_13/windshield_texture.png
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/mkz_13/back_window_texture.png
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/mkz_13/body.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/mkz_13/wheel.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/mkz_13/windshield_texture.png
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/mkz_17/back_window_texture.png
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/mkz_17/body.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/mkz_17/wheel.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/mkz_17/windshield_texture.png
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/mondeo_15/back_window_texture.png
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/mondeo_15/body.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/mondeo_15/wheel.dae
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/meshes/mondeo_15/windshield_texture.png
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/urdf/f150_14_structure.urdf.xacro
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/urdf/fusion_13_structure.urdf.xacro
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/urdf/mkz.urdf.xacro
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/urdf/mkz_13_structure.urdf.xacro
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/urdf/mkz_17_structure.urdf.xacro
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/urdf/mondeo_15_structure.urdf.xacro
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/urdf/vehicle_gazebo.urdf.xacro
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/urdf/vehicle_sensors.urdf.xacro
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/urdf/vehicle_structure.urdf.xacro
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/launch/f150.launch.xml
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/launch/mkz.launch.xml
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/launch/rviz2.launch.xml
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/launch/rviz2.rviz
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/ament_index/resource_index/package_run_dependencies/dbw_ford_description
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/ament_index/resource_index/parent_prefix_path/dbw_ford_description
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/environment/path.sh
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/environment/path.dsv
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/local_setup.bash
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/local_setup.sh
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/local_setup.zsh
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/package.dsv
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/ament_index/resource_index/packages/dbw_ford_description
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/cmake/dbw_ford_descriptionConfig.cmake
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/cmake/dbw_ford_descriptionConfig-version.cmake
+-- Symlinking: /home/zhijie/autoware/install/dbw_ford_description/share/dbw_ford_description/package.xml

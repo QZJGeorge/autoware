@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/gnss_to_dummy_pose_twist_component.dir/build.make:76: CMakeFiles/gnss_to_dummy_pose_twist_component.dir/src/gnss_to_dummy_pose_twist.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:490: CMakeFiles/gnss_to_dummy_pose_twist_component.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

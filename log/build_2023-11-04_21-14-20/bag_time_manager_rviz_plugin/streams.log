@@ -1,0 +1,34 @@
+[0.098s] Invoking command in '/home/zhijie/autoware/build/bag_time_manager_rviz_plugin': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/bag_time_manager_rviz_plugin -- -j16 -l16
+[0.152s] [ 25%] [34m[1mAutomatic MOC for target bag_time_manager_rviz_plugin[0m
+[0.195s] [ 25%] Built target bag_time_manager_rviz_plugin_autogen
+[0.226s] [35m[1mConsolidate compiler generated dependencies of target bag_time_manager_rviz_plugin[0m
+[0.249s] [100%] Built target bag_time_manager_rviz_plugin
+[0.303s] Invoked command in '/home/zhijie/autoware/build/bag_time_manager_rviz_plugin' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/bag_time_manager_rviz_plugin -- -j16 -l16
+[0.360s] Invoking command in '/home/zhijie/autoware/build/bag_time_manager_rviz_plugin': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/bag_time_manager_rviz_plugin
+[0.490s] -- Install configuration: "Release"
+[0.490s] -- Execute custom install script
+[0.490s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/plugins/plugin_description.xml
+[0.490s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/environment/library_path.sh
+[0.490s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/environment/library_path.dsv
+[0.490s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/lib/libbag_time_manager_rviz_plugin.so
+[0.490s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/icons/classes/BagTimeManagerPanel.png
+[0.490s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/plugins/plugin_description.xml
+[0.490s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/ament_index/resource_index/package_run_dependencies/bag_time_manager_rviz_plugin
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/ament_index/resource_index/parent_prefix_path/bag_time_manager_rviz_plugin
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/environment/ament_prefix_path.sh
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/environment/ament_prefix_path.dsv
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/environment/path.sh
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/environment/path.dsv
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/local_setup.bash
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/local_setup.sh
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/local_setup.zsh
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/local_setup.dsv
+[0.491s] -- Symlinking: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/package.dsv
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/ament_index/resource_index/packages/bag_time_manager_rviz_plugin
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/ament_index/resource_index/rviz_common__pluginlib__plugin/bag_time_manager_rviz_plugin
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/cmake/ament_cmake_export_libraries-extras.cmake
+[0.491s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/cmake/bag_time_manager_rviz_pluginConfig.cmake
+[0.492s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/cmake/bag_time_manager_rviz_pluginConfig-version.cmake
+[0.492s] -- Up-to-date symlink: /home/zhijie/autoware/install/bag_time_manager_rviz_plugin/share/bag_time_manager_rviz_plugin/package.xml
+[0.515s] Invoked command in '/home/zhijie/autoware/build/bag_time_manager_rviz_plugin' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/bag_time_manager_rviz_plugin

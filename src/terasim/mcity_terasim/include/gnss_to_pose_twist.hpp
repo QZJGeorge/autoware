@@ -22,12 +22,15 @@
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/header.hpp>
 #include <nav_msgs/msg/odometry.hpp>
+#include <nav_msgs/msg/occupancy_grid.hpp>
 #include <sensor_msgs/msg/imu.hpp>
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
 #include <geometry_msgs/msg/twist_stamped.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
 #include <geometry_msgs/msg/twist_with_covariance_stamped.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
+#include <autoware_auto_vehicle_msgs/msg/steering_report.hpp>
+#include <autoware_auto_perception_msgs/msg/predicted_objects.hpp>
 
 namespace gnss_to_pose_twist
 {
@@ -39,8 +42,11 @@ using std_msgs::msg::Header;
 using nav_msgs::msg::Odometry;
 using sensor_msgs::msg::Imu;
 using sensor_msgs::msg::NavSatFix;
+using nav_msgs::msg::OccupancyGrid;
 using geometry_msgs::msg::PoseWithCovarianceStamped;
 using geometry_msgs::msg::TwistWithCovarianceStamped;
+using autoware_auto_vehicle_msgs::msg::SteeringReport;
+using autoware_auto_perception_msgs::msg::PredictedObjects;
 
 class GnssToPoseTwist : public rclcpp::Node
 {
@@ -56,6 +62,9 @@ private:
   rclcpp::Publisher<Imu>::SharedPtr pub_imu;
   rclcpp::Publisher<PoseWithCovarianceStamped>::SharedPtr pub_pose;
   rclcpp::Publisher<TwistWithCovarianceStamped>::SharedPtr pub_twist;
+  rclcpp::Publisher<OccupancyGrid>::SharedPtr pub_grid;
+  rclcpp::Publisher<SteeringReport>::SharedPtr pub_steer;
+  rclcpp::Publisher<PredictedObjects>::SharedPtr pub_pred_objects;
 
   rclcpp::TimerBase::SharedPtr timer_;
 
@@ -68,6 +77,9 @@ private:
   Imu saved_imu_msg;
   Odometry saved_odom_msg;
   NavSatFix saved_nav_sat_fix_msg;
+  SteeringReport steer_msg;
+  PredictedObjects pred_objects_msg;
+  OccupancyGrid grid_msg;
 
   std::array<double, 36> Identity_6 =
   {
@@ -83,15 +95,12 @@ private:
   TwistWithCovarianceStamped twist_with_cov;
 
   void pub_localization();
-
   void imu_callback(Imu::SharedPtr msg);
   void odom_callback(Odometry::SharedPtr msg);
   void nav_callback(NavSatFix::SharedPtr msg);
-
+  void calc_occ_grid();
   void calc_vehicle_quaternion(float &qx, float &qy, float &qz, float &qw);
-
   float calc_linear_x();
-
 };
 
 }

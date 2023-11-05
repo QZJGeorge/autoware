@@ -1,0 +1,94 @@
+[0.169s] Invoking command in '/home/zhijie/autoware/build/dataspeed_can_tools': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dataspeed_can_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/terasim/data_speed_driver/dataspeed_can_usb/dataspeed_can_tools -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/dataspeed_can_tools
+[0.256s] -- The C compiler identification is GNU 11.4.0
+[0.346s] -- The CXX compiler identification is GNU 11.4.0
+[0.364s] -- Detecting C compiler ABI info
+[0.483s] -- Detecting C compiler ABI info - done
+[0.492s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.492s] -- Detecting C compile features
+[0.493s] -- Detecting C compile features - done
+[0.499s] -- Detecting CXX compiler ABI info
+[0.615s] -- Detecting CXX compiler ABI info - done
+[0.629s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.629s] -- Detecting CXX compile features
+[0.631s] -- Detecting CXX compile features - done
+[0.633s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.899s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.988s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.021s] -- Found rosbag2_cpp: 0.15.8 (/opt/ros/humble/share/rosbag2_cpp/cmake)
+[1.134s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.140s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.152s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.173s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.193s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.288s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.289s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.323s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.341s] -- Looking for pthread.h
+[1.403s] -- Looking for pthread.h - found
+[1.403s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.484s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.485s] -- Found Threads: TRUE  
+[1.793s] -- Found can_msgs: 2.0.0 (/opt/ros/humble/share/can_msgs/cmake)
+[1.863s] -- Found dataspeed_can_msgs: 2.0.3 (/home/zhijie/autoware/install/dataspeed_can_msgs/share/dataspeed_can_msgs/cmake)
+[1.935s] -- Found ament_cmake_gtest: 1.3.5 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[1.936s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.031s] -- Configuring done
+[2.077s] -- Generating done
+[2.080s] -- Build files have been written to: /home/zhijie/autoware/build/dataspeed_can_tools
+[2.151s] Invoked command in '/home/zhijie/autoware/build/dataspeed_can_tools' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dataspeed_can_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/zhijie/autoware/src/terasim/data_speed_driver/dataspeed_can_usb/dataspeed_can_tools -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/dataspeed_can_tools
+[2.152s] Invoking command in '/home/zhijie/autoware/build/dataspeed_can_tools': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dataspeed_can_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/dataspeed_can_tools -- -j16 -l16
+[2.217s] [  5%] [32mBuilding CXX object CMakeFiles/dataspeed_can_tools.dir/src/DbcIterator.cpp.o[0m
+[3.303s] [ 10%] [32mBuilding CXX object CMakeFiles/dataspeed_can_tools.dir/src/CanExtractor.cpp.o[0m
+[9.054s] [ 15%] [32mBuilding CXX object CMakeFiles/dataspeed_can_tools.dir/src/DbcSignal.cpp.o[0m
+[10.108s] [ 21%] [32mBuilding CXX object CMakeFiles/dataspeed_can_tools.dir/src/DbcMessage.cpp.o[0m
+[10.973s] [ 26%] [32m[1mLinking CXX static library libdataspeed_can_tools.a[0m
+[10.998s] [ 26%] Built target dataspeed_can_tools
+[11.013s] [ 31%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[17.512s] [ 36%] [32m[1mLinking CXX static library libgtest.a[0m
+[17.537s] [ 36%] Built target gtest
+[17.551s] [ 42%] [32mBuilding CXX object CMakeFiles/dbc_bag.dir/src/dbc_bag.cpp.o[0m
+[19.971s] [ 47%] [32m[1mLinking CXX executable dbc_bag[0m
+[20.073s] [ 47%] Built target dbc_bag
+[20.087s] [ 52%] [32mBuilding CXX object CMakeFiles/dbc_node.dir/src/dbc_node.cpp.o[0m
+[28.262s] [ 57%] [32m[1mLinking CXX executable dbc_node[0m
+[28.385s] [ 57%] Built target dbc_node
+[28.399s] [ 63%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[29.082s] [ 68%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[29.102s] [ 68%] Built target gtest_main
+[29.116s] [ 73%] [32mBuilding CXX object tests/CMakeFiles/test_message.dir/test_message.cpp.o[0m
+[29.118s] [ 78%] [32mBuilding CXX object tests/CMakeFiles/test_signal.dir/test_signal.cpp.o[0m
+[30.707s] [ 84%] [32m[1mLinking CXX executable test_signal[0m
+[30.803s] [ 84%] Built target test_signal
+[30.812s] [ 89%] [32m[1mLinking CXX executable test_message[0m
+[30.818s] [ 94%] [32mBuilding CXX object tests/CMakeFiles/test_iterator.dir/test_iterator.cpp.o[0m
+[30.906s] [ 94%] Built target test_message
+[40.125s] [100%] [32m[1mLinking CXX executable test_iterator[0m
+[40.220s] [100%] Built target test_iterator
+[40.229s] Invoked command in '/home/zhijie/autoware/build/dataspeed_can_tools' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dataspeed_can_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/dataspeed_can_tools -- -j16 -l16
+[40.255s] Invoking command in '/home/zhijie/autoware/build/dataspeed_can_tools': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dataspeed_can_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/dataspeed_can_tools
+[40.260s] -- Install configuration: "Release"
+[40.261s] -- Execute custom install script
+[40.261s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/lib/dataspeed_can_tools/libdataspeed_can_tools.a
+[40.267s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/lib/dataspeed_can_tools/dbc_node
+[40.274s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/lib/dataspeed_can_tools/dbc_bag
+[40.281s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/environment/library_path.sh
+[40.287s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/environment/library_path.dsv
+[40.294s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/ament_index/resource_index/package_run_dependencies/dataspeed_can_tools
+[40.300s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/ament_index/resource_index/parent_prefix_path/dataspeed_can_tools
+[40.307s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/environment/ament_prefix_path.sh
+[40.314s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/environment/ament_prefix_path.dsv
+[40.321s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/environment/path.sh
+[40.328s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/environment/path.dsv
+[40.334s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/local_setup.bash
+[40.341s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/local_setup.sh
+[40.347s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/local_setup.zsh
+[40.354s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/local_setup.dsv
+[40.360s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/package.dsv
+[40.367s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/ament_index/resource_index/packages/dataspeed_can_tools
+[40.374s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/cmake/ament_cmake_export_libraries-extras.cmake
+[40.381s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/cmake/dataspeed_can_toolsConfig.cmake
+[40.387s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/cmake/dataspeed_can_toolsConfig-version.cmake
+[40.394s] -- Symlinking: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/package.xml
+[40.400s] -- Installing: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/tests
+[40.400s] -- Installing: /home/zhijie/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/tests/Test.dbc
+[40.402s] Invoked command in '/home/zhijie/autoware/build/dataspeed_can_tools' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/dataspeed_can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/dataspeed_can_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/dataspeed_can_tools

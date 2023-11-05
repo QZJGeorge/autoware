@@ -1,0 +1,52 @@
+[35m[1mConsolidate compiler generated dependencies of target obstacle_velocity_limiter_node[0m
+[ 44%] Built target obstacle_velocity_limiter_node
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[ 52%] Built target gtest
+[35m[1mConsolidate compiler generated dependencies of target collision_benchmark[0m
+[ 60%] Built target collision_benchmark
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[ 68%] Built target gtest_main
+[35m[1mConsolidate compiler generated dependencies of target obstacle_velocity_limiter[0m
+[ 76%] Built target obstacle_velocity_limiter
+[35m[1mConsolidate compiler generated dependencies of target test_obstacle_velocity_limiter[0m
+[100%] Built target test_obstacle_velocity_limiter
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/lib/obstacle_velocity_limiter/obstacle_velocity_limiter
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/include/obstacle_velocity_limiter/debug.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/include/obstacle_velocity_limiter/distance.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/include/obstacle_velocity_limiter/forward_projection.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/include/obstacle_velocity_limiter/map_utils.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/include/obstacle_velocity_limiter/obstacle_velocity_limiter.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/include/obstacle_velocity_limiter/obstacle_velocity_limiter_node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/include/obstacle_velocity_limiter/obstacles.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/include/obstacle_velocity_limiter/occupancy_grid_utils.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/include/obstacle_velocity_limiter/parameters.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/include/obstacle_velocity_limiter/pointcloud_utils.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/include/obstacle_velocity_limiter/trajectory_preprocessing.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/include/obstacle_velocity_limiter/types.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/lib/libobstacle_velocity_limiter_node.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/launch/obstacle_velocity_limiter.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/config/default_obstacle_velocity_limiter.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/script/velocity_visualizer.py
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/ament_index/resource_index/package_run_dependencies/obstacle_velocity_limiter
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/ament_index/resource_index/parent_prefix_path/obstacle_velocity_limiter
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/ament_index/resource_index/packages/obstacle_velocity_limiter
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/ament_index/resource_index/rclcpp_components/obstacle_velocity_limiter
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/cmake/obstacle_velocity_limiterConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/cmake/obstacle_velocity_limiterConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/obstacle_velocity_limiter/share/obstacle_velocity_limiter/package.xml

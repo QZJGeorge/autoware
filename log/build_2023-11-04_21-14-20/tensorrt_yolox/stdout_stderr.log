@@ -1,0 +1,46 @@
+[ 16%] Built target tensorrt_yolox_gpu_preprocess
+[35m[1mConsolidate compiler generated dependencies of target tensorrt_yolox_node_exe[0m
+[ 33%] Built target tensorrt_yolox_node_exe
+[35m[1mConsolidate compiler generated dependencies of target tensorrt_yolox[0m
+[ 50%] Built target tensorrt_yolox
+[35m[1mConsolidate compiler generated dependencies of target yolox_single_image_inference[0m
+[ 66%] Built target yolox_single_image_inference
+[35m[1mConsolidate compiler generated dependencies of target yolox_single_image_inference_node[0m
+[ 83%] Built target yolox_single_image_inference_node
+[35m[1mConsolidate compiler generated dependencies of target tensorrt_yolox_node[0m
+[100%] Built target tensorrt_yolox_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/lib/tensorrt_yolox/yolox_single_image_inference
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/lib/tensorrt_yolox/tensorrt_yolox_node_exe
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/include/tensorrt_yolox/calibrator.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/include/tensorrt_yolox/preprocess.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/include/tensorrt_yolox/tensorrt_yolox.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/include/tensorrt_yolox/tensorrt_yolox_node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/lib/libtensorrt_yolox.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/lib/libyolox_single_image_inference_node.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/lib/libtensorrt_yolox_node.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/launch/yolox.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/launch/yolox_s_plus_opt.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/launch/yolox_tiny.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/ament_index/resource_index/package_run_dependencies/tensorrt_yolox
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/ament_index/resource_index/parent_prefix_path/tensorrt_yolox
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/ament_index/resource_index/packages/tensorrt_yolox
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/ament_index/resource_index/rclcpp_components/tensorrt_yolox
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/cmake/tensorrt_yoloxConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/cmake/tensorrt_yoloxConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/tensorrt_yolox/share/tensorrt_yolox/package.xml

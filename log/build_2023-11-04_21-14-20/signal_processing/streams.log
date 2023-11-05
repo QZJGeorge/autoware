@@ -1,0 +1,34 @@
+[0.179s] Invoking command in '/home/zhijie/autoware/build/signal_processing': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/signal_processing -- -j16 -l16
+[0.192s] [ 16%] Built target gtest_main
+[0.195s] [ 41%] Built target gtest
+[0.195s] [ 66%] Built target lowpass_filters
+[0.221s] [100%] Built target test_signal_processing
+[0.233s] Invoked command in '/home/zhijie/autoware/build/signal_processing' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/signal_processing -- -j16 -l16
+[0.313s] Invoking command in '/home/zhijie/autoware/build/signal_processing': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/signal_processing
+[0.330s] -- Install configuration: "Release"
+[0.336s] -- Execute custom install script
+[0.337s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/include/signal_processing/butterworth.hpp
+[0.337s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/include/signal_processing/lowpass_filter.hpp
+[0.337s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/include/signal_processing/lowpass_filter_1d.hpp
+[0.337s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/environment/library_path.sh
+[0.338s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/environment/library_path.dsv
+[0.338s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/lib/liblowpass_filters.so
+[0.338s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/ament_index/resource_index/package_run_dependencies/signal_processing
+[0.338s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/ament_index/resource_index/parent_prefix_path/signal_processing
+[0.339s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/environment/ament_prefix_path.sh
+[0.339s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/environment/ament_prefix_path.dsv
+[0.339s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/environment/path.sh
+[0.339s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/environment/path.dsv
+[0.339s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/local_setup.bash
+[0.339s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/local_setup.sh
+[0.339s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/local_setup.zsh
+[0.339s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/local_setup.dsv
+[0.340s] -- Symlinking: /home/zhijie/autoware/install/signal_processing/share/signal_processing/package.dsv
+[0.360s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/ament_index/resource_index/packages/signal_processing
+[0.360s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.360s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.361s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/cmake/ament_cmake_export_libraries-extras.cmake
+[0.361s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/cmake/signal_processingConfig.cmake
+[0.361s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/cmake/signal_processingConfig-version.cmake
+[0.362s] -- Up-to-date symlink: /home/zhijie/autoware/install/signal_processing/share/signal_processing/package.xml
+[0.428s] Invoked command in '/home/zhijie/autoware/build/signal_processing' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/signal_processing

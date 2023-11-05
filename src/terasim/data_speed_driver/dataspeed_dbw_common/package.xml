@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>dataspeed_dbw_common</name>
+  <version>2.1.3</version>
+  <description>
+    Common interfaces for drive-by-wire.
+  </description>
+
+  <license>BSD</license>
+  <author email="rmaupin@dataspeedinc.com">Robert Maupin</author>
+  <maintainer email="khallenbeck@dataspeedinc.com">Kevin Hallenbeck</maintainer>
+  <url type="website">http://dataspeedinc.com</url>
+  <url type="repository">https://bitbucket.org/dataspeedinc/dbw_ros</url>
+  <url type="bugtracker">https://bitbucket.org/dataspeedinc/dbw_ros/issues</url>
+
+  <buildtool_depend>ament_cmake_ros</buildtool_depend>
+
+  <depend>rclcpp</depend>
+
+  <exec_depend>ros2_socketcan</exec_depend>
+
+  <test_depend>ament_cmake_gtest</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

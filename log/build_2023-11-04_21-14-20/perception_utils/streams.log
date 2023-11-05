@@ -1,0 +1,24 @@
+[0.064s] Invoking command in '/home/zhijie/autoware/build/perception_utils': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/perception_utils -- -j16 -l16
+[0.342s] Invoked command in '/home/zhijie/autoware/build/perception_utils' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/perception_utils -- -j16 -l16
+[0.607s] Invoking command in '/home/zhijie/autoware/build/perception_utils': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/perception_utils
+[0.856s] -- Install configuration: "Release"
+[0.856s] -- Execute custom install script
+[0.856s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/include/perception_utils/prime_synchronizer.hpp
+[0.856s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/ament_index/resource_index/package_run_dependencies/perception_utils
+[0.856s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/ament_index/resource_index/parent_prefix_path/perception_utils
+[0.856s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/perception_utils/environment/ament_prefix_path.sh
+[0.856s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/perception_utils/environment/ament_prefix_path.dsv
+[0.856s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/perception_utils/environment/path.sh
+[0.856s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/perception_utils/environment/path.dsv
+[0.857s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/perception_utils/local_setup.bash
+[0.857s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/perception_utils/local_setup.sh
+[0.857s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/perception_utils/local_setup.zsh
+[0.857s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/perception_utils/local_setup.dsv
+[0.857s] -- Symlinking: /home/zhijie/autoware/install/perception_utils/share/perception_utils/package.dsv
+[0.857s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/ament_index/resource_index/packages/perception_utils
+[0.857s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/perception_utils/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.857s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/perception_utils/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.857s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/perception_utils/cmake/perception_utilsConfig.cmake
+[0.857s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/perception_utils/cmake/perception_utilsConfig-version.cmake
+[0.857s] -- Up-to-date symlink: /home/zhijie/autoware/install/perception_utils/share/perception_utils/package.xml
+[0.882s] Invoked command in '/home/zhijie/autoware/build/perception_utils' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/perception_utils

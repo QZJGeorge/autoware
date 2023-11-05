@@ -1,0 +1,40 @@
+[35m[1mConsolidate compiler generated dependencies of target gyro_bias_estimation_module[0m
+[ 13%] Built target gyro_bias_estimation_module
+[35m[1mConsolidate compiler generated dependencies of target gmock[0m
+[ 33%] Built target gmock
+[35m[1mConsolidate compiler generated dependencies of target gyro_bias_estimator[0m
+[ 53%] Built target gyro_bias_estimator
+[35m[1mConsolidate compiler generated dependencies of target imu_corrector[0m
+[ 73%] Built target imu_corrector
+[35m[1mConsolidate compiler generated dependencies of target gmock_main[0m
+[ 86%] Built target gmock_main
+[35m[1mConsolidate compiler generated dependencies of target test_gyro_bias_estimation_module[0m
+[100%] Built target test_gyro_bias_estimation_module
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/lib/libgyro_bias_estimation_module.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/lib/imu_corrector/imu_corrector
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/lib/imu_corrector/gyro_bias_estimator
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/launch/gyro_bias_estimator.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/launch/imu_corrector.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/config/gyro_bias_estimator.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/config/imu_corrector.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/ament_index/resource_index/package_run_dependencies/imu_corrector
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/ament_index/resource_index/parent_prefix_path/imu_corrector
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/ament_index/resource_index/packages/imu_corrector
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/cmake/imu_correctorConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/cmake/imu_correctorConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/imu_corrector/share/imu_corrector/package.xml

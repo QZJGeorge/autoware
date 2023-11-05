@@ -22,6 +22,9 @@ namespace gnss_to_pose_twist{
     pub_imu = this->create_publisher<Imu>("/sensing/imu/imu_data", 10);
     pub_pose = this->create_publisher<PoseWithCovarianceStamped>("/localization/pose_estimator/pose_with_covariance", 10);
     pub_twist = this->create_publisher<TwistWithCovarianceStamped>("/sensing/vehicle_velocity_converter/twist_with_covariance", 10);
+    pub_grid = this->create_publisher<OccupancyGrid>("/perception/occupancy_grid_map/map", 10);
+    pub_steer = this->create_publisher<SteeringReport>("/vehicle/status/steering_status", 10);
+    pub_pred_objects = this->create_publisher<PredictedObjects>("/perception/object_recognition/objects", 10);
 
     sub_imu = this->create_subscription<Imu>(
       "/ins/imu", 10, std::bind(&GnssToPoseTwist::imu_callback, this, std::placeholders::_1));
@@ -32,6 +35,8 @@ namespace gnss_to_pose_twist{
 
     timer_ = rclcpp::create_timer(
         this, get_clock(), 20ms, std::bind(&GnssToPoseTwist::pub_localization, this));
+
+    calc_occ_grid();
   }
 
   float GnssToPoseTwist::calc_linear_x(){
@@ -104,11 +109,22 @@ namespace gnss_to_pose_twist{
     northing = northing_int/pow(10, 4);
   }
 
+  void GnssToPoseTwist::calc_occ_grid(){
+    grid_msg.info.resolution = 1.0; // Set resolution
+    grid_msg.info.width = 100; // Set width
+    grid_msg.info.height = 100; // Set height
+    // Set all spaces as free (100 for occupied, -1 for unknown)
+    grid_msg.data = std::vector<int8_t>(grid_msg.info.width * grid_msg.info.height, 0);
+  }
+
   void GnssToPoseTwist::pub_localization(){
     // messages have not been updated
     if (imu_status == 0 || nav_status == 0 || odom_status == 0){
         return;
     }
+
+    header.stamp = this->get_clock()->now();
+    header.frame_id = "map";
 
     double latitude = saved_nav_sat_fix_msg.latitude;
     double longitude = saved_nav_sat_fix_msg.longitude;
@@ -146,16 +162,20 @@ namespace gnss_to_pose_twist{
     pose_with_cov.pose.covariance[13] = saved_nav_sat_fix_msg.position_covariance[7];
     pose_with_cov.pose.covariance[14] = saved_nav_sat_fix_msg.position_covariance[8];
 
-    header.stamp = this->get_clock()->now();
-    header.frame_id = "map";
+    steer_msg.stamp = this->get_clock()->now();
+    steer_msg.steering_tire_angle = 0.0;
 
     pose_with_cov.header = header;
     twist_with_cov.header = header;
     saved_imu_msg.header = header;
+    pred_objects_msg.header = header;
 
     pub_imu->publish(saved_imu_msg);
     pub_pose->publish(pose_with_cov);
     pub_twist->publish(twist_with_cov);
+    pub_grid->publish(grid_msg);
+    pub_pred_objects->publish(pred_objects_msg);
+    pub_steer->publish(steer_msg);
 
     imu_status = 0;
     nav_status = 0;

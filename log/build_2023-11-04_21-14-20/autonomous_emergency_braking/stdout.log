@@ -1,0 +1,32 @@
+[35m[1mConsolidate compiler generated dependencies of target autonomous_emergency_braking_node[0m
+[ 50%] Built target autonomous_emergency_braking_node
+[35m[1mConsolidate compiler generated dependencies of target autonomous_emergency_braking[0m
+[100%] Built target autonomous_emergency_braking
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/lib/autonomous_emergency_braking/autonomous_emergency_braking
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/include/autonomous_emergency_braking/node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/lib/libautonomous_emergency_braking_node.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/launch/autonomous_emergency_braking.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/config/autonomous_emergency_braking.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/ament_index/resource_index/package_run_dependencies/autonomous_emergency_braking
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/ament_index/resource_index/parent_prefix_path/autonomous_emergency_braking
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/ament_index/resource_index/packages/autonomous_emergency_braking
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/ament_index/resource_index/rclcpp_components/autonomous_emergency_braking
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/cmake/autonomous_emergency_brakingConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/cmake/autonomous_emergency_brakingConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/autonomous_emergency_braking/share/autonomous_emergency_braking/package.xml

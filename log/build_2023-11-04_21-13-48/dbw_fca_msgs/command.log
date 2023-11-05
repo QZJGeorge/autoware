@@ -1,0 +1,1 @@
+Invoking command in '/home/zhijie/autoware/build/dbw_fca_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zhijie/autoware/src/terasim/data_speed_driver/dbw_fca_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/dbw_fca_msgs

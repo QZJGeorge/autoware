@@ -1,0 +1,29 @@
+[35m[1mConsolidate compiler generated dependencies of target camera_pose_initializer_node[0m
+[100%] Built target camera_pose_initializer_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/include/yabloc_pose_initializer/camera/camera_pose_initializer.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/include/yabloc_pose_initializer/camera/lane_image.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/include/yabloc_pose_initializer/camera/marker_module.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/include/yabloc_pose_initializer/camera/projector_module.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/include/yabloc_pose_initializer/camera/semantic_segmentation.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/lib/yabloc_pose_initializer/camera_pose_initializer_node
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/config/camera_pose_initializer.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/launch/yabloc_pose_initializer.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/ament_index/resource_index/package_run_dependencies/yabloc_pose_initializer
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/ament_index/resource_index/parent_prefix_path/yabloc_pose_initializer
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/ament_index/resource_index/packages/yabloc_pose_initializer
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/cmake/yabloc_pose_initializerConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/cmake/yabloc_pose_initializerConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/yabloc_pose_initializer/share/yabloc_pose_initializer/package.xml

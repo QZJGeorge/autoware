@@ -1,0 +1,147 @@
+[0.057s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_geometry_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_auto_geometry_msgs -- -j16 -l16
+[0.110s] [  2%] Built target autoware_auto_geometry_msgs__cpp
+[0.111s] [ 12%] Built target autoware_auto_geometry_msgs__rosidl_generator_c
+[0.111s] [ 12%] Built target ament_cmake_python_symlink_autoware_auto_geometry_msgs
+[0.153s] [ 23%] Built target autoware_auto_geometry_msgs__rosidl_typesupport_cpp
+[0.160s] [ 34%] Built target autoware_auto_geometry_msgs__rosidl_typesupport_fastrtps_c
+[0.166s] [ 44%] Built target autoware_auto_geometry_msgs__rosidl_typesupport_introspection_cpp
+[0.170s] [ 65%] Built target autoware_auto_geometry_msgs__rosidl_typesupport_c
+[0.171s] [ 65%] Built target autoware_auto_geometry_msgs__rosidl_typesupport_introspection_c
+[0.177s] [ 76%] Built target autoware_auto_geometry_msgs__rosidl_typesupport_fastrtps_cpp
+[0.223s] [ 76%] Built target autoware_auto_geometry_msgs
+[0.290s] [ 78%] Built target autoware_auto_geometry_msgs__py
+[0.385s] [ 87%] Built target autoware_auto_geometry_msgs__rosidl_generator_py
+[0.448s] [ 91%] Built target autoware_auto_geometry_msgs__rosidl_typesupport_introspection_c__pyext
+[0.463s] [ 95%] Built target autoware_auto_geometry_msgs__rosidl_typesupport_c__pyext
+[0.495s] [100%] Built target autoware_auto_geometry_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.740s] running egg_info
+[0.741s] writing autoware_auto_geometry_msgs.egg-info/PKG-INFO
+[0.741s] writing dependency_links to autoware_auto_geometry_msgs.egg-info/dependency_links.txt
+[0.742s] writing top-level names to autoware_auto_geometry_msgs.egg-info/top_level.txt
+[0.746s] reading manifest file 'autoware_auto_geometry_msgs.egg-info/SOURCES.txt'
+[0.747s] writing manifest file 'autoware_auto_geometry_msgs.egg-info/SOURCES.txt'
+[0.794s] [100%] Built target ament_cmake_python_build_autoware_auto_geometry_msgs_egg
+[0.811s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_geometry_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/autoware_auto_geometry_msgs -- -j16 -l16
+[0.928s] Invoking command in '/home/zhijie/autoware/build/autoware_auto_geometry_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_auto_geometry_msgs
+[0.941s] -- Install configuration: "Release"
+[0.942s] -- Execute custom install script
+[0.942s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/ament_index/resource_index/rosidl_interfaces/autoware_auto_geometry_msgs
+[0.942s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/complex32.h
+[0.943s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/complex32__functions.h
+[0.943s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/complex32__struct.h
+[0.949s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/complex32__type_support.h
+[0.949s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/quaternion32__functions.h
+[0.949s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/quaternion32__struct.h
+[0.949s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/quaternion32__type_support.h
+[0.950s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/relative_position_with_covariance_stamped__functions.h
+[0.950s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/relative_position_with_covariance_stamped__struct.h
+[0.950s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/relative_position_with_covariance_stamped__type_support.h
+[0.950s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/quaternion32.h
+[0.950s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/relative_position_with_covariance_stamped.h
+[0.951s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.955s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/environment/library_path.sh
+[0.955s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/environment/library_path.dsv
+[0.955s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/complex32__rosidl_typesupport_fastrtps_c.h
+[0.956s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/quaternion32__rosidl_typesupport_fastrtps_c.h
+[0.956s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/relative_position_with_covariance_stamped__rosidl_typesupport_fastrtps_c.h
+[0.957s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.957s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/complex32__rosidl_typesupport_introspection_c.h
+[0.957s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/quaternion32__rosidl_typesupport_introspection_c.h
+[0.957s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/relative_position_with_covariance_stamped__rosidl_typesupport_introspection_c.h
+[0.957s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.958s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/complex32.hpp
+[0.958s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/complex32__builder.hpp
+[0.958s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/complex32__struct.hpp
+[0.959s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/complex32__traits.hpp
+[0.959s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/quaternion32__builder.hpp
+[0.959s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/quaternion32__struct.hpp
+[0.959s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/quaternion32__traits.hpp
+[0.960s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/relative_position_with_covariance_stamped__builder.hpp
+[0.960s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/relative_position_with_covariance_stamped__struct.hpp
+[0.960s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/relative_position_with_covariance_stamped__traits.hpp
+[0.960s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/quaternion32.hpp
+[0.960s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/relative_position_with_covariance_stamped.hpp
+[0.965s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/complex32__rosidl_typesupport_fastrtps_cpp.hpp
+[0.965s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/quaternion32__rosidl_typesupport_fastrtps_cpp.hpp
+[0.965s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/relative_position_with_covariance_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[0.965s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.966s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/complex32__rosidl_typesupport_introspection_cpp.hpp
+[0.966s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/quaternion32__rosidl_typesupport_introspection_cpp.hpp
+[0.967s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/include/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs/msg/detail/relative_position_with_covariance_stamped__rosidl_typesupport_introspection_cpp.hpp
+[0.967s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/environment/pythonpath.sh
+[0.967s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/environment/pythonpath.dsv
+[0.967s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs-1.0.0-py3.10.egg-info/PKG-INFO
+[0.967s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs-1.0.0-py3.10.egg-info/SOURCES.txt
+[0.967s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs-1.0.0-py3.10.egg-info/dependency_links.txt
+[0.967s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs-1.0.0-py3.10.egg-info/top_level.txt
+[0.968s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/__init__.py
+[0.968s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/_autoware_auto_geometry_msgs_s.ep.rosidl_typesupport_c.c
+[0.968s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/_autoware_auto_geometry_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.969s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/_autoware_auto_geometry_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.969s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.969s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.969s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.969s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/libautoware_auto_geometry_msgs__rosidl_generator_py.so
+[0.970s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/msg/__init__.py
+[0.970s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/msg/_complex32.py
+[0.970s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/msg/_complex32_s.c
+[0.970s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/msg/_quaternion32.py
+[0.970s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/msg/_quaternion32_s.c
+[0.970s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/msg/_relative_position_with_covariance_stamped.py
+[0.970s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/msg/_relative_position_with_covariance_stamped_s.c
+[0.970s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.970s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.975s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/autoware_auto_geometry_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.978s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/msg/Complex32.idl
+[0.978s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/msg/Quaternion32.idl
+[0.978s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/msg/RelativePositionWithCovarianceStamped.idl
+[0.980s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/ament_index/resource_index/package_run_dependencies/autoware_auto_geometry_msgs
+[0.980s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/ament_index/resource_index/parent_prefix_path/autoware_auto_geometry_msgs
+[0.980s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/environment/ament_prefix_path.sh
+[0.981s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/environment/ament_prefix_path.dsv
+[0.981s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/environment/path.sh
+[0.981s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/environment/path.dsv
+[0.985s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/local_setup.bash
+[0.986s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/local_setup.sh
+[0.987s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/local_setup.zsh
+[0.988s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/local_setup.dsv
+[0.989s] -- Symlinking: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/package.dsv
+[1.000s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/ament_index/resource_index/packages/autoware_auto_geometry_msgs
+[1.000s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/rosidl_cmake-extras.cmake
+[1.001s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.001s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.001s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.001s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.001s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.001s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.001s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/autoware_auto_geometry_msgsConfig.cmake
+[1.001s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/autoware_auto_geometry_msgsConfig-version.cmake
+[1.001s] -- Up-to-date symlink: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/package.xml
+[1.001s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib/libautoware_auto_geometry_msgs__rosidl_generator_c.so
+[1.002s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib/libautoware_auto_geometry_msgs__rosidl_typesupport_fastrtps_c.so
+[1.002s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib/libautoware_auto_geometry_msgs__rosidl_typesupport_introspection_c.so
+[1.002s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib/libautoware_auto_geometry_msgs__rosidl_typesupport_c.so
+[1.002s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib/libautoware_auto_geometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.002s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib/libautoware_auto_geometry_msgs__rosidl_typesupport_introspection_cpp.so
+[1.002s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib/libautoware_auto_geometry_msgs__rosidl_typesupport_cpp.so
+[1.007s] Listing '/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs'...
+[1.007s] Listing '/home/zhijie/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages/autoware_auto_geometry_msgs/msg'...
+[1.008s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/lib/libautoware_auto_geometry_msgs__rosidl_generator_py.so
+[1.008s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/export_autoware_auto_geometry_msgs__rosidl_generator_cExport.cmake
+[1.008s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/export_autoware_auto_geometry_msgs__rosidl_generator_cExport-release.cmake
+[1.008s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/export_autoware_auto_geometry_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.008s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/export_autoware_auto_geometry_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[1.008s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/autoware_auto_geometry_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.008s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/autoware_auto_geometry_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[1.008s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/autoware_auto_geometry_msgs__rosidl_typesupport_cExport.cmake
+[1.008s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/autoware_auto_geometry_msgs__rosidl_typesupport_cExport-release.cmake
+[1.009s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/export_autoware_auto_geometry_msgs__rosidl_generator_cppExport.cmake
+[1.009s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/export_autoware_auto_geometry_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.009s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/export_autoware_auto_geometry_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[1.009s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/autoware_auto_geometry_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.009s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/autoware_auto_geometry_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[1.009s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/autoware_auto_geometry_msgs__rosidl_typesupport_cppExport.cmake
+[1.009s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/autoware_auto_geometry_msgs__rosidl_typesupport_cppExport-release.cmake
+[1.009s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/export_autoware_auto_geometry_msgs__rosidl_generator_pyExport.cmake
+[1.009s] -- Up-to-date: /home/zhijie/autoware/install/autoware_auto_geometry_msgs/share/autoware_auto_geometry_msgs/cmake/export_autoware_auto_geometry_msgs__rosidl_generator_pyExport-release.cmake
+[1.072s] Invoked command in '/home/zhijie/autoware/build/autoware_auto_geometry_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/autoware_auto_geometry_msgs

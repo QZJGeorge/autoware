@@ -1,0 +1,65 @@
+[35m[1mConsolidate compiler generated dependencies of target pointcloud_map_loader_node[0m
+[ 20%] Built target pointcloud_map_loader_node
+[35m[1mConsolidate compiler generated dependencies of target gmock[0m
+[ 29%] Built target gmock
+[35m[1mConsolidate compiler generated dependencies of target lanelet2_map_loader_node[0m
+[ 35%] Built target lanelet2_map_loader_node
+[35m[1mConsolidate compiler generated dependencies of target gmock_main[0m
+[ 41%] Built target gmock_main
+[35m[1mConsolidate compiler generated dependencies of target lanelet2_map_visualization_node[0m
+[ 47%] Built target lanelet2_map_visualization_node
+[35m[1mConsolidate compiler generated dependencies of target lanelet2_map_visualization[0m
+[ 52%] Built target lanelet2_map_visualization
+[35m[1mConsolidate compiler generated dependencies of target test_differential_map_loader_module[0m
+[ 58%] Built target test_differential_map_loader_module
+[35m[1mConsolidate compiler generated dependencies of target test_partial_map_loader_module[0m
+[ 64%] Built target test_partial_map_loader_module
+[35m[1mConsolidate compiler generated dependencies of target test_pointcloud_map_loader_module[0m
+[ 70%] Built target test_pointcloud_map_loader_module
+[35m[1mConsolidate compiler generated dependencies of target test_load_pcd_metadata[0m
+[ 76%] Built target test_load_pcd_metadata
+[35m[1mConsolidate compiler generated dependencies of target test_replace_with_absolute_path[0m
+[ 82%] Built target test_replace_with_absolute_path
+[35m[1mConsolidate compiler generated dependencies of target test_cylinder_box_overlap[0m
+[ 88%] Built target test_cylinder_box_overlap
+[35m[1mConsolidate compiler generated dependencies of target lanelet2_map_loader[0m
+[ 94%] Built target lanelet2_map_loader
+[35m[1mConsolidate compiler generated dependencies of target pointcloud_map_loader[0m
+[100%] Built target pointcloud_map_loader
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/lib/map_loader/pointcloud_map_loader
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/lib/map_loader/lanelet2_map_loader
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/lib/map_loader/lanelet2_map_visualization
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/test/data//test_map.osm
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/lib/map_loader/map_hash_generator
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/include/map_loader/lanelet2_map_loader_node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/include/map_loader/lanelet2_map_visualization_node.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/lib/libpointcloud_map_loader_node.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/lib/liblanelet2_map_loader_node.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/lib/liblanelet2_map_visualization_node.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/launch/lanelet2_map_loader.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/launch/pointcloud_map_loader.launch.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/config/lanelet2_map_loader.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/config/pointcloud_map_loader.param.yaml
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/ament_index/resource_index/package_run_dependencies/map_loader
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/ament_index/resource_index/parent_prefix_path/map_loader
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/map_loader/share/map_loader/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/ament_index/resource_index/packages/map_loader
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/ament_index/resource_index/rclcpp_components/map_loader
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/cmake/map_loaderConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/cmake/map_loaderConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/map_loader/share/map_loader/package.xml

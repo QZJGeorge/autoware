@@ -1,0 +1,350 @@
+[0.165s] Invoking command in '/home/zhijie/autoware/build/tier4_system_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_system_msgs -- -j16 -l16
+[0.208s] [  0%] Built target tier4_system_msgs__cpp
+[0.209s] [  0%] Built target ament_cmake_python_symlink_tier4_system_msgs
+[0.209s] [ 12%] Built target tier4_system_msgs__rosidl_generator_c
+[0.218s] [ 24%] Built target tier4_system_msgs__rosidl_typesupport_cpp
+[0.222s] [ 36%] Built target tier4_system_msgs__rosidl_typesupport_fastrtps_cpp
+[0.222s] [ 48%] Built target tier4_system_msgs__rosidl_typesupport_c
+[0.222s] [ 60%] Built target tier4_system_msgs__rosidl_typesupport_introspection_c
+[0.222s] [ 72%] Built target tier4_system_msgs__rosidl_typesupport_introspection_cpp
+[0.227s] [ 84%] Built target tier4_system_msgs__rosidl_typesupport_fastrtps_c
+[0.245s] [ 84%] Built target tier4_system_msgs
+[0.255s] [ 85%] Built target tier4_system_msgs__py
+[0.269s] [ 96%] Built target tier4_system_msgs__rosidl_generator_py
+[0.286s] [ 97%] Built target tier4_system_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.286s] [ 98%] Built target tier4_system_msgs__rosidl_typesupport_c__pyext
+[0.289s] [100%] Built target tier4_system_msgs__rosidl_typesupport_introspection_c__pyext
+[0.466s] running egg_info
+[0.467s] writing tier4_system_msgs.egg-info/PKG-INFO
+[0.467s] writing dependency_links to tier4_system_msgs.egg-info/dependency_links.txt
+[0.467s] writing top-level names to tier4_system_msgs.egg-info/top_level.txt
+[0.467s] reading manifest file 'tier4_system_msgs.egg-info/SOURCES.txt'
+[0.467s] writing manifest file 'tier4_system_msgs.egg-info/SOURCES.txt'
+[0.497s] [100%] Built target ament_cmake_python_build_tier4_system_msgs_egg
+[0.651s] Invoked command in '/home/zhijie/autoware/build/tier4_system_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/tier4_system_msgs -- -j16 -l16
+[0.982s] Invoking command in '/home/zhijie/autoware/build/tier4_system_msgs': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_system_msgs
+[1.050s] -- Install configuration: "Release"
+[1.052s] -- Execute custom install script
+[1.052s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/ament_index/resource_index/rosidl_interfaces/tier4_system_msgs
+[1.053s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/autoware_state.h
+[1.053s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/autoware_state__functions.h
+[1.053s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/autoware_state__struct.h
+[1.053s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/autoware_state__type_support.h
+[1.053s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_graph__functions.h
+[1.053s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_graph__struct.h
+[1.054s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_graph__type_support.h
+[1.054s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_link__functions.h
+[1.054s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_link__struct.h
+[1.054s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_link__type_support.h
+[1.054s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_node__functions.h
+[1.054s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_node__struct.h
+[1.054s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_node__type_support.h
+[1.055s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state__functions.h
+[1.055s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state__struct.h
+[1.055s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state__type_support.h
+[1.055s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state_stamped__functions.h
+[1.055s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state_stamped__struct.h
+[1.055s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state_stamped__type_support.h
+[1.055s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status__functions.h
+[1.055s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status__struct.h
+[1.055s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status__type_support.h
+[1.056s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status_stamped__functions.h
+[1.056s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status_stamped__struct.h
+[1.058s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status_stamped__type_support.h
+[1.058s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mode_change_available__functions.h
+[1.058s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mode_change_available__struct.h
+[1.058s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mode_change_available__type_support.h
+[1.059s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mrm_behavior_status__functions.h
+[1.059s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mrm_behavior_status__struct.h
+[1.059s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mrm_behavior_status__type_support.h
+[1.059s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/operation_mode_availability__functions.h
+[1.059s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/operation_mode_availability__struct.h
+[1.059s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/operation_mode_availability__type_support.h
+[1.059s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/service_log__functions.h
+[1.059s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/service_log__struct.h
+[1.059s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/service_log__type_support.h
+[1.059s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/diagnostic_graph.h
+[1.059s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/diagnostic_link.h
+[1.059s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/diagnostic_node.h
+[1.060s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/emergency_state.h
+[1.060s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/emergency_state_stamped.h
+[1.060s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/hazard_status.h
+[1.060s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/hazard_status_stamped.h
+[1.060s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/mode_change_available.h
+[1.061s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/mrm_behavior_status.h
+[1.061s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/operation_mode_availability.h
+[1.061s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.061s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/service_log.h
+[1.061s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/change_autoware_control.h
+[1.062s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/change_operation_mode.h
+[1.068s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_autoware_control__functions.h
+[1.068s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_autoware_control__struct.h
+[1.068s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_autoware_control__type_support.h
+[1.068s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_operation_mode__functions.h
+[1.069s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_operation_mode__struct.h
+[1.069s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_operation_mode__type_support.h
+[1.069s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/operate_mrm__functions.h
+[1.069s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/operate_mrm__struct.h
+[1.069s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/operate_mrm__type_support.h
+[1.069s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/operate_mrm.h
+[1.069s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/environment/library_path.sh
+[1.069s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/environment/library_path.dsv
+[1.070s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/autoware_state__rosidl_typesupport_fastrtps_c.h
+[1.070s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_graph__rosidl_typesupport_fastrtps_c.h
+[1.070s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_link__rosidl_typesupport_fastrtps_c.h
+[1.070s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_node__rosidl_typesupport_fastrtps_c.h
+[1.070s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state__rosidl_typesupport_fastrtps_c.h
+[1.070s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state_stamped__rosidl_typesupport_fastrtps_c.h
+[1.071s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status__rosidl_typesupport_fastrtps_c.h
+[1.071s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status_stamped__rosidl_typesupport_fastrtps_c.h
+[1.071s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mode_change_available__rosidl_typesupport_fastrtps_c.h
+[1.074s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mrm_behavior_status__rosidl_typesupport_fastrtps_c.h
+[1.074s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/operation_mode_availability__rosidl_typesupport_fastrtps_c.h
+[1.074s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/service_log__rosidl_typesupport_fastrtps_c.h
+[1.074s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_autoware_control__rosidl_typesupport_fastrtps_c.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_operation_mode__rosidl_typesupport_fastrtps_c.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/operate_mrm__rosidl_typesupport_fastrtps_c.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/autoware_state__rosidl_typesupport_introspection_c.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_graph__rosidl_typesupport_introspection_c.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_link__rosidl_typesupport_introspection_c.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_node__rosidl_typesupport_introspection_c.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state__rosidl_typesupport_introspection_c.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state_stamped__rosidl_typesupport_introspection_c.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status__rosidl_typesupport_introspection_c.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status_stamped__rosidl_typesupport_introspection_c.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mode_change_available__rosidl_typesupport_introspection_c.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mrm_behavior_status__rosidl_typesupport_introspection_c.h
+[1.075s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/operation_mode_availability__rosidl_typesupport_introspection_c.h
+[1.076s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/service_log__rosidl_typesupport_introspection_c.h
+[1.076s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.076s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_autoware_control__rosidl_typesupport_introspection_c.h
+[1.076s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_operation_mode__rosidl_typesupport_introspection_c.h
+[1.076s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/operate_mrm__rosidl_typesupport_introspection_c.h
+[1.076s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/autoware_state.hpp
+[1.076s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/autoware_state__builder.hpp
+[1.076s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/autoware_state__struct.hpp
+[1.076s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/autoware_state__traits.hpp
+[1.084s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_graph__builder.hpp
+[1.084s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_graph__struct.hpp
+[1.084s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_graph__traits.hpp
+[1.084s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_link__builder.hpp
+[1.084s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_link__struct.hpp
+[1.085s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_link__traits.hpp
+[1.085s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_node__builder.hpp
+[1.085s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_node__struct.hpp
+[1.085s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_node__traits.hpp
+[1.085s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state__builder.hpp
+[1.085s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state__struct.hpp
+[1.085s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state__traits.hpp
+[1.085s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state_stamped__builder.hpp
+[1.085s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state_stamped__struct.hpp
+[1.085s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state_stamped__traits.hpp
+[1.085s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status__builder.hpp
+[1.085s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status__struct.hpp
+[1.086s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status__traits.hpp
+[1.086s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status_stamped__builder.hpp
+[1.086s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status_stamped__struct.hpp
+[1.086s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status_stamped__traits.hpp
+[1.086s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mode_change_available__builder.hpp
+[1.086s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mode_change_available__struct.hpp
+[1.086s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mode_change_available__traits.hpp
+[1.086s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mrm_behavior_status__builder.hpp
+[1.086s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mrm_behavior_status__struct.hpp
+[1.087s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mrm_behavior_status__traits.hpp
+[1.087s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/operation_mode_availability__builder.hpp
+[1.087s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/operation_mode_availability__struct.hpp
+[1.087s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/operation_mode_availability__traits.hpp
+[1.087s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/service_log__builder.hpp
+[1.087s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/service_log__struct.hpp
+[1.089s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/service_log__traits.hpp
+[1.089s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/diagnostic_graph.hpp
+[1.089s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/diagnostic_link.hpp
+[1.089s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/diagnostic_node.hpp
+[1.090s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/emergency_state.hpp
+[1.090s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/emergency_state_stamped.hpp
+[1.091s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/hazard_status.hpp
+[1.091s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/hazard_status_stamped.hpp
+[1.092s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/mode_change_available.hpp
+[1.092s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/mrm_behavior_status.hpp
+[1.092s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/operation_mode_availability.hpp
+[1.092s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/service_log.hpp
+[1.092s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/change_autoware_control.hpp
+[1.094s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/change_operation_mode.hpp
+[1.094s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_autoware_control__builder.hpp
+[1.095s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_autoware_control__struct.hpp
+[1.095s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_autoware_control__traits.hpp
+[1.095s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_operation_mode__builder.hpp
+[1.095s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_operation_mode__struct.hpp
+[1.095s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_operation_mode__traits.hpp
+[1.096s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/operate_mrm__builder.hpp
+[1.096s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/operate_mrm__struct.hpp
+[1.096s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/operate_mrm__traits.hpp
+[1.096s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/operate_mrm.hpp
+[1.096s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/autoware_state__rosidl_typesupport_fastrtps_cpp.hpp
+[1.097s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_graph__rosidl_typesupport_fastrtps_cpp.hpp
+[1.097s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_link__rosidl_typesupport_fastrtps_cpp.hpp
+[1.097s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_node__rosidl_typesupport_fastrtps_cpp.hpp
+[1.098s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state__rosidl_typesupport_fastrtps_cpp.hpp
+[1.101s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[1.102s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.102s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[1.102s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mode_change_available__rosidl_typesupport_fastrtps_cpp.hpp
+[1.102s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mrm_behavior_status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.102s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/operation_mode_availability__rosidl_typesupport_fastrtps_cpp.hpp
+[1.102s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/service_log__rosidl_typesupport_fastrtps_cpp.hpp
+[1.102s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.102s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_autoware_control__rosidl_typesupport_fastrtps_cpp.hpp
+[1.104s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_operation_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[1.104s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/operate_mrm__rosidl_typesupport_fastrtps_cpp.hpp
+[1.105s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/autoware_state__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_graph__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_link__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/diagnostic_node__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/emergency_state_stamped__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/hazard_status_stamped__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mode_change_available__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/mrm_behavior_status__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/operation_mode_availability__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/msg/detail/service_log__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_autoware_control__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/change_operation_mode__rosidl_typesupport_introspection_cpp.hpp
+[1.106s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/include/tier4_system_msgs/tier4_system_msgs/srv/detail/operate_mrm__rosidl_typesupport_introspection_cpp.hpp
+[1.107s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/environment/pythonpath.sh
+[1.107s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/environment/pythonpath.dsv
+[1.107s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[1.107s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[1.107s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/__init__.py
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/_tier4_system_msgs_s.ep.rosidl_typesupport_c.c
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/_tier4_system_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/_tier4_system_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/libtier4_system_msgs__rosidl_generator_py.so
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/__init__.py
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_autoware_state.py
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_autoware_state_s.c
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_diagnostic_graph.py
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_diagnostic_graph_s.c
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_diagnostic_link.py
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_diagnostic_link_s.c
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_diagnostic_node.py
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_diagnostic_node_s.c
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_emergency_state.py
+[1.108s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_emergency_state_s.c
+[1.109s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_emergency_state_stamped.py
+[1.109s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_emergency_state_stamped_s.c
+[1.109s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_hazard_status.py
+[1.109s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_hazard_status_s.c
+[1.109s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_hazard_status_stamped.py
+[1.109s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_hazard_status_stamped_s.c
+[1.109s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_mode_change_available.py
+[1.109s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_mode_change_available_s.c
+[1.109s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_mrm_behavior_status.py
+[1.109s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_mrm_behavior_status_s.c
+[1.109s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_operation_mode_availability.py
+[1.110s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_operation_mode_availability_s.c
+[1.110s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_service_log.py
+[1.110s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg/_service_log_s.c
+[1.110s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/srv/__init__.py
+[1.110s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/srv/_change_autoware_control.py
+[1.110s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/srv/_change_autoware_control_s.c
+[1.110s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/srv/_change_operation_mode.py
+[1.110s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/srv/_change_operation_mode_s.c
+[1.110s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/srv/_operate_mrm.py
+[1.112s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/srv/_operate_mrm_s.c
+[1.112s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/tier4_system_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.112s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/tier4_system_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.112s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/tier4_system_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.112s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/tier4_system_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.112s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/tier4_system_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.112s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/tier4_system_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.112s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/AutowareState.idl
+[1.112s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/DiagnosticGraph.idl
+[1.112s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/DiagnosticLink.idl
+[1.113s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/DiagnosticNode.idl
+[1.113s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/OperationModeAvailability.idl
+[1.113s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/EmergencyState.idl
+[1.113s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/EmergencyStateStamped.idl
+[1.113s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/HazardStatus.idl
+[1.113s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/HazardStatusStamped.idl
+[1.113s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/ServiceLog.idl
+[1.113s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/ModeChangeAvailable.idl
+[1.113s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/MrmBehaviorStatus.idl
+[1.113s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/srv/OperateMrm.idl
+[1.113s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/srv/ChangeOperationMode.idl
+[1.113s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/srv/ChangeAutowareControl.idl
+[1.113s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/AutowareState.msg
+[1.114s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/DiagnosticGraph.msg
+[1.114s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/DiagnosticLink.msg
+[1.114s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/DiagnosticNode.msg
+[1.114s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/OperationModeAvailability.msg
+[1.114s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/EmergencyState.msg
+[1.114s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/EmergencyStateStamped.msg
+[1.114s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/HazardStatus.msg
+[1.114s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/HazardStatusStamped.msg
+[1.114s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/ServiceLog.msg
+[1.114s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/ModeChangeAvailable.msg
+[1.114s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/msg/MrmBehaviorStatus.msg
+[1.114s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/srv/OperateMrm.srv
+[1.115s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/srv/OperateMrm_Request.msg
+[1.115s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/srv/OperateMrm_Response.msg
+[1.115s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/srv/ChangeOperationMode.srv
+[1.115s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/srv/ChangeOperationMode_Request.msg
+[1.115s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/srv/ChangeOperationMode_Response.msg
+[1.115s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/srv/ChangeAutowareControl.srv
+[1.116s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/srv/ChangeAutowareControl_Request.msg
+[1.116s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/srv/ChangeAutowareControl_Response.msg
+[1.116s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/ament_index/resource_index/package_run_dependencies/tier4_system_msgs
+[1.116s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/ament_index/resource_index/parent_prefix_path/tier4_system_msgs
+[1.116s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/environment/ament_prefix_path.sh
+[1.116s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/environment/ament_prefix_path.dsv
+[1.116s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/environment/path.sh
+[1.116s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/environment/path.dsv
+[1.116s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/local_setup.bash
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/local_setup.sh
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/local_setup.zsh
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/local_setup.dsv
+[1.117s] -- Symlinking: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/package.dsv
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/ament_index/resource_index/packages/tier4_system_msgs
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/rosidl_cmake-extras.cmake
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/tier4_system_msgsConfig.cmake
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/tier4_system_msgsConfig-version.cmake
+[1.117s] -- Up-to-date symlink: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/package.xml
+[1.118s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/lib/libtier4_system_msgs__rosidl_generator_c.so
+[1.118s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/lib/libtier4_system_msgs__rosidl_typesupport_fastrtps_c.so
+[1.118s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/lib/libtier4_system_msgs__rosidl_typesupport_introspection_c.so
+[1.118s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/lib/libtier4_system_msgs__rosidl_typesupport_c.so
+[1.118s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/lib/libtier4_system_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.118s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/lib/libtier4_system_msgs__rosidl_typesupport_introspection_cpp.so
+[1.118s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/lib/libtier4_system_msgs__rosidl_typesupport_cpp.so
+[1.120s] Listing '/home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs'...
+[1.120s] Listing '/home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/msg'...
+[1.120s] Listing '/home/zhijie/autoware/install/tier4_system_msgs/local/lib/python3.10/dist-packages/tier4_system_msgs/srv'...
+[1.120s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/lib/libtier4_system_msgs__rosidl_generator_py.so
+[1.120s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/export_tier4_system_msgs__rosidl_generator_cExport.cmake
+[1.120s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/export_tier4_system_msgs__rosidl_generator_cExport-release.cmake
+[1.120s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/export_tier4_system_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.120s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/export_tier4_system_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[1.121s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/tier4_system_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.121s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/tier4_system_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[1.121s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/tier4_system_msgs__rosidl_typesupport_cExport.cmake
+[1.121s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/tier4_system_msgs__rosidl_typesupport_cExport-release.cmake
+[1.121s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/export_tier4_system_msgs__rosidl_generator_cppExport.cmake
+[1.121s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/export_tier4_system_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.121s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/export_tier4_system_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[1.121s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/tier4_system_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.121s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/tier4_system_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[1.121s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/tier4_system_msgs__rosidl_typesupport_cppExport.cmake
+[1.121s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/tier4_system_msgs__rosidl_typesupport_cppExport-release.cmake
+[1.121s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/export_tier4_system_msgs__rosidl_generator_pyExport.cmake
+[1.121s] -- Up-to-date: /home/zhijie/autoware/install/tier4_system_msgs/share/tier4_system_msgs/cmake/export_tier4_system_msgs__rosidl_generator_pyExport-release.cmake
+[1.216s] Invoked command in '/home/zhijie/autoware/build/tier4_system_msgs' returned '0': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/autoware_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/autoware_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zhijie/autoware/build/tier4_system_msgs

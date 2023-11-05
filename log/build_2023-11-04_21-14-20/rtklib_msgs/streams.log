@@ -1,0 +1,118 @@
+[0.152s] Invoking command in '/home/zhijie/autoware/build/rtklib_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/rtklib_msgs -- -j16 -l16
+[0.212s] [  3%] Built target rtklib_msgs__cpp
+[0.243s] [ 12%] Built target rtklib_msgs__rosidl_generator_c
+[0.248s] [ 16%] Built target ament_cmake_python_symlink_rtklib_msgs
+[0.248s] [ 22%] Built target rtklib_msgs__rosidl_typesupport_introspection_cpp
+[0.257s] [ 32%] Built target rtklib_msgs__rosidl_typesupport_fastrtps_cpp
+[0.271s] [ 41%] Built target rtklib_msgs__rosidl_typesupport_cpp
+[0.283s] [ 51%] Built target rtklib_msgs__rosidl_typesupport_c
+[0.286s] [ 61%] Built target rtklib_msgs__rosidl_typesupport_fastrtps_c
+[0.290s] [ 70%] Built target rtklib_msgs__rosidl_typesupport_introspection_c
+[0.320s] [ 70%] Built target rtklib_msgs
+[0.383s] [ 74%] Built target rtklib_msgs__py
+[0.420s] [ 80%] Built target rtklib_msgs__rosidl_generator_py
+[0.471s] [ 87%] Built target rtklib_msgs__rosidl_typesupport_introspection_c__pyext
+[0.480s] [ 93%] Built target rtklib_msgs__rosidl_typesupport_c__pyext
+[0.494s] [100%] Built target rtklib_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.663s] running egg_info
+[0.664s] writing rtklib_msgs.egg-info/PKG-INFO
+[0.664s] writing dependency_links to rtklib_msgs.egg-info/dependency_links.txt
+[0.665s] writing top-level names to rtklib_msgs.egg-info/top_level.txt
+[0.667s] reading manifest file 'rtklib_msgs.egg-info/SOURCES.txt'
+[0.668s] writing manifest file 'rtklib_msgs.egg-info/SOURCES.txt'
+[0.758s] [100%] Built target ament_cmake_python_build_rtklib_msgs_egg
+[0.815s] Invoked command in '/home/zhijie/autoware/build/rtklib_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhijie/autoware/build/rtklib_msgs -- -j16 -l16
+[1.239s] Invoking command in '/home/zhijie/autoware/build/rtklib_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/rtklib_msgs
+[1.283s] -- Install configuration: "Release"
+[1.283s] -- Execute custom install script
+[1.283s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/ament_index/resource_index/rosidl_interfaces/rtklib_msgs
+[1.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/detail/rtklib_nav__functions.h
+[1.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/detail/rtklib_nav__struct.h
+[1.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/detail/rtklib_nav__type_support.h
+[1.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/rtklib_nav.h
+[1.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/environment/library_path.sh
+[1.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/environment/library_path.dsv
+[1.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/detail/rtklib_nav__rosidl_typesupport_fastrtps_c.h
+[1.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/detail/rtklib_nav__rosidl_typesupport_introspection_c.h
+[1.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.284s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/detail/rtklib_nav__builder.hpp
+[1.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/detail/rtklib_nav__struct.hpp
+[1.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/detail/rtklib_nav__traits.hpp
+[1.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/rtklib_nav.hpp
+[1.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/detail/rtklib_nav__rosidl_typesupport_fastrtps_cpp.hpp
+[1.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/include/rtklib_msgs/rtklib_msgs/msg/detail/rtklib_nav__rosidl_typesupport_introspection_cpp.hpp
+[1.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/environment/pythonpath.sh
+[1.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/environment/pythonpath.dsv
+[1.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[1.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.285s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[1.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/__init__.py
+[1.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/_rtklib_msgs_s.ep.rosidl_typesupport_c.c
+[1.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/_rtklib_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/_rtklib_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/librtklib_msgs__rosidl_generator_py.so
+[1.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/msg/__init__.py
+[1.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/msg/_rtklib_nav.py
+[1.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/msg/_rtklib_nav_s.c
+[1.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/rtklib_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/rtklib_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/rtklib_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/rtklib_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.286s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/rtklib_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.287s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/rtklib_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.287s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/msg/RtklibNav.idl
+[1.287s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/msg/RtklibNav.msg
+[1.287s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/ament_index/resource_index/package_run_dependencies/rtklib_msgs
+[1.287s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/ament_index/resource_index/parent_prefix_path/rtklib_msgs
+[1.287s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/environment/ament_prefix_path.sh
+[1.287s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/environment/ament_prefix_path.dsv
+[1.287s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/environment/path.sh
+[1.287s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/environment/path.dsv
+[1.287s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/local_setup.bash
+[1.287s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/local_setup.sh
+[1.287s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/local_setup.zsh
+[1.288s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/local_setup.dsv
+[1.288s] -- Symlinking: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/package.dsv
+[1.311s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/ament_index/resource_index/packages/rtklib_msgs
+[1.311s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/rosidl_cmake-extras.cmake
+[1.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/rtklib_msgsConfig.cmake
+[1.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/rtklib_msgsConfig-version.cmake
+[1.312s] -- Up-to-date symlink: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/package.xml
+[1.312s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/lib/librtklib_msgs__rosidl_generator_c.so
+[1.312s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/lib/librtklib_msgs__rosidl_typesupport_fastrtps_c.so
+[1.312s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/lib/librtklib_msgs__rosidl_typesupport_introspection_c.so
+[1.313s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/lib/librtklib_msgs__rosidl_typesupport_c.so
+[1.313s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/lib/librtklib_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.313s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/lib/librtklib_msgs__rosidl_typesupport_introspection_cpp.so
+[1.313s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/lib/librtklib_msgs__rosidl_typesupport_cpp.so
+[1.348s] Listing '/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs'...
+[1.348s] Listing '/home/zhijie/autoware/install/rtklib_msgs/local/lib/python3.10/dist-packages/rtklib_msgs/msg'...
+[1.348s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/lib/librtklib_msgs__rosidl_generator_py.so
+[1.348s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/export_rtklib_msgs__rosidl_generator_cExport.cmake
+[1.348s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/export_rtklib_msgs__rosidl_generator_cExport-release.cmake
+[1.348s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/export_rtklib_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.348s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/export_rtklib_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[1.348s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/rtklib_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.348s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/rtklib_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[1.349s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/rtklib_msgs__rosidl_typesupport_cExport.cmake
+[1.349s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/rtklib_msgs__rosidl_typesupport_cExport-release.cmake
+[1.349s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/export_rtklib_msgs__rosidl_generator_cppExport.cmake
+[1.349s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/export_rtklib_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.349s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/export_rtklib_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[1.349s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/rtklib_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.349s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/rtklib_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[1.349s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/rtklib_msgs__rosidl_typesupport_cppExport.cmake
+[1.349s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/rtklib_msgs__rosidl_typesupport_cppExport-release.cmake
+[1.349s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/export_rtklib_msgs__rosidl_generator_pyExport.cmake
+[1.349s] -- Up-to-date: /home/zhijie/autoware/install/rtklib_msgs/share/rtklib_msgs/cmake/export_rtklib_msgs__rosidl_generator_pyExport-release.cmake
+[1.383s] Invoked command in '/home/zhijie/autoware/build/rtklib_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zhijie/autoware/build/rtklib_msgs

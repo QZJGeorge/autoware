@@ -1,0 +1,31 @@
+[ 25%] [34m[1mAutomatic MOC for target polar_grid[0m
+[ 25%] Built target polar_grid_autogen
+[35m[1mConsolidate compiler generated dependencies of target polar_grid[0m
+[100%] Built target polar_grid
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid//libpolar_grid.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/plugins/plugin_description.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/lib/libpolar_grid.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/icons/classes/PolarGridDisplay.png
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/plugins/plugin_description.xml
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/ament_index/resource_index/package_run_dependencies/polar_grid
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/ament_index/resource_index/parent_prefix_path/polar_grid
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/polar_grid/share/polar_grid/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/ament_index/resource_index/packages/polar_grid
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/ament_index/resource_index/rviz_common__pluginlib__plugin/polar_grid
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/cmake/polar_gridConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/cmake/polar_gridConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/polar_grid/share/polar_grid/package.xml
