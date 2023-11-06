@@ -20,7 +20,7 @@ def generate_launch_description():
         Node(
             package='abc_terasim',
             namespace='/terasim',
-            executable='test_12',
+            executable='test_09',
         ),
         DeclareLaunchArgument(
             'map_path',

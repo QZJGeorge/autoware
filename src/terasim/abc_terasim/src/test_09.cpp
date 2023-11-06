@@ -73,13 +73,13 @@ namespace test_09{
   }
 
   void Test09::publish_goal(){
-    goal_msg.pose.position.x = 77606.7578125;
-    goal_msg.pose.position.y = 86675.5234375;
+    goal_msg.pose.position.x = 77586.1953125;
+    goal_msg.pose.position.y = 86656.1953125;
 
     goal_msg.pose.orientation.x = 0.0;
     goal_msg.pose.orientation.y = 0.0;
-    goal_msg.pose.orientation.z = -0.7255380130506681;
-    goal_msg.pose.orientation.w = 0.6881820919048159;
+    goal_msg.pose.orientation.z = 0.9997552351837814;
+    goal_msg.pose.orientation.w = 0.0221239626338051;
 
     goal_msg.header.stamp = this->get_clock()->now();
     goal_msg.header.frame_id = "map";
