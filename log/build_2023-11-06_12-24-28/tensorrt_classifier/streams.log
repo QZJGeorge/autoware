@@ -1,0 +1,32 @@
+[0.906s] Invoking command in '/home/mtl12345/autoware/build/tensorrt_classifier': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tensorrt_common/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/mtl12345/autoware/build/tensorrt_classifier -- -j12 -l12
+[0.950s] [100%] Built target tensorrt_classifier
+[1.557s] Invoked command in '/home/mtl12345/autoware/build/tensorrt_classifier' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tensorrt_common/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/mtl12345/autoware/build/tensorrt_classifier -- -j12 -l12
+[2.031s] Invoking command in '/home/mtl12345/autoware/build/tensorrt_classifier': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tensorrt_common/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/mtl12345/autoware/build/tensorrt_classifier
+[2.048s] -- Install configuration: "Release"
+[2.048s] -- Execute custom install script
+[2.048s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/include/tensorrt_classifier/calibrator.hpp
+[2.048s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/include/tensorrt_classifier/preprocess.h
+[2.048s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/include/tensorrt_classifier/tensorrt_classifier.hpp
+[2.048s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/environment/library_path.sh
+[2.048s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/environment/library_path.dsv
+[2.048s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/lib/libtensorrt_classifier.so
+[2.048s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/lib/libtensorrt_classifier.so
+[2.048s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/ament_index/resource_index/package_run_dependencies/tensorrt_classifier
+[2.048s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/ament_index/resource_index/parent_prefix_path/tensorrt_classifier
+[2.049s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/environment/ament_prefix_path.sh
+[2.049s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/environment/ament_prefix_path.dsv
+[2.049s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/environment/path.sh
+[2.049s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/environment/path.dsv
+[2.049s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/local_setup.bash
+[2.049s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/local_setup.sh
+[2.049s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/local_setup.zsh
+[2.049s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/local_setup.dsv
+[2.049s] -- Symlinking: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/package.dsv
+[2.050s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/ament_index/resource_index/packages/tensorrt_classifier
+[2.050s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.050s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.051s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/cmake/ament_cmake_export_libraries-extras.cmake
+[2.052s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/cmake/tensorrt_classifierConfig.cmake
+[2.052s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/cmake/tensorrt_classifierConfig-version.cmake
+[2.052s] -- Up-to-date symlink: /home/mtl12345/autoware/install/tensorrt_classifier/share/tensorrt_classifier/package.xml
+[2.557s] Invoked command in '/home/mtl12345/autoware/build/tensorrt_classifier' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tensorrt_common/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/mtl12345/autoware/build/tensorrt_classifier

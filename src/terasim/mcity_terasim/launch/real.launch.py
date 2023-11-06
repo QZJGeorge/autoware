@@ -13,6 +13,12 @@ def generate_launch_description():
             executable='gnss_to_pose_twist',
         ),
         Node(
+            package='mcity_terasim',
+            namespace='/terasim',
+            executable='dbw_ulc_converter',
+            arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'map']
+        ),
+        Node(
             package='tf2_ros',
             namespace='/terasim',
             executable='static_transform_publisher',

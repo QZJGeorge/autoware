@@ -1,0 +1,22 @@
+[0.594s] Invoking command in '/home/mtl12345/autoware/build/camera_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/camera_description -- -j12 -l12
+[1.026s] Invoked command in '/home/mtl12345/autoware/build/camera_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/camera_description -- -j12 -l12
+[1.411s] Invoking command in '/home/mtl12345/autoware/build/camera_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/camera_description
+[1.420s] -- Install configuration: "Release"
+[1.420s] -- Execute custom install script
+[1.421s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/camera_description/urdf/monocular_camera.xacro
+[1.421s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/ament_index/resource_index/package_run_dependencies/camera_description
+[1.421s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/ament_index/resource_index/parent_prefix_path/camera_description
+[1.421s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/camera_description/environment/ament_prefix_path.sh
+[1.421s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/camera_description/environment/ament_prefix_path.dsv
+[1.421s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/camera_description/environment/path.sh
+[1.421s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/camera_description/environment/path.dsv
+[1.421s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/camera_description/local_setup.bash
+[1.421s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/camera_description/local_setup.sh
+[1.422s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/camera_description/local_setup.zsh
+[1.422s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/camera_description/local_setup.dsv
+[1.422s] -- Symlinking: /home/mtl12345/autoware/install/camera_description/share/camera_description/package.dsv
+[1.429s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/ament_index/resource_index/packages/camera_description
+[1.430s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/camera_description/cmake/camera_descriptionConfig.cmake
+[1.430s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/camera_description/cmake/camera_descriptionConfig-version.cmake
+[1.430s] -- Up-to-date symlink: /home/mtl12345/autoware/install/camera_description/share/camera_description/package.xml
+[1.652s] Invoked command in '/home/mtl12345/autoware/build/camera_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/camera_description

@@ -1,0 +1,22 @@
+[0.449s] Invoking command in '/home/mtl12345/autoware/build/imu_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/imu_description -- -j12 -l12
+[0.944s] Invoked command in '/home/mtl12345/autoware/build/imu_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/imu_description -- -j12 -l12
+[1.698s] Invoking command in '/home/mtl12345/autoware/build/imu_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/imu_description
+[1.767s] -- Install configuration: "Release"
+[1.767s] -- Execute custom install script
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/imu_description/urdf/imu.xacro
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/ament_index/resource_index/package_run_dependencies/imu_description
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/ament_index/resource_index/parent_prefix_path/imu_description
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/imu_description/environment/ament_prefix_path.sh
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/imu_description/environment/ament_prefix_path.dsv
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/imu_description/environment/path.sh
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/imu_description/environment/path.dsv
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/imu_description/local_setup.bash
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/imu_description/local_setup.sh
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/imu_description/local_setup.zsh
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/imu_description/local_setup.dsv
+[1.768s] -- Symlinking: /home/mtl12345/autoware/install/imu_description/share/imu_description/package.dsv
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/ament_index/resource_index/packages/imu_description
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/imu_description/cmake/imu_descriptionConfig.cmake
+[1.768s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/imu_description/cmake/imu_descriptionConfig-version.cmake
+[1.769s] -- Up-to-date symlink: /home/mtl12345/autoware/install/imu_description/share/imu_description/package.xml
+[2.628s] Invoked command in '/home/mtl12345/autoware/build/imu_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/imu_description

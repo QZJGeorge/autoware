@@ -1,0 +1,27 @@
+[0.459s] Invoking command in '/home/mtl12345/autoware/build/sample_vehicle_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/sample_vehicle_description -- -j12 -l12
+[1.193s] Invoked command in '/home/mtl12345/autoware/build/sample_vehicle_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/sample_vehicle_description -- -j12 -l12
+[2.246s] Invoking command in '/home/mtl12345/autoware/build/sample_vehicle_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/sample_vehicle_description
+[2.249s] -- Install configuration: "Release"
+[2.249s] -- Execute custom install script
+[2.250s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/mesh/lexus.dae
+[2.250s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/mesh/lexus.jpg
+[2.250s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/urdf/vehicle.xacro
+[2.251s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/config/mirror.param.yaml
+[2.251s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/config/simulator_model.param.yaml
+[2.251s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/config/vehicle_info.param.yaml
+[2.251s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/ament_index/resource_index/package_run_dependencies/sample_vehicle_description
+[2.251s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/ament_index/resource_index/parent_prefix_path/sample_vehicle_description
+[2.251s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/environment/ament_prefix_path.sh
+[2.251s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/environment/ament_prefix_path.dsv
+[2.252s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/environment/path.sh
+[2.252s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/environment/path.dsv
+[2.252s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/local_setup.bash
+[2.252s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/local_setup.sh
+[2.252s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/local_setup.zsh
+[2.252s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/local_setup.dsv
+[2.252s] -- Symlinking: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/package.dsv
+[2.259s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/ament_index/resource_index/packages/sample_vehicle_description
+[2.259s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/cmake/sample_vehicle_descriptionConfig.cmake
+[2.259s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/cmake/sample_vehicle_descriptionConfig-version.cmake
+[2.260s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_vehicle_description/share/sample_vehicle_description/package.xml
+[2.869s] Invoked command in '/home/mtl12345/autoware/build/sample_vehicle_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/sample_vehicle_description

@@ -1,0 +1,24 @@
+[0.450s] Invoking command in '/home/mtl12345/autoware/build/autoware_cmake': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/autoware_cmake -- -j12 -l12
+[0.960s] Invoked command in '/home/mtl12345/autoware/build/autoware_cmake' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/autoware_cmake -- -j12 -l12
+[1.866s] Invoking command in '/home/mtl12345/autoware/build/autoware_cmake': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/autoware_cmake
+[2.463s] -- Install configuration: "Release"
+[2.463s] -- Execute custom install script
+[2.463s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/cmake/autoware_package.cmake
+[2.463s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/ament_index/resource_index/package_run_dependencies/autoware_cmake
+[2.463s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/ament_index/resource_index/parent_prefix_path/autoware_cmake
+[2.463s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/environment/ament_prefix_path.sh
+[2.463s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/environment/ament_prefix_path.dsv
+[2.463s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/environment/path.sh
+[2.463s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/environment/path.dsv
+[2.463s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/local_setup.bash
+[2.463s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/local_setup.sh
+[2.463s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/local_setup.zsh
+[2.463s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/local_setup.dsv
+[2.463s] -- Symlinking: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/package.dsv
+[2.464s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/ament_index/resource_index/packages/autoware_cmake
+[2.464s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/cmake/autoware_cmake-extras.cmake
+[2.464s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.464s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/cmake/autoware_cmakeConfig.cmake
+[2.464s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/cmake/autoware_cmakeConfig-version.cmake
+[2.464s] -- Up-to-date symlink: /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/package.xml
+[2.755s] Invoked command in '/home/mtl12345/autoware/build/autoware_cmake' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/autoware_cmake

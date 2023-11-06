@@ -1,0 +1,33 @@
+[ 26%] Built target dataspeed_can_tools
+[ 47%] Built target gtest
+[ 47%] Built target gtest_main
+[ 57%] Built target dbc_node
+[ 68%] Built target test_iterator
+[ 78%] Built target test_signal
+[ 89%] Built target test_message
+[100%] Built target dbc_bag
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/lib/dataspeed_can_tools/libdataspeed_can_tools.a
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/lib/dataspeed_can_tools/dbc_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/lib/dataspeed_can_tools/dbc_bag
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/environment/library_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/environment/library_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/ament_index/resource_index/package_run_dependencies/dataspeed_can_tools
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/ament_index/resource_index/parent_prefix_path/dataspeed_can_tools
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/ament_index/resource_index/packages/dataspeed_can_tools
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/cmake/dataspeed_can_toolsConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/cmake/dataspeed_can_toolsConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/package.xml
+-- Up-to-date: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/tests
+-- Up-to-date: /home/mtl12345/autoware/install/dataspeed_can_tools/share/dataspeed_can_tools/tests/Test.dbc

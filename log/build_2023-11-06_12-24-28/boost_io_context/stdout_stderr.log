@@ -1,0 +1,32 @@
+[ 22%] Built target gtest_main
+[ 44%] Built target gtest
+[ 77%] Built target boost_io_context
+[100%] Built target test_io_context
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/include/boost_io_context/common.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/include/boost_io_context/io_context.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/include/boost_msg_converters/converters.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/include/boost_msg_converters/std_msgs.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/include/boost_msg_converters/udp_msgs.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/environment/library_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/environment/library_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/lib/libboost_io_context.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/ament_index/resource_index/package_run_dependencies/boost_io_context
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/ament_index/resource_index/parent_prefix_path/boost_io_context
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/ament_index/resource_index/packages/boost_io_context
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/cmake/boost_io_contextConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/cmake/boost_io_contextConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/package.xml

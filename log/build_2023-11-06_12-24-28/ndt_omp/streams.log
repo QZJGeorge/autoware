@@ -1,0 +1,39 @@
+[0.481s] Invoking command in '/home/mtl12345/autoware/build/ndt_omp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/ndt_omp -- -j12 -l12
+[0.669s] [ 57%] Built target ndt_omp
+[0.669s] [100%] Built target multigrid_ndt_omp
+[0.838s] Invoked command in '/home/mtl12345/autoware/build/ndt_omp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/ndt_omp -- -j12 -l12
+[1.395s] Invoking command in '/home/mtl12345/autoware/build/ndt_omp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/ndt_omp
+[1.539s] -- Install configuration: "RELEASE"
+[1.539s] -- Execute custom install script
+[1.539s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/include/multigrid_pclomp/multi_voxel_grid_covariance_omp.h
+[1.539s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/include/multigrid_pclomp/multi_voxel_grid_covariance_omp_impl.hpp
+[1.539s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/include/multigrid_pclomp/multigrid_ndt_omp.h
+[1.539s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/include/multigrid_pclomp/multigrid_ndt_omp_impl.hpp
+[1.539s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/include/pclomp/gicp_omp.h
+[1.539s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/include/pclomp/gicp_omp_impl.hpp
+[1.539s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/include/pclomp/ndt_omp.h
+[1.539s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/include/pclomp/ndt_omp_impl.hpp
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/include/pclomp/voxel_grid_covariance_omp.h
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/include/pclomp/voxel_grid_covariance_omp_impl.hpp
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/environment/library_path.sh
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/environment/library_path.dsv
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/lib/libndt_omp.so
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/lib/libmultigrid_ndt_omp.so
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ament_index/resource_index/package_run_dependencies/ndt_omp
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ament_index/resource_index/parent_prefix_path/ndt_omp
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/environment/ament_prefix_path.sh
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/environment/ament_prefix_path.dsv
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/environment/path.sh
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/environment/path.dsv
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/local_setup.bash
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/local_setup.sh
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/local_setup.zsh
+[1.540s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/local_setup.dsv
+[1.540s] -- Symlinking: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/package.dsv
+[1.541s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ament_index/resource_index/packages/ndt_omp
+[1.541s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.541s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/cmake/ament_cmake_export_libraries-extras.cmake
+[1.541s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/cmake/ndt_ompConfig.cmake
+[1.541s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/cmake/ndt_ompConfig-version.cmake
+[1.541s] -- Up-to-date symlink: /home/mtl12345/autoware/install/ndt_omp/share/ndt_omp/package.xml
+[2.210s] Invoked command in '/home/mtl12345/autoware/build/ndt_omp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/ndt_omp

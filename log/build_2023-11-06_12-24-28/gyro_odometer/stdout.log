@@ -1,0 +1,31 @@
+[ 30%] Built target gtest
+[ 30%] Built target gtest_main
+[ 46%] Built target gyro_odometer_node
+[ 69%] Built target gyro_odometer
+[100%] Built target test_gyro_odometer
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/include/gyro_odometer/gyro_odometer_core.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/environment/library_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/environment/library_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/lib/libgyro_odometer_node.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/lib/gyro_odometer/gyro_odometer
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/launch/gyro_odometer.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/ament_index/resource_index/package_run_dependencies/gyro_odometer
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/ament_index/resource_index/parent_prefix_path/gyro_odometer
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/ament_index/resource_index/packages/gyro_odometer
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/cmake/gyro_odometerConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/cmake/gyro_odometerConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/gyro_odometer/share/gyro_odometer/package.xml

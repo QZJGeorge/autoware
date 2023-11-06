@@ -1,0 +1,67 @@
+-- Found autoware_cmake: 0.1.0 (/home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found TensorRT headers at /usr/include/x86_64-linux-gnu
+-- Found TensorRT libs at /usr/lib/x86_64-linux-gnu/libnvinfer.so;/usr/lib/x86_64-linux-gnu/libnvinfer_plugin.so;/usr/lib/x86_64-linux-gnu/libnvparsers.so;/usr/lib/x86_64-linux-gnu/libnvonnxparser.so
+-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/mtl12345/autoware/src/universe/autoware.universe/perception/bytetrack/include;$<BUILD_INTERFACE:/home/mtl12345/autoware/src/universe/autoware.universe/perception/bytetrack/lib/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mtl12345/autoware/build/bytetrack
+[35m[1mConsolidate compiler generated dependencies of target bytetrack_node_exe[0m
+[35m[1mConsolidate compiler generated dependencies of target bytetrack_visualizer_node_exe[0m
+[35m[1mConsolidate compiler generated dependencies of target bytetrack_lib[0m
+[ 25%] Built target bytetrack_node_exe
+[ 25%] Built target bytetrack_visualizer_node_exe
+[ 62%] Built target bytetrack_lib
+[35m[1mConsolidate compiler generated dependencies of target bytetrack[0m
+[ 75%] Built target bytetrack
+[35m[1mConsolidate compiler generated dependencies of target bytetrack_node[0m
+[ 87%] Built target bytetrack_node
+[35m[1mConsolidate compiler generated dependencies of target bytetrack_visualizer[0m
+[100%] Built target bytetrack_visualizer
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/lib/bytetrack/bytetrack_node_exe
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/lib/bytetrack/bytetrack_visualizer_node_exe
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/include/bytetrack/bytetrack.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/include/bytetrack/bytetrack_node.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/include/bytetrack/bytetrack_visualizer_node.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/environment/library_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/environment/library_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/lib/libbytetrack_lib.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/lib/libbytetrack.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/lib/libbytetrack_node.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/lib/libbytetrack_visualizer.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/launch/bytetrack.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/ament_index/resource_index/package_run_dependencies/bytetrack
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/ament_index/resource_index/parent_prefix_path/bytetrack
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/ament_index/resource_index/packages/bytetrack
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/ament_index/resource_index/rclcpp_components/bytetrack
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/cmake/bytetrackConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/cmake/bytetrackConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/package.xml

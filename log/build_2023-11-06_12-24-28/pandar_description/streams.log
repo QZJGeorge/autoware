@@ -1,0 +1,24 @@
+[0.270s] Invoking command in '/home/mtl12345/autoware/build/pandar_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/pandar_description -- -j12 -l12
+[0.643s] Invoked command in '/home/mtl12345/autoware/build/pandar_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/pandar_description -- -j12 -l12
+[1.398s] Invoking command in '/home/mtl12345/autoware/build/pandar_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/pandar_description
+[1.467s] -- Install configuration: "Release"
+[1.467s] -- Execute custom install script
+[1.467s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/urdf/pandar_40p.xacro
+[1.467s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/urdf/pandar_qt.xacro
+[1.467s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/urdf/pandar_xt32.xacro
+[1.467s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/ament_index/resource_index/package_run_dependencies/pandar_description
+[1.468s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/ament_index/resource_index/parent_prefix_path/pandar_description
+[1.468s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/environment/ament_prefix_path.sh
+[1.468s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/environment/ament_prefix_path.dsv
+[1.468s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/environment/path.sh
+[1.468s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/environment/path.dsv
+[1.468s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/local_setup.bash
+[1.468s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/local_setup.sh
+[1.468s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/local_setup.zsh
+[1.468s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/local_setup.dsv
+[1.468s] -- Symlinking: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/package.dsv
+[1.468s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/ament_index/resource_index/packages/pandar_description
+[1.469s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/cmake/pandar_descriptionConfig.cmake
+[1.469s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/cmake/pandar_descriptionConfig-version.cmake
+[1.469s] -- Up-to-date symlink: /home/mtl12345/autoware/install/pandar_description/share/pandar_description/package.xml
+[2.450s] Invoked command in '/home/mtl12345/autoware/build/pandar_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/pandar_description

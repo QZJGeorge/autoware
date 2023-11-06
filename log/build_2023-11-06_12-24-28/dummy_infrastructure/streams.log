@@ -1,0 +1,34 @@
+[0.351s] Invoking command in '/home/mtl12345/autoware/build/dummy_infrastructure': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_v2x_msgs:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_v2x_msgs:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_v2x_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_v2x_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mtl12345/autoware/build/dummy_infrastructure -- -j12 -l12
+[0.419s] [ 50%] Built target dummy_infrastructure_node
+[0.419s] [100%] Built target dummy_infrastructure_node_component
+[0.697s] Invoked command in '/home/mtl12345/autoware/build/dummy_infrastructure' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_v2x_msgs:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_v2x_msgs:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_v2x_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_v2x_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mtl12345/autoware/build/dummy_infrastructure -- -j12 -l12
+[1.269s] Invoking command in '/home/mtl12345/autoware/build/dummy_infrastructure': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_v2x_msgs:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_v2x_msgs:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_v2x_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_v2x_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mtl12345/autoware/build/dummy_infrastructure
+[1.413s] -- Install configuration: "Release"
+[1.413s] -- Execute custom install script
+[1.414s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/lib/dummy_infrastructure/dummy_infrastructure_node
+[1.414s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/include/dummy_infrastructure/dummy_infrastructure_node.hpp
+[1.414s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/environment/library_path.sh
+[1.415s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/environment/library_path.dsv
+[1.415s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/lib/libdummy_infrastructure_node_component.so
+[1.415s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/config/dummy_infrastructure.param.yaml
+[1.415s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/launch/dummy_infrastructure.launch.xml
+[1.415s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/ament_index/resource_index/package_run_dependencies/dummy_infrastructure
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/ament_index/resource_index/parent_prefix_path/dummy_infrastructure
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/environment/ament_prefix_path.sh
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/environment/ament_prefix_path.dsv
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/environment/path.sh
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/environment/path.dsv
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/local_setup.bash
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/local_setup.sh
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/local_setup.zsh
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/local_setup.dsv
+[1.416s] -- Symlinking: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/package.dsv
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/ament_index/resource_index/packages/dummy_infrastructure
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/ament_index/resource_index/rclcpp_components/dummy_infrastructure
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.416s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/cmake/ament_cmake_export_libraries-extras.cmake
+[1.417s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/cmake/dummy_infrastructureConfig.cmake
+[1.417s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/cmake/dummy_infrastructureConfig-version.cmake
+[1.417s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/package.xml
+[1.833s] Invoked command in '/home/mtl12345/autoware/build/dummy_infrastructure' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_v2x_msgs:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_v2x_msgs:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_v2x_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_v2x_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mtl12345/autoware/build/dummy_infrastructure

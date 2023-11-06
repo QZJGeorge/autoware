@@ -1,0 +1,36 @@
+[ 18%] Built target gtest_main
+[ 36%] Built target gtest
+[ 54%] Built target fault_injection_node
+[ 72%] Built target fault_injection_node_component
+[100%] Built target test_fault_injection_node_component
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/lib/fault_injection/fault_injection_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection//config/test_event_diag.param.yaml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection//launch/test_fault_injection.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/include/fault_injection/diagnostic_storage.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/include/fault_injection/fault_injection_node.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/environment/library_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/environment/library_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/lib/libfault_injection_node_component.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/config/fault_injection.param.yaml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/launch/fault_injection.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/ament_index/resource_index/package_run_dependencies/fault_injection
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/ament_index/resource_index/parent_prefix_path/fault_injection
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/ament_index/resource_index/packages/fault_injection
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/ament_index/resource_index/rclcpp_components/fault_injection
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/cmake/fault_injectionConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/cmake/fault_injectionConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/fault_injection/share/fault_injection/package.xml

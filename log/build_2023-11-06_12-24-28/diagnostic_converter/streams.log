@@ -1,0 +1,40 @@
+[0.449s] Invoking command in '/home/mtl12345/autoware/build/diagnostic_converter': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_simulation_msgs:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_simulation_msgs:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_simulation_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mtl12345/autoware/build/diagnostic_converter -- -j12 -l12
+[0.538s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[0.539s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[0.539s] [35m[1mConsolidate compiler generated dependencies of target diagnostic_converter[0m
+[0.539s] [35m[1mConsolidate compiler generated dependencies of target diagnostic_converter_node[0m
+[0.539s] [ 20%] Built target gtest_main
+[0.539s] [ 40%] Built target gtest
+[0.539s] [ 60%] Built target diagnostic_converter
+[0.540s] [ 80%] Built target diagnostic_converter_node
+[0.540s] [35m[1mConsolidate compiler generated dependencies of target test_diagnostic_converter[0m
+[0.540s] [100%] Built target test_diagnostic_converter
+[0.743s] Invoked command in '/home/mtl12345/autoware/build/diagnostic_converter' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_simulation_msgs:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_simulation_msgs:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_simulation_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mtl12345/autoware/build/diagnostic_converter -- -j12 -l12
+[1.264s] Invoking command in '/home/mtl12345/autoware/build/diagnostic_converter': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_simulation_msgs:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_simulation_msgs:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_simulation_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mtl12345/autoware/build/diagnostic_converter
+[1.470s] -- Install configuration: "Release"
+[1.471s] -- Execute custom install script
+[1.471s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/lib/diagnostic_converter/diagnostic_converter
+[1.471s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/include/converter_node.hpp
+[1.471s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/environment/library_path.sh
+[1.471s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/environment/library_path.dsv
+[1.471s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/lib/libdiagnostic_converter_node.so
+[1.471s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/ament_index/resource_index/package_run_dependencies/diagnostic_converter
+[1.471s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/ament_index/resource_index/parent_prefix_path/diagnostic_converter
+[1.471s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/environment/ament_prefix_path.sh
+[1.471s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/environment/ament_prefix_path.dsv
+[1.471s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/environment/path.sh
+[1.471s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/environment/path.dsv
+[1.471s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/local_setup.bash
+[1.472s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/local_setup.sh
+[1.472s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/local_setup.zsh
+[1.472s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/local_setup.dsv
+[1.472s] -- Symlinking: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/package.dsv
+[1.472s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/ament_index/resource_index/packages/diagnostic_converter
+[1.472s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/ament_index/resource_index/rclcpp_components/diagnostic_converter
+[1.472s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.472s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.472s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/cmake/ament_cmake_export_libraries-extras.cmake
+[1.472s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/cmake/diagnostic_converterConfig.cmake
+[1.472s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/cmake/diagnostic_converterConfig-version.cmake
+[1.472s] -- Up-to-date symlink: /home/mtl12345/autoware/install/diagnostic_converter/share/diagnostic_converter/package.xml
+[1.844s] Invoked command in '/home/mtl12345/autoware/build/diagnostic_converter' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_simulation_msgs:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/tier4_simulation_msgs:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_simulation_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_simulation_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mtl12345/autoware/build/diagnostic_converter

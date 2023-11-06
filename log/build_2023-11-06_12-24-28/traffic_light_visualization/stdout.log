@@ -1,0 +1,33 @@
+[ 28%] Built target traffic_light_roi_visualizer_nodelet
+[ 57%] Built target traffic_light_visualization_node
+[100%] Built target traffic_light_map_visualizer_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/lib/traffic_light_visualization/traffic_light_visualization_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/include/traffic_light_map_visualizer/node.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/include/traffic_light_roi_visualizer/nodelet.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/environment/library_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/environment/library_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/lib/libtraffic_light_roi_visualizer_nodelet.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/lib/traffic_light_visualization/traffic_light_map_visualizer_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/launch/traffic_light_map_visualizer.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/launch/traffic_light_roi_visualizer.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/ament_index/resource_index/package_run_dependencies/traffic_light_visualization
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/ament_index/resource_index/parent_prefix_path/traffic_light_visualization
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/ament_index/resource_index/packages/traffic_light_visualization
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/ament_index/resource_index/rclcpp_components/traffic_light_visualization
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/cmake/traffic_light_visualizationConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/cmake/traffic_light_visualizationConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_visualization/share/traffic_light_visualization/package.xml

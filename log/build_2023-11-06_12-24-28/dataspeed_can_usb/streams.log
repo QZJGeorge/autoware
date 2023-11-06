@@ -1,0 +1,43 @@
+[1.081s] Invoking command in '/home/mtl12345/autoware/build/dataspeed_can_usb': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/dataspeed_can_usb -- -j12 -l12
+[1.163s] [ 15%] Built target gtest_main
+[1.164s] [ 30%] Built target can_node
+[1.164s] [ 46%] Built target gtest
+[1.164s] [ 69%] Built target dataspeed_can_usb
+[1.164s] [ 84%] Built target dataspeed_can_usb_test_mac_addr
+[1.164s] [100%] Built target dataspeed_can_usb_test_module_version
+[1.556s] Invoked command in '/home/mtl12345/autoware/build/dataspeed_can_usb' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/dataspeed_can_usb -- -j12 -l12
+[1.911s] Invoking command in '/home/mtl12345/autoware/build/dataspeed_can_usb': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/dataspeed_can_usb
+[2.114s] -- Install configuration: "Release"
+[2.114s] -- Execute custom install script
+[2.114s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/lib/dataspeed_can_usb/can_node
+[2.114s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/lib/libdataspeed_can_usb.so
+[2.114s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/include/dataspeed_can_usb/CanDriver.hpp
+[2.114s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/include/dataspeed_can_usb/CanUsb.hpp
+[2.114s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/include/dataspeed_can_usb/MacAddr.hpp
+[2.114s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/include/dataspeed_can_usb/ModuleVersion.hpp
+[2.114s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/firmware/UsbCan_EUCAN_v10.4.0.hex
+[2.114s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/launch/example.launch.xml
+[2.114s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/udev/90-DataspeedUsbCanToolRules.rules
+[2.114s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/environment/library_path.sh
+[2.114s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/environment/library_path.dsv
+[2.114s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/ament_index/resource_index/package_run_dependencies/dataspeed_can_usb
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/ament_index/resource_index/parent_prefix_path/dataspeed_can_usb
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/environment/ament_prefix_path.sh
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/environment/ament_prefix_path.dsv
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/environment/path.sh
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/environment/path.dsv
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/local_setup.bash
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/local_setup.sh
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/local_setup.zsh
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/local_setup.dsv
+[2.115s] -- Symlinking: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/package.dsv
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/ament_index/resource_index/packages/dataspeed_can_usb
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/ament_index/resource_index/rclcpp_components/dataspeed_can_usb
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/cmake/ament_cmake_export_libraries-extras.cmake
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/cmake/dataspeed_can_usbConfig.cmake
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/cmake/dataspeed_can_usbConfig-version.cmake
+[2.115s] -- Up-to-date symlink: /home/mtl12345/autoware/install/dataspeed_can_usb/share/dataspeed_can_usb/package.xml
+[2.116s] -- Up-to-date: /home/mtl12345/autoware/install/dataspeed_can_usb/lib/dataspeed_can_usb/scripts
+[2.116s] -- Up-to-date: /home/mtl12345/autoware/install/dataspeed_can_usb/lib/dataspeed_can_usb/scripts/fw_update.bash
+[2.198s] Invoked command in '/home/mtl12345/autoware/build/dataspeed_can_usb' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/dataspeed_can_usb

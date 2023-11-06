@@ -1,0 +1,30 @@
+[ 50%] Built target dummy_infrastructure_node
+[100%] Built target dummy_infrastructure_node_component
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/lib/dummy_infrastructure/dummy_infrastructure_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/include/dummy_infrastructure/dummy_infrastructure_node.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/environment/library_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/environment/library_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/lib/libdummy_infrastructure_node_component.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/config/dummy_infrastructure.param.yaml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/launch/dummy_infrastructure.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/ament_index/resource_index/package_run_dependencies/dummy_infrastructure
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/ament_index/resource_index/parent_prefix_path/dummy_infrastructure
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/ament_index/resource_index/packages/dummy_infrastructure
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/ament_index/resource_index/rclcpp_components/dummy_infrastructure
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/cmake/dummy_infrastructureConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/cmake/dummy_infrastructureConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dummy_infrastructure/share/dummy_infrastructure/package.xml

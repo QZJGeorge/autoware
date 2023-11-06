@@ -1,0 +1,36 @@
+[0.716s] Invoking command in '/home/mtl12345/autoware/build/boost_io_context': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/boost_io_context -- -j12 -l12
+[0.849s] [ 22%] Built target gtest_main
+[0.849s] [ 44%] Built target gtest
+[0.849s] [ 77%] Built target boost_io_context
+[0.849s] [100%] Built target test_io_context
+[1.606s] Invoked command in '/home/mtl12345/autoware/build/boost_io_context' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/boost_io_context -- -j12 -l12
+[2.199s] Invoking command in '/home/mtl12345/autoware/build/boost_io_context': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/boost_io_context
+[2.203s] -- Install configuration: "Release"
+[2.203s] -- Execute custom install script
+[2.204s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/include/boost_io_context/common.hpp
+[2.204s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/include/boost_io_context/io_context.hpp
+[2.204s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/include/boost_msg_converters/converters.hpp
+[2.204s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/include/boost_msg_converters/std_msgs.hpp
+[2.205s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/include/boost_msg_converters/udp_msgs.hpp
+[2.205s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/environment/library_path.sh
+[2.205s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/environment/library_path.dsv
+[2.205s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/lib/libboost_io_context.so
+[2.205s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/ament_index/resource_index/package_run_dependencies/boost_io_context
+[2.205s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/ament_index/resource_index/parent_prefix_path/boost_io_context
+[2.206s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/environment/ament_prefix_path.sh
+[2.206s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/environment/ament_prefix_path.dsv
+[2.206s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/environment/path.sh
+[2.206s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/environment/path.dsv
+[2.206s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/local_setup.bash
+[2.206s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/local_setup.sh
+[2.207s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/local_setup.zsh
+[2.207s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/local_setup.dsv
+[2.207s] -- Symlinking: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/package.dsv
+[2.214s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/ament_index/resource_index/packages/boost_io_context
+[2.215s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.215s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.215s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/cmake/ament_cmake_export_libraries-extras.cmake
+[2.215s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/cmake/boost_io_contextConfig.cmake
+[2.215s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/cmake/boost_io_contextConfig-version.cmake
+[2.215s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_io_context/share/boost_io_context/package.xml
+[2.602s] Invoked command in '/home/mtl12345/autoware/build/boost_io_context' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/boost_io_context

@@ -25,7 +25,7 @@ namespace dbw_ulc_converter{
     sub_steer = this->create_subscription<dbw_ford_msgs::msg::SteeringReport>(
       "/vehicle/steering_report", 10, std::bind(&DbwUlcConverter::steer_callback, this, std::placeholders::_1));
     sub_control_cmd = this->create_subscription<AckermannControlCommand>(
-      "/vehicle/status/ackermann_cmd", 10, std::bind(&DbwUlcConverter::control_cmd_callback, this, std::placeholders::_1));
+      "/control/trajectory_follower/control_cmd", 10, std::bind(&DbwUlcConverter::control_cmd_callback, this, std::placeholders::_1));
     
     timer_ = rclcpp::create_timer(
         this, get_clock(), 20ms, std::bind(&DbwUlcConverter::on_timer, this));
@@ -78,12 +78,32 @@ namespace dbw_ulc_converter{
     control_status = false;
 
     double speed = saved_control_cmd_msg.longitudinal.speed;
+
+    double desired_steering_angle = saved_control_cmd_msg.lateral.steering_tire_angle * 0.8;
+
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "commanded speed %f", speed);
+
+    if (speed > 4.0){
+      speed = 4.0;
+    }
+    if (speed > 0.0 && speed < 1.0){
+      speed = 1.0;
+    }
+
+    // double speed = 5.0;
     
     // spec sheet https://media.lincoln.com/content/dam/lincolnmedia/lna/us/product/2016/17MKZ-TechSpecs.pdf
-    double steering_tire_angle = saved_steer_msg.steering_wheel_angle / 14.8;
+    double measured_steering_tire_angle = saved_steer_msg.steering_wheel_angle / 14.8;
+    // double steering_tire_angle = 0.0;
 
-    auto steer_msg = get_steer_msg(steering_tire_angle);
-    auto ulc_cmd_msg = get_ulc_cmd(speed, steering_tire_angle);
+    // if (steering_tire_angle > -0.02 and steering_tire_angle < 0.02){
+    //   steering_tire_angle = 0.0;
+    // }
+
+    auto steer_msg = get_steer_msg(measured_steering_tire_angle);
+    auto ulc_cmd_msg = get_ulc_cmd(speed, desired_steering_angle);
+
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "desired steering angle %f", desired_steering_angle);
 
     pub_steer->publish(steer_msg);
     pub_ulc_cmd->publish(ulc_cmd_msg);

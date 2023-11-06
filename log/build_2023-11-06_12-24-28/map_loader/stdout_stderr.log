@@ -1,0 +1,51 @@
+[  5%] Built target gmock_main
+[ 11%] Built target pointcloud_map_loader
+[ 17%] Built target lanelet2_map_visualization
+[ 23%] Built target lanelet2_map_loader
+[ 32%] Built target gmock
+[ 52%] Built target pointcloud_map_loader_node
+[ 58%] Built target lanelet2_map_loader_node
+[ 64%] Built target lanelet2_map_visualization_node
+[ 82%] Built target test_load_pcd_metadata
+[ 82%] Built target test_cylinder_box_overlap
+[ 82%] Built target test_replace_with_absolute_path
+[ 88%] Built target test_partial_map_loader_module
+[100%] Built target test_differential_map_loader_module
+[100%] Built target test_pointcloud_map_loader_module
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/lib/map_loader/pointcloud_map_loader
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/lib/map_loader/lanelet2_map_loader
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/lib/map_loader/lanelet2_map_visualization
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/test/data//test_map.osm
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/lib/map_loader/map_hash_generator
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/include/map_loader/lanelet2_map_loader_node.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/include/map_loader/lanelet2_map_visualization_node.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/environment/library_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/environment/library_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/lib/libpointcloud_map_loader_node.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/lib/liblanelet2_map_loader_node.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/lib/liblanelet2_map_visualization_node.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/launch/lanelet2_map_loader.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/launch/pointcloud_map_loader.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/config/lanelet2_map_loader.param.yaml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/config/pointcloud_map_loader.param.yaml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/ament_index/resource_index/package_run_dependencies/map_loader
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/ament_index/resource_index/parent_prefix_path/map_loader
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/map_loader/share/map_loader/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/ament_index/resource_index/packages/map_loader
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/ament_index/resource_index/rclcpp_components/map_loader
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/cmake/map_loaderConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/cmake/map_loaderConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/map_loader/share/map_loader/package.xml

@@ -1,0 +1,36 @@
+[ 30%] Built target traffic_light_classifier_node
+[ 30%] Built target single_image_debug_inference
+[ 61%] Built target traffic_light_classifier_nodelet
+[100%] Built target single_image_debug_inference_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/lib/traffic_light_classifier/traffic_light_classifier_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/lib/traffic_light_classifier/single_image_debug_inference
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/include/traffic_light_classifier/classifier_interface.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/include/traffic_light_classifier/cnn_classifier.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/include/traffic_light_classifier/color_classifier.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/include/traffic_light_classifier/nodelet.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/environment/library_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/environment/library_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/lib/libtraffic_light_classifier_nodelet.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/lib/libsingle_image_debug_inference_node.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/launch/traffic_light_classifier.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/ament_index/resource_index/package_run_dependencies/traffic_light_classifier
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/ament_index/resource_index/parent_prefix_path/traffic_light_classifier
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/ament_index/resource_index/packages/traffic_light_classifier
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/ament_index/resource_index/rclcpp_components/traffic_light_classifier
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/cmake/traffic_light_classifierConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/cmake/traffic_light_classifierConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/traffic_light_classifier/share/traffic_light_classifier/package.xml

@@ -1,0 +1,25 @@
+[ 12%] Built target gmock_main
+[ 31%] Built target gmock
+[ 87%] Built target pose_initializer_node
+[100%] Built target test_copy_vector_to_array
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/lib/pose_initializer/pose_initializer_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/launch/pose_initializer.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/config/pose_initializer.param.yaml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/ament_index/resource_index/package_run_dependencies/pose_initializer
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/ament_index/resource_index/parent_prefix_path/pose_initializer
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/ament_index/resource_index/packages/pose_initializer
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/cmake/pose_initializerConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/cmake/pose_initializerConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/pose_initializer/share/pose_initializer/package.xml

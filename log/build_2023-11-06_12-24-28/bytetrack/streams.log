@@ -1,0 +1,90 @@
+[0.221s] Invoking command in '/home/mtl12345/autoware/build/bytetrack': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs:/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_auto_perception_msgs:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs:/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_auto_perception_msgs:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs/lib:/home/mtl12345/autoware/install/autoware_auto_perception_msgs/lib:/home/mtl12345/autoware/install/tensorrt_common/lib:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/mtl12345/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mtl12345/autoware/src/universe/autoware.universe/perception/bytetrack -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mtl12345/autoware/install/bytetrack
+[0.575s] -- Found autoware_cmake: 0.1.0 (/home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+[0.575s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.584s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.587s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.594s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.613s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.641s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.363s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.364s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.399s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.715s] [33mCMake Warning (dev) at /home/mtl12345/autoware/install/tensorrt_common/share/tensorrt_common/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package):
+[1.715s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[1.716s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[1.716s]   command to set the policy and suppress this warning.
+[1.716s] 
+[1.717s]   CMake variable TENSORRT_ROOT is set to:
+[1.717s] 
+[1.717s]     /usr
+[1.718s] 
+[1.718s]   For compatibility, CMake is ignoring the variable.
+[1.718s] Call Stack (most recent call first):
+[1.719s]   /home/mtl12345/autoware/install/tensorrt_common/share/tensorrt_common/cmake/tensorrt_commonConfig.cmake:41 (include)
+[1.719s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+[1.719s]   /home/mtl12345/autoware/install/autoware_cmake/share/autoware_cmake/cmake/autoware_package.cmake:49 (ament_auto_find_build_dependencies)
+[1.720s]   CMakeLists.txt:5 (autoware_package)
+[1.720s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.720s] [0m
+[1.720s] -- Found TensorRT headers at /usr/include/x86_64-linux-gnu
+[1.720s] -- Found TensorRT libs at /usr/lib/x86_64-linux-gnu/libnvinfer.so;/usr/lib/x86_64-linux-gnu/libnvinfer_plugin.so;/usr/lib/x86_64-linux-gnu/libnvparsers.so;/usr/lib/x86_64-linux-gnu/libnvonnxparser.so
+[2.069s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.118s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.120s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.122s] -- Configured cppcheck include dirs: /home/mtl12345/autoware/src/universe/autoware.universe/perception/bytetrack/include;$<BUILD_INTERFACE:/home/mtl12345/autoware/src/universe/autoware.universe/perception/bytetrack/lib/include>
+[2.122s] -- Configured cppcheck exclude dirs and/or files: 
+[2.122s] -- Added test 'lint_cmake' to check CMake code style
+[2.123s] -- Added test 'xmllint' to check XML markup files
+[2.128s] -- Configuring done
+[2.200s] -- Generating done
+[2.202s] -- Build files have been written to: /home/mtl12345/autoware/build/bytetrack
+[2.570s] Invoked command in '/home/mtl12345/autoware/build/bytetrack' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs:/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_auto_perception_msgs:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs:/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_auto_perception_msgs:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs/lib:/home/mtl12345/autoware/install/autoware_auto_perception_msgs/lib:/home/mtl12345/autoware/install/tensorrt_common/lib:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/mtl12345/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mtl12345/autoware/src/universe/autoware.universe/perception/bytetrack -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mtl12345/autoware/install/bytetrack
+[2.571s] Invoking command in '/home/mtl12345/autoware/build/bytetrack': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs:/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_auto_perception_msgs:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs:/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_auto_perception_msgs:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs/lib:/home/mtl12345/autoware/install/autoware_auto_perception_msgs/lib:/home/mtl12345/autoware/install/tensorrt_common/lib:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/mtl12345/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mtl12345/autoware/build/bytetrack -- -j12 -l12
+[2.842s] [35m[1mConsolidate compiler generated dependencies of target bytetrack_node_exe[0m
+[2.842s] [35m[1mConsolidate compiler generated dependencies of target bytetrack_visualizer_node_exe[0m
+[2.842s] [35m[1mConsolidate compiler generated dependencies of target bytetrack_lib[0m
+[2.842s] [ 25%] Built target bytetrack_node_exe
+[2.842s] [ 25%] Built target bytetrack_visualizer_node_exe
+[2.842s] [ 62%] Built target bytetrack_lib
+[2.842s] [35m[1mConsolidate compiler generated dependencies of target bytetrack[0m
+[2.842s] [ 75%] Built target bytetrack
+[2.842s] [35m[1mConsolidate compiler generated dependencies of target bytetrack_node[0m
+[2.843s] [ 87%] Built target bytetrack_node
+[2.843s] [35m[1mConsolidate compiler generated dependencies of target bytetrack_visualizer[0m
+[2.843s] [100%] Built target bytetrack_visualizer
+[3.096s] Invoked command in '/home/mtl12345/autoware/build/bytetrack' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs:/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_auto_perception_msgs:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs:/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_auto_perception_msgs:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs/lib:/home/mtl12345/autoware/install/autoware_auto_perception_msgs/lib:/home/mtl12345/autoware/install/tensorrt_common/lib:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/mtl12345/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mtl12345/autoware/build/bytetrack -- -j12 -l12
+[3.419s] Invoking command in '/home/mtl12345/autoware/build/bytetrack': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs:/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_auto_perception_msgs:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs:/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_auto_perception_msgs:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs/lib:/home/mtl12345/autoware/install/autoware_auto_perception_msgs/lib:/home/mtl12345/autoware/install/tensorrt_common/lib:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/mtl12345/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mtl12345/autoware/build/bytetrack
+[4.102s] -- Install configuration: "Release"
+[4.102s] -- Execute custom install script
+[4.102s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/lib/bytetrack/bytetrack_node_exe
+[4.102s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/lib/bytetrack/bytetrack_visualizer_node_exe
+[4.102s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/include/bytetrack/bytetrack.hpp
+[4.103s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/include/bytetrack/bytetrack_node.hpp
+[4.103s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/include/bytetrack/bytetrack_visualizer_node.hpp
+[4.103s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/environment/library_path.sh
+[4.103s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/environment/library_path.dsv
+[4.103s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/lib/libbytetrack_lib.so
+[4.103s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/lib/libbytetrack.so
+[4.103s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/lib/libbytetrack_node.so
+[4.103s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/lib/libbytetrack_visualizer.so
+[4.103s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/launch/bytetrack.launch.xml
+[4.103s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/ament_index/resource_index/package_run_dependencies/bytetrack
+[4.104s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/ament_index/resource_index/parent_prefix_path/bytetrack
+[4.104s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/environment/ament_prefix_path.sh
+[4.104s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/environment/ament_prefix_path.dsv
+[4.104s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/environment/path.sh
+[4.104s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/environment/path.dsv
+[4.104s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/local_setup.bash
+[4.104s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/local_setup.sh
+[4.104s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/local_setup.zsh
+[4.104s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/local_setup.dsv
+[4.104s] -- Symlinking: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/package.dsv
+[4.105s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/ament_index/resource_index/packages/bytetrack
+[4.105s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/ament_index/resource_index/rclcpp_components/bytetrack
+[4.105s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.105s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.105s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/cmake/ament_cmake_export_libraries-extras.cmake
+[4.105s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/cmake/bytetrackConfig.cmake
+[4.105s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/cmake/bytetrackConfig-version.cmake
+[4.105s] -- Up-to-date symlink: /home/mtl12345/autoware/install/bytetrack/share/bytetrack/package.xml
+[4.107s] Invoked command in '/home/mtl12345/autoware/build/bytetrack' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs:/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_auto_perception_msgs:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs:/home/mtl12345/autoware/install/cuda_utils:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_auto_perception_msgs:/home/mtl12345/autoware/install/tensorrt_common:/home/mtl12345/autoware/install/autoware_lint_common:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/tier4_perception_msgs/lib:/home/mtl12345/autoware/install/autoware_auto_perception_msgs/lib:/home/mtl12345/autoware/install/tensorrt_common/lib:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mtl12345/autoware/install/tier4_perception_msgs/local/lib/python3.10/dist-packages:/home/mtl12345/autoware/install/autoware_auto_perception_msgs/local/lib/python3.10/dist-packages:/home/mtl12345/autoware/install/autoware_auto_geometry_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mtl12345/autoware/build/bytetrack

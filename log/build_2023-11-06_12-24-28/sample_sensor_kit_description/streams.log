@@ -1,0 +1,26 @@
+[0.344s] Invoking command in '/home/mtl12345/autoware/build/sample_sensor_kit_description': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/sample_sensor_kit_description -- -j12 -l12
+[0.575s] Invoked command in '/home/mtl12345/autoware/build/sample_sensor_kit_description' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/sample_sensor_kit_description -- -j12 -l12
+[1.129s] Invoking command in '/home/mtl12345/autoware/build/sample_sensor_kit_description': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/sample_sensor_kit_description
+[1.303s] -- Install configuration: "Release"
+[1.303s] -- Execute custom install script
+[1.303s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/urdf/sensor_kit.xacro
+[1.303s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/urdf/sensors.xacro
+[1.304s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/config/sensor_kit_calibration.yaml
+[1.304s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/config/sensors_calibration.yaml
+[1.304s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/ament_index/resource_index/package_run_dependencies/sample_sensor_kit_description
+[1.304s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/ament_index/resource_index/parent_prefix_path/sample_sensor_kit_description
+[1.304s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/environment/ament_prefix_path.sh
+[1.304s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/environment/ament_prefix_path.dsv
+[1.304s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/environment/path.sh
+[1.304s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/environment/path.dsv
+[1.304s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/local_setup.bash
+[1.304s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/local_setup.sh
+[1.304s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/local_setup.zsh
+[1.304s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/local_setup.dsv
+[1.305s] -- Symlinking: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/package.dsv
+[1.305s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/ament_index/resource_index/packages/sample_sensor_kit_description
+[1.305s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.305s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/cmake/sample_sensor_kit_descriptionConfig.cmake
+[1.305s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/cmake/sample_sensor_kit_descriptionConfig-version.cmake
+[1.305s] -- Up-to-date symlink: /home/mtl12345/autoware/install/sample_sensor_kit_description/share/sample_sensor_kit_description/package.xml
+[1.685s] Invoked command in '/home/mtl12345/autoware/build/sample_sensor_kit_description' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/sample_sensor_kit_description

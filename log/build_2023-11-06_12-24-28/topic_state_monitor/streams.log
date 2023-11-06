@@ -1,0 +1,35 @@
+[0.247s] Invoking command in '/home/mtl12345/autoware/build/topic_state_monitor': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/topic_state_monitor -- -j12 -l12
+[0.406s] [ 40%] Built target topic_state_monitor_node
+[0.407s] [100%] Built target topic_state_monitor
+[0.686s] Invoked command in '/home/mtl12345/autoware/build/topic_state_monitor' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/topic_state_monitor -- -j12 -l12
+[1.605s] Invoking command in '/home/mtl12345/autoware/build/topic_state_monitor': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/topic_state_monitor
+[1.691s] -- Install configuration: "Release"
+[1.691s] -- Execute custom install script
+[1.691s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/lib/topic_state_monitor/topic_state_monitor_node
+[1.691s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/include/topic_state_monitor/topic_state_monitor.hpp
+[1.691s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/include/topic_state_monitor/topic_state_monitor_core.hpp
+[1.692s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/library_path.sh
+[1.692s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/library_path.dsv
+[1.692s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/lib/libtopic_state_monitor.so
+[1.692s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/launch/topic_state_monitor.launch.xml
+[1.692s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/launch/topic_state_monitor_tf.launch.xml
+[1.692s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/ament_index/resource_index/package_run_dependencies/topic_state_monitor
+[1.692s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/ament_index/resource_index/parent_prefix_path/topic_state_monitor
+[1.692s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/ament_prefix_path.sh
+[1.692s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/ament_prefix_path.dsv
+[1.693s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/path.sh
+[1.693s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/environment/path.dsv
+[1.693s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/local_setup.bash
+[1.693s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/local_setup.sh
+[1.693s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/local_setup.zsh
+[1.693s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/local_setup.dsv
+[1.693s] -- Symlinking: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/package.dsv
+[1.693s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/ament_index/resource_index/packages/topic_state_monitor
+[1.693s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/ament_index/resource_index/rclcpp_components/topic_state_monitor
+[1.693s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.693s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.693s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/ament_cmake_export_libraries-extras.cmake
+[1.694s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/topic_state_monitorConfig.cmake
+[1.694s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/cmake/topic_state_monitorConfig-version.cmake
+[1.694s] -- Up-to-date symlink: /home/mtl12345/autoware/install/topic_state_monitor/share/topic_state_monitor/package.xml
+[2.070s] Invoked command in '/home/mtl12345/autoware/build/topic_state_monitor' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/topic_state_monitor

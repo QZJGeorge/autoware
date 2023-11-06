@@ -1,0 +1,62 @@
+[ 13%] Built target lidar_centerpoint_node
+[ 17%] Built target single_inference_lidar_centerpoint_node
+[ 39%] Built target centerpoint_cuda_lib
+[ 82%] Built target centerpoint_lib
+[ 91%] Built target lidar_centerpoint_component
+[100%] Built target single_inference_lidar_centerpoint_component
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/lib/lidar_centerpoint/lidar_centerpoint_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/lib/lidar_centerpoint/single_inference_lidar_centerpoint_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/lib/lidar_centerpoint/lidar_centerpoint_visualizer.py
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/centerpoint_config.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/centerpoint_trt.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/cuda_utils.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/detection_class_remapper.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/network/network_trt.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/network/scatter_kernel.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/network/tensorrt_wrapper.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/node.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/postprocess/circle_nms_kernel.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/postprocess/non_maximum_suppression.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/postprocess/postprocess_kernel.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/preprocess/pointcloud_densification.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/preprocess/preprocess_kernel.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/preprocess/voxel_generator.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/ros_utils.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/single_inference_node.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/include/lidar_centerpoint/utils.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/environment/library_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/environment/library_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/lib/libcenterpoint_lib.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/lib/liblidar_centerpoint_component.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/lib/libsingle_inference_lidar_centerpoint_component.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/launch/centerpoint_vs_centerpoint-tiny/README.md
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/launch/centerpoint_vs_centerpoint-tiny/centerpoint_vs_centerpoint-tiny.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/launch/centerpoint_vs_centerpoint-tiny/rviz/centerpoint.rviz
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/launch/centerpoint_vs_centerpoint-tiny/rviz/centerpoint_tiny.rviz
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/launch/lidar_centerpoint.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/launch/single_inference_lidar_centerpoint.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/config/centerpoint.param.yaml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/config/centerpoint_tiny.param.yaml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/config/detection_class_remapper.param.yaml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/ament_index/resource_index/package_run_dependencies/lidar_centerpoint
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/ament_index/resource_index/parent_prefix_path/lidar_centerpoint
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/ament_index/resource_index/packages/lidar_centerpoint
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/ament_index/resource_index/rclcpp_components/lidar_centerpoint
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/cmake/lidar_centerpointConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/cmake/lidar_centerpointConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/share/lidar_centerpoint/package.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/lidar_centerpoint/lib/libcenterpoint_cuda_lib.so

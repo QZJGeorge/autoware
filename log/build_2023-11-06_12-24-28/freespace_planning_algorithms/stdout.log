@@ -1,0 +1,38 @@
+[ 12%] Built target gtest
+[ 25%] Built target gtest_main
+[ 37%] Built target reeds_shepp
+[ 50%] Built target rrtstar_core
+[ 75%] Built target freespace_planning_algorithms
+[ 87%] Built target rrtstar_core_informed-test
+[100%] Built target freespace_planning_algorithms-test
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/include/freespace_planning_algorithms/abstract_algorithm.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/include/freespace_planning_algorithms/astar_search.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/include/freespace_planning_algorithms/reeds_shepp.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/include/freespace_planning_algorithms/rrtstar.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/include/freespace_planning_algorithms/rrtstar_core.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/environment/library_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/environment/library_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/lib/libreeds_shepp.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/lib/librrtstar_core.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/lib/libfreespace_planning_algorithms.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/ament_index/resource_index/package_run_dependencies/freespace_planning_algorithms
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/ament_index/resource_index/parent_prefix_path/freespace_planning_algorithms
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/ament_index/resource_index/packages/freespace_planning_algorithms
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/cmake/freespace_planning_algorithmsConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/cmake/freespace_planning_algorithmsConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/share/freespace_planning_algorithms/package.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/freespace_planning_algorithms/lib/freespace_planning_algorithms/debug_plot.py

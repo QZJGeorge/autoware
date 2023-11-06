@@ -1,0 +1,44 @@
+[ 16%] Built target line_segments_overlay_node
+[ 33%] Built target segment_filter_node
+[ 55%] Built target graph_segment_node
+[ 66%] Built target undistort_node
+[ 83%] Built target line_segment_detector_node
+[100%] Built target lanelet2_overlay_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/include/yabloc_image_processing/graph_segment/graph_segment.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/include/yabloc_image_processing/graph_segment/histogram.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/include/yabloc_image_processing/graph_segment/similar_area_searcher.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/include/yabloc_image_processing/lanelet2_overlay/lanelet2_overlay.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/include/yabloc_image_processing/line_segment_detector/line_segment_detector.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/include/yabloc_image_processing/line_segments_overlay/line_segments_overlay.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/include/yabloc_image_processing/segment_filter/segment_filter.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/lib/yabloc_image_processing/line_segment_detector_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/lib/yabloc_image_processing/graph_segment_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/lib/yabloc_image_processing/segment_filter_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/lib/yabloc_image_processing/undistort_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/lib/yabloc_image_processing/line_segments_overlay_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/lib/yabloc_image_processing/lanelet2_overlay_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/config/graph_segment.param.yaml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/config/segment_filter.param.yaml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/config/undistort.param.yaml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/launch/image_processing.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/launch/overlay.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/launch/yabloc_image_processing.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/ament_index/resource_index/package_run_dependencies/yabloc_image_processing
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/ament_index/resource_index/parent_prefix_path/yabloc_image_processing
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/ament_index/resource_index/packages/yabloc_image_processing
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/cmake/yabloc_image_processingConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/cmake/yabloc_image_processingConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/yabloc_image_processing/share/yabloc_image_processing/package.xml

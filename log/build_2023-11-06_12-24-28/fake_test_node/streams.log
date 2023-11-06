@@ -1,0 +1,33 @@
+[0.714s] Invoking command in '/home/mtl12345/autoware/build/fake_test_node': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_auto_common:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_auto_common:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/fake_test_node -- -j12 -l12
+[0.922s] [ 50%] Built target gtest
+[0.923s] [ 50%] Built target gtest_main
+[0.923s] [ 75%] Built target fake_test_node
+[0.923s] [100%] Built target test_fake_test_node
+[1.408s] Invoked command in '/home/mtl12345/autoware/build/fake_test_node' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_auto_common:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_auto_common:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/fake_test_node -- -j12 -l12
+[1.759s] Invoking command in '/home/mtl12345/autoware/build/fake_test_node': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_auto_common:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_auto_common:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/fake_test_node
+[1.933s] -- Install configuration: "Release"
+[1.933s] -- Execute custom install script
+[1.933s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/include/fake_test_node/fake_test_node.hpp
+[1.933s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/include/fake_test_node/visibility_control.hpp
+[1.933s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/environment/library_path.sh
+[1.933s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/environment/library_path.dsv
+[1.933s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/lib/libfake_test_node.so
+[1.933s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/ament_index/resource_index/package_run_dependencies/fake_test_node
+[1.933s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/ament_index/resource_index/parent_prefix_path/fake_test_node
+[1.933s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/environment/ament_prefix_path.sh
+[1.933s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/environment/ament_prefix_path.dsv
+[1.933s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/environment/path.sh
+[1.933s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/environment/path.dsv
+[1.933s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/local_setup.bash
+[1.933s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/local_setup.sh
+[1.934s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/local_setup.zsh
+[1.934s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/local_setup.dsv
+[1.934s] -- Symlinking: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/package.dsv
+[1.934s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/ament_index/resource_index/packages/fake_test_node
+[1.934s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.934s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.934s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/cmake/ament_cmake_export_libraries-extras.cmake
+[1.934s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/cmake/fake_test_nodeConfig.cmake
+[1.934s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/cmake/fake_test_nodeConfig-version.cmake
+[1.934s] -- Up-to-date symlink: /home/mtl12345/autoware/install/fake_test_node/share/fake_test_node/package.xml
+[2.184s] Invoked command in '/home/mtl12345/autoware/build/fake_test_node' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_auto_common:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/autoware_auto_common:/home/mtl12345/autoware/install/autoware_cmake:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/fake_test_node

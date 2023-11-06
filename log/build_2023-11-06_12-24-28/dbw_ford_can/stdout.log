@@ -1,0 +1,38 @@
+[ 16%] Built target gtest_main
+[ 33%] Built target gtest
+[ 50%] Built target dbw_node
+[ 66%] Built target dbw_ford_can
+[ 83%] Built target dbw_ford_can_test_pedal_lut
+[100%] Built target dbw_ford_can_test_sonar_lut
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/lib/libdbw_ford_can.so
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/lib/dbw_ford_can/dbw_node
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/include/dbw_ford_can/dispatch.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/include/dbw_ford_can/pedal_lut.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/include/dbw_ford_can/sonar_lut.hpp
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/launch/dbw.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/launch/offline.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/ament_index/resource_index/package_run_dependencies/dbw_ford_can
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/ament_index/resource_index/parent_prefix_path/dbw_ford_can
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/ament_index/resource_index/packages/dbw_ford_can
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/ament_index/resource_index/rclcpp_components/dbw_ford_can
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/cmake/dbw_ford_canConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/cmake/dbw_ford_canConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/dbw_ford_can/share/dbw_ford_can/package.xml
+-- Up-to-date: /home/mtl12345/autoware/install/dbw_ford_can/lib/dbw_ford_can/scripts
+-- Up-to-date: /home/mtl12345/autoware/install/dbw_ford_can/lib/dbw_ford_can/scripts/wheel_counts_per_km.py
+-- Up-to-date: /home/mtl12345/autoware/install/dbw_ford_can/lib/dbw_ford_can/scripts/throttle_sweep.py
+-- Up-to-date: /home/mtl12345/autoware/install/dbw_ford_can/lib/dbw_ford_can/scripts/brake_sweep.py
+-- Up-to-date: /home/mtl12345/autoware/install/dbw_ford_can/lib/dbw_ford_can/scripts/brake_thrash.py
+-- Up-to-date: /home/mtl12345/autoware/install/dbw_ford_can/lib/dbw_ford_can/scripts/throttle_thrash.py

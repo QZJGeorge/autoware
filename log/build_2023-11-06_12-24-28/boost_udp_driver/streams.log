@@ -1,0 +1,48 @@
+[0.435s] Invoking command in '/home/mtl12345/autoware/build/boost_udp_driver': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/mtl12345/autoware/build/boost_udp_driver -- -j12 -l12
+[0.481s] [  8%] Built target gtest
+[0.482s] [ 29%] Built target gtest_main
+[0.482s] [ 29%] Built target udp_sender_node_exe
+[0.482s] [ 33%] Built target udp_receiver_node_exe
+[0.487s] [ 45%] Built target boost_udp_driver
+[0.516s] [ 58%] Built target boost_udp_driver_nodes
+[0.539s] [ 75%] Built target test_udp_socket
+[0.539s] [ 75%] Built target test_udp_data
+[0.540s] [ 83%] Built target udp_bridge_node_exe
+[0.540s] [ 91%] Built target test_udp_driver
+[0.541s] [100%] Built target test_udp_driver_nodes
+[0.882s] Invoked command in '/home/mtl12345/autoware/build/boost_udp_driver' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/mtl12345/autoware/build/boost_udp_driver -- -j12 -l12
+[1.445s] Invoking command in '/home/mtl12345/autoware/build/boost_udp_driver': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/mtl12345/autoware/build/boost_udp_driver
+[1.720s] -- Install configuration: "Release"
+[1.720s] -- Execute custom install script
+[1.720s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/lib/boost_udp_driver/udp_receiver_node_exe
+[1.720s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/lib/boost_udp_driver/udp_sender_node_exe
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/include/boost_udp_driver/udp_driver.hpp
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/include/boost_udp_driver/udp_receiver_node.hpp
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/include/boost_udp_driver/udp_sender_node.hpp
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/include/boost_udp_driver/udp_socket.hpp
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/include/boost_udp_driver/visibility_control.hpp
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/environment/library_path.sh
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/environment/library_path.dsv
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/lib/libboost_udp_driver.so
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/lib/libboost_udp_driver_nodes.so
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/lib/boost_udp_driver/udp_bridge_node_exe
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/ament_index/resource_index/package_run_dependencies/boost_udp_driver
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/ament_index/resource_index/parent_prefix_path/boost_udp_driver
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/environment/ament_prefix_path.sh
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/environment/ament_prefix_path.dsv
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/environment/path.sh
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/environment/path.dsv
+[1.721s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/local_setup.bash
+[1.722s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/local_setup.sh
+[1.722s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/local_setup.zsh
+[1.722s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/local_setup.dsv
+[1.722s] -- Symlinking: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/package.dsv
+[1.722s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/ament_index/resource_index/packages/boost_udp_driver
+[1.722s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/ament_index/resource_index/rclcpp_components/boost_udp_driver
+[1.722s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.722s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.722s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[1.722s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/cmake/boost_udp_driverConfig.cmake
+[1.722s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/cmake/boost_udp_driverConfig-version.cmake
+[1.722s] -- Up-to-date symlink: /home/mtl12345/autoware/install/boost_udp_driver/share/boost_udp_driver/package.xml
+[2.061s] Invoked command in '/home/mtl12345/autoware/build/boost_udp_driver' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/boost_io_context:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/boost_io_context:/opt/ros/humble LD_LIBRARY_PATH=/home/mtl12345/autoware/install/boost_io_context/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/mtl12345/autoware/build/boost_udp_driver

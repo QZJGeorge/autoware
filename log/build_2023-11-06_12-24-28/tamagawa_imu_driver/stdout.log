@@ -1,0 +1,27 @@
+[ 50%] Built target tag_can_driver
+[100%] Built target tag_serial_driver
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/lib/tamagawa_imu_driver/tag_serial_driver
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/lib/tamagawa_imu_driver/tag_can_driver
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/launch/can.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/launch/serial_AU7554N.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/launch/serial_TAG250_Nxx00.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/launch/serial_TAG250_Nxx40.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/launch/serial_TAG264.launch.xml
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/ament_index/resource_index/package_run_dependencies/tamagawa_imu_driver
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/ament_index/resource_index/parent_prefix_path/tamagawa_imu_driver
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/environment/path.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/environment/path.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/local_setup.bash
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/local_setup.sh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/local_setup.zsh
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/local_setup.dsv
+-- Symlinking: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/package.dsv
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/ament_index/resource_index/packages/tamagawa_imu_driver
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/cmake/tamagawa_imu_driverConfig.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/cmake/tamagawa_imu_driverConfig-version.cmake
+-- Up-to-date symlink: /home/mtl12345/autoware/install/tamagawa_imu_driver/share/tamagawa_imu_driver/package.xml

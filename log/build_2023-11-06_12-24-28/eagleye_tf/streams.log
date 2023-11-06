@@ -1,0 +1,24 @@
+[0.600s] Invoking command in '/home/mtl12345/autoware/build/eagleye_tf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/eagleye_tf -- -j12 -l12
+[0.978s] Invoked command in '/home/mtl12345/autoware/build/eagleye_tf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/eagleye_tf -- -j12 -l12
+[1.290s] Invoking command in '/home/mtl12345/autoware/build/eagleye_tf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/eagleye_tf
+[1.482s] -- Install configuration: "Release"
+[1.482s] -- Execute custom install script
+[1.483s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/launch/tf.xml
+[1.483s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/config/sensors_tf.yaml
+[1.483s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/urdf/sensors.xacro
+[1.483s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/ament_index/resource_index/package_run_dependencies/eagleye_tf
+[1.483s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/ament_index/resource_index/parent_prefix_path/eagleye_tf
+[1.484s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/environment/ament_prefix_path.sh
+[1.484s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/environment/ament_prefix_path.dsv
+[1.484s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/environment/path.sh
+[1.485s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/environment/path.dsv
+[1.485s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/local_setup.bash
+[1.485s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/local_setup.sh
+[1.485s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/local_setup.zsh
+[1.485s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/local_setup.dsv
+[1.485s] -- Symlinking: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/package.dsv
+[1.485s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/ament_index/resource_index/packages/eagleye_tf
+[1.486s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/cmake/eagleye_tfConfig.cmake
+[1.486s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/cmake/eagleye_tfConfig-version.cmake
+[1.486s] -- Up-to-date symlink: /home/mtl12345/autoware/install/eagleye_tf/share/eagleye_tf/package.xml
+[1.709s] Invoked command in '/home/mtl12345/autoware/build/eagleye_tf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/eagleye_tf

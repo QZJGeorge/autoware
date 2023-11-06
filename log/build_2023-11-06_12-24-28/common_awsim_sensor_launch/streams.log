@@ -1,0 +1,34 @@
+[0.108s] Invoking command in '/home/mtl12345/autoware/build/common_awsim_sensor_launch': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_monitor:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_monitor:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/mtl12345/autoware/src/sensor_kit/external/awsim_sensor_kit_launch/common_awsim_sensor_launch -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mtl12345/autoware/install/common_awsim_sensor_launch
+[0.346s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.347s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.395s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.407s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.407s] -- Added test 'lint_cmake' to check CMake code style
+[0.408s] -- Added test 'xmllint' to check XML markup files
+[0.409s] -- Configuring done
+[0.415s] -- Generating done
+[0.417s] -- Build files have been written to: /home/mtl12345/autoware/build/common_awsim_sensor_launch
+[0.499s] Invoked command in '/home/mtl12345/autoware/build/common_awsim_sensor_launch' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_monitor:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_monitor:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake /home/mtl12345/autoware/src/sensor_kit/external/awsim_sensor_kit_launch/common_awsim_sensor_launch -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mtl12345/autoware/install/common_awsim_sensor_launch
+[0.500s] Invoking command in '/home/mtl12345/autoware/build/common_awsim_sensor_launch': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_monitor:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_monitor:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/common_awsim_sensor_launch -- -j12 -l12
+[0.908s] Invoked command in '/home/mtl12345/autoware/build/common_awsim_sensor_launch' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_monitor:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_monitor:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --build /home/mtl12345/autoware/build/common_awsim_sensor_launch -- -j12 -l12
+[1.038s] Invoking command in '/home/mtl12345/autoware/build/common_awsim_sensor_launch': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_monitor:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_monitor:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/common_awsim_sensor_launch
+[1.046s] -- Install configuration: "Release"
+[1.048s] -- Execute custom install script
+[1.048s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/launch/velodyne_lidar.launch.xml
+[1.048s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/launch/velodyne_node_container.launch.py
+[1.048s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/ament_index/resource_index/package_run_dependencies/common_awsim_sensor_launch
+[1.049s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/ament_index/resource_index/parent_prefix_path/common_awsim_sensor_launch
+[1.051s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/environment/ament_prefix_path.sh
+[1.052s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/environment/ament_prefix_path.dsv
+[1.052s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/environment/path.sh
+[1.052s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/environment/path.dsv
+[1.053s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/local_setup.bash
+[1.056s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/local_setup.sh
+[1.057s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/local_setup.zsh
+[1.057s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/local_setup.dsv
+[1.058s] -- Symlinking: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/package.dsv
+[1.064s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/ament_index/resource_index/packages/common_awsim_sensor_launch
+[1.064s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/cmake/common_awsim_sensor_launchConfig.cmake
+[1.064s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/cmake/common_awsim_sensor_launchConfig-version.cmake
+[1.064s] -- Up-to-date symlink: /home/mtl12345/autoware/install/common_awsim_sensor_launch/share/common_awsim_sensor_launch/package.xml
+[1.242s] Invoked command in '/home/mtl12345/autoware/build/common_awsim_sensor_launch' returned '0': AMENT_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_monitor:/home/mtl12345/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mtl12345/autoware/install/velodyne_monitor:/home/mtl12345/autoware/install/autoware_lint_common:/opt/ros/humble /usr/bin/cmake --install /home/mtl12345/autoware/build/common_awsim_sensor_launch
