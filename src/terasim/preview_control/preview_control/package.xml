@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mkz_control</name>
+  <version>0.1.0</version>
+  <description>
+    The mkz_control package for ROS
+  </description>
+  <maintainer email="shaobxu@gmail.com">shaobing</maintainer>
+  <license>To Commercialize</license>
+  <author email="shaobxu@gmail.com">shaobing</author>
+  
+ 
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>mcity_msg</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+
+ 
+  <exec_depend>roslaunch</exec_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

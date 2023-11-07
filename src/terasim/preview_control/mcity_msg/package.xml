@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mcity_msg</name>
+  <version>0.0.0</version>
+  <description>The mcity_msg package</description>
+
+
+
+  <maintainer email="shaobxu@gmail.com">Shaobing Xu</maintainer>
+  <license>closed source</license>
+  <author email="shaobxu@gmail.com">Shaobing Xu</author>
+
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>std_msgs</depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  
+  
+</package>
