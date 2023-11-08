@@ -7,6 +7,16 @@ from launch.launch_description_sources import AnyLaunchDescriptionSource
 
 def generate_launch_description():
     return launch.LaunchDescription([
+        DeclareLaunchArgument(
+          'scenario',
+          default_value='01_lane_change',
+          description='Name of the executable.'
+        ),
+        Node(
+            package='abc_terasim',
+            namespace='/terasim',
+            executable=LaunchConfiguration('scenario')
+        ),
         Node(
             package='abc_terasim',
             namespace='/terasim',
@@ -16,11 +26,6 @@ def generate_launch_description():
             package='abc_terasim',
             namespace='/terasim',
             executable='abc_context_converter',
-        ),
-        Node(
-            package='abc_terasim',
-            namespace='/terasim',
-            executable='test_09',
         ),
         DeclareLaunchArgument(
             'map_path',

@@ -1,4 +1,4 @@
-// Copyright 2019 Autoware Foundation
+// Copyright 2049 Autoware Foundation
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "test_09.hpp"
+#include "test_04.hpp"
 
-namespace test_09{
+namespace test_04{
 
-  Test09::Test09(const rclcpp::NodeOptions & options)
-  : Node("test_09", options)
+  Test04::Test04(const rclcpp::NodeOptions & options)
+  : Node("test_04", options)
   {
     pub_goal = this->create_publisher<PoseStamped>("/planning/mission_planning/goal", 10);
     pub_local = this->create_publisher<PoseWithCovarianceStamped>("/initialpose", 10);
@@ -26,15 +26,15 @@ namespace test_09{
     cli_set_autoware_control = this->create_client<ChangeAutowareControl>("/system/operation_mode/change_autoware_control");
 
     sub_autoware_state = this->create_subscription<AutowareState>(
-      "/autoware/state", 10, std::bind(&Test09::autoware_state_callback, this, std::placeholders::_1));
+      "/autoware/state", 10, std::bind(&Test04::autoware_state_callback, this, std::placeholders::_1));
 
     timer_ = rclcpp::create_timer(
-      this, get_clock(), 1000ms, std::bind(&Test09::on_timer, this));
+      this, get_clock(), 1000ms, std::bind(&Test04::on_timer, this));
 
     init_redis_client();
   }
 
-  void Test09::on_timer(){
+  void Test04::on_timer(){
     string terasim_status = get_key("terasim_status");
     if (terasim_status == "" || terasim_status == "0"){
       RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
@@ -57,14 +57,14 @@ namespace test_09{
     }
   }
 
-  void Test09::publish_localization(){
-    localization_msg.pose.pose.position.x = 77610.140625;
-    localization_msg.pose.pose.position.y = 86759.7421875;
+  void Test04::publish_localization(){
+    localization_msg.pose.pose.position.x = 77645.28125;
+    localization_msg.pose.pose.position.y = 86593.59375;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = -0.7262689270579424;
-    localization_msg.pose.pose.orientation.w = 0.6874106818999143;
+    localization_msg.pose.pose.orientation.z = 0.6913908193836614;
+    localization_msg.pose.pose.orientation.w = 0.7224809581379908;
 
     localization_msg.header.stamp = this->get_clock()->now();
     localization_msg.header.frame_id = "map";
@@ -72,14 +72,14 @@ namespace test_09{
     pub_local->publish(localization_msg);
   }
 
-  void Test09::publish_goal(){
-    goal_msg.pose.position.x = 77605.203125;
-    goal_msg.pose.position.y = 86640.125;
+  void Test04::publish_goal(){
+    goal_msg.pose.position.x = 77655.609375;
+    goal_msg.pose.position.y = 86834.976562;
 
     goal_msg.pose.orientation.x = 0.0;
     goal_msg.pose.orientation.y = 0.0;
-    goal_msg.pose.orientation.z = -0.7258206195386526;
-    goal_msg.pose.orientation.w = 0.6878840223849705;
+    goal_msg.pose.orientation.z = 0.6937102340784699;
+    goal_msg.pose.orientation.w = 0.7202541989706096;
 
     goal_msg.header.stamp = this->get_clock()->now();
     goal_msg.header.frame_id = "map";
@@ -87,7 +87,7 @@ namespace test_09{
     pub_goal->publish(goal_msg);
   }
 
-  void Test09::set_operation_mode(uint8_t mode){
+  void Test04::set_operation_mode(uint8_t mode){
     auto request = std::make_shared<ChangeOperationMode::Request>();
     request->mode = mode;
 
@@ -101,7 +101,7 @@ namespace test_09{
     auto result = cli_set_operation_mode->async_send_request(request);
   }
 
-  void Test09::set_autoware_control(bool autoware_control){
+  void Test04::set_autoware_control(bool autoware_control){
     auto request = std::make_shared<ChangeAutowareControl::Request>();
     request->autoware_control = autoware_control;
 
@@ -115,11 +115,11 @@ namespace test_09{
     auto result = cli_set_autoware_control->async_send_request(request);
   }
 
-  void Test09::autoware_state_callback(AutowareState::SharedPtr msg){
+  void Test04::autoware_state_callback(AutowareState::SharedPtr msg){
     autoware_state = msg->state;
   }
 
-  void Test09::init_redis_client(){
+  void Test04::init_redis_client(){
     // Connecting to the Redis server on localhost
     context = redisConnect("127.0.0.1", 6379);
 
@@ -135,7 +135,7 @@ namespace test_09{
     }
   }
 
-  string Test09::get_key(string key){
+  string Test04::get_key(string key){
     // GET key
     redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
     string result = "";
@@ -145,4 +145,4 @@ namespace test_09{
   }
 }
 
-RCLCPP_COMPONENTS_REGISTER_NODE(test_09::Test09)
+RCLCPP_COMPONENTS_REGISTER_NODE(test_04::Test04)

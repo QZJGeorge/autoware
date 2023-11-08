@@ -52,7 +52,46 @@ target_link_libraries(test_01_component hiredis Geographic)
 
 rclcpp_components_register_node(test_01_component
   PLUGIN "test_01::Test01"
-  EXECUTABLE test_01
+  EXECUTABLE 01_lane_change
+)
+
+##########################  TEST_02 ####################################
+
+ament_auto_add_library(test_02_component SHARED
+  src/test_02.cpp
+)
+
+target_link_libraries(test_02_component hiredis Geographic)
+
+rclcpp_components_register_node(test_02_component
+  PLUGIN "test_02::Test02"
+  EXECUTABLE 02_car_following
+)
+
+##########################  TEST_03 ####################################
+
+ament_auto_add_library(test_03_component SHARED
+  src/test_03.cpp
+)
+
+target_link_libraries(test_03_component hiredis Geographic)
+
+rclcpp_components_register_node(test_03_component
+  PLUGIN "test_03::Test03"
+  EXECUTABLE 03_lane_departure_same
+)
+
+##########################  TEST_04 ####################################
+
+ament_auto_add_library(test_04_component SHARED
+  src/test_04.cpp
+)
+
+target_link_libraries(test_04_component hiredis Geographic)
+
+rclcpp_components_register_node(test_04_component
+  PLUGIN "test_04::Test04"
+  EXECUTABLE 04_lane_departure_opposite
 )
 
 ##########################  TEST_05 ####################################
@@ -65,7 +104,7 @@ target_link_libraries(test_05_component hiredis Geographic)
 
 rclcpp_components_register_node(test_05_component
   PLUGIN "test_05::Test05"
-  EXECUTABLE test_05
+  EXECUTABLE 05_left_turn_straight
 )
 
 ##########################  TEST_06 ####################################
@@ -78,7 +117,7 @@ target_link_libraries(test_06_component hiredis Geographic)
 
 rclcpp_components_register_node(test_06_component
   PLUGIN "test_06::Test06"
-  EXECUTABLE test_06
+  EXECUTABLE 06_left_turn_turn
 )
 
 ##########################  TEST_07 ####################################
@@ -91,7 +130,7 @@ target_link_libraries(test_07_component hiredis Geographic)
 
 rclcpp_components_register_node(test_07_component
   PLUGIN "test_07::Test07"
-  EXECUTABLE test_07
+  EXECUTABLE 07_right_turn_straight
 )
 
 ##########################  TEST_08 ####################################
@@ -104,7 +143,7 @@ target_link_libraries(test_08_component hiredis Geographic)
 
 rclcpp_components_register_node(test_08_component
   PLUGIN "test_08::Test08"
-  EXECUTABLE test_08
+  EXECUTABLE 08_right_turn_turn
 )
 
 ##########################  TEST_09 ####################################
@@ -117,7 +156,7 @@ target_link_libraries(test_09_component hiredis Geographic)
 
 rclcpp_components_register_node(test_09_component
   PLUGIN "test_09::Test09"
-  EXECUTABLE test_09
+  EXECUTABLE 09_jaywalking
 )
 
 ##########################  TEST_10 ####################################
@@ -130,7 +169,7 @@ target_link_libraries(test_10_component hiredis Geographic)
 
 rclcpp_components_register_node(test_10_component
   PLUGIN "test_10::Test10"
-  EXECUTABLE test_10
+  EXECUTABLE 10_vru_crosswalk
 )
 
 ##########################  TEST_11 ####################################
@@ -143,7 +182,7 @@ target_link_libraries(test_11_component hiredis Geographic)
 
 rclcpp_components_register_node(test_11_component
   PLUGIN "test_11::Test11"
-  EXECUTABLE test_11
+  EXECUTABLE 11_roundabout_outside
 )
 
 ##########################  TEST_12 ####################################
@@ -156,9 +195,8 @@ target_link_libraries(test_12_component hiredis Geographic)
 
 rclcpp_components_register_node(test_12_component
   PLUGIN "test_12::Test12"
-  EXECUTABLE test_12
+  EXECUTABLE 12_roundabout_inside
 )
-
 
 ament_auto_package(
   INSTALL_TO_SHARE

@@ -1,0 +1,113 @@
+[  3%] Built target abc_context_converter
+[ 17%] Built target 11_roundabout_outside
+[ 17%] Built target 01_lane_change
+[ 26%] Built target 02_car_following
+[ 28%] Built target 07_right_turn_straight
+[ 28%] Built target 06_left_turn_turn
+[ 26%] Built target 04_lane_departure_opposite
+[ 28%] Built target 03_lane_departure_same
+[ 32%] Built target abc_info_converter
+[ 39%] Built target 09_jaywalking
+[ 39%] Built target 10_vru_crosswalk
+[ 42%] Built target 12_roundabout_inside
+[ 46%] Built target 08_right_turn_turn
+[ 50%] Built target abc_info_converter_component
+[ 53%] Built target 05_left_turn_straight
+[ 57%] Built target abc_context_converter_component
+[ 60%] Built target test_01_component
+[ 64%] Built target test_02_component
+[ 67%] Built target test_03_component
+[ 71%] Built target test_04_component
+[ 75%] Built target test_05_component
+[ 78%] Built target test_06_component
+[ 82%] Built target test_07_component
+[ 85%] Built target test_08_component
+[ 87%] [32mBuilding CXX object CMakeFiles/test_09_component.dir/src/test_09.cpp.o[0m
+[ 89%] [32m[1mLinking CXX shared library libtest_09_component.so[0m
+[ 89%] Built target test_09_component
+[ 91%] [32m[1mLinking CXX shared library libtest_10_component.so[0m
+[ 92%] Built target test_10_component
+[ 94%] [32m[1mLinking CXX shared library libtest_11_component.so[0m
+[ 96%] Built target test_11_component
+[ 98%] [32m[1mLinking CXX shared library libtest_12_component.so[0m
+[100%] Built target test_12_component
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/abc_info_converter
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/abc_context_converter
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/01_lane_change
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/02_car_following
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/03_lane_departure_same
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/04_lane_departure_opposite
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/05_left_turn_straight
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/06_left_turn_turn
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/07_right_turn_straight
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/08_right_turn_turn
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/09_jaywalking
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/10_vru_crosswalk
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/11_roundabout_outside
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/abc_terasim/12_roundabout_inside
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/abc_context_converter.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/abc_info_converter.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/test_01.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/test_02.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/test_03.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/test_04.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/test_05.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/test_06.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/test_07.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/test_08.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/test_09.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/test_10.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/test_11.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/include/test_12.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libabc_info_converter_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libabc_context_converter_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libtest_01_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libtest_02_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libtest_03_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libtest_04_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libtest_05_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libtest_06_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libtest_07_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libtest_08_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libtest_09_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libtest_10_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libtest_11_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/lib/libtest_12_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/launch/abc.launch.py
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/abc_context_converter.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/abc_info_converter.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/test_01.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/test_02.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/test_03.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/test_04.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/test_05.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/test_06.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/test_07.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/test_08.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/test_09.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/test_10.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/test_11.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/include/test_12.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/ament_index/resource_index/package_run_dependencies/abc_terasim
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/ament_index/resource_index/parent_prefix_path/abc_terasim
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/ament_index/resource_index/packages/abc_terasim
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/ament_index/resource_index/rclcpp_components/abc_terasim
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/cmake/abc_terasimConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/cmake/abc_terasimConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/abc_terasim/share/abc_terasim/package.xml
