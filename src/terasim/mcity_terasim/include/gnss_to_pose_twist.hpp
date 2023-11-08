@@ -12,12 +12,17 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_PLANNER__GNSS_TO_POSE_TWIST_HPP_
-#define MCITY_PLANNER__GNSS_TO_POSE_TWIST_HPP_
+#ifndef MCITY_PLANNER__GNSS_TO_POSE_TWIST__HPP_
+#define MCITY_PLANNER__GNSS_TO_POSE_TWIST__HPP_
 
 #include <iostream>
 #include <GeographicLib/UTMUPS.hpp>
 #include <GeographicLib/MGRS.hpp>
+
+#include <glm/glm.hpp>
+#include <glm/gtc/quaternion.hpp>
+#include <glm/gtx/quaternion.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/header.hpp>
@@ -99,7 +104,7 @@ private:
   void odom_callback(Odometry::SharedPtr msg);
   void nav_callback(NavSatFix::SharedPtr msg);
   void calc_occ_grid();
-  void calc_vehicle_quaternion(float &qx, float &qy, float &qz, float &qw);
+  void calc_vehicle_orientation(float &qx, float &qy, float &qz, float &qw);
   float calc_linear_x();
 };
 

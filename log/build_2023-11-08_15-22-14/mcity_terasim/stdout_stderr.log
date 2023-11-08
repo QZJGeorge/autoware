@@ -1,0 +1,62 @@
+[  6%] Built target sumo_autoware_real
+[ 12%] Built target traffic_signal_control_component
+[ 18%] Built target traffic_signal_control
+[ 25%] Built target gnss_to_pose_twist
+[ 31%] Built target sumo_autoware_cosim
+[ 37%] Built target cav_context_converter
+[ 43%] Built target cav_info_converter
+[ 50%] Built target dbw_ulc_converter
+[ 56%] Built target cav_context_replay
+[ 62%] Built target cav_info_converter_component
+[ 68%] Built target cav_context_converter_component
+[ 75%] Built target cav_context_replay_component
+[ 81%] Built target sumo_autoware_cosim_component
+[ 87%] Built target sumo_autoware_real_component
+[35m[1mConsolidate compiler generated dependencies of target gnss_to_pose_twist_component[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o[0m
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:[m[K In member function ‘[01m[Kvoid gnss_to_pose_twist::GnssToPoseTwist::calc_vehicle_quaternion(float&, float&, float&, float&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:64:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KangleAxis(double, glm::vec3)[m[K’
+   64 |     rotateQuat = [01;31m[Kglm::angleAxis(glm::radians(-90.0), glm::vec3(1.0f, 0.0f, 0.0f))[m[K; // Rotate around y axis
+      |                  [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/glm/ext/quaternion_trigonometric.hpp:63[m[K,
+                 from [01m[K/usr/include/glm/gtc/quaternion.hpp:27[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/include/gnss_to_pose_twist.hpp:23[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:15[m[K:
+[01m[K/usr/include/glm/ext/quaternion_trigonometric.inl:27:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, glm::qualifier Q> glm::qua<T, Q> glm::angleAxis(const T&, const glm::vec<3, T, Q>&)[m[K’
+   27 |         GLM_FUNC_QUALIFIER qua<T, Q> [01;36m[KangleAxis[m[K(T const& angle, vec<3, T, Q> const& v)
+      |                                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/glm/ext/quaternion_trigonometric.inl:27:38:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:64:32:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[KT[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+   64 |     rotateQuat = [01;36m[Kglm::angleAxis(glm::radians(-90.0), glm::vec3(1.0f, 0.0f, 0.0f))[m[K; // Rotate around y axis
+      |                  [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:67:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KangleAxis(double, glm::vec3)[m[K’
+   67 |     rotateQuat = [01;31m[Kglm::angleAxis(glm::radians(90.0), glm::vec3(0.0f, 1.0f, 0.0f))[m[K; // Rotate around y axis
+      |                  [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/glm/ext/quaternion_trigonometric.hpp:63[m[K,
+                 from [01m[K/usr/include/glm/gtc/quaternion.hpp:27[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/include/gnss_to_pose_twist.hpp:23[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:15[m[K:
+[01m[K/usr/include/glm/ext/quaternion_trigonometric.inl:27:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, glm::qualifier Q> glm::qua<T, Q> glm::angleAxis(const T&, const glm::vec<3, T, Q>&)[m[K’
+   27 |         GLM_FUNC_QUALIFIER qua<T, Q> [01;36m[KangleAxis[m[K(T const& angle, vec<3, T, Q> const& v)
+      |                                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/glm/ext/quaternion_trigonometric.inl:27:38:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:67:32:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[KT[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+   67 |     rotateQuat = [01;36m[Kglm::angleAxis(glm::radians(90.0), glm::vec3(0.0f, 1.0f, 0.0f))[m[K; // Rotate around y axis
+      |                  [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:70:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KangleAxis(double, glm::vec3)[m[K’
+   70 |     rotateQuat = [01;31m[Kglm::angleAxis(glm::radians(-90.0), glm::vec3(0.0f, 0.0f, 1.0f))[m[K; // Rotate around y axis
+      |                  [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/glm/ext/quaternion_trigonometric.hpp:63[m[K,
+                 from [01m[K/usr/include/glm/gtc/quaternion.hpp:27[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/include/gnss_to_pose_twist.hpp:23[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:15[m[K:
+[01m[K/usr/include/glm/ext/quaternion_trigonometric.inl:27:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, glm::qualifier Q> glm::qua<T, Q> glm::angleAxis(const T&, const glm::vec<3, T, Q>&)[m[K’
+   27 |         GLM_FUNC_QUALIFIER qua<T, Q> [01;36m[KangleAxis[m[K(T const& angle, vec<3, T, Q> const& v)
+      |                                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/glm/ext/quaternion_trigonometric.inl:27:38:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:70:32:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[KT[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+   70 |     rotateQuat = [01;36m[Kglm::angleAxis(glm::radians(-90.0), glm::vec3(0.0f, 0.0f, 1.0f))[m[K; // Rotate around y axis
+      |                  [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gnss_to_pose_twist_component.dir/build.make:76: CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:494: CMakeFiles/gnss_to_pose_twist_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,24 @@
+[  6%] Built target cav_context_converter
+[ 12%] Built target sumo_autoware_cosim
+[ 18%] Built target gnss_to_pose_twist
+[ 31%] Built target dbw_ulc_converter
+[ 31%] Built target traffic_signal_control
+[ 37%] Built target sumo_autoware_real
+[ 43%] Built target cav_info_converter
+[ 50%] Built target cav_context_replay
+[ 56%] Built target traffic_signal_control_component
+[ 62%] Built target cav_info_converter_component
+[ 68%] Built target cav_context_converter_component
+[ 75%] Built target cav_context_replay_component
+[ 81%] Built target sumo_autoware_cosim_component
+[ 87%] Built target sumo_autoware_real_component
+[35m[1mConsolidate compiler generated dependencies of target gnss_to_pose_twist_component[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o[0m
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:[m[K In member function ‘[01m[Kvoid gnss_to_pose_twist::GnssToPoseTwist::calc_vehicle_quaternion(float&, float&, float&, float&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:75:12:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kroll_ori[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+   75 |     double [01;31m[Kroll_ori[m[K = std::atan2(sinr_cosp, cosr_cosp);
+      |            [01;31m[K^~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/gnss_to_pose_twist_component.dir/build.make:76: CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:494: CMakeFiles/gnss_to_pose_twist_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

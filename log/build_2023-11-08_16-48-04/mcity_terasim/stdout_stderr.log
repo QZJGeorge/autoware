@@ -1,0 +1,45 @@
+[  6%] Built target cav_context_replay
+[ 12%] Built target sumo_autoware_real
+[ 18%] Built target dbw_ulc_converter
+[ 25%] Built target gnss_to_pose_twist
+[ 31%] Built target cav_info_converter
+[ 37%] Built target sumo_autoware_cosim
+[ 50%] Built target traffic_signal_control
+[ 50%] Built target cav_context_converter
+[ 56%] Built target traffic_signal_control_component
+[ 62%] Built target cav_info_converter_component
+[ 68%] Built target cav_context_converter_component
+[ 75%] Built target cav_context_replay_component
+[ 81%] Built target sumo_autoware_cosim_component
+[ 87%] Built target sumo_autoware_real_component
+[35m[1mConsolidate compiler generated dependencies of target gnss_to_pose_twist_component[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o[0m
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:[m[K In member function ‘[01m[Kvoid gnss_to_pose_twist::GnssToPoseTwist::calc_vehicle_quaternion(float&, float&, float&, float&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:89:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kaxis[m[K’ was not declared in this scope; did you mean ‘[01m[Kglm::axis[m[K’?
+   89 |     yaw (z-[01;31m[Kaxis[m[K rotation)
+      |            [01;31m[K^~~~[m[K
+      |            [32m[Kglm::axis[m[K
+In file included from [01m[K/usr/include/glm/ext/quaternion_trigonometric.hpp:63[m[K,
+                 from [01m[K/usr/include/glm/gtc/quaternion.hpp:27[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/include/gnss_to_pose_twist.hpp:23[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:15[m[K:
+[01m[K/usr/include/glm/ext/quaternion_trigonometric.inl:17:41:[m[K [01;36m[Knote: [m[K‘[01m[Kglm::axis[m[K’ declared here
+   17 |         GLM_FUNC_QUALIFIER vec<3, T, Q> [01;36m[Kaxis[m[K(qua<T, Q> const& x)
+      |                                         [01;36m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:89:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw[m[K’ was not declared in this scope; did you mean ‘[01m[Kglm::yaw[m[K’?
+   89 |     [01;31m[Kyaw[m[K (z-axis rotation)
+      |     [01;31m[K^~~[m[K
+      |     [32m[Kglm::yaw[m[K
+In file included from [01m[K/usr/include/glm/gtc/quaternion.hpp:173[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/include/gnss_to_pose_twist.hpp:23[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:15[m[K:
+[01m[K/usr/include/glm/gtc/quaternion.inl:35:30:[m[K [01;36m[Knote: [m[K‘[01m[Kglm::yaw[m[K’ declared here
+   35 |         GLM_FUNC_QUALIFIER T [01;36m[Kyaw[m[K(qua<T, Q> const& q)
+      |                              [01;36m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:92:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ksiny_cosp[m[K’ was not declared in this scope; did you mean ‘[01m[Ksinr_cosp[m[K’?
+   92 |     double yaw_ori = std::atan2([01;31m[Ksiny_cosp[m[K, cosy_cosp);
+      |                                 [01;31m[K^~~~~~~~~[m[K
+      |                                 [32m[Ksinr_cosp[m[K
+gmake[2]: *** [CMakeFiles/gnss_to_pose_twist_component.dir/build.make:76: CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:494: CMakeFiles/gnss_to_pose_twist_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
