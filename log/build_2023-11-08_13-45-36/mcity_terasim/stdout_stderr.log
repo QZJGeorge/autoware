@@ -1,0 +1,21 @@
+-- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+[31mCMake Error at CMakeLists.txt:5 (find_package):
+  By not providing "FindGLM.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "GLM", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "GLM" with any of
+  the following names:
+
+    GLMConfig.cmake
+    glm-config.cmake
+
+  Add the installation prefix of "GLM" to CMAKE_PREFIX_PATH or set "GLM_DIR"
+  to a directory containing one of the above files.  If "GLM" provides a
+  separate development package or SDK, be sure it has been installed.
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/home/zhijie/autoware/build/mcity_terasim/CMakeFiles/CMakeOutput.log".
+gmake: *** [Makefile:882: cmake_check_build_system] Error 1

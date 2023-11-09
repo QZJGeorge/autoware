@@ -1,0 +1,16 @@
+[  6%] Built target sumo_autoware_cosim
+[ 18%] Built target dbw_ulc_converter
+[ 18%] Built target sumo_autoware_real
+[ 25%] Built target cav_context_replay
+[ 37%] Built target gnss_to_pose_twist
+[ 37%] Built target cav_context_converter
+[ 43%] Built target cav_info_converter
+[ 56%] Built target traffic_signal_control_component
+[ 56%] Built target traffic_signal_control
+[ 62%] Built target cav_info_converter_component
+[ 68%] Built target cav_context_converter_component
+[ 75%] Built target cav_context_replay_component
+[ 81%] Built target sumo_autoware_cosim_component
+[ 87%] Built target sumo_autoware_real_component
+[35m[1mConsolidate compiler generated dependencies of target gnss_to_pose_twist_component[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o[0m

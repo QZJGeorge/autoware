@@ -1,0 +1,40 @@
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:[m[K In member function ‘[01m[Kvoid gnss_to_pose_twist::GnssToPoseTwist::calc_vehicle_quaternion(float&, float&, float&, float&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:67:11:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kfloat angleInRadians[m[K’
+   67 |     float [01;31m[KangleInRadians[m[K = glm::radians(90.0);
+      |           [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:63:11:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat angleInRadians[m[K’ previously declared here
+   63 |     float [01;36m[KangleInRadians[m[K = glm::radians(-90.0);
+      |           [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:68:15:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kglm::quat rotateQuat[m[K’
+   68 |     glm::quat [01;31m[KrotateQuat[m[K = glm::angleAxis(angleInRadians, glm::vec3(0.0f, 1.0f, 0.0f)); // Rotate around y axis
+      |               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:64:15:[m[K [01;36m[Knote: [m[K‘[01m[Kglm::quat rotateQuat[m[K’ previously declared here
+   64 |     glm::quat [01;36m[KrotateQuat[m[K = glm::angleAxis(angleInRadians, glm::vec3(1.0f, 0.0f, 0.0f)); // Rotate around y axis
+      |               [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:69:15:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kglm::quat rotatedQuat[m[K’
+   69 |     glm::quat [01;31m[KrotatedQuat[m[K = glm::normalize(rotateQuat * originalQuat);
+      |               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:65:15:[m[K [01;36m[Knote: [m[K‘[01m[Kglm::quat rotatedQuat[m[K’ previously declared here
+   65 |     glm::quat [01;36m[KrotatedQuat[m[K = glm::normalize(rotateQuat * originalQuat);
+      |               [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:71:11:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kfloat angleInRadians[m[K’
+   71 |     float [01;31m[KangleInRadians[m[K = glm::radians(-90.0);
+      |           [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:63:11:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat angleInRadians[m[K’ previously declared here
+   63 |     float [01;36m[KangleInRadians[m[K = glm::radians(-90.0);
+      |           [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:72:15:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kglm::quat rotateQuat[m[K’
+   72 |     glm::quat [01;31m[KrotateQuat[m[K = glm::angleAxis(angleInRadians, glm::vec3(0.0f, 0.0f, 1.0f)); // Rotate around y axis
+      |               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:64:15:[m[K [01;36m[Knote: [m[K‘[01m[Kglm::quat rotateQuat[m[K’ previously declared here
+   64 |     glm::quat [01;36m[KrotateQuat[m[K = glm::angleAxis(angleInRadians, glm::vec3(1.0f, 0.0f, 0.0f)); // Rotate around y axis
+      |               [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:73:15:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kglm::quat rotatedQuat[m[K’
+   73 |     glm::quat [01;31m[KrotatedQuat[m[K = glm::normalize(rotateQuat * originalQuat);
+      |               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:65:15:[m[K [01;36m[Knote: [m[K‘[01m[Kglm::quat rotatedQuat[m[K’ previously declared here
+   65 |     glm::quat [01;36m[KrotatedQuat[m[K = glm::normalize(rotateQuat * originalQuat);
+      |               [01;36m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gnss_to_pose_twist_component.dir/build.make:76: CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:494: CMakeFiles/gnss_to_pose_twist_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

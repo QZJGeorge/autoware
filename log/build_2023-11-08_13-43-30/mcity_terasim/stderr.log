@@ -1,0 +1,17 @@
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:[m[K In member function ‘[01m[Kvoid gnss_to_pose_twist::GnssToPoseTwist::calc_vehicle_quaternion(float&, float&, float&, float&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:56:12:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+   56 |     double [01;31m[Kx[m[K = saved_imu_msg.orientation.x;
+      |            [01;31m[K^[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:57:12:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+   57 |     double [01;31m[Ky[m[K = saved_imu_msg.orientation.y;
+      |            [01;31m[K^[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:58:12:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kz[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+   58 |     double [01;31m[Kz[m[K = saved_imu_msg.orientation.z;
+      |            [01;31m[K^[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:59:12:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kw[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+   59 |     double [01;31m[Kw[m[K = saved_imu_msg.orientation.w;
+      |            [01;31m[K^[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/gnss_to_pose_twist_component.dir/build.make:76: CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:494: CMakeFiles/gnss_to_pose_twist_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,115 @@
+-- Found autoware_cmake: 0.1.0 (/home/zhijie/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Found Qhull version 8.0.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/zhijie/autoware/src/terasim/mcity_terasim/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhijie/autoware/build/mcity_terasim
+[35m[1mConsolidate compiler generated dependencies of target sumo_autoware_real[0m
+[35m[1mConsolidate compiler generated dependencies of target cav_info_converter[0m
+[35m[1mConsolidate compiler generated dependencies of target sumo_autoware_cosim[0m
+[35m[1mConsolidate compiler generated dependencies of target dbw_ulc_converter[0m
+[35m[1mConsolidate compiler generated dependencies of target traffic_signal_control[0m
+[35m[1mConsolidate compiler generated dependencies of target cav_context_converter[0m
+[35m[1mConsolidate compiler generated dependencies of target cav_context_replay[0m
+[35m[1mConsolidate compiler generated dependencies of target traffic_signal_control_component[0m
+[35m[1mConsolidate compiler generated dependencies of target gnss_to_pose_twist[0m
+[  3%] [32mBuilding CXX object CMakeFiles/sumo_autoware_real.dir/rclcpp_components/node_main_sumo_autoware_real.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/sumo_autoware_cosim.dir/rclcpp_components/node_main_sumo_autoware_cosim.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/cav_info_converter.dir/rclcpp_components/node_main_cav_info_converter.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/dbw_ulc_converter.dir/rclcpp_components/node_main_dbw_ulc_converter.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/gnss_to_pose_twist.dir/rclcpp_components/node_main_gnss_to_pose_twist.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/traffic_signal_control_component.dir/src/traffic_signal_control.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/traffic_signal_control.dir/rclcpp_components/node_main_traffic_signal_control.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/cav_context_replay.dir/rclcpp_components/node_main_cav_context_replay.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/cav_context_converter.dir/rclcpp_components/node_main_cav_context_converter.cpp.o[0m
+[ 31%] [32m[1mLinking CXX executable dbw_ulc_converter[0m
+[ 34%] [32m[1mLinking CXX executable cav_info_converter[0m
+[ 37%] [32m[1mLinking CXX executable sumo_autoware_cosim[0m
+[ 40%] [32m[1mLinking CXX executable traffic_signal_control[0m
+[ 43%] [32m[1mLinking CXX executable gnss_to_pose_twist[0m
+[ 43%] Built target dbw_ulc_converter
+[ 43%] Built target cav_info_converter
+[ 43%] Built target traffic_signal_control
+[ 43%] Built target sumo_autoware_cosim
+[ 43%] Built target gnss_to_pose_twist
+[ 46%] [32m[1mLinking CXX executable cav_context_replay[0m
+[ 50%] [32m[1mLinking CXX executable cav_context_converter[0m
+[ 50%] Built target cav_context_replay
+[ 53%] [32m[1mLinking CXX executable sumo_autoware_real[0m
+[ 53%] Built target cav_context_converter
+[ 53%] Built target sumo_autoware_real
+[ 56%] [32m[1mLinking CXX shared library libtraffic_signal_control_component.so[0m
+[ 56%] Built target traffic_signal_control_component
+[35m[1mConsolidate compiler generated dependencies of target cav_info_converter_component[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/cav_info_converter_component.dir/src/cav_info_converter.cpp.o[0m
+[ 62%] [32m[1mLinking CXX shared library libcav_info_converter_component.so[0m
+[ 62%] Built target cav_info_converter_component
+[35m[1mConsolidate compiler generated dependencies of target cav_context_converter_component[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/cav_context_converter_component.dir/src/cav_context_converter.cpp.o[0m
+[ 68%] [32m[1mLinking CXX shared library libcav_context_converter_component.so[0m
+[ 68%] Built target cav_context_converter_component
+[35m[1mConsolidate compiler generated dependencies of target cav_context_replay_component[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/cav_context_replay_component.dir/src/cav_context_replay.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library libcav_context_replay_component.so[0m
+[ 75%] Built target cav_context_replay_component
+[35m[1mConsolidate compiler generated dependencies of target sumo_autoware_cosim_component[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/sumo_autoware_cosim_component.dir/src/sumo_autoware_cosim.cpp.o[0m
+[ 81%] [32m[1mLinking CXX shared library libsumo_autoware_cosim_component.so[0m
+[ 81%] Built target sumo_autoware_cosim_component
+[35m[1mConsolidate compiler generated dependencies of target sumo_autoware_real_component[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/sumo_autoware_real_component.dir/src/sumo_autoware_real.cpp.o[0m
+[ 87%] [32m[1mLinking CXX shared library libsumo_autoware_real_component.so[0m
+[ 87%] Built target sumo_autoware_real_component
+[35m[1mConsolidate compiler generated dependencies of target gnss_to_pose_twist_component[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o[0m
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:[m[K In member function ‘[01m[Kvoid gnss_to_pose_twist::GnssToPoseTwist::calc_vehicle_quaternion(float&, float&, float&, float&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:99:12:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kroll[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+   99 |     double [01;31m[Kroll[m[K = 0.0;
+      |            [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:100:12:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kpitch[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+  100 |     double [01;31m[Kpitch[m[K = 0.0;
+      |            [01;31m[K^~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:101:12:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kyaw[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+  101 |     double [01;31m[Kyaw[m[K = -roll_ori;
+      |            [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:60:56:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kqx[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Werror=unused-parameter]8;;[m[K]
+   60 |   void GnssToPoseTwist::calc_vehicle_quaternion([01;31m[Kfloat &qx[m[K, float &qy, float &qz, float &qw){
+      |                                                 [01;31m[K~~~~~~~^~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:60:67:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kqy[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Werror=unused-parameter]8;;[m[K]
+   60 |   void GnssToPoseTwist::calc_vehicle_quaternion(float &qx, [01;31m[Kfloat &qy[m[K, float &qz, float &qw){
+      |                                                            [01;31m[K~~~~~~~^~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:60:78:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kqz[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Werror=unused-parameter]8;;[m[K]
+   60 |   void GnssToPoseTwist::calc_vehicle_quaternion(float &qx, float &qy, [01;31m[Kfloat &qz[m[K, float &qw){
+      |                                                                       [01;31m[K~~~~~~~^~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:60:89:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kqw[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Werror=unused-parameter]8;;[m[K]
+   60 |   void GnssToPoseTwist::calc_vehicle_quaternion(float &qx, float &qy, float &qz, [01;31m[Kfloat &qw[m[K){
+      |                                                                                  [01;31m[K~~~~~~~^~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/gnss_to_pose_twist_component.dir/build.make:76: CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:494: CMakeFiles/gnss_to_pose_twist_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

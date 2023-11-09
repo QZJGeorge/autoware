@@ -10,6 +10,7 @@ include_directories(
     include                 # for header files
     /usr/include/hiredis
     /usr/include/GeographicLib
+    /usr/include/glm
 )
 
 # Add link directories (also for redis)

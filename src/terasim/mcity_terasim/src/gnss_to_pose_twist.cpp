@@ -15,7 +15,6 @@
 #include "gnss_to_pose_twist.hpp"
 
 namespace gnss_to_pose_twist{
-
   GnssToPoseTwist::GnssToPoseTwist(const rclcpp::NodeOptions & options)
   : Node("gnss_to_pose_twist", options)
   {
@@ -53,28 +52,42 @@ namespace gnss_to_pose_twist{
     return speed;
   }
 
-  void GnssToPoseTwist::calc_vehicle_quaternion(float &qx, float &qy, float &qz, float &qw){
-    double x = saved_imu_msg.orientation.x;
-    double y = saved_imu_msg.orientation.y;
-    double z = saved_imu_msg.orientation.z;
-    double w = saved_imu_msg.orientation.w;
+  void GnssToPoseTwist::calc_vehicle_orientation(float &qx, float &qy, float &qz, float &qw){
+    qx = saved_imu_msg.orientation.x;
+    qy = saved_imu_msg.orientation.y;
+    qz = saved_imu_msg.orientation.z;
+    qw = saved_imu_msg.orientation.w;
+    
+    // rotate the quaternion by its local axis three times to align the imu's frame with the vehicle's frame
+    glm::quat quat = glm::quat(qw,qx,qy,qz);
+    glm::quat rotationAroundX = glm::angleAxis(glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+    glm::quat rotationAroundY = glm::angleAxis(glm::radians(-90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    glm::quat rotationAroundZ = glm::angleAxis(glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
-    // yaw (z-axis rotation)
-    double sinr_cosp = 2 * (w * x + y * z);
-    double cosr_cosp = 1 - 2 * (x * x + y * y);
-    double yaw = std::atan2(sinr_cosp, cosr_cosp);
+    quat = quat * rotationAroundX * rotationAroundY * rotationAroundZ;
 
-    // pitch (y-axis rotation)
-    double sinp = std::sqrt(1 + 2 * (w * y - x * z));
-    double cosp = std::sqrt(1 - 2 * (w * y - x * z));
-    double pitch = -(2 * std::atan2(sinp, cosp) - M_PI / 2 - M_PI/2);
+    saved_imu_msg.orientation.x = qx = quat.x;
+    saved_imu_msg.orientation.y = qy = quat.y;
+    saved_imu_msg.orientation.z = qz = quat.z;
+    saved_imu_msg.orientation.w = qw = quat.w;
 
-    double roll = 0.0;
-
-    qx = cos(yaw/2) * sin(roll/2) * cos(pitch/2) - sin(yaw/2) * cos(roll/2) * sin(pitch/2);
-    qy = cos(yaw/2) * cos(roll/2) * sin(pitch/2) + sin(yaw/2) * sin(roll/2) * cos(pitch/2);
-    qz = sin(yaw/2) * cos(roll/2) * cos(pitch/2) - cos(yaw/2) * sin(roll/2) * sin(pitch/2);
-    qw = cos(yaw/2) * cos(roll/2) * cos(pitch/2) + sin(yaw/2) * sin(roll/2) * sin(pitch/2);
+    // // The following is for debugging purpose only
+    // // roll (x-axis rotation)
+    // double sinr_cosp = 2 * (qw * qx + qy * qz);
+    // double cosr_cosp = 1 - 2 * (qx * qx + qy * qy);
+    // double roll_ori = std::atan2(sinr_cosp, cosr_cosp);
+    // // pitch (y-axis rotation)
+    // double sinp = std::sqrt(1 + 2 * (qw * qy - qx * qz));
+    // double cosp = std::sqrt(1 - 2 * (qw * qy - qx * qz));
+    // double pitch_ori = 2 * std::atan2(sinp, cosp) - M_PI / 2;
+    // // yaw (z-axis rotation)
+    // double siny_cosp = 2 * (qw * qz + qx * qy);
+    // double cosy_cosp = 1 - 2 * (qy * qy + qz * qz);
+    // double yaw_ori = std::atan2(siny_cosp, cosy_cosp);
+    // // print out the orientation
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "roll_ori: %f", roll_ori);
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "pitch_ori: %f", pitch_ori);
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "yaw_ori: %f", yaw_ori);
   }
 
   void GnssToPoseTwist::imu_callback(Imu::SharedPtr msg){
@@ -113,8 +126,7 @@ namespace gnss_to_pose_twist{
     grid_msg.info.resolution = 1.0; // Set resolution
     grid_msg.info.width = 100; // Set width
     grid_msg.info.height = 100; // Set height
-    // Set all spaces as free (100 for occupied, -1 for unknown)
-    grid_msg.data = std::vector<int8_t>(grid_msg.info.width * grid_msg.info.height, 0);
+    grid_msg.data = std::vector<int8_t>(grid_msg.info.width * grid_msg.info.height, 0); // Set all spaces as free
   }
 
   void GnssToPoseTwist::pub_localization(){
@@ -128,17 +140,17 @@ namespace gnss_to_pose_twist{
 
     double latitude = saved_nav_sat_fix_msg.latitude;
     double longitude = saved_nav_sat_fix_msg.longitude;
-    double altitude = saved_nav_sat_fix_msg.altitude;
 
     double easting, northing;
     gcs_to_mgrs(latitude, longitude, easting, northing);
 
     pose_with_cov.pose.pose.position.x = (float)easting;
     pose_with_cov.pose.pose.position.y = (float)northing;
-    pose_with_cov.pose.pose.position.z = (float)altitude;
+
+    pose_with_cov.pose.pose.position.z = (float)0.0;
 
     float qx, qy, qz, qw;
-    calc_vehicle_quaternion(qx, qy, qz, qw);
+    calc_vehicle_orientation(qx, qy, qz, qw);
 
     pose_with_cov.pose.pose.orientation.x = qx;
     pose_with_cov.pose.pose.orientation.y = qy;

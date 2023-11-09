@@ -1,0 +1,22 @@
+[  6%] Built target cav_context_converter
+[ 12%] Built target traffic_signal_control
+[ 18%] Built target sumo_autoware_cosim
+[ 25%] Built target cav_info_converter
+[ 37%] Built target dbw_ulc_converter
+[ 37%] Built target traffic_signal_control_component
+[ 43%] Built target cav_context_replay
+[ 56%] Built target sumo_autoware_real
+[ 56%] Built target gnss_to_pose_twist
+[ 62%] Built target cav_info_converter_component
+[ 68%] Built target cav_context_converter_component
+[ 75%] Built target cav_context_replay_component
+[ 81%] Built target sumo_autoware_cosim_component
+[ 87%] Built target sumo_autoware_real_component
+[35m[1mConsolidate compiler generated dependencies of target gnss_to_pose_twist_component[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o[0m
+[ 93%] [32m[1mLinking CXX shared library libgnss_to_pose_twist_component.so[0m
+/usr/bin/ld: cannot find -lglm: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/gnss_to_pose_twist_component.dir/build.make:374: libgnss_to_pose_twist_component.so] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:494: CMakeFiles/gnss_to_pose_twist_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

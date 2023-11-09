@@ -1,0 +1,20 @@
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:[m[K In member function ‘[01m[Kvoid gnss_to_pose_twist::GnssToPoseTwist::calc_vehicle_quaternion(float&, float&, float&, float&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:56:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kw[m[K’ was not declared in this scope; did you mean ‘[01m[Kqw[m[K’?
+   56 |     glm::quat originalQuat = glm::quat([01;31m[Kw[m[K,x,y,z);
+      |                                        [01;31m[K^[m[K
+      |                                        [32m[Kqw[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:56:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope; did you mean ‘[01m[Kqx[m[K’?
+   56 |     glm::quat originalQuat = glm::quat(w,[01;31m[Kx[m[K,y,z);
+      |                                          [01;31m[K^[m[K
+      |                                          [32m[Kqx[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:56:44:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+   56 |     glm::quat originalQuat = glm::quat(w,x,[01;31m[Ky[m[K,z);
+      |                                            [01;31m[K^[m[K
+      |                                            [32m[Kyn[m[K
+[01m[K/home/zhijie/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:56:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ was not declared in this scope; did you mean ‘[01m[Kqz[m[K’?
+   56 |     glm::quat originalQuat = glm::quat(w,x,y,[01;31m[Kz[m[K);
+      |                                              [01;31m[K^[m[K
+      |                                              [32m[Kqz[m[K
+gmake[2]: *** [CMakeFiles/gnss_to_pose_twist_component.dir/build.make:76: CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:494: CMakeFiles/gnss_to_pose_twist_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
