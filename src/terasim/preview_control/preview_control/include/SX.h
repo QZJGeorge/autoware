@@ -44,7 +44,7 @@
 #define WHEEL_DIAMETER          (0.673f)
 #define VEHICLE_WEIGHT          (1800.0f)   //kg
 #define L_WHEELS                (2.85f)     //m
-#define L_RTK                   (1.0)
+#define L_rtk                   (1.0)
 #define L_WEIGHT                (1.6)
 
 
@@ -64,10 +64,10 @@
 
 
 // define turn signal
-#define ESTOP_NONE    (0)
-#define ESTOP_LOW     (1)
-#define ESTOP_MEDIUM  (2)
-#define ESTOP_HIGH    (3)
+#define etop_NONE    (0)
+#define etop_LOW     (1)
+#define etop_MEDIUM  (2)
+#define etop_HIGH    (3)
 
 
 // GPS
@@ -132,7 +132,7 @@ public:
 
     double latitude  = 42.2995541 * M_PI / 180.0f;
     double longitude = -83.6975026 * M_PI / 180.0f;
-    std::string RTK_state_string = "";
+    std::string rtk_state_string = "";
  
 };
 
@@ -146,9 +146,9 @@ public:
 
     double timestamp = 0;
 
-    int Estop    = ESTOP_NONE;
+    int etop    = etop_NONE;
     int Go       = 0;
-    int Signal   = 0;
+    int signal   = 0;
 
     double vd     = 0.0f;
     double acc_d  = 0.0f;
@@ -164,15 +164,15 @@ public:
     double x      = 0.0f;
     double y      = 0.0f;
 
-    std::vector<float> crVector;
-    std::vector<float> vdVector;
-    std::vector<float> slopeVector;
-    std::vector<float>  xVector;
-    std::vector<float>  yVector;
+    std::vector<float> cr_vector;
+    std::vector<float> vd_vector;
+    std::vector<float> slope_vector;
+    std::vector<float>  x_vector;
+    std::vector<float>  y_vector;
 
     void ini()
     {
-        Estop = 0;
+        etop = 0;
         Go    = 0;
         vd    = 0.0f;
         cr    = 0.0f;

@@ -4,23 +4,32 @@
   <version>0.1.2</version>
   <description>The mkz_bywire package</description>
  
-  <maintainer email="shaobxu@gmail.com">shaobing</maintainer>
+  <maintainer email="zhijieq@umich.edu">Zhijie Qiao</maintainer>
   <license>To Commercialize</license>
   <author email="shaobxu@gmail.com">shaobing</author>
 
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+  <buildtool_depend>autoware_cmake</buildtool_depend>
 
-  <buildtool_depend>catkin</buildtool_depend>
-
-  <depend>roscpp</depend>
+  <depend>rclpy</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_components</depend>
+  <depend>nav_msgs</depend>
   <depend>std_msgs</depend> 
-  <depend>message_generation</depend>
-  <depend>rospy</depend>
-  <depend>mcity_msg</depend>
   <depend>sensor_msgs</depend>
   <depend>geometry_msgs</depend>
-  <depend>nav_msgs</depend>
+  <depend>mcity_msgs</depend>
+  <depend>dbw_fca_msgs</depend>
+  <depend>dataspeed_dbw_msgs</depend>
  
-  <exec_depend>roslaunch</exec_depend>
+  <exec_depend>ros2launch</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>autoware_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
   
 </package>
 

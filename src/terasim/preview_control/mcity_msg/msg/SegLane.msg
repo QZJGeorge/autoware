@@ -1,8 +1,8 @@
 
-int16 Seg_previous
-int16 Lane_previous
-int16 Seg_current
-int16 Lane_current
-int16 Seg_next
-int16 Lane_next
-int16 requestTrafficLight
+int16 seg_previous
+int16 lane_previous
+int16 seg_current
+int16 lane_current
+int16 seg_next
+int16 lane_next
+int16 request_traffic_light

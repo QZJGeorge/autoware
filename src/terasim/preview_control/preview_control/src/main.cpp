@@ -65,10 +65,10 @@ void update()
     MC.speedCtrl.run();
 
     // step 5: check stop/go
-    if(MC.ssData.p2c.Go == 0)
+    if(MC.ssData.p2c.go == 0)
     {
         MC.speedCtrl.setStop();
-        ROS_WARN_THROTTLE(5,"Decision Go = 0, set stop");
+        ROS_WARN_THROTTLE(5,"Decision go = 0, set stop");
     }
 
     

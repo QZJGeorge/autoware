@@ -1,0 +1,177 @@
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/sx.hpp:11[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:6[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/xmath.hpp:[m[K In function ‘[01m[Kfloat XM::mindist_Rectangle_line(LINE_S2*, Rectangle*)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/xmath.hpp:840:31:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Knull[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+  840 |         float d1, d2, d3, d4, [01;31m[Knull[m[K;
+      |                               [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/xmath.hpp:[m[K In function ‘[01m[Kfloat XM::mindist_Rectangle_Point(Point*, Rectangle*)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/xmath.hpp:852:92:[m[K [01;31m[Kerror: [m[K‘[01m[Knull[m[K’ was not declared in this scope
+  852 |         XM::DistanceFromLine(pt->x, pt->y, rec->p1.x, rec->p1.y, rec->p2.x, rec->p2.y, d1, [01;31m[Knull[m[K);
+      |                                                                                            [01;31m[K^~~~[m[K
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:[m[K At global scope:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:104:5:[m[K [01;31m[Kerror: [m[K‘[01m[KTurnsignalCmd[m[K’ does not name a type; did you mean ‘[01m[KTurnSignal[m[K’?
+  104 |     [01;31m[KTurnsignalCmd[m[K turn_signal_msg;
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[KTurnSignal[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:118:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’
+  118 |     void sysEnableCB[34m[K([m[Kconst[01;31m[K [m[K[32m[KBool[m[K:::SharedPtr msg);
+      |                     [34m[K~[m[K     [01;31m[K^[m[K[32m[K~~~~[m[K
+      |                           [32m[K)[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:118:22:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  118 |     void sysEnableCB([01;31m[Kconst[m[K Bool:::SharedPtr msg);
+      |                      [01;31m[K^~~~~[m[K
+      |                           [32m[K;[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:118:34:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K:[m[K’ token
+  118 |     void sysEnableCB(const Bool::[01;31m[K:[m[KSharedPtr msg);
+      |                                  [01;31m[K^[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In constructor ‘[01m[Kmkz_bywire::MkzBywire::MkzBywire(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:21:51:[m[K [01;31m[Kerror: [m[K‘[01m[KTurnsignalCmd[m[K’ was not declared in this scope; did you mean ‘[01m[KTurnSignal[m[K’?
+   21 |         pub_turn_signal  = this->create_publisher<[01;31m[KTurnsignalCmd[m[K>("/vehicle/turn_signal_cmd", 2);
+      |                                                   [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                   [32m[KTurnSignal[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:21:65:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmkz_bywire::MkzBywire::create_publisher<<expression error> >(const char [25], int)[m[K’
+   21 |         pub_turn_signal  = [01;31m[Kthis->create_publisher<TurnsignalCmd>("/vehicle/turn_signal_cmd", 2)[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:11[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+   73 | [01;36m[KNode[m[K::create_publisher(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:21:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   21 |         pub_turn_signal  = [01;31m[Kthis->create_publisher<TurnsignalCmd>("/vehicle/turn_signal_cmd", 2)[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:46:45:[m[K [01;31m[Kerror: [m[K‘[01m[KIMU[m[K’ was not declared in this scope; did you mean ‘[01m[KImu[m[K’?
+   46 |         sub_imu = this->create_subscription<[01;31m[KIMU[m[K>(
+      |                                             [01;31m[K^~~[m[K
+      |                                             [32m[KImu[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:46:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmkz_bywire::MkzBywire::create_subscription<<expression error> >(const char [9], int, std::_Bind_helper<false, void (mkz_bywire::MkzBywire::*)(std::shared_ptr<sensor_msgs::msg::Imu_<std::allocator<void> > >), mkz_bywire::MkzBywire*, const std::_Placeholder<1>&>::type)[m[K’
+   46 |         sub_imu = [01;31m[Kthis->create_subscription<IMU>([m[K
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   47 | [01;31m[K        "imu/data", 10, std::bind(&MkzBywire::imuCB, this, std::placeholders::_1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:11[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+   92 | [01;36m[KNode[m[K::create_subscription(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:46:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   46 |         sub_imu = [01;31m[Kthis->create_subscription<IMU>([m[K
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   47 | [01;31m[K        "imu/data", 10, std::bind(&MkzBywire::imuCB, this, std::placeholders::_1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:56:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kon_timer[m[K’ is not a member of ‘[01m[Kmkz_bywire::MkzBywire[m[K’
+   56 |             this, get_clock(), 20ms, std::bind(&MkzBywire::[01;31m[Kon_timer[m[K, this));
+      |                                                            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:85:29:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+   85 |         gear_msg.cmd.gear = [01;31m[KGear[m[K::NONE;
+      |                             [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:89:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn_signal_msg[m[K’ was not declared in this scope
+   89 |         [01;31m[Kturn_signal_msg[m[K.cmd.value = Turnsignal::NONE;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:89:37:[m[K [01;31m[Kerror: [m[K‘[01m[KTurnsignal[m[K’ has not been declared
+   89 |         turn_signal_msg.cmd.value = [01;31m[KTurnsignal[m[K::NONE;
+      |                                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In function ‘[01m[Kvoid mkz_bywire::on_timer()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:93:11:[m[K [01;31m[Kerror: [m[Kno pre-increment operator for type
+   93 |         ++[01;31m[Kcount[m[K;
+      |           [01;31m[K^~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:95:18:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K.[m[K’ token
+   95 |         MkzBywire[01;31m[K.[m[Kcheck();
+      |                  [01;31m[K^[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:96:18:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K.[m[K’ token
+   96 |         MkzBywire[01;31m[K.[m[KsensorCheck();
+      |                  [01;31m[K^[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:97:18:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K.[m[K’ token
+   97 |         MkzBywire[01;31m[K.[m[KpublishCmd();
+      |                  [01;31m[K^[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:100:22:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K.[m[K’ token
+  100 |             MkzBywire[01;31m[K.[m[KpublishVehState();
+      |                      [01;31m[K^[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:102:18:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[K<unresolved overloaded function type>[m[K’ and ‘[01m[Kint[m[K’ to binary ‘[01m[Koperator%[m[K’
+  102 |         if (count%FREQ == 0)
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:103:22:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K.[m[K’ token
+  103 |             MkzBywire[01;31m[K.[m[KpublishSensorcheck();
+      |                      [01;31m[K^[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In member function ‘[01m[Kvoid mkz_bywire::MkzBywire::publishCmd()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:121:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+  121 |         if (gear_msg.cmd.gear == [01;31m[KGear[m[K::PARK    ||
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:122:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+  122 |             gear_msg.cmd.gear == [01;31m[KGear[m[K::REVERSE ||
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:123:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+  123 |             gear_msg.cmd.gear == [01;31m[KGear[m[K::NEUTRAL ||
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:124:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+  124 |             gear_msg.cmd.gear == [01;31m[KGear[m[K::DRIVE   ||
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:125:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+  125 |             gear_msg.cmd.gear == [01;31m[KGear[m[K::LOW )
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:156:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn_signal_msg[m[K’ was not declared in this scope
+  156 |         [01;31m[Kturn_signal_msg[m[K.cmd.value = cmd_in.turn_signal;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:157:42:[m[K [01;31m[Kerror: [m[K‘[01m[KTurnsignal[m[K’ has not been declared
+  157 |         if (turn_signal_msg.cmd.value != [01;31m[KTurnsignal[m[K::NONE)
+      |                                          [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:161:9:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_INFO_THROTTLE[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO_THROTTLE[m[K’?
+  161 |         [01;31m[KROS_INFO_THROTTLE[m[K(10, "Publised cmd: T%f B%f S%f Gear-%s TS-%s",
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |         [32m[KRCLCPP_INFO_THROTTLE[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In member function ‘[01m[Kvoid mkz_bywire::MkzBywire::publishVehState()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:213:50:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kmcity_msgs::msg::VehicleState_<std::allocator<void> >::_timestamp_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+  213 |         vs_msg.timestamp = [01;31m[Kthis->get_clock()->now()[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                  [01;31m[K|[m[K
+      |                                                  [01;31m[Krclcpp::Time[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In member function ‘[01m[Kvoid mkz_bywire::MkzBywire::publishSensorcheck()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:219:54:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kmcity_msgs::msg::SensorCheck_<std::allocator<void> >::_timestamp_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+  219 |         sensor_msg.timestamp = [01;31m[Kthis->get_clock()->now()[m[K;
+      |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                      [01;31m[K|[m[K
+      |                                                      [01;31m[Krclcpp::Time[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:39[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:11[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:1[m[K:
+/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of ‘[01m[Kstruct rclcpp::function_traits::function_traits<std::_Bind<void (mkz_bywire::MkzBywire::*(mkz_bywire::MkzBywire*, std::_Placeholder<1>))(...)> >[m[K’:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   recursively required by substitution of ‘[01m[Ktemplate<class MessageT, class CallbackT> struct rclcpp::detail::SubscriptionCallbackTypeHelper<MessageT, CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value, void>::type> [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (mkz_bywire::MkzBywire::*(mkz_bywire::MkzBywire*, std::_Placeholder<1>))(...)>][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   required from ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (mkz_bywire::MkzBywire::*(mkz_bywire::MkzBywire*, std::_Placeholder<1>))(...)>; MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (mkz_bywire::MkzBywire::*(mkz_bywire::MkzBywire*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = std_msgs::msg::Bool_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:122:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (mkz_bywire::MkzBywire::*(mkz_bywire::MkzBywire*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = std_msgs::msg::Bool_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:191:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (mkz_bywire::MkzBywire::*(mkz_bywire::MkzBywire*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (mkz_bywire::MkzBywire::*(mkz_bywire::MkzBywire*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:48:57:[m[K   required from here
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   51 |   using [01;31m[Karguments[m[K = typename tuple_tail<
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   57 |   using [01;31m[Kargument_type[m[K = typename std::tuple_element<N, arguments>::type;
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   59 |   using [01;31m[Kreturn_type[m[K = typename function_traits<decltype( &FunctionT::operator())>::return_type;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/mkz_bywire_component.dir/build.make:76: CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/mkz_bywire_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

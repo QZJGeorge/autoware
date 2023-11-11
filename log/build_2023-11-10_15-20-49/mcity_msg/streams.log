@@ -1,0 +1,43 @@
+[0.004s] Invoking command in '/home/zhijie/autoware/build/mcity_msg': /usr/bin/cmake /home/zhijie/autoware/src/terasim/preview_control/mcity_msg -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/mcity_msg
+[0.067s] -- The C compiler identification is GNU 11.4.0
+[0.122s] -- The CXX compiler identification is GNU 11.4.0
+[0.129s] -- Detecting C compiler ABI info
+[0.174s] -- Detecting C compiler ABI info - done
+[0.179s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.179s] -- Detecting C compile features
+[0.180s] -- Detecting C compile features - done
+[0.183s] -- Detecting CXX compiler ABI info
+[0.233s] -- Detecting CXX compiler ABI info - done
+[0.239s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.239s] -- Detecting CXX compile features
+[0.240s] -- Detecting CXX compile features - done
+[0.242s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.365s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.471s] Error parsing '/home/zhijie/autoware/src/terasim/preview_control/mcity_msg/package.xml':
+[0.501s] Traceback (most recent call last):
+[0.501s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.501s]     main()
+[0.501s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.501s]     raise e
+[0.502s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.502s]     package = parse_package_string(
+[0.502s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[0.502s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[0.502s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/zhijie/autoware/src/terasim/preview_control/mcity_msg/package.xml':
+[0.502s] Error(s):
+[0.502s] - The manifest of package "mcity_msg" (with format version 2) must not contain the following tags: member_of_group
+[0.510s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.510s]   execute_process(/usr/bin/python3.10
+[0.510s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.511s]   /home/zhijie/autoware/src/terasim/preview_control/mcity_msg/package.xml
+[0.511s]   /home/zhijie/autoware/build/mcity_msg/ament_cmake_core/package.cmake)
+[0.511s]   returned error code 1
+[0.511s] Call Stack (most recent call first):
+[0.511s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.511s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:42 (ament_package_xml)
+[0.511s]   CMakeLists.txt:49 (ament_auto_find_build_dependencies)
+[0.511s] 
+[0.511s] [0m
+[0.511s] -- Configuring incomplete, errors occurred!
+[0.511s] See also "/home/zhijie/autoware/build/mcity_msg/CMakeFiles/CMakeOutput.log".
+[0.514s] Invoked command in '/home/zhijie/autoware/build/mcity_msg' returned '1': /usr/bin/cmake /home/zhijie/autoware/src/terasim/preview_control/mcity_msg -DCMAKE_INSTALL_PREFIX=/home/zhijie/autoware/install/mcity_msg

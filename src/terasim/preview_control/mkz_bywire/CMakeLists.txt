@@ -1,53 +1,29 @@
-
-
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.14)
 project(mkz_bywire)
 
+find_package(autoware_cmake REQUIRED)
 
-add_definitions(-std=c++11)
+autoware_package()
 
-
-find_package(catkin REQUIRED COMPONENTS
-	roscpp
-	rospy
-	std_msgs
-	mcity_msg
-  	sensor_msgs
-  	geometry_msgs
-  	nav_msgs
-)
-
-catkin_package(CATKIN_DEPENDS
-	roscpp
-	std_msgs
-	rospy
-)
-
-
-
-## Build 
+# Add include directories
 include_directories(
-	${catkin_INCLUDE_DIRS}
-	${PROJECT_SOURCE_DIR}/include
-	../include
+    include                 # for header files
 )
 
+#############################  TRAFFIC SIGNAL CONTROL  ##############################
 
-add_executable(${PROJECT_NAME}
-	src/main.cpp
-	src/rosNode.cpp
-	src/check.cpp
-	src/recv.cpp
+ament_auto_add_library(mkz_bywire_component SHARED
+  src/mkz_bywire.cpp
 )
 
-target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
-add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
+# target_link_libraries(mkz_bywire_component hiredis)
 
-## Install
-install(TARGETS ${PROJECT_NAME}
-        RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+rclcpp_components_register_node(mkz_bywire_component
+  PLUGIN "mkz_bywire::MkzBywire"
+  EXECUTABLE mkz_bywire
 )
 
-install(DIRECTORY launch
-        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+ament_auto_package(
+  INSTALL_TO_SHARE
+  include
 )

@@ -1,0 +1,23 @@
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:101:71:[m[K [01;31m[Kerror: [m[K‘[01m[Kdataspeed_dbw_msgs::msg::ThrottleReport_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Werror=deprecated-declarations]8;;[m[K]
+  101 |     void MkzBywire::throttleReptCB(const ThrottleReport::ConstPtr& msg[01;31m[K)[m[K
+      |                                                                       [01;31m[K^[m[K
+In file included from [01m[K/home/zhijie/autoware/build/dataspeed_dbw_msgs/rosidl_generator_cpp/dataspeed_dbw_msgs/msg/throttle_report.hpp:7[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:33[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/build/dataspeed_dbw_msgs/rosidl_generator_cpp/dataspeed_dbw_msgs/msg/detail/throttle_report__struct.hpp:242:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  242 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:101:10:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid mkz_bywire::MkzBywire::throttleReptCB(const ConstPtr&)[m[K’
+  101 |     void [01;31m[KMkzBywire[m[K::throttleReptCB(const ThrottleReport::ConstPtr& msg)
+      |          [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:123:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid mkz_bywire::MkzBywire::throttleReptCB(dataspeed_dbw_msgs::msg::ThrottleReport_<std::allocator<void> >::SharedPtr)[m[K’
+  123 |     void [01;36m[KthrottleReptCB[m[K(const ThrottleReport::SharedPtr msg);
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:68:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass mkz_bywire::MkzBywire[m[K’ defined here
+   68 | class [01;36m[KMkzBywire[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/mkz_bywire_component.dir/build.make:76: CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/mkz_bywire_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

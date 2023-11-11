@@ -1,8 +1,8 @@
 
 float64 timestamp
-int16 	Estop
-bool 	Go
-int16 	Signal
+int16 	etop
+bool 	go
+int16 	signal
 
 float64 vd
 float64 acc_d
@@ -13,12 +13,12 @@ float64 ey
 float64 ephi
 float64 len
 float64 cr
-float64[] crVector
-float64[] vdVector
-float64[] slopeVector
+float64[] cr_vector
+float64[] vd_vector
+float64[] slope_vector
 
 #for pure pursuit control
-float64[] xVector
-float64[] yVector
+float64[] x_vector
+float64[] y_vector
 float64 x
 float64 y

@@ -1,0 +1,544 @@
+[0.000000] (-) TimerEvent: {}
+[0.001021] (-) JobUnselected: {'identifier': 'abc_terasim'}
+[0.001458] (-) JobUnselected: {'identifier': 'accel_brake_map_calibrator'}
+[0.001541] (-) JobUnselected: {'identifier': 'ad_api_adaptors'}
+[0.001559] (-) JobUnselected: {'identifier': 'ad_api_visualizers'}
+[0.001584] (-) JobUnselected: {'identifier': 'ar_tag_based_localizer'}
+[0.001599] (-) JobUnselected: {'identifier': 'automatic_pose_initializer'}
+[0.001614] (-) JobUnselected: {'identifier': 'autonomous_emergency_braking'}
+[0.001869] (-) JobUnselected: {'identifier': 'autoware_ad_api_specs'}
+[0.001931] (-) JobUnselected: {'identifier': 'autoware_adapi_v1_msgs'}
+[0.001946] (-) JobUnselected: {'identifier': 'autoware_adapi_version_msgs'}
+[0.001964] (-) JobUnselected: {'identifier': 'autoware_auto_common'}
+[0.001982] (-) JobUnselected: {'identifier': 'autoware_auto_control_msgs'}
+[0.002196] (-) JobUnselected: {'identifier': 'autoware_auto_geometry'}
+[0.002210] (-) JobUnselected: {'identifier': 'autoware_auto_geometry_msgs'}
+[0.002270] (-) JobUnselected: {'identifier': 'autoware_auto_mapping_msgs'}
+[0.002284] (-) JobUnselected: {'identifier': 'autoware_auto_msgs'}
+[0.002301] (-) JobUnselected: {'identifier': 'autoware_auto_msgs_adapter'}
+[0.002320] (-) JobUnselected: {'identifier': 'autoware_auto_perception_msgs'}
+[0.002333] (-) JobUnselected: {'identifier': 'autoware_auto_perception_rviz_plugin'}
+[0.002446] (-) JobUnselected: {'identifier': 'autoware_auto_planning_msgs'}
+[0.002475] (-) JobUnselected: {'identifier': 'autoware_auto_system_msgs'}
+[0.002498] (-) JobUnselected: {'identifier': 'autoware_auto_tf2'}
+[0.002519] (-) JobUnselected: {'identifier': 'autoware_auto_vehicle_msgs'}
+[0.003040] (-) JobUnselected: {'identifier': 'autoware_cmake'}
+[0.003093] (-) JobUnselected: {'identifier': 'autoware_common_msgs'}
+[0.003176] (-) JobUnselected: {'identifier': 'autoware_control_msgs'}
+[0.003190] (-) JobUnselected: {'identifier': 'autoware_external_api_msgs'}
+[0.003203] (-) JobUnselected: {'identifier': 'autoware_iv_external_api_adaptor'}
+[0.003215] (-) JobUnselected: {'identifier': 'autoware_iv_internal_api_adaptor'}
+[0.003228] (-) JobUnselected: {'identifier': 'autoware_launch'}
+[0.003240] (-) JobUnselected: {'identifier': 'autoware_lint_common'}
+[0.003253] (-) JobUnselected: {'identifier': 'autoware_localization_msgs'}
+[0.003266] (-) JobUnselected: {'identifier': 'autoware_map_msgs'}
+[0.003278] (-) JobUnselected: {'identifier': 'autoware_perception_msgs'}
+[0.003301] (-) JobUnselected: {'identifier': 'autoware_planning_msgs'}
+[0.003316] (-) JobUnselected: {'identifier': 'autoware_point_types'}
+[0.003329] (-) JobUnselected: {'identifier': 'autoware_sensing_msgs'}
+[0.003342] (-) JobUnselected: {'identifier': 'autoware_testing'}
+[0.003355] (-) JobUnselected: {'identifier': 'autoware_utils'}
+[0.003368] (-) JobUnselected: {'identifier': 'awapi_awiv_adapter'}
+[0.003380] (-) JobUnselected: {'identifier': 'awsim_sensor_kit_description'}
+[0.003393] (-) JobUnselected: {'identifier': 'awsim_sensor_kit_launch'}
+[0.003405] (-) JobUnselected: {'identifier': 'bag_time_manager_rviz_plugin'}
+[0.003418] (-) JobUnselected: {'identifier': 'behavior_path_planner'}
+[0.003430] (-) JobUnselected: {'identifier': 'behavior_velocity_blind_spot_module'}
+[0.003443] (-) JobUnselected: {'identifier': 'behavior_velocity_crosswalk_module'}
+[0.003456] (-) JobUnselected: {'identifier': 'behavior_velocity_detection_area_module'}
+[0.003509] (-) JobUnselected: {'identifier': 'behavior_velocity_intersection_module'}
+[0.003523] (-) JobUnselected: {'identifier': 'behavior_velocity_no_drivable_lane_module'}
+[0.003536] (-) JobUnselected: {'identifier': 'behavior_velocity_no_stopping_area_module'}
+[0.003549] (-) JobUnselected: {'identifier': 'behavior_velocity_occlusion_spot_module'}
+[0.003562] (-) JobUnselected: {'identifier': 'behavior_velocity_out_of_lane_module'}
+[0.003574] (-) JobUnselected: {'identifier': 'behavior_velocity_planner'}
+[0.003587] (-) JobUnselected: {'identifier': 'behavior_velocity_planner_common'}
+[0.003600] (-) JobUnselected: {'identifier': 'behavior_velocity_run_out_module'}
+[0.003627] (-) JobUnselected: {'identifier': 'behavior_velocity_speed_bump_module'}
+[0.003641] (-) JobUnselected: {'identifier': 'behavior_velocity_stop_line_module'}
+[0.003654] (-) JobUnselected: {'identifier': 'behavior_velocity_template_module'}
+[0.003667] (-) JobUnselected: {'identifier': 'behavior_velocity_traffic_light_module'}
+[0.003680] (-) JobUnselected: {'identifier': 'behavior_velocity_virtual_traffic_light_module'}
+[0.003692] (-) JobUnselected: {'identifier': 'behavior_velocity_walkway_module'}
+[0.003704] (-) JobUnselected: {'identifier': 'bezier_sampler'}
+[0.003717] (-) JobUnselected: {'identifier': 'bluetooth_monitor'}
+[0.003729] (-) JobUnselected: {'identifier': 'boost_io_context'}
+[0.003742] (-) JobUnselected: {'identifier': 'boost_serial_driver'}
+[0.003754] (-) JobUnselected: {'identifier': 'boost_tcp_driver'}
+[0.003767] (-) JobUnselected: {'identifier': 'boost_udp_driver'}
+[0.003779] (-) JobUnselected: {'identifier': 'bytetrack'}
+[0.003792] (-) JobUnselected: {'identifier': 'camera_description'}
+[0.003804] (-) JobUnselected: {'identifier': 'cluster_merger'}
+[0.003817] (-) JobUnselected: {'identifier': 'common_awsim_sensor_launch'}
+[0.003849] (-) JobUnselected: {'identifier': 'common_sensor_launch'}
+[0.003870] (-) JobUnselected: {'identifier': 'compare_map_segmentation'}
+[0.003883] (-) JobUnselected: {'identifier': 'component_interface_specs'}
+[0.003901] (-) JobUnselected: {'identifier': 'component_interface_tools'}
+[0.003924] (-) JobUnselected: {'identifier': 'component_interface_utils'}
+[0.003990] (-) JobUnselected: {'identifier': 'component_state_monitor'}
+[0.004010] (-) JobUnselected: {'identifier': 'control_performance_analysis'}
+[0.004028] (-) JobUnselected: {'identifier': 'control_validator'}
+[0.004047] (-) JobUnselected: {'identifier': 'costmap_generator'}
+[0.004061] (-) JobUnselected: {'identifier': 'crosswalk_traffic_light_estimator'}
+[0.004073] (-) JobUnselected: {'identifier': 'cuda_utils'}
+[0.004086] (-) JobUnselected: {'identifier': 'dataspeed_can'}
+[0.004099] (-) JobUnselected: {'identifier': 'dataspeed_can_msg_filters'}
+[0.004155] (-) JobUnselected: {'identifier': 'dataspeed_can_msgs'}
+[0.004169] (-) JobUnselected: {'identifier': 'dataspeed_can_tools'}
+[0.004181] (-) JobUnselected: {'identifier': 'dataspeed_can_usb'}
+[0.004218] (-) JobUnselected: {'identifier': 'dataspeed_dbw_common'}
+[0.004232] (-) JobUnselected: {'identifier': 'dataspeed_dbw_gateway'}
+[0.004246] (-) JobUnselected: {'identifier': 'dataspeed_dbw_msgs'}
+[0.004263] (-) JobUnselected: {'identifier': 'dataspeed_ulc'}
+[0.004323] (-) JobUnselected: {'identifier': 'dataspeed_ulc_can'}
+[0.004337] (-) JobUnselected: {'identifier': 'dataspeed_ulc_msgs'}
+[0.004361] (-) JobUnselected: {'identifier': 'dbw_fca'}
+[0.004461] (-) JobUnselected: {'identifier': 'dbw_fca_can'}
+[0.004491] (-) JobUnselected: {'identifier': 'dbw_fca_description'}
+[0.004504] (-) JobUnselected: {'identifier': 'dbw_fca_joystick_demo'}
+[0.004522] (-) JobUnselected: {'identifier': 'dbw_fca_msgs'}
+[0.004539] (-) JobUnselected: {'identifier': 'dbw_ford'}
+[0.005026] (-) JobUnselected: {'identifier': 'dbw_ford_can'}
+[0.005040] (-) JobUnselected: {'identifier': 'dbw_ford_description'}
+[0.005053] (-) JobUnselected: {'identifier': 'dbw_ford_input_test'}
+[0.005081] (-) JobUnselected: {'identifier': 'dbw_ford_joystick_demo'}
+[0.005188] (-) JobUnselected: {'identifier': 'dbw_ford_msgs'}
+[0.005203] (-) JobUnselected: {'identifier': 'dbw_polaris'}
+[0.005221] (-) JobUnselected: {'identifier': 'dbw_polaris_can'}
+[0.005239] (-) JobUnselected: {'identifier': 'dbw_polaris_description'}
+[0.005253] (-) JobUnselected: {'identifier': 'dbw_polaris_joystick_demo'}
+[0.005313] (-) JobUnselected: {'identifier': 'dbw_polaris_msgs'}
+[0.005327] (-) JobUnselected: {'identifier': 'default_ad_api'}
+[0.005344] (-) JobUnselected: {'identifier': 'detected_object_feature_remover'}
+[0.005409] (-) JobUnselected: {'identifier': 'detected_object_validation'}
+[0.005423] (-) JobUnselected: {'identifier': 'detection_by_tracker'}
+[0.005440] (-) JobUnselected: {'identifier': 'diagnostic_converter'}
+[0.005459] (-) JobUnselected: {'identifier': 'dummy_diag_publisher'}
+[0.005513] (-) JobUnselected: {'identifier': 'dummy_infrastructure'}
+[0.005528] (-) JobUnselected: {'identifier': 'dummy_perception_publisher'}
+[0.005545] (-) JobUnselected: {'identifier': 'eagleye_can_velocity_converter'}
+[0.005600] (-) JobUnselected: {'identifier': 'eagleye_coordinate'}
+[0.005614] (-) JobUnselected: {'identifier': 'eagleye_fix2kml'}
+[0.005632] (-) JobUnselected: {'identifier': 'eagleye_fix2pose'}
+[0.005650] (-) JobUnselected: {'identifier': 'eagleye_gnss_converter'}
+[0.005806] (-) JobUnselected: {'identifier': 'eagleye_msgs'}
+[0.005820] (-) JobUnselected: {'identifier': 'eagleye_navigation'}
+[0.005992] (-) JobUnselected: {'identifier': 'eagleye_rt'}
+[0.006005] (-) JobUnselected: {'identifier': 'eagleye_tf'}
+[0.006059] (-) JobUnselected: {'identifier': 'ekf_localizer'}
+[0.006109] (-) JobUnselected: {'identifier': 'elevation_map_loader'}
+[0.006141] (-) JobUnselected: {'identifier': 'emergency_handler'}
+[0.006173] (-) JobUnselected: {'identifier': 'euclidean_cluster'}
+[0.006204] (-) JobUnselected: {'identifier': 'external_cmd_converter'}
+[0.006235] (-) JobUnselected: {'identifier': 'external_cmd_selector'}
+[0.006662] (-) JobUnselected: {'identifier': 'external_velocity_limit_selector'}
+[0.006678] (-) JobUnselected: {'identifier': 'fake_test_node'}
+[0.006691] (-) JobUnselected: {'identifier': 'fault_injection'}
+[0.006710] (-) JobUnselected: {'identifier': 'freespace_planner'}
+[0.006724] (-) JobUnselected: {'identifier': 'freespace_planning_algorithms'}
+[0.006737] (-) JobUnselected: {'identifier': 'frenet_planner'}
+[0.007238] (-) JobUnselected: {'identifier': 'front_vehicle_velocity_estimator'}
+[0.007252] (-) JobUnselected: {'identifier': 'geography_utils'}
+[0.007273] (-) JobUnselected: {'identifier': 'global_parameter_loader'}
+[0.007288] (-) JobUnselected: {'identifier': 'glog_component'}
+[0.007300] (-) JobUnselected: {'identifier': 'gnss_poser'}
+[0.007312] (-) JobUnselected: {'identifier': 'goal_distance_calculator'}
+[0.007324] (-) JobUnselected: {'identifier': 'grid_map_utils'}
+[0.007335] (-) JobUnselected: {'identifier': 'ground_segmentation'}
+[0.007347] (-) JobUnselected: {'identifier': 'gyro_odometer'}
+[0.007358] (-) JobUnselected: {'identifier': 'heaphook'}
+[0.007371] (-) JobUnselected: {'identifier': 'heatmap_visualizer'}
+[0.007388] (-) JobUnselected: {'identifier': 'image_diagnostics'}
+[0.007409] (-) JobUnselected: {'identifier': 'image_projection_based_fusion'}
+[0.007424] (-) JobUnselected: {'identifier': 'image_transport_decompressor'}
+[0.007443] (-) JobUnselected: {'identifier': 'imu_corrector'}
+[0.007458] (-) JobUnselected: {'identifier': 'imu_description'}
+[0.007476] (-) JobUnselected: {'identifier': 'individual_params'}
+[0.007490] (-) JobUnselected: {'identifier': 'interpolation'}
+[0.007508] (-) JobUnselected: {'identifier': 'joy_controller'}
+[0.007523] (-) JobUnselected: {'identifier': 'kalman_filter'}
+[0.007540] (-) JobUnselected: {'identifier': 'kinematic_evaluator'}
+[0.007556] (-) JobUnselected: {'identifier': 'landmark_tf_caster'}
+[0.007569] (-) JobUnselected: {'identifier': 'lane_departure_checker'}
+[0.007582] (-) JobUnselected: {'identifier': 'lanelet2_extension'}
+[0.007601] (-) JobUnselected: {'identifier': 'lanelet2_map_preprocessor'}
+[0.007617] (-) JobUnselected: {'identifier': 'lidar_apollo_instance_segmentation'}
+[0.007634] (-) JobUnselected: {'identifier': 'lidar_apollo_segmentation_tvm'}
+[0.007648] (-) JobUnselected: {'identifier': 'lidar_apollo_segmentation_tvm_nodes'}
+[0.007666] (-) JobUnselected: {'identifier': 'lidar_centerpoint'}
+[0.007679] (-) JobUnselected: {'identifier': 'lidar_centerpoint_tvm'}
+[0.007700] (-) JobUnselected: {'identifier': 'livox_description'}
+[0.007716] (-) JobUnselected: {'identifier': 'livox_tag_filter'}
+[0.007730] (-) JobUnselected: {'identifier': 'llh_converter'}
+[0.007748] (-) JobUnselected: {'identifier': 'localization_error_monitor'}
+[0.007763] (-) JobUnselected: {'identifier': 'localization_evaluator'}
+[0.007780] (-) JobUnselected: {'identifier': 'map_based_prediction'}
+[0.007799] (-) JobUnselected: {'identifier': 'map_height_fitter'}
+[0.007814] (-) JobUnselected: {'identifier': 'map_loader'}
+[0.007826] (-) JobUnselected: {'identifier': 'map_projection_loader'}
+[0.007844] (-) JobUnselected: {'identifier': 'map_tf_generator'}
+[0.007857] (-) JobUnselected: {'identifier': 'mcity_msgs'}
+[0.007876] (-) JobUnselected: {'identifier': 'mcity_terasim'}
+[0.007891] (-) JobUnselected: {'identifier': 'mission_planner'}
+[0.007908] (-) JobUnselected: {'identifier': 'mkz_control'}
+[0.007924] (-) JobUnselected: {'identifier': 'morai_msgs'}
+[0.007938] (-) JobUnselected: {'identifier': 'motion_utils'}
+[0.007955] (-) JobUnselected: {'identifier': 'motion_velocity_smoother'}
+[0.007968] (-) JobUnselected: {'identifier': 'mpc_lateral_controller'}
+[0.008238] (-) JobUnselected: {'identifier': 'mrm_comfortable_stop_operator'}
+[0.008257] (-) JobUnselected: {'identifier': 'mrm_emergency_stop_operator'}
+[0.008276] (-) JobUnselected: {'identifier': 'multi_object_tracker'}
+[0.008295] (-) JobUnselected: {'identifier': 'mussp'}
+[0.008314] (-) JobUnselected: {'identifier': 'ndt_omp'}
+[0.008333] (-) JobUnselected: {'identifier': 'ndt_scan_matcher'}
+[0.008352] (-) JobUnselected: {'identifier': 'nebula_common'}
+[0.008370] (-) JobUnselected: {'identifier': 'nebula_decoders'}
+[0.008392] (-) JobUnselected: {'identifier': 'nebula_examples'}
+[0.008472] (-) JobUnselected: {'identifier': 'nebula_hw_interfaces'}
+[0.008510] (-) JobUnselected: {'identifier': 'nebula_ros'}
+[0.008536] (-) JobUnselected: {'identifier': 'nebula_sensor_driver'}
+[0.008559] (-) JobUnselected: {'identifier': 'nebula_tests'}
+[0.008583] (-) JobUnselected: {'identifier': 'object_merger'}
+[0.008623] (-) JobUnselected: {'identifier': 'object_range_splitter'}
+[0.008651] (-) JobUnselected: {'identifier': 'object_recognition_utils'}
+[0.008687] (-) JobUnselected: {'identifier': 'object_velocity_splitter'}
+[0.008751] (-) JobUnselected: {'identifier': 'obstacle_avoidance_planner'}
+[0.008785] (-) JobUnselected: {'identifier': 'obstacle_collision_checker'}
+[0.008808] (-) JobUnselected: {'identifier': 'obstacle_cruise_planner'}
+[0.008831] (-) JobUnselected: {'identifier': 'obstacle_stop_planner'}
+[0.008851] (-) JobUnselected: {'identifier': 'obstacle_velocity_limiter'}
+[0.008874] (-) JobUnselected: {'identifier': 'occupancy_grid_map_outlier_filter'}
+[0.008892] (-) JobUnselected: {'identifier': 'operation_mode_transition_manager'}
+[0.008910] (-) JobUnselected: {'identifier': 'osqp_interface'}
+[0.008929] (-) JobUnselected: {'identifier': 'pacmod_interface'}
+[0.008946] (-) JobUnselected: {'identifier': 'pandar_description'}
+[0.008966] (-) JobUnselected: {'identifier': 'pandar_msgs'}
+[0.008984] (-) JobUnselected: {'identifier': 'path_distance_calculator'}
+[0.009003] (-) JobUnselected: {'identifier': 'path_sampler'}
+[0.009021] (-) JobUnselected: {'identifier': 'path_smoother'}
+[0.009039] (-) JobUnselected: {'identifier': 'perception_utils'}
+[0.009058] (-) JobUnselected: {'identifier': 'pid_longitudinal_controller'}
+[0.009076] (-) JobUnselected: {'identifier': 'planning_debug_tools'}
+[0.009094] (-) JobUnselected: {'identifier': 'planning_evaluator'}
+[0.009113] (-) JobUnselected: {'identifier': 'planning_test_utils'}
+[0.009131] (-) JobUnselected: {'identifier': 'planning_validator'}
+[0.009149] (-) JobUnselected: {'identifier': 'pointcloud_preprocessor'}
+[0.009168] (-) JobUnselected: {'identifier': 'pointcloud_to_laserscan'}
+[0.009186] (-) JobUnselected: {'identifier': 'polar_grid'}
+[0.009204] (-) JobUnselected: {'identifier': 'pose2twist'}
+[0.009223] (-) JobUnselected: {'identifier': 'pose_initializer'}
+[0.009243] (-) JobUnselected: {'identifier': 'probabilistic_occupancy_grid_map'}
+[0.009264] (-) JobUnselected: {'identifier': 'pure_pursuit'}
+[0.009283] (-) JobUnselected: {'identifier': 'qp_interface'}
+[0.009302] (-) JobUnselected: {'identifier': 'radar_crossing_objects_noise_filter'}
+[0.009321] (-) JobUnselected: {'identifier': 'radar_fusion_to_detected_object'}
+[0.009340] (-) JobUnselected: {'identifier': 'radar_object_clustering'}
+[0.009359] (-) JobUnselected: {'identifier': 'radar_object_tracker'}
+[0.009386] (-) JobUnselected: {'identifier': 'radar_scan_to_pointcloud2'}
+[0.009405] (-) JobUnselected: {'identifier': 'radar_static_pointcloud_filter'}
+[0.009424] (-) JobUnselected: {'identifier': 'radar_threshold_filter'}
+[0.009442] (-) JobUnselected: {'identifier': 'radar_tracks_msgs_converter'}
+[0.009461] (-) JobUnselected: {'identifier': 'radar_tracks_noise_filter'}
+[0.009480] (-) JobUnselected: {'identifier': 'raw_vehicle_cmd_converter'}
+[0.009498] (-) JobUnselected: {'identifier': 'route_handler'}
+[0.009517] (-) JobUnselected: {'identifier': 'rtc_auto_mode_manager'}
+[0.009535] (-) JobUnselected: {'identifier': 'rtc_interface'}
+[0.009553] (-) JobUnselected: {'identifier': 'rtc_manager_rviz_plugin'}
+[0.009572] (-) JobUnselected: {'identifier': 'rtc_replayer'}
+[0.009591] (-) JobUnselected: {'identifier': 'rtklib_bridge'}
+[0.009609] (-) JobUnselected: {'identifier': 'rtklib_msgs'}
+[0.009627] (-) JobUnselected: {'identifier': 'sample_sensor_kit_description'}
+[0.009647] (-) JobUnselected: {'identifier': 'sample_sensor_kit_launch'}
+[0.009665] (-) JobUnselected: {'identifier': 'sample_vehicle_description'}
+[0.009686] (-) JobUnselected: {'identifier': 'sample_vehicle_launch'}
+[0.009704] (-) JobUnselected: {'identifier': 'sampler_common'}
+[0.009742] (-) JobUnselected: {'identifier': 'scenario_selector'}
+[0.009775] (-) JobUnselected: {'identifier': 'shape_estimation'}
+[0.009802] (-) JobUnselected: {'identifier': 'shift_decider'}
+[0.009830] (-) JobUnselected: {'identifier': 'signal_processing'}
+[0.009853] (-) JobUnselected: {'identifier': 'simple_object_merger'}
+[0.009872] (-) JobUnselected: {'identifier': 'simple_planning_simulator'}
+[0.009892] (-) JobUnselected: {'identifier': 'simulator_compatibility_test'}
+[0.009911] (-) JobUnselected: {'identifier': 'static_centerline_optimizer'}
+[0.009930] (-) JobUnselected: {'identifier': 'steer_offset_estimator'}
+[0.009958] (-) JobUnselected: {'identifier': 'stop_filter'}
+[0.009983] (-) JobUnselected: {'identifier': 'surround_obstacle_checker'}
+[0.010002] (-) JobUnselected: {'identifier': 'system_diagnostic_graph'}
+[0.010020] (-) JobUnselected: {'identifier': 'system_diagnostic_monitor'}
+[0.010039] (-) JobUnselected: {'identifier': 'system_error_monitor'}
+[0.010058] (-) JobUnselected: {'identifier': 'system_monitor'}
+[0.010080] (-) JobUnselected: {'identifier': 'tamagawa_imu_driver'}
+[0.010099] (-) JobUnselected: {'identifier': 'tensorrt_classifier'}
+[0.010118] (-) JobUnselected: {'identifier': 'tensorrt_common'}
+[0.010137] (-) JobUnselected: {'identifier': 'tensorrt_yolo'}
+[0.010156] (-) JobUnselected: {'identifier': 'tensorrt_yolox'}
+[0.010174] (-) JobUnselected: {'identifier': 'tier4_adapi_rviz_plugin'}
+[0.010193] (-) JobUnselected: {'identifier': 'tier4_api_msgs'}
+[0.010212] (-) JobUnselected: {'identifier': 'tier4_api_utils'}
+[0.010232] (-) JobUnselected: {'identifier': 'tier4_auto_msgs_converter'}
+[0.010250] (-) JobUnselected: {'identifier': 'tier4_automatic_goal_rviz_plugin'}
+[0.010270] (-) JobUnselected: {'identifier': 'tier4_autoware_api_launch'}
+[0.010289] (-) JobUnselected: {'identifier': 'tier4_autoware_utils'}
+[0.010307] (-) JobUnselected: {'identifier': 'tier4_calibration_rviz_plugin'}
+[0.010326] (-) JobUnselected: {'identifier': 'tier4_control_launch'}
+[0.010346] (-) JobUnselected: {'identifier': 'tier4_control_msgs'}
+[0.010365] (-) JobUnselected: {'identifier': 'tier4_control_rviz_plugin'}
+[0.010383] (-) JobUnselected: {'identifier': 'tier4_datetime_rviz_plugin'}
+[0.010403] (-) JobUnselected: {'identifier': 'tier4_debug_msgs'}
+[0.010421] (-) JobUnselected: {'identifier': 'tier4_debug_rviz_plugin'}
+[0.010440] (-) JobUnselected: {'identifier': 'tier4_debug_tools'}
+[0.010460] (-) JobUnselected: {'identifier': 'tier4_external_api_msgs'}
+[0.010486] (-) JobUnselected: {'identifier': 'tier4_hmi_msgs'}
+[0.010508] (-) JobUnselected: {'identifier': 'tier4_localization_launch'}
+[0.010530] (-) JobUnselected: {'identifier': 'tier4_localization_msgs'}
+[0.010550] (-) JobUnselected: {'identifier': 'tier4_localization_rviz_plugin'}
+[0.010569] (-) JobUnselected: {'identifier': 'tier4_logging_level_configure_rviz_plugin'}
+[0.010598] (-) JobUnselected: {'identifier': 'tier4_map_launch'}
+[0.010617] (-) JobUnselected: {'identifier': 'tier4_map_msgs'}
+[0.010636] (-) JobUnselected: {'identifier': 'tier4_pcl_extensions'}
+[0.010654] (-) JobUnselected: {'identifier': 'tier4_perception_launch'}
+[0.010673] (-) JobUnselected: {'identifier': 'tier4_perception_msgs'}
+[0.010692] (-) JobUnselected: {'identifier': 'tier4_perception_rviz_plugin'}
+[0.010711] (-) JobUnselected: {'identifier': 'tier4_planning_launch'}
+[0.010730] (-) JobUnselected: {'identifier': 'tier4_planning_msgs'}
+[0.010748] (-) JobUnselected: {'identifier': 'tier4_planning_rviz_plugin'}
+[0.010767] (-) JobUnselected: {'identifier': 'tier4_rtc_msgs'}
+[0.010786] (-) JobUnselected: {'identifier': 'tier4_screen_capture_rviz_plugin'}
+[0.010804] (-) JobUnselected: {'identifier': 'tier4_sensing_launch'}
+[0.010823] (-) JobUnselected: {'identifier': 'tier4_simulated_clock_rviz_plugin'}
+[0.010855] (-) JobUnselected: {'identifier': 'tier4_simulation_msgs'}
+[0.010874] (-) JobUnselected: {'identifier': 'tier4_simulator_launch'}
+[0.010893] (-) JobUnselected: {'identifier': 'tier4_state_rviz_plugin'}
+[0.010912] (-) JobUnselected: {'identifier': 'tier4_system_launch'}
+[0.010932] (-) JobUnselected: {'identifier': 'tier4_system_msgs'}
+[0.010952] (-) JobUnselected: {'identifier': 'tier4_system_rviz_plugin'}
+[0.010971] (-) JobUnselected: {'identifier': 'tier4_target_object_type_rviz_plugin'}
+[0.010990] (-) JobUnselected: {'identifier': 'tier4_traffic_light_rviz_plugin'}
+[0.011008] (-) JobUnselected: {'identifier': 'tier4_v2x_msgs'}
+[0.011026] (-) JobUnselected: {'identifier': 'tier4_vehicle_launch'}
+[0.011045] (-) JobUnselected: {'identifier': 'tier4_vehicle_msgs'}
+[0.011063] (-) JobUnselected: {'identifier': 'tier4_vehicle_rviz_plugin'}
+[0.011081] (-) JobUnselected: {'identifier': 'time_utils'}
+[0.011100] (-) JobUnselected: {'identifier': 'topic_state_monitor'}
+[0.011122] (-) JobUnselected: {'identifier': 'traffic_light_arbiter'}
+[0.011141] (-) JobUnselected: {'identifier': 'traffic_light_classifier'}
+[0.011159] (-) JobUnselected: {'identifier': 'traffic_light_fine_detector'}
+[0.011177] (-) JobUnselected: {'identifier': 'traffic_light_map_based_detector'}
+[0.011196] (-) JobUnselected: {'identifier': 'traffic_light_multi_camera_fusion'}
+[0.011214] (-) JobUnselected: {'identifier': 'traffic_light_occlusion_predictor'}
+[0.011232] (-) JobUnselected: {'identifier': 'traffic_light_recognition_marker_publisher'}
+[0.011250] (-) JobUnselected: {'identifier': 'traffic_light_ssd_fine_detector'}
+[0.011268] (-) JobUnselected: {'identifier': 'traffic_light_utils'}
+[0.011292] (-) JobUnselected: {'identifier': 'traffic_light_visualization'}
+[0.011467] (-) JobUnselected: {'identifier': 'trajectory_follower_base'}
+[0.011483] (-) JobUnselected: {'identifier': 'trajectory_follower_node'}
+[0.011518] (-) JobUnselected: {'identifier': 'trtexec_vendor'}
+[0.011532] (-) JobUnselected: {'identifier': 'tvm_utility'}
+[0.012014] (-) JobUnselected: {'identifier': 'twist2accel'}
+[0.012030] (-) JobUnselected: {'identifier': 'vehicle_cmd_gate'}
+[0.012051] (-) JobUnselected: {'identifier': 'vehicle_info_util'}
+[0.012090] (-) JobUnselected: {'identifier': 'vehicle_velocity_converter'}
+[0.012107] (-) JobUnselected: {'identifier': 'velodyne_description'}
+[0.012122] (-) JobUnselected: {'identifier': 'velodyne_monitor'}
+[0.012141] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.012172] (-) JobUnselected: {'identifier': 'vls_description'}
+[0.012192] (-) JobUnselected: {'identifier': 'yabloc_common'}
+[0.012206] (-) JobUnselected: {'identifier': 'yabloc_image_processing'}
+[0.012301] (-) JobUnselected: {'identifier': 'yabloc_monitor'}
+[0.012339] (-) JobUnselected: {'identifier': 'yabloc_particle_filter'}
+[0.012490] (-) JobUnselected: {'identifier': 'yabloc_pose_initializer'}
+[0.012577] (mkz_bywire) JobQueued: {'identifier': 'mkz_bywire', 'dependencies': OrderedDict([('autoware_lint_common', '/home/zhijie/autoware/install/autoware_lint_common'), ('dataspeed_dbw_msgs', '/home/zhijie/autoware/install/dataspeed_dbw_msgs'), ('dbw_fca_msgs', '/home/zhijie/autoware/install/dbw_fca_msgs'), ('mcity_msgs', '/home/zhijie/autoware/install/mcity_msgs'), ('autoware_cmake', '/home/zhijie/autoware/install/autoware_cmake')])}
+[0.012606] (mkz_bywire) JobStarted: {'identifier': 'mkz_bywire'}
+[0.018020] (mkz_bywire) JobProgress: {'identifier': 'mkz_bywire', 'progress': 'cmake'}
+[0.018398] (mkz_bywire) JobProgress: {'identifier': 'mkz_bywire', 'progress': 'build'}
+[0.019062] (mkz_bywire) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zhijie/autoware/build/mkz_bywire', '--', '-j16', '-l16'], 'cwd': '/home/zhijie/autoware/build/mkz_bywire', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zhijie'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zhijie/autoware/install/mcity_msgs/lib:/home/zhijie/autoware/install/dbw_fca_msgs/lib:/home/zhijie/autoware/install/dataspeed_dbw_msgs/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zhijie'), ('OLDPWD', '/home/zhijie'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1564'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zhijie'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zhijie'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/opt/ros/humble/bin:/home/zhijie/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zhijie/.local/bin:/home/zhijie/.local/bin'), ('SESSION_MANAGER', 'local/zhijie-Alienware-Aurora-R11:@/tmp/.ICE-unix/1542,unix/zhijie-Alienware-Aurora-R11:/tmp/.ICE-unix/1542'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/78aa0c16_2b33_4ee9_888b_f0134fad831d'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/mcity_msgs:/home/zhijie/autoware/install/dbw_fca_msgs:/home/zhijie/autoware/install/dataspeed_dbw_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zhijie/autoware/build/mkz_bywire'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/opt/apps/com.qq.weixin.deepin/entries'), ('PYTHONPATH', '/home/zhijie/autoware/install/mcity_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dbw_fca_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_dbw_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/mcity_msgs:/home/zhijie/autoware/install/dbw_fca_msgs:/home/zhijie/autoware/install/dataspeed_dbw_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble')]), 'shell': False}
+[0.047108] (mkz_bywire) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mkz_bywire_component\x1b[0m\n'}
+[0.055120] (mkz_bywire) StdoutLine: {'line': b'[ 50%] Built target mkz_bywire\n'}
+[0.060163] (mkz_bywire) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o\x1b[0m\n'}
+[0.102522] (-) TimerEvent: {}
+[0.202756] (-) TimerEvent: {}
+[0.302981] (-) TimerEvent: {}
+[0.403200] (-) TimerEvent: {}
+[0.503447] (-) TimerEvent: {}
+[0.603669] (-) TimerEvent: {}
+[0.703916] (-) TimerEvent: {}
+[0.804143] (-) TimerEvent: {}
+[0.904369] (-) TimerEvent: {}
+[1.004566] (-) TimerEvent: {}
+[1.104763] (-) TimerEvent: {}
+[1.204955] (-) TimerEvent: {}
+[1.305178] (-) TimerEvent: {}
+[1.405373] (-) TimerEvent: {}
+[1.505596] (-) TimerEvent: {}
+[1.605831] (-) TimerEvent: {}
+[1.706058] (-) TimerEvent: {}
+[1.806285] (-) TimerEvent: {}
+[1.906484] (-) TimerEvent: {}
+[2.006679] (-) TimerEvent: {}
+[2.106872] (-) TimerEvent: {}
+[2.207097] (-) TimerEvent: {}
+[2.307303] (-) TimerEvent: {}
+[2.388967] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kmkz_bywire::MkzBywire::MkzBywire(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.389145] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:85:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGear\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.389203] (mkz_bywire) StderrLine: {'line': b'   85 |         gear_msg.cmd.gear = \x1b[01;31m\x1b[KGear\x1b[m\x1b[K::NONE;\n'}
+[2.389253] (mkz_bywire) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.389300] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:89:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing TurnSignal = struct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.389350] (mkz_bywire) StderrLine: {'line': b'   89 |         turn_signal_msg.\x1b[01;31m\x1b[Kcmd\x1b[m\x1b[K.value = Turnsignal::NONE;\n'}
+[2.389397] (mkz_bywire) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.389447] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:89:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTurnsignal\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.389493] (mkz_bywire) StderrLine: {'line': b'   89 |         turn_signal_msg.cmd.value = \x1b[01;31m\x1b[KTurnsignal\x1b[m\x1b[K::NONE;\n'}
+[2.389537] (mkz_bywire) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.390763] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid mkz_bywire::MkzBywire::publishCmd()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.390848] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:121:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGear\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.390901] (mkz_bywire) StderrLine: {'line': b'  121 |         if (gear_msg.cmd.gear == \x1b[01;31m\x1b[KGear\x1b[m\x1b[K::PARK    ||\n'}
+[2.390950] (mkz_bywire) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.390997] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:122:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGear\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.391042] (mkz_bywire) StderrLine: {'line': b'  122 |             gear_msg.cmd.gear == \x1b[01;31m\x1b[KGear\x1b[m\x1b[K::REVERSE ||\n'}
+[2.391087] (mkz_bywire) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.391132] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:123:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGear\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.391177] (mkz_bywire) StderrLine: {'line': b'  123 |             gear_msg.cmd.gear == \x1b[01;31m\x1b[KGear\x1b[m\x1b[K::NEUTRAL ||\n'}
+[2.391221] (mkz_bywire) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.391266] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:124:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGear\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.391331] (mkz_bywire) StderrLine: {'line': b'  124 |             gear_msg.cmd.gear == \x1b[01;31m\x1b[KGear\x1b[m\x1b[K::DRIVE   ||\n'}
+[2.391378] (mkz_bywire) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.391422] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:125:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGear\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.391480] (mkz_bywire) StderrLine: {'line': b'  125 |             gear_msg.cmd.gear == \x1b[01;31m\x1b[KGear\x1b[m\x1b[K::LOW )\n'}
+[2.391551] (mkz_bywire) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.391987] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:156:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing TurnSignal = struct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.392051] (mkz_bywire) StderrLine: {'line': b'  156 |         turn_signal_msg.\x1b[01;31m\x1b[Kcmd\x1b[m\x1b[K.value = cmd_in.turn_signal;\n'}
+[2.392108] (mkz_bywire) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.392201] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:157:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing TurnSignal = struct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.392256] (mkz_bywire) StderrLine: {'line': b'  157 |         if (turn_signal_msg.\x1b[01;31m\x1b[Kcmd\x1b[m\x1b[K.value != Turnsignal::NONE)\n'}
+[2.392303] (mkz_bywire) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.392348] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:157:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTurnsignal\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.392399] (mkz_bywire) StderrLine: {'line': b'  157 |         if (turn_signal_msg.cmd.value != \x1b[01;31m\x1b[KTurnsignal\x1b[m\x1b[K::NONE)\n'}
+[2.392444] (mkz_bywire) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.392488] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:166:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing TurnSignal = struct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.392556] (mkz_bywire) StderrLine: {'line': b'  166 |             StateName::Turn_signal_name(turn_signal_msg.\x1b[01;31m\x1b[Kcmd\x1b[m\x1b[K.value).data() );\n'}
+[2.392628] (mkz_bywire) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.399405] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:161:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KROS_INFO_THROTTLE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KRCLCPP_INFO_THROTTLE\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.399496] (mkz_bywire) StderrLine: {'line': b'  161 |         \x1b[01;31m\x1b[KROS_INFO_THROTTLE\x1b[m\x1b[K(10, "Publised cmd: T%f B%f S%f Gear-%s TS-%s",\n'}
+[2.399550] (mkz_bywire) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.399598] (mkz_bywire) StderrLine: {'line': b'      |         \x1b[32m\x1b[KRCLCPP_INFO_THROTTLE\x1b[m\x1b[K\n'}
+[2.399849] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid mkz_bywire::MkzBywire::publishVehState()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.399901] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:213:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Time\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kmcity_msgs::msg::VehicleState_<std::allocator<void> >::_timestamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99} in assignment\n'}
+[2.399955] (mkz_bywire) StderrLine: {'line': b'  213 |         vs_msg.timestamp = \x1b[01;31m\x1b[Kthis->get_clock()->now()\x1b[m\x1b[K;\n'}
+[2.400008] (mkz_bywire) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.400054] (mkz_bywire) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.400099] (mkz_bywire) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[Krclcpp::Time\x1b[m\x1b[K\n'}
+[2.400189] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid mkz_bywire::MkzBywire::publishSensorcheck()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.400242] (mkz_bywire) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:219:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Time\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kmcity_msgs::msg::SensorCheck_<std::allocator<void> >::_timestamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99} in assignment\n'}
+[2.400293] (mkz_bywire) StderrLine: {'line': b'  219 |         sensor_msg.timestamp = \x1b[01;31m\x1b[Kthis->get_clock()->now()\x1b[m\x1b[K;\n'}
+[2.400339] (mkz_bywire) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.400383] (mkz_bywire) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.400429] (mkz_bywire) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[Krclcpp::Time\x1b[m\x1b[K\n'}
+[2.407366] (-) TimerEvent: {}
+[2.507570] (-) TimerEvent: {}
+[2.607763] (-) TimerEvent: {}
+[2.707992] (-) TimerEvent: {}
+[2.808223] (-) TimerEvent: {}
+[2.908426] (-) TimerEvent: {}
+[3.008665] (-) TimerEvent: {}
+[3.108919] (-) TimerEvent: {}
+[3.209130] (-) TimerEvent: {}
+[3.309332] (-) TimerEvent: {}
+[3.409538] (-) TimerEvent: {}
+[3.509813] (-) TimerEvent: {}
+[3.610025] (-) TimerEvent: {}
+[3.710232] (-) TimerEvent: {}
+[3.810439] (-) TimerEvent: {}
+[3.910643] (-) TimerEvent: {}
+[4.010839] (-) TimerEvent: {}
+[4.111036] (-) TimerEvent: {}
+[4.211234] (-) TimerEvent: {}
+[4.311430] (-) TimerEvent: {}
+[4.411629] (-) TimerEvent: {}
+[4.511834] (-) TimerEvent: {}
+[4.612059] (-) TimerEvent: {}
+[4.712288] (-) TimerEvent: {}
+[4.812518] (-) TimerEvent: {}
+[4.912717] (-) TimerEvent: {}
+[5.012958] (-) TimerEvent: {}
+[5.113184] (-) TimerEvent: {}
+[5.213416] (-) TimerEvent: {}
+[5.313644] (-) TimerEvent: {}
+[5.413846] (-) TimerEvent: {}
+[5.514087] (-) TimerEvent: {}
+[5.614299] (-) TimerEvent: {}
+[5.714585] (-) TimerEvent: {}
+[5.814791] (-) TimerEvent: {}
+[5.915013] (-) TimerEvent: {}
+[6.015246] (-) TimerEvent: {}
+[6.115536] (-) TimerEvent: {}
+[6.215736] (-) TimerEvent: {}
+[6.315937] (-) TimerEvent: {}
+[6.416139] (-) TimerEvent: {}
+[6.516335] (-) TimerEvent: {}
+[6.616558] (-) TimerEvent: {}
+[6.716764] (-) TimerEvent: {}
+[6.817033] (-) TimerEvent: {}
+[6.917256] (-) TimerEvent: {}
+[7.017481] (-) TimerEvent: {}
+[7.117705] (-) TimerEvent: {}
+[7.217933] (-) TimerEvent: {}
+[7.318157] (-) TimerEvent: {}
+[7.418384] (-) TimerEvent: {}
+[7.518570] (-) TimerEvent: {}
+[7.618778] (-) TimerEvent: {}
+[7.718972] (-) TimerEvent: {}
+[7.819176] (-) TimerEvent: {}
+[7.919437] (-) TimerEvent: {}
+[8.019665] (-) TimerEvent: {}
+[8.119897] (-) TimerEvent: {}
+[8.220160] (-) TimerEvent: {}
+[8.320388] (-) TimerEvent: {}
+[8.420617] (-) TimerEvent: {}
+[8.520847] (-) TimerEvent: {}
+[8.621075] (-) TimerEvent: {}
+[8.721303] (-) TimerEvent: {}
+[8.821536] (-) TimerEvent: {}
+[8.921769] (-) TimerEvent: {}
+[9.021979] (-) TimerEvent: {}
+[9.122212] (-) TimerEvent: {}
+[9.222437] (-) TimerEvent: {}
+[9.322643] (-) TimerEvent: {}
+[9.422840] (-) TimerEvent: {}
+[9.523039] (-) TimerEvent: {}
+[9.623269] (-) TimerEvent: {}
+[9.723497] (-) TimerEvent: {}
+[9.823704] (-) TimerEvent: {}
+[9.923941] (-) TimerEvent: {}
+[10.024207] (-) TimerEvent: {}
+[10.124460] (-) TimerEvent: {}
+[10.224704] (-) TimerEvent: {}
+[10.324951] (-) TimerEvent: {}
+[10.425168] (-) TimerEvent: {}
+[10.525410] (-) TimerEvent: {}
+[10.625654] (-) TimerEvent: {}
+[10.725899] (-) TimerEvent: {}
+[10.826145] (-) TimerEvent: {}
+[10.926390] (-) TimerEvent: {}
+[11.026615] (-) TimerEvent: {}
+[11.126836] (-) TimerEvent: {}
+[11.227059] (-) TimerEvent: {}
+[11.327305] (-) TimerEvent: {}
+[11.427542] (-) TimerEvent: {}
+[11.527785] (-) TimerEvent: {}
+[11.628027] (-) TimerEvent: {}
+[11.728267] (-) TimerEvent: {}
+[11.828510] (-) TimerEvent: {}
+[11.928752] (-) TimerEvent: {}
+[12.029003] (-) TimerEvent: {}
+[12.129258] (-) TimerEvent: {}
+[12.229505] (-) TimerEvent: {}
+[12.329759] (-) TimerEvent: {}
+[12.430009] (-) TimerEvent: {}
+[12.530260] (-) TimerEvent: {}
+[12.630523] (-) TimerEvent: {}
+[12.730751] (-) TimerEvent: {}
+[12.780496] (mkz_bywire) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mkz_bywire_component.dir/build.make:76: CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o] Error 1\n'}
+[12.780676] (mkz_bywire) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/mkz_bywire_component.dir/all] Error 2\n'}
+[12.780795] (mkz_bywire) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[12.782007] (mkz_bywire) CommandEnded: {'returncode': 2}
+[12.806795] (mkz_bywire) JobEnded: {'identifier': 'mkz_bywire', 'rc': 2}
+[12.817281] (-) EventReactorShutdown: {}

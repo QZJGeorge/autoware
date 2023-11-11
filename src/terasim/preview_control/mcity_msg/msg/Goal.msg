@@ -2,9 +2,9 @@
 float64 	timestamp
 
 #five parts
-int16 	Estop
-bool 	Go
-int16 	Signal
+int16 	etop
+bool 	go
+int16 	signal
 
 
 #part 1 -- vehicle state
@@ -38,9 +38,9 @@ float64 ad_yield
 
 
 #part 2 -- obstacles
-Obstacle[] obstacleVec
+Obstacle[] obstacle_vec
 
 
 #part 3 -- lane center and drivable area
-int32 NPN
-RefPath[] refPathVec
+int32 npn
+RefPath[] refpath_vec

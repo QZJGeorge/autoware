@@ -1,0 +1,30 @@
+-- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhijie/autoware/build/mcity_msg
+-- Install configuration: ""
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/ament_index/resource_index/package_run_dependencies/mcity_msg
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/ament_index/resource_index/parent_prefix_path/mcity_msg
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/mcity_msg/environment/ament_prefix_path.sh
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/mcity_msg/environment/ament_prefix_path.dsv
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/mcity_msg/environment/path.sh
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/mcity_msg/environment/path.dsv
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/mcity_msg/local_setup.bash
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/mcity_msg/local_setup.sh
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/mcity_msg/local_setup.zsh
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/mcity_msg/local_setup.dsv
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/mcity_msg/package.dsv
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/ament_index/resource_index/packages/mcity_msg
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/mcity_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/mcity_msg/cmake/mcity_msgConfig.cmake
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/mcity_msg/cmake/mcity_msgConfig-version.cmake
+-- Installing: /home/zhijie/autoware/install/mcity_msg/share/mcity_msg/package.xml

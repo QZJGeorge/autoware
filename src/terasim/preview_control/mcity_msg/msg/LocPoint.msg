@@ -1,5 +1,5 @@
 
-int64 	N
+int64 	n
 int16   seg_id
 int16   lane_id
 float64 longitude

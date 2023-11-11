@@ -8,7 +8,7 @@ This repo contains all necessary sensor drivers and control packages for MTL veh
 Prepared by Tom Shi, Haojie Zhu and Sean Shen   
 
 Features:
-- Velodyne
+- velodyne
 - PointGrey camera
 - Dataspeed drive-by-wire controller 
     - mkz description
@@ -43,7 +43,7 @@ or
 bash <(wget -q -O - https://bitbucket.org/DataspeedInc/dbw_mkz_ros/raw/master/dbw_mkz/scripts/sdk_install.bash)
 ```
 
-* Install Velodyne Driver
+* Install velodyne Driver
 ```sh
 sudo apt install ros-melodic-velodyne
 ```
@@ -53,7 +53,7 @@ sudo apt install ros-melodic-velodyne
 sudo apt-get install ros-melodic-pointgrey-camera-driver
 ```
 
-* GPS RTK and other Mcity packages
+* GPS rtk and other Mcity packages
 ```sh
 cd MKZ_drivers/
 install all dependencies using rosdep

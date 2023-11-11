@@ -34,7 +34,7 @@ void ROSNode::publishCmd()
         return;
 
     if(count ++ > 9999999) count = 0;
-    cmd_msg.timestamp = ros::Time::now().toSec();
+    cmd_msg.timestamp = this->get_clock()->now();
     cmd_msg.count           = count;
     cmd_msg.brake_cmd       = _ctrl->brake;
     cmd_msg.throttle_cmd    = _ctrl->throttle;

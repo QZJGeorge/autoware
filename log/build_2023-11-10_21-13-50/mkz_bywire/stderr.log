@@ -1,0 +1,115 @@
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:255:10:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid mkz_bywire::MkzBywire::Quaternion2Euler(double, double, double, double, double*, double*, double*)[m[K’
+  255 |     void [01;31m[KMkzBywire[m[K::Quaternion2Euler(double qx, double qy, double qz, double qw,
+      |          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:255:10:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid mkz_bywire::MkzBywire::Quaternion2Euler(double, double, double, double, double*, double*, double*)[m[K’
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:68:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass mkz_bywire::MkzBywire[m[K’ defined here
+   68 | class [01;36m[KMkzBywire[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:281:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kmcity_msg[m[K’ does not name a type
+  281 |     void MkzBywire::cmdCB(const [01;31m[Kmcity_msg[m[K::Control::SharedPtr msg)
+      |                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:281:51:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  281 |     void MkzBywire::cmdCB(const mcity_msg::Control[01;31m[K::[m[KSharedPtr msg)
+      |                                                   [01;31m[K^~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:281:51:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  281 |     void MkzBywire::cmdCB[34m[K([m[Kconst mcity_msg::Control[01;31m[K:[m[K[32m[K:[m[KSharedPtr msg)
+      |                          [34m[K~[m[K                        [01;31m[K^[m[K[32m[K~[m[K
+      |                                                   [32m[K)[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:281:51:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+  281 |     void MkzBywire::cmdCB(const mcity_msg::Control[01;31m[K::[m[KSharedPtr msg)
+      |                                                   [01;31m[K^~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:293:50:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+  293 |     void MkzBywire::gpsPosTypeCB(const std_msgs::[01;31m[KString[m[K::SharedPtr msg)
+      |                                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:293:68:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+  293 |     void MkzBywire::gpsPosTypeCB(const std_msgs::String::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                                    [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:293:67:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+  293 |     void MkzBywire::gpsPosTypeCB[34m[K([m[Kconst std_msgs::String::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K)
+      |                                 [34m[K~[m[K                                 [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                                   [32m[K)[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:293:68:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+  293 |     void MkzBywire::gpsPosTypeCB(const std_msgs::String::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                                    [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:298:51:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+  298 |     void MkzBywire::gpsNavStateCB(const std_msgs::[01;31m[KString[m[K::SharedPtr msg)
+      |                                                   [01;31m[K^~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:298:69:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+  298 |     void MkzBywire::gpsNavStateCB(const std_msgs::String::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                                     [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:298:68:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+  298 |     void MkzBywire::gpsNavStateCB[34m[K([m[Kconst std_msgs::String::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K)
+      |                                  [34m[K~[m[K                                 [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                                    [32m[K)[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:298:69:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+  298 |     void MkzBywire::gpsNavStateCB(const std_msgs::String::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                                     [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:303:49:[m[K [01;31m[Kerror: [m[K‘[01m[KNavSatFix[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type
+  303 |     void MkzBywire::gpsFixCB(const sensor_msgs::[01;31m[KNavSatFix[m[K::SharedPtr msg)
+      |                                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:303:70:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+  303 |     void MkzBywire::gpsFixCB(const sensor_msgs::NavSatFix::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                                      [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:303:69:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+  303 |     void MkzBywire::gpsFixCB[34m[K([m[Kconst sensor_msgs::NavSatFix::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K)
+      |                             [34m[K~[m[K                                       [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                                     [32m[K)[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:303:70:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+  303 |     void MkzBywire::gpsFixCB(const sensor_msgs::NavSatFix::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                                      [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:323:47:[m[K [01;31m[Kerror: [m[K‘[01m[KOdometry[m[K’ in namespace ‘[01m[Knav_msgs[m[K’ does not name a type
+  323 |     void MkzBywire::gpsOdomCB(const nav_msgs::[01;31m[KOdometry[m[K::SharedPtr msg)
+      |                                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:323:67:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+  323 |     void MkzBywire::gpsOdomCB(const nav_msgs::Odometry::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                                   [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:323:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+  323 |     void MkzBywire::gpsOdomCB[34m[K([m[Kconst nav_msgs::Odometry::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K)
+      |                              [34m[K~[m[K                                   [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                                  [32m[K)[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:323:67:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+  323 |     void MkzBywire::gpsOdomCB(const nav_msgs::Odometry::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                                   [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:353:46:[m[K [01;31m[Kerror: [m[K‘[01m[KImu[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type
+  353 |     void MkzBywire::imuCB(const sensor_msgs::[01;31m[KImu[m[K::SharedPtr msg)
+      |                                              [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:353:61:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+  353 |     void MkzBywire::imuCB(const sensor_msgs::Imu::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                             [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:353:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+  353 |     void MkzBywire::imuCB[34m[K([m[Kconst sensor_msgs::Imu::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K)
+      |                          [34m[K~[m[K                                 [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                            [32m[K)[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:353:61:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+  353 |     void MkzBywire::imuCB(const sensor_msgs::Imu::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                             [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:360:49:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+  360 |     void MkzBywire::sysEnableCB(const std_msgs::[01;31m[KBool[m[K::SharedPtr msg)
+      |                                                 [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:360:65:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+  360 |     void MkzBywire::sysEnableCB(const std_msgs::Bool::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                                 [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:360:64:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+  360 |     void MkzBywire::sysEnableCB[34m[K([m[Kconst std_msgs::Bool::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K)
+      |                                [34m[K~[m[K                               [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                                [32m[K)[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:360:65:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+  360 |     void MkzBywire::sysEnableCB(const std_msgs::Bool::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                                 [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:431:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kmcity_msg[m[K’ does not name a type
+  431 |     void MkzBywire::safeGuardCB(const [01;31m[Kmcity_msg[m[K::SafeGuardResults::SharedPtr msg)
+      |                                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:431:66:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  431 |     void MkzBywire::safeGuardCB(const mcity_msg::SafeGuardResults[01;31m[K::[m[KSharedPtr msg)
+      |                                                                  [01;31m[K^~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:431:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  431 |     void MkzBywire::safeGuardCB[34m[K([m[Kconst mcity_msg::SafeGuardResults[01;31m[K:[m[K[32m[K:[m[KSharedPtr msg)
+      |                                [34m[K~[m[K                                 [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                  [32m[K)[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:431:66:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+  431 |     void MkzBywire::safeGuardCB(const mcity_msg::SafeGuardResults[01;31m[K::[m[KSharedPtr msg)
+      |                                                                  [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/mkz_bywire_component.dir/build.make:76: CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/mkz_bywire_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

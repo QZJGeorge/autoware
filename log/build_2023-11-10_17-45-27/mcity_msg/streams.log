@@ -1,0 +1,31 @@
+[0.028s] Invoking command in '/home/zhijie/autoware/build/mcity_msg': /usr/bin/cmake --build /home/zhijie/autoware/build/mcity_msg -- -j16 -l16
+[0.075s] -- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.338s] Error parsing '/home/zhijie/autoware/src/terasim/preview_control/mcity_msg/package.xml':
+[0.394s] Traceback (most recent call last):
+[0.394s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.394s]     main()
+[0.394s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.394s]     raise e
+[0.394s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.394s]     package = parse_package_string(
+[0.394s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[0.394s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[0.394s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/zhijie/autoware/src/terasim/preview_control/mcity_msg/package.xml':
+[0.394s] Error(s):
+[0.394s] - The manifest of package "mcity_msg" (with format version 2) must not contain the following tags: member_of_group
+[0.404s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.404s]   execute_process(/usr/bin/python3.10
+[0.404s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.404s]   /home/zhijie/autoware/src/terasim/preview_control/mcity_msg/package.xml
+[0.404s]   /home/zhijie/autoware/build/mcity_msg/ament_cmake_core/package.cmake)
+[0.405s]   returned error code 1
+[0.405s] Call Stack (most recent call first):
+[0.405s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.405s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:42 (ament_package_xml)
+[0.405s]   CMakeLists.txt:5 (ament_auto_find_build_dependencies)
+[0.405s] 
+[0.405s] [0m
+[0.405s] -- Configuring incomplete, errors occurred!
+[0.405s] See also "/home/zhijie/autoware/build/mcity_msg/CMakeFiles/CMakeOutput.log".
+[0.406s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.408s] Invoked command in '/home/zhijie/autoware/build/mcity_msg' returned '2': /usr/bin/cmake --build /home/zhijie/autoware/build/mcity_msg -- -j16 -l16

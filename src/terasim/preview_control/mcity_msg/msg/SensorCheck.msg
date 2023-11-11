@@ -1,27 +1,27 @@
 float64 timestamp
-int64   RTK_timestamp_sec
-int64   RTK_timestamp_nsec
+int64   rtk_timestamp_sec
+int64   rtk_timestamp_nsec
 
-int64   RTK_keep_count
-int64   RTK_seq_num
-int16   RTK_gps_status	
-int16   RTK_gps_service
+int64   rtk_keep_count
+int64   rtk_seq_num
+int16   rtk_gps_status	
+int16   rtk_gps_service
 
-int64   Mobileye_keep_count
-int16   Mobileye_lanes_num 
+int64   mobileye_keep_count
+int16   mobileye_lanes_num 
 
-int64   DSRC_bsm_keep_count
-int64 	DSRC_bsm_num
-int64   DSRC_spat_keep_count
-int64 	DSRC_spat_num
+int64   dsrc_bsm_keep_count
+int64 	dsrc_bsm_num
+int64   dsrc_spat_keep_count
+int64 	dsrc_spat_num
 
-int64   Ibeo_points_keep_count
-int64 	Ibeo_points_num
-int64   Ibeo_objects_keep_count
-int64 	Ibeo_objests_num
+int64   ibeo_points_keep_count
+int64 	ibeo_points_num
+int64   ibeo_objects_keep_count
+int64 	ibeo_objests_num
 
-int64   Velodyne_points_keep_count
-int64 	Velodyne_points_num
+int64   velodyne_points_keep_count
+int64 	velodyne_points_num
  
 bool   throttle_enabled
 bool   throttle_override

@@ -68,12 +68,12 @@ float PathFollowing::preview()
 
     //step 4: Feedforward control design
     float cr_i = 0;
-    int   crSize = _p2c->crVector.size();
+    int   crSize = _p2c->cr_vector.size();
 
     PVC.feedForward = 0;
     for (int i = 0; i < MIN(50, crSize); ++i) // previewStepLen 2s
     {
-        cr_i = _p2c->crVector.at(i);
+        cr_i = _p2c->cr_vector.at(i);
         PVC.feedForward += ( kff[vN+0][i+2]*(1-beta) + kff[vN+1][i+2]*beta ) * cr_i;
     }
     PVC.feedForward = - PVC.feedForward;

@@ -1,4 +1,3 @@
-
 #reference path
 float64 	x
 float64 	y

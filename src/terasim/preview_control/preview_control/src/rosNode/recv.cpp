@@ -10,9 +10,9 @@ void ROSNode::vehStateCB(const mcity_msg::VehicleState::ConstPtr& msg)
     if (_vs == NULL) return;
 
     _vs->timestamp = msg->timestamp;
-    _vs->RTK_state_string = msg->RTK_state_string;
-    _vs->latitude = msg->RTK_gps_latitude;
-    _vs->longitude = msg->RTK_gps_longitude;
+    _vs->rtk_state_string = msg->rtk_state_string;
+    _vs->latitude = msg->rtk_gps_latitude;
+    _vs->longitude = msg->rtk_gps_longitude;
     _vs->z = msg->z;
     UTM::LLtoUTM( _vs->latitude, _vs->longitude,
                   _vs->y, _vs->x);
@@ -38,9 +38,9 @@ void ROSNode::pathCB(const mcity_msg::PlanedPath2::ConstPtr& msg)
     if (_p2c == NULL) return;
     
     _p2c->timestamp =msg->timestamp;
-    _p2c->Estop =msg->Estop;
-    _p2c->Go =msg->Go;
-    _p2c->Signal =msg->Signal;
+    _p2c->etop =msg->etop;
+    _p2c->go =msg->go;
+    _p2c->signal =msg->signal;
 
     _p2c->vd =msg->vd;
     _p2c->acc_d =msg->acc_d;
@@ -56,27 +56,27 @@ void ROSNode::pathCB(const mcity_msg::PlanedPath2::ConstPtr& msg)
     _p2c->x =msg->x;
     _p2c->y =msg->y;
 
-    _p2c->crVector.clear();
-    for (int i = 0; i < msg->crVector.size(); ++i)
-        _p2c->crVector.push_back(msg->crVector.at(i));
+    _p2c->cr_vector.clear();
+    for (int i = 0; i < msg->cr_vector.size(); ++i)
+        _p2c->cr_vector.push_back(msg->cr_vector.at(i));
 
-    _p2c->vdVector.clear();
-    for (int i = 0; i < msg->vdVector.size(); ++i)
-        _p2c->vdVector.push_back(msg->vdVector.at(i));
+    _p2c->vd_vector.clear();
+    for (int i = 0; i < msg->vd_vector.size(); ++i)
+        _p2c->vd_vector.push_back(msg->vd_vector.at(i));
 
-    _p2c->slopeVector.clear();
-    for (int i = 0; i < msg->slopeVector.size(); ++i)
-        _p2c->slopeVector.push_back(msg->slopeVector.at(i));
+    _p2c->slope_vector.clear();
+    for (int i = 0; i < msg->slope_vector.size(); ++i)
+        _p2c->slope_vector.push_back(msg->slope_vector.at(i));
 
-    _p2c->xVector.clear();
-    for (int i = 0; i < msg->xVector.size(); ++i)
-        _p2c->xVector.push_back(msg->xVector.at(i));
+    _p2c->x_vector.clear();
+    for (int i = 0; i < msg->x_vector.size(); ++i)
+        _p2c->x_vector.push_back(msg->x_vector.at(i));
 
-    _p2c->yVector.clear();
-    for (int i = 0; i < msg->yVector.size(); ++i)
-        _p2c->yVector.push_back(msg->yVector.at(i)); 
+    _p2c->y_vector.clear();
+    for (int i = 0; i < msg->y_vector.size(); ++i)
+        _p2c->y_vector.push_back(msg->y_vector.at(i)); 
 
-    //printf("rcv msg Estop%d\n", msg->Estop);
+    //printf("rcv msg etop%d\n", msg->etop);
 }
 
 

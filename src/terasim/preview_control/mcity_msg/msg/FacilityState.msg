@@ -1,4 +1,3 @@
-
 float64 	timestamp
 int16 		rail_cross_gate_enable_go
 int16 		mcity_gate_enable_go

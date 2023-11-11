@@ -1,0 +1,57 @@
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In constructor ‘[01m[Kmkz_bywire::MkzBywire::MkzBywire(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:85:29:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+   85 |         gear_msg.cmd.gear = [01;31m[KGear[m[K::NONE;
+      |                             [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:89:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TurnSignal = struct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcmd[m[K’
+   89 |         turn_signal_msg.[01;31m[Kcmd[m[K.value = Turnsignal::NONE;
+      |                         [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:89:37:[m[K [01;31m[Kerror: [m[K‘[01m[KTurnsignal[m[K’ has not been declared
+   89 |         turn_signal_msg.cmd.value = [01;31m[KTurnsignal[m[K::NONE;
+      |                                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In member function ‘[01m[Kvoid mkz_bywire::MkzBywire::publishCmd()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:121:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+  121 |         if (gear_msg.cmd.gear == [01;31m[KGear[m[K::PARK    ||
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:122:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+  122 |             gear_msg.cmd.gear == [01;31m[KGear[m[K::REVERSE ||
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:123:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+  123 |             gear_msg.cmd.gear == [01;31m[KGear[m[K::NEUTRAL ||
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:124:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+  124 |             gear_msg.cmd.gear == [01;31m[KGear[m[K::DRIVE   ||
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:125:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+  125 |             gear_msg.cmd.gear == [01;31m[KGear[m[K::LOW )
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:156:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TurnSignal = struct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcmd[m[K’
+  156 |         turn_signal_msg.[01;31m[Kcmd[m[K.value = cmd_in.turn_signal;
+      |                         [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:157:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TurnSignal = struct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcmd[m[K’
+  157 |         if (turn_signal_msg.[01;31m[Kcmd[m[K.value != Turnsignal::NONE)
+      |                             [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:157:42:[m[K [01;31m[Kerror: [m[K‘[01m[KTurnsignal[m[K’ has not been declared
+  157 |         if (turn_signal_msg.cmd.value != [01;31m[KTurnsignal[m[K::NONE)
+      |                                          [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:166:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TurnSignal = struct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcmd[m[K’
+  166 |             StateName::Turn_signal_name(turn_signal_msg.[01;31m[Kcmd[m[K.value).data() );
+      |                                                         [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:161:9:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_INFO_THROTTLE[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO_THROTTLE[m[K’?
+  161 |         [01;31m[KROS_INFO_THROTTLE[m[K(10, "Publised cmd: T%f B%f S%f Gear-%s TS-%s",
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |         [32m[KRCLCPP_INFO_THROTTLE[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In member function ‘[01m[Kvoid mkz_bywire::MkzBywire::publishVehState()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:213:50:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kmcity_msgs::msg::VehicleState_<std::allocator<void> >::_timestamp_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+  213 |         vs_msg.timestamp = [01;31m[Kthis->get_clock()->now()[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                  [01;31m[K|[m[K
+      |                                                  [01;31m[Krclcpp::Time[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In member function ‘[01m[Kvoid mkz_bywire::MkzBywire::publishSensorcheck()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:219:54:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kmcity_msgs::msg::SensorCheck_<std::allocator<void> >::_timestamp_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+  219 |         sensor_msg.timestamp = [01;31m[Kthis->get_clock()->now()[m[K;
+      |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                      [01;31m[K|[m[K
+      |                                                      [01;31m[Krclcpp::Time[m[K
+gmake[2]: *** [CMakeFiles/mkz_bywire_component.dir/build.make:76: CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/mkz_bywire_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,6 +1,6 @@
 
 float64 timestamp
-int64 	NPN
+int64 	npn
 LocPoint[]  data
 
  

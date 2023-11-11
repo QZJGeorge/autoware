@@ -25,9 +25,9 @@ void PathFollowing::ini(
     _vs = vehicle_state;
     _ctrl = control_output;
 
-    _p2c->crVector.clear();
+    _p2c->cr_vector.clear();
     for (int i = 0; i < 100; ++i)
-        _p2c->crVector.push_back(0.0f);
+        _p2c->cr_vector.push_back(0.0f);
 
     max_allowed_ey = max_allowed_ey_;
     max_allowed_eh = max_allowed_eh_;
@@ -53,10 +53,10 @@ int PathFollowing::run()
 
     if (PVC.inPathFlag != true)
     {
-        _p2c->Estop = MAX(_p2c->Estop, ESTOP_HIGH);
+        _p2c->etop = MAX(_p2c->etop, etop_HIGH);
         
         if (count%25==0)
-        printf("The vehicle departs from the path, ey=%f/%f ephi=%f/%f, set to ESTOP_HIGH\n",
+        printf("The vehicle departs from the path, ey=%f/%f ephi=%f/%f, set to etop_HIGH\n",
             _p2c->ey, max_allowed_ey, _p2c->ephi, max_allowed_eh);
     }
 

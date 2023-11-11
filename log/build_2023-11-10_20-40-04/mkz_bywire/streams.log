@@ -1,0 +1,62 @@
+[0.008s] Invoking command in '/home/zhijie/autoware/build/mkz_bywire': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/mcity_msgs:/home/zhijie/autoware/install/dbw_fca_msgs:/home/zhijie/autoware/install/dataspeed_dbw_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/mcity_msgs:/home/zhijie/autoware/install/dbw_fca_msgs:/home/zhijie/autoware/install/dataspeed_dbw_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/mcity_msgs/lib:/home/zhijie/autoware/install/dbw_fca_msgs/lib:/home/zhijie/autoware/install/dataspeed_dbw_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/mcity_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dbw_fca_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_dbw_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/mkz_bywire -- -j16 -l16
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target mkz_bywire_component[0m
+[0.043s] [ 50%] Built target mkz_bywire
+[0.048s] [ 75%] [32mBuilding CXX object CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o[0m
+[2.376s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In constructor ‘[01m[Kmkz_bywire::MkzBywire::MkzBywire(const rclcpp::NodeOptions&)[m[K’:
+[2.377s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:85:29:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+[2.377s]    85 |         gear_msg.cmd.gear = [01;31m[KGear[m[K::NONE;
+[2.377s]       |                             [01;31m[K^~~~[m[K
+[2.377s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:89:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TurnSignal = struct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcmd[m[K’
+[2.377s]    89 |         turn_signal_msg.[01;31m[Kcmd[m[K.value = Turnsignal::NONE;
+[2.377s]       |                         [01;31m[K^~~[m[K
+[2.377s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:89:37:[m[K [01;31m[Kerror: [m[K‘[01m[KTurnsignal[m[K’ has not been declared
+[2.377s]    89 |         turn_signal_msg.cmd.value = [01;31m[KTurnsignal[m[K::NONE;
+[2.377s]       |                                     [01;31m[K^~~~~~~~~~[m[K
+[2.378s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In member function ‘[01m[Kvoid mkz_bywire::MkzBywire::publishCmd()[m[K’:
+[2.378s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:121:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+[2.378s]   121 |         if (gear_msg.cmd.gear == [01;31m[KGear[m[K::PARK    ||
+[2.378s]       |                                  [01;31m[K^~~~[m[K
+[2.378s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:122:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+[2.378s]   122 |             gear_msg.cmd.gear == [01;31m[KGear[m[K::REVERSE ||
+[2.379s]       |                                  [01;31m[K^~~~[m[K
+[2.379s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:123:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+[2.379s]   123 |             gear_msg.cmd.gear == [01;31m[KGear[m[K::NEUTRAL ||
+[2.379s]       |                                  [01;31m[K^~~~[m[K
+[2.379s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:124:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+[2.379s]   124 |             gear_msg.cmd.gear == [01;31m[KGear[m[K::DRIVE   ||
+[2.379s]       |                                  [01;31m[K^~~~[m[K
+[2.379s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:125:34:[m[K [01;31m[Kerror: [m[K‘[01m[KGear[m[K’ has not been declared
+[2.379s]   125 |             gear_msg.cmd.gear == [01;31m[KGear[m[K::LOW )
+[2.379s]       |                                  [01;31m[K^~~~[m[K
+[2.379s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:156:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TurnSignal = struct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcmd[m[K’
+[2.379s]   156 |         turn_signal_msg.[01;31m[Kcmd[m[K.value = cmd_in.turn_signal;
+[2.380s]       |                         [01;31m[K^~~[m[K
+[2.380s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:157:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TurnSignal = struct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcmd[m[K’
+[2.380s]   157 |         if (turn_signal_msg.[01;31m[Kcmd[m[K.value != Turnsignal::NONE)
+[2.380s]       |                             [01;31m[K^~~[m[K
+[2.380s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:157:42:[m[K [01;31m[Kerror: [m[K‘[01m[KTurnsignal[m[K’ has not been declared
+[2.380s]   157 |         if (turn_signal_msg.cmd.value != [01;31m[KTurnsignal[m[K::NONE)
+[2.380s]       |                                          [01;31m[K^~~~~~~~~~[m[K
+[2.380s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:166:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TurnSignal = struct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct dataspeed_dbw_msgs::msg::TurnSignal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcmd[m[K’
+[2.380s]   166 |             StateName::Turn_signal_name(turn_signal_msg.[01;31m[Kcmd[m[K.value).data() );
+[2.380s]       |                                                         [01;31m[K^~~[m[K
+[2.387s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:161:9:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_INFO_THROTTLE[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO_THROTTLE[m[K’?
+[2.387s]   161 |         [01;31m[KROS_INFO_THROTTLE[m[K(10, "Publised cmd: T%f B%f S%f Gear-%s TS-%s",
+[2.387s]       |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.387s]       |         [32m[KRCLCPP_INFO_THROTTLE[m[K
+[2.387s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In member function ‘[01m[Kvoid mkz_bywire::MkzBywire::publishVehState()[m[K’:
+[2.387s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:213:50:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kmcity_msgs::msg::VehicleState_<std::allocator<void> >::_timestamp_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+[2.387s]   213 |         vs_msg.timestamp = [01;31m[Kthis->get_clock()->now()[m[K;
+[2.387s]       |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[2.387s]       |                                                  [01;31m[K|[m[K
+[2.388s]       |                                                  [01;31m[Krclcpp::Time[m[K
+[2.388s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In member function ‘[01m[Kvoid mkz_bywire::MkzBywire::publishSensorcheck()[m[K’:
+[2.388s] [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:219:54:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kmcity_msgs::msg::SensorCheck_<std::allocator<void> >::_timestamp_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+[2.388s]   219 |         sensor_msg.timestamp = [01;31m[Kthis->get_clock()->now()[m[K;
+[2.388s]       |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[2.388s]       |                                                      [01;31m[K|[m[K
+[2.388s]       |                                                      [01;31m[Krclcpp::Time[m[K
+[12.768s] gmake[2]: *** [CMakeFiles/mkz_bywire_component.dir/build.make:76: CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o] Error 1
+[12.768s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/mkz_bywire_component.dir/all] Error 2
+[12.768s] gmake: *** [Makefile:146: all] Error 2
+[12.770s] Invoked command in '/home/zhijie/autoware/build/mkz_bywire' returned '2': AMENT_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/mcity_msgs:/home/zhijie/autoware/install/dbw_fca_msgs:/home/zhijie/autoware/install/dataspeed_dbw_msgs:/home/zhijie/autoware/install/autoware_lint_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zhijie/autoware/install/autoware_cmake:/home/zhijie/autoware/install/mcity_msgs:/home/zhijie/autoware/install/dbw_fca_msgs:/home/zhijie/autoware/install/dataspeed_dbw_msgs:/home/zhijie/autoware/install/autoware_lint_common:/opt/ros/humble LD_LIBRARY_PATH=/home/zhijie/autoware/install/mcity_msgs/lib:/home/zhijie/autoware/install/dbw_fca_msgs/lib:/home/zhijie/autoware/install/dataspeed_dbw_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zhijie/autoware/install/mcity_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dbw_fca_msgs/local/lib/python3.10/dist-packages:/home/zhijie/autoware/install/dataspeed_dbw_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zhijie/autoware/build/mkz_bywire -- -j16 -l16

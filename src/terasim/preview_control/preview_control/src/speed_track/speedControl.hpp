@@ -66,9 +66,9 @@ public:
 
     int  run();
     void setStop();
-    void setEstop_level_high();
-    void setEstop_level_medium();
-    void setEstop_level_low();
+    void setetop_level_high();
+    void setetop_level_medium();
+    void setetop_level_low();
 
     SpeedControl_S SC;
 
