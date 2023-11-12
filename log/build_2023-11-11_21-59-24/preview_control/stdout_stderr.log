@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target preview_control_component[0m
+[ 50%] Built target preview_control
+[ 75%] [32mBuilding CXX object CMakeFiles/preview_control_component.dir/src/preview_control.cpp.o[0m
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:[m[K In constructor ‘[01m[Kpreview_control::PreviewControl::PreviewControl(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:25:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid PathFollowing::init(Plan_Rlt_S*, VehState_S*, Control_Value_S*, std::string, float, float)[m[K’ is private within this context
+   25 |         [01;31m[KpathFollow.init([m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~^[m[K
+   26 | [01;31m[K            & ssData.p2c,[m[K
+      |             [01;31m[K~~~~~~~~~~~~~[m[K
+   27 | [01;31m[K            & ssData.vs,[m[K
+      |             [01;31m[K~~~~~~~~~~~~[m[K
+   28 | [01;31m[K            & ssData.ctrl,[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~[m[K
+   29 | [01;31m[K            guiSet.ros_gainfolder,[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+   30 | [01;31m[K            guiSet.ros_max_ey,[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~[m[K
+   31 | [01;31m[K            guiSet.ros_max_ephi[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K
+   32 | [01;31m[K        )[m[K;
+      |         [01;31m[K~[m[K               
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/preview_control.hpp:10[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/path_follow.hpp:72:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+   72 |     void [01;36m[Kinit[m[K(
+      |          [01;36m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:[m[K In member function ‘[01m[Kvoid preview_control::PreviewControl::on_timer()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:83:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kint PathFollowing::run()[m[K’ is private within this context
+   83 |         [01;31m[KpathFollow.run()[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/preview_control.hpp:10[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/path_follow.hpp:80:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+   80 |     int [01;36m[Krun[m[K();
+      |         [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/preview_control_component.dir/build.make:76: CMakeFiles/preview_control_component.dir/src/preview_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/preview_control_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

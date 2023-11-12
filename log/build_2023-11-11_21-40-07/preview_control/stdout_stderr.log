@@ -1,0 +1,47 @@
+[35m[1mConsolidate compiler generated dependencies of target preview_control_component[0m
+[ 50%] Built target preview_control
+[ 75%] [32mBuilding CXX object CMakeFiles/preview_control_component.dir/src/preview_control.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libpreview_control_component.so[0m
+[100%] Built target preview_control_component
+-- Install configuration: ""
+-- Installing: /home/zhijie/autoware/install/preview_control/lib/preview_control/preview_control
+-- Set runtime path of "/home/zhijie/autoware/install/preview_control/lib/preview_control/preview_control" to ""
+-- Installing: /home/zhijie/autoware/install/preview_control/include
+-- Installing: /home/zhijie/autoware/install/preview_control/include/path_follow.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/include/speed_control.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/include/sx.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/include/preview_control.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/include/data_model.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/include/xmath.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/include/utm.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/environment/library_path.sh
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/environment/library_path.dsv
+-- Installing: /home/zhijie/autoware/install/preview_control/lib/libpreview_control_component.so
+-- Set runtime path of "/home/zhijie/autoware/install/preview_control/lib/libpreview_control_component.so" to ""
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/include
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/include/path_follow.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/include/speed_control.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/include/sx.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/include/preview_control.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/include/data_model.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/include/xmath.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/include/utm.hpp
+-- Installing: /home/zhijie/autoware/install/preview_control/share/ament_index/resource_index/package_run_dependencies/preview_control
+-- Installing: /home/zhijie/autoware/install/preview_control/share/ament_index/resource_index/parent_prefix_path/preview_control
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/environment/ament_prefix_path.sh
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/environment/ament_prefix_path.dsv
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/environment/path.sh
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/environment/path.dsv
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/local_setup.bash
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/local_setup.sh
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/local_setup.zsh
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/local_setup.dsv
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/package.dsv
+-- Installing: /home/zhijie/autoware/install/preview_control/share/ament_index/resource_index/packages/preview_control
+-- Installing: /home/zhijie/autoware/install/preview_control/share/ament_index/resource_index/rclcpp_components/preview_control
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/cmake/preview_controlConfig.cmake
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/cmake/preview_controlConfig-version.cmake
+-- Installing: /home/zhijie/autoware/install/preview_control/share/preview_control/package.xml

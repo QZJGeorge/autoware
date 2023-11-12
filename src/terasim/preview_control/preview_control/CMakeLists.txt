@@ -1,31 +1,33 @@
-cmake_minimum_required(VERSION 2.8.3)
-project(mkz_control)
-add_compile_options(-std=c++11)
+cmake_minimum_required(VERSION 3.14)
+project(preview_control)
 
+find_package(autoware_cmake REQUIRED)
 
-find_package( catkin REQUIRED COMPONENTS 
-	mcity_msg	
-	roscpp 
-	rospy 
-	std_msgs)
+autoware_package()
 
-catkin_package(CATKIN_DEPENDS mcity_msg)
-
-
+# Add include directories
 include_directories(
-	${catkin_INCLUDE_DIRS}
-	include 
-	src/rosNode
-    src/speed_track
+    include
     src/path_follow
-    src/rosNode
-	../include
-	)
+    src/speed_control
+)
 
+#############################  PREVIEW CONTROL  ##############################
 
-## src
-file(GLOB SRC "src/*.cpp" "src/*/*.cpp")
+ament_auto_add_library(preview_control_component SHARED
+  src/preview_control.cpp
+  src/path_follow/path_follow.cpp
+  src/speed_control/speed_control.cpp
+)
 
+# target_link_libraries(preview_control_component hiredis)
 
-add_executable(${PROJECT_NAME} ${SRC})
-target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
+rclcpp_components_register_node(preview_control_component
+  PLUGIN "preview_control::PreviewControl"
+  EXECUTABLE preview_control
+)
+
+ament_auto_package(
+  INSTALL_TO_SHARE
+  include
+)

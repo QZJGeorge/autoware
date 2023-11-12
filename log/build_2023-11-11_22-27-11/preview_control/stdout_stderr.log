@@ -1,0 +1,170 @@
+[35m[1mConsolidate compiler generated dependencies of target preview_control[0m
+[35m[1mConsolidate compiler generated dependencies of target preview_control_component[0m
+[ 33%] Built target preview_control
+[ 66%] [32mBuilding CXX object CMakeFiles/preview_control_component.dir/src/preview_control.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/preview_control_component.dir/src/path_follow/path_follow.cpp.o[0m
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:59:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   59 |         [01;31m[KVehState_S[m[K * const vehicle_state,
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |                   [32m[K;[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:59:28:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kvehicle_state[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   59 |         VehState_S * const [01;31m[Kvehicle_state[m[K,
+      |                            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:60:9:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KControl_Value_S[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   60 |         [01;31m[KControl_Value_S[m[K * const control_output,
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:60:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   60 |         [01;31m[KControl_Value_S[m[K * const control_output,
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                        [32m[K;[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:60:33:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kcontrol_output[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   60 |         Control_Value_S * const [01;31m[Kcontrol_output[m[K,
+      |                                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:61:9:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kstring[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   61 |         [01;31m[Kstd[m[K::string gain_folder,
+      |         [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:61:9:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[K::[m[K’
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:61:14:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   61 |         std::[01;31m[Kstring[m[K gain_folder,
+      |              [01;31m[K^~~~~~[m[K
+      |                    [32m[K;[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:61:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kgain_folder[m[K’ does not name a type
+   61 |         std::string [01;31m[Kgain_folder[m[K,
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:75:5:[m[K [01;31m[Kerror: [m[K‘[01m[KVehState_S[m[K’ does not name a type
+   75 |     [01;31m[KVehState_S[m[K * _vs   = NULL;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:76:5:[m[K [01;31m[Kerror: [m[K‘[01m[KControl_Value_S[m[K’ does not name a type
+   76 |     [01;31m[KControl_Value_S[m[K * _ctrl = NULL;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:[m[K In constructor ‘[01m[KPathFollowing::PathFollowing()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:53:5:[m[K [01;31m[Kerror: [m[Kuninitialized const member in ‘[01m[Kclass Plan_Rlt_S* const[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   53 |     [01;31m[KPathFollowing[m[K(){};
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:58:28:[m[K [01;36m[Knote: [m[K‘[01m[KPlan_Rlt_S* const PathFollowing::planning2control_msg[m[K’ should be initialized
+   58 |         Plan_Rlt_S * const [01;36m[Kplanning2control_msg[m[K,
+      |                            [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:53:5:[m[K [01;31m[Kerror: [m[Kuninitialized const member in ‘[01m[Kint* const[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   53 |     [01;31m[KPathFollowing[m[K(){};
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:59:28:[m[K [01;36m[Knote: [m[K‘[01m[Kint* const PathFollowing::vehicle_state[m[K’ should be initialized
+   59 |         VehState_S * const [01;36m[Kvehicle_state[m[K,
+      |                            [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:53:5:[m[K [01;31m[Kerror: [m[Kuninitialized const member in ‘[01m[Kint* const[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   53 |     [01;31m[KPathFollowing[m[K(){};
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:60:33:[m[K [01;36m[Knote: [m[K‘[01m[Kint* const PathFollowing::control_output[m[K’ should be initialized
+   60 |         Control_Value_S * const [01;36m[Kcontrol_output[m[K,
+      |                                 [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.cpp:[m[K At global scope:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.cpp:4:5:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KPlan_Rlt_S[m[K’
+    4 |     [01;31m[KPlan_Rlt_S[m[K * const planning2control_msg,
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.cpp:[m[K In member function ‘[01m[Kint PathFollowing::run()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.cpp:27:25:[m[K [01;31m[Kerror: [m[K‘[01m[K_vs[m[K’ was not declared in this scope
+   27 |     if (_p2c == NULL || [01;31m[K_vs[m[K == NULL || _ctrl == NULL )
+      |                         [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.cpp:27:40:[m[K [01;31m[Kerror: [m[K‘[01m[K_ctrl[m[K’ was not declared in this scope
+   27 |     if (_p2c == NULL || _vs == NULL || [01;31m[K_ctrl[m[K == NULL )
+      |                                        [01;31m[K^~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.cpp:55:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_vs[m[K’ was not declared in this scope
+   55 |     if ([01;31m[K_vs[m[K->speed_x > 0.001f)
+      |         [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.cpp:56:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_ctrl[m[K’ was not declared in this scope
+   56 |         [01;31m[K_ctrl[m[K->steering = PVC.steeringAngle;
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.cpp:66:13:[m[K [01;31m[Kerror: [m[K‘[01m[K_vs[m[K’ was not declared in this scope
+   66 |         if ([01;31m[K_vs[m[K->speed_x < 1 || _vs->by_wire_enabled != true)
+      |             [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.cpp:69:33:[m[K [01;31m[Kerror: [m[K‘[01m[K_ctrl[m[K’ was not declared in this scope
+   69 |             PVC.delayedCmd[4] = [01;31m[K_ctrl[m[K->steering / STEERING_RATIO; //delayed 1st step
+      |                                 [01;31m[K^~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.cpp:[m[K In member function ‘[01m[Kfloat PathFollowing::preview()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.cpp:78:23:[m[K [01;31m[Kerror: [m[K‘[01m[K_vs[m[K’ was not declared in this scope
+   78 |     int    vN = (int)([01;31m[K_vs[m[K->speed_x -4);
+      |                       [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/preview_control_component.dir/build.make:90: CMakeFiles/preview_control_component.dir/src/path_follow/path_follow.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/preview_control.hpp:10[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:59:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   59 |         [01;31m[KVehState_S[m[K * const vehicle_state,
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |                   [32m[K;[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:59:28:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kvehicle_state[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   59 |         VehState_S * const [01;31m[Kvehicle_state[m[K,
+      |                            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:60:9:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KControl_Value_S[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   60 |         [01;31m[KControl_Value_S[m[K * const control_output,
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:60:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   60 |         [01;31m[KControl_Value_S[m[K * const control_output,
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                        [32m[K;[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:60:33:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kcontrol_output[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   60 |         Control_Value_S * const [01;31m[Kcontrol_output[m[K,
+      |                                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:61:9:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kstring[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   61 |         [01;31m[Kstd[m[K::string gain_folder,
+      |         [01;31m[K^~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:61:9:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[K::[m[K’
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:61:14:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   61 |         std::[01;31m[Kstring[m[K gain_folder,
+      |              [01;31m[K^~~~~~[m[K
+      |                    [32m[K;[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:61:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kgain_folder[m[K’ does not name a type
+   61 |         std::string [01;31m[Kgain_folder[m[K,
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:75:5:[m[K [01;31m[Kerror: [m[K‘[01m[KVehState_S[m[K’ does not name a type
+   75 |     [01;31m[KVehState_S[m[K * _vs   = NULL;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:76:5:[m[K [01;31m[Kerror: [m[K‘[01m[KControl_Value_S[m[K’ does not name a type
+   76 |     [01;31m[KControl_Value_S[m[K * _ctrl = NULL;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:[m[K In constructor ‘[01m[KPathFollowing::PathFollowing()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:53:5:[m[K [01;31m[Kerror: [m[Kuninitialized const member in ‘[01m[Kclass Plan_Rlt_S* const[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   53 |     [01;31m[KPathFollowing[m[K(){};
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:58:28:[m[K [01;36m[Knote: [m[K‘[01m[KPlan_Rlt_S* const PathFollowing::planning2control_msg[m[K’ should be initialized
+   58 |         Plan_Rlt_S * const [01;36m[Kplanning2control_msg[m[K,
+      |                            [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:53:5:[m[K [01;31m[Kerror: [m[Kuninitialized const member in ‘[01m[Kint* const[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   53 |     [01;31m[KPathFollowing[m[K(){};
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:59:28:[m[K [01;36m[Knote: [m[K‘[01m[Kint* const PathFollowing::vehicle_state[m[K’ should be initialized
+   59 |         VehState_S * const [01;36m[Kvehicle_state[m[K,
+      |                            [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:53:5:[m[K [01;31m[Kerror: [m[Kuninitialized const member in ‘[01m[Kint* const[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   53 |     [01;31m[KPathFollowing[m[K(){};
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:60:33:[m[K [01;36m[Knote: [m[K‘[01m[Kint* const PathFollowing::control_output[m[K’ should be initialized
+   60 |         Control_Value_S * const [01;36m[Kcontrol_output[m[K,
+      |                                 [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:[m[K In constructor ‘[01m[Kpreview_control::PreviewControl::PreviewControl(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:25:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPathFollowing::init(Plan_Rlt_S*, VehState_S*, Control_Value_S*, std::string&, float&, float&)[m[K’
+   25 |         [01;31m[KpathFollow.init([m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~^[m[K
+   26 | [01;31m[K            & ssData.p2c,[m[K
+      |             [01;31m[K~~~~~~~~~~~~~[m[K
+   27 | [01;31m[K            & ssData.vs,[m[K
+      |             [01;31m[K~~~~~~~~~~~~[m[K
+   28 | [01;31m[K            & ssData.ctrl,[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~[m[K
+   29 | [01;31m[K            guiSet.ros_gainfolder,[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+   30 | [01;31m[K            guiSet.ros_max_ey,[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~[m[K
+   31 | [01;31m[K            guiSet.ros_max_ephi[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K
+   32 | [01;31m[K        )[m[K;
+      |         [01;31m[K~[m[K               
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/preview_control.hpp:10[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:57:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid PathFollowing::init()[m[K’
+   57 |     void [01;36m[Kinit[m[K();
+      |          [01;36m[K^~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.hpp:57:10:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 6 provided
+gmake[2]: *** [CMakeFiles/preview_control_component.dir/build.make:76: CMakeFiles/preview_control_component.dir/src/preview_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/preview_control_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

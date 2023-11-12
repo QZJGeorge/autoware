@@ -1,0 +1,68 @@
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/preview_control.hpp:7[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/sx.hpp:[m[K In member function ‘[01m[Kvoid Plan_Rlt_S::ini()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/sx.hpp:155:9:[m[K [01;31m[Kerror: [m[K‘[01m[KGo[m[K’ was not declared in this scope; did you mean ‘[01m[Kgo[m[K’?
+  155 |         [01;31m[KGo[m[K    = 0;
+      |         [01;31m[K^~[m[K
+      |         [32m[Kgo[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:[m[K In constructor ‘[01m[Kpreview_control::PreviewControl::PreviewControl(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:21:23:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KPlan_Rlt_S[m[K’ to ‘[01m[KPlan_Rlt_S*[m[K’ in assignment
+   21 |         _p2c = [01;31m[KssData.p2c[m[K;
+      |                [01;31m[K~~~~~~~^~~[m[K
+      |                       [01;31m[K|[m[K
+      |                       [01;31m[KPlan_Rlt_S[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:22:22:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KVehState_S[m[K’ to ‘[01m[KVehState_S*[m[K’ in assignment
+   22 |         _vs = [01;31m[KssData.vs[m[K;
+      |               [01;31m[K~~~~~~~^~[m[K
+      |                      [01;31m[K|[m[K
+      |                      [01;31m[KVehState_S[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:23:24:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KControl_Value_S[m[K’ to ‘[01m[KControl_Value_S*[m[K’ in assignment
+   23 |         _ctrl = [01;31m[KssData.ctrl[m[K;
+      |                 [01;31m[K~~~~~~~^~~~[m[K
+      |                        [01;31m[K|[m[K
+      |                        [01;31m[KControl_Value_S[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:26:20:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KPlan_Rlt_S[m[K’ to ‘[01m[KPlan_Rlt_S*[m[K’
+   26 |             [01;31m[KssData.p2c[m[K,
+      |             [01;31m[K~~~~~~~^~~[m[K
+      |                    [01;31m[K|[m[K
+      |                    [01;31m[KPlan_Rlt_S[m[K
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/preview_control.hpp:10[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/path_follow.hpp:56:28:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid PathFollowing::ini(Plan_Rlt_S*, VehState_S*, Control_Value_S*, std::string, float, float)[m[K’
+   56 |         [01;36m[KPlan_Rlt_S * const planning2control_msg[m[K,
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:35:20:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KPlan_Rlt_S[m[K’ to ‘[01m[KPlan_Rlt_S*[m[K’
+   35 |             [01;31m[KssData.p2c[m[K,
+      |             [01;31m[K~~~~~~~^~~[m[K
+      |                    [01;31m[K|[m[K
+      |                    [01;31m[KPlan_Rlt_S[m[K
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/preview_control.hpp:11[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/speed_control.hpp:88:33:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid SpeedControl::ini(Plan_Rlt_S*, VehState_S*, Control_Value_S*, float, float, int)[m[K’
+   88 |     void ini([01;36m[KPlan_Rlt_S * const planning2control_msg[m[K,
+      |              [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:54:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kon_timer[m[K’ is not a member of ‘[01m[Kpreview_control::PreviewControl[m[K’
+   54 |             this, get_clock(), 20ms, std::bind(&PreviewControl::[01;31m[Kon_timer[m[K, this));
+      |                                                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:[m[K In member function ‘[01m[Kvoid preview_control::PreviewControl::publishCmd()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:62:18:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[K<unresolved overloaded function type>[m[K’ and ‘[01m[Kint[m[K’ to binary ‘[01m[Koperator>[m[K’
+   62 |         if([01;31m[Kcount > 9999999[m[K){
+      |            [01;31m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:63:21:[m[K [01;31m[Kerror: [m[Koverloaded function with no contextual type information
+   63 |             count = [01;31m[K0[m[K;
+      |                     [01;31m[K^[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:66:35:[m[K [01;31m[Kerror: [m[Kcannot resolve overloaded function ‘[01m[Kcount[m[K’ based on conversion to type ‘[01m[Kmcity_msgs::msg::Control_<std::allocator<void> >::_count_type[m[K’ {aka ‘[01m[Kint[m[K’}
+   66 |         cmd_msg.count           = [01;31m[Kcount[m[K;
+      |                                   [01;31m[K^~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:[m[K At global scope:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:76:10:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid preview_control::PreviewControl::on_timer()[m[K’
+   76 |     void [01;31m[KPreviewControl[m[K::on_timer()
+      |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:76:10:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid preview_control::PreviewControl::on_timer()[m[K’
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/preview_control.hpp:30:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass preview_control::PreviewControl[m[K’ defined here
+   30 | class [01;36m[KPreviewControl[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/preview_control_component.dir/build.make:76: CMakeFiles/preview_control_component.dir/src/preview_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/preview_control_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

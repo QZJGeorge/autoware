@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target preview_control_component[0m
+[ 50%] Built target preview_control
+[ 75%] [32mBuilding CXX object CMakeFiles/preview_control_component.dir/src/preview_control.cpp.o[0m
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:[m[K In constructor ‘[01m[Kpreview_control::PreviewControl::PreviewControl(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:27:20:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KVehState_S[m[K’ to ‘[01m[KVehState_S*[m[K’
+   27 |             [01;31m[KssData.vs[m[K,
+      |             [01;31m[K~~~~~~~^~[m[K
+      |                    [01;31m[K|[m[K
+      |                    [01;31m[KVehState_S[m[K
+In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/preview_control.hpp:10[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/path_follow.hpp:57:28:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid PathFollowing::ini(Plan_Rlt_S*, VehState_S*, Control_Value_S*, std::string, float, float)[m[K’
+   57 |         [01;36m[KVehState_S * const vehicle_state[m[K,
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/preview_control_component.dir/build.make:76: CMakeFiles/preview_control_component.dir/src/preview_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/preview_control_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
