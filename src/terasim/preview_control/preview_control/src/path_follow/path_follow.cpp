@@ -24,8 +24,12 @@ void PathFollowing::init(
 
 int PathFollowing::run()
 {
-    if (_p2c == NULL || _vs == NULL || _ctrl == NULL )
+    if (_p2c == NULL || _vs == NULL || _ctrl == NULL ){
+        RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Path follower not initizlized, return");
         return -1;
+    } else{
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Path follower running");
+    }
 
     count += 1;
 
@@ -148,7 +152,6 @@ float PathFollowing::preview()
 
 int PathFollowing::loadGains(std::string gain_folder)
 {
-
     //step 1: local vars
     FILE *fp = NULL;
 
@@ -166,7 +169,6 @@ int PathFollowing::loadGains(std::string gain_folder)
     }
     else
         std::cout << "Open Feedback gain file successfully" << std::endl;
-
 
     int Num_FB = 6;
     if (consider_delay_lag)

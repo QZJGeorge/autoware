@@ -10,58 +10,37 @@ namespace preview_control{
         this->declare_parameter("speed_ctrl_kp", 1.3);
         this->declare_parameter("speed_ctrl_ki", 0.5);
 
-        this->get_parameter("gain_folder", guiSet.ros_gainfolder);
-        this->get_parameter("max_ey", guiSet.ros_max_ey);
-        this->get_parameter("max_ephi", guiSet.ros_max_ephi);
-        this->get_parameter("speed_ctrl_kp", guiSet.speed_ctrl_kp);
-        this->get_parameter("speed_ctrl_ki", guiSet.speed_ctrl_ki);
+        this->get_parameter("gain_folder", gainfolder);
+        this->get_parameter("max_ey", max_ey);
+        this->get_parameter("max_ephi", max_ephi);
+        this->get_parameter("speed_ctrl_kp", speed_ctrl_kp);
+        this->get_parameter("speed_ctrl_ki", speed_ctrl_ki);
 
-        guiSet.ros_max_ephi = guiSet.ros_max_ephi * PI/180;
+        _p2c = &p2c;
+        _vs = &vs;
+        _ctrl = &ctrl;
 
-        _p2c = & ssData.p2c;
-        _vs = & ssData.vs;
-        _ctrl = & ssData.ctrl;
-
-        pathFollow.init(
-            _p2c,
-            _vs,
-            _ctrl,
-            guiSet.ros_gainfolder,
-            guiSet.ros_max_ey,
-            guiSet.ros_max_ephi
-        );
-    
-        speedCtrl.ini(
-            _p2c,
-            _vs,
-            _ctrl,
-            guiSet.speed_ctrl_kp,
-            guiSet.speed_ctrl_ki,
-            FREQ
-        );
+        pathFollow.init(_p2c, _vs, _ctrl, gainfolder, max_ey, max_ephi);
+        speedCtrl.ini(_p2c, _vs, _ctrl, speed_ctrl_kp, speed_ctrl_ki, FREQ);
 
         //register pub
-        pub_cmd2bywire     = this->create_publisher<Control>("/mkz_bywire_intf/control_tmp", 10);
+        pub_cmd2bywire = this->create_publisher<Control>("/mkz_bywire_intf/control_tmp", 10);
         //register sub
         sub_path = this->create_subscription<PlanedPath2>(
             "/mkz_path_plan/result", 10, std::bind(&PreviewControl::pathCB, this, std::placeholders::_1));
         sub_veh_state = this->create_subscription<VehicleState>(
             "/mkz_bywire_intf/vehState", 10, std::bind(&PreviewControl::vehStateCB, this, std::placeholders::_1));
-        sub_sensor_check = this->create_subscription<SensorCheck>(
-            "/mkz_bywire_intf/SensorCheck", 10, std::bind(&PreviewControl::sensorCheckCB, this, std::placeholders::_1));
 
         timer_ = rclcpp::create_timer(
             this, get_clock(), 20ms, std::bind(&PreviewControl::on_timer, this));
     }
 
     void PreviewControl::publishCmd()
-    {
-        if (_ctrl == NULL)
-            return;
-
+    {            
         if(count > 9999999){
             count = 0;
         }
+
         cmd_msg.timestamp = this->get_clock()->now().seconds();
         cmd_msg.count           = count;
         cmd_msg.brake_cmd       = _ctrl->brake;
@@ -79,31 +58,30 @@ namespace preview_control{
         auto t0 = clock();
         count+=1;
         
-        //step 3: check in path or not, and path tracking
+        //step 2: check in path or not, and path tracking
         pathFollow.run();
 
-        // step 4: speed control
+        // step 3: speed control
         speedCtrl.run();
 
-        // step 5: check stop/go
-        if(ssData.p2c.go == 0)
+        // step 4: check stop/go
+        if(p2c.go == 0)
         {
             speedCtrl.set_stop();
             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Decision go = 0, set stop");
         }
 
-        // step 6: check recv state
-        std::cout << this->get_clock()->now().seconds() - ssData.p2c.timestamp<<std::endl;
-        if (this->get_clock()->now().seconds() - ssData.p2c.timestamp > 0.5)
+        // step 5: check recv state
+        if (this->get_clock()->now().seconds() - p2c.timestamp > 0.5)
         {
             speedCtrl.set_stop();
             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "NOT able to recv decision result, set stop");    
         }
 
-        // step 7: publish commands
+        // step 6: publish commands
         publishCmd();
 
-        //step 10: computing time
+        //step 7: computing time
         auto t1 = clock();    
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Main loop %ld used %g CPU seconds", count, (t1 - t0) / (double)CLOCKS_PER_SEC);
     }
@@ -177,11 +155,6 @@ namespace preview_control{
         _p2c->y_vector.clear();
         for (auto i = 0; i < int(msg->y_vector.size()); ++i)
             _p2c->y_vector.push_back(msg->y_vector.at(i)); 
-    }
-
-    void PreviewControl::sensorCheckCB(const SensorCheck::SharedPtr msg)
-    {
-        sensor_msg = * msg;
     }
 }
 

@@ -5,10 +5,10 @@
 #include <iostream>
 #include <algorithm>
 #include <math.h>
+#include <rclcpp/rclcpp.hpp>
 
 using namespace std;
 
-#define PRINT_OUT_SPEED (true)
 #define SLOPE2PADEL (SC.acc_slope*(0.33-0.23)/(0.6*9.8))
 #define VNUM    (61)
 #define TNUM    (15)

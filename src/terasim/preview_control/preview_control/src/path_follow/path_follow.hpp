@@ -8,6 +8,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <sx.hpp>
+#include <rclcpp/rclcpp.hpp>
 
 #define GAIN_LINE_NUM (30)
 

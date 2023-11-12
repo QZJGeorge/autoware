@@ -144,8 +144,12 @@ void SpeedControl::ini(
 
 int SpeedControl::run()
 {
-    if (PRINT_OUT_SPEED) printf("\n\n==>> In speed control\n");
-    if (_p2c == NULL || _vs == NULL || _ctrl == NULL ) return -1;
+    if (_p2c == NULL || _vs == NULL || _ctrl == NULL ){
+        RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Speed controller not initizlized, return");
+        return -1;
+    } else{
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Speed controller running");
+    }
     count ++;
 
     // *************** step 0: INPUT, Assignment *****************
@@ -175,8 +179,6 @@ int SpeedControl::run()
 		SC.brake_cmd    = 0.26f;
 		SC.throttle_cmd = 0.0f;
         SC.gear_cmd     = GEAR_DRIVE;
-        if (PRINT_OUT_SPEED)
-           printf("In speed control, shift gear to DRIVE");
     }
 
     // step 6: correct SC.errIntg
