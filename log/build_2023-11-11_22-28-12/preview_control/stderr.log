@@ -1,7 +1,0 @@
-[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/path_follow/path_follow.cpp:4:5:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KPlan_Rlt_S[m[K’
-    4 |     [01;31m[KPlan_Rlt_S[m[K * const planning2control_msg,
-      |     [01;31m[K^~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/preview_control_component.dir/build.make:90: CMakeFiles/preview_control_component.dir/src/path_follow/path_follow.cpp.o] Error 1
-gmake[2]: *** Waiting for unfinished jobs....
-gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/preview_control_component.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

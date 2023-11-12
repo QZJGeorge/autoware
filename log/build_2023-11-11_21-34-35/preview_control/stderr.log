@@ -1,9 +1,0 @@
-In file included from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/preview_control.hpp:8[m[K,
-                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_control.cpp:1[m[K:
-[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/utm.hpp:7:10:[m[K [01;31m[Kfatal error: [m[Kxmath.hpp: No such file or directory
-    7 | #include [01;31m[K<xmath.hpp>[m[K
-      |          [01;31m[K^~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/preview_control_component.dir/build.make:76: CMakeFiles/preview_control_component.dir/src/preview_control.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/preview_control_component.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
