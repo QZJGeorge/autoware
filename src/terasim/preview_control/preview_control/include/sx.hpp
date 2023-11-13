@@ -51,10 +51,10 @@
 #define GEAR_LOW        (5)
 
 // define turn signal
-#define etop_NONE    (0)
-#define etop_LOW     (1)
-#define etop_MEDIUM  (2)
-#define etop_HIGH    (3)
+#define estop_NONE    (0)
+#define estop_LOW     (1)
+#define estop_MEDIUM  (2)
+#define estop_HIGH    (3)
 
 // GPS
 #define GPS_STATUS_NO_FIX       (-1)    //unable to fix position
@@ -125,7 +125,7 @@ public:
 
     double timestamp = 0;
 
-    int etop    = etop_NONE;
+    int estop    = estop_NONE;
     int go       = 0;
     int signal   = 0;
 
@@ -151,7 +151,7 @@ public:
 
     void ini()
     {
-        etop = 0;
+        estop = 0;
         go    = 0;
         vd    = 0.0f;
         cr    = 0.0f;

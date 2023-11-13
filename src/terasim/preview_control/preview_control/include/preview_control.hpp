@@ -13,7 +13,7 @@
 
 #include <mcity_msgs/msg/vehicle_state.hpp>
 #include <mcity_msgs/msg/control.hpp>
-#include <mcity_msgs/msg/planed_path2.hpp>
+#include <mcity_msgs/msg/planned_path.hpp>
 
 
 #define FREQ    (50)
@@ -22,7 +22,7 @@ namespace preview_control
 {
 
 using mcity_msgs::msg::VehicleState;
-using mcity_msgs::msg::PlanedPath2;
+using mcity_msgs::msg::PlannedPath;
 using mcity_msgs::msg::Control;
 
 using namespace std;
@@ -37,7 +37,7 @@ public:
 private:
     rclcpp::Publisher<Control>::SharedPtr pub_cmd2bywire;
     rclcpp::Subscription<VehicleState>::SharedPtr sub_veh_state;
-    rclcpp::Subscription<PlanedPath2>::SharedPtr sub_path;
+    rclcpp::Subscription<PlannedPath>::SharedPtr sub_path;
     rclcpp::TimerBase::SharedPtr timer_;
 
     long count = 0;
@@ -65,7 +65,7 @@ private:
     void on_timer();
     void publishCmd();
     void vehStateCB(const VehicleState::SharedPtr msg);
-    void pathCB(const PlanedPath2::SharedPtr msg);
+    void pathCB(const PlannedPath::SharedPtr msg);
 };
 
 }

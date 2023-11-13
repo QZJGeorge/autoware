@@ -24,9 +24,9 @@ namespace preview_control{
         speedCtrl.ini(_p2c, _vs, _ctrl, speed_ctrl_kp, speed_ctrl_ki, FREQ);
 
         //register pub
-        pub_cmd2bywire = this->create_publisher<Control>("/mkz_bywire_intf/control_tmp", 10);
+        pub_cmd2bywire = this->create_publisher<Control>("/terasim/vehicle_control", 10);
         //register sub
-        sub_path = this->create_subscription<PlanedPath2>(
+        sub_path = this->create_subscription<PlannedPath>(
             "/mkz_path_plan/result", 10, std::bind(&PreviewControl::pathCB, this, std::placeholders::_1));
         sub_veh_state = this->create_subscription<VehicleState>(
             "/mkz_bywire_intf/vehState", 10, std::bind(&PreviewControl::vehStateCB, this, std::placeholders::_1));
@@ -90,21 +90,9 @@ namespace preview_control{
     {
         if (_vs == NULL) return;
 
-        _vs->timestamp = msg->timestamp;
-        _vs->rtk_state_string = msg->rtk_state_string;
-        _vs->latitude = msg->rtk_gps_latitude;
-        _vs->longitude = msg->rtk_gps_longitude;
-        _vs->z = msg->z;
-        UTM::LLtoUTM( _vs->latitude, _vs->longitude,
-                    _vs->y, _vs->x);
-
-        _vs->heading = msg->heading;
-        _vs->yawRate = msg->yaw_rate;
-        _vs->speed_x = msg->speed_x;
-        _vs->speed_y = msg->speed_y;
-        _vs->acc_x = msg->acc_x;
-        _vs->acc_y = msg->acc_y;
-
+        _vs->timestamp               = msg->timestamp;
+        _vs->yawRate                 = msg->yaw_rate;
+        _vs->speed_x                 = msg->speed_x;
         _vs->by_wire_enabled         = msg->by_wire_enabled;
         _vs->steering_wheel_angle    = msg->steer_state;
         _vs->wheelAngle              = msg->steer_state/STEERING_RATIO; //not steering wheel, front wheel    
@@ -113,12 +101,12 @@ namespace preview_control{
         _vs->gear_position           = msg->gear_pos;
     }
 
-    void PreviewControl::pathCB(const PlanedPath2::SharedPtr msg)
+    void PreviewControl::pathCB(const PlannedPath::SharedPtr msg)
     {
         if (_p2c == NULL) return;
         
         _p2c->timestamp =msg->timestamp;
-        _p2c->etop =msg->etop;
+        _p2c->estop =msg->estop;
         _p2c->go =msg->go;
         _p2c->signal =msg->signal;
 

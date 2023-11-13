@@ -196,7 +196,7 @@ int SpeedControl::run()
         SC.throttle_cmd = 0.0f;
 
     // step 8: low speed
-    if (SC.speed_x < 2.5 && SC.vd > SC.speed_x+3.0 && _p2c->etop ==0)
+    if (SC.speed_x < 2.5 && SC.vd > SC.speed_x+3.0 && _p2c->estop ==0)
     {
         SC.throttle_cmd = 0.3f + SLOPE2PADEL;
     }
@@ -224,16 +224,16 @@ int SpeedControl::run()
 
 
     // ********************** final steps *******************
-    if( _p2c->etop != etop_NONE )
+    if( _p2c->estop != estop_NONE )
     {
-        if (_p2c->etop == etop_LOW)
-            setetop_level_low();
-        else if (_p2c->etop == etop_MEDIUM)
-            setetop_level_medium();
+        if (_p2c->estop == estop_LOW)
+            setestop_level_low();
+        else if (_p2c->estop == estop_MEDIUM)
+            setestop_level_medium();
         else
-            setetop_level_high();
+            setestop_level_high();
         if (count%25==0)
-            printf("Set to etop, level%d\n", _p2c->etop);
+            printf("Set to estop, level%d\n", _p2c->estop);
     }
 
     //smooth brake
@@ -290,7 +290,7 @@ void SpeedControl::set_stop()
     return;
 }
 
-void SpeedControl::setetop_level_high()
+void SpeedControl::setestop_level_high()
 {
     float throttle = 0, brake =0.25; 
     get_padel_opening(-3.0, _vs->speed_x, throttle, brake);
@@ -302,13 +302,13 @@ void SpeedControl::setetop_level_high()
     _ctrl->throttle = 0.0f;
 }
 
-void SpeedControl::setetop_level_medium()
+void SpeedControl::setestop_level_medium()
 {
     _ctrl->brake = MAX(0.245f, 0.245f - SLOPE2PADEL);
     _ctrl->throttle = 0.0f;
 }
 
-void SpeedControl::setetop_level_low()
+void SpeedControl::setestop_level_low()
 {
     if ( _vs->speed_x >= 2.0 )
         _ctrl->brake = MAX(0.22f, 0.22f - SLOPE2PADEL);

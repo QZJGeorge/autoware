@@ -43,10 +43,10 @@ int PathFollowing::run()
 
     if (PVC.inPathFlag != true)
     {
-        _p2c->etop = MAX(_p2c->etop, etop_HIGH);
+        _p2c->estop = MAX(_p2c->estop, estop_HIGH);
         
         if (count%25==0)
-        printf("The vehicle departs from the path, ey=%f/%f ephi=%f/%f, set to etop_HIGH\n",
+        printf("The vehicle departs from the path, ey=%f/%f ephi=%f/%f, set to estop_HIGH\n",
             _p2c->ey, max_allowed_ey, _p2c->ephi, max_allowed_eh);
     }
 
@@ -91,7 +91,6 @@ float PathFollowing::preview()
     //step 1: Errors 
     PVC.dE      = - _p2c->ey;   // vehicle - road
     PVC.hE      = - _p2c->ephi; // + : need to turn left; - : need to turn right
-    //PVC.dERate  = _vs->speed_y + _vs->speed_x * PVC.hE;
     PVC.dERate  = _vs->speed_x * PVC.hE; // vy is ignored
     PVC.hERate  = _vs->yawRate - _vs->speed_x * _p2c->cr;
     PVC.steerAglReal = _vs->steering_wheel_angle / STEERING_RATIO;

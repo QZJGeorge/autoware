@@ -4,14 +4,12 @@
 #include <iostream>
 #include <math.h>
 #include <sx.hpp>
-#include <utm.hpp>
+// #include <utm.hpp>
 #include <xmath.hpp>
-#include <data_model.hpp>
 
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
 
-#include <std_msgs/msg/string.hpp>
 #include <std_msgs/msg/bool.hpp>
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
 #include <geometry_msgs/msg/twist_with_covariance_stamped.hpp>
@@ -21,7 +19,6 @@
 
 #include <mcity_msgs/msg/vehicle_state.hpp>
 #include <mcity_msgs/msg/control.hpp>
-#include <mcity_msgs/msg/sensor_check.hpp>
 #include <mcity_msgs/msg/safe_guard_results.hpp>
 
 #include <dataspeed_dbw_msgs/msg/throttle_cmd.hpp>
@@ -44,11 +41,9 @@ using namespace std;
 using sensor_msgs::msg::Imu;
 using sensor_msgs::msg::NavSatFix;
 using std_msgs::msg::Bool;
-using std_msgs::msg::String;
 using nav_msgs::msg::Odometry;
 
 using mcity_msgs::msg::VehicleState;
-using mcity_msgs::msg::SensorCheck;
 using mcity_msgs::msg::SafeGuardResults;
 using mcity_msgs::msg::Control;
 
@@ -79,17 +74,12 @@ private:
     rclcpp::Publisher<GearCmd>::SharedPtr pub_gear;
     rclcpp::Publisher<TurnSignal>::SharedPtr pub_turn_signal;
     rclcpp::Publisher<VehicleState>::SharedPtr pub_veh_state;
-    rclcpp::Publisher<SensorCheck>::SharedPtr pub_sensor_check;
 
     rclcpp::Subscription<Imu>::SharedPtr sub_imu;
     rclcpp::Subscription<Bool>::SharedPtr sub_sys_enable;
     rclcpp::Subscription<NavSatFix>::SharedPtr sub_gps_fix;
     rclcpp::Subscription<Odometry>::SharedPtr sub_gps_odom;
-    rclcpp::Subscription<String>::SharedPtr sub_gps_pos_type;
-    rclcpp::Subscription<String>::SharedPtr sub_gps_nav_state;
-
     rclcpp::Subscription<Control>::SharedPtr sub_cmd;
-    rclcpp::Subscription<SafeGuardResults>::SharedPtr sub_safe_guard;
 
     rclcpp::Subscription<ThrottleReport>::SharedPtr sub_throttle_rept;
     rclcpp::Subscription<BrakeReport>::SharedPtr sub_brake_rept;
@@ -104,19 +94,21 @@ private:
     SteeringCmd steering_msg;
     GearCmd gear_msg;
     TurnSignal turn_signal_msg;
-
     VehicleState vs_msg;
-    SensorCheck sensor_msg;
-    SafeGuardResults safe_guard_msg;
+
+    float max_speed 		= 2.0;
+    float max_throttle 		= 0.2;
+    float max_lat_acc 		= 0.2;
+    float gps_angle_calib 	= 0;
+    float correct_cg_x 		= 0;
+    float correct_cg_y 		= 0;
+    bool  output_xmsgs 		= true;
 
     void ini();
     void on_timer();
     void publishCmd();
     void publishVehState();
     void check();
-    void sensorCheck();
-
-    void publishSensorcheck();
 
     void sysEnableCB(const Bool::SharedPtr msg);
     void cmdCB(const Control::SharedPtr msg);
@@ -127,19 +119,9 @@ private:
     void wheelspeedReptCB(const WheelSpeedReport::SharedPtr msg);
     void gpsFixCB(const NavSatFix::SharedPtr msg);
     void gpsOdomCB(const Odometry::SharedPtr msg);
-    void gpsPosTypeCB(const String::SharedPtr msg);
-    void gpsNavStateCB(const String::SharedPtr msg);
     void imuCB(const Imu::SharedPtr msg);
-    void safeGuardCB(const SafeGuardResults::SharedPtr msg);
-
-    void Quaternion2Euler(double qx, double qy, double qz, double qw, 
-        double * heading, double * attitude,  double * bank);
  
-    Set_S adminSet;
-    long count = 0;
-    long control_count = 0;
     Control_Value_S cmd_in;
-    string postype;
 };
 
 }
