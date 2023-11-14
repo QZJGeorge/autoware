@@ -3,6 +3,20 @@
 namespace preview_path_gen{
     PreviewPathGen::PreviewPathGen(const rclcpp::NodeOptions & options)
     : Node("preview_path_gen", options){
+        // declare parameters
+        this->declare_parameter("max_acc", 1.5);
+        this->declare_parameter("max_vel", 8.0);
+        this->declare_parameter("max_curvature", 0.2);
+        this->declare_parameter("delta_t", 0.04);
+        this->declare_parameter("lookahead_time", 2.0);
+
+        // get parameters
+        this->get_parameter("max_acc", max_acc);
+        this->get_parameter("max_vel", max_vel);
+        this->get_parameter("delta_t", delta_t);
+        this->get_parameter("max_curvature", max_curvature);
+        this->get_parameter("lookahead_time", lookahead_time);
+        
         //register pub
         pub_path = this->create_publisher<PlannedPath>("/terasim/preview_path", 10);
 
@@ -16,26 +30,32 @@ namespace preview_path_gen{
         
         //register timer
         traj_timer_ = rclcpp::create_timer(
-            this, get_clock(), 100ms, std::bind(&PreviewPathGen::on_traj_timer, this));
+            this, get_clock(), 500ms, std::bind(&PreviewPathGen::on_traj_timer, this));
         veh_timer_ = rclcpp::create_timer(
             this, get_clock(), 20ms, std::bind(&PreviewPathGen::on_veh_timer, this));
+    }
 
-        //initialize path_msg
+    void PreviewPathGen::init_path(){
         path_msg.timestamp = this->get_clock()->now().seconds();
         path_msg.estop = 0;
         path_msg.go = true;
         path_msg.signal = 0;
         path_msg.acc_dd = 0.0;
         path_msg.slope = 0.0;
-        path_msg.vmax = 8.0;
+        path_msg.vmax = max_vel;
     }
 
     void PreviewPathGen::on_traj_timer(){
-        cout << "on_traj_timer" << endl;
         if (!is_trajectory_received){
             return;
-        } else{
-            is_trajectory_received = false;
+        }
+        if (x_vec.empty() || y_vec.empty()){
+            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Empty trajectory received, not processed");
+            return;
+        }
+        if (x_vec.size() < 3 || x_vec.size() < 3){
+            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Received trajectory too short, not processed");
+            return;
         }
 
         compute_curvature();
@@ -44,32 +64,72 @@ namespace preview_path_gen{
         path_cutoff();
         upsampling();
         downsampling();
+
+        is_trajectory_received = false;
+
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Trajectory processing complete");
     }
 
     void PreviewPathGen::on_veh_timer(){
-        cout << "on_veh_timer" << endl;
         if (!is_pose_received || !is_twist_received){
             return;
         } else{
             is_pose_received = false;
             is_twist_received = false;
+            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Processing new vehicle information...");
         }
         
-        int closest_point_idx = get_closest_index();
-        if (closest_point_idx == -1){
-            cout << "No closest point found" << endl;
+        if (x_vec_processed.empty() || y_vec_processed.empty()){
+            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "No processed trajectory available, aborting...");
             return;
-        } else{
-            cout << "The closest point index: " << closest_point_idx << endl;
         }
 
-        path_msg.cr = cur_vec[closest_point_idx];
-        path_msg.len = x_vec.size() - closest_point_idx;
+        if (x_vec_processed.size() < 3 || y_vec_processed.size() < 3){
+            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Processed trajectory too short, aborting...");
+            return;
+        }
+
+        int closest_point_idx = get_closest_index();
+        if (closest_point_idx == -1){
+            RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Cannot match vehicle position to processed trajectory point index");
+            return;
+        } else{
+            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The closest processed trajectory point index is: %d", closest_point_idx);
+        }
+
+        path_msg.cr = cur_vec_processed[closest_point_idx];
+        path_msg.len = x_vec_processed.size() - closest_point_idx;
+        path_msg.timestamp = this->get_clock()->now().seconds();
+
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The curvature at the closest processed trajectory point is: %f", path_msg.cr);
 
         compute_lateral_and_heading_error(closest_point_idx);
         compute_desired_speed_and_acceleration(closest_point_idx);
 
         pub_path->publish(path_msg);
+    }
+
+    int PreviewPathGen::get_closest_index(){
+        // Extract pose from PoseWithCovarianceStamped message
+        float pose_x = pose_msg.pose.pose.position.x;
+        float pose_y = pose_msg.pose.pose.position.y;
+
+        int closest_point_idx = -1;
+        float seg_distance;
+        float min_distance = std::numeric_limits<float>::max();
+
+        for (size_t idx = 1; idx < x_vec_processed.size()-1; idx++) {
+            // Calculate Euclidean distance
+            seg_distance = std::sqrt(std::pow(x_vec_processed[idx] - pose_x, 2) + std::pow(x_vec_processed[idx] - pose_y, 2));
+
+            // Check if this distance is smaller than current minimum 
+            if (seg_distance < min_distance) {
+                min_distance = seg_distance;
+                closest_point_idx = idx;
+            }
+        }
+
+        return closest_point_idx;
     }
 
     float PreviewPathGen::compute_heading(){
@@ -83,31 +143,7 @@ namespace preview_path_gen{
         float cosy_cosp = 1 - 2 * (qy * qy + qz * qz);
         float yaw = std::atan2(siny_cosp, cosy_cosp);
 
-        std::cout << "The orientation of the vehicle: " << yaw << " radians" << std::endl;
         return yaw;
-    }
-
-    int PreviewPathGen::get_closest_index(){
-        // Extract pose from PoseWithCovarianceStamped message
-        float pose_x = pose_msg.pose.pose.position.x;
-        float pose_y = pose_msg.pose.pose.position.y;
-
-        int closest_point_idx = -1;
-        float seg_distance;
-        float min_distance = std::numeric_limits<float>::max();
-
-        for (size_t idx = 1; idx < x_vec.size()-1; idx++) {
-            // Calculate Euclidean distance
-            seg_distance = std::sqrt(std::pow(x_vec[idx] - pose_x, 2) + std::pow(y_vec[idx] - pose_y, 2));
-
-            // Check if this distance is smaller than current minimum 
-            if (seg_distance < min_distance) {
-                min_distance = seg_distance;
-                closest_point_idx = idx;
-            }
-        }
-
-        return closest_point_idx;
     }
 
     void PreviewPathGen::compute_lateral_and_heading_error(int closest_point_idx){
@@ -115,48 +151,72 @@ namespace preview_path_gen{
         float pose_x = pose_msg.pose.pose.position.x;
         float pose_y = pose_msg.pose.pose.position.y;
 
-        float x_pre = x_vec[closest_point_idx - 1];
-        float y_pre = y_vec[closest_point_idx - 1];
-        float x_post = x_vec[closest_point_idx + 1];
-        float y_post = y_vec[closest_point_idx + 1];
+        float x_pre = x_vec_processed[closest_point_idx - 1];
+        float y_pre = y_vec_processed[closest_point_idx - 1];
+        float x_next = x_vec_processed[closest_point_idx + 1];
+        float y_next = y_vec_processed[closest_point_idx + 1];
 
-        std::cout << "Previous point (x, y): (" << x_pre << ", " << y_pre << ")" << std::endl;
-        std::cout << "Post point (x, y): (" << x_post << ", " << y_post << ")" << std::endl;
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Previous point (x, y): (%f, %f)", x_pre, y_pre);
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Next point (x, y): (%f, %f)", x_next, y_next);
 
         // Calculate the angle (in radians)
-        float gamma_rad = atan2(y_post - y_pre, x_post - x_pre);
+        float traj_ori = atan2(y_next - y_pre, x_next - x_pre);
         // Calculate vehicle heading
         float veh_heading = compute_heading();
-        // Calculate the oreintation error
-        path_msg.ephi = gamma_rad - veh_heading;
+        // Calculate the orientation error
+        path_msg.ephi = traj_ori - veh_heading;
 
-        std::cout << "trajectory point orientation " << gamma_rad << " radians" << std::endl;
-        std::cout << "vehicle heading " << veh_heading << " radians" << std::endl;
-        std::cout << "trajectory point orientation error: " << path_msg.ephi << " radians" << std::endl;
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Desired trajectory orientation: %f radians", traj_ori);
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Current vehicle heading: %f radians", veh_heading);
+
+        if (path_msg.ephi < 1.0){
+            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Orientation error: %f radians", path_msg.ephi);
+        } else{
+            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Orientation error too large: %f radians", path_msg.ephi);
+        }
+
+        float distance_to_pre = sqrt(pow(pose_x - x_pre, 2) + pow(pose_y - y_pre, 2));
+        float distance_to_next = sqrt(pow(pose_x - x_next, 2) + pow(pose_y - y_next, 2));
+
+        // Check if distance to either end is less than 0.1 to avoid division by zero
+        if (distance_to_pre < 0.1 || distance_to_next < 0.1) {
+            path_msg.ey = 0.0;
+            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Lateral error: %f", path_msg.ey );
+            return;
+        }
 
         // Compute the distance from the pose to the line
-        float lateral_error = abs((y_post - y_pre) * pose_x - (x_post - x_pre) * pose_y + x_post*y_pre - y_post*x_pre) / sqrt(pow(y_post - y_pre, 2) + pow(x_post - x_pre, 2));
+        float lateral_error = abs((y_next - y_pre) * pose_x - (x_next - x_pre) * pose_y + x_next*y_pre - y_next*x_pre) / sqrt(pow(y_next - y_pre, 2) + pow(x_next - x_pre, 2));
         // Calculate cross product 
-        float cross_product = (x_post - x_pre) * (pose_y - y_pre) - (y_post - y_pre) * (pose_x - x_pre);
+        float cross_product = (x_next - x_pre) * (pose_y - y_pre) - (y_next - y_pre) * (pose_x - x_pre);
         // Determine if the pose is left or right of the line
         if (cross_product < 0) {
             // Negate lateral_error if pose is to the left of the line
             lateral_error = -lateral_error;
         }
+        if (fabs(lateral_error) < 1.0){
+            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Lateral error: %f", lateral_error);
+        } else{
+            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Lateral error too large: %f", lateral_error);
+        }
 
         path_msg.ey = lateral_error;
-        std::cout << "trajectory point lateral error: " << lateral_error << std::endl;
     }
 
     void PreviewPathGen::compute_desired_speed_and_acceleration(int closest_point_idx){
         float current_speed = twist_msg.twist.twist.linear.x;
-        float desired_speed = speed_vec[closest_point_idx + 1];
-        float desired_acceleration = (desired_speed - current_speed) / 0.04;
+        float desired_speed = speed_vec_processed[closest_point_idx + 1];
+        float desired_acceleration = (desired_speed - current_speed) / lookahead_time;
 
-        if (desired_acceleration > 1.5) {
-            desired_acceleration = 1.5;
-        } else if (desired_acceleration < -1.5) {
-            desired_acceleration = -1.5;
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Current speed: %f m/s", current_speed);
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Desired speed: %f m/s", desired_speed);
+
+        if (desired_acceleration > max_acc) {
+            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Desired acceleration too large: %f bound to %f m/s^2", desired_acceleration, max_acc);
+            desired_acceleration = max_acc;
+        } else if (desired_acceleration < -max_acc) {
+            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Desired acceleration too small: %f bound to %f m/s^2", desired_acceleration, max_acc);
+            desired_acceleration = -max_acc;
         }
 
         path_msg.vd = desired_speed;
@@ -164,43 +224,54 @@ namespace preview_path_gen{
     }
 
     void PreviewPathGen::compute_curvature(){
+        cur_vec.clear();
+
         for(size_t i = 1; i < x_vec.size() - 1; i++) {
             float dx = x_vec[i+1] - x_vec[i-1];
             float dy = y_vec[i+1] - y_vec[i-1];
 
-            float ddx = (x_vec[i+1] - 2*x_vec[i] + x_vec[i-1]) / (dx*dx);
-            float ddy = (y_vec[i+1] - 2*y_vec[i] + y_vec[i-1]) / (dx*dx);
+            float ddx = x_vec[i+1] - 2*x_vec[i] + x_vec[i-1];
+            float ddy = y_vec[i+1] - 2*y_vec[i] + y_vec[i-1];
 
             float curvature = 0;
-            
-            if (dx * dx + dy * dy > 0.000001)
-            {
-                curvature = std::abs(dx * ddy - dy * ddx) / std::pow(dx * dx + dy * dy, 1.5);
+
+            float denominator = std::pow(dx * dx + dy * dy, 1.5);
+            if (denominator > 0.000001){
+                curvature = std::abs(dx * ddy - dy * ddx) / denominator;
             }
+
+            if (curvature > max_curvature) {
+                curvature = max_curvature;
+                RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Curvature too large: %f bound to %f", curvature, max_curvature);
+            } else if (curvature < -max_curvature) {
+                curvature = -max_curvature;
+                RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Curvature too small: %f bound to %f", curvature, -max_curvature);
+            }
+
             cur_vec.push_back(curvature);
         }
 
-        if (!cur_vec.empty()){
-            // let the first item be the same as the second item
-            cur_vec.insert(cur_vec.begin(), cur_vec[0]);
-        }
-        if (cur_vec.size() >= 2){             
-            // let the last item be the same as the second last item
-            cur_vec.push_back(cur_vec[cur_vec.size()-2]);
-        }
+        // Add the first and last element of the curvature vector to the beginning and end
+        cur_vec.insert(cur_vec.begin(), cur_vec[0]);
+        cur_vec.push_back(cur_vec[cur_vec.size()-2]);
     }
 
     void PreviewPathGen::compute_speed(){
         for (size_t i = 0; i < speed_vec.size(); i++) {
             // Compute the new speed value based on curvature
-            float newSpeed = speed_vec[i] * (1 - std::abs(cur_vec[i]) / 0.2);
+            float newSpeed = speed_vec[i] * (1 - 0.8 * std::abs(cur_vec[i]) / max_curvature);
 
-            // If new speed is less than 2, assign it to 1.5
-            speed_vec[i] = std::max(newSpeed, 1.5f);
+            if (newSpeed < 1.0 && speed_vec[i] > 1.0){
+                newSpeed = 1.0;
+                RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Computed speed too small: %f bound to 1.0", newSpeed);
+            }
+            speed_vec[i] = newSpeed;
         }
     }
 
     void PreviewPathGen::compute_time(){
+        time_vec.clear();
+
         for (size_t i = 0; i < x_vec.size() - 1; i++) {
             // Calculate the distance to the next point
             float dx = x_vec[i+1] - x_vec[i];
@@ -213,6 +284,9 @@ namespace preview_path_gen{
             // Add to the time vector
             time_vec.push_back(time);
         }
+
+        // reach end point
+        time_vec.push_back(0.0);
     }
 
     void PreviewPathGen::path_cutoff(){
@@ -222,18 +296,18 @@ namespace preview_path_gen{
         for (size_t i = 0; i < time_vec.size(); i++) {
             time_sum += time_vec[i];
             
-            if (time_sum > 2.0) {
+            if (time_sum > lookahead_time) {
                 cutoff_index = i;
                 break;
             }
         }
 
-        // Cut off the vectors
+        // Cut off path info beyond our lookahead time
         if (cutoff_index < time_vec.size()) {
-            time_vec.resize(cutoff_index);
             x_vec.resize(cutoff_index);
             y_vec.resize(cutoff_index);
             speed_vec.resize(cutoff_index);
+            time_vec.resize(cutoff_index);
         }
     }
 
@@ -278,7 +352,7 @@ namespace preview_path_gen{
             // Compute the time to the next point
             accumulated_time += dist / speed_vec[i];
             
-            if (accumulated_time >= 0.04) {
+            if (accumulated_time >= delta_t) {
                 // This point should be included in the downsampled vectors
                 downsampled_x_vec.push_back(x_vec[i]);
                 downsampled_y_vec.push_back(y_vec[i]);
@@ -291,16 +365,17 @@ namespace preview_path_gen{
         }
 
         // assign the value of downsampled vectors to original vectors
-        x_vec = downsampled_x_vec;
-        y_vec = downsampled_y_vec;
-        speed_vec = downsampled_speed_vec;
-        cur_vec = downsampled_cur_vec;
+        x_vec_processed = downsampled_x_vec;
+        y_vec_processed = downsampled_y_vec;
+        speed_vec_processed = downsampled_speed_vec;
+        cur_vec_processed = downsampled_cur_vec;
     }
 
     void PreviewPathGen::trajectory_callback(const Trajectory::SharedPtr msg){
         // Clear previous points
         x_vec.clear();
         y_vec.clear();
+        speed_vec.clear();
 
         // Set the maximum amount of points as 50
         size_t maxNumPoints = 50;

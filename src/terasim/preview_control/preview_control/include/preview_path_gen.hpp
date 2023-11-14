@@ -42,6 +42,17 @@ private:
     std::vector<float> speed_vec;
     std::vector<float> time_vec;
 
+    std::vector<float> x_vec_processed;
+    std::vector<float> y_vec_processed;
+    std::vector<float> cur_vec_processed;
+    std::vector<float> speed_vec_processed;
+
+    float delta_t;
+    float max_acc;
+    float max_vel;
+    float max_curvature;
+    float lookahead_time;
+
     PoseWithCovarianceStamped pose_msg;
     TwistWithCovarianceStamped twist_msg;
     PlannedPath path_msg;
@@ -50,6 +61,7 @@ private:
     bool is_twist_received = false;
     bool is_pose_received = false;
     
+    void init_path();
     void on_traj_timer();
     void on_veh_timer();
 
@@ -69,7 +81,7 @@ private:
 
     int get_closest_index();
     float compute_heading();
-    
+
     std::vector<float> interpolateVec(const std::vector<float>& original_vec);
 };
 
