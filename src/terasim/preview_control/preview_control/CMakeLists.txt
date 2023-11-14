@@ -27,6 +27,17 @@ rclcpp_components_register_node(preview_control_component
   EXECUTABLE preview_control
 )
 
+#############################  PREVIEW Path Gen  ##############################
+
+ament_auto_add_library(preview_path_gen_component SHARED
+  src/preview_path_gen.cpp
+)
+
+rclcpp_components_register_node(preview_path_gen_component
+  PLUGIN "preview_path_gen::PreviewPathGen"
+  EXECUTABLE preview_path_gen
+)
+
 ament_auto_package(
   INSTALL_TO_SHARE
   include

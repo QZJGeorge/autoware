@@ -1,4 +1,3 @@
-
 float64 timestamp              # time
 int16 	estop                  # default: 0
 bool 	go                     # default: true

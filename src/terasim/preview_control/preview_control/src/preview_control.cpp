@@ -27,9 +27,9 @@ namespace preview_control{
         pub_cmd2bywire = this->create_publisher<Control>("/terasim/vehicle_control", 10);
         //register sub
         sub_path = this->create_subscription<PlannedPath>(
-            "/mkz_path_plan/result", 10, std::bind(&PreviewControl::pathCB, this, std::placeholders::_1));
+            "/terasim/preview_path", 10, std::bind(&PreviewControl::pathCB, this, std::placeholders::_1));
         sub_veh_state = this->create_subscription<VehicleState>(
-            "/mkz_bywire_intf/vehState", 10, std::bind(&PreviewControl::vehStateCB, this, std::placeholders::_1));
+            "/terasim/vehicle_state", 10, std::bind(&PreviewControl::vehStateCB, this, std::placeholders::_1));
 
         timer_ = rclcpp::create_timer(
             this, get_clock(), 20ms, std::bind(&PreviewControl::on_timer, this));
