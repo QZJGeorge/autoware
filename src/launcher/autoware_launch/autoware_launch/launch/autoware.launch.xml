@@ -16,7 +16,7 @@
   <arg name="launch_sensing" default="false" description="launch sensing"/>
   <arg name="launch_sensing_driver" default="false" description="launch sensing driver"/>
   <arg name="launch_localization" default="true" description="launch localization"/>
-  <arg name="launch_perception" default="false" description="launch perception"/>
+  <arg name="launch_perception" default="true" description="launch perception"/>
   <arg name="launch_planning" default="true" description="launch planning"/>
   <arg name="launch_control" default="true" description="launch control"/>
   <!-- Global parameters -->
@@ -102,8 +102,8 @@
   <!-- Planning -->
   <group if="$(var launch_planning)">
     <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_planning_component.launch.xml">
-        <arg name="cruise_planner_type" value="none"/>
-        <!-- <arg name="cruise_planner_type" value="obstacle_stop_planner"/> -->
+        <!-- <arg name="cruise_planner_type" value="none"/> -->
+        <arg name="cruise_planner_type" value="obstacle_stop_planner"/>
     </include>
   </group>
 

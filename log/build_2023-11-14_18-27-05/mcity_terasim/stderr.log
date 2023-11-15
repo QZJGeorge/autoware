@@ -1,8 +1,0 @@
-In file included from [01m[K/home/mtl12345/autoware/src/terasim/mcity_terasim/src/gnss_to_pose_twist.cpp:15[m[K:
-[01m[K/home/mtl12345/autoware/src/terasim/mcity_terasim/include/gnss_to_pose_twist.hpp:22:10:[m[K [01;31m[Kfatal error: [m[Kglm/glm.hpp: No such file or directory
-   22 | #include [01;31m[K<glm/glm.hpp>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/gnss_to_pose_twist_component.dir/build.make:76: CMakeFiles/gnss_to_pose_twist_component.dir/src/gnss_to_pose_twist.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:494: CMakeFiles/gnss_to_pose_twist_component.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
