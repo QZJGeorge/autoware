@@ -147,8 +147,6 @@ int SpeedControl::run()
     if (_p2c == NULL || _vs == NULL || _ctrl == NULL ){
         RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Speed controller not initizlized, return");
         return -1;
-    } else{
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Speed controller running");
     }
     count ++;
 
@@ -232,8 +230,6 @@ int SpeedControl::run()
             setestop_level_medium();
         else
             setestop_level_high();
-        if (count%25==0)
-            printf("Set to estop, level%d\n", _p2c->estop);
     }
 
     //smooth brake

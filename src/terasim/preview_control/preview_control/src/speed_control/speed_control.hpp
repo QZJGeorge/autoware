@@ -68,7 +68,7 @@ struct SpeedControl_S
     float brake_cmd     = 0.0f; 
     float throttle_cmd  = 0.0f;
     int   gear_cmd      = 0;
-    float acc_cmd       = -3.0f;
+    float acc_cmd       = 0.0f;
 
     float errIntg       = 0.0f;
     float speedFB       = 0.0f;

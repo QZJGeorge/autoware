@@ -62,6 +62,7 @@ private:
     VehState_S vs;
     Control_Value_S ctrl;
     
+    void init();
     void on_timer();
     void publishCmd();
     void vehStateCB(const VehicleState::SharedPtr msg);

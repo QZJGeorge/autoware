@@ -4,7 +4,7 @@ namespace preview_control{
     PreviewControl::PreviewControl(const rclcpp::NodeOptions & options)
     : Node("preview_control", options)
     {
-        this->declare_parameter("gain_folder", "/home/zhijie/autoware/src/terasim/preview_control/data/gain/withoutdelay/");
+        this->declare_parameter("gain_folder", "/home/zhijie/autoware/src/terasim/preview_control/preview_control/data/gain/withoutdelay/");
         this->declare_parameter("max_ey", 1.5);
         this->declare_parameter("max_ephi", 45.0);
         this->declare_parameter("speed_ctrl_kp", 1.3);
@@ -16,13 +16,6 @@ namespace preview_control{
         this->get_parameter("speed_ctrl_kp", speed_ctrl_kp);
         this->get_parameter("speed_ctrl_ki", speed_ctrl_ki);
 
-        _p2c = &p2c;
-        _vs = &vs;
-        _ctrl = &ctrl;
-
-        pathFollow.init(_p2c, _vs, _ctrl, gainfolder, max_ey, max_ephi);
-        speedCtrl.ini(_p2c, _vs, _ctrl, speed_ctrl_kp, speed_ctrl_ki, FREQ);
-
         //register pub
         pub_cmd2bywire = this->create_publisher<Control>("/terasim/vehicle_control", 10);
         //register sub
@@ -33,16 +26,22 @@ namespace preview_control{
 
         timer_ = rclcpp::create_timer(
             this, get_clock(), 20ms, std::bind(&PreviewControl::on_timer, this));
+
+        init();
+    }
+
+    void PreviewControl::init(){
+        _p2c = &p2c;
+        _vs = &vs;
+        _ctrl = &ctrl;
+
+        pathFollow.init(_p2c, _vs, _ctrl, gainfolder, max_ey, max_ephi);
+        speedCtrl.ini(_p2c, _vs, _ctrl, speed_ctrl_kp, speed_ctrl_ki, FREQ);
     }
 
     void PreviewControl::publishCmd()
-    {            
-        if(count > 9999999){
-            count = 0;
-        }
-
+    {
         cmd_msg.timestamp = this->get_clock()->now().seconds();
-        cmd_msg.count           = count;
         cmd_msg.brake_cmd       = _ctrl->brake;
         cmd_msg.throttle_cmd    = _ctrl->throttle;
         cmd_msg.steering_cmd    = _ctrl->steering;
@@ -54,24 +53,20 @@ namespace preview_control{
 
     void PreviewControl::on_timer()
     {   
-        //step 1: ini
-        auto t0 = clock();
-        count+=1;
-        
-        //step 2: check in path or not, and path tracking
+        //step 1: check in path or not, and path tracking
         pathFollow.run();
 
-        // step 3: speed control
+        // step 2: speed control
         speedCtrl.run();
 
-        // step 4: check stop/go
+        // step 3: check stop/go
         if(p2c.go == 0)
         {
             speedCtrl.set_stop();
             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Decision go = 0, set stop");
         }
 
-        // step 5: check recv state
+        // step 4: check recv state
         if (this->get_clock()->now().seconds() - p2c.timestamp > 0.5)
         {
             speedCtrl.set_stop();
@@ -80,10 +75,6 @@ namespace preview_control{
 
         // step 6: publish commands
         publishCmd();
-
-        //step 7: computing time
-        auto t1 = clock();    
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Main loop %ld used %g CPU seconds", count, (t1 - t0) / (double)CLOCKS_PER_SEC);
     }
 
     void PreviewControl::vehStateCB(const VehicleState::SharedPtr msg)

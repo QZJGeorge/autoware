@@ -41,4 +41,5 @@ rclcpp_components_register_node(preview_path_gen_component
 ament_auto_package(
   INSTALL_TO_SHARE
   include
+  launch
 )

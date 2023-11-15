@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/mkz_bywire_component.dir/build.make:76: CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/mkz_bywire_component.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

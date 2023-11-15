@@ -1,0 +1,13 @@
+[ 40%] Built target preview_control_component
+[ 60%] Built target preview_control
+[ 80%] Built target preview_path_gen
+[35m[1mConsolidate compiler generated dependencies of target preview_path_gen_component[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/preview_path_gen_component.dir/src/preview_path_gen.cpp.o[0m
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_path_gen.cpp:[m[K In member function ‘[01m[Kvoid preview_path_gen::PreviewPathGen::compute_lateral_and_heading_error(int)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_path_gen.cpp:188:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpose_y[m[K’?
+  188 |         double lateral_error = abs((y_next - y_pre) * [01;31m[Kpose_[m[K - (x_next - x_pre) * pose_y + x_next*y_pre - y_next*x_pre) / sqrt(pow(y_next - y_pre, 2) + pow(x_next - x_pre, 2));
+      |                                                       [01;31m[K^~~~~[m[K
+      |                                                       [32m[Kpose_y[m[K
+gmake[2]: *** [CMakeFiles/preview_path_gen_component.dir/build.make:76: CMakeFiles/preview_path_gen_component.dir/src/preview_path_gen.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/preview_path_gen_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

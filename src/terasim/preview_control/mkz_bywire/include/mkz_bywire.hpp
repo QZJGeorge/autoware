@@ -4,7 +4,6 @@
 #include <iostream>
 #include <math.h>
 #include <sx.hpp>
-// #include <utm.hpp>
 #include <xmath.hpp>
 
 #include <rclcpp/rclcpp.hpp>
@@ -73,9 +72,7 @@ private:
     rclcpp::Publisher<TurnSignal>::SharedPtr pub_turn_signal;
     rclcpp::Publisher<VehicleState>::SharedPtr pub_veh_state;
 
-    rclcpp::Subscription<Imu>::SharedPtr sub_imu;
     rclcpp::Subscription<Bool>::SharedPtr sub_sys_enable;
-    rclcpp::Subscription<NavSatFix>::SharedPtr sub_gps_fix;
     rclcpp::Subscription<Odometry>::SharedPtr sub_gps_odom;
     rclcpp::Subscription<Control>::SharedPtr sub_cmd;
 
@@ -94,13 +91,11 @@ private:
     TurnSignal turn_signal_msg;
     VehicleState vs_msg;
 
-    float max_speed 		= 2.0;
-    float max_throttle 		= 0.2;
-    float max_lat_acc 		= 0.2;
-    float gps_angle_calib 	= 0;
-    float correct_cg_x 		= 0;
-    float correct_cg_y 		= 0;
-    bool  output_xmsgs 		= true;
+    float max_speed;
+    float max_throttle;
+    float max_lat_acc;
+
+    bool is_cmd_received = false;
 
     void ini();
     void on_timer();
@@ -115,9 +110,7 @@ private:
     void steerReptCB(const SteeringReport::SharedPtr msg);
     void gearReptCB(const GearReport::SharedPtr msg);
     void wheelspeedReptCB(const WheelSpeedReport::SharedPtr msg);
-    void gpsFixCB(const NavSatFix::SharedPtr msg);
     void gpsOdomCB(const Odometry::SharedPtr msg);
-    void imuCB(const Imu::SharedPtr msg);
  
     Control_Value_S cmd_in;
 };

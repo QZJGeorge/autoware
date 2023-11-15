@@ -72,8 +72,6 @@ namespace preview_path_gen{
         downsampling();
 
         is_trajectory_received = false;
-
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Trajectory processing complete");
     }
 
     void PreviewPathGen::on_veh_timer(){
@@ -128,7 +126,7 @@ namespace preview_path_gen{
 
         for (size_t idx = 1; idx < x_vec_processed.size()-1; idx++) {
             // Calculate Euclidean distance
-            seg_distance = std::sqrt(std::pow(x_vec_processed[idx] - pose_x, 2) + std::pow(x_vec_processed[idx] - pose_y, 2));
+            seg_distance = std::sqrt(std::pow(x_vec_processed[idx] - pose_x, 2) + std::pow(y_vec_processed[idx] - pose_y, 2));
 
             // Check if this distance is smaller than current minimum 
             if (seg_distance < min_distance) {
@@ -166,6 +164,7 @@ namespace preview_path_gen{
 
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Previous point (x, y): (%f, %f)", x_pre, y_pre);
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Next point (x, y): (%f, %f)", x_next, y_next);
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Current vehicle position (x, y): (%f, %f)", pose_x, pose_y);
 
         // Calculate the angle (in radians)
         double traj_ori = atan2(y_next - y_pre, x_next - x_pre);
@@ -181,16 +180,6 @@ namespace preview_path_gen{
             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Orientation error: %f radians", path_msg.ephi);
         } else{
             RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Orientation error too large: %f radians", path_msg.ephi);
-        }
-
-        double distance_to_pre = sqrt(pow(pose_x - x_pre, 2) + pow(pose_y - y_pre, 2));
-        double distance_to_next = sqrt(pow(pose_x - x_next, 2) + pow(pose_y - y_next, 2));
-
-        // Check if distance to either end is less than 0.1 to avoid division by zero
-        if (distance_to_pre < 0.1 || distance_to_next < 0.1) {
-            path_msg.ey = 0.0;
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Lateral error: %f", path_msg.ey );
-            return;
         }
 
         // Compute the distance from the pose to the line

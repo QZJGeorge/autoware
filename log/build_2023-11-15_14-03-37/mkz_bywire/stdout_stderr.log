@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target mkz_bywire_component[0m
+[ 50%] Built target mkz_bywire
+[ 75%] [32mBuilding CXX object CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o[0m
+gmake[2]: *** [CMakeFiles/mkz_bywire_component.dir/build.make:76: CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/mkz_bywire_component.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

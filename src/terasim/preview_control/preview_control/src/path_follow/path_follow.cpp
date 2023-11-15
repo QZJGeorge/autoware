@@ -27,8 +27,6 @@ int PathFollowing::run()
     if (_p2c == NULL || _vs == NULL || _ctrl == NULL ){
         RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Path follower not initizlized, return");
         return -1;
-    } else{
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Path follower running");
     }
 
     count += 1;
@@ -113,7 +111,6 @@ float PathFollowing::preview()
             PVC.delayedCmdGain[i]  = 0.0f;
     }
  
-
     PVC.dEFB            = - PVC.dEGain      * PVC.dE;
     PVC.dERateFB        = - PVC.dERateGain  * PVC.dERate;
     PVC.hEFB            = - PVC.hEGain      * PVC.hE;
@@ -163,11 +160,11 @@ int PathFollowing::loadGains(std::string gain_folder)
     // step 2: load kfb
     if( (fp = fopen( fileNameFeedBack.c_str(), "r+")) == NULL)
     {
-        std::cout << "Open Feedback gain file failed" << std::endl;
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Open Feedback gain file failed");
         return -1;
     }
     else
-        std::cout << "Open Feedback gain file successfully" << std::endl;
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Open Feedback gain file successfully");
 
     int Num_FB = 6;
     if (consider_delay_lag)

@@ -1,0 +1,23 @@
+[35m[1mConsolidate compiler generated dependencies of target mkz_bywire_component[0m
+[ 50%] Built target mkz_bywire
+[ 75%] [32mBuilding CXX object CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:9[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:[m[K In member function ‘[01m[Kvoid mkz_bywire::MkzBywire::publishCmd()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:102:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd[m[K’ was not declared in this scope; did you mean ‘[01m[KcmdCB[m[K’?
+  102 |         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "cmd.gear %d", [01;31m[Kcmd[m[K.gear);
+      |                                                                  [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/mkz_bywire_component.dir/build.make:76: CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/mkz_bywire_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

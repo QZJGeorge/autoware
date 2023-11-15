@@ -1,0 +1,61 @@
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_path_gen.cpp:[m[K In member function ‘[01m[Kvoid preview_path_gen::PreviewPathGen::compute_lateral_and_heading_error(int)[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_path_gen.cpp:174:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kx[m[K’
+  174 |         double veh_heading = compute_heading()[01;31m[Kx[m[K;
+      |                                               [01;31m[K^[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_path_gen.cpp:188:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpose_y[m[K’?
+  188 |         double lateral_error = abs((y_next - y_pre) * [01;31m[Kpose_[m[K - (x_next - x_pre) * pose_y + x_next*y_pre - y_next*x_pre) / sqrt(pow(y_next - y_pre, 2) + pow(x_next - x_pre, 2));
+      |                                                       [01;31m[K^~~~~[m[K
+      |                                                       [32m[Kpose_y[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/preview_path_gen.hpp:7[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_path_gen.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_path_gen.cpp:[m[K In member function ‘[01m[Kvoid preview_path_gen::PreviewPathGen::downsampling()[m[K’:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_path_gen.cpp:376:55:[m[K [01;31m[Kerror: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Werror=format=]8;;[m[K]
+  376 |             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), [01;31m[K"x_vec_processed[%d]: %f"[m[K, [32m[Ki[m[K, x_vec_processed[i]);
+      |                                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~[m[K
+      |                                                                                  [32m[K|[m[K
+      |                                                                                  [32m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_path_gen.cpp:376:73:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  376 |             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "x_vec_processed[[01;36m[K%d[m[K]: %f", i, x_vec_processed[i]);
+      |                                                                        [01;36m[K~^[m[K
+      |                                                                         [01;36m[K|[m[K
+      |                                                                         [01;36m[Kint[m[K
+      |                                                                        [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/include/preview_path_gen.hpp:7[m[K,
+                 from [01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_path_gen.cpp:1[m[K:
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_path_gen.cpp:377:55:[m[K [01;31m[Kerror: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Werror=format=]8;;[m[K]
+  377 |             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), [01;31m[K"y_vec_processed[%d]: %f"[m[K, [32m[Ki[m[K, y_vec_processed[i]);
+      |                                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~[m[K
+      |                                                                                  [32m[K|[m[K
+      |                                                                                  [32m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/home/zhijie/autoware/src/terasim/preview_control/preview_control/src/preview_path_gen.cpp:377:73:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  377 |             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "y_vec_processed[[01;36m[K%d[m[K]: %f", i, y_vec_processed[i]);
+      |                                                                        [01;36m[K~^[m[K
+      |                                                                         [01;36m[K|[m[K
+      |                                                                         [01;36m[Kint[m[K
+      |                                                                        [32m[K%ld[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/preview_path_gen_component.dir/build.make:76: CMakeFiles/preview_path_gen_component.dir/src/preview_path_gen.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/preview_path_gen_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
