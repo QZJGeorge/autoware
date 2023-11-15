@@ -19,7 +19,7 @@
 
 #include <mcity_msgs/msg/vehicle_state.hpp>
 #include <mcity_msgs/msg/control.hpp>
-#include <mcity_msgs/msg/safe_guard_results.hpp>
+// #include <mcity_msgs/msg/safe_guard_results.hpp>
 
 #include <dataspeed_dbw_msgs/msg/throttle_cmd.hpp>
 #include <dataspeed_dbw_msgs/msg/brake_cmd.hpp>
@@ -44,7 +44,7 @@ using std_msgs::msg::Bool;
 using nav_msgs::msg::Odometry;
 
 using mcity_msgs::msg::VehicleState;
-using mcity_msgs::msg::SafeGuardResults;
+// using mcity_msgs::msg::SafeGuardResults;
 using mcity_msgs::msg::Control;
 
 using dbw_fca_msgs::msg::WheelSpeedReport;
