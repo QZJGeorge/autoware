@@ -1,0 +1,7 @@
+In file included from [01m[K/home/mtl12345/autoware/src/terasim/preview_control/mkz_bywire/src/mkz_bywire.cpp:1[m[K:
+[01m[K/home/mtl12345/autoware/src/terasim/preview_control/mkz_bywire/include/mkz_bywire.hpp:47:24:[m[K [01;31m[Kerror: [m[K‘[01m[KSafeGuardResults[m[K’ has not been declared in ‘[01m[Kmcity_msgs::msg[m[K’
+   47 | using mcity_msgs::msg::[01;31m[KSafeGuardResults[m[K;
+      |                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mkz_bywire_component.dir/build.make:76: CMakeFiles/mkz_bywire_component.dir/src/mkz_bywire.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/mkz_bywire_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

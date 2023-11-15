@@ -36,22 +36,24 @@ private:
     rclcpp::TimerBase::SharedPtr traj_timer_;
     rclcpp::TimerBase::SharedPtr veh_timer_;
 
-    std::vector<float> x_vec;
-    std::vector<float> y_vec;
-    std::vector<float> cur_vec;
-    std::vector<float> speed_vec;
-    std::vector<float> time_vec;
+    std::vector<double> x_vec;
+    std::vector<double> y_vec;
+    std::vector<double> cur_vec;
+    std::vector<double> speed_vec;
+    std::vector<double> time_vec;
 
-    std::vector<float> x_vec_processed;
-    std::vector<float> y_vec_processed;
-    std::vector<float> cur_vec_processed;
-    std::vector<float> speed_vec_processed;
+    std::vector<double> x_vec_processed;
+    std::vector<double> y_vec_processed;
+    std::vector<double> cur_vec_processed;
+    std::vector<double> speed_vec_processed;
 
-    float delta_t;
-    float max_acc;
-    float max_vel;
-    float max_curvature;
-    float lookahead_time;
+    double delta_t;
+    double max_acc;
+    double max_vel;
+    double min_speed;
+    double max_curvature;
+    double curve_slow_factor;
+    double lookahead_time;
 
     PoseWithCovarianceStamped pose_msg;
     TwistWithCovarianceStamped twist_msg;
@@ -72,7 +74,7 @@ private:
     void compute_curvature();
     void compute_time();
     void compute_lateral_and_heading_error(int closest_point_idx);
-    void compute_desired_speed_and_acceleration(int closest_point_idx);
+    void compute_desired_speed_and_acceleration();
     void compute_speed();
     void path_cutoff();
 
@@ -80,9 +82,9 @@ private:
     void downsampling();
 
     int get_closest_index();
-    float compute_heading();
+    double compute_heading();
 
-    std::vector<float> interpolateVec(const std::vector<float>& original_vec);
+    std::vector<double> interpolateVec(const std::vector<double>& original_vec);
 };
 
 }
