@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>mcity_terasim</name>
+  <name>sumo_terasim</name>
   <version>0.1.0</version>
-  <description>The mcity_terasim package</description>
+  <description>The sumo_terasim package</description>
   <maintainer email="zhijieq@umich.edu">Zhijie Qiao</maintainer>
   <license>Apache License 2.0</license>
 
@@ -19,15 +19,14 @@
   <depend>sensor_msgs</depend>
   <depend>rclcpp</depend>
   <depend>rclcpp_components</depend>
-  <depend>mcity_msgs</depend>
   <depend>autoware_adapi_v1_msgs</depend>
   <depend>autoware_perception_msgs</depend>
   <depend>autoware_auto_system_msgs</depend>
   <depend>autoware_auto_perception_msgs</depend>
+  <depend>tier4_system_msgs</depend>
+  <depend>dummy_perception_publisher</depend>
   <depend>autoware_auto_vehicle_msgs</depend>
   <depend>autoware_auto_control_msgs</depend>
-  <depend>dataspeed_ulc_msgs</depend>
-  <depend>dbw_ford_msgs</depend>
 
   <exec_depend>ros2launch</exec_depend>
 
