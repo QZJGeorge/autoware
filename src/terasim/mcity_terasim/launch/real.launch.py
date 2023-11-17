@@ -7,7 +7,7 @@ def generate_launch_description():
         Node(
             package='mcity_terasim',
             namespace='/terasim',
-            executable='gnss_to_pose_twist',
+            executable='gnss_to_local',
         ),
         Node(
             package='mcity_terasim',

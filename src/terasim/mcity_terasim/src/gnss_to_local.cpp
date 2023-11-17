@@ -12,11 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "gnss_to_pose_twist.hpp"
+#include <gnss_to_local.hpp>
 
-namespace gnss_to_pose_twist{
-  GnssToPoseTwist::GnssToPoseTwist(const rclcpp::NodeOptions & options)
-  : Node("gnss_to_pose_twist", options)
+namespace gnss_to_local{
+  GnssToLocal::GnssToLocal(const rclcpp::NodeOptions & options)
+  : Node("gnss_to_local", options)
   {
     pub_imu = this->create_publisher<Imu>("/sensing/imu/imu_data", 10);
     pub_pose = this->create_publisher<PoseWithCovarianceStamped>("/localization/pose_estimator/pose_with_covariance", 10);
@@ -26,19 +26,19 @@ namespace gnss_to_pose_twist{
     pub_pred_objects = this->create_publisher<PredictedObjects>("/perception/object_recognition/objects", 10);
 
     sub_imu = this->create_subscription<Imu>(
-      "/ins/imu", 10, std::bind(&GnssToPoseTwist::imu_callback, this, std::placeholders::_1));
+      "/ins/imu", 10, std::bind(&GnssToLocal::imu_callback, this, std::placeholders::_1));
     sub_odom = this->create_subscription<Odometry>(
-      "/ins/odometry", 10, std::bind(&GnssToPoseTwist::odom_callback, this, std::placeholders::_1));
+      "/ins/odometry", 10, std::bind(&GnssToLocal::odom_callback, this, std::placeholders::_1));
     sub_nav_sat_fix = this->create_subscription<NavSatFix>(
-      "/ins/nav_sat_fix", 10, std::bind(&GnssToPoseTwist::nav_callback, this, std::placeholders::_1));
+      "/ins/nav_sat_fix", 10, std::bind(&GnssToLocal::nav_callback, this, std::placeholders::_1));
 
     timer_ = rclcpp::create_timer(
-        this, get_clock(), 20ms, std::bind(&GnssToPoseTwist::pub_localization, this));
+        this, get_clock(), 20ms, std::bind(&GnssToLocal::pub_localization, this));
 
     calc_occ_grid();
   }
 
-  float GnssToPoseTwist::calc_linear_x(){
+  float GnssToLocal::calc_linear_x(){
     double vx = saved_odom_msg.twist.twist.linear.x;
     double vy = saved_odom_msg.twist.twist.linear.y;
     double vz = saved_odom_msg.twist.twist.linear.z;
@@ -52,7 +52,7 @@ namespace gnss_to_pose_twist{
     return speed;
   }
 
-  void GnssToPoseTwist::calc_vehicle_orientation(float &qx, float &qy, float &qz, float &qw){
+  void GnssToLocal::calc_vehicle_orientation(float &qx, float &qy, float &qz, float &qw){
     qx = saved_imu_msg.orientation.x;
     qy = saved_imu_msg.orientation.y;
     qz = saved_imu_msg.orientation.z;
@@ -90,17 +90,17 @@ namespace gnss_to_pose_twist{
     // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "yaw_ori: %f", yaw_ori);
   }
 
-  void GnssToPoseTwist::imu_callback(Imu::SharedPtr msg){
+  void GnssToLocal::imu_callback(Imu::SharedPtr msg){
     saved_imu_msg = *msg;
     imu_status = 1;
   }
 
-  void GnssToPoseTwist::odom_callback(Odometry::SharedPtr msg){
+  void GnssToLocal::odom_callback(Odometry::SharedPtr msg){
     saved_odom_msg = *msg;
     odom_status = 1;
   }
 
-  void GnssToPoseTwist::nav_callback(NavSatFix::SharedPtr msg){
+  void GnssToLocal::nav_callback(NavSatFix::SharedPtr msg){
     saved_nav_sat_fix_msg = *msg;
     nav_status = 1;
   }
@@ -122,18 +122,19 @@ namespace gnss_to_pose_twist{
     northing = northing_int/pow(10, 4);
   }
 
-  void GnssToPoseTwist::calc_occ_grid(){
+  void GnssToLocal::calc_occ_grid(){
     grid_msg.info.resolution = 1.0; // Set resolution
     grid_msg.info.width = 100; // Set width
     grid_msg.info.height = 100; // Set height
     grid_msg.data = std::vector<int8_t>(grid_msg.info.width * grid_msg.info.height, 0); // Set all spaces as free
   }
 
-  void GnssToPoseTwist::pub_localization(){
+  void GnssToLocal::pub_localization(){
     // messages have not been updated
     if (imu_status == 0 || nav_status == 0 || odom_status == 0){
         return;
     }
+    RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "after status check...");
 
     header.stamp = this->get_clock()->now();
     header.frame_id = "map";
@@ -185,7 +186,9 @@ namespace gnss_to_pose_twist{
     pub_imu->publish(saved_imu_msg);
     pub_pose->publish(pose_with_cov);
     pub_twist->publish(twist_with_cov);
+    RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "before...");
     pub_grid->publish(grid_msg);
+    RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "after...");
     pub_pred_objects->publish(pred_objects_msg);
     pub_steer->publish(steer_msg);
 
@@ -195,4 +198,4 @@ namespace gnss_to_pose_twist{
   }
 }
 
-RCLCPP_COMPONENTS_REGISTER_NODE(gnss_to_pose_twist::GnssToPoseTwist)
+RCLCPP_COMPONENTS_REGISTER_NODE(gnss_to_local::GnssToLocal)

@@ -31,15 +31,15 @@ rclcpp_components_register_node(sumo_autoware_real_component
 
 #############################  GNSS TO POSE TWIST  ###################################
 
-ament_auto_add_library(gnss_to_pose_twist_component SHARED
-  src/gnss_to_pose_twist.cpp
+ament_auto_add_library(gnss_to_local_component SHARED
+  src/gnss_to_local.cpp
 )
 
-target_link_libraries(gnss_to_pose_twist_component Geographic)
+target_link_libraries(gnss_to_local_component Geographic)
 
-rclcpp_components_register_node(gnss_to_pose_twist_component
-  PLUGIN "gnss_to_pose_twist::GnssToPoseTwist"
-  EXECUTABLE gnss_to_pose_twist
+rclcpp_components_register_node(gnss_to_local_component
+  PLUGIN "gnss_to_local::GnssToLocal"
+  EXECUTABLE gnss_to_local
 )
 
 #############################  DBW ULC CONVERTER$$ ###################################

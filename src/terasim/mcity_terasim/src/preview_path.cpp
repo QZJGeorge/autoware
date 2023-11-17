@@ -31,7 +31,7 @@ namespace preview_path{
             this, get_clock(), 500ms, std::bind(&PreviewPath::on_traj_timer, this));
         veh_timer_ = rclcpp::create_timer(
             this, get_clock(), 20ms, std::bind(&PreviewPath::on_veh_timer, this));
-
+            
         init_path();
     }
 

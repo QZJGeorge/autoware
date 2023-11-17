@@ -12,8 +12,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_PLANNER__GNSS_TO_POSE_TWIST__HPP_
-#define MCITY_PLANNER__GNSS_TO_POSE_TWIST__HPP_
+#ifndef MCITY_PLANNER__gnss_to_local__HPP_
+#define MCITY_PLANNER__gnss_to_local__HPP_
 
 #include <iostream>
 #include <GeographicLib/UTMUPS.hpp>
@@ -37,7 +37,7 @@
 #include <autoware_auto_vehicle_msgs/msg/steering_report.hpp>
 #include <autoware_auto_perception_msgs/msg/predicted_objects.hpp>
 
-namespace gnss_to_pose_twist
+namespace gnss_to_local
 {
     
 using namespace std;
@@ -53,11 +53,11 @@ using geometry_msgs::msg::TwistWithCovarianceStamped;
 using autoware_auto_vehicle_msgs::msg::SteeringReport;
 using autoware_auto_perception_msgs::msg::PredictedObjects;
 
-class GnssToPoseTwist : public rclcpp::Node
+class GnssToLocal : public rclcpp::Node
 {
 public:
-  explicit GnssToPoseTwist(const rclcpp::NodeOptions & options);
-  ~GnssToPoseTwist() = default;
+  explicit GnssToLocal(const rclcpp::NodeOptions & options);
+  ~GnssToLocal() = default;
 
 private:
   rclcpp::Subscription<Imu>::SharedPtr sub_imu;
