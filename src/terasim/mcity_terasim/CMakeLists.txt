@@ -29,7 +29,7 @@ rclcpp_components_register_node(sumo_autoware_real_component
   EXECUTABLE sumo_autoware_real
 )
 
-#############################  GNSS TO POSE TWIST  ###################################
+#############################  GNSS TO LOCAL  ###################################
 
 ament_auto_add_library(gnss_to_local_component SHARED
   src/gnss_to_local.cpp
@@ -40,6 +40,19 @@ target_link_libraries(gnss_to_local_component Geographic)
 rclcpp_components_register_node(gnss_to_local_component
   PLUGIN "gnss_to_local::GnssToLocal"
   EXECUTABLE gnss_to_local
+)
+
+#############################  PUBLISH POINTCLOUD  ###################################
+
+ament_auto_add_library(publish_pointcloud_component SHARED
+  src/publish_pointcloud.cpp
+)
+
+target_link_libraries(publish_pointcloud_component)
+
+rclcpp_components_register_node(publish_pointcloud_component
+  PLUGIN "publish_pointcloud::PublishPointcloud"
+  EXECUTABLE publish_pointcloud
 )
 
 #############################  DBW ULC CONVERTER$$ ###################################

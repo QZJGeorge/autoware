@@ -25,14 +25,23 @@ namespace preview_path{
             "/sensing/vehicle_velocity_converter/twist_with_covariance", 10, std::bind(&PreviewPath::twist_callback, this, std::placeholders::_1));
         sub_pose = this->create_subscription<PoseWithCovarianceStamped>(
             "/localization/pose_estimator/pose_with_covariance", 10, std::bind(&PreviewPath::pose_callback, this, std::placeholders::_1));
+        sub_veh_state = this->create_subscription<VehicleState>(
+            "/terasim/vehicle_state", 10, std::bind(&PreviewPath::vehStateCB, this, std::placeholders::_1));
         
         //register timer
         traj_timer_ = rclcpp::create_timer(
             this, get_clock(), 500ms, std::bind(&PreviewPath::on_traj_timer, this));
         veh_timer_ = rclcpp::create_timer(
             this, get_clock(), 20ms, std::bind(&PreviewPath::on_veh_timer, this));
+
+        // RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Empty trajectory received, not processed");
             
         init_path();
+    }
+
+    void PreviewPath::vehStateCB(const VehicleState::SharedPtr msg)
+    {
+        steering_wheel_angle_cmd = msg->steer_state;
     }
 
     void PreviewPath::init_path(){
@@ -70,7 +79,7 @@ namespace preview_path{
         } else{
             is_pose_received = false;
             is_twist_received = false;
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Processing new vehicle information...");
+            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Processing new vehicle information...");
         }
         
         if (x_vec_preview.empty() || y_vec_preview.empty()){
@@ -93,6 +102,8 @@ namespace preview_path{
 
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The curvature at the closest processed trajectory point is: %f", path_msg.cr);
 
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Steering wheel angle cmd: %f", steering_wheel_angle_cmd);
+
         int remaining_length = x_vec_preview.size() - closest_point_idx;
 
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The remaining length of the processed trajectory is: %d", remaining_length);
@@ -101,14 +112,17 @@ namespace preview_path{
             return;
         }
 
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The speed at the closest processed trajectory point is: %f", path_msg.vd);
+
         path_msg.cr = cur_vec_preview[closest_point_idx];
         path_msg.vd = speed_vec_preview[closest_point_idx];
-        path_msg.acc_d = acc_vec_preview[closest_point_idx];
+        // path_msg.acc_d = acc_vec_preview[closest_point_idx];
+        path_msg.acc_d = 0.0;
         path_msg.ephi = (float)compute_heading_error(closest_point_idx);
         path_msg.ey = (float)compute_lateral_error(closest_point_idx);
         path_msg.len = remaining_length;
         path_msg.cr_vector = cur_vec_preview;
-        path_msg.vd_vector = speed_vec_preview;
+        // path_msg.vd_vector = speed_vec_preview;
         path_msg.timestamp = this->get_clock()->now().seconds();
 
         pub_path->publish(path_msg);
@@ -190,17 +204,17 @@ namespace preview_path{
         double x_next = x_vec_preview[closest_point_idx + 1];
         double y_next = y_vec_preview[closest_point_idx + 1];
 
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Previous point (x, y): (%f, %f)", x_pre, y_pre);
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Next point (x, y): (%f, %f)", x_next, y_next);
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Current vehicle position (x, y): (%f, %f)", pose_x, pose_y);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Previous point (x, y): (%f, %f)", x_pre, y_pre);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Next point (x, y): (%f, %f)", x_next, y_next);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Current vehicle position (x, y): (%f, %f)", pose_x, pose_y);
 
         // Compute the distance from the pose to the line
         double lateral_error = abs((y_next - y_pre) * pose_x - (x_next - x_pre) * pose_y + x_next*y_pre - y_next*x_pre) / sqrt(pow(y_next - y_pre, 2) + pow(x_next - x_pre, 2));
         // Calculate cross product 
         double cross_product = (x_next - x_pre) * (pose_y - y_pre) - (y_next - y_pre) * (pose_x - x_pre);
-        // Determine if the pose is left or right of the line
+        // Determine if the pose is left or left of the line
         if (cross_product > 0) {
-            // Negate lateral_error if pose is to the right of the line
+            // Negate lateral_error if pose is to the left of the line
             lateral_error = -lateral_error;
         }
         if (fabs(lateral_error) < 1.0){
@@ -236,7 +250,7 @@ namespace preview_path{
                 RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Curvature too small: %f", curvature);
             }
 
-            cur_vec.push_back(curvature);
+            cur_vec.push_back(curvature * 3);
         }
 
         // Add the first and last element of the curvature vector to the beginning and end

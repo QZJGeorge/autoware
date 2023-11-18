@@ -5,6 +5,7 @@
 #include <math.h>
 #include <sx.hpp>
 #include <xmath.hpp>
+#include <UTM.hpp>
 
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
@@ -74,6 +75,7 @@ private:
 
     rclcpp::Subscription<Bool>::SharedPtr sub_sys_enable;
     rclcpp::Subscription<Odometry>::SharedPtr sub_gps_odom;
+    rclcpp::Subscription<NavSatFix>::SharedPtr sub_gps_fix;
     rclcpp::Subscription<Control>::SharedPtr sub_cmd;
 
     rclcpp::Subscription<ThrottleReport>::SharedPtr sub_throttle_rept;
@@ -94,6 +96,9 @@ private:
     float max_speed;
     float max_throttle;
     float max_lat_acc;
+    float correct_cg_x;
+    float correct_cg_y;
+    float gps_angle_calib;
 
     bool is_cmd_received = false;
 
@@ -111,6 +116,7 @@ private:
     void gearReptCB(const GearReport::SharedPtr msg);
     void wheelspeedReptCB(const WheelSpeedReport::SharedPtr msg);
     void gpsOdomCB(const Odometry::SharedPtr msg);
+    void gpsFixCB(const NavSatFix::SharedPtr msg);
  
     Control_Value_S cmd_in;
 };

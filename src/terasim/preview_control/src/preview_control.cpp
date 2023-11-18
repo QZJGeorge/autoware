@@ -8,7 +8,8 @@ namespace preview_control{
         this->declare_parameter("max_ey", 1.5);
         this->declare_parameter("max_ephi", 45.0);
         this->declare_parameter("speed_ctrl_kp", 1.3);
-        this->declare_parameter("speed_ctrl_ki", 0.5);
+        // this->declare_parameter("speed_ctrl_ki", 0.5);
+        this->declare_parameter("speed_ctrl_ki", 0.0);
 
         this->get_parameter("gain_folder", gainfolder);
         this->get_parameter("max_ey", max_ey);

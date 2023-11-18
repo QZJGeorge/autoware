@@ -7,10 +7,16 @@ namespace mkz_bywire{
         this->declare_parameter("max_speed", 5.0);
         this->declare_parameter("max_throttle", 0.25);
         this->declare_parameter("max_lat_acc", 2.0);
+        this->declare_parameter("correct_cg_x", 1.0);
+        this->declare_parameter("correct_cg_y", 0.0);
+        this->declare_parameter("gps_angle_calib", 0.75);
 
         this->get_parameter("max_speed", max_speed);
         this->get_parameter("max_throttle", max_throttle);
         this->get_parameter("max_lat_acc", max_lat_acc);
+        this->get_parameter("correct_cg_x", correct_cg_y);
+        this->get_parameter("correct_cg_y", correct_cg_y);
+        this->get_parameter("gps_angle_calib", gps_angle_calib);
 
         //register pub
         pub_throttle     = this->create_publisher<ThrottleCmd>("/vehicle/ds/throttle_cmd", 10);
@@ -34,6 +40,8 @@ namespace mkz_bywire{
 
         sub_gps_odom = this->create_subscription<Odometry>(
             "/ins/odometry", 10, std::bind(&MkzBywire::gpsOdomCB, this, std::placeholders::_1));
+        sub_gps_fix = this->create_subscription<NavSatFix>(
+            "/ins/nav_sat_fix", 10, std::bind(&MkzBywire::gpsFixCB, this, std::placeholders::_1));
         sub_sys_enable = this->create_subscription<Bool>(
             "/vehicle/dbw_enabled", 10, std::bind(&MkzBywire::sysEnableCB, this, std::placeholders::_1));
         sub_cmd = this->create_subscription<Control>(
@@ -120,6 +128,23 @@ namespace mkz_bywire{
 
     void MkzBywire::publishVehState(){    
         vs_msg.yaw_rate = vs_msg.rtk_gps_twist_angular_vz;
+        vs_msg.heading = XM::Normalise_2PI(vs_msg.heading + gps_angle_calib * M_PI/180.0f);
+
+        double veh_x, veh_y, veh_x2, veh_y2, lat = 0, lon = 0, h=vs_msg.heading;
+        UTM::LLtoUTM(vs_msg.rtk_gps_latitude,
+            vs_msg.rtk_gps_longitude, veh_y, veh_x);
+
+        veh_x2 = veh_x + correct_cg_x * cos(h) - correct_cg_y * sin(h);
+        veh_y2 = veh_y + correct_cg_x * sin(h) + correct_cg_y * cos(h);
+
+        UTM::UTMtoLL(veh_y2, veh_x2, lat, lon);
+
+        vs_msg.x = veh_x2;
+        vs_msg.y = veh_y2;
+        vs_msg.z = vs_msg.rtk_gps_altitude;
+        vs_msg.rtk_gps_latitude = lat;
+        vs_msg.rtk_gps_longitude = lon;
+
         vs_msg.timestamp = this->get_clock()->now().seconds();
         pub_veh_state->publish(vs_msg);
     }
@@ -211,10 +236,17 @@ namespace mkz_bywire{
         is_cmd_received = true;
     };
 
+    void MkzBywire::gpsFixCB(const NavSatFix::SharedPtr msg)
+    {
+        vs_msg.rtk_gps_longitude  = msg->longitude;
+        vs_msg.rtk_gps_latitude   = msg->latitude;
+        vs_msg.rtk_gps_altitude   = msg->altitude;
+    }
+
     void MkzBywire::gpsOdomCB(const Odometry::SharedPtr msg){
         vs_msg.rtk_gps_twist_angular_vx  = msg->twist.twist.angular.z;
         vs_msg.rtk_gps_twist_angular_vy  = -msg->twist.twist.angular.y;
-        vs_msg.rtk_gps_twist_angular_vz  = msg->twist.twist.angular.x;
+        vs_msg.rtk_gps_twist_angular_vz  = -msg->twist.twist.angular.x;
     }
 
     void MkzBywire::sysEnableCB(const Bool::SharedPtr msg){

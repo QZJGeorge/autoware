@@ -12,6 +12,8 @@
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
 #include <geometry_msgs/msg/twist_with_covariance_stamped.hpp>
 
+#include <mcity_msgs/msg/vehicle_state.hpp>
+
 namespace preview_path
 {
 
@@ -21,6 +23,8 @@ using geometry_msgs::msg::PoseWithCovarianceStamped;
 using geometry_msgs::msg::TwistWithCovarianceStamped;
 using mcity_msgs::msg::PlannedPath;
 using autoware_auto_planning_msgs::msg::Trajectory;
+
+using mcity_msgs::msg::VehicleState;
 
 class PreviewPath : public rclcpp::Node
 {
@@ -36,6 +40,8 @@ private:
     rclcpp::Subscription<PoseWithCovarianceStamped>::SharedPtr sub_pose;
     rclcpp::TimerBase::SharedPtr traj_timer_;
     rclcpp::TimerBase::SharedPtr veh_timer_;
+
+    rclcpp::Subscription<VehicleState>::SharedPtr sub_veh_state;
 
     std::vector<double> x_vec;
     std::vector<double> y_vec;
@@ -55,6 +61,8 @@ private:
     double max_vel;
     double max_curvature;
     double lookahead_time;
+
+    float steering_wheel_angle_cmd;
 
     PoseWithCovarianceStamped pose_msg;
     TwistWithCovarianceStamped twist_msg;
@@ -84,6 +92,7 @@ private:
     double compute_heading_error(int closest_point_idx);
     double compute_lateral_error(int closest_point_idx);
 
+    void vehStateCB(const VehicleState::SharedPtr msg);
 };
 
 }

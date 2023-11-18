@@ -21,9 +21,6 @@ namespace gnss_to_local{
     pub_imu = this->create_publisher<Imu>("/sensing/imu/imu_data", 10);
     pub_pose = this->create_publisher<PoseWithCovarianceStamped>("/localization/pose_estimator/pose_with_covariance", 10);
     pub_twist = this->create_publisher<TwistWithCovarianceStamped>("/sensing/vehicle_velocity_converter/twist_with_covariance", 10);
-    pub_grid = this->create_publisher<OccupancyGrid>("/perception/occupancy_grid_map/map", 10);
-    pub_steer = this->create_publisher<SteeringReport>("/vehicle/status/steering_status", 10);
-    pub_pred_objects = this->create_publisher<PredictedObjects>("/perception/object_recognition/objects", 10);
 
     sub_imu = this->create_subscription<Imu>(
       "/ins/imu", 10, std::bind(&GnssToLocal::imu_callback, this, std::placeholders::_1));
@@ -34,8 +31,6 @@ namespace gnss_to_local{
 
     timer_ = rclcpp::create_timer(
         this, get_clock(), 20ms, std::bind(&GnssToLocal::pub_localization, this));
-
-    calc_occ_grid();
   }
 
   float GnssToLocal::calc_linear_x(){
@@ -122,19 +117,11 @@ namespace gnss_to_local{
     northing = northing_int/pow(10, 4);
   }
 
-  void GnssToLocal::calc_occ_grid(){
-    grid_msg.info.resolution = 1.0; // Set resolution
-    grid_msg.info.width = 100; // Set width
-    grid_msg.info.height = 100; // Set height
-    grid_msg.data = std::vector<int8_t>(grid_msg.info.width * grid_msg.info.height, 0); // Set all spaces as free
-  }
-
   void GnssToLocal::pub_localization(){
     // messages have not been updated
     if (imu_status == 0 || nav_status == 0 || odom_status == 0){
         return;
     }
-    RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "after status check...");
 
     header.stamp = this->get_clock()->now();
     header.frame_id = "map";
@@ -175,22 +162,13 @@ namespace gnss_to_local{
     pose_with_cov.pose.covariance[13] = saved_nav_sat_fix_msg.position_covariance[7];
     pose_with_cov.pose.covariance[14] = saved_nav_sat_fix_msg.position_covariance[8];
 
-    steer_msg.stamp = this->get_clock()->now();
-    steer_msg.steering_tire_angle = 0.0;
-
     pose_with_cov.header = header;
     twist_with_cov.header = header;
     saved_imu_msg.header = header;
-    pred_objects_msg.header = header;
 
     pub_imu->publish(saved_imu_msg);
     pub_pose->publish(pose_with_cov);
     pub_twist->publish(twist_with_cov);
-    RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "before...");
-    pub_grid->publish(grid_msg);
-    RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "after...");
-    pub_pred_objects->publish(pred_objects_msg);
-    pub_steer->publish(steer_msg);
 
     imu_status = 0;
     nav_status = 0;

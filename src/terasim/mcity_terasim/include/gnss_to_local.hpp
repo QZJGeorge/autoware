@@ -12,10 +12,9 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_PLANNER__gnss_to_local__HPP_
-#define MCITY_PLANNER__gnss_to_local__HPP_
+#ifndef MCITY_PLANNER__GNSS_TO_LOCAL__HPP_
+#define MCITY_PLANNER__GNSS_TO_LOCAL__HPP_
 
-#include <iostream>
 #include <GeographicLib/UTMUPS.hpp>
 #include <GeographicLib/MGRS.hpp>
 
@@ -24,18 +23,16 @@
 #include <glm/gtx/quaternion.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
+#include <iostream>
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/header.hpp>
 #include <nav_msgs/msg/odometry.hpp>
-#include <nav_msgs/msg/occupancy_grid.hpp>
 #include <sensor_msgs/msg/imu.hpp>
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
 #include <geometry_msgs/msg/twist_stamped.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
 #include <geometry_msgs/msg/twist_with_covariance_stamped.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
-#include <autoware_auto_vehicle_msgs/msg/steering_report.hpp>
-#include <autoware_auto_perception_msgs/msg/predicted_objects.hpp>
 
 namespace gnss_to_local
 {
@@ -50,8 +47,6 @@ using sensor_msgs::msg::NavSatFix;
 using nav_msgs::msg::OccupancyGrid;
 using geometry_msgs::msg::PoseWithCovarianceStamped;
 using geometry_msgs::msg::TwistWithCovarianceStamped;
-using autoware_auto_vehicle_msgs::msg::SteeringReport;
-using autoware_auto_perception_msgs::msg::PredictedObjects;
 
 class GnssToLocal : public rclcpp::Node
 {
@@ -68,8 +63,6 @@ private:
   rclcpp::Publisher<PoseWithCovarianceStamped>::SharedPtr pub_pose;
   rclcpp::Publisher<TwistWithCovarianceStamped>::SharedPtr pub_twist;
   rclcpp::Publisher<OccupancyGrid>::SharedPtr pub_grid;
-  rclcpp::Publisher<SteeringReport>::SharedPtr pub_steer;
-  rclcpp::Publisher<PredictedObjects>::SharedPtr pub_pred_objects;
 
   rclcpp::TimerBase::SharedPtr timer_;
 
@@ -82,9 +75,6 @@ private:
   Imu saved_imu_msg;
   Odometry saved_odom_msg;
   NavSatFix saved_nav_sat_fix_msg;
-  SteeringReport steer_msg;
-  PredictedObjects pred_objects_msg;
-  OccupancyGrid grid_msg;
 
   std::array<double, 36> Identity_6 =
   {

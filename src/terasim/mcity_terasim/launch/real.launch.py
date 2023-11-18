@@ -12,6 +12,11 @@ def generate_launch_description():
         Node(
             package='mcity_terasim',
             namespace='/terasim',
+            executable='publish_pointcloud',
+        ),
+        Node(
+            package='mcity_terasim',
+            namespace='/terasim',
             executable='preview_path',
         ),
         Node(
