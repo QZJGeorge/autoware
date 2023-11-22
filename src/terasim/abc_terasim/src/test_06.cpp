@@ -73,21 +73,13 @@ namespace test_06{
   }
 
   void Test06::publish_goal(){
-    goal_msg.pose.position.x = 77624.28125;
-    goal_msg.pose.position.y = 86710.078125;
+    goal_msg.pose.position.x = 77627.15625;
+    goal_msg.pose.position.y = 86710.046875;
 
     goal_msg.pose.orientation.x = 0.0;
     goal_msg.pose.orientation.y = 0.0;
-    goal_msg.pose.orientation.z = -0.06385223502721567;
-    goal_msg.pose.orientation.w = 0.9979593639432566;
-
-    // goal_msg.pose.position.x = 77629.1640625;
-    // goal_msg.pose.position.y = 86705.859375;
-
-    // goal_msg.pose.orientation.x = 0.0;
-    // goal_msg.pose.orientation.y = 0.0;
-    // goal_msg.pose.orientation.z = -0.00588204765602871;
-    // goal_msg.pose.orientation.w = 0.9999827006080516;
+    goal_msg.pose.orientation.z = -0.094582453389911;
+    goal_msg.pose.orientation.w = 0.9955170312509702;
 
     goal_msg.header.stamp = this->get_clock()->now();
     goal_msg.header.frame_id = "map";
