@@ -42,32 +42,6 @@ rclcpp_components_register_node(gnss_to_local_component
   EXECUTABLE gnss_to_local
 )
 
-#############################  PUBLISH POINTCLOUD  ###################################
-
-ament_auto_add_library(publish_pointcloud_component SHARED
-  src/publish_pointcloud.cpp
-)
-
-target_link_libraries(publish_pointcloud_component)
-
-rclcpp_components_register_node(publish_pointcloud_component
-  PLUGIN "publish_pointcloud::PublishPointcloud"
-  EXECUTABLE publish_pointcloud
-)
-
-#############################  DBW ULC CONVERTER$$ ###################################
-
-ament_auto_add_library(dbw_ulc_converter_component SHARED
-  src/dbw_ulc_converter.cpp
-)
-
-target_link_libraries(dbw_ulc_converter_component Geographic)
-
-rclcpp_components_register_node(dbw_ulc_converter_component
-  PLUGIN "dbw_ulc_converter::DbwUlcConverter"
-  EXECUTABLE dbw_ulc_converter
-)
-
 #################################  PREVIEW PATH ######################################
 
 ament_auto_add_library(preview_path_component SHARED

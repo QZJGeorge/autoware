@@ -365,8 +365,8 @@ void DummyPerceptionPublisherNode::objectCallback(
           return;
         }
       }
-
       objects_.push_back(object);
+
       break;
     }
     case dummy_perception_publisher::msg::Object::DELETE: {

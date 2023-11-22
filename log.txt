@@ -1,0 +1,902 @@
+[INFO] [launch]: All log files can be found below /home/zhijie/.ros/log/2023-11-21-21-18-03-236487-zhijie-Alienware-Aurora-R11-492386
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map/lanelet2_map_loader' in container '/map/map_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/system/component_state_monitor/component' in container '/system/component_state_monitor/container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map/lanelet2_map_visualization' in container '/map/map_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/system/mrm_comfortable_stop_operator' in container '/system/mrm_comfortable_stop_operator/mrm_comfortable_stop_operator_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/system/mrm_emergency_stop_operator' in container '/system/mrm_emergency_stop_operator/mrm_emergency_stop_operator_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/autoware_api/external/rtc_controller/node' in container '/autoware_api/external/rtc_controller/container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/motion_velocity_smoother' in container '/planning/scenario_planning/motion_velocity_smoother_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/glog_component' in container '/planning/scenario_planning/motion_velocity_smoother_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/mission_planning/mission_planner' in container '/planning/mission_planning/mission_planner_container'
+[INFO] [robot_state_publisher-1]: process started with pid [492467]
+[INFO] [service_log_checker-2]: process started with pid [492469]
+[INFO] [component_container-3]: process started with pid [492471]
+[INFO] [topic_state_monitor_node-4]: process started with pid [492473]
+[INFO] [topic_state_monitor_node-5]: process started with pid [492475]
+[INFO] [topic_state_monitor_node-6]: process started with pid [492477]
+[INFO] [topic_state_monitor_node-7]: process started with pid [492479]
+[INFO] [topic_state_monitor_node-8]: process started with pid [492481]
+[INFO] [topic_state_monitor_node-9]: process started with pid [492483]
+[INFO] [topic_state_monitor_node-10]: process started with pid [492485]
+[INFO] [topic_state_monitor_node-11]: process started with pid [492487]
+[INFO] [topic_state_monitor_node-12]: process started with pid [492489]
+[INFO] [topic_state_monitor_node-13]: process started with pid [492491]
+[INFO] [topic_state_monitor_node-14]: process started with pid [492493]
+[INFO] [aggregator_node-15]: process started with pid [492495]
+[INFO] [system_error_monitor-16]: process started with pid [492497]
+[INFO] [emergency_handler-17]: process started with pid [492500]
+[INFO] [component_container-18]: process started with pid [492506]
+[INFO] [component_container-19]: process started with pid [492564]
+[INFO] [component_container-20]: process started with pid [492630]
+[INFO] [map_hash_generator-21]: process started with pid [492641]
+[INFO] [map_projection_loader-22]: process started with pid [492644]
+[INFO] [component_container-23]: process started with pid [492655]
+[INFO] [goal_pose_visualizer-24]: process started with pid [492657]
+[INFO] [scenario_selector-25]: process started with pid [492659]
+[INFO] [external_velocity_limit_selector-26]: process started with pid [492661]
+[INFO] [component_container-27]: process started with pid [492663]
+[INFO] [component_container_mt-28]: process started with pid [492683]
+[INFO] [rtc_auto_mode_manager_node-29]: process started with pid [492703]
+[INFO] [component_container_mt-30]: process started with pid [492720]
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner' in container '/planning/scenario_planning/lane_driving/motion_planning/motion_planning_container'
+[INFO] [component_container-31]: process started with pid [492723]
+[INFO] [planning_validator_node-32]: process started with pid [492732]
+[INFO] [planning_evaluator-33]: process started with pid [492746]
+[INFO] [component_container-34]: process started with pid [492815]
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/mission_planning/glog_component' in container '/planning/mission_planning/mission_planner_container'
+[INFO] [component_container_mt-35]: process started with pid [492818]
+[INFO] [web_server.py-36]: process started with pid [492820]
+[INFO] [initial_pose_adaptor-37]: process started with pid [492822]
+[INFO] [routing_adaptor-38]: process started with pid [492833]
+[INFO] [component_container_mt-39]: process started with pid [492836]
+[INFO] [rviz2-40]: process started with pid [492848]
+[INFO] [dummy_perception_publisher_node-41]: process started with pid [492876]
+[INFO] [detected_object_feature_remover-42]: process started with pid [492894]
+[INFO] [component_container-43]: process started with pid [492927]
+[INFO] [multi_object_tracker-44]: process started with pid [492947]
+[INFO] [map_based_prediction-45]: process started with pid [492977]
+[INFO] [traffic_light_occlusion_predictor_node-46]: process started with pid [492988]
+[INFO] [traffic_light_multi_camera_fusion_node-47]: process started with pid [492990]
+[INFO] [crosswalk_traffic_light_estimator_node-48]: process started with pid [492992]
+[INFO] [component_container-49]: process started with pid [492994]
+[INFO] [traffic_light_map_visualizer_node-50]: process started with pid [493008]
+[INFO] [pose_initializer_node-51]: process started with pid [493028]
+[INFO] [simple_planning_simulator_exe-52]: process started with pid [493054]
+[INFO] [static_transform_publisher-53]: process started with pid [493087]
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner' in container '/planning/scenario_planning/lane_driving/motion_planning/motion_planning_container'
+[robot_state_publisher-1] [INFO] [1700619509.449309630] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1700619509.449414192] [robot_state_publisher]: got segment camera0/camera_link
+[robot_state_publisher-1] [INFO] [1700619509.449428114] [robot_state_publisher]: got segment camera0/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700619509.449435188] [robot_state_publisher]: got segment camera1/camera_link
+[robot_state_publisher-1] [INFO] [1700619509.449442139] [robot_state_publisher]: got segment camera1/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700619509.449449759] [robot_state_publisher]: got segment camera2/camera_link
+[robot_state_publisher-1] [INFO] [1700619509.449457128] [robot_state_publisher]: got segment camera2/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700619509.449464572] [robot_state_publisher]: got segment camera3/camera_link
+[robot_state_publisher-1] [INFO] [1700619509.449472255] [robot_state_publisher]: got segment camera3/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700619509.449479694] [robot_state_publisher]: got segment camera4/camera_link
+[robot_state_publisher-1] [INFO] [1700619509.449487126] [robot_state_publisher]: got segment camera4/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700619509.449494485] [robot_state_publisher]: got segment camera5/camera_link
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/perception/traffic_light_recognition/traffic_light_arbiter/arbiter' in container '/perception/traffic_light_recognition/traffic_light_arbiter/container'
+[robot_state_publisher-1] [INFO] [1700619509.449501483] [robot_state_publisher]: got segment camera5/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700619509.449508708] [robot_state_publisher]: got segment gnss_link
+[robot_state_publisher-1] [INFO] [1700619509.449516348] [robot_state_publisher]: got segment sensor_kit_base_link
+[robot_state_publisher-1] [INFO] [1700619509.449523927] [robot_state_publisher]: got segment tamagawa/imu_link
+[robot_state_publisher-1] [INFO] [1700619509.449531533] [robot_state_publisher]: got segment traffic_light_left_camera/camera_link
+[robot_state_publisher-1] [INFO] [1700619509.449539404] [robot_state_publisher]: got segment traffic_light_left_camera/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700619509.449546903] [robot_state_publisher]: got segment traffic_light_right_camera/camera_link
+[robot_state_publisher-1] [INFO] [1700619509.449554507] [robot_state_publisher]: got segment traffic_light_right_camera/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700619509.449562379] [robot_state_publisher]: got segment velodyne_left
+[robot_state_publisher-1] [INFO] [1700619509.449570178] [robot_state_publisher]: got segment velodyne_left_base_link
+[robot_state_publisher-1] [INFO] [1700619509.449577986] [robot_state_publisher]: got segment velodyne_rear
+[robot_state_publisher-1] [INFO] [1700619509.449585670] [robot_state_publisher]: got segment velodyne_rear_base_link
+[robot_state_publisher-1] [INFO] [1700619509.449593178] [robot_state_publisher]: got segment velodyne_right
+[robot_state_publisher-1] [INFO] [1700619509.449600473] [robot_state_publisher]: got segment velodyne_right_base_link
+[robot_state_publisher-1] [INFO] [1700619509.449607915] [robot_state_publisher]: got segment velodyne_top
+[robot_state_publisher-1] [INFO] [1700619509.449615344] [robot_state_publisher]: got segment velodyne_top_base_link
+[component_container-3] [INFO] [1700619509.558440512] [system.component_state_monitor.container]: Load Library: /home/zhijie/autoware/install/component_state_monitor/lib/libcomponent_state_monitor.so
+[component_container-3] [INFO] [1700619509.562067200] [system.component_state_monitor.container]: Found class: rclcpp_components::NodeFactoryTemplate<component_state_monitor::StateMonitor>
+[component_container-3] [INFO] [1700619509.562104678] [system.component_state_monitor.container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<component_state_monitor::StateMonitor>
+[system_error_monitor-16] [INFO] [1700619509.586595261] [system.system_error_monitor]: waiting for diag_array msg...
+[emergency_handler-17] [INFO] [1700619509.584338699] [system.emergency_handler]: waiting for hazard_status_stamped msg...
+[component_container-18] [INFO] [1700619509.677699569] [system.mrm_comfortable_stop_operator.mrm_comfortable_stop_operator_container]: Load Library: /home/zhijie/autoware/install/mrm_comfortable_stop_operator/lib/libmrm_comfortable_stop_operator_component.so
+[component_container-18] [INFO] [1700619509.678836414] [system.mrm_comfortable_stop_operator.mrm_comfortable_stop_operator_container]: Found class: rclcpp_components::NodeFactoryTemplate<mrm_comfortable_stop_operator::MrmComfortableStopOperator>
+[component_container-18] [INFO] [1700619509.678862589] [system.mrm_comfortable_stop_operator.mrm_comfortable_stop_operator_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<mrm_comfortable_stop_operator::MrmComfortableStopOperator>
+[component_container-19] [INFO] [1700619509.699685252] [system.mrm_emergency_stop_operator.mrm_emergency_stop_operator_container]: Load Library: /home/zhijie/autoware/install/mrm_emergency_stop_operator/lib/libmrm_emergency_stop_operator_component.so
+[component_container-19] [INFO] [1700619509.701722485] [system.mrm_emergency_stop_operator.mrm_emergency_stop_operator_container]: Found class: rclcpp_components::NodeFactoryTemplate<mrm_emergency_stop_operator::MrmEmergencyStopOperator>
+[component_container-19] [INFO] [1700619509.701758831] [system.mrm_emergency_stop_operator.mrm_emergency_stop_operator_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<mrm_emergency_stop_operator::MrmEmergencyStopOperator>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/occupancy_grid_map/pointcloud_to_laserscan_node' in container '/occupancy_grid_map/occupancy_grid_map_container'
+[component_container-20] [INFO] [1700619509.497900694] [map.map_container]: Load Library: /home/zhijie/autoware/install/map_loader/lib/liblanelet2_map_loader_node.so
+[component_container-20] [INFO] [1700619509.509528884] [map.map_container]: Found class: rclcpp_components::NodeFactoryTemplate<Lanelet2MapLoaderNode>
+[component_container-20] [INFO] [1700619509.509566297] [map.map_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<Lanelet2MapLoaderNode>
+[component_container-20] [INFO] [1700619509.591843104] [map.map_container]: Load Library: /home/zhijie/autoware/install/map_loader/lib/liblanelet2_map_visualization_node.so
+[component_container-20] [INFO] [1700619509.593451899] [map.map_container]: Found class: rclcpp_components::NodeFactoryTemplate<Lanelet2MapVisualizationNode>
+[component_container-20] [INFO] [1700619509.593483649] [map.map_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<Lanelet2MapVisualizationNode>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/trajectory_follower/controller_node_exe' in container '/control/control_container'
+[component_container-20] [INFO] [1700619509.617831254] [map.map_container]: Load Library: /home/zhijie/autoware/install/map_loader/lib/libpointcloud_map_loader_node.so
+[component_container-20] [INFO] [1700619509.816831024] [map.map_container]: Found class: rclcpp_components::NodeFactoryTemplate<PointCloudMapLoaderNode>
+[component_container-20] [INFO] [1700619509.816865041] [map.map_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<PointCloudMapLoaderNode>
+[component_container-20] [INFO] [1700619509.863123011] [map.pointcloud_map_loader]: Load /home/zhijie/autoware/map/pointcloud_map.pcd (1 out of 1)
+[map_projection_loader-22] [INFO] [1700619509.516250285] [map.map_projection_loader]: Load /home/zhijie/autoware/map/lanelet2_mcity_v23.osm
+[map_projection_loader-22] [WARN] [1700619509.516330285] [map.map_projection_loader]: DEPRECATED WARNING: Loading map projection info from lanelet2 map may soon be deleted. Please use map_projector_info.yaml instead. For more info, visit https://github.com/autowarefoundation/autoware.universe/blob/main/map/map_projection_loader/README.md
+[component_container-23] [INFO] [1700619509.697754880] [planning.mission_planning.mission_planner_container]: Load Library: /home/zhijie/autoware/install/mission_planner/lib/libmission_planner_component.so
+[component_container-23] [INFO] [1700619509.804890514] [planning.mission_planning.mission_planner_container]: Found class: rclcpp_components::NodeFactoryTemplate<mission_planner::MissionPlanner>
+[component_container-23] [INFO] [1700619509.804929582] [planning.mission_planning.mission_planner_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<mission_planner::MissionPlanner>
+[component_container-23] [INFO] [1700619509.997423883] [planning.mission_planning.mission_planner_container]: Load Library: /home/zhijie/autoware/install/glog_component/lib/libglog_component.so
+[scenario_selector-25] [INFO] [1700619509.630851536] [planning.scenario_planning.scenario_selector]: Waiting for current pose.
+[component_container-27] [INFO] [1700619509.682773131] [planning.scenario_planning.motion_velocity_smoother_container]: Load Library: /home/zhijie/autoware/install/motion_velocity_smoother/lib/libmotion_velocity_smoother_node.so
+[component_container-27] [INFO] [1700619509.701056388] [planning.scenario_planning.motion_velocity_smoother_container]: Found class: rclcpp_components::NodeFactoryTemplate<motion_velocity_smoother::MotionVelocitySmootherNode>
+[component_container-27] [INFO] [1700619509.701105504] [planning.scenario_planning.motion_velocity_smoother_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<motion_velocity_smoother::MotionVelocitySmootherNode>
+[component_container-27] [INFO] [1700619509.862646204] [planning.scenario_planning.motion_velocity_smoother_container]: Load Library: /home/zhijie/autoware/install/glog_component/lib/libglog_component.so
+[component_container-27] [INFO] [1700619509.877674443] [planning.scenario_planning.motion_velocity_smoother_container]: Found class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container-27] [INFO] [1700619509.877710579] [planning.scenario_planning.motion_velocity_smoother_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container_mt-28] [INFO] [1700619509.663167818] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Load Library: /home/zhijie/autoware/install/behavior_path_planner/lib/libbehavior_path_planner_node.so
+[component_container_mt-28] [INFO] [1700619509.800230894] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_path_planner::BehaviorPathPlannerNode>
+[component_container_mt-28] [INFO] [1700619509.800270193] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_path_planner::BehaviorPathPlannerNode>
+[component_container_mt-30] [INFO] [1700619509.735451459] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Load Library: /home/zhijie/autoware/install/obstacle_stop_planner/lib/libobstacle_stop_planner.so
+[component_container_mt-30] [INFO] [1700619509.815948211] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<motion_planning::ObstacleStopPlannerNode>
+[component_container_mt-30] [INFO] [1700619509.815983603] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<motion_planning::ObstacleStopPlannerNode>
+[component_container-31] [INFO] [1700619509.759756994] [planning.scenario_planning.parking.parking_container]: Load Library: /home/zhijie/autoware/install/costmap_generator/lib/libcostmap_generator_node.so
+[component_container-34] [INFO] [1700619509.695310666] [control.control_container]: Load Library: /home/zhijie/autoware/install/trajectory_follower_node/lib/libcontroller_node.so
+[component_container-34] [INFO] [1700619509.777341330] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<autoware::motion::control::trajectory_follower_node::Controller>
+[component_container-34] [INFO] [1700619509.777378165] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<autoware::motion::control::trajectory_follower_node::Controller>
+[dummy_perception_publisher_node-41] [WARN] [1700619509.861977418] [simulation.dummy_perception_publisher]: map->base_link is not available yet
+[static_transform_publisher-53] [INFO] [1700619510.010291055] [static_map_to_odom_tf_publisher]: Spinning until stopped - publishing transform
+[static_transform_publisher-53] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-53] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-53] from 'map' to 'odom'
+[component_container-23] [INFO] [1700619510.011250321] [planning.mission_planning.mission_planner_container]: Found class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container-23] [INFO] [1700619510.011453624] [planning.mission_planning.mission_planner_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container-23] [INFO] [1700619510.080035415] [planning.mission_planning.mission_planner]: waiting lanelet map... Route API is not ready.
+[component_container_mt-30] [INFO] [1700619510.023601111] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Load Library: /home/zhijie/autoware/install/obstacle_avoidance_planner/lib/libobstacle_avoidance_planner.so
+[component_container_mt-30] [INFO] [1700619510.044009101] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<obstacle_avoidance_planner::ObstacleAvoidancePlanner>
+[component_container_mt-30] [INFO] [1700619510.044058187] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<obstacle_avoidance_planner::ObstacleAvoidancePlanner>
+[component_container-49] [INFO] [1700619510.047132428] [perception.traffic_light_recognition.traffic_light_arbiter.container]: Load Library: /home/zhijie/autoware/install/traffic_light_arbiter/lib/libtraffic_light_arbiter.so
+[component_container-49] [INFO] [1700619510.077668428] [perception.traffic_light_recognition.traffic_light_arbiter.container]: Found class: rclcpp_components::NodeFactoryTemplate<TrafficLightArbiter>
+[component_container-49] [INFO] [1700619510.077713136] [perception.traffic_light_recognition.traffic_light_arbiter.container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<TrafficLightArbiter>
+[simple_planning_simulator_exe-52] [INFO] [1700619510.057143845] [simulation.simple_planning_simulator]: vehicle_model_type = DELAY_STEER_ACC_GEARED
+[simple_planning_simulator_exe-52] [INFO] [1700619510.058246304] [simulation.simple_planning_simulator]: initialize_source : INITIAL_POSE_TOPIC
+[simple_planning_simulator_exe-52] [INFO] [1700619510.069025180] [simulation.simple_planning_simulator]: waiting initialization...
+[component_container_mt-30] [INFO] [1700619510.107847537] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner]: Initialize planning
+[component_container_mt-30] [INFO] [1700619510.109352494] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Load Library: /home/zhijie/autoware/install/obstacle_velocity_limiter/lib/libobstacle_velocity_limiter_node.so
+[component_container-43] [INFO] [1700619510.115860697] [occupancy_grid_map.occupancy_grid_map_container]: Load Library: /home/zhijie/autoware/install/pointcloud_to_laserscan/lib/libpointcloud_to_laserscan.so
+[component_container-43] [INFO] [1700619510.127201679] [occupancy_grid_map.occupancy_grid_map_container]: Found class: rclcpp_components::NodeFactoryTemplate<pointcloud_to_laserscan::PointCloudToLaserScanNode>
+[component_container-43] [INFO] [1700619510.127239879] [occupancy_grid_map.occupancy_grid_map_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<pointcloud_to_laserscan::PointCloudToLaserScanNode>
+[component_container-43] [INFO] [1700619510.167420861] [occupancy_grid_map.occupancy_grid_map_container]: Load Library: /home/zhijie/autoware/install/probabilistic_occupancy_grid_map/lib/liblaserscan_based_occupancy_grid_map.so
+[component_container-34] [INFO] [1700619510.174552066] [control.control_container]: Load Library: /home/zhijie/autoware/install/external_cmd_converter/lib/libexternal_cmd_converter.so
+[component_container-34] [INFO] [1700619510.190019301] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<external_cmd_converter::ExternalCmdConverterNode>
+[component_container-34] [INFO] [1700619510.190432914] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<external_cmd_converter::ExternalCmdConverterNode>
+[component_container_mt-28] [INFO] [1700619510.194650339] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register start_planner module
+[component_container-20] [INFO] [1700619510.204011462] [map.pointcloud_map_loader]: Create PCD metadata, as the pointcloud is a single file.
+[component_container_mt-28] [INFO] [1700619510.220990155] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register goal_planner module
+[component_container_mt-28] [INFO] [1700619510.223955975] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register side_shift module
+[component_container_mt-28] [INFO] [1700619510.233616504] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register lane_change_left module
+[component_container_mt-28] [INFO] [1700619510.241003522] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register lane_change_right module
+[component_container-34] [INFO] [1700619510.252032034] [control.trajectory_follower.controller_node_exe]: Waiting for trajectory.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/external_cmd_converter' in container '/control/control_container'
+[component_container-34] [INFO] [1700619510.254194408] [control.trajectory_follower.controller_node_exe]: Control is skipped since input data is not ready.
+[component_container-34] [INFO] [1700619510.255203982] [control.control_container]: Load Library: /home/zhijie/autoware/install/external_cmd_selector/lib/libexternal_cmd_selector_node.so
+[component_container-34] [INFO] [1700619510.258202981] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<ExternalCmdSelector>
+[component_container-34] [INFO] [1700619510.258245910] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<ExternalCmdSelector>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/external_cmd_selector' in container '/control/control_container'
+[component_container-34] [INFO] [1700619510.278601366] [control.control_container]: Load Library: /home/zhijie/autoware/install/control_validator/lib/libcontrol_validator_component.so
+[component_container-34] [INFO] [1700619510.280955506] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<control_validator::ControlValidator>
+[component_container-34] [INFO] [1700619510.280993638] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<control_validator::ControlValidator>
+[system_error_monitor-16] [INFO] [1700619510.287421723] [system.system_error_monitor]: waiting for current_gate_mode msg...
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/autoware_state' in container '/default_ad_api/container'
+[component_container-43] [INFO] [1700619510.322111251] [occupancy_grid_map.occupancy_grid_map_container]: Found class: rclcpp_components::NodeFactoryTemplate<occupancy_grid_map::LaserscanBasedOccupancyGridMapNode>
+[component_container-43] [INFO] [1700619510.324900532] [occupancy_grid_map.occupancy_grid_map_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<occupancy_grid_map::LaserscanBasedOccupancyGridMapNode>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/control_validator' in container '/control/control_container'
+[component_container-34] [INFO] [1700619510.337524759] [control.control_container]: Load Library: /home/zhijie/autoware/install/lane_departure_checker/lib/liblane_departure_checker.so
+[component_container_mt-28] [INFO] [1700619510.341026353] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register avoidance module
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/fail_safe' in container '/default_ad_api/container'
+[component_container-31] [INFO] [1700619510.348473855] [planning.scenario_planning.parking.parking_container]: Found class: rclcpp_components::NodeFactoryTemplate<CostmapGenerator>
+[component_container-31] [INFO] [1700619510.348516170] [planning.scenario_planning.parking.parking_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<CostmapGenerator>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/occupancy_grid_map/occupancy_grid_map_node' in container '/occupancy_grid_map/occupancy_grid_map_container'
+[component_container-43] [INFO] [1700619510.392974330] [occupancy_grid_map.pointcloud_to_laserscan_node]: Got a subscriber to laserscan, starting pointcloud subscriber
+[component_container_mt-28] [INFO] [1700619510.394441489] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register avoidance_by_lane_change module
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner' in container '/planning/scenario_planning/lane_driving/behavior_planning/behavior_planning_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/interface' in container '/default_ad_api/container'
+[component_container-34] [INFO] [1700619510.409862955] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<lane_departure_checker::LaneDepartureCheckerNode>
+[component_container-34] [INFO] [1700619510.409902991] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<lane_departure_checker::LaneDepartureCheckerNode>
+[component_container-31] [INFO] [1700619510.416363740] [planning.scenario_planning.parking.costmap_generator]: waiting for initial pose...
+[component_container_mt-28] [INFO] [1700619510.423483772] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Load Library: /home/zhijie/autoware/install/behavior_velocity_planner/lib/libbehavior_velocity_planner_lib.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map/pointcloud_map_loader' in container '/map/map_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/localization' in container '/default_ad_api/container'
+[component_container_mt-28] [INFO] [1700619510.450566611] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_velocity_planner::BehaviorVelocityPlannerNode>
+[component_container_mt-28] [INFO] [1700619510.450705919] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_velocity_planner::BehaviorVelocityPlannerNode>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/trajectory_follower/lane_departure_checker_node' in container '/control/control_container'
+[component_container-34] [INFO] [1700619510.462099750] [control.control_container]: Load Library: /home/zhijie/autoware/install/shift_decider/lib/libshift_decider_node.so
+[component_container-34] [INFO] [1700619510.465683256] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<ShiftDecider>
+[component_container-34] [INFO] [1700619510.465856364] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<ShiftDecider>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/motion' in container '/default_ad_api/container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/shift_decider' in container '/control/control_container'
+[component_container-34] [INFO] [1700619510.494400180] [control.control_container]: Load Library: /home/zhijie/autoware/install/vehicle_cmd_gate/lib/libvehicle_cmd_gate_node.so
+[component_container-34] [INFO] [1700619510.511795524] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<vehicle_cmd_gate::VehicleCmdGate>
+[component_container-34] [INFO] [1700619510.511840653] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<vehicle_cmd_gate::VehicleCmdGate>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/operation_mode' in container '/default_ad_api/container'
+[rtc_auto_mode_manager_node-29] [INFO] [1700619510.555633654] [planning.scenario_planning.lane_driving.behavior_planning.rtc_auto_mode_manager]: Waiting for service... [blind_spot]
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/perception' in container '/default_ad_api/container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/vehicle_cmd_gate' in container '/control/control_container'
+[component_container-34] [INFO] [1700619510.587141164] [control.trajectory_follower.lane_departure_checker_node]: waiting for current_twist msg...
+[component_container_mt-28] [INFO] [1700619510.589829003] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::CrosswalkModulePlugin' is loaded.
+[component_container-34] [INFO] [1700619510.591155236] [control.control_container]: Load Library: /home/zhijie/autoware/install/operation_mode_transition_manager/lib/liboperation_mode_transition_manager_node.so
+[component_container_mt-28] [INFO] [1700619510.596916701] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::WalkwayModulePlugin' is loaded.
+[component_container-34] [INFO] [1700619510.597267389] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<operation_mode_transition_manager::OperationModeTransitionManager>
+[component_container-34] [INFO] [1700619510.597292089] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<operation_mode_transition_manager::OperationModeTransitionManager>
+[component_container_mt-28] [INFO] [1700619510.621887833] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::TrafficLightModulePlugin' is loaded.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/operation_mode_transition_manager' in container '/control/control_container'
+[component_container-34] [INFO] [1700619510.640618275] [control.control_container]: Load Library: /home/zhijie/autoware/install/glog_component/lib/libglog_component.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/planning' in container '/default_ad_api/container'
+[component_container-34] [INFO] [1700619510.646212195] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container-34] [INFO] [1700619510.646250294] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/glog_component' in container '/control/control_container'
+[component_container_mt-28] [INFO] [1700619510.672012780] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::IntersectionModulePlugin' is loaded.
+[component_container_mt-28] [INFO] [1700619510.680752922] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::MergeFromPrivateModulePlugin' is loaded.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/routing' in container '/default_ad_api/container'
+[component_container_mt-28] [INFO] [1700619510.698579992] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::BlindSpotModulePlugin' is loaded.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/vehicle' in container '/default_ad_api/container'
+[component_container_mt-28] [INFO] [1700619510.720698780] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::DetectionAreaModulePlugin' is loaded.
+[component_container_mt-28] [INFO] [1700619510.735228194] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::NoStoppingAreaModulePlugin' is loaded.
+[component_container_mt-28] [INFO] [1700619510.748465183] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::StopLineModulePlugin' is loaded.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/vehicle_info' in container '/default_ad_api/container'
+[component_container_mt-28] [INFO] [1700619510.758267658] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::OutOfLaneModulePlugin' is loaded.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner' in container '/planning/scenario_planning/lane_driving/behavior_planning/behavior_planning_container'
+[component_container_mt-28] [INFO] [1700619510.763287205] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Load Library: /home/zhijie/autoware/install/glog_component/lib/libglog_component.so
+[component_container_mt-28] [INFO] [1700619510.766235681] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container_mt-28] [INFO] [1700619510.766280480] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container_mt-30] [INFO] [1700619510.776045935] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<obstacle_velocity_limiter::ObstacleVelocityLimiterNode>
+[component_container_mt-30] [INFO] [1700619510.777556404] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<obstacle_velocity_limiter::ObstacleVelocityLimiterNode>
+[system_error_monitor-16] [ERROR] [1700619510.786398936] [system.system_error_monitor]: vehicle_state_report msg is timeout...
+[system_error_monitor-16] [ERROR] [1700619510.786513880] [system_error_monitor system_error_monitor/input_data_timeout]: [Single Point Fault]: 
+[web_server.py-36]  * Running on http://localhost:8888/ (Press CTRL+C to quit)
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/motion_planning/obstacle_velocity_limiter' in container '/planning/scenario_planning/lane_driving/motion_planning/motion_planning_container'
+[component_container_mt-30] [INFO] [1700619510.822673136] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Load Library: /home/zhijie/autoware/install/surround_obstacle_checker/lib/libsurround_obstacle_checker.so
+[component_container_mt-30] [INFO] [1700619510.827580260] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<surround_obstacle_checker::SurroundObstacleCheckerNode>
+[component_container_mt-30] [INFO] [1700619510.827632778] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<surround_obstacle_checker::SurroundObstacleCheckerNode>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/behavior_planning/glog_component' in container '/planning/scenario_planning/lane_driving/behavior_planning/behavior_planning_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker' in container '/planning/scenario_planning/lane_driving/motion_planning/motion_planning_container'
+[component_container_mt-30] [INFO] [1700619510.877265136] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Load Library: /home/zhijie/autoware/install/path_smoother/lib/libpath_smoother.so
+[component_container_mt-30] [INFO] [1700619510.878857372] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<path_smoother::ElasticBandSmoother>
+[component_container_mt-30] [INFO] [1700619510.878884491] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<path_smoother::ElasticBandSmoother>
+[component_container_mt-30] [INFO] [1700619510.902518079] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother]: Initialize planning
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother' in container '/planning/scenario_planning/lane_driving/motion_planning/motion_planning_container'
+[component_container_mt-30] [INFO] [1700619510.904759913] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Load Library: /home/zhijie/autoware/install/glog_component/lib/libglog_component.so
+[component_container_mt-30] [INFO] [1700619510.906354534] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container_mt-30] [INFO] [1700619510.906377250] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/motion_planning/glog_component' in container '/planning/scenario_planning/lane_driving/motion_planning/motion_planning_container'
+[crosswalk_traffic_light_estimator_node-48] [INFO] [1700619510.951118461] [perception.traffic_light_recognition.crosswalk_traffic_light_estimator]: [CrosswalkTrafficLightEstimatorNode]: Start loading lanelet
+[map_based_prediction-45] [INFO] [1700619510.962993504] [perception.object_recognition.prediction.map_based_prediction]: [Map Based Prediction]: Start loading lanelet
+[component_container_mt-30] [INFO] [1700619510.970575668] [planning.scenario_planning.lane_driving.motion_planning.surround_obstacle_checker]: waiting for dynamic object info...
+[rviz2-40] [INFO] [1700619511.008808125] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-40] [INFO] [1700619511.009021795] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[component_container-20] [INFO] [1700619511.022144898] [map.lanelet2_map_visualization]: Map is loaded
+[component_container-20] 
+[traffic_light_map_visualizer_node-50] [INFO] [1700619511.034123637] [perception.traffic_light_recognition.traffic_light_map_visualizer]: Map is loaded
+[traffic_light_map_visualizer_node-50] 
+[rviz2-40] [INFO] [1700619511.036394518] [rviz2]: Stereo is NOT SUPPORTED
+[component_container-20] [1;33mCould not find valid vertex for ear clipping triangulation. Triangulation result might be invalid[0m
+[component_container-20] [1;33mCould not find valid vertex for ear clipping triangulation. Triangulation result might be invalid[0m
+[component_container-20] [1;33mCould not find valid vertex for ear clipping triangulation. Triangulation result might be invalid[0m
+[component_container-20] [1;33mCould not find valid vertex for ear clipping triangulation. Triangulation result might be invalid[0m
+[component_container-20] [1;33mCould not find valid vertex for ear clipping triangulation. Triangulation result might be invalid[0m
+[component_container-20] [1;33mCould not find valid vertex for ear clipping triangulation. Triangulation result might be invalid[0m
+[component_container-20] [1;33mCould not find valid vertex for ear clipping triangulation. Triangulation result might be invalid[0m
+[component_container-20] [1;33mCould not find valid vertex for ear clipping triangulation. Triangulation result might be invalid[0m
+[component_container-20] [INFO] [1700619511.062771058] [map.map_container]: Load Library: /home/zhijie/autoware/install/map_tf_generator/lib/libvector_map_tf_generator_node.so
+[component_container-20] [INFO] [1700619511.066190251] [map.map_container]: Found class: rclcpp_components::NodeFactoryTemplate<VectorMapTFGeneratorNode>
+[component_container-20] [INFO] [1700619511.066215259] [map.map_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<VectorMapTFGeneratorNode>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map/vector_map_tf_generator' in container '/map/map_container'
+[component_container-20] [INFO] [1700619511.117184570] [map.vector_map_tf_generator]: broadcast static tf. map_frame:map, viewer_frame:viewer, x:77597.9, y:86706, z:8.21461e-06
+[map_based_prediction-45] [INFO] [1700619511.120437745] [perception.object_recognition.prediction.map_based_prediction]: [Map Based Prediction]: Map is loaded
+[crosswalk_traffic_light_estimator_node-48] [INFO] [1700619511.164755617] [perception.traffic_light_recognition.crosswalk_traffic_light_estimator]: [CrosswalkTrafficLightEstimatorNode]: Map is loaded
+[component_container-23] [INFO] [1700619511.267415331] [planning.mission_planning.mission_planner]: waiting odometry... Route API is not ready.
+[component_container-34] [WARN] [1700619511.295117455] [control.control_validator]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[rviz2-40] [INFO] [1700619511.983431337] [rviz2]: Stereo is NOT SUPPORTED
+[scenario_selector-25] [INFO] [1700619514.630997346] [planning.scenario_planning.scenario_selector]: Waiting for current pose.
+[dummy_perception_publisher_node-41] [WARN] [1700619514.961732089] [simulation.dummy_perception_publisher]: map->base_link is not available yet
+[simple_planning_simulator_exe-52] [INFO] [1700619515.093742482] [simulation.simple_planning_simulator]: waiting initialization...
+[component_container-34] [INFO] [1700619515.262548137] [control.trajectory_follower.controller_node_exe]: Waiting for trajectory.
+[component_container-34] [INFO] [1700619515.262581031] [control.trajectory_follower.controller_node_exe]: Control is skipped since input data is not ready.
+[component_container-31] [INFO] [1700619515.416684088] [planning.scenario_planning.parking.costmap_generator]: waiting for initial pose...
+[component_container_mt-28] [INFO] [1700619515.599636794] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner]: waiting for scenario_topic
+[component_container-34] [INFO] [1700619515.655708433] [control.trajectory_follower.lane_departure_checker_node]: waiting for current_twist msg...
+[system_error_monitor-16] [ERROR] [1700619515.886368244] [system.system_error_monitor]: vehicle_state_report msg is timeout...
+[system_error_monitor-16] [ERROR] [1700619515.886423159] [system_error_monitor system_error_monitor/input_data_timeout]: [Single Point Fault]: 
+[component_container_mt-30] [INFO] [1700619515.970656006] [planning.scenario_planning.lane_driving.motion_planning.surround_obstacle_checker]: waiting for dynamic object info...
+[component_container-23] [INFO] [1700619516.279445191] [planning.mission_planning.mission_planner]: waiting odometry... Route API is not ready.
+[scenario_selector-25] [INFO] [1700619519.730992694] [planning.scenario_planning.scenario_selector]: Waiting for current pose.
+[dummy_perception_publisher_node-41] [WARN] [1700619520.061722762] [simulation.dummy_perception_publisher]: map->base_link is not available yet
+[simple_planning_simulator_exe-52] [INFO] [1700619520.093816629] [simulation.simple_planning_simulator]: waiting initialization...
+[component_container-34] [INFO] [1700619520.272462207] [control.trajectory_follower.controller_node_exe]: Waiting for trajectory.
+[component_container-34] [INFO] [1700619520.272489734] [control.trajectory_follower.controller_node_exe]: Control is skipped since input data is not ready.
+[component_container-31] [INFO] [1700619520.416800175] [planning.scenario_planning.parking.costmap_generator]: waiting for initial pose...
+[component_container_mt-28] [INFO] [1700619520.599806645] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner]: waiting for scenario_topic
+[component_container-34] [INFO] [1700619520.655736752] [control.trajectory_follower.lane_departure_checker_node]: waiting for current_twist msg...
+[system_error_monitor-16] [ERROR] [1700619520.886371396] [system.system_error_monitor]: vehicle_state_report msg is timeout...
+[system_error_monitor-16] [ERROR] [1700619520.886446988] [system_error_monitor system_error_monitor/input_data_timeout]: [Single Point Fault]: 
+[rviz2-40] [INFO] [1700619521.069263796] [rviz2]: Setting estimate pose: Frame:map, Position(77571.7, 86797.3, 0), Orientation(0, 0, -0.920229, 0.391381) = Angle: -2.33733
+[initial_pose_adaptor-37] [INFO] [1700619521.069424221] [default_ad_api.helpers.initial_pose_adaptor]: original point: 77571.703 86797.328 0.000
+[initial_pose_adaptor-37] [INFO] [1700619521.069690507] [default_ad_api.helpers.initial_pose_adaptor]: Send request to map_loader
+[initial_pose_adaptor-37] [INFO] [1700619521.069952537] [default_ad_api.helpers.initial_pose_adaptor]: Loaded partial pcd map from map_loader (grid size: 0)
+[initial_pose_adaptor-37] Failed to find match for field 'x'.
+[initial_pose_adaptor-37] Failed to find match for field 'y'.
+[initial_pose_adaptor-37] Failed to find match for field 'z'.
+[initial_pose_adaptor-37] [INFO] [1700619521.069995986] [default_ad_api.helpers.initial_pose_adaptor]: modified point: 77571.703 86797.328 0.000
+[initial_pose_adaptor-37] [INFO] [1700619521.070033629] [default_ad_api.helpers.initial_pose_adaptor]: client call: /api/localization/initialize
+[component_container_mt-35] [INFO] [1700619521.070221676] [default_ad_api.node.localization]: server call: /api/localization/initialize
+[component_container_mt-35] [INFO] [1700619521.070474232] [default_ad_api.node.localization]: client call: /localization/initialize
+[pose_initializer_node-51] [INFO] [1700619521.070598498] [pose_initializer_node]: server call: /localization/initialize
+[pose_initializer_node-51] [INFO] [1700619521.070819638] [pose_initializer_node]: server exit: /localization/initialize
+[component_container_mt-30] [INFO] [1700619521.070625609] [planning.scenario_planning.lane_driving.motion_planning.surround_obstacle_checker]: waiting for dynamic object info...
+[component_container_mt-35] [INFO] [1700619521.071519011] [default_ad_api.node.localization]: client exit: /localization/initialize
+[component_container_mt-35] [INFO] [1700619521.071521476] [default_ad_api.node.localization]: server exit: /api/localization/initialize
+[initial_pose_adaptor-37] [INFO] [1700619521.071645567] [default_ad_api.helpers.initial_pose_adaptor]: client exit: /api/localization/initialize
+[scenario_selector-25] [INFO] [1700619521.130827909] [planning.scenario_planning.scenario_selector]: Waiting for route.
+[component_container-34] [INFO] [1700619521.155739811] [control.trajectory_follower.lane_departure_checker_node]: waiting for route msg...
+[component_container-23] [INFO] [1700619521.179576368] [planning.mission_planning.mission_planner]: Route API is ready.
+[emergency_handler-17] [INFO] [1700619521.184381497] [system.emergency_handler]: MRM State changed: NORMAL -> MRM_OPERATING
+[emergency_handler-17] [WARN] [1700619521.184729138] [system.emergency_handler]: Emergency stop is operated
+[system_error_monitor-16] [ERROR] [1700619521.187364644] [system_error_monitor /autoware/control/autonomous_driving/node_alive_monitoring]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619521.187378341] [system_error_monitor /autoware/control/autonomous_driving/node_alive_monitoring/topic_status/topic_state_monitor_control_command_control_cmd: control_topic_status]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619521.187382595] [system_error_monitor /autoware/control/autonomous_driving/node_alive_monitoring/topic_status/topic_state_monitor_trajectory_follower_control_cmd: control_topic_status]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619521.187385644] [system_error_monitor /autoware/planning/node_alive_monitoring]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619521.187388398] [system_error_monitor /autoware/planning/node_alive_monitoring/topic_status/topic_state_monitor_mission_planning_route: planning_topic_status]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619521.187391385] [system_error_monitor /autoware/planning/node_alive_monitoring/topic_status/topic_state_monitor_scenario_planning_trajectory: planning_topic_status]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619521.187394005] [system_error_monitor /autoware/planning/performance_monitoring/trajectory_validation]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619521.187397101] [system_error_monitor /autoware/planning/performance_monitoring/trajectory_validation/trajectory_validation_acceleration/planning_validator: trajectory_validation_acceleration]: [Single Point Fault]: acceleration is too large
+[system_error_monitor-16] [ERROR] [1700619521.187400437] [system_error_monitor /autoware/planning/performance_monitoring/trajectory_validation/trajectory_validation_curvature/planning_validator: trajectory_validation_curvature]: [Single Point Fault]: curvature is too large
+[system_error_monitor-16] [ERROR] [1700619521.187403338] [system_error_monitor /autoware/planning/performance_monitoring/trajectory_validation/trajectory_validation_deceleration/planning_validator: trajectory_validation_deceleration]: [Single Point Fault]: deceleration is too large
+[system_error_monitor-16] [ERROR] [1700619521.187406178] [system_error_monitor /autoware/planning/performance_monitoring/trajectory_validation/trajectory_validation_finite/planning_validator: trajectory_validation_finite]: [Single Point Fault]: infinite value is found
+[system_error_monitor-16] [ERROR] [1700619521.187409595] [system_error_monitor /autoware/planning/performance_monitoring/trajectory_validation/trajectory_validation_interval/planning_validator: trajectory_validation_interval]: [Single Point Fault]: points interval is too long
+[system_error_monitor-16] [ERROR] [1700619521.187412934] [system_error_monitor /autoware/planning/performance_monitoring/trajectory_validation/trajectory_validation_lateral_acceleration/planning_validator: trajectory_validation_lateral_acceleration]: [Single Point Fault]: lateral acceleration is too large
+[system_error_monitor-16] [ERROR] [1700619521.187416208] [system_error_monitor /autoware/planning/performance_monitoring/trajectory_validation/trajectory_validation_relative_angle/planning_validator: trajectory_validation_relative_angle]: [Single Point Fault]: relative angle is too large
+[system_error_monitor-16] [ERROR] [1700619521.187419984] [system_error_monitor /autoware/planning/performance_monitoring/trajectory_validation/trajectory_validation_steering/planning_validator: trajectory_validation_steering]: [Single Point Fault]: expected steering is too large
+[system_error_monitor-16] [ERROR] [1700619521.187443396] [system_error_monitor /autoware/planning/performance_monitoring/trajectory_validation/trajectory_validation_steering/planning_validator: trajectory_validation_steering_rate]: [Single Point Fault]: expected steering rate is too large
+[system_error_monitor-16] [ERROR] [1700619521.187447091] [system_error_monitor /autoware/planning/performance_monitoring/trajectory_validation/trajectory_validation_steering_rate/planning_validator: trajectory_validation_steering_rate]: [Single Point Fault]: expected steering rate is too large
+[system_error_monitor-16] [ERROR] [1700619521.187449812] [system_error_monitor /autoware/planning/performance_monitoring/trajectory_validation/trajectory_validation_velocity_deviation/planning_validator: trajectory_validation_velocity_deviation]: [Single Point Fault]: velocity deviation is too large
+[emergency_handler-17] [INFO] [1700619521.284342928] [system.emergency_handler]: MRM State changed: MRM_OPERATING -> NORMAL
+[emergency_handler-17] [WARN] [1700619521.284551509] [system.emergency_handler]: Emergency stop is canceled
+[component_container_mt-35] [INFO] [1700619522.183694991] [default_ad_api.node.motion]: client call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619522.183863782] [control.vehicle_cmd_gate]: server call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619522.183923508] [control.vehicle_cmd_gate]: server exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619522.184041225] [default_ad_api.node.motion]: client exit: /control/vehicle_cmd_gate/set_pause
+[rviz2-40] [INFO] [1700619524.725289114] [rviz2]: Setting goal pose: Frame:map, Position(77549.6, 86740.3, 0), Orientation(0, 0, -0.709994, 0.704208) = Angle: -1.57898
+[routing_adaptor-38] [INFO] [1700619524.927322628] [default_ad_api.helpers.routing_adaptor]: client call: /api/routing/set_route_points
+[component_container_mt-35] [INFO] [1700619524.927532856] [default_ad_api.node.routing]: server call: /api/routing/set_route_points
+[component_container_mt-35] [INFO] [1700619524.927760100] [default_ad_api.node.routing]: client call: /planning/mission_planning/set_route_points
+[component_container-23] [INFO] [1700619524.927870603] [planning.mission_planning.mission_planner]: server call: /planning/mission_planning/set_route_points
+[component_container-23] [INFO] [1700619524.927957251] [planning.mission_planning.mission_planner]: start planning route with check points: 
+[component_container-23] x: 77571.7 y: 86797.3
+[component_container-23] x: 77549.6 y: 86740.3
+[component_container-23] 
+[scenario_selector-25] [WARN] [1700619524.930462181] [route_handler]: [Route Handler] getRouteUuid: Route has not been set yet
+[component_container-23] [INFO] [1700619524.930923022] [planning.mission_planning.mission_planner]: server exit: /planning/mission_planning/set_route_points
+[component_container_mt-35] [INFO] [1700619524.931387264] [default_ad_api.node.routing]: client exit: /planning/mission_planning/set_route_points
+[component_container_mt-35] [INFO] [1700619524.931387449] [default_ad_api.node.routing]: server exit: /api/routing/set_route_points
+[routing_adaptor-38] [INFO] [1700619524.931512234] [default_ad_api.helpers.routing_adaptor]: client exit: /api/routing/set_route_points
+[component_container-34] [INFO] [1700619524.955708110] [control.trajectory_follower.lane_departure_checker_node]: waiting for reference_trajectory msg...
+[component_container_mt-28] [WARN] [1700619525.170077984] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.goal_planner]: occupancy_grid is not ready
+[component_container-34] [INFO] [1700619525.282493056] [control.trajectory_follower.controller_node_exe]: Waiting for trajectory.
+[component_container-34] [INFO] [1700619525.282521878] [control.trajectory_follower.controller_node_exe]: Control is skipped since input data is not ready.
+[component_container_mt-28] [INFO] [1700619525.342511795] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = intersection, id = 61863
+[component_container_mt-28] [INFO] [1700619525.342904541] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = intersection, id = 62311
+[component_container_mt-28] [INFO] [1700619525.360142915] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = blind_spot, id = 61863
+[component_container_mt-28] [INFO] [1700619525.362777550] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = out_of_lane, id = 0
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/parking/costmap_generator' in container '/planning/scenario_planning/parking/parking_container'
+[component_container-31] [INFO] [1700619525.429669462] [planning.scenario_planning.parking.parking_container]: Load Library: /home/zhijie/autoware/install/freespace_planner/lib/libfreespace_planner_node.so
+[component_container-31] [INFO] [1700619525.436116352] [planning.scenario_planning.parking.parking_container]: Found class: rclcpp_components::NodeFactoryTemplate<freespace_planner::FreespacePlannerNode>
+[component_container-31] [INFO] [1700619525.436988178] [planning.scenario_planning.parking.parking_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<freespace_planner::FreespacePlannerNode>
+[component_container-31] [INFO] [1700619525.465494504] [planning.scenario_planning.parking.freespace_planner]: initialize planning algorithm: astar
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/parking/freespace_planner' in container '/planning/scenario_planning/parking/parking_container'
+[rviz2-40] [INFO] [1700619537.555218822] [rviz2]: client request
+[component_container_mt-35] [INFO] [1700619537.555566845] [default_ad_api.node.operation_mode]: server call: /api/operation_mode/change_to_autonomous
+[component_container_mt-35] [INFO] [1700619537.555788148] [default_ad_api.node.operation_mode]: client call: /system/operation_mode/change_operation_mode
+[component_container-34] [INFO] [1700619537.557905616] [control.operation_mode_transition_manager]: server call: /system/operation_mode/change_operation_mode
+[component_container-34] [INFO] [1700619537.557955722] [control.operation_mode_transition_manager]: server exit: /system/operation_mode/change_operation_mode
+[component_container_mt-35] [INFO] [1700619537.558069262] [default_ad_api.node.operation_mode]: client exit: /system/operation_mode/change_operation_mode
+[component_container_mt-35] [INFO] [1700619537.558069459] [default_ad_api.node.operation_mode]: server exit: /api/operation_mode/change_to_autonomous
+[rviz2-40] [INFO] [1700619537.570488691] [rviz2]: Status: 0, 
+[component_container_mt-35] [INFO] [1700619537.647455212] [default_ad_api.node.motion]: client call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619537.647539249] [control.vehicle_cmd_gate]: server call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619537.647574572] [control.vehicle_cmd_gate]: server exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619537.647731399] [default_ad_api.node.motion]: client exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-28] [INFO] [1700619546.106571669] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = intersection, id = 61863
+[component_container_mt-28] [INFO] [1700619546.107732484] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = blind_spot, id = 61863
+[component_container_mt-28] [INFO] [1700619554.303944595] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = intersection, id = 62311
+[component_container-34] [INFO] [1700619568.724880086] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619568.755057162] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619568.785204695] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619568.817127887] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619568.846058691] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619568.875052434] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619568.905349498] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619568.935026933] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619568.964877340] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619568.995020722] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.024843359] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.054877268] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.085067633] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.114884216] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.145087499] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.174972809] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.204975171] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.234948664] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.264968949] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.294998685] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.324959615] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.355170240] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.384894918] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.414900040] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.445099100] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.475021087] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.505046687] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.534983349] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.564927687] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.594996030] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.624852312] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.654897512] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.685003008] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.714869021] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container_mt-35] [INFO] [1700619569.719884587] [default_ad_api.node.routing]: client call: /system/operation_mode/change_operation_mode
+[component_container-34] [INFO] [1700619569.720022504] [control.operation_mode_transition_manager]: server call: /system/operation_mode/change_operation_mode
+[component_container-34] [INFO] [1700619569.720071910] [control.operation_mode_transition_manager]: server exit: /system/operation_mode/change_operation_mode
+[component_container_mt-35] [INFO] [1700619569.720304337] [default_ad_api.node.routing]: client exit: /system/operation_mode/change_operation_mode
+[component_container-34] [INFO] [1700619569.745280731] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.774955606] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container_mt-35] [INFO] [1700619569.783689490] [default_ad_api.node.motion]: client call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619569.783799772] [control.vehicle_cmd_gate]: server call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619569.783837634] [control.vehicle_cmd_gate]: server exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619569.783941766] [default_ad_api.node.motion]: client exit: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619569.805647799] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.834974144] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.865407388] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.895042559] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.924863421] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.954907745] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619569.984950197] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.014914279] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.045287319] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.074945782] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.104907038] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.135019580] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.165017874] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.195006947] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.224938815] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.254940422] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.285742776] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.314910558] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.345350641] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.375454122] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.405084645] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.434987605] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.464905506] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.495205939] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.524875744] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.554903376] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.584966469] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.614886652] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.645077031] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.675105734] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.705317595] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.735126256] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.765239963] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.794879788] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.824866353] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.855426096] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.885057638] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.915236326] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.945131966] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619570.974960560] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.004985211] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.034963384] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.065018933] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.095003016] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.124973488] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.154892883] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.185032554] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.214928013] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.245112836] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.275156144] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.305099801] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.335811449] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.365144400] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.395017008] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.425009487] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.454910170] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.485156380] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.514848294] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.545026367] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.575369013] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.605034061] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.635005048] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.664967461] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.695103289] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.725019666] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.755224992] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.785017988] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.814976845] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.845237163] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.875249006] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.905249660] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.934994938] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.964988355] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619571.995523308] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.024959363] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.055454787] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.084969889] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.115006867] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.145101240] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.175048556] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.205317972] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.234961036] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.264940900] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.294866496] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.324954741] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.354866921] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.384934582] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.414979621] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.445105434] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.475000982] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.504987148] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.535080852] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.565300897] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.594993232] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.624912081] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.654951745] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.684925827] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.714877820] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.745157105] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.774984337] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.805877248] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.834996520] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.864875219] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.895020972] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.924852116] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.955127693] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619572.985204820] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.014924054] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.045175080] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.075446776] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.105033356] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.134987911] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.164876719] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.194853985] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.224862927] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.254893205] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.284982688] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.314877583] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.345204026] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.375093941] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.406322766] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.435096960] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.465029332] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.495041396] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.524872931] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.554929809] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.584882091] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.614919639] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.645195867] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.675420487] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.705118443] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.735085008] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.764966239] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.795225891] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.824916699] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.854910639] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.884950863] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.885055007] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: target speed > 0, but departure condition is not met. Keep STOPPED.
+[component_container-34] [INFO] [1700619573.915027648] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container-34] [INFO] [1700619573.945271689] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[rviz2-40] [INFO] [1700619573.973280721] [rviz2]: Setting estimate pose: Frame:map, Position(77577.1, 86803, 0), Orientation(0, 0, -0.93768, 0.347499) = Angle: -2.43179
+[initial_pose_adaptor-37] [INFO] [1700619573.973383693] [default_ad_api.helpers.initial_pose_adaptor]: original point: 77577.141 86802.977 0.000
+[initial_pose_adaptor-37] [INFO] [1700619573.973646147] [default_ad_api.helpers.initial_pose_adaptor]: Send request to map_loader
+[initial_pose_adaptor-37] [INFO] [1700619573.973779717] [default_ad_api.helpers.initial_pose_adaptor]: Loaded partial pcd map from map_loader (grid size: 0)
+[initial_pose_adaptor-37] Failed to find match for field 'x'.
+[initial_pose_adaptor-37] Failed to find match for field 'y'.
+[initial_pose_adaptor-37] Failed to find match for field 'z'.
+[initial_pose_adaptor-37] [INFO] [1700619573.973804171] [default_ad_api.helpers.initial_pose_adaptor]: modified point: 77577.141 86802.977 0.000
+[initial_pose_adaptor-37] [INFO] [1700619573.973839035] [default_ad_api.helpers.initial_pose_adaptor]: client call: /api/localization/initialize
+[component_container_mt-35] [INFO] [1700619573.973993998] [default_ad_api.node.localization]: server call: /api/localization/initialize
+[component_container_mt-35] [INFO] [1700619573.974220412] [default_ad_api.node.localization]: client call: /localization/initialize
+[pose_initializer_node-51] [INFO] [1700619573.974313283] [pose_initializer_node]: server call: /localization/initialize
+[pose_initializer_node-51] [INFO] [1700619573.974453034] [pose_initializer_node]: server exit: /localization/initialize
+[component_container-34] [INFO] [1700619573.974803779] [control.trajectory_follower.controller_node_exe.lateral_controller]: Polish process failed in osqp. The required accuracy is met, but the solution can be inaccurate.
+[component_container_mt-35] [INFO] [1700619573.975211643] [default_ad_api.node.localization]: client exit: /localization/initialize
+[component_container_mt-35] [INFO] [1700619573.975214909] [default_ad_api.node.localization]: server exit: /api/localization/initialize
+[initial_pose_adaptor-37] [INFO] [1700619573.975348925] [default_ad_api.helpers.initial_pose_adaptor]: client exit: /api/localization/initialize
+[component_container-34] [WARN] [1700619574.002611103] [control.trajectory_follower.controller_node_exe.lateral_controller]: Too large position error: 63.846896m > 5.000000m
+[component_container-34] [WARN] [1700619574.002632151] [control.trajectory_follower.controller_node_exe.lateral_controller]: fail to get MPC Data. Stop MPC.
+[component_container-34] [WARN] [1700619574.002680972] [control.trajectory_follower.controller_node_exe.lateral_controller]: MPC is not solved. publish 0 velocity.
+[component_container-34] [ERROR] [1700619574.002695228] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: [Emergency stop] vel: 0.000, acc: -3.483
+[component_container-34] [ERROR] [1700619574.002797361] [control.control_validator]: predicted_trajectory size is less than 2. Cannot validate.
+[component_container_mt-28] [INFO] [1700619574.009677477] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = intersection, id = 61863
+[component_container_mt-28] [INFO] [1700619574.009988430] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = intersection, id = 62311
+[component_container_mt-28] [INFO] [1700619574.026184009] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = blind_spot, id = 61863
+[component_container_mt-30] [INFO] [1700619574.028371174] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan with resetting optimization since path shape around ego changed.
+[component_container_mt-30] [INFO] [1700619574.037800753] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan with resetting optimization since path shape around ego changed.
+[component_container-34] [ERROR] [1700619574.055742821] [control.trajectory_follower.lane_departure_checker_node]: predicted_trajectory is empty. Not expected!
+[component_container-34] [INFO] [1700619574.093944381] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: target speed > 0, but keep stop condition is met. Keep STOPPED.
+[rviz2-40] [INFO] [1700619577.037323537] [rviz2]: Setting goal pose: Frame:map, Position(77549.7, 86742.8, 0), Orientation(0, 0, -0.724692, 0.689073) = Angle: -1.62117
+[routing_adaptor-38] [INFO] [1700619577.327307289] [default_ad_api.helpers.routing_adaptor]: client call: /api/routing/clear_route
+[component_container_mt-35] [INFO] [1700619577.327415866] [default_ad_api.node.routing]: server call: /api/routing/clear_route
+[component_container_mt-35] [INFO] [1700619577.327632078] [default_ad_api.node.routing]: client call: /planning/mission_planning/clear_route
+[component_container-23] [INFO] [1700619577.327720503] [planning.mission_planning.mission_planner]: server call: /planning/mission_planning/clear_route
+[component_container-23] [INFO] [1700619577.327779293] [planning.mission_planning.mission_planner]: server exit: /planning/mission_planning/clear_route
+[component_container_mt-35] [INFO] [1700619577.327872364] [default_ad_api.node.routing]: client exit: /planning/mission_planning/clear_route
+[component_container_mt-35] [INFO] [1700619577.327872899] [default_ad_api.node.routing]: server exit: /api/routing/clear_route
+[routing_adaptor-38] [INFO] [1700619577.327993964] [default_ad_api.helpers.routing_adaptor]: client exit: /api/routing/clear_route
+[routing_adaptor-38] [INFO] [1700619577.527335309] [default_ad_api.helpers.routing_adaptor]: client call: /api/routing/set_route_points
+[component_container_mt-35] [INFO] [1700619577.527666181] [default_ad_api.node.routing]: server call: /api/routing/set_route_points
+[component_container_mt-35] [INFO] [1700619577.527889567] [default_ad_api.node.routing]: client call: /planning/mission_planning/set_route_points
+[component_container-23] [INFO] [1700619577.528021275] [planning.mission_planning.mission_planner]: server call: /planning/mission_planning/set_route_points
+[component_container-23] [INFO] [1700619577.528067696] [planning.mission_planning.mission_planner]: start planning route with check points: 
+[component_container-23] x: 77577.1 y: 86803
+[component_container-23] x: 77549.7 y: 86742.8
+[component_container-23] 
+[component_container-23] [INFO] [1700619577.530805366] [planning.mission_planning.mission_planner]: server exit: /planning/mission_planning/set_route_points
+[component_container_mt-35] [INFO] [1700619577.531268843] [default_ad_api.node.routing]: client exit: /planning/mission_planning/set_route_points
+[component_container_mt-35] [INFO] [1700619577.531270931] [default_ad_api.node.routing]: server exit: /api/routing/set_route_points
+[routing_adaptor-38] [INFO] [1700619577.531370900] [default_ad_api.helpers.routing_adaptor]: client exit: /api/routing/set_route_points
+[component_container_mt-30] [INFO] [1700619577.638560656] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619577.649608858] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-28] [ERROR] [1700619582.906287438] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.avoidance]: avoid line for path_shifter must have parent_id.
+[component_container_mt-28] [WARN] [1700619582.908917323] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -0.744258, Ta: 2.709648, j: -0.671810, a_max: 1.609482, acc_limit: 0.500000
+[component_container-34] [INFO] [1700619583.034064736] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: target speed > 0, but keep stop condition is met. Keep STOPPED.
+[component_container_mt-28] [WARN] [1700619586.003650402] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -0.744258, Ta: 2.709648, j: -0.671810, a_max: 1.609482, acc_limit: 0.500000
+[rviz2-40] [INFO] [1700619587.677407903] [rviz2]: client request
+[component_container_mt-35] [INFO] [1700619587.677736162] [default_ad_api.node.operation_mode]: server call: /api/operation_mode/change_to_autonomous
+[component_container_mt-35] [INFO] [1700619587.677961140] [default_ad_api.node.operation_mode]: client call: /system/operation_mode/change_operation_mode
+[component_container-34] [INFO] [1700619587.678044786] [control.operation_mode_transition_manager]: server call: /system/operation_mode/change_operation_mode
+[component_container-34] [INFO] [1700619587.678083202] [control.operation_mode_transition_manager]: server exit: /system/operation_mode/change_operation_mode
+[component_container_mt-35] [INFO] [1700619587.678159483] [default_ad_api.node.operation_mode]: client exit: /system/operation_mode/change_operation_mode
+[component_container_mt-35] [INFO] [1700619587.678164235] [default_ad_api.node.operation_mode]: server exit: /api/operation_mode/change_to_autonomous
+[rviz2-40] [INFO] [1700619587.682973274] [rviz2]: Status: 0, 
+[component_container_mt-35] [INFO] [1700619587.745234147] [default_ad_api.node.motion]: client call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619587.745371792] [control.vehicle_cmd_gate]: server call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619587.745408386] [control.vehicle_cmd_gate]: server exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619587.745536581] [default_ad_api.node.motion]: client exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-28] [WARN] [1700619589.003699155] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -1.580579, Ta: 4.109993, j: -0.316340, a_max: 2.665808, acc_limit: 0.500000
+[component_container_mt-28] [WARN] [1700619592.004669612] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -4.766233, Ta: 9.991752, j: -0.104905, a_max: 11.377516, acc_limit: 0.500000
+[component_container_mt-30] [INFO] [1700619592.227648910] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619592.236452697] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-28] [WARN] [1700619595.101521479] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -5.821797, Ta: 12.030170, j: -0.085884, a_max: 16.059952, acc_limit: 0.500000
+[component_container_mt-28] [WARN] [1700619598.201534771] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -5.081279, Ta: 10.597629, j: -0.098400, a_max: 12.679213, acc_limit: 0.500000
+[component_container_mt-28] [INFO] [1700619598.908088449] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = intersection, id = 61863
+[component_container_mt-28] [INFO] [1700619598.909443813] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = blind_spot, id = 61863
+[component_container_mt-30] [INFO] [1700619599.813179843] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619599.825781509] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619599.910131361] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619599.926976716] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619601.123410886] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619601.131474752] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-28] [WARN] [1700619601.203906101] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -3.541291, Ta: 7.664634, j: -0.141191, a_max: 7.084149, acc_limit: 0.500000
+[component_container_mt-30] [INFO] [1700619601.210940900] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619601.213044357] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-28] [WARN] [1700619604.204043757] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -2.616383, Ta: 5.952224, j: -0.191104, a_max: 4.636599, acc_limit: 0.500000
+[component_container_mt-30] [INFO] [1700619605.913889453] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619605.925106766] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-28] [INFO] [1700619606.606400199] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = intersection, id = 61863
+[component_container_mt-28] [INFO] [1700619606.606456429] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = intersection, id = 62311
+[component_container_mt-28] [INFO] [1700619606.612763168] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = blind_spot, id = 61863
+[component_container_mt-30] [INFO] [1700619606.613737497] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619606.629819157] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-28] [INFO] [1700619606.715928058] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = intersection, id = 62311
+[component_container_mt-28] [INFO] [1700619606.715984302] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = intersection, id = 61863
+[component_container_mt-28] [INFO] [1700619606.717031059] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = blind_spot, id = 61863
+[component_container_mt-30] [INFO] [1700619607.407693204] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [WARN] [1700619607.407727185] [path_smoother.trajectory_utils]: Fixed point will not be inserted due to the error during calculation.
+[component_container_mt-30] [INFO] [1700619607.409880323] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container-34] [ERROR] [1700619607.423663346] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: [Emergency stop] vel: 0.000, acc: -3.490
+[component_container_mt-28] [INFO] [1700619607.506256039] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = intersection, id = 61863
+[component_container_mt-28] [INFO] [1700619607.506312252] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = intersection, id = 62311
+[component_container_mt-28] [INFO] [1700619607.513388115] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = blind_spot, id = 61863
+[component_container_mt-35] [INFO] [1700619608.583630920] [default_ad_api.node.motion]: client call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619608.583769785] [control.vehicle_cmd_gate]: server call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619608.583815710] [control.vehicle_cmd_gate]: server exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619608.583931726] [default_ad_api.node.motion]: client exit: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [ERROR] [1700619610.423685409] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: [Emergency stop] vel: 0.000, acc: -5.000
+[component_container-34] [ERROR] [1700619613.423749484] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: [Emergency stop] vel: 0.000, acc: -5.000
+[component_container-34] [ERROR] [1700619616.453581839] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: [Emergency stop] vel: 0.000, acc: -5.000
+[component_container_mt-35] [INFO] [1700619617.564791434] [default_ad_api.node.motion]: client call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619617.564954335] [control.vehicle_cmd_gate]: server call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619617.564992003] [control.vehicle_cmd_gate]: server exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619617.565079616] [default_ad_api.node.motion]: client exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619617.583608593] [default_ad_api.node.motion]: client call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619617.583849329] [control.vehicle_cmd_gate]: server call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619617.583911278] [control.vehicle_cmd_gate]: server exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619617.584016090] [default_ad_api.node.motion]: client exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-28] [INFO] [1700619618.306067039] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = intersection, id = 62311
+[component_container_mt-28] [INFO] [1700619618.306125398] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = intersection, id = 61863
+[component_container_mt-28] [INFO] [1700619618.306601543] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = blind_spot, id = 61863
+[component_container_mt-30] [INFO] [1700619618.906850223] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619618.920811340] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619619.208467178] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619619.408324209] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619619.606784438] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619619.622154802] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619619.907050191] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619619.924790268] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [WARN] [1700619619.924858473] [obstacle_avoidance_planner.trajectory_utils]: Fixed point will not be inserted due to the error during calculation.
+[component_container-34] [ERROR] [1700619619.933425186] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: [Emergency stop] vel: 0.205, acc: -0.013
+[system_error_monitor-16] [ERROR] [1700619619.987410905] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/lane_departure]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619619.987427726] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/lane_departure/lane_departure_checker_node: lane_departure]: [Single Point Fault]: vehicle is out of lane
+[component_container_mt-28] [INFO] [1700619620.006177949] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = intersection, id = 61863
+[component_container_mt-28] [INFO] [1700619620.006238573] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = intersection, id = 62311
+[component_container_mt-28] [INFO] [1700619620.014237627] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = blind_spot, id = 61863
+[emergency_handler-17] [INFO] [1700619620.084337937] [system.emergency_handler]: MRM State changed: NORMAL -> MRM_OPERATING
+[emergency_handler-17] [WARN] [1700619620.084576542] [system.emergency_handler]: Emergency stop is operated
+[component_container_mt-28] [WARN] [1700619620.101067117] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -1.358043, Ta: 3.728534, j: -0.368177, a_max: 2.341345, acc_limit: 0.500000
+[component_container_mt-28] [INFO] [1700619620.109697238] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = intersection, id = 62311
+[component_container_mt-28] [INFO] [1700619620.109759744] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = intersection, id = 61863
+[component_container_mt-28] [INFO] [1700619620.110440496] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = blind_spot, id = 61863
+[component_container_mt-30] [INFO] [1700619620.508703652] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[emergency_handler-17] [INFO] [1700619620.684340568] [system.emergency_handler]: MRM State changed: MRM_OPERATING -> NORMAL
+[emergency_handler-17] [WARN] [1700619620.684555182] [system.emergency_handler]: Emergency stop is canceled
+[component_container_mt-30] [INFO] [1700619620.709145815] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [INFO] [1700619620.911987380] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan since path forward shape changed.
+[component_container_mt-30] [WARN] [1700619620.912164803] [obstacle_avoidance_planner.trajectory_utils]: Fixed point will not be inserted due to the error during calculation.
+[component_container-34] [INFO] [1700619620.953597254] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: target speed > 0, but keep stop condition is met. Keep STOPPED.
+[component_container_mt-35] [INFO] [1700619621.683628287] [default_ad_api.node.motion]: client call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619621.683762307] [control.vehicle_cmd_gate]: server call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619621.683801808] [control.vehicle_cmd_gate]: server exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619621.683896021] [default_ad_api.node.motion]: client exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619621.854441702] [default_ad_api.node.motion]: client call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619621.854522193] [control.vehicle_cmd_gate]: server call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619621.854555648] [control.vehicle_cmd_gate]: server exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619621.854674796] [default_ad_api.node.motion]: client exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619621.883578570] [default_ad_api.node.motion]: client call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619621.884761827] [control.vehicle_cmd_gate]: server call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619621.884807749] [control.vehicle_cmd_gate]: server exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619621.885008331] [default_ad_api.node.motion]: client exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-28] [INFO] [1700619622.006768096] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = intersection, id = 61863
+[component_container_mt-28] [INFO] [1700619622.006823776] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = intersection, id = 62311
+[component_container_mt-28] [INFO] [1700619622.014566485] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = blind_spot, id = 61863
+[component_container_mt-30] [INFO] [1700619622.015450842] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan with resetting optimization since path goal changed.
+[emergency_handler-17] [INFO] [1700619622.184328894] [system.emergency_handler]: MRM State changed: NORMAL -> MRM_OPERATING
+[emergency_handler-17] [WARN] [1700619622.184539052] [system.emergency_handler]: Emergency stop is operated
+[emergency_handler-17] [INFO] [1700619622.384345564] [system.emergency_handler]: MRM State changed: MRM_OPERATING -> MRM_SUCCEEDED
+[component_container_mt-28] [INFO] [1700619622.506480052] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: register task: module = intersection, id = 62311
+[component_container_mt-28] [INFO] [1700619622.506539039] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = intersection, id = 61863
+[component_container_mt-28] [INFO] [1700619622.507126831] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: unregister task: module = blind_spot, id = 61863
+[component_container_mt-30] [INFO] [1700619622.508714294] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother.replan_checker]: Replan with resetting optimization since path goal changed.
+[component_container_mt-30] [INFO] [1700619622.519244165] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner.replan_checker]: Replan with resetting optimization since path goal changed.
+[system_error_monitor-16] [ERROR] [1700619622.587435281] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/trajectory_deviation]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619622.587452031] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/trajectory_deviation/lane_departure_checker_node: trajectory_deviation]: [Single Point Fault]: trajectory deviation is too large
+[component_container-34] [ERROR] [1700619622.933480695] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: [Emergency stop] vel: 0.000, acc: -2.619
+[component_container_mt-28] [WARN] [1700619623.103161927] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -0.738484, Ta: 2.700314, j: -0.677063, a_max: 1.603658, acc_limit: 0.500000
+[component_container_mt-35] [INFO] [1700619623.383636356] [default_ad_api.node.motion]: client call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619623.384265536] [control.vehicle_cmd_gate]: server call: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619623.384307264] [control.vehicle_cmd_gate]: server exit: /control/vehicle_cmd_gate/set_pause
+[component_container_mt-35] [INFO] [1700619623.384399572] [default_ad_api.node.motion]: client exit: /control/vehicle_cmd_gate/set_pause
+[component_container-34] [INFO] [1700619623.743442012] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: target speed > 0, but departure condition is not met. Keep STOPPED.
+[component_container_mt-28] [WARN] [1700619626.103308469] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -0.738484, Ta: 2.700314, j: -0.677063, a_max: 1.603658, acc_limit: 0.500000
+[system_error_monitor-16] [ERROR] [1700619627.688101589] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/trajectory_deviation]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619627.688123926] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/trajectory_deviation/lane_departure_checker_node: trajectory_deviation]: [Single Point Fault]: trajectory deviation is too large
+[component_container-34] [INFO] [1700619628.753465964] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: target speed > 0, but departure condition is not met. Keep STOPPED.
+[component_container_mt-28] [WARN] [1700619629.103392075] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -0.738484, Ta: 2.700314, j: -0.677063, a_max: 1.603658, acc_limit: 0.500000
+[component_container_mt-28] [WARN] [1700619632.103524642] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -0.738484, Ta: 2.700314, j: -0.677063, a_max: 1.603658, acc_limit: 0.500000
+[system_error_monitor-16] [ERROR] [1700619632.787501993] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/trajectory_deviation]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619632.787519720] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/trajectory_deviation/lane_departure_checker_node: trajectory_deviation]: [Single Point Fault]: trajectory deviation is too large
+[component_container-34] [INFO] [1700619633.763602957] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: target speed > 0, but departure condition is not met. Keep STOPPED.
+[component_container_mt-28] [WARN] [1700619635.203291544] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -0.738484, Ta: 2.700314, j: -0.677063, a_max: 1.603658, acc_limit: 0.500000
+[system_error_monitor-16] [ERROR] [1700619637.787531751] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/trajectory_deviation]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619637.787549518] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/trajectory_deviation/lane_departure_checker_node: trajectory_deviation]: [Single Point Fault]: trajectory deviation is too large
+[component_container_mt-28] [WARN] [1700619638.203306654] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -0.738484, Ta: 2.700314, j: -0.677063, a_max: 1.603658, acc_limit: 0.500000
+[component_container-34] [INFO] [1700619638.773999700] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: target speed > 0, but departure condition is not met. Keep STOPPED.
+[component_container_mt-28] [WARN] [1700619641.203370287] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -0.738484, Ta: 2.700314, j: -0.677063, a_max: 1.603658, acc_limit: 0.500000
+[system_error_monitor-16] [ERROR] [1700619642.787751616] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/trajectory_deviation]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619642.787773763] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/trajectory_deviation/lane_departure_checker_node: trajectory_deviation]: [Single Point Fault]: trajectory deviation is too large
+[component_container-34] [INFO] [1700619643.783504182] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: target speed > 0, but departure condition is not met. Keep STOPPED.
+[component_container_mt-28] [WARN] [1700619644.203405684] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -0.738484, Ta: 2.700314, j: -0.677063, a_max: 1.603658, acc_limit: 0.500000
+[component_container_mt-28] [WARN] [1700619647.204180086] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -0.738484, Ta: 2.700314, j: -0.677063, a_max: 1.603658, acc_limit: 0.500000
+[system_error_monitor-16] [ERROR] [1700619647.887406416] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/trajectory_deviation]: [Single Point Fault]: Error
+[system_error_monitor-16] [ERROR] [1700619647.887422331] [system_error_monitor /autoware/control/autonomous_driving/performance_monitoring/trajectory_deviation/lane_departure_checker_node: trajectory_deviation]: [Single Point Fault]: trajectory deviation is too large
+[component_container-34] [INFO] [1700619648.793444508] [control.trajectory_follower.controller_node_exe.longitudinal_controller]: target speed > 0, but departure condition is not met. Keep STOPPED.
+[component_container_mt-28] [WARN] [1700619650.303184696] [behavior_path_planner.path_shifter]: Acc limit is too small to be applied. Tj: -0.738484, Ta: 2.700314, j: -0.677063, a_max: 1.603658, acc_limit: 0.500000
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[traffic_light_map_visualizer_node-50] [INFO] [1700619650.926131464] [rclcpp]: signal_handler(signum=2)
+[INFO] [topic_state_monitor_node-6]: process has finished cleanly [pid 492477]
+[INFO] [service_log_checker-2]: process has finished cleanly [pid 492469]
+[INFO] [topic_state_monitor_node-10]: process has finished cleanly [pid 492485]
+[INFO] [topic_state_monitor_node-7]: process has finished cleanly [pid 492479]
+[INFO] [goal_pose_visualizer-24]: process has finished cleanly [pid 492657]
+[INFO] [topic_state_monitor_node-4]: process has finished cleanly [pid 492473]
+[INFO] [planning_validator_node-32]: process has finished cleanly [pid 492732]
+[INFO] [topic_state_monitor_node-8]: process has finished cleanly [pid 492481]
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 492467]
+[INFO] [component_container-18]: process has finished cleanly [pid 492506]
+[INFO] [topic_state_monitor_node-12]: process has finished cleanly [pid 492489]
+[INFO] [dummy_perception_publisher_node-41]: process has finished cleanly [pid 492876]
+[INFO] [topic_state_monitor_node-13]: process has finished cleanly [pid 492491]
+[INFO] [routing_adaptor-38]: process has finished cleanly [pid 492833]
+[INFO] [topic_state_monitor_node-11]: process has finished cleanly [pid 492487]
+[INFO] [pose_initializer_node-51]: process has finished cleanly [pid 493028]
+[INFO] [component_container-49]: process has finished cleanly [pid 492994]
+[INFO] [external_velocity_limit_selector-26]: process has finished cleanly [pid 492661]
+[INFO] [topic_state_monitor_node-9]: process has finished cleanly [pid 492483]
+[INFO] [multi_object_tracker-44]: process has finished cleanly [pid 492947]
+[INFO] [emergency_handler-17]: process has finished cleanly [pid 492500]
+[INFO] [topic_state_monitor_node-14]: process has finished cleanly [pid 492493]
+[INFO] [static_transform_publisher-53]: process has finished cleanly [pid 493087]
+[INFO] [topic_state_monitor_node-5]: process has finished cleanly [pid 492475]
+[INFO] [rtc_auto_mode_manager_node-29]: process has finished cleanly [pid 492703]
+[INFO] [traffic_light_map_visualizer_node-50]: process has finished cleanly [pid 493008]
+[INFO] [detected_object_feature_remover-42]: process has finished cleanly [pid 492894]
+[INFO] [system_error_monitor-16]: process has finished cleanly [pid 492497]
+[INFO] [scenario_selector-25]: process has finished cleanly [pid 492659]
+[INFO] [component_container-23]: process has finished cleanly [pid 492655]
+[INFO] [traffic_light_multi_camera_fusion_node-47]: process has finished cleanly [pid 492990]
+[INFO] [initial_pose_adaptor-37]: process has finished cleanly [pid 492822]
+[INFO] [map_based_prediction-45]: process has finished cleanly [pid 492977]
+[INFO] [component_container-43]: process has finished cleanly [pid 492927]
+[INFO] [planning_evaluator-33]: process has finished cleanly [pid 492746]
+[INFO] [web_server.py-36]: process has finished cleanly [pid 492820]
+[INFO] [component_container_mt-39]: process has finished cleanly [pid 492836]
+[INFO] [simple_planning_simulator_exe-52]: process has finished cleanly [pid 493054]
+[INFO] [component_container-27]: process has finished cleanly [pid 492663]
+[INFO] [traffic_light_occlusion_predictor_node-46]: process has finished cleanly [pid 492988]
+[INFO] [map_hash_generator-21]: process has finished cleanly [pid 492641]
+[INFO] [component_container-3]: process has finished cleanly [pid 492471]
+[INFO] [component_container-19]: process has finished cleanly [pid 492564]
+[INFO] [aggregator_node-15]: process has finished cleanly [pid 492495]
+[INFO] [map_projection_loader-22]: process has finished cleanly [pid 492644]
+[INFO] [component_container-31]: process has finished cleanly [pid 492723]
+[pose_initializer_node-51] [INFO] [1700619650.926130483] [rclcpp]: signal_handler(signum=2)
+[simple_planning_simulator_exe-52] [INFO] [1700619650.926130448] [rclcpp]: signal_handler(signum=2)
+[INFO] [crosswalk_traffic_light_estimator_node-48]: process has finished cleanly [pid 492992]
+[static_transform_publisher-53] [INFO] [1700619650.926130406] [rclcpp]: signal_handler(signum=2)
+[component_container-49] [INFO] [1700619650.926132292] [rclcpp]: signal_handler(signum=2)
+[crosswalk_traffic_light_estimator_node-48] [INFO] [1700619650.926136784] [rclcpp]: signal_handler(signum=2)
+[map_based_prediction-45] [INFO] [1700619650.926141402] [rclcpp]: signal_handler(signum=2)
+[component_container-43] [INFO] [1700619650.926142780] [rclcpp]: signal_handler(signum=2)
+[rviz2-40] [INFO] [1700619650.926147994] [rclcpp]: signal_handler(signum=2)
+[dummy_perception_publisher_node-41] [INFO] [1700619650.926149032] [rclcpp]: signal_handler(signum=2)
+[multi_object_tracker-44] [INFO] [1700619650.926142840] [rclcpp]: signal_handler(signum=2)
+[traffic_light_occlusion_predictor_node-46] [INFO] [1700619650.926139261] [rclcpp]: signal_handler(signum=2)
+[traffic_light_multi_camera_fusion_node-47] [INFO] [1700619650.926137113] [rclcpp]: signal_handler(signum=2)
+[detected_object_feature_remover-42] [INFO] [1700619650.926145755] [rclcpp]: signal_handler(signum=2)
+[component_container_mt-39] [INFO] [1700619650.926151277] [rclcpp]: signal_handler(signum=2)
+[initial_pose_adaptor-37] [INFO] [1700619650.926174720] [rclcpp]: signal_handler(signum=2)
+[routing_adaptor-38] [INFO] [1700619650.926181755] [rclcpp]: signal_handler(signum=2)
+[planning_validator_node-32] [INFO] [1700619650.926181551] [rclcpp]: signal_handler(signum=2)
+[component_container-31] [INFO] [1700619650.926187861] [rclcpp]: signal_handler(signum=2)
+[component_container_mt-30] [INFO] [1700619650.926214132] [rclcpp]: signal_handler(signum=2)
+[component_container_mt-35] [INFO] [1700619650.926222063] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-9] [INFO] [1700619650.926236414] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-6] [INFO] [1700619650.926255085] [rclcpp]: signal_handler(signum=2)
+[scenario_selector-25] [INFO] [1700619650.926265920] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-7] [INFO] [1700619650.926258941] [rclcpp]: signal_handler(signum=2)
+[goal_pose_visualizer-24] [INFO] [1700619650.926261626] [rclcpp]: signal_handler(signum=2)
+[component_container-27] [INFO] [1700619650.926298258] [rclcpp]: signal_handler(signum=2)
+[robot_state_publisher-1] [INFO] [1700619650.926324743] [rclcpp]: signal_handler(signum=2)
+[component_container-20] [INFO] [1700619650.926330920] [rclcpp]: signal_handler(signum=2)
+[component_container-34] [INFO] [1700619650.926336184] [rclcpp]: signal_handler(signum=2)
+[planning_evaluator-33] [INFO] [1700619650.926334250] [rclcpp]: signal_handler(signum=2)
+[map_projection_loader-22] [INFO] [1700619650.926471999] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-5] [INFO] [1700619650.926483371] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-14] [INFO] [1700619650.926734707] [rclcpp]: signal_handler(signum=2)
+[service_log_checker-2] [INFO] [1700619650.927152346] [rclcpp]: signal_handler(signum=2)
+[component_container_mt-28] [INFO] [1700619650.927374744] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-8] [INFO] [1700619650.927627882] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-4] [INFO] [1700619650.928297203] [rclcpp]: signal_handler(signum=2)
+[rtc_auto_mode_manager_node-29] [INFO] [1700619650.928975068] [rclcpp]: signal_handler(signum=2)
+[component_container-18] [INFO] [1700619650.929052826] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-13] [INFO] [1700619650.929469682] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-12] [INFO] [1700619650.929496758] [rclcpp]: signal_handler(signum=2)
+[system_error_monitor-16] [INFO] [1700619650.930295237] [rclcpp]: signal_handler(signum=2)
+[external_velocity_limit_selector-26] [INFO] [1700619650.930336265] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-11] [INFO] [1700619650.934148424] [rclcpp]: signal_handler(signum=2)
+[emergency_handler-17] [INFO] [1700619650.935419880] [rclcpp]: signal_handler(signum=2)
+[component_container-23] [INFO] [1700619650.937094780] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-10] [INFO] [1700619650.939078456] [rclcpp]: signal_handler(signum=2)
+[component_container-19] [INFO] [1700619650.941513203] [rclcpp]: signal_handler(signum=2)
+[component_container-3] [INFO] [1700619650.983185289] [rclcpp]: signal_handler(signum=2)
+[INFO] [component_container-34]: process has finished cleanly [pid 492815]
+[INFO] [component_container-20]: process has finished cleanly [pid 492630]
+[INFO] [component_container_mt-30]: process has finished cleanly [pid 492720]
+[INFO] [component_container_mt-35]: process has finished cleanly [pid 492818]
+[INFO] [component_container_mt-28]: process has finished cleanly [pid 492683]
+[ERROR] [rviz2-40]: process[rviz2-40] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [rviz2-40]: sending signal 'SIGTERM' to process[rviz2-40]
+[ERROR] [rviz2-40]: process has died [pid 492848, exit code -15, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/zhijie/autoware/install/autoware_launch/share/autoware_launch/rviz/autoware.rviz -s /home/zhijie/autoware/install/autoware_launch/share/autoware_launch/rviz/image/autoware.png --ros-args -r __node:=rviz2 -p use_sim_time:=False -p wheel_radius:=0.383 -p wheel_width:=0.235 -p wheel_base:=2.79 -p wheel_tread:=1.64 -p front_overhang:=1.0 -p rear_overhang:=1.1 -p left_overhang:=0.128 -p right_overhang:=0.128 -p vehicle_height:=2.5 -p max_steer_angle:=0.7'].
