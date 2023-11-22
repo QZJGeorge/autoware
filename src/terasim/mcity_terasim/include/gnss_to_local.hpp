@@ -44,7 +44,6 @@ using std_msgs::msg::Header;
 using nav_msgs::msg::Odometry;
 using sensor_msgs::msg::Imu;
 using sensor_msgs::msg::NavSatFix;
-using nav_msgs::msg::OccupancyGrid;
 using geometry_msgs::msg::PoseWithCovarianceStamped;
 using geometry_msgs::msg::TwistWithCovarianceStamped;
 
@@ -62,7 +61,6 @@ private:
   rclcpp::Publisher<Imu>::SharedPtr pub_imu;
   rclcpp::Publisher<PoseWithCovarianceStamped>::SharedPtr pub_pose;
   rclcpp::Publisher<TwistWithCovarianceStamped>::SharedPtr pub_twist;
-  rclcpp::Publisher<OccupancyGrid>::SharedPtr pub_grid;
 
   rclcpp::TimerBase::SharedPtr timer_;
 

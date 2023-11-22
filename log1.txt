@@ -1,0 +1,460 @@
+[INFO] [launch]: All log files can be found below /home/zhijie/.ros/log/2023-11-21-19-50-16-217472-zhijie-Alienware-Aurora-R11-473027
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/system/component_state_monitor/component' in container '/system/component_state_monitor/container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/system/mrm_comfortable_stop_operator' in container '/system/mrm_comfortable_stop_operator/mrm_comfortable_stop_operator_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/system/mrm_emergency_stop_operator' in container '/system/mrm_emergency_stop_operator/mrm_emergency_stop_operator_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/external_cmd_converter' in container '/control/control_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/motion_planning/obstacle_avoidance_planner' in container '/planning/scenario_planning/lane_driving/motion_planning/motion_planning_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map/lanelet2_map_loader' in container '/map/map_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map/lanelet2_map_visualization' in container '/map/map_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/mission_planning/mission_planner' in container '/planning/mission_planning/mission_planner_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/mission_planning/glog_component' in container '/planning/mission_planning/mission_planner_container'
+[INFO] [robot_state_publisher-1]: process started with pid [473070]
+[INFO] [service_log_checker-2]: process started with pid [473072]
+[INFO] [component_container-3]: process started with pid [473074]
+[INFO] [topic_state_monitor_node-4]: process started with pid [473076]
+[INFO] [topic_state_monitor_node-5]: process started with pid [473078]
+[INFO] [topic_state_monitor_node-6]: process started with pid [473080]
+[INFO] [topic_state_monitor_node-7]: process started with pid [473082]
+[INFO] [topic_state_monitor_node-8]: process started with pid [473084]
+[INFO] [topic_state_monitor_node-9]: process started with pid [473086]
+[INFO] [topic_state_monitor_node-10]: process started with pid [473088]
+[INFO] [topic_state_monitor_node-11]: process started with pid [473090]
+[INFO] [topic_state_monitor_node-12]: process started with pid [473092]
+[INFO] [topic_state_monitor_node-13]: process started with pid [473094]
+[INFO] [topic_state_monitor_node-14]: process started with pid [473096]
+[INFO] [aggregator_node-15]: process started with pid [473098]
+[INFO] [system_error_monitor-16]: process started with pid [473100]
+[INFO] [emergency_handler-17]: process started with pid [473143]
+[INFO] [component_container-18]: process started with pid [473239]
+[INFO] [component_container-19]: process started with pid [473241]
+[INFO] [component_container-20]: process started with pid [473243]
+[INFO] [map_hash_generator-21]: process started with pid [473247]
+[INFO] [map_projection_loader-22]: process started with pid [473255]
+[ERROR] [map_projection_loader-22]: process has died [pid 473255, exit code -6, cmd '/home/zhijie/autoware/install/map_projection_loader/lib/map_projection_loader/map_projection_loader --ros-args -r __node:=map_projection_loader -r __ns:=/map -p use_sim_time:=False -p wheel_radius:=0.383 -p wheel_width:=0.235 -p wheel_base:=2.79 -p wheel_tread:=1.64 -p front_overhang:=1.0 -p rear_overhang:=1.1 -p left_overhang:=0.128 -p right_overhang:=0.128 -p vehicle_height:=2.5 -p max_steer_angle:=0.7 --params-file /tmp/launch_params_lcpaqxby --params-file /tmp/launch_params_asssfi0l'].
+[INFO] [component_container-23]: process started with pid [473258]
+[INFO] [goal_pose_visualizer-24]: process started with pid [473260]
+[INFO] [scenario_selector-25]: process started with pid [473262]
+[INFO] [external_velocity_limit_selector-26]: process started with pid [473264]
+[INFO] [component_container-27]: process started with pid [473266]
+[INFO] [component_container_mt-28]: process started with pid [473268]
+[INFO] [rtc_auto_mode_manager_node-29]: process started with pid [473270]
+[INFO] [component_container_mt-30]: process started with pid [473273]
+[INFO] [component_container-31]: process started with pid [473292]
+[INFO] [planning_validator_node-32]: process started with pid [473295]
+[INFO] [planning_evaluator-33]: process started with pid [473305]
+[INFO] [component_container-34]: process started with pid [473317]
+[INFO] [component_container_mt-35]: process started with pid [473328]
+[INFO] [web_server.py-36]: process started with pid [473404]
+[INFO] [initial_pose_adaptor-37]: process started with pid [473408]
+[INFO] [routing_adaptor-38]: process started with pid [473513]
+[INFO] [component_container_mt-39]: process started with pid [473515]
+[INFO] [rviz2-40]: process started with pid [473517]
+[INFO] [dummy_perception_publisher_node-41]: process started with pid [473519]
+[INFO] [detected_object_feature_remover-42]: process started with pid [473530]
+[INFO] [component_container-43]: process started with pid [473533]
+[INFO] [multi_object_tracker-44]: process started with pid [473551]
+[INFO] [map_based_prediction-45]: process started with pid [473572]
+[INFO] [traffic_light_occlusion_predictor_node-46]: process started with pid [473574]
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/external_cmd_selector' in container '/control/control_container'
+[INFO] [traffic_light_multi_camera_fusion_node-47]: process started with pid [473584]
+[INFO] [crosswalk_traffic_light_estimator_node-48]: process started with pid [473587]
+[INFO] [component_container-49]: process started with pid [473607]
+[INFO] [traffic_light_map_visualizer_node-50]: process started with pid [473621]
+[INFO] [pose_initializer_node-51]: process started with pid [473623]
+[INFO] [simple_planning_simulator_exe-52]: process started with pid [473626]
+[INFO] [static_transform_publisher-53]: process started with pid [473659]
+[robot_state_publisher-1] [INFO] [1700614241.111494051] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1700614241.111583947] [robot_state_publisher]: got segment camera0/camera_link
+[robot_state_publisher-1] [INFO] [1700614241.111596439] [robot_state_publisher]: got segment camera0/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700614241.111604564] [robot_state_publisher]: got segment camera1/camera_link
+[robot_state_publisher-1] [INFO] [1700614241.111611494] [robot_state_publisher]: got segment camera1/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700614241.111618880] [robot_state_publisher]: got segment camera2/camera_link
+[robot_state_publisher-1] [INFO] [1700614241.111626148] [robot_state_publisher]: got segment camera2/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700614241.111633331] [robot_state_publisher]: got segment camera3/camera_link
+[robot_state_publisher-1] [INFO] [1700614241.111640670] [robot_state_publisher]: got segment camera3/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700614241.111648084] [robot_state_publisher]: got segment camera4/camera_link
+[robot_state_publisher-1] [INFO] [1700614241.111655310] [robot_state_publisher]: got segment camera4/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700614241.111662611] [robot_state_publisher]: got segment camera5/camera_link
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/autoware_state' in container '/default_ad_api/container'
+[robot_state_publisher-1] [INFO] [1700614241.111669831] [robot_state_publisher]: got segment camera5/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700614241.111677120] [robot_state_publisher]: got segment gnss_link
+[robot_state_publisher-1] [INFO] [1700614241.111684497] [robot_state_publisher]: got segment sensor_kit_base_link
+[robot_state_publisher-1] [INFO] [1700614241.111691801] [robot_state_publisher]: got segment tamagawa/imu_link
+[robot_state_publisher-1] [INFO] [1700614241.111699154] [robot_state_publisher]: got segment traffic_light_left_camera/camera_link
+[robot_state_publisher-1] [INFO] [1700614241.111707065] [robot_state_publisher]: got segment traffic_light_left_camera/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700614241.111714415] [robot_state_publisher]: got segment traffic_light_right_camera/camera_link
+[robot_state_publisher-1] [INFO] [1700614241.111721546] [robot_state_publisher]: got segment traffic_light_right_camera/camera_optical_link
+[robot_state_publisher-1] [INFO] [1700614241.111728729] [robot_state_publisher]: got segment velodyne_left
+[robot_state_publisher-1] [INFO] [1700614241.111736181] [robot_state_publisher]: got segment velodyne_left_base_link
+[robot_state_publisher-1] [INFO] [1700614241.111743399] [robot_state_publisher]: got segment velodyne_rear
+[robot_state_publisher-1] [INFO] [1700614241.111750652] [robot_state_publisher]: got segment velodyne_rear_base_link
+[robot_state_publisher-1] [INFO] [1700614241.111757915] [robot_state_publisher]: got segment velodyne_right
+[robot_state_publisher-1] [INFO] [1700614241.111765016] [robot_state_publisher]: got segment velodyne_right_base_link
+[robot_state_publisher-1] [INFO] [1700614241.111772292] [robot_state_publisher]: got segment velodyne_top
+[robot_state_publisher-1] [INFO] [1700614241.111779660] [robot_state_publisher]: got segment velodyne_top_base_link
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/occupancy_grid_map/pointcloud_to_laserscan_node' in container '/occupancy_grid_map/occupancy_grid_map_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/fail_safe' in container '/default_ad_api/container'
+[component_container-3] [INFO] [1700614241.193426321] [system.component_state_monitor.container]: Load Library: /home/zhijie/autoware/install/component_state_monitor/lib/libcomponent_state_monitor.so
+[component_container-3] [INFO] [1700614241.202567058] [system.component_state_monitor.container]: Found class: rclcpp_components::NodeFactoryTemplate<component_state_monitor::StateMonitor>
+[component_container-3] [INFO] [1700614241.202609776] [system.component_state_monitor.container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<component_state_monitor::StateMonitor>
+[system_error_monitor-16] [INFO] [1700614241.229698693] [system.system_error_monitor]: waiting for diag_array msg...
+[emergency_handler-17] [INFO] [1700614241.265441850] [system.emergency_handler]: waiting for hazard_status_stamped msg...
+[component_container-18] [INFO] [1700614241.254170936] [system.mrm_comfortable_stop_operator.mrm_comfortable_stop_operator_container]: Load Library: /home/zhijie/autoware/install/mrm_comfortable_stop_operator/lib/libmrm_comfortable_stop_operator_component.so
+[component_container-18] [INFO] [1700614241.255299596] [system.mrm_comfortable_stop_operator.mrm_comfortable_stop_operator_container]: Found class: rclcpp_components::NodeFactoryTemplate<mrm_comfortable_stop_operator::MrmComfortableStopOperator>
+[component_container-18] [INFO] [1700614241.255324412] [system.mrm_comfortable_stop_operator.mrm_comfortable_stop_operator_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<mrm_comfortable_stop_operator::MrmComfortableStopOperator>
+[component_container-19] [INFO] [1700614241.302686918] [system.mrm_emergency_stop_operator.mrm_emergency_stop_operator_container]: Load Library: /home/zhijie/autoware/install/mrm_emergency_stop_operator/lib/libmrm_emergency_stop_operator_component.so
+[component_container-19] [INFO] [1700614241.304500429] [system.mrm_emergency_stop_operator.mrm_emergency_stop_operator_container]: Found class: rclcpp_components::NodeFactoryTemplate<mrm_emergency_stop_operator::MrmEmergencyStopOperator>
+[component_container-19] [INFO] [1700614241.304530586] [system.mrm_emergency_stop_operator.mrm_emergency_stop_operator_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<mrm_emergency_stop_operator::MrmEmergencyStopOperator>
+[component_container-20] [INFO] [1700614241.346710296] [map.map_container]: Load Library: /home/zhijie/autoware/install/map_loader/lib/liblanelet2_map_loader_node.so
+[component_container-20] [INFO] [1700614241.369188400] [map.map_container]: Found class: rclcpp_components::NodeFactoryTemplate<Lanelet2MapLoaderNode>
+[component_container-20] [INFO] [1700614241.369224365] [map.map_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<Lanelet2MapLoaderNode>
+[component_container-20] [INFO] [1700614241.426558600] [map.map_container]: Load Library: /home/zhijie/autoware/install/map_loader/lib/liblanelet2_map_visualization_node.so
+[component_container-20] [INFO] [1700614241.428166587] [map.map_container]: Found class: rclcpp_components::NodeFactoryTemplate<Lanelet2MapVisualizationNode>
+[component_container-20] [INFO] [1700614241.428198353] [map.map_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<Lanelet2MapVisualizationNode>
+[component_container-20] [INFO] [1700614241.452582966] [map.map_container]: Load Library: /home/zhijie/autoware/install/map_loader/lib/libpointcloud_map_loader_node.so
+[map_projection_loader-22] [INFO] [1700614241.161960924] [map.map_projection_loader]: Load /home/zhijie/autoware/map/lanelet2_mcity_v23_partial.osm
+[map_projection_loader-22] [WARN] [1700614241.162038547] [map.map_projection_loader]: DEPRECATED WARNING: Loading map projection info from lanelet2 map may soon be deleted. Please use map_projector_info.yaml instead. For more info, visit https://github.com/autowarefoundation/autoware.universe/blob/main/map/map_projection_loader/README.md
+[map_projection_loader-22] terminate called after throwing an instance of 'std::runtime_error'
+[map_projection_loader-22]   what():  Error occurred while loading lanelet2 map
+[component_container-23] [INFO] [1700614241.258888276] [planning.mission_planning.mission_planner_container]: Load Library: /home/zhijie/autoware/install/mission_planner/lib/libmission_planner_component.so
+[component_container-23] [INFO] [1700614241.306157396] [planning.mission_planning.mission_planner_container]: Found class: rclcpp_components::NodeFactoryTemplate<mission_planner::MissionPlanner>
+[component_container-23] [INFO] [1700614241.306189384] [planning.mission_planning.mission_planner_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<mission_planner::MissionPlanner>
+[component_container-23] [INFO] [1700614241.469078328] [planning.mission_planning.mission_planner_container]: Load Library: /home/zhijie/autoware/install/glog_component/lib/libglog_component.so
+[component_container-23] [INFO] [1700614241.478901286] [planning.mission_planning.mission_planner_container]: Found class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container-23] [INFO] [1700614241.478936430] [planning.mission_planning.mission_planner_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[scenario_selector-25] [INFO] [1700614241.302383418] [planning.scenario_planning.scenario_selector]: Waiting for current pose.
+[component_container-27] [INFO] [1700614241.503653644] [planning.scenario_planning.motion_velocity_smoother_container]: Load Library: /home/zhijie/autoware/install/motion_velocity_smoother/lib/libmotion_velocity_smoother_node.so
+[component_container_mt-28] [INFO] [1700614241.258984920] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Load Library: /home/zhijie/autoware/install/behavior_path_planner/lib/libbehavior_path_planner_node.so
+[component_container_mt-28] [INFO] [1700614241.321216263] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_path_planner::BehaviorPathPlannerNode>
+[component_container_mt-28] [INFO] [1700614241.321338891] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_path_planner::BehaviorPathPlannerNode>
+[component_container_mt-30] [INFO] [1700614241.287003950] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Load Library: /home/zhijie/autoware/install/obstacle_avoidance_planner/lib/libobstacle_avoidance_planner.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/autoware_api/external/rtc_controller/node' in container '/autoware_api/external/rtc_controller/container'
+[component_container_mt-30] [INFO] [1700614241.303387290] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<obstacle_avoidance_planner::ObstacleAvoidancePlanner>
+[component_container_mt-30] [INFO] [1700614241.303419074] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<obstacle_avoidance_planner::ObstacleAvoidancePlanner>
+[component_container_mt-30] [INFO] [1700614241.385612310] [planning.scenario_planning.lane_driving.motion_planning.obstacle_avoidance_planner]: Initialize planning
+[component_container_mt-30] [INFO] [1700614241.396241507] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Load Library: /home/zhijie/autoware/install/obstacle_velocity_limiter/lib/libobstacle_velocity_limiter_node.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/interface' in container '/default_ad_api/container'
+[component_container-31] [INFO] [1700614241.344939026] [planning.scenario_planning.parking.parking_container]: Load Library: /home/zhijie/autoware/install/costmap_generator/lib/libcostmap_generator_node.so
+[component_container-34] [INFO] [1700614241.305898973] [control.control_container]: Load Library: /home/zhijie/autoware/install/external_cmd_converter/lib/libexternal_cmd_converter.so
+[component_container-34] [INFO] [1700614241.321410069] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<external_cmd_converter::ExternalCmdConverterNode>
+[component_container-34] [INFO] [1700614241.321441497] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<external_cmd_converter::ExternalCmdConverterNode>
+[component_container-34] [INFO] [1700614241.493874756] [control.control_container]: Load Library: /home/zhijie/autoware/install/external_cmd_selector/lib/libexternal_cmd_selector_node.so
+[component_container-34] [INFO] [1700614241.496465773] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<ExternalCmdSelector>
+[component_container-34] [INFO] [1700614241.496500624] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<ExternalCmdSelector>
+[component_container-27] [INFO] [1700614241.533331114] [planning.scenario_planning.motion_velocity_smoother_container]: Found class: rclcpp_components::NodeFactoryTemplate<motion_velocity_smoother::MotionVelocitySmootherNode>
+[component_container-27] [INFO] [1700614241.533372749] [planning.scenario_planning.motion_velocity_smoother_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<motion_velocity_smoother::MotionVelocitySmootherNode>
+[component_container-43] [INFO] [1700614241.536627154] [occupancy_grid_map.occupancy_grid_map_container]: Load Library: /home/zhijie/autoware/install/pointcloud_to_laserscan/lib/libpointcloud_to_laserscan.so
+[component_container-43] [INFO] [1700614241.547467104] [occupancy_grid_map.occupancy_grid_map_container]: Found class: rclcpp_components::NodeFactoryTemplate<pointcloud_to_laserscan::PointCloudToLaserScanNode>
+[component_container-43] [INFO] [1700614241.547499584] [occupancy_grid_map.occupancy_grid_map_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<pointcloud_to_laserscan::PointCloudToLaserScanNode>
+[component_container-34] [INFO] [1700614241.546255221] [control.control_container]: Load Library: /home/zhijie/autoware/install/trajectory_follower_node/lib/libcontroller_node.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/occupancy_grid_map/occupancy_grid_map_node' in container '/occupancy_grid_map/occupancy_grid_map_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/localization' in container '/default_ad_api/container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/trajectory_follower/controller_node_exe' in container '/control/control_container'
+[component_container-23] [INFO] [1700614241.569010422] [planning.mission_planning.mission_planner]: waiting lanelet map... Route API is not ready.
+[component_container_mt-28] [INFO] [1700614241.576438574] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register start_planner module
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/motion_velocity_smoother' in container '/planning/scenario_planning/motion_velocity_smoother_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/perception/traffic_light_recognition/traffic_light_arbiter/arbiter' in container '/perception/traffic_light_recognition/traffic_light_arbiter/container'
+[component_container_mt-28] [INFO] [1700614241.630101336] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register goal_planner module
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/motion' in container '/default_ad_api/container'
+[component_container_mt-28] [INFO] [1700614241.664551332] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register side_shift module
+[dummy_perception_publisher_node-41] [WARN] [1700614241.653698571] [simulation.dummy_perception_publisher]: map->base_link is not available yet
+[component_container-34] [INFO] [1700614241.660467320] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<autoware::motion::control::trajectory_follower_node::Controller>
+[component_container-34] [INFO] [1700614241.660508909] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<autoware::motion::control::trajectory_follower_node::Controller>
+[component_container-43] [INFO] [1700614241.701254770] [occupancy_grid_map.occupancy_grid_map_container]: Load Library: /home/zhijie/autoware/install/probabilistic_occupancy_grid_map/lib/liblaserscan_based_occupancy_grid_map.so
+[component_container-43] [INFO] [1700614241.742028488] [occupancy_grid_map.occupancy_grid_map_container]: Found class: rclcpp_components::NodeFactoryTemplate<occupancy_grid_map::LaserscanBasedOccupancyGridMapNode>
+[component_container-43] [INFO] [1700614241.742066907] [occupancy_grid_map.occupancy_grid_map_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<occupancy_grid_map::LaserscanBasedOccupancyGridMapNode>
+[simple_planning_simulator_exe-52] [INFO] [1700614241.712575348] [simulation.simple_planning_simulator]: vehicle_model_type = DELAY_STEER_ACC_GEARED
+[simple_planning_simulator_exe-52] [INFO] [1700614241.713850856] [simulation.simple_planning_simulator]: initialize_source : INITIAL_POSE_TOPIC
+[simple_planning_simulator_exe-52] [INFO] [1700614241.735711300] [simulation.simple_planning_simulator]: waiting initialization...
+[system_error_monitor-16] [INFO] [1700614241.729793313] [system.system_error_monitor]: waiting for current_gate_mode msg...
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/operation_mode' in container '/default_ad_api/container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner' in container '/planning/scenario_planning/lane_driving/behavior_planning/behavior_planning_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/glog_component' in container '/planning/scenario_planning/motion_velocity_smoother_container'
+[component_container-49] [INFO] [1700614241.747983975] [perception.traffic_light_recognition.traffic_light_arbiter.container]: Load Library: /home/zhijie/autoware/install/traffic_light_arbiter/lib/libtraffic_light_arbiter.so
+[component_container_mt-28] [INFO] [1700614241.749883762] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register lane_change_left module
+[component_container-20] [INFO] [1700614241.750198104] [map.map_container]: Found class: rclcpp_components::NodeFactoryTemplate<PointCloudMapLoaderNode>
+[component_container-20] [INFO] [1700614241.750231909] [map.map_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<PointCloudMapLoaderNode>
+[component_container-20] [INFO] [1700614241.759639793] [map.pointcloud_map_loader]: Load /home/zhijie/autoware/map/pointcloud_map.pcd (1 out of 1)
+[component_container-43] [INFO] [1700614241.775999856] [occupancy_grid_map.pointcloud_to_laserscan_node]: Got a subscriber to laserscan, starting pointcloud subscriber
+[component_container-49] [INFO] [1700614241.799466111] [perception.traffic_light_recognition.traffic_light_arbiter.container]: Found class: rclcpp_components::NodeFactoryTemplate<TrafficLightArbiter>
+[component_container-49] [INFO] [1700614241.799505042] [perception.traffic_light_recognition.traffic_light_arbiter.container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<TrafficLightArbiter>
+[component_container_mt-28] [INFO] [1700614241.805426822] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register lane_change_right module
+[component_container_mt-28] [INFO] [1700614241.837149056] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register avoidance module
+[static_transform_publisher-53] [INFO] [1700614241.814827429] [static_map_to_odom_tf_publisher]: Spinning until stopped - publishing transform
+[static_transform_publisher-53] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-53] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-53] from 'map' to 'odom'
+[component_container-34] [INFO] [1700614241.851152405] [control.trajectory_follower.controller_node_exe]: Waiting for trajectory.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/perception' in container '/default_ad_api/container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/control_validator' in container '/control/control_container'
+[component_container-34] [INFO] [1700614241.851495022] [control.trajectory_follower.controller_node_exe]: Control is skipped since input data is not ready.
+[component_container-27] [INFO] [1700614241.867936587] [planning.scenario_planning.motion_velocity_smoother_container]: Load Library: /home/zhijie/autoware/install/glog_component/lib/libglog_component.so
+[component_container-27] [INFO] [1700614241.870835352] [planning.scenario_planning.motion_velocity_smoother_container]: Found class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container-27] [INFO] [1700614241.870866713] [planning.scenario_planning.motion_velocity_smoother_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container-34] [INFO] [1700614241.872666558] [control.control_container]: Load Library: /home/zhijie/autoware/install/control_validator/lib/libcontrol_validator_component.so
+[component_container-34] [INFO] [1700614241.891454152] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<control_validator::ControlValidator>
+[component_container-34] [INFO] [1700614241.891509767] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<control_validator::ControlValidator>
+[component_container_mt-28] [INFO] [1700614241.897066442] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner.planner_manager]: register avoidance_by_lane_change module
+[component_container_mt-28] [INFO] [1700614241.948912052] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Load Library: /home/zhijie/autoware/install/behavior_velocity_planner/lib/libbehavior_velocity_planner_lib.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/planning' in container '/default_ad_api/container'
+[component_container-34] [INFO] [1700614241.984926765] [control.control_container]: Load Library: /home/zhijie/autoware/install/lane_departure_checker/lib/liblane_departure_checker.so
+[component_container_mt-28] [INFO] [1700614241.987193639] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_velocity_planner::BehaviorVelocityPlannerNode>
+[component_container_mt-28] [INFO] [1700614241.987541690] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_velocity_planner::BehaviorVelocityPlannerNode>
+[component_container-31] [INFO] [1700614241.998866939] [planning.scenario_planning.parking.parking_container]: Found class: rclcpp_components::NodeFactoryTemplate<CostmapGenerator>
+[component_container-31] [INFO] [1700614241.998912571] [planning.scenario_planning.parking.parking_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<CostmapGenerator>
+[component_container-20] [INFO] [1700614242.027757463] [map.pointcloud_map_loader]: Create PCD metadata, as the pointcloud is a single file.
+[component_container-31] [INFO] [1700614242.031726958] [planning.scenario_planning.parking.costmap_generator]: waiting for initial pose...
+[component_container-34] [INFO] [1700614242.062947014] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<lane_departure_checker::LaneDepartureCheckerNode>
+[component_container-34] [INFO] [1700614242.063041235] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<lane_departure_checker::LaneDepartureCheckerNode>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/routing' in container '/default_ad_api/container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map/pointcloud_map_loader' in container '/map/map_container'
+[component_container-20] [INFO] [1700614242.108544446] [map.map_container]: Load Library: /home/zhijie/autoware/install/map_tf_generator/lib/libvector_map_tf_generator_node.so
+[component_container-20] [INFO] [1700614242.119466853] [map.map_container]: Found class: rclcpp_components::NodeFactoryTemplate<VectorMapTFGeneratorNode>
+[component_container-20] [INFO] [1700614242.119546776] [map.map_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<VectorMapTFGeneratorNode>
+[component_container_mt-28] [INFO] [1700614242.120482624] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::CrosswalkModulePlugin' is loaded.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/vehicle' in container '/default_ad_api/container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/trajectory_follower/lane_departure_checker_node' in container '/control/control_container'
+[component_container_mt-28] [INFO] [1700614242.135595498] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::WalkwayModulePlugin' is loaded.
+[component_container-34] [INFO] [1700614242.139113519] [control.control_container]: Load Library: /home/zhijie/autoware/install/shift_decider/lib/libshift_decider_node.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map/vector_map_tf_generator' in container '/map/map_container'
+[component_container-34] [INFO] [1700614242.150666649] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<ShiftDecider>
+[component_container-34] [INFO] [1700614242.150851845] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<ShiftDecider>
+[component_container_mt-28] [INFO] [1700614242.157114873] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::TrafficLightModulePlugin' is loaded.
+[rtc_auto_mode_manager_node-29] [INFO] [1700614242.160649080] [planning.scenario_planning.lane_driving.behavior_planning.rtc_auto_mode_manager]: Waiting for service... [blind_spot]
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/default_ad_api/node/vehicle_info' in container '/default_ad_api/container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/shift_decider' in container '/control/control_container'
+[component_container-34] [INFO] [1700614242.183266005] [control.control_container]: Load Library: /home/zhijie/autoware/install/vehicle_cmd_gate/lib/libvehicle_cmd_gate_node.so
+[component_container-34] [INFO] [1700614242.193185321] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<vehicle_cmd_gate::VehicleCmdGate>
+[component_container-34] [INFO] [1700614242.193216366] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<vehicle_cmd_gate::VehicleCmdGate>
+[component_container_mt-28] [INFO] [1700614242.193961830] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::IntersectionModulePlugin' is loaded.
+[component_container_mt-28] [INFO] [1700614242.199426247] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::MergeFromPrivateModulePlugin' is loaded.
+[component_container_mt-28] [INFO] [1700614242.209169333] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::BlindSpotModulePlugin' is loaded.
+[component_container_mt-28] [INFO] [1700614242.220473111] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::DetectionAreaModulePlugin' is loaded.
+[component_container_mt-28] [INFO] [1700614242.230258177] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::NoStoppingAreaModulePlugin' is loaded.
+[component_container_mt-28] [INFO] [1700614242.236765752] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::StopLineModulePlugin' is loaded.
+[component_container_mt-28] [INFO] [1700614242.253129141] [planning.scenario_planning.lane_driving.behavior_planning.behavior_velocity_planner]: The scene plugin 'behavior_velocity_planner::OutOfLaneModulePlugin' is loaded.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner' in container '/planning/scenario_planning/lane_driving/behavior_planning/behavior_planning_container'
+[component_container_mt-28] [INFO] [1700614242.262009133] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Load Library: /home/zhijie/autoware/install/glog_component/lib/libglog_component.so
+[component_container_mt-28] [INFO] [1700614242.275319717] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container_mt-30] [INFO] [1700614242.276420216] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<obstacle_velocity_limiter::ObstacleVelocityLimiterNode>
+[component_container_mt-30] [INFO] [1700614242.276456855] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<obstacle_velocity_limiter::ObstacleVelocityLimiterNode>
+[component_container_mt-28] [INFO] [1700614242.278801001] [planning.scenario_planning.lane_driving.behavior_planning.behavior_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/vehicle_cmd_gate' in container '/control/control_container'
+[component_container-34] [INFO] [1700614242.295483099] [control.trajectory_follower.lane_departure_checker_node]: waiting for current_twist msg...
+[component_container-34] [INFO] [1700614242.301979667] [control.control_container]: Load Library: /home/zhijie/autoware/install/operation_mode_transition_manager/lib/liboperation_mode_transition_manager_node.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/behavior_planning/glog_component' in container '/planning/scenario_planning/lane_driving/behavior_planning/behavior_planning_container'
+[component_container-34] [INFO] [1700614242.320634443] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<operation_mode_transition_manager::OperationModeTransitionManager>
+[component_container-34] [INFO] [1700614242.320671116] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<operation_mode_transition_manager::OperationModeTransitionManager>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/motion_planning/obstacle_velocity_limiter' in container '/planning/scenario_planning/lane_driving/motion_planning/motion_planning_container'
+[component_container_mt-30] [INFO] [1700614242.332911035] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Load Library: /home/zhijie/autoware/install/surround_obstacle_checker/lib/libsurround_obstacle_checker.so
+[component_container_mt-30] [INFO] [1700614242.336232436] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<surround_obstacle_checker::SurroundObstacleCheckerNode>
+[component_container_mt-30] [INFO] [1700614242.336278663] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<surround_obstacle_checker::SurroundObstacleCheckerNode>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/operation_mode_transition_manager' in container '/control/control_container'
+[component_container-34] [INFO] [1700614242.360007115] [control.control_container]: Load Library: /home/zhijie/autoware/install/glog_component/lib/libglog_component.so
+[component_container-34] [INFO] [1700614242.363450442] [control.control_container]: Found class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container-34] [INFO] [1700614242.363496033] [control.control_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/control/glog_component' in container '/control/control_container'
+[web_server.py-36]  * Running on http://localhost:8888/ (Press CTRL+C to quit)
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/motion_planning/surround_obstacle_checker' in container '/planning/scenario_planning/lane_driving/motion_planning/motion_planning_container'
+[component_container_mt-30] [INFO] [1700614242.393879143] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Load Library: /home/zhijie/autoware/install/obstacle_stop_planner/lib/libobstacle_stop_planner.so
+[component_container_mt-30] [INFO] [1700614242.397331376] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<motion_planning::ObstacleStopPlannerNode>
+[component_container_mt-30] [INFO] [1700614242.397362183] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<motion_planning::ObstacleStopPlannerNode>
+[system_error_monitor-16] [ERROR] [1700614242.429745630] [system.system_error_monitor]: vehicle_state_report msg is timeout...
+[system_error_monitor-16] [ERROR] [1700614242.429823935] [system_error_monitor system_error_monitor/input_data_timeout]: [Single Point Fault]: 
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner' in container '/planning/scenario_planning/lane_driving/motion_planning/motion_planning_container'
+[component_container_mt-30] [INFO] [1700614242.450081477] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Load Library: /home/zhijie/autoware/install/path_smoother/lib/libpath_smoother.so
+[component_container_mt-30] [INFO] [1700614242.451364684] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<path_smoother::ElasticBandSmoother>
+[component_container_mt-30] [INFO] [1700614242.451383993] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<path_smoother::ElasticBandSmoother>
+[component_container_mt-30] [INFO] [1700614242.474188590] [planning.scenario_planning.lane_driving.motion_planning.elastic_band_smoother]: Initialize planning
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother' in container '/planning/scenario_planning/lane_driving/motion_planning/motion_planning_container'
+[component_container_mt-30] [INFO] [1700614242.476456436] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Load Library: /home/zhijie/autoware/install/glog_component/lib/libglog_component.so
+[component_container_mt-30] [INFO] [1700614242.477865036] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Found class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container_mt-30] [INFO] [1700614242.477885705] [planning.scenario_planning.lane_driving.motion_planning.motion_planning_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<GlogComponent>
+[component_container_mt-30] [INFO] [1700614242.488018023] [planning.scenario_planning.lane_driving.motion_planning.surround_obstacle_checker]: waiting for dynamic object info...
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planning/scenario_planning/lane_driving/motion_planning/glog_component' in container '/planning/scenario_planning/lane_driving/motion_planning/motion_planning_container'
+[rviz2-40] [INFO] [1700614242.553877274] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-40] [INFO] [1700614242.553997389] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-40] [INFO] [1700614242.576477638] [rviz2]: Stereo is NOT SUPPORTED
+[component_container-34] [WARN] [1700614242.944324457] [control.control_validator]: diagnostic_updater: No HW_ID was set. This is probably a bug. Please report it. For devices that do not have a HW_ID, set this value to 'none'. This warning only occurs once all diagnostics are OK. It is okay to wait until the device is open before calling setHardwareID.
+[rviz2-40] [INFO] [1700614243.541572803] [rviz2]: Stereo is NOT SUPPORTED
+[scenario_selector-25] [INFO] [1700614246.402332192] [planning.scenario_planning.scenario_selector]: Waiting for current pose.
+[component_container-23] [INFO] [1700614246.661331673] [planning.mission_planning.mission_planner]: waiting lanelet map... Route API is not ready.
+[dummy_perception_publisher_node-41] [WARN] [1700614246.749697106] [simulation.dummy_perception_publisher]: map->base_link is not available yet
+[simple_planning_simulator_exe-52] [INFO] [1700614246.760692844] [simulation.simple_planning_simulator]: waiting initialization...
+[component_container-34] [INFO] [1700614246.872208399] [control.trajectory_follower.controller_node_exe]: Waiting for trajectory.
+[component_container-34] [INFO] [1700614246.872246783] [control.trajectory_follower.controller_node_exe]: Control is skipped since input data is not ready.
+[component_container-31] [INFO] [1700614247.032065894] [planning.scenario_planning.parking.costmap_generator]: waiting for initial pose...
+[component_container_mt-28] [INFO] [1700614247.104555061] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner]: waiting for scenario_topic
+[component_container-34] [INFO] [1700614247.332413713] [control.trajectory_follower.lane_departure_checker_node]: waiting for current_twist msg...
+[system_error_monitor-16] [ERROR] [1700614247.429761570] [system.system_error_monitor]: vehicle_state_report msg is timeout...
+[system_error_monitor-16] [ERROR] [1700614247.429840206] [system_error_monitor system_error_monitor/input_data_timeout]: [Single Point Fault]: 
+[component_container_mt-30] [INFO] [1700614247.488089111] [planning.scenario_planning.lane_driving.motion_planning.surround_obstacle_checker]: waiting for dynamic object info...
+[scenario_selector-25] [INFO] [1700614251.502331222] [planning.scenario_planning.scenario_selector]: Waiting for current pose.
+[dummy_perception_publisher_node-41] [WARN] [1700614251.749718243] [simulation.dummy_perception_publisher]: map->base_link is not available yet
+[simple_planning_simulator_exe-52] [INFO] [1700614251.760784485] [simulation.simple_planning_simulator]: waiting initialization...
+[component_container-23] [INFO] [1700614251.761200782] [planning.mission_planning.mission_planner]: waiting lanelet map... Route API is not ready.
+[component_container-34] [INFO] [1700614251.882200553] [control.trajectory_follower.controller_node_exe]: Waiting for trajectory.
+[component_container-34] [INFO] [1700614251.882230359] [control.trajectory_follower.controller_node_exe]: Control is skipped since input data is not ready.
+[component_container-31] [INFO] [1700614252.032176562] [planning.scenario_planning.parking.costmap_generator]: waiting for initial pose...
+[component_container_mt-28] [INFO] [1700614252.104556288] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner]: waiting for scenario_topic
+[component_container-34] [INFO] [1700614252.432403443] [control.trajectory_follower.lane_departure_checker_node]: waiting for current_twist msg...
+[system_error_monitor-16] [ERROR] [1700614252.529770808] [system.system_error_monitor]: vehicle_state_report msg is timeout...
+[system_error_monitor-16] [ERROR] [1700614252.529845176] [system_error_monitor system_error_monitor/input_data_timeout]: [Single Point Fault]: 
+[component_container_mt-30] [INFO] [1700614252.587971402] [planning.scenario_planning.lane_driving.motion_planning.surround_obstacle_checker]: waiting for dynamic object info...
+[scenario_selector-25] [INFO] [1700614256.602330127] [planning.scenario_planning.scenario_selector]: Waiting for current pose.
+[simple_planning_simulator_exe-52] [INFO] [1700614256.760820052] [simulation.simple_planning_simulator]: waiting initialization...
+[component_container-23] [INFO] [1700614256.761225620] [planning.mission_planning.mission_planner]: waiting lanelet map... Route API is not ready.
+[dummy_perception_publisher_node-41] [WARN] [1700614256.849809902] [simulation.dummy_perception_publisher]: map->base_link is not available yet
+[component_container-34] [INFO] [1700614256.892161631] [control.trajectory_follower.controller_node_exe]: Waiting for trajectory.
+[component_container-34] [INFO] [1700614256.892192702] [control.trajectory_follower.controller_node_exe]: Control is skipped since input data is not ready.
+[component_container-31] [INFO] [1700614257.032285682] [planning.scenario_planning.parking.costmap_generator]: waiting for initial pose...
+[component_container_mt-28] [INFO] [1700614257.204553600] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner]: waiting for scenario_topic
+[component_container-34] [INFO] [1700614257.532408246] [control.trajectory_follower.lane_departure_checker_node]: waiting for current_twist msg...
+[component_container_mt-30] [INFO] [1700614257.588045972] [planning.scenario_planning.lane_driving.motion_planning.surround_obstacle_checker]: waiting for dynamic object info...
+[system_error_monitor-16] [ERROR] [1700614257.629765792] [system.system_error_monitor]: vehicle_state_report msg is timeout...
+[system_error_monitor-16] [ERROR] [1700614257.629849985] [system_error_monitor system_error_monitor/input_data_timeout]: [Single Point Fault]: 
+[scenario_selector-25] [INFO] [1700614261.602331018] [planning.scenario_planning.scenario_selector]: Waiting for current pose.
+[component_container-23] [INFO] [1700614261.761383362] [planning.mission_planning.mission_planner]: waiting lanelet map... Route API is not ready.
+[simple_planning_simulator_exe-52] [INFO] [1700614261.785844734] [simulation.simple_planning_simulator]: waiting initialization...
+[component_container-34] [INFO] [1700614261.902163564] [control.trajectory_follower.controller_node_exe]: Waiting for trajectory.
+[component_container-34] [INFO] [1700614261.902191977] [control.trajectory_follower.controller_node_exe]: Control is skipped since input data is not ready.
+[dummy_perception_publisher_node-41] [WARN] [1700614261.949772757] [simulation.dummy_perception_publisher]: map->base_link is not available yet
+[component_container-31] [INFO] [1700614262.032388092] [planning.scenario_planning.parking.costmap_generator]: waiting for initial pose...
+[component_container_mt-28] [INFO] [1700614262.204641034] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner]: waiting for scenario_topic
+[component_container-34] [INFO] [1700614262.532437490] [control.trajectory_follower.lane_departure_checker_node]: waiting for current_twist msg...
+[component_container_mt-30] [INFO] [1700614262.588079653] [planning.scenario_planning.lane_driving.motion_planning.surround_obstacle_checker]: waiting for dynamic object info...
+[system_error_monitor-16] [ERROR] [1700614262.729734959] [system.system_error_monitor]: vehicle_state_report msg is timeout...
+[system_error_monitor-16] [ERROR] [1700614262.729805362] [system_error_monitor system_error_monitor/input_data_timeout]: [Single Point Fault]: 
+[scenario_selector-25] [INFO] [1700614266.602333189] [planning.scenario_planning.scenario_selector]: Waiting for current pose.
+[simple_planning_simulator_exe-52] [INFO] [1700614266.810845349] [simulation.simple_planning_simulator]: waiting initialization...
+[component_container-23] [INFO] [1700614266.861283410] [planning.mission_planning.mission_planner]: waiting lanelet map... Route API is not ready.
+[component_container-34] [INFO] [1700614266.912208938] [control.trajectory_follower.controller_node_exe]: Waiting for trajectory.
+[component_container-34] [INFO] [1700614266.912246090] [control.trajectory_follower.controller_node_exe]: Control is skipped since input data is not ready.
+[component_container-31] [INFO] [1700614267.032499477] [planning.scenario_planning.parking.costmap_generator]: waiting for initial pose...
+[dummy_perception_publisher_node-41] [WARN] [1700614267.049681664] [simulation.dummy_perception_publisher]: map->base_link is not available yet
+[component_container_mt-28] [INFO] [1700614267.304556879] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner]: waiting for scenario_topic
+[component_container_mt-30] [INFO] [1700614267.588081614] [planning.scenario_planning.lane_driving.motion_planning.surround_obstacle_checker]: waiting for dynamic object info...
+[component_container-34] [INFO] [1700614267.632396964] [control.trajectory_follower.lane_departure_checker_node]: waiting for current_twist msg...
+[system_error_monitor-16] [ERROR] [1700614267.729776873] [system.system_error_monitor]: vehicle_state_report msg is timeout...
+[system_error_monitor-16] [ERROR] [1700614267.729849062] [system_error_monitor system_error_monitor/input_data_timeout]: [Single Point Fault]: 
+[scenario_selector-25] [INFO] [1700614271.702331360] [planning.scenario_planning.scenario_selector]: Waiting for current pose.
+[simple_planning_simulator_exe-52] [INFO] [1700614271.810854122] [simulation.simple_planning_simulator]: waiting initialization...
+[component_container-23] [INFO] [1700614271.861435011] [planning.mission_planning.mission_planner]: waiting lanelet map... Route API is not ready.
+[component_container-34] [INFO] [1700614271.922160779] [control.trajectory_follower.controller_node_exe]: Waiting for trajectory.
+[component_container-34] [INFO] [1700614271.922185825] [control.trajectory_follower.controller_node_exe]: Control is skipped since input data is not ready.
+[component_container-31] [INFO] [1700614272.032608806] [planning.scenario_planning.parking.costmap_generator]: waiting for initial pose...
+[dummy_perception_publisher_node-41] [WARN] [1700614272.149744829] [simulation.dummy_perception_publisher]: map->base_link is not available yet
+[component_container_mt-28] [INFO] [1700614272.304606759] [planning.scenario_planning.lane_driving.behavior_planning.behavior_path_planner]: waiting for scenario_topic
+[component_container-34] [INFO] [1700614272.632401930] [control.trajectory_follower.lane_departure_checker_node]: waiting for current_twist msg...
+[component_container_mt-30] [INFO] [1700614272.688071207] [planning.scenario_planning.lane_driving.motion_planning.surround_obstacle_checker]: waiting for dynamic object info...
+[system_error_monitor-16] [ERROR] [1700614272.829732754] [system.system_error_monitor]: vehicle_state_report msg is timeout...
+[system_error_monitor-16] [ERROR] [1700614272.829787698] [system_error_monitor system_error_monitor/input_data_timeout]: [Single Point Fault]: 
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[ERROR] [launch_ros.actions.load_composable_nodes]: Failed to load node 'costmap_generator' of type 'CostmapGenerator' in container '/planning/scenario_planning/parking/parking_container': Component constructor threw an exception: could not create subscription: rcl node's context is invalid, at ./src/rcl/node.c:428
+[WARNING] [launch_ros.actions.load_composable_nodes]: Abandoning wait for the '/planning/scenario_planning/parking/parking_container/_container/load_node' service, due to shutdown.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[static_transform_publisher-53] [INFO] [1700614275.045349189] [rclcpp]: signal_handler(signum=2)
+[INFO] [traffic_light_map_visualizer_node-50]: process has finished cleanly [pid 473621]
+[INFO] [topic_state_monitor_node-10]: process has finished cleanly [pid 473088]
+[INFO] [goal_pose_visualizer-24]: process has finished cleanly [pid 473260]
+[INFO] [traffic_light_occlusion_predictor_node-46]: process has finished cleanly [pid 473574]
+[INFO] [topic_state_monitor_node-12]: process has finished cleanly [pid 473092]
+[INFO] [routing_adaptor-38]: process has finished cleanly [pid 473513]
+[INFO] [detected_object_feature_remover-42]: process has finished cleanly [pid 473530]
+[INFO] [map_based_prediction-45]: process has finished cleanly [pid 473572]
+[INFO] [topic_state_monitor_node-6]: process has finished cleanly [pid 473080]
+[INFO] [service_log_checker-2]: process has finished cleanly [pid 473072]
+[INFO] [pose_initializer_node-51]: process has finished cleanly [pid 473623]
+[INFO] [topic_state_monitor_node-14]: process has finished cleanly [pid 473096]
+[INFO] [external_velocity_limit_selector-26]: process has finished cleanly [pid 473264]
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 473070]
+[INFO] [emergency_handler-17]: process has finished cleanly [pid 473143]
+[INFO] [traffic_light_multi_camera_fusion_node-47]: process has finished cleanly [pid 473584]
+[INFO] [dummy_perception_publisher_node-41]: process has finished cleanly [pid 473519]
+[INFO] [static_transform_publisher-53]: process has finished cleanly [pid 473659]
+[INFO] [topic_state_monitor_node-9]: process has finished cleanly [pid 473086]
+[INFO] [component_container-31]: process has finished cleanly [pid 473292]
+[INFO] [topic_state_monitor_node-8]: process has finished cleanly [pid 473084]
+[INFO] [scenario_selector-25]: process has finished cleanly [pid 473262]
+[INFO] [topic_state_monitor_node-4]: process has finished cleanly [pid 473076]
+[INFO] [map_hash_generator-21]: process has finished cleanly [pid 473247]
+[INFO] [component_container_mt-39]: process has finished cleanly [pid 473515]
+[INFO] [component_container-18]: process has finished cleanly [pid 473239]
+[INFO] [planning_validator_node-32]: process has finished cleanly [pid 473295]
+[INFO] [component_container-49]: process has finished cleanly [pid 473607]
+[INFO] [topic_state_monitor_node-7]: process has finished cleanly [pid 473082]
+[INFO] [crosswalk_traffic_light_estimator_node-48]: process has finished cleanly [pid 473587]
+[INFO] [aggregator_node-15]: process has finished cleanly [pid 473098]
+[INFO] [topic_state_monitor_node-13]: process has finished cleanly [pid 473094]
+[INFO] [component_container-3]: process has finished cleanly [pid 473074]
+[INFO] [planning_evaluator-33]: process has finished cleanly [pid 473305]
+[INFO] [multi_object_tracker-44]: process has finished cleanly [pid 473551]
+[INFO] [rtc_auto_mode_manager_node-29]: process has finished cleanly [pid 473270]
+[INFO] [component_container-43]: process has finished cleanly [pid 473533]
+[INFO] [simple_planning_simulator_exe-52]: process has finished cleanly [pid 473626]
+[INFO] [topic_state_monitor_node-5]: process has finished cleanly [pid 473078]
+[INFO] [initial_pose_adaptor-37]: process has finished cleanly [pid 473408]
+[INFO] [topic_state_monitor_node-11]: process has finished cleanly [pid 473090]
+[INFO] [system_error_monitor-16]: process has finished cleanly [pid 473100]
+[INFO] [component_container-27]: process has finished cleanly [pid 473266]
+[INFO] [component_container-23]: process has finished cleanly [pid 473258]
+[INFO] [component_container_mt-30]: process has finished cleanly [pid 473273]
+[INFO] [web_server.py-36]: process has finished cleanly [pid 473404]
+[INFO] [component_container-19]: process has finished cleanly [pid 473241]
+[INFO] [component_container-20]: process has finished cleanly [pid 473243]
+[INFO] [component_container_mt-28]: process has finished cleanly [pid 473268]
+[INFO] [component_container-34]: process has finished cleanly [pid 473317]
+[INFO] [component_container_mt-35]: process has finished cleanly [pid 473328]
+[ERROR] [rviz2-40]: process has died [pid 473517, exit code -2, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/zhijie/autoware/install/autoware_launch/share/autoware_launch/rviz/autoware.rviz -s /home/zhijie/autoware/install/autoware_launch/share/autoware_launch/rviz/image/autoware.png --ros-args -r __node:=rviz2 -p use_sim_time:=False -p wheel_radius:=0.383 -p wheel_width:=0.235 -p wheel_base:=2.79 -p wheel_tread:=1.64 -p front_overhang:=1.0 -p rear_overhang:=1.1 -p left_overhang:=0.128 -p right_overhang:=0.128 -p vehicle_height:=2.5 -p max_steer_angle:=0.7'].
+[component_container-49] [INFO] [1700614275.045351135] [rclcpp]: signal_handler(signum=2)
+[crosswalk_traffic_light_estimator_node-48] [INFO] [1700614275.045351674] [rclcpp]: signal_handler(signum=2)
+[component_container-43] [INFO] [1700614275.045378950] [rclcpp]: signal_handler(signum=2)
+[component_container_mt-39] [INFO] [1700614275.045374562] [rclcpp]: signal_handler(signum=2)
+[pose_initializer_node-51] [INFO] [1700614275.045380442] [rclcpp]: signal_handler(signum=2)
+[rtc_auto_mode_manager_node-29] [INFO] [1700614275.045413079] [rclcpp]: signal_handler(signum=2)
+[component_container-27] [INFO] [1700614275.045413399] [rclcpp]: signal_handler(signum=2)
+[component_container_mt-30] [INFO] [1700614275.045416178] [rclcpp]: signal_handler(signum=2)
+[traffic_light_multi_camera_fusion_node-47] [INFO] [1700614275.045412880] [rclcpp]: signal_handler(signum=2)
+[map_based_prediction-45] [INFO] [1700614275.045413222] [rclcpp]: signal_handler(signum=2)
+[traffic_light_occlusion_predictor_node-46] [INFO] [1700614275.045414084] [rclcpp]: signal_handler(signum=2)
+[traffic_light_map_visualizer_node-50] [INFO] [1700614275.045415920] [rclcpp]: signal_handler(signum=2)
+[detected_object_feature_remover-42] [INFO] [1700614275.045415966] [rclcpp]: signal_handler(signum=2)
+[component_container-20] [INFO] [1700614275.045437469] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-7] [INFO] [1700614275.045433883] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-9] [INFO] [1700614275.045452500] [rclcpp]: signal_handler(signum=2)
+[external_velocity_limit_selector-26] [INFO] [1700614275.045458000] [rclcpp]: signal_handler(signum=2)
+[initial_pose_adaptor-37] [INFO] [1700614275.045457214] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-12] [INFO] [1700614275.045474661] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-6] [INFO] [1700614275.045475642] [rclcpp]: signal_handler(signum=2)
+[routing_adaptor-38] [INFO] [1700614275.045478479] [rclcpp]: signal_handler(signum=2)
+[planning_evaluator-33] [INFO] [1700614275.045483136] [rclcpp]: signal_handler(signum=2)
+[planning_validator_node-32] [INFO] [1700614275.045484913] [rclcpp]: signal_handler(signum=2)
+[component_container-23] [INFO] [1700614275.045522514] [rclcpp]: signal_handler(signum=2)
+[system_error_monitor-16] [INFO] [1700614275.045537954] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-10] [INFO] [1700614275.045533772] [rclcpp]: signal_handler(signum=2)
+[component_container-18] [INFO] [1700614275.045546243] [rclcpp]: signal_handler(signum=2)
+[component_container-31] [INFO] [1700614275.045547237] [rclcpp]: signal_handler(signum=2)
+[component_container-31] [ERROR] [1700614275.115017606] [planning.scenario_planning.parking.parking_container]: Component constructor threw an exception: could not create subscription: rcl node's context is invalid, at ./src/rcl/node.c:428
+[emergency_handler-17] [INFO] [1700614275.045561570] [rclcpp]: signal_handler(signum=2)
+[multi_object_tracker-44] [INFO] [1700614275.045569983] [rclcpp]: signal_handler(signum=2)
+[service_log_checker-2] [INFO] [1700614275.045585377] [rclcpp]: signal_handler(signum=2)
+[rviz2-40] [INFO] [1700614275.045597501] [rclcpp]: signal_handler(signum=2)
+[component_container-34] [INFO] [1700614275.045635510] [rclcpp]: signal_handler(signum=2)
+[component_container_mt-28] [INFO] [1700614275.045650051] [rclcpp]: signal_handler(signum=2)
+[dummy_perception_publisher_node-41] [INFO] [1700614275.045650741] [rclcpp]: signal_handler(signum=2)
+[robot_state_publisher-1] [INFO] [1700614275.045686749] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-5] [INFO] [1700614275.045686545] [rclcpp]: signal_handler(signum=2)
+[goal_pose_visualizer-24] [INFO] [1700614275.046005968] [rclcpp]: signal_handler(signum=2)
+[component_container_mt-35] [INFO] [1700614275.046090656] [rclcpp]: signal_handler(signum=2)
+[scenario_selector-25] [INFO] [1700614275.046164495] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-8] [INFO] [1700614275.046205264] [rclcpp]: signal_handler(signum=2)
+[component_container-3] [INFO] [1700614275.046270035] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-11] [INFO] [1700614275.048468691] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-13] [INFO] [1700614275.048592325] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-14] [INFO] [1700614275.051189072] [rclcpp]: signal_handler(signum=2)
+[topic_state_monitor_node-4] [INFO] [1700614275.057374246] [rclcpp]: signal_handler(signum=2)
+[component_container-19] [INFO] [1700614275.090918794] [rclcpp]: signal_handler(signum=2)

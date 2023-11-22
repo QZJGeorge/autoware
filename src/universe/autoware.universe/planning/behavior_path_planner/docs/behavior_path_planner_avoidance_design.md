@@ -657,8 +657,8 @@ car:
   moving_time_threshold: 1.0 # [s]
   max_expand_ratio: 0.0 # [-]
   envelope_buffer_margin: 0.3 # [m]
-  avoid_margin_lateral: 1.0 # [m]
-  safety_buffer_lateral: 0.7 # [m]
+  avoid_margin_lateral: 0.5 # [m]
+  safety_buffer_lateral: 0.5 # [m]
   safety_buffer_longitudinal: 0.0 # [m]
 ```
 

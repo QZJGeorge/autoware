@@ -102,8 +102,8 @@
   <!-- Planning -->
   <group if="$(var launch_planning)">
     <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_planning_component.launch.xml">
-        <arg name="cruise_planner_type" value="none"/>
-        <!-- <arg name="cruise_planner_type" value="obstacle_stop_planner"/> -->
+        <!-- <arg name="cruise_planner_type" value="none"/> -->
+        <arg name="cruise_planner_type" value="obstacle_stop_planner"/>
     </include>
   </group>
 
