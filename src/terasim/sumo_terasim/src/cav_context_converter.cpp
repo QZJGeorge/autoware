@@ -22,7 +22,7 @@ namespace cav_context_converter
     timer_ = rclcpp::create_timer(
         this, get_clock(), 50ms, std::bind(&CavContextConverter::on_timer, this));
 
-    pub_bv_object = this->create_publisher<Object>("/simulation/dummy_perception_publisher/object_info", 10);
+    pub_detected_objects = this->create_publisher<DetectedObjects>("/perception/object_recognition/detection/objects", 10);
 
     init_redis_client();
   }
@@ -82,17 +82,6 @@ namespace cav_context_converter
     return newString;
   }
 
-  UUID CavContextConverter::get_uuid_msg(string bv_key) {
-    boost::uuids::string_generator sgen;
-    boost::uuids::uuid namespace_uuid = sgen("00000000-0000-0000-0000-000000000000");
-    boost::uuids::name_generator_sha1 gen(namespace_uuid);
-    boost::uuids::uuid boost_uuid = gen(bv_key);
-
-    unique_identifier_msgs::msg::UUID msg;
-    std::copy(boost_uuid.begin(), boost_uuid.end(), msg.uuid.begin());
-    return msg;
-  }
-
   PoseWithCovariance CavContextConverter::get_pose_with_varience(nlohmann::json bv_value_json){
     PoseWithCovariance bv_pose_with_covariance;
 
@@ -133,15 +122,13 @@ namespace cav_context_converter
 
   TwistWithCovariance CavContextConverter::get_twist_with_varience(nlohmann::json bv_value_json){
     TwistWithCovariance bv_twist_with_covariance;
-    cout << bv_value_json["speed_long"] << endl;
-    // bv_twist_with_covariance.twist.linear.x = 0.0;
     bv_twist_with_covariance.twist.linear.x = bv_value_json["speed_long"];
     return bv_twist_with_covariance;
   }
 
   Shape CavContextConverter::get_shape(nlohmann::json bv_value_json){
     Shape bv_shape;
-    bv_shape.type = 0;
+    bv_shape.type = Shape::BOUNDING_BOX;
     bv_shape.dimensions.x = bv_value_json["length"];
     bv_shape.dimensions.y = bv_value_json["width"];
     bv_shape.dimensions.z = bv_value_json["height"];
@@ -150,7 +137,7 @@ namespace cav_context_converter
 
   ObjectClassification CavContextConverter::get_classification(){
     ObjectClassification bv_classification;
-    bv_classification.label = 1;
+    bv_classification.label = ObjectClassification::CAR;
     bv_classification.probability = 1.0;
     return bv_classification;
   }
@@ -164,19 +151,7 @@ namespace cav_context_converter
   }
 
 
-  void CavContextConverter::update_bv_in_autoware_sim(uint8_t action, string bv_key, string bv_value){
-    Object bv_object;
-    
-    if (action == DELETEALL){
-      bv_object.action = action;
-      pub_bv_object->publish(bv_object);
-      return;
-    }
-
-    if (bv_key == "CAV"){
-      return;
-    }
-
+  void CavContextConverter::update_bv_in_autoware_sim(string bv_value){
     json bv_value_json = json::parse(bv_value);
 
     if (bv_value_json.is_primitive()) {
@@ -187,18 +162,19 @@ namespace cav_context_converter
       RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "The JSON message is corrupted, fixed");
     }
 
-    bv_object.header.stamp = this->get_clock()->now();
-    bv_object.header.frame_id = "map";
-    bv_object.id = get_uuid_msg(bv_key);
-    bv_object.initial_state.pose_covariance = get_pose_with_varience(bv_value_json);
-    bv_object.initial_state.twist_covariance = get_twist_with_varience(bv_value_json);
-    bv_object.shape = get_shape(bv_value_json);
-    bv_object.classification = get_classification();
-    bv_object.max_velocity = 33.33333;
-    bv_object.min_velocity = -33.33333;
-    bv_object.action = action;
+    DetectedObject detected_object;
 
-    pub_bv_object->publish(bv_object);
+    detected_object.existence_probability = 1.0;
+    detected_object.classification.push_back(get_classification());
+    detected_object.kinematics.pose_with_covariance = get_pose_with_varience(bv_value_json);
+    detected_object.kinematics.has_position_covariance = false;
+    detected_object.kinematics.orientation_availability = 0;
+    detected_object.kinematics.twist_with_covariance = get_twist_with_varience(bv_value_json);
+    detected_object.kinematics.has_twist = false;
+    detected_object.kinematics.has_twist_covariance = false;
+    detected_object.shape = get_shape(bv_value_json);
+
+    detected_objects_msg.objects.push_back(detected_object);
   }
 
   void CavContextConverter::init_redis_client(){
@@ -246,44 +222,30 @@ namespace cav_context_converter
     last_cav_context_vehicle_info_ros = cav_context_vehicle_info_ros;
     string newString = post_process_cav_context_vehicle_info_ros(cav_context_vehicle_info_ros);
 
+    detected_objects_msg.objects.clear();
+
     if (newString == ""){
       RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "cav_context not available, waiting...");
-      update_bv_in_autoware_sim(DELETEALL, "", "");
-      cav_context_history_json.clear();
+      pub_detected_objects->publish(detected_objects_msg);
       return;
     }
 
     json cav_context_current_json = json::parse(newString);
-    json cav_context_history_copy = cav_context_history_json;
-
     string cav_value = cav_context_current_json["CAV"].dump();
-
-    // For bvs that exist in hitory but now out of range, remove them
-    for (json::iterator bv = cav_context_history_copy.begin(); bv != cav_context_history_copy.end(); ++bv) {
-        if (!cav_context_current_json.contains(bv.key())) {
-          update_bv_in_autoware_sim(DELETE, bv.key(), bv.value().dump());
-          cav_context_history_json.erase(bv.key());
-        } 
-    }
 
     // Update bv info with new message, create new bvs
     for (json::iterator bv = cav_context_current_json.begin(); bv != cav_context_current_json.end(); ++bv) {
       string bv_value = bv.value().dump();
-      if(in_range(cav_value, bv_value)){
-        if (cav_context_history_json.contains(bv.key())) {
-          cav_context_history_json[bv.key()] = bv_value;
-          update_bv_in_autoware_sim(MODIFY, bv.key(), bv_value);
-        }else {
-          cav_context_history_json.emplace(bv.key(), bv_value);
-          update_bv_in_autoware_sim(ADD, bv.key(), bv_value);
-        }
-      }else{
-        if (cav_context_history_json.contains(bv.key())) {
-          update_bv_in_autoware_sim(DELETE, bv.key(), bv_value);
-          cav_context_history_json.erase(bv.key());
-        }
+      if(in_range(cav_value, bv_value) && bv.key() != "CAV"){
+        update_bv_in_autoware_sim(bv_value);
       }
     }
+
+    detected_objects_msg.header.stamp = this->get_clock()->now();
+    detected_objects_msg.header.frame_id = "map";
+
+    // Publish the detected objects
+    pub_detected_objects->publish(detected_objects_msg);
   }
 }
 

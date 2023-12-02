@@ -33,16 +33,17 @@
   </group>
 
   <!-- Dummy Perception -->
-  <group if="$(var launch_dummy_perception)">
+  <!-- <group if="$(var launch_dummy_perception)">
     <include file="$(find-pkg-share dummy_perception_publisher)/launch/dummy_perception_publisher.launch.xml">
       <arg name="real" value="$(var perception/enable_detection_failure)"/>
       <arg name="use_object_recognition" value="$(var perception/enable_object_recognition)"/>
       <arg name="use_base_link_z" value="$(var perception/use_base_link_z)"/>
       <arg name="visible_range" value="$(var sensing/visible_range)"/>
     </include>
-  </group>
-  <group unless="$(var scenario_simulation)">
-    <!-- Occupancy Grid -->
+  </group> -->
+
+  <!-- Occupancy Grid -->
+  <!-- <group unless="$(var scenario_simulation)">
     <push-ros-namespace namespace="occupancy_grid_map"/>
     <include file="$(find-pkg-share tier4_perception_launch)/launch/occupancy_grid_map/probabilistic_occupancy_grid_map.launch.xml">
       <arg name="input_obstacle_pointcloud" value="true"/>
@@ -54,7 +55,7 @@
       <arg name="occupancy_grid_map_updater" value="$(var occupancy_grid_map_updater)"/>
       <arg name="occupancy_grid_map_updater_param_path" value="$(var occupancy_grid_map_updater_param_path)"/>
     </include>
-  </group>
+  </group> -->
 
   <!-- perception module -->
   <group>

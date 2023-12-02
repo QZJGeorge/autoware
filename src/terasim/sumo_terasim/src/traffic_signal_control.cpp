@@ -86,7 +86,7 @@ namespace traffic_signal_control{
     string av_tls = get_key("av_tls");
 
     if (av_tls == ""){
-      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "traffic signal not availble, waiting...");
+      // RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "traffic signal not availble, waiting...");
       return;
     }
 

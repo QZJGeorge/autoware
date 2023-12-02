@@ -41,7 +41,7 @@ rclcpp_components_register_node(cav_info_converter_component
   EXECUTABLE cav_info_converter
 )
 
-##########################  CAV CONTEXT CONVERTER  ##################################
+############################  CAV CONTEXT CONVERTER  ################################
 
 ament_auto_add_library(cav_context_converter_component SHARED
   src/cav_context_converter.cpp
@@ -52,6 +52,19 @@ target_link_libraries(cav_context_converter_component hiredis Geographic)
 rclcpp_components_register_node(cav_context_converter_component
   PLUGIN "cav_context_converter::CavContextConverter"
   EXECUTABLE cav_context_converter
+)
+
+############################  CREATE OCCUPANCY GRID ##################################
+
+ament_auto_add_library(create_occupancy_grid_component SHARED
+  src/create_occupancy_grid.cpp
+)
+
+target_link_libraries(create_occupancy_grid_component)
+
+rclcpp_components_register_node(create_occupancy_grid_component
+  PLUGIN "create_occupancy_grid::CreateOccupancyGrid"
+  EXECUTABLE create_occupancy_grid
 )
 
 ##########################  CAV CONTEXT REPLAY  ##################################

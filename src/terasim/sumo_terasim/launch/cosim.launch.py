@@ -20,6 +20,11 @@ def generate_launch_description():
         Node(
             package='sumo_terasim',
             namespace='/terasim',
+            executable='create_occupancy_grid',
+        ),
+        Node(
+            package='sumo_terasim',
+            namespace='/terasim',
             executable='traffic_signal_control',
         ),
         Node(
