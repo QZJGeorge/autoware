@@ -976,6 +976,7 @@ Visualization Manager:
               Enabled: true
               Name: RouteArea
               Namespaces:
+                end_lanelets: true
                 goal_lanelets: true
                 lane_start_bound: false
                 left_lane_bound: false
@@ -1879,10 +1880,7 @@ Visualization Manager:
                           Enabled: true
                           Name: VirtualWall (Avoidance)
                           Namespaces:
-                            dead_line_factor_text: true
-                            dead_line_virtual_wall: true
-                            stop_factor_text: true
-                            stop_virtual_wall: true
+                            {}
                           Topic:
                             Depth: 5
                             Durability Policy: Volatile
@@ -1978,8 +1976,7 @@ Visualization Manager:
                           Enabled: true
                           Name: VirtualWall (BlindSpot)
                           Namespaces:
-                            56925_stop_factor_text: true
-                            56925_stop_virtual_wall: true
+                            {}
                           Topic:
                             Depth: 5
                             Durability Policy: Volatile
@@ -2027,16 +2024,8 @@ Visualization Manager:
                           Enabled: true
                           Name: VirtualWall (Intersection)
                           Namespaces:
-                            intersection52769_stop_factor_text: true
-                            intersection52769_stop_virtual_wall: true
-                            intersection53613_stop_factor_text: true
-                            intersection53613_stop_virtual_wall: true
-                            intersection54090_stop_factor_text: true
-                            intersection54090_stop_virtual_wall: true
-                            intersection59675_stop_factor_text: true
-                            intersection59675_stop_virtual_wall: true
-                            intersection61863_stop_factor_text: true
-                            intersection61863_stop_virtual_wall: true
+                            intersection74271_stop_factor_text: true
+                            intersection74271_stop_virtual_wall: true
                           Topic:
                             Depth: 5
                             Durability Policy: Volatile
@@ -2096,12 +2085,7 @@ Visualization Manager:
                           Enabled: true
                           Name: VirtualWall (TrafficLight)
                           Namespaces:
-                            53613_stop_factor_text: true
-                            53613_stop_virtual_wall: true
-                            56925_stop_factor_text: true
-                            56925_stop_virtual_wall: true
-                            59675_stop_factor_text: true
-                            59675_stop_virtual_wall: true
+                            {}
                           Topic:
                             Depth: 5
                             Durability Policy: Volatile
@@ -3195,7 +3179,7 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Angle: -3.1500000953674316
+      Angle: -3.1650004386901855
       Class: rviz_default_plugins/TopDownOrtho
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
@@ -3205,11 +3189,11 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: -3.0317697525024414
+      Scale: -7.055607795715332
       Target Frame: viewer
       Value: TopDownOrtho (rviz_default_plugins)
-      X: 48.669071197509766
-      Y: 144.8887176513672
+      X: 51.88896179199219
+      Y: -95.2843246459961
     Saved:
       - Class: rviz_default_plugins/ThirdPersonFollower
         Distance: 18
