@@ -16,32 +16,6 @@ include_directories(
 link_directories(/usr/local/lib)
 
 
-############################  CAV INFO CONVERTER  ####################################
-
-ament_auto_add_library(abc_info_converter_component SHARED
-  src/abc_info_converter.cpp
-)
-
-target_link_libraries(abc_info_converter_component hiredis Geographic)
-
-rclcpp_components_register_node(abc_info_converter_component
-  PLUGIN "abc_info_converter::AbcInfoConverter"
-  EXECUTABLE abc_info_converter
-)
-
-##########################  CAV CONTEXT CONVERTER  ##################################
-
-ament_auto_add_library(abc_context_converter_component SHARED
-  src/abc_context_converter.cpp
-)
-
-target_link_libraries(abc_context_converter_component hiredis Geographic)
-
-rclcpp_components_register_node(abc_context_converter_component
-  PLUGIN "abc_context_converter::AbcContextConverter"
-  EXECUTABLE abc_context_converter
-)
-
 ##########################  TEST_01 ####################################
 
 ament_auto_add_library(test_01_component SHARED

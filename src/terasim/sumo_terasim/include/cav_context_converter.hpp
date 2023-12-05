@@ -72,7 +72,7 @@ private:
   void on_timer();
   void init_redis_client();
   void set_key(string key, string value);
-  void update_bv_in_autoware_sim(std::string bv_value_string);
+  void update_bv_in_autoware_sim(string bv_key, string bv_value);
 
   double get_ori_from_odom(Odometry::SharedPtr msg);
   bool in_range(string cav_value, string bv_value);
@@ -86,7 +86,7 @@ private:
   geometry_msgs::msg::PoseWithCovariance get_pose_with_varience(nlohmann::json bv_value_json);
   geometry_msgs::msg::TwistWithCovariance get_twist_with_varience(nlohmann::json bv_value_json);
   autoware_auto_perception_msgs::msg::Shape get_shape(nlohmann::json bv_value_json);
-  autoware_auto_perception_msgs::msg::ObjectClassification get_classification();
+  autoware_auto_perception_msgs::msg::ObjectClassification get_classification(string bv_key);
 };
 
 }

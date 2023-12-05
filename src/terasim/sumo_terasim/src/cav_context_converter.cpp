@@ -138,9 +138,17 @@ namespace cav_context_converter
     return bv_shape;
   }
 
-  ObjectClassification CavContextConverter::get_classification(){
+  ObjectClassification CavContextConverter::get_classification(string bv_key){
     ObjectClassification bv_classification;
-    bv_classification.label = ObjectClassification::CAR;
+    
+    if (bv_key == "POV"){
+      bv_classification.label = ObjectClassification::CAR;
+    } else if (bv_key == "VRU"){
+      bv_classification.label = ObjectClassification::PEDESTRIAN;
+    } else{
+      bv_classification.label = ObjectClassification::UNKNOWN;
+    }
+
     bv_classification.probability = 1.0;
     return bv_classification;
   }
@@ -154,7 +162,7 @@ namespace cav_context_converter
   }
 
 
-  void CavContextConverter::update_bv_in_autoware_sim(string bv_value){
+  void CavContextConverter::update_bv_in_autoware_sim(string bv_key, string bv_value){
     json bv_value_json = json::parse(bv_value);
 
     if (bv_value_json.is_primitive()) {
@@ -168,7 +176,7 @@ namespace cav_context_converter
     DetectedObject detected_object;
 
     detected_object.existence_probability = 1.0;
-    detected_object.classification.push_back(get_classification());
+    detected_object.classification.push_back(get_classification(bv_key));
     detected_object.kinematics.pose_with_covariance = get_pose_with_varience(bv_value_json);
     detected_object.kinematics.has_position_covariance = false;
     detected_object.kinematics.orientation_availability = 0;
@@ -238,9 +246,10 @@ namespace cav_context_converter
 
     // Update bv info with new message, create new bvs
     for (json::iterator bv = cav_context_current_json.begin(); bv != cav_context_current_json.end(); ++bv) {
+      string bv_key = bv.key();
       string bv_value = bv.value().dump();
-      if(in_range(cav_value, bv_value) && bv.key() != "CAV"){
-        update_bv_in_autoware_sim(bv_value);
+      if(in_range(cav_value, bv_value) && bv_key != "CAV"){
+        update_bv_in_autoware_sim(bv_key, bv_value);
       }
     }
 
