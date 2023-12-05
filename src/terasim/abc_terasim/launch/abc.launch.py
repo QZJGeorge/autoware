@@ -27,6 +27,11 @@ def generate_launch_description():
             namespace='/terasim',
             executable='cav_context_converter',
         ),
+        Node(
+            package='sumo_terasim',
+            namespace='/terasim',
+            executable='create_occupancy_grid',
+        ),
         DeclareLaunchArgument(
             'map_path',
             default_value=str(os.getenv('HOME')) + '/autoware/map',
