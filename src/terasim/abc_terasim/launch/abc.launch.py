@@ -18,14 +18,14 @@ def generate_launch_description():
             executable=LaunchConfiguration('scenario')
         ),
         Node(
-            package='abc_terasim',
+            package='sumo_terasim',
             namespace='/terasim',
-            executable='abc_info_converter',
+            executable='cav_info_converter',
         ),
         Node(
-            package='abc_terasim',
+            package='sumo_terasim',
             namespace='/terasim',
-            executable='abc_context_converter',
+            executable='cav_context_converter',
         ),
         DeclareLaunchArgument(
             'map_path',
@@ -44,7 +44,7 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             'lanelet2_map_file',
-            default_value='lanelet2_mcity_v29.osm',
+            default_value='lanelet2_mcity_v30.osm',
             description='Lanelet2 map file'
         ),
         IncludeLaunchDescription(

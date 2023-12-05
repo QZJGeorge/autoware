@@ -1602,14 +1602,14 @@ Maneuver MapBasedPredictionNode::predictObjectManeuverByTimeToLaneChange(
 
   // Step 5. detect lane change
   if (
-    left_dist < right_dist &&                              // in left side,
+    // left_dist < right_dist &&                              // in left side,
     left_dist < dist_threshold_to_bound_ &&                // close to boundary,
     v_left_filtered < 0 &&                                 // approaching,
     margin_to_reach_left_bound < time_threshold_to_bound_  // will soon arrive to left bound
   ) {
     return Maneuver::LEFT_LANE_CHANGE;
   } else if (
-    right_dist < left_dist &&                               // in right side,
+    // right_dist < left_dist &&                               // in right side,
     right_dist < dist_threshold_to_bound_ &&                // close to boundary,
     v_right_filtered < 0 &&                                 // approaching,
     margin_to_reach_right_bound < time_threshold_to_bound_  // will soon arrive to right bound

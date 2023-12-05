@@ -122,7 +122,10 @@ namespace cav_context_converter
 
   TwistWithCovariance CavContextConverter::get_twist_with_varience(nlohmann::json bv_value_json){
     TwistWithCovariance bv_twist_with_covariance;
-    bv_twist_with_covariance.twist.linear.x = bv_value_json["speed_long"];
+
+    double speed_long = bv_value_json["speed_long"];
+    bv_twist_with_covariance.twist.linear.x = speed_long;
+
     return bv_twist_with_covariance;
   }
 
