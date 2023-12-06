@@ -239,15 +239,16 @@ void ObstacleVelocityLimiterNode::onTrajectory(const Trajectory::ConstSharedPtr 
 bool ObstacleVelocityLimiterNode::validInputs()
 {
   constexpr auto one_sec = rcutils_duration_value_t(1000);
-  if (!occupancy_grid_ptr_)
-    RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), one_sec, "Occupancy grid not yet received");
+  // if (!occupancy_grid_ptr_)
+  //   RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), one_sec, "Occupancy grid not yet received");
   if (!dynamic_obstacles_ptr_)
     RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), one_sec, "Dynamic obstacles not yet received");
   if (!current_odometry_ptr_)
     RCLCPP_WARN_THROTTLE(
       get_logger(), *get_clock(), one_sec, "Current ego velocity not yet received");
 
-  return occupancy_grid_ptr_ && dynamic_obstacles_ptr_ && current_odometry_ptr_;
+  // return occupancy_grid_ptr_ && dynamic_obstacles_ptr_ && current_odometry_ptr_;
+  return dynamic_obstacles_ptr_ && current_odometry_ptr_;
 }
 }  // namespace obstacle_velocity_limiter
 

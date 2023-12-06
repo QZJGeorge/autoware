@@ -228,7 +228,7 @@ void GoalPlannerModule::onFreespaceParkingTimer()
 BehaviorModuleOutput GoalPlannerModule::run()
 {
   current_state_ = ModuleStatus::RUNNING;
-  updateOccupancyGrid();
+  // updateOccupancyGrid();
 
   if (!isActivated()) {
     return planWaitingApproval();
@@ -971,7 +971,7 @@ BehaviorModuleOutput GoalPlannerModule::planWaitingApprovalWithGoalModification(
 {
   waitApproval();
 
-  updateOccupancyGrid();
+  // updateOccupancyGrid();
   BehaviorModuleOutput out;
   out.modified_goal = plan().modified_goal;  // update status_
   out.path = std::make_shared<PathWithLaneId>(generateStopPath());
