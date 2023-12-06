@@ -141,9 +141,9 @@ namespace cav_context_converter
   ObjectClassification CavContextConverter::get_classification(string bv_key){
     ObjectClassification bv_classification;
     
-    if (bv_key == "POV"){
+    if (bv_key.find("POV") != std::string::npos){
       bv_classification.label = ObjectClassification::CAR;
-    } else if (bv_key == "VRU"){
+    } else if (bv_key.find("VRU") != std::string::npos){
       bv_classification.label = ObjectClassification::PEDESTRIAN;
     } else{
       bv_classification.label = ObjectClassification::UNKNOWN;
