@@ -6,7 +6,8 @@
         attention_area_length: 200.0 # [m]
         attention_area_angle_threshold: 0.785 # [rad]
         stop_line_margin: 3.0
-        intersection_velocity: 2.778 # 2.778m/s = 10.0km/h
+        # intersection_velocity: 2.778 # 2.778m/s = 10.0km/h
+        intersection_velocity: 3.0 # 3m/s = 10.8km/h
         intersection_max_accel: 0.5 # m/ss
         stop_overshoot_margin: 0.5 # [m] overshoot margin for stuck, collision detection
         # use_intersection_area: false

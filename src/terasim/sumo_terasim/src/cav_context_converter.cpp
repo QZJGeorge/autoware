@@ -158,7 +158,7 @@ namespace cav_context_converter
     json bv_value_json = json::parse(bv_value);
     double x_diff = cav_value_json["x"].get<double>()-bv_value_json["x"].get<double>();
     double y_diff = cav_value_json["y"].get<double>()-bv_value_json["y"].get<double>();
-    return std::sqrt(std::pow(x_diff, 2)+std::pow(y_diff, 2)) < 45.0;
+    return std::sqrt(std::pow(x_diff, 2)+std::pow(y_diff, 2)) < 100.0;
   }
 
 
