@@ -189,15 +189,16 @@
         #                but there is a possibility that the vehicle can't stop in front of the vehicle.
         # "reliable": insert stop or slow down point with ignoring decel/jerk constraints.
         #             make it possible to increase chance to avoid but uncomfortable deceleration maybe happen.
-        deceleration: "best_effort"                     # [-]
+        deceleration: "reliable"                     # [-]
         # policy for avoidance lateral margin. select "best_effort" or "reliable".
         # "best_effort": output avoidance path with shorten lateral margin when there is no enough longitudinal
         #                margin to avoid.
         # "reliable": module output avoidance path with safe (rtc cooperate) state only when the vehicle can avoid
         #             with expected lateral margin.
-        lateral_margin: "best_effort"                   # [-]
+        lateral_margin: "reliable"                   # [-]
         # if true, module doesn't wait deceleration and outputs avoidance path by best effort margin.
-        use_shorten_margin_immediately: true            # [-]
+        # use_shorten_margin_immediately: true            # [-]
+        use_shorten_margin_immediately: false            # [-]
 
       constraints:
         # lateral constraints
