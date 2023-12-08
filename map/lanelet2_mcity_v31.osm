@@ -174,8 +174,8 @@
   <node id='-131094' action='modify' visible='true' version='1' lat='42.30078693283' lon='-83.69791100926' />
   <node id='-131095' action='modify' visible='true' version='1' lat='42.30078691504' lon='-83.69792832298' />
   <node id='-131096' action='modify' visible='true' version='1' lat='42.30078596166' lon='-83.6979283146' />
-  <node id='-131097' visible='true' version='1' lat='42.30108563057' lon='-83.69799746103' />
-  <node id='-131098' visible='true' version='1' lat='42.30108574401' lon='-83.6979065468' />
+  <node id='-131097' action='modify' visible='true' version='1' lat='42.30107992711' lon='-83.69799771249' />
+  <node id='-131098' action='modify' visible='true' version='1' lat='42.30108004055' lon='-83.69790679826' />
   <node id='-131099' action='modify' visible='true' version='1' lat='42.30104346534' lon='-83.69796800054' />
   <node id='-131100' action='modify' visible='true' version='1' lat='42.3010442825' lon='-83.6979333733' />
   <node id='-131101' action='modify' visible='true' version='1' lat='42.30104441873' lon='-83.69796800027' />
@@ -62474,7 +62474,7 @@
     <tag k='local_x' v='15.589120' />
     <tag k='local_y' v='110.124121' />
   </node>
-  <node id='60501' visible='true' version='1' lat='42.30095639743' lon='-83.69782233013'>
+  <node id='60501' action='modify' visible='true' version='1' lat='42.30095675249' lon='-83.69781944979'>
     <tag k='ele' v='0.000000' />
     <tag k='local_x' v='14.650519' />
     <tag k='local_y' v='106.235802' />
@@ -62484,7 +62484,7 @@
     <tag k='local_x' v='14.142954' />
     <tag k='local_y' v='110.164605' />
   </node>
-  <node id='60503' visible='true' version='1' lat='42.30095686814' lon='-83.69783180674'>
+  <node id='60503' action='modify' visible='true' version='1' lat='42.30095745991' lon='-83.69783084663'>
     <tag k='ele' v='0.000000' />
     <tag k='local_x' v='14.152525' />
     <tag k='local_y' v='106.664618' />
@@ -62959,7 +62959,7 @@
     <tag k='local_x' v='9.585035' />
     <tag k='local_y' v='102.846198' />
   </node>
-  <node id='60605' action='modify' visible='true' version='1' lat='42.30092260183' lon='-83.69787629016'>
+  <node id='60605' action='modify' visible='true' version='1' lat='42.30092235385' lon='-83.6978777989'>
     <tag k='ele' v='0.000000' />
     <tag k='local_x' v='7.619336' />
     <tag k='local_y' v='99.704111' />

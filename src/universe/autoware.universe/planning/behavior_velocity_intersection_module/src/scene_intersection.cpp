@@ -861,21 +861,24 @@ IntersectionModule::DecisionResult IntersectionModule::modifyPathVelocityDetail(
     planner_data_->current_velocity->twist.linear.y);
   const bool keep_detection =
     (vel_norm < planner_param_.collision_detection.keep_detection_vel_thr);
-  const bool was_safe = std::holds_alternative<IntersectionModule::Safe>(prev_decision_result_);
+    
+  // const bool was_safe = std::holds_alternative<IntersectionModule::Safe>(prev_decision_result_);
   // if ego is over the pass judge line and not stopped
   if (is_over_default_stop_line && !is_over_pass_judge_line && keep_detection) {
     RCLCPP_DEBUG(
       logger_, "is_over_default_stop_line && !is_over_pass_judge_line && keep_detection");
     // do nothing
-  } else if (
-    (was_safe && is_over_default_stop_line && is_over_pass_judge_line && is_go_out_) ||
-    is_permanent_go_) {
-    // is_go_out_: previous RTC approval
-    // activated_: current RTC approval
-    is_permanent_go_ = true;
-    RCLCPP_DEBUG(logger_, "over the pass judge line. no plan needed.");
-    return IntersectionModule::Indecisive{};
   }
+  // else if (
+  //   (was_safe && is_over_default_stop_line && is_over_pass_judge_line && is_go_out_) ||
+  //   is_permanent_go_) {
+  //   // is_go_out_: previous RTC approval
+  //   // activated_: current RTC approval
+  //   is_permanent_go_ = true;
+  //   RCLCPP_DEBUG(logger_, "over the pass judge line. no plan needed.");
+  //   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "over the pass judge line. no plan needed.");
+  //   return IntersectionModule::Indecisive{};
+  // }
 
   if (!first_attention_stop_line_idx_opt || !occlusion_peeking_stop_line_idx_opt) {
     RCLCPP_DEBUG(logger_, "occlusion stop line is null");
