@@ -5,13 +5,13 @@ namespace preview_path{
     : Node("preview_path", options){
         // declare parameters
         this->declare_parameter("max_vel", 5.0);
-        this->declare_parameter("max_curvature", 0.1);
+        this->declare_parameter("curvature_bound", 0.2);
         this->declare_parameter("delta_t", 0.04);
         this->declare_parameter("lookahead_time", 2.0);
 
         // get parameters
         this->get_parameter("max_vel", max_vel);
-        this->get_parameter("max_curvature", max_curvature);
+        this->get_parameter("curvature_bound", curvature_bound);
         this->get_parameter("delta_t", delta_t);
         this->get_parameter("lookahead_time", lookahead_time);
         
@@ -21,10 +21,8 @@ namespace preview_path{
         //register sub
         sub_trajectory = this->create_subscription<Trajectory>(
             "/planning/scenario_planning/trajectory", 10, std::bind(&PreviewPath::trajectory_callback, this, std::placeholders::_1));
-        sub_twist = this->create_subscription<TwistWithCovarianceStamped>(
-            "/sensing/vehicle_velocity_converter/twist_with_covariance", 10, std::bind(&PreviewPath::twist_callback, this, std::placeholders::_1));
-        sub_pose = this->create_subscription<PoseWithCovarianceStamped>(
-            "/localization/pose_estimator/pose_with_covariance", 10, std::bind(&PreviewPath::pose_callback, this, std::placeholders::_1));
+        sub_odom = this->create_subscription<Odometry>(
+            "/localization/kinematic_state", 10, std::bind(&PreviewPath::odom_callback, this, std::placeholders::_1));
         sub_veh_state = this->create_subscription<VehicleState>(
             "/terasim/vehicle_state", 10, std::bind(&PreviewPath::vehStateCB, this, std::placeholders::_1));
         
@@ -33,8 +31,6 @@ namespace preview_path{
             this, get_clock(), 500ms, std::bind(&PreviewPath::on_traj_timer, this));
         veh_timer_ = rclcpp::create_timer(
             this, get_clock(), 20ms, std::bind(&PreviewPath::on_veh_timer, this));
-
-        // RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Empty trajectory received, not processed");
             
         init_path();
     }
@@ -74,12 +70,10 @@ namespace preview_path{
     }
 
     void PreviewPath::on_veh_timer(){
-        if (!is_pose_received || !is_twist_received){
+        if (!is_odom_received){
             return;
         } else{
-            is_pose_received = false;
-            is_twist_received = false;
-            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Processing new vehicle information...");
+            is_odom_received = false;
         }
         
         if (x_vec_preview.empty() || y_vec_preview.empty()){
@@ -115,14 +109,14 @@ namespace preview_path{
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The speed at the closest processed trajectory point is: %f", path_msg.vd);
 
         path_msg.cr = cur_vec_preview[closest_point_idx];
+        path_msg.cr_vector = cur_vec_preview;
         path_msg.vd = speed_vec_preview[closest_point_idx];
-        // path_msg.acc_d = acc_vec_preview[closest_point_idx];
+        // path_msg.vd_vector = speed_vec_preview;
         path_msg.acc_d = 0.0;
+        // path_msg.acc_d = acc_vec_preview[closest_point_idx];
         path_msg.ephi = (float)compute_heading_error(closest_point_idx);
         path_msg.ey = (float)compute_lateral_error(closest_point_idx);
         path_msg.len = remaining_length;
-        path_msg.cr_vector = cur_vec_preview;
-        // path_msg.vd_vector = speed_vec_preview;
         path_msg.timestamp = this->get_clock()->now().seconds();
 
         pub_path->publish(path_msg);
@@ -130,8 +124,8 @@ namespace preview_path{
 
     int PreviewPath::get_closest_index(std::vector<double> x_vec, std::vector<double> y_vec){
         // Extract pose from PoseWithCovarianceStamped message
-        double pose_x = pose_msg.pose.pose.position.x;
-        double pose_y = pose_msg.pose.pose.position.y;
+        double pose_x = odom_msg.pose.pose.position.x;
+        double pose_y = odom_msg.pose.pose.position.y;
 
         int closest_point_idx = -1;
         double seg_distance;
@@ -161,10 +155,10 @@ namespace preview_path{
     }
 
     double PreviewPath::compute_heading_error(int closest_point_idx){
-        double qx = pose_msg.pose.pose.orientation.x;
-        double qy = pose_msg.pose.pose.orientation.y;
-        double qz = pose_msg.pose.pose.orientation.z;
-        double qw = pose_msg.pose.pose.orientation.w;
+        double qx = odom_msg.pose.pose.orientation.x;
+        double qy = odom_msg.pose.pose.orientation.y;
+        double qz = odom_msg.pose.pose.orientation.z;
+        double qw = odom_msg.pose.pose.orientation.w;
 
         // Calculate vehicle heading
         double veh_heading = compute_heading(qx, qy, qz, qw);
@@ -196,8 +190,8 @@ namespace preview_path{
 
     double PreviewPath::compute_lateral_error(int closest_point_idx){
         // Extract pose from PoseWithCovarianceStamped message
-        double pose_x = pose_msg.pose.pose.position.x;
-        double pose_y = pose_msg.pose.pose.position.y;
+        double pose_x = odom_msg.pose.pose.position.x;
+        double pose_y = odom_msg.pose.pose.position.y;
 
         double x_pre = x_vec_preview[closest_point_idx - 1];
         double y_pre = y_vec_preview[closest_point_idx - 1];
@@ -218,7 +212,7 @@ namespace preview_path{
             lateral_error = -lateral_error;
         }
         if (fabs(lateral_error) < 1.0){
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Lateral error: %f", lateral_error);
+            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Lateral error: %f meters", lateral_error);
         } else{
             RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Lateral error too large: %f", lateral_error);
         }
@@ -226,36 +220,64 @@ namespace preview_path{
         return lateral_error;
     }
 
+    double PreviewPath::findRadius(double x1, double y1, double x2, double y2, double x3, double y3) {
+        auto distance = [](double x1, double y1, double x2, double y2) {
+            return std::sqrt(std::pow(x1 - x2, 2) + std::pow(y1 - y2, 2));
+        };
+
+        double AB = distance(x1, y1, x2, y2);
+        double BC = distance(x2, y2, x3, y3);
+        double AC = distance(x1, y1, x3, y3);
+
+        double radius = (AB * BC * AC) / std::sqrt((AB + BC + AC) * (-AB + BC + AC) * (AB - BC + AC) * (AB + BC - AC));
+
+        // Determine winding using cross product
+        double crossProduct = (x2 - x1) * (y3 - y1) - (y2 - y1) * (x3 - x1);
+        if (crossProduct > 0) {
+            return radius; // counterclockwise
+        } else {
+            return -radius; // clockwise
+        }
+    }
+
     void PreviewPath::compute_curvature(){
         cur_vec.clear();
 
-        for(size_t i = 1; i < x_vec.size() - 1; i++) {
-            double dx = x_vec[i+1] - x_vec[i-1];
-            double dy = y_vec[i+1] - y_vec[i-1];
-
-            double ddx = x_vec[i+1] - 2*x_vec[i] + x_vec[i-1];
-            double ddy = y_vec[i+1] - 2*y_vec[i] + y_vec[i-1];
-
-            double curvature = 0;
-
-            // curvature can be positive or nagative
-            double denominator = std::pow(dx * dx + dy * dy, 1.5);
-            if (denominator > 0.000001){
-                curvature = (dx * ddy - dy * ddx) / denominator;
+        size_t gap = 5;
+        if (x_vec.size() < gap){
+            for (size_t i = 0; i < x_vec.size(); i++){
+                cur_vec.push_back(0.0);
             }
-
-            if (curvature > max_curvature) {
-                RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Curvature too large: %f", curvature);
-            } else if (curvature < -max_curvature) {
-                RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Curvature too small: %f", curvature);
-            }
-
-            cur_vec.push_back(curvature * 3);
+            return;
         }
 
-        // Add the first and last element of the curvature vector to the beginning and end
-        cur_vec.insert(cur_vec.begin(), cur_vec[0]);
-        cur_vec.push_back(cur_vec[cur_vec.size()-2]);
+        for(size_t i = gap; i < x_vec.size() - gap; i++) {
+            double radius = findRadius(x_vec[i-gap], y_vec[i-gap], x_vec[i], y_vec[i], x_vec[i+gap], y_vec[i+gap]);
+            double curvature = 1/radius;
+
+            if (curvature > curvature_bound) {
+                RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Curvature too large (bounded to max): %f", curvature);
+                curvature = curvature_bound;
+            } else if (curvature < -curvature_bound) {
+                RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Curvature too small (bounded to min): %f", curvature);
+                curvature = -curvature_bound;
+            }
+
+            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Curvature at point %ld: %f", i, curvature);
+            cur_vec.push_back(curvature);
+        }
+
+        // Record the first and last values
+        int first_val = cur_vec[0];
+        int last_val = cur_vec[cur_vec.size()-1];
+
+        // Insert the first value k times at the beginning
+        cur_vec.insert(cur_vec.begin(), gap, first_val);
+
+        // Insert the last value k times at the end
+        for (size_t i = 0; i < gap; i++) {
+            cur_vec.push_back(last_val);
+        }
     }
 
     void PreviewPath::downsampling(){
@@ -323,7 +345,7 @@ namespace preview_path{
         acc_vec.clear();
         heading_vec.clear();
 
-        // Set the maximum amount of points as 200 (200 * 01meter = 20m max preview distance)
+        // Set the maximum amount of points as 200 (200 * 0.1meter = 20m max preview distance)
         size_t maxNumPoints = 200;
         size_t numPointsToStore = std::min(maxNumPoints, msg->points.size());
 
@@ -346,18 +368,12 @@ namespace preview_path{
 
         // cut off trajectory behind the vehicle
         trajectory_cutoff();
-
         is_trajectory_received = true;
     }
 
-    void PreviewPath::pose_callback(const PoseWithCovarianceStamped::SharedPtr msg){
-        pose_msg = *msg;
-        is_pose_received = true;
-    }
-
-    void PreviewPath::twist_callback(const TwistWithCovarianceStamped::SharedPtr msg){
-        twist_msg = *msg;
-        is_twist_received = true;
+    void PreviewPath::odom_callback(const Odometry::SharedPtr msg){
+        odom_msg = *msg;
+        is_odom_received = true;
     }
 }
 

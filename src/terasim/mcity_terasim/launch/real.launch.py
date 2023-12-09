@@ -29,9 +29,9 @@ def generate_launch_description():
             namespace='/terasim',
             executable='traffic_signal_control',
         ),
-        # Node(
-        #     package='mcity_terasim',
-        #     namespace='/terasim',
-        #     executable='preview_path',
-        # ),
+        Node(
+            package='mcity_terasim',
+            namespace='/terasim',
+            executable='preview_path',
+        ),
     ])

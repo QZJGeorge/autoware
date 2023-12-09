@@ -7,10 +7,9 @@
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
 #include <mcity_msgs/msg/planned_path.hpp>
+#include <nav_msgs/msg/odometry.hpp>
 #include <autoware_auto_planning_msgs/msg/trajectory.hpp>
 #include <autoware_auto_planning_msgs/msg/trajectory_point.hpp>
-#include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
-#include <geometry_msgs/msg/twist_with_covariance_stamped.hpp>
 
 #include <mcity_msgs/msg/vehicle_state.hpp>
 
@@ -19,12 +18,11 @@ namespace preview_path
 
 using namespace std;
 
-using geometry_msgs::msg::PoseWithCovarianceStamped;
-using geometry_msgs::msg::TwistWithCovarianceStamped;
+using nav_msgs::msg::Odometry;
 using mcity_msgs::msg::PlannedPath;
+using mcity_msgs::msg::VehicleState;
 using autoware_auto_planning_msgs::msg::Trajectory;
 
-using mcity_msgs::msg::VehicleState;
 
 class PreviewPath : public rclcpp::Node
 {
@@ -35,13 +33,13 @@ public:
 
 private:
     rclcpp::Publisher<PlannedPath>::SharedPtr pub_path;
+
     rclcpp::Subscription<Trajectory>::SharedPtr sub_trajectory;
-    rclcpp::Subscription<TwistWithCovarianceStamped>::SharedPtr sub_twist;
-    rclcpp::Subscription<PoseWithCovarianceStamped>::SharedPtr sub_pose;
+    rclcpp::Subscription<Odometry>::SharedPtr sub_odom;
+    rclcpp::Subscription<VehicleState>::SharedPtr sub_veh_state;
+
     rclcpp::TimerBase::SharedPtr traj_timer_;
     rclcpp::TimerBase::SharedPtr veh_timer_;
-
-    rclcpp::Subscription<VehicleState>::SharedPtr sub_veh_state;
 
     std::vector<double> x_vec;
     std::vector<double> y_vec;
@@ -59,18 +57,16 @@ private:
 
     double delta_t;
     double max_vel;
-    double max_curvature;
+    double curvature_bound;
     double lookahead_time;
 
     float steering_wheel_angle_cmd;
 
-    PoseWithCovarianceStamped pose_msg;
-    TwistWithCovarianceStamped twist_msg;
+    Odometry odom_msg;
     PlannedPath path_msg;
 
     bool is_trajectory_received = false;
-    bool is_twist_received = false;
-    bool is_pose_received = false;
+    bool is_odom_received = false;
     
     void init_path();
     void on_traj_timer();
@@ -79,8 +75,7 @@ private:
     void trajectory_cutoff();
 
     void trajectory_callback(const Trajectory::SharedPtr msg);
-    void twist_callback(const TwistWithCovarianceStamped::SharedPtr msg);
-    void pose_callback(const PoseWithCovarianceStamped::SharedPtr msg);
+    void odom_callback(const Odometry::SharedPtr msg);
 
     void compute_curvature();
     void downsampling();
@@ -93,6 +88,8 @@ private:
     double compute_lateral_error(int closest_point_idx);
 
     void vehStateCB(const VehicleState::SharedPtr msg);
+
+    double findRadius(double x1, double y1, double x2, double y2, double x3, double y3);
 };
 
 }
