@@ -59,6 +59,7 @@ private:
     double max_vel;
     double curvature_bound;
     double lookahead_time;
+    double heading_offset;
 
     float steering_wheel_angle_cmd;
 

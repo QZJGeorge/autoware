@@ -33,5 +33,12 @@ def generate_launch_description():
             package='mcity_terasim',
             namespace='/terasim',
             executable='preview_path',
+            parameters=[
+                {"max_vel": 5.0},
+                {"curvature_bound": 0.2},
+                {"delta_t": 0.04},
+                {"lookahead_time": 2.0},
+                {"heading_offset": -5.0},
+            ],
         ),
     ])

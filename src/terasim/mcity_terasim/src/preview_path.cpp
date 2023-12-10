@@ -8,12 +8,14 @@ namespace preview_path{
         this->declare_parameter("curvature_bound", 0.2);
         this->declare_parameter("delta_t", 0.04);
         this->declare_parameter("lookahead_time", 2.0);
+        this->declare_parameter("heading_offset", -5.0);
 
         // get parameters
         this->get_parameter("max_vel", max_vel);
         this->get_parameter("curvature_bound", curvature_bound);
         this->get_parameter("delta_t", delta_t);
         this->get_parameter("lookahead_time", lookahead_time);
+        this->get_parameter("heading_offset", heading_offset);
         
         //register pub
         pub_path = this->create_publisher<PlannedPath>("/terasim/preview_path", 10);
@@ -35,8 +37,7 @@ namespace preview_path{
         init_path();
     }
 
-    void PreviewPath::vehStateCB(const VehicleState::SharedPtr msg)
-    {
+    void PreviewPath::vehStateCB(const VehicleState::SharedPtr msg){
         steering_wheel_angle_cmd = msg->steer_state;
     }
 
@@ -161,7 +162,7 @@ namespace preview_path{
         double qw = odom_msg.pose.pose.orientation.w;
 
         // Calculate vehicle heading
-        double veh_heading = compute_heading(qx, qy, qz, qw);
+        double veh_heading = compute_heading(qx, qy, qz, qw) + heading_offset/180.0*M_PI;
 
         // read the heading of the closest point
         double traj_heading = heading_vec_preview[closest_point_idx];
