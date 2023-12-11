@@ -112,9 +112,7 @@ namespace preview_path{
         path_msg.cr = cur_vec_preview[closest_point_idx];
         path_msg.cr_vector = cur_vec_preview;
         path_msg.vd = speed_vec_preview[closest_point_idx];
-        // path_msg.vd_vector = speed_vec_preview;
-        path_msg.acc_d = 0.0;
-        // path_msg.acc_d = acc_vec_preview[closest_point_idx];
+        path_msg.vd_vector = speed_vec_preview;
         path_msg.ephi = (float)compute_heading_error(closest_point_idx);
         path_msg.ey = (float)compute_lateral_error(closest_point_idx);
         path_msg.len = remaining_length;
@@ -264,7 +262,6 @@ namespace preview_path{
                 curvature = -curvature_bound;
             }
 
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Curvature at point %ld: %f", i, curvature);
             cur_vec.push_back(curvature);
         }
 

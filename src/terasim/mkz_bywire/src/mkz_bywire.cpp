@@ -128,23 +128,6 @@ namespace mkz_bywire{
 
     void MkzBywire::publishVehState(){    
         vs_msg.yaw_rate = vs_msg.rtk_gps_twist_angular_vz;
-        vs_msg.heading = XM::Normalise_2PI(vs_msg.heading + gps_angle_calib * M_PI/180.0f);
-
-        double veh_x, veh_y, veh_x2, veh_y2, lat = 0, lon = 0, h=vs_msg.heading;
-        UTM::LLtoUTM(vs_msg.rtk_gps_latitude,
-            vs_msg.rtk_gps_longitude, veh_y, veh_x);
-
-        veh_x2 = veh_x + correct_cg_x * cos(h) - correct_cg_y * sin(h);
-        veh_y2 = veh_y + correct_cg_x * sin(h) + correct_cg_y * cos(h);
-
-        UTM::UTMtoLL(veh_y2, veh_x2, lat, lon);
-
-        vs_msg.x = veh_x2;
-        vs_msg.y = veh_y2;
-        vs_msg.z = vs_msg.rtk_gps_altitude;
-        vs_msg.rtk_gps_latitude = lat;
-        vs_msg.rtk_gps_longitude = lon;
-
         vs_msg.timestamp = this->get_clock()->now().seconds();
         pub_veh_state->publish(vs_msg);
     }

@@ -5,8 +5,6 @@
 #include <math.h>
 #include <sx.hpp>
 #include <xmath.hpp>
-#include <UTM.hpp>
-
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
 
