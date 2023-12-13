@@ -754,7 +754,7 @@ MotionVelocitySmootherNode::calcInitialMotion(
   const double vel_error = vehicle_speed - std::fabs(desired_vel);
 
   if (std::fabs(vel_error) > node_param_.replan_vel_deviation) {
-    RCLCPP_DEBUG(
+    RCLCPP_INFO(
       get_logger(),
       "calcInitialMotion : Large deviation error for speed control. Use current speed for "
       "initial value, desired_vel = %f, vehicle_speed = %f, vel_error = %f, error_thr = %f",
@@ -770,7 +770,7 @@ MotionVelocitySmootherNode::calcInitialMotion(
     if (target_vel >= node_param_.engage_velocity) {
       const double stop_dist = trajectory_utils::calcStopDistance(input_traj, input_closest);
       if (stop_dist > node_param_.stop_dist_to_prohibit_engage) {
-        RCLCPP_DEBUG(
+        RCLCPP_INFO(
           get_logger(),
           "calcInitialMotion : vehicle speed is low (%.3f), and desired speed is high (%.3f). Use "
           "engage speed (%.3f) until vehicle speed reaches engage_vel_thr (%.3f). stop_dist = %.3f",
@@ -778,7 +778,7 @@ MotionVelocitySmootherNode::calcInitialMotion(
         Motion initial_motion = {node_param_.engage_velocity, node_param_.engage_acceleration};
         return {initial_motion, InitializeType::ENGAGING};
       } else {
-        RCLCPP_DEBUG(
+        RCLCPP_INFO(
           get_logger(), "calcInitialMotion : stop point is close (%.3f[m]). no engage.", stop_dist);
       }
     } else if (target_vel > 0.0) {
@@ -810,7 +810,7 @@ MotionVelocitySmootherNode::calcInitialMotion(
 
   // normal update: use closest in current_closest_point_from_prev_output
   Motion initial_motion = {desired_vel, desired_acc};
-  RCLCPP_DEBUG(
+  RCLCPP_INFO(
     get_logger(),
     "calcInitialMotion : normal update. v0 = %f, a0 = %f, vehicle_speed = %f, target_vel = %f",
     initial_motion.vel, initial_motion.acc, vehicle_speed, target_vel);

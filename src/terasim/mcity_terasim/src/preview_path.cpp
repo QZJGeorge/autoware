@@ -65,6 +65,7 @@ namespace preview_path{
         }
 
         compute_curvature();
+        adjust_speed();
         downsampling();
 
         is_trajectory_received = false;
@@ -275,6 +276,21 @@ namespace preview_path{
         // Insert the last value k times at the end
         for (size_t i = 0; i < gap; i++) {
             cur_vec.push_back(last_val);
+        }
+    }
+
+    void PreviewPath::adjust_speed(){
+        for(size_t i = 0; i < cur_vec.size(); i++) {
+            double curvature = cur_vec[i];
+            double speed_limit = 4.0 + (0.1 - fabs(curvature)) * 20.0;
+
+            if (speed_vec[i] > speed_limit) {
+                RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Speed too large (bounded to max): %f", speed_vec[i]);
+                speed_vec[i] = speed_limit;
+            } else if (speed_vec[i] < 0.0) {
+                RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Speed too small (bounded to min): %f", speed_vec[i]);
+                speed_vec[i] = 0.0;
+            }
         }
     }
 
