@@ -745,6 +745,7 @@ MotionVelocitySmootherNode::calcInitialMotion(
   // first time
   if (!current_closest_point_from_prev_output_) {
     Motion initial_motion = {vehicle_speed, 0.0};
+    RCLCPP_INFO(get_logger(), "first time update");
     return {initial_motion, InitializeType::EGO_VELOCITY};
   }
 
@@ -766,7 +767,8 @@ MotionVelocitySmootherNode::calcInitialMotion(
   // if current vehicle velocity is low && base_desired speed is high,
   // use engage_velocity for engage vehicle
   const double engage_vel_thr = node_param_.engage_velocity * node_param_.engage_exit_ratio;
-  if (vehicle_speed < engage_vel_thr) {
+  // if (vehicle_speed < engage_vel_thr) {
+    if (vehicle_speed < engage_vel_thr - 1.0) {
     if (target_vel >= node_param_.engage_velocity) {
       const double stop_dist = trajectory_utils::calcStopDistance(input_traj, input_closest);
       if (stop_dist > node_param_.stop_dist_to_prohibit_engage) {
@@ -792,8 +794,11 @@ MotionVelocitySmootherNode::calcInitialMotion(
   // If the control mode is not AUTONOMOUS (vehicle is not under control of the planning module),
   // use ego velocity/acceleration in the planning for smooth transition from MANUAL to AUTONOMOUS.
   if (node_param_.plan_from_ego_speed_on_manual_mode) {  // could be false for debug purpose
-    const bool is_in_autonomous_control = operation_mode_.is_autoware_control_enabled &&
-                                          operation_mode_.mode == OperationModeState::AUTONOMOUS;
+    // const bool is_in_autonomous_control = operation_mode_.is_autoware_control_enabled &&
+    //                                       operation_mode_.mode == OperationModeState::AUTONOMOUS;
+
+    const bool is_in_autonomous_control = true;
+
     if (!is_in_autonomous_control) {
       RCLCPP_INFO_THROTTLE(
         get_logger(), *clock_, 10000, "Not in autonomous control. Plan from ego velocity.");
@@ -804,6 +809,7 @@ MotionVelocitySmootherNode::calcInitialMotion(
       const auto v0 = std::min(target_vel, vehicle_speed);
       const auto a0 = std::clamp(vehicle_acceleration, p.min_decel, p.max_accel);
       const Motion initial_motion = {v0, a0};
+      RCLCPP_INFO(get_logger(), "not in autonomous mode update");
       return {initial_motion, InitializeType::EGO_VELOCITY};
     }
   }

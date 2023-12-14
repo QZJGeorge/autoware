@@ -38,7 +38,7 @@ def generate_launch_description():
                 {"curvature_bound": 0.2},
                 {"delta_t": 0.04},
                 {"lookahead_time": 2.0},
-                {"heading_offset": -5.0},
+                {"heading_offset": 0.0},
             ],
         ),
     ])
