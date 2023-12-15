@@ -69,6 +69,11 @@ MotionVelocitySmootherNode::MotionVelocitySmootherNode(const rclcpp::NodeOptions
     "~/input/operation_mode_state", 1,
     [this](const OperationModeState::ConstSharedPtr msg) { operation_mode_ = *msg; });
 
+  // customized change for preview control package
+  sub_vehicle_state_ = create_subscription<VehicleState>(
+    "/terasim/vehicle_state", 10,
+    [this](const VehicleState::ConstSharedPtr msg) { vehicle_state_ = *msg; });
+
   // parameter update
   set_param_res_ = this->add_on_set_parameters_callback(
     std::bind(&MotionVelocitySmootherNode::onParameter, this, _1));
@@ -745,7 +750,6 @@ MotionVelocitySmootherNode::calcInitialMotion(
   // first time
   if (!current_closest_point_from_prev_output_) {
     Motion initial_motion = {vehicle_speed, 0.0};
-    RCLCPP_INFO(get_logger(), "first time update");
     return {initial_motion, InitializeType::EGO_VELOCITY};
   }
 
@@ -755,7 +759,7 @@ MotionVelocitySmootherNode::calcInitialMotion(
   const double vel_error = vehicle_speed - std::fabs(desired_vel);
 
   if (std::fabs(vel_error) > node_param_.replan_vel_deviation) {
-    RCLCPP_INFO(
+    RCLCPP_DEBUG(
       get_logger(),
       "calcInitialMotion : Large deviation error for speed control. Use current speed for "
       "initial value, desired_vel = %f, vehicle_speed = %f, vel_error = %f, error_thr = %f",
@@ -767,12 +771,11 @@ MotionVelocitySmootherNode::calcInitialMotion(
   // if current vehicle velocity is low && base_desired speed is high,
   // use engage_velocity for engage vehicle
   const double engage_vel_thr = node_param_.engage_velocity * node_param_.engage_exit_ratio;
-  // if (vehicle_speed < engage_vel_thr) {
-    if (vehicle_speed < engage_vel_thr - 1.0) {
+  if (vehicle_speed < engage_vel_thr) {
     if (target_vel >= node_param_.engage_velocity) {
       const double stop_dist = trajectory_utils::calcStopDistance(input_traj, input_closest);
       if (stop_dist > node_param_.stop_dist_to_prohibit_engage) {
-        RCLCPP_INFO(
+        RCLCPP_DEBUG(
           get_logger(),
           "calcInitialMotion : vehicle speed is low (%.3f), and desired speed is high (%.3f). Use "
           "engage speed (%.3f) until vehicle speed reaches engage_vel_thr (%.3f). stop_dist = %.3f",
@@ -780,7 +783,7 @@ MotionVelocitySmootherNode::calcInitialMotion(
         Motion initial_motion = {node_param_.engage_velocity, node_param_.engage_acceleration};
         return {initial_motion, InitializeType::ENGAGING};
       } else {
-        RCLCPP_INFO(
+        RCLCPP_DEBUG(
           get_logger(), "calcInitialMotion : stop point is close (%.3f[m]). no engage.", stop_dist);
       }
     } else if (target_vel > 0.0) {
@@ -794,29 +797,28 @@ MotionVelocitySmootherNode::calcInitialMotion(
   // If the control mode is not AUTONOMOUS (vehicle is not under control of the planning module),
   // use ego velocity/acceleration in the planning for smooth transition from MANUAL to AUTONOMOUS.
   if (node_param_.plan_from_ego_speed_on_manual_mode) {  // could be false for debug purpose
-    // const bool is_in_autonomous_control = operation_mode_.is_autoware_control_enabled &&
-    //                                       operation_mode_.mode == OperationModeState::AUTONOMOUS;
+    if (!vehicle_state_.by_wire_enabled){
+      const bool is_in_autonomous_control = operation_mode_.is_autoware_control_enabled &&
+                                            operation_mode_.mode == OperationModeState::AUTONOMOUS;
 
-    const bool is_in_autonomous_control = true;
-
-    if (!is_in_autonomous_control) {
-      RCLCPP_INFO_THROTTLE(
-        get_logger(), *clock_, 10000, "Not in autonomous control. Plan from ego velocity.");
-      // We should plan from the current vehicle speed, but if the initial value is greater than the
-      // velocity limit, the current planning algorithm decelerates with a very high deceleration.
-      // To avoid this, we set the initial value of the vehicle speed to be below the speed limit.
-      const auto p = smoother_->getBaseParam();
-      const auto v0 = std::min(target_vel, vehicle_speed);
-      const auto a0 = std::clamp(vehicle_acceleration, p.min_decel, p.max_accel);
-      const Motion initial_motion = {v0, a0};
-      RCLCPP_INFO(get_logger(), "not in autonomous mode update");
-      return {initial_motion, InitializeType::EGO_VELOCITY};
+      if (!is_in_autonomous_control) {
+        RCLCPP_INFO_THROTTLE(
+          get_logger(), *clock_, 10000, "Not in autonomous control. Plan from ego velocity.");
+        // We should plan from the current vehicle speed, but if the initial value is greater than the
+        // velocity limit, the current planning algorithm decelerates with a very high deceleration.
+        // To avoid this, we set the initial value of the vehicle speed to be below the speed limit.
+        const auto p = smoother_->getBaseParam();
+        const auto v0 = std::min(target_vel, vehicle_speed);
+        const auto a0 = std::clamp(vehicle_acceleration, p.min_decel, p.max_accel);
+        const Motion initial_motion = {v0, a0};
+        return {initial_motion, InitializeType::EGO_VELOCITY};
+      }
     }
   }
 
   // normal update: use closest in current_closest_point_from_prev_output
   Motion initial_motion = {desired_vel, desired_acc};
-  RCLCPP_INFO(
+  RCLCPP_DEBUG(
     get_logger(),
     "calcInitialMotion : normal update. v0 = %f, a0 = %f, vehicle_speed = %f, target_vel = %f",
     initial_motion.vel, initial_motion.acc, vehicle_speed, target_vel);

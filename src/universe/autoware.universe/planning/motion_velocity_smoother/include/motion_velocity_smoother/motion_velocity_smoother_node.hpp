@@ -43,6 +43,8 @@
 #include "tier4_planning_msgs/msg/stop_speed_exceeded.hpp"  // temporary
 #include "tier4_planning_msgs/msg/velocity_limit.hpp"       // temporary
 
+#include <mcity_msgs/msg/vehicle_state.hpp>
+
 #include <iostream>
 #include <memory>
 #include <string>
@@ -63,6 +65,8 @@ using nav_msgs::msg::Odometry;
 using tier4_debug_msgs::msg::Float32Stamped;        // temporary
 using tier4_planning_msgs::msg::StopSpeedExceeded;  // temporary
 using tier4_planning_msgs::msg::VelocityLimit;      // temporary
+
+using mcity_msgs::msg::VehicleState;
 
 struct Motion
 {
@@ -86,6 +90,7 @@ private:
   rclcpp::Subscription<Trajectory>::SharedPtr sub_current_trajectory_;
   rclcpp::Subscription<VelocityLimit>::SharedPtr sub_external_velocity_limit_;
   rclcpp::Subscription<OperationModeState>::SharedPtr sub_operation_mode_;
+  rclcpp::Subscription<VehicleState>::SharedPtr sub_vehicle_state_;
 
   Odometry::ConstSharedPtr current_odometry_ptr_;  // current odometry
   AccelWithCovarianceStamped::ConstSharedPtr current_acceleration_ptr_;
@@ -106,6 +111,7 @@ private:
 
   // check if the vehicle is under control of the planning module
   OperationModeState operation_mode_;
+  VehicleState vehicle_state_;
 
   enum class AlgorithmType {
     INVALID = 0,

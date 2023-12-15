@@ -34,7 +34,7 @@ def generate_launch_description():
             namespace='/terasim',
             executable='preview_path',
             parameters=[
-                {"max_vel": 5.0},
+                {"max_vel": 6.0},
                 {"curvature_bound": 0.2},
                 {"delta_t": 0.04},
                 {"lookahead_time": 2.0},

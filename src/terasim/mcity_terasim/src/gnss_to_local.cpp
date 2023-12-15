@@ -21,8 +21,7 @@ namespace gnss_to_local{
     pub_imu = this->create_publisher<Imu>("/sensing/imu/imu_data", 10);
     pub_pose = this->create_publisher<PoseWithCovarianceStamped>("/localization/pose_estimator/pose_with_covariance", 10);
     pub_twist = this->create_publisher<TwistWithCovarianceStamped>("/sensing/vehicle_velocity_converter/twist_with_covariance", 10);
-
-    pub_tf = this->create_publisher<TFMessage>("/tf", 10);
+    // pub_tf = this->create_publisher<TFMessage>("/tf", 10);
 
     sub_imu = this->create_subscription<Imu>(
       "/ins/imu", 10, std::bind(&GnssToLocal::imu_callback, this, std::placeholders::_1));
@@ -77,7 +76,7 @@ namespace gnss_to_local{
     // double sinp = std::sqrt(1 + 2 * (qw * qy - qx * qz));
     // double cosp = std::sqrt(1 - 2 * (qw * qy - qx * qz));
     // double pitch_ori = 2 * std::atan2(sinp, cosp) - M_PI / 2;
-    // // yaw (z-axis rotation)
+    // yaw (z-axis rotation)
     // double siny_cosp = 2 * (qw * qz + qx * qy);
     // double cosy_cosp = 1 - 2 * (qy * qy + qz * qz);
     // double yaw_ori = std::atan2(siny_cosp, cosy_cosp);
@@ -172,28 +171,28 @@ namespace gnss_to_local{
     nav_status = 0;
     odom_status = 0;
 
-    TFMessage tf_msg;
-    TransformStamped transform;
-
-    transform.header.stamp = this->get_clock()->now();
-    transform.header.frame_id = "map";
-    transform.child_frame_id = "base_link";
-    
-    transform.transform.translation.x = (float)easting;
-    transform.transform.translation.y = (float)northing;
-    transform.transform.translation.z = 0.0;
-    
-    transform.transform.rotation.x = qx;
-    transform.transform.rotation.y = qy;
-    transform.transform.rotation.z = qz;
-    transform.transform.rotation.w = qw;
-    
-    tf_msg.transforms.push_back(transform);
-    
-    pub_tf->publish(tf_msg);
     pub_imu->publish(saved_imu_msg);
     pub_pose->publish(pose_with_cov);
     pub_twist->publish(twist_with_cov);
+
+    // TFMessage tf_msg;
+    // TransformStamped transform;
+
+    // transform.header.stamp = this->get_clock()->now();
+    // transform.header.frame_id = "map";
+    // transform.child_frame_id = "base_link";
+    
+    // transform.transform.translation.x = (float)easting;
+    // transform.transform.translation.y = (float)northing;
+    // transform.transform.translation.z = 0.0;
+    
+    // transform.transform.rotation.x = qx;
+    // transform.transform.rotation.y = qy;
+    // transform.transform.rotation.z = qz;
+    // transform.transform.rotation.w = qw;
+    
+    // tf_msg.transforms.push_back(transform);
+    // pub_tf->publish(tf_msg);
   }
 }
 

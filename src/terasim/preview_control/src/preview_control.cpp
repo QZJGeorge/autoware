@@ -2,14 +2,12 @@
 
 namespace preview_control{
     PreviewControl::PreviewControl(const rclcpp::NodeOptions & options)
-    : Node("preview_control", options)
-    {
+    : Node("preview_control", options){
         this->declare_parameter("gain_folder", "/home/mtl12345/autoware/src/terasim/preview_control/data/gain/withoutdelay/");
         this->declare_parameter("max_ey", 1.5);
         this->declare_parameter("max_ephi", 45.0);
         this->declare_parameter("speed_ctrl_kp", 1.3);
-        // this->declare_parameter("speed_ctrl_ki", 0.5);
-        this->declare_parameter("speed_ctrl_ki", 0.0);
+        this->declare_parameter("speed_ctrl_ki", 0.5);
 
         this->get_parameter("gain_folder", gainfolder);
         this->get_parameter("max_ey", max_ey);
@@ -19,12 +17,14 @@ namespace preview_control{
 
         //register pub
         pub_cmd2bywire = this->create_publisher<Control>("/terasim/vehicle_control", 10);
+
         //register sub
         sub_path = this->create_subscription<PlannedPath>(
             "/terasim/preview_path", 10, std::bind(&PreviewControl::pathCB, this, std::placeholders::_1));
         sub_veh_state = this->create_subscription<VehicleState>(
             "/terasim/vehicle_state", 10, std::bind(&PreviewControl::vehStateCB, this, std::placeholders::_1));
 
+        //register timer
         timer_ = rclcpp::create_timer(
             this, get_clock(), 20ms, std::bind(&PreviewControl::on_timer, this));
 

@@ -198,10 +198,6 @@ namespace preview_path{
         double x_next = x_vec_preview[closest_point_idx + 1];
         double y_next = y_vec_preview[closest_point_idx + 1];
 
-        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Previous point (x, y): (%f, %f)", x_pre, y_pre);
-        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Next point (x, y): (%f, %f)", x_next, y_next);
-        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Current vehicle position (x, y): (%f, %f)", pose_x, pose_y);
-
         // Compute the distance from the pose to the line
         double lateral_error = abs((y_next - y_pre) * pose_x - (x_next - x_pre) * pose_y + x_next*y_pre - y_next*x_pre) / sqrt(pow(y_next - y_pre, 2) + pow(x_next - x_pre, 2));
         // Calculate cross product 
@@ -282,7 +278,11 @@ namespace preview_path{
     void PreviewPath::adjust_speed(){
         for(size_t i = 0; i < cur_vec.size(); i++) {
             double curvature = cur_vec[i];
-            double speed_limit = 4.0 + (0.1 - fabs(curvature)) * 20.0;
+            double speed_limit = max_vel - fabs(curvature) * 50.0;
+
+            if (speed_limit < 2.0) {
+                speed_limit = 2.0;
+            }
 
             if (speed_vec[i] > speed_limit) {
                 RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Speed too large (bounded to max): %f", speed_vec[i]);
@@ -321,6 +321,10 @@ namespace preview_path{
                 downsampled_acc_vec.push_back(acc_vec[i]);
                 downsampled_cur_vec.push_back(cur_vec[i]);
                 downsampled_heading_vec.push_back(heading_vec[i]);
+
+                //print out curvature and speed
+                RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Curvature: %f", cur_vec[i]);
+                RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Speed: %f", speed_vec[i]);
 
                 // Reset accumulated time
                 accumulated_time = 0.0;
