@@ -4,19 +4,13 @@ namespace mkz_bywire{
     MkzBywire::MkzBywire(const rclcpp::NodeOptions & options)
     : Node("mkz_bywire", options)
     {
-        this->declare_parameter("max_speed", 5.0);
-        this->declare_parameter("max_throttle", 0.25);
+        this->declare_parameter("max_speed", 8.333);
+        this->declare_parameter("max_throttle", 0.45);
         this->declare_parameter("max_lat_acc", 2.0);
-        this->declare_parameter("correct_cg_x", 1.0);
-        this->declare_parameter("correct_cg_y", 0.0);
-        this->declare_parameter("gps_angle_calib", 0.75);
 
         this->get_parameter("max_speed", max_speed);
         this->get_parameter("max_throttle", max_throttle);
         this->get_parameter("max_lat_acc", max_lat_acc);
-        this->get_parameter("correct_cg_x", correct_cg_y);
-        this->get_parameter("correct_cg_y", correct_cg_y);
-        this->get_parameter("gps_angle_calib", gps_angle_calib);
 
         //register pub
         pub_throttle     = this->create_publisher<ThrottleCmd>("/vehicle/ds/throttle_cmd", 10);

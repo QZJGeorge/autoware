@@ -53,11 +53,11 @@ int PathFollowing::run()
     PVC.steeringAngle = MAX( MIN_STEERING_ANGLE, 
                         MIN( MAX_STEERING_ANGLE, PVC.wheelAngle * STEERING_RATIO));
 
-    // step 3: OUTPUT
+    // step 2: OUTPUT
     if (_vs->speed_x > 0.001f)
         _ctrl->steering = PVC.steeringAngle;
 
-    // step 4: set the delayed steering cmd
+    // step 2: set the delayed steering cmd
     if (count%2==0) //time step 0.04 second
     {
         PVC.delayedCmd[0] = PVC.delayedCmd[1]; //delayed 5th steps 
@@ -90,7 +90,8 @@ float PathFollowing::preview()
     PVC.dE      = - _p2c->ey;   // vehicle - road
     PVC.hE      = - _p2c->ephi; // + : need to turn left; - : need to turn right
     PVC.dERate  = _vs->speed_x * PVC.hE; // vy is ignored
-    PVC.hERate  = _vs->yawRate - _vs->speed_x * _p2c->cr;
+    // PVC.hERate  = _vs->yawRate - _vs->speed_x * _p2c->cr;
+    PVC.hERate  = 0.0;
     PVC.steerAglReal = _vs->steering_wheel_angle / STEERING_RATIO;
 
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "dE=%f, hE=%f, dERate=%f, hERate=%f, steerAglReal=%f",
