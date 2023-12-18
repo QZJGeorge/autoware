@@ -3,7 +3,7 @@
 namespace preview_control{
     PreviewControl::PreviewControl(const rclcpp::NodeOptions & options)
     : Node("preview_control", options){
-        this->declare_parameter("gain_folder", "/home/mtl12345/autoware/src/terasim/preview_control/data/gain/withoutdelay/");
+        this->declare_parameter("gain_folder", "/home/mtl12345/autoware/src/terasim/preview_control/data/gain/withdelay/");
         this->declare_parameter("max_ey", 1.5);
         this->declare_parameter("max_ephi", 45.0);
         this->declare_parameter("speed_ctrl_kp", 1.3);
