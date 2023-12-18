@@ -4,11 +4,11 @@ namespace preview_path{
     PreviewPath::PreviewPath(const rclcpp::NodeOptions & options)
     : Node("preview_path", options){
         // declare parameters
-        this->declare_parameter("max_vel", 5.0);
+        this->declare_parameter("max_vel", 8.333);
         this->declare_parameter("curvature_bound", 0.2);
         this->declare_parameter("delta_t", 0.04);
         this->declare_parameter("lookahead_time", 2.0);
-        this->declare_parameter("heading_offset", -5.0);
+        this->declare_parameter("heading_offset", 0.04);
 
         // get parameters
         this->get_parameter("max_vel", max_vel);
@@ -21,10 +21,12 @@ namespace preview_path{
         pub_path = this->create_publisher<PlannedPath>("/terasim/preview_path", 10);
 
         //register sub
+        sub_pose = this->create_subscription<PoseWithCovarianceStamped>(
+            "/localization/pose_estimator/pose_with_covariance", 10, std::bind(&PreviewPath::pose_callback, this, std::placeholders::_1));
+        sub_twist = this->create_subscription<TwistWithCovarianceStamped>(
+            "/sensing/vehicle_velocity_converter/twist_with_covariance", 10, std::bind(&PreviewPath::twist_callback, this, std::placeholders::_1));
         sub_trajectory = this->create_subscription<Trajectory>(
             "/planning/scenario_planning/trajectory", 10, std::bind(&PreviewPath::trajectory_callback, this, std::placeholders::_1));
-        sub_odom = this->create_subscription<Odometry>(
-            "/localization/kinematic_state", 10, std::bind(&PreviewPath::odom_callback, this, std::placeholders::_1));
         sub_veh_state = this->create_subscription<VehicleState>(
             "/terasim/vehicle_state", 10, std::bind(&PreviewPath::vehStateCB, this, std::placeholders::_1));
         
@@ -35,10 +37,6 @@ namespace preview_path{
             this, get_clock(), 20ms, std::bind(&PreviewPath::on_veh_timer, this));
             
         init_path();
-    }
-
-    void PreviewPath::vehStateCB(const VehicleState::SharedPtr msg){
-        steering_wheel_angle_cmd = msg->steer_state;
     }
 
     void PreviewPath::init_path(){
@@ -65,19 +63,13 @@ namespace preview_path{
         }
 
         compute_curvature();
-        adjust_speed();
+        // adjust_speed();
         downsampling();
 
         is_trajectory_received = false;
     }
 
     void PreviewPath::on_veh_timer(){
-        if (!is_odom_received){
-            return;
-        } else{
-            is_odom_received = false;
-        }
-        
         if (x_vec_preview.empty() || y_vec_preview.empty()){
             RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "No processed trajectory available, aborting...");
             return;
@@ -124,8 +116,8 @@ namespace preview_path{
 
     int PreviewPath::get_closest_index(std::vector<double> x_vec, std::vector<double> y_vec){
         // Extract pose from PoseWithCovarianceStamped message
-        double pose_x = odom_msg.pose.pose.position.x;
-        double pose_y = odom_msg.pose.pose.position.y;
+        double pose_x = pose_msg.pose.pose.position.x;
+        double pose_y = pose_msg.pose.pose.position.y;
 
         int closest_point_idx = -1;
         double seg_distance;
@@ -155,10 +147,10 @@ namespace preview_path{
     }
 
     double PreviewPath::compute_heading_error(int closest_point_idx){
-        double qx = odom_msg.pose.pose.orientation.x;
-        double qy = odom_msg.pose.pose.orientation.y;
-        double qz = odom_msg.pose.pose.orientation.z;
-        double qw = odom_msg.pose.pose.orientation.w;
+        double qx = pose_msg.pose.pose.orientation.x;
+        double qy = pose_msg.pose.pose.orientation.y;
+        double qz = pose_msg.pose.pose.orientation.z;
+        double qw = pose_msg.pose.pose.orientation.w;
 
         // Calculate vehicle heading
         double veh_heading = compute_heading(qx, qy, qz, qw) + heading_offset/180.0*M_PI;
@@ -167,7 +159,7 @@ namespace preview_path{
         double traj_heading = heading_vec_preview[closest_point_idx];
 
         // Calculate the angle between the vehicle heading and the trajectory heading
-        double heading_error = traj_heading - veh_heading;
+        double heading_error = traj_heading - veh_heading + heading_offset;
 
         //bound heading error between -pi and pi
         if (heading_error > M_PI) {
@@ -190,8 +182,8 @@ namespace preview_path{
 
     double PreviewPath::compute_lateral_error(int closest_point_idx){
         // Extract pose from PoseWithCovarianceStamped message
-        double pose_x = odom_msg.pose.pose.position.x;
-        double pose_y = odom_msg.pose.pose.position.y;
+        double pose_x = pose_msg.pose.pose.position.x;
+        double pose_y = pose_msg.pose.pose.position.y;
 
         double x_pre = x_vec_preview[closest_point_idx - 1];
         double y_pre = y_vec_preview[closest_point_idx - 1];
@@ -278,7 +270,7 @@ namespace preview_path{
     void PreviewPath::adjust_speed(){
         for(size_t i = 0; i < cur_vec.size(); i++) {
             double curvature = cur_vec[i];
-            double speed_limit = max_vel - fabs(curvature) * 50.0;
+            double speed_limit = max_vel - fabs(curvature) * 40.0;
 
             if (speed_limit < 2.0) {
                 speed_limit = 2.0;
@@ -318,13 +310,13 @@ namespace preview_path{
                 downsampled_x_vec.push_back(x_vec[i]);
                 downsampled_y_vec.push_back(y_vec[i]);
                 downsampled_speed_vec.push_back(speed_vec[i]);
-                downsampled_acc_vec.push_back(acc_vec[i]);
                 downsampled_cur_vec.push_back(cur_vec[i]);
                 downsampled_heading_vec.push_back(heading_vec[i]);
 
                 //print out curvature and speed
                 RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Curvature: %f", cur_vec[i]);
                 RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Speed: %f", speed_vec[i]);
+
 
                 // Reset accumulated time
                 accumulated_time = 0.0;
@@ -340,7 +332,6 @@ namespace preview_path{
         x_vec_preview = downsampled_x_vec;
         y_vec_preview = downsampled_y_vec;
         speed_vec_preview = downsampled_speed_vec;
-        acc_vec_preview = downsampled_acc_vec;
         cur_vec_preview = downsampled_cur_vec;
         heading_vec_preview = downsampled_heading_vec;
     }
@@ -389,9 +380,16 @@ namespace preview_path{
         is_trajectory_received = true;
     }
 
-    void PreviewPath::odom_callback(const Odometry::SharedPtr msg){
-        odom_msg = *msg;
-        is_odom_received = true;
+    void PreviewPath::pose_callback(const PoseWithCovarianceStamped::SharedPtr msg){
+        pose_msg = *msg;
+    }
+
+    void PreviewPath::twist_callback(const TwistWithCovarianceStamped::SharedPtr msg){
+        twist_msg = *msg;
+    }
+
+    void PreviewPath::vehStateCB(const VehicleState::SharedPtr msg){
+        steering_wheel_angle_cmd = msg->steer_state;
     }
 }
 

@@ -34,11 +34,11 @@ def generate_launch_description():
             namespace='/terasim',
             executable='preview_path',
             parameters=[
-                {"max_vel": 6.0},
+                {"max_vel": 8.333},
                 {"curvature_bound": 0.2},
                 {"delta_t": 0.04},
                 {"lookahead_time": 2.0},
-                {"heading_offset": 0.0},
+                {"heading_offset": 0.04},
             ],
         ),
     ])

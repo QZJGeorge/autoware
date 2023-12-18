@@ -1,5 +1,6 @@
 #include <speed_control.hpp>
 
+
 void SpeedControl::get_padel_opening(float acc, float speed, float & throttle, float & brake)
 {
     // step 0: check
@@ -21,8 +22,7 @@ void SpeedControl::get_padel_opening(float acc, float speed, float & throttle, f
             throttle = 0.26f;
         else if (acc > 0.25)
             throttle = 0.22f;
-        else
-        {
+        else{
             throttle = 0.0f;
             brake    = 0.23f;
         }
