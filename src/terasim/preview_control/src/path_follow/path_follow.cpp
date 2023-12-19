@@ -94,8 +94,8 @@ float PathFollowing::preview()
     PVC.hERate  = 0.0;
     PVC.steerAglReal = _vs->steering_wheel_angle / STEERING_RATIO;
 
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "dE=%f, hE=%f, dERate=%f, hERate=%f, steerAglReal=%f",
-        PVC.dE, PVC.hE, PVC.dERate, PVC.hERate, PVC.steerAglReal);
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "dE=%f, hE=%f, dERate=%f, hERate=%f, steerAglReal=%f",
+    //     PVC.dE, PVC.hE, PVC.dERate, PVC.hERate, PVC.steerAglReal);
 
     //step 2: Feedback Design
     PVC.dEGain              = kfb[vN+0][2]*(1-beta) + kfb[vN+1][2]*beta;
@@ -104,8 +104,8 @@ float PathFollowing::preview()
     PVC.hERateGain          = kfb[vN+0][5]*(1-beta) + kfb[vN+1][5]*beta; // vN-th low, 6th Column
     PVC.steerAglRealGain    = kfb[vN+0][6]*(1-beta) + kfb[vN+1][6]*beta;
 
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "dEGain=%f, dERateGain=%f, hEGain=%f, hERateGain=%f, steerAglRealGain=%f",
-        PVC.dEGain, PVC.dERateGain, PVC.hEGain, PVC.hERateGain, PVC.steerAglRealGain);
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "dEGain=%f, dERateGain=%f, hEGain=%f, hERateGain=%f, steerAglRealGain=%f",
+    //     PVC.dEGain, PVC.dERateGain, PVC.hEGain, PVC.hERateGain, PVC.steerAglRealGain);
 
     for (int i = 0; i < 5; ++i)
         PVC.delayedCmdGain[i]  = kfb[vN+0][7+i]*(1-beta) + kfb[vN+1][7+i]*beta;

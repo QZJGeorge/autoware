@@ -86,7 +86,7 @@ namespace mkz_bywire{
 
     void MkzBywire::publishCmd(){
         if (vs_msg.by_wire_enabled != true){
-            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Drive command received but drive by wire is not enabled");
+            RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Drive command received but drive by wire is not enabled");
             return;
         }
 

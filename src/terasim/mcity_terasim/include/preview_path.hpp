@@ -46,22 +46,24 @@ private:
     std::vector<double> x_vec;
     std::vector<double> y_vec;
     std::vector<double> speed_vec;
-    std::vector<double> acc_vec;
     std::vector<double> heading_vec;
     std::vector<double> cur_vec;
 
     std::vector<double> x_vec_preview;
     std::vector<double> y_vec_preview;
     std::vector<double> speed_vec_preview;
-    std::vector<double> acc_vec_preview;
     std::vector<double> heading_vec_preview;
     std::vector<double> cur_vec_preview;
+
+    uint8_t lookahead_points;
+    uint8_t trajectory_cutoff_size;
 
     double delta_t;
     double max_vel;
     double curvature_bound;
     double lookahead_time;
     double heading_offset;
+    double lateral_offset;
 
     float steering_wheel_angle_cmd;
 
@@ -82,7 +84,6 @@ private:
 
     void trajectory_cutoff();
     void compute_curvature();
-    void adjust_speed();
     void downsampling();
 
     int get_closest_index(std::vector<double> x_vec, std::vector<double> y_vec);

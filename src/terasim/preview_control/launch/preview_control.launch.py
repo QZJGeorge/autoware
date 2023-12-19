@@ -11,8 +11,8 @@ def generate_launch_description():
                 {"gain_folder": "/home/mtl12345/autoware/src/terasim/preview_control/data/gain/withoutdelay/"},
                 {"max_ey": 1.5},
                 {"max_ephi": 45.0},
-                {"speed_ctrl_kp": 1.5},
-                {"speed_ctrl_ki": 0.0},
+                {"speed_ctrl_kp": 1.3},
+                {"speed_ctrl_ki": 0.5},
             ],
         ),
         Node(

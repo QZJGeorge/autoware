@@ -40,8 +40,7 @@ namespace preview_control{
         speedCtrl.ini(_p2c, _vs, _ctrl, speed_ctrl_kp, speed_ctrl_ki, FREQ);
     }
 
-    void PreviewControl::publishCmd()
-    {
+    void PreviewControl::publishCmd(){
         cmd_msg.timestamp = this->get_clock()->now().seconds();
         cmd_msg.brake_cmd       = _ctrl->brake;
         cmd_msg.throttle_cmd    = _ctrl->throttle;
@@ -52,8 +51,7 @@ namespace preview_control{
         pub_cmd2bywire->publish(cmd_msg);
     };
 
-    void PreviewControl::on_timer()
-    {   
+    void PreviewControl::on_timer(){   
         //step 1: check in path or not, and path tracking
         pathFollow.run();
 
@@ -61,25 +59,22 @@ namespace preview_control{
         speedCtrl.run();
 
         // step 3: check stop/go
-        if(p2c.go == 0)
-        {
+        if(p2c.go == 0){
             speedCtrl.set_stop();
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Decision go = 0, set stop");
+            RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Decision go = 0, set stop");
         }
 
         // step 4: check recv state
-        if (this->get_clock()->now().seconds() - p2c.timestamp > 0.5)
-        {
+        if (this->get_clock()->now().seconds() - p2c.timestamp > 0.5){
             speedCtrl.set_stop();
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "NOT able to recv decision result, set stop");    
+            RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "NOT able to recv decision result, set stop");    
         }
 
         // step 6: publish commands
         publishCmd();
     }
 
-    void PreviewControl::vehStateCB(const VehicleState::SharedPtr msg)
-    {
+    void PreviewControl::vehStateCB(const VehicleState::SharedPtr msg){
         if (_vs == NULL) return;
 
         _vs->timestamp               = msg->timestamp;

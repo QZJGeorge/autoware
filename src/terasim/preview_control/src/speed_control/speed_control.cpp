@@ -14,14 +14,18 @@ void SpeedControl::get_padel_opening(float acc, float speed, float & throttle, f
     {
         brake = 0.0f;
 
-        if (acc > 1.5)
+        if (acc > 1.5){
             throttle = 0.42f;
-        else if (acc > 1.0)
+        }
+        else if (acc > 1.0){
             throttle = 0.32f;
-        else if (acc > 0.7)
+        }
+        else if (acc > 0.7){
             throttle = 0.26f;
-        else if (acc > 0.25)
+        }
+        else if (acc > 0.25){
             throttle = 0.22f;
+        }
         else{
             throttle = 0.0f;
             brake    = 0.23f;

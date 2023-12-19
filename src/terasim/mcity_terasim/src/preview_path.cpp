@@ -9,6 +9,9 @@ namespace preview_path{
         this->declare_parameter("delta_t", 0.04);
         this->declare_parameter("lookahead_time", 2.0);
         this->declare_parameter("heading_offset", 0.04);
+        this->declare_parameter("lateral_offset", 0.3);
+        this->declare_parameter("lookahead_points", 5);
+        this->declare_parameter("trajectory_cutoff_size", 10);
 
         // get parameters
         this->get_parameter("max_vel", max_vel);
@@ -16,6 +19,9 @@ namespace preview_path{
         this->get_parameter("delta_t", delta_t);
         this->get_parameter("lookahead_time", lookahead_time);
         this->get_parameter("heading_offset", heading_offset);
+        this->get_parameter("lateral_offset", lateral_offset);
+        this->get_parameter("lookahead_points", lookahead_points);
+        this->get_parameter("trajectory_cutoff_size", trajectory_cutoff_size);
         
         //register pub
         pub_path = this->create_publisher<PlannedPath>("/terasim/preview_path", 10);
@@ -32,7 +38,7 @@ namespace preview_path{
         
         //register timer
         traj_timer_ = rclcpp::create_timer(
-            this, get_clock(), 500ms, std::bind(&PreviewPath::on_traj_timer, this));
+            this, get_clock(), 50ms, std::bind(&PreviewPath::on_traj_timer, this));
         veh_timer_ = rclcpp::create_timer(
             this, get_clock(), 20ms, std::bind(&PreviewPath::on_veh_timer, this));
             
@@ -44,7 +50,6 @@ namespace preview_path{
         path_msg.estop = 0;
         path_msg.go = true;
         path_msg.signal = 0;
-        path_msg.acc_dd = 0.0;
         path_msg.slope = 0.0;
         path_msg.vmax = max_vel;
     }
@@ -54,16 +59,15 @@ namespace preview_path{
             return;
         }
         if (x_vec.empty() || y_vec.empty()){
-            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Empty trajectory received, not processed");
+            RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Empty trajectory received, not processed");
             return;
         }
-        if (x_vec.size() < 3 || x_vec.size() < 3){
-            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Received trajectory too short, not processed");
+        if (x_vec.size() < trajectory_cutoff_size || x_vec.size() < trajectory_cutoff_size){
+            RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Received trajectory too short, not processed");
             return;
         }
 
         compute_curvature();
-        // adjust_speed();
         downsampling();
 
         is_trajectory_received = false;
@@ -71,12 +75,13 @@ namespace preview_path{
 
     void PreviewPath::on_veh_timer(){
         if (x_vec_preview.empty() || y_vec_preview.empty()){
-            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "No processed trajectory available, aborting...");
+            RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "No processed trajectory available, aborting...");
             return;
         }
 
-        if (x_vec_preview.size() < 3 || y_vec_preview.size() < 3){
-            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Processed trajectory too short, aborting...");
+        // each point spans 0.1 meters. Cutoff size 10 = 1 meter.
+        if (x_vec_preview.size() < trajectory_cutoff_size || y_vec_preview.size() < trajectory_cutoff_size){
+            RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Processed trajectory too short, aborting...");
             return;
         }
 
@@ -89,13 +94,12 @@ namespace preview_path{
         }
 
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The curvature at the closest processed trajectory point is: %f", path_msg.cr);
-
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Steering wheel angle cmd: %f", steering_wheel_angle_cmd);
 
-        int remaining_length = x_vec_preview.size() - closest_point_idx;
+        uint8_t remaining_length = x_vec_preview.size() - closest_point_idx;
 
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The remaining length of the processed trajectory is: %d", remaining_length);
-        if (remaining_length < 3){
+        if (remaining_length < trajectory_cutoff_size){
             RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Remaining trajectory too short, aborting...");
             return;
         }
@@ -110,7 +114,6 @@ namespace preview_path{
         path_msg.ey = (float)compute_lateral_error(closest_point_idx);
         path_msg.len = remaining_length;
         path_msg.timestamp = this->get_clock()->now().seconds();
-
         pub_path->publish(path_msg);
     }
 
@@ -158,6 +161,10 @@ namespace preview_path{
         // read the heading of the closest point
         double traj_heading = heading_vec_preview[closest_point_idx];
 
+        if (size_t(closest_point_idx + lookahead_points) < heading_vec_preview.size()){
+            traj_heading = heading_vec_preview[closest_point_idx + lookahead_points];
+        }
+
         // Calculate the angle between the vehicle heading and the trajectory heading
         double heading_error = traj_heading - veh_heading + heading_offset;
 
@@ -204,6 +211,8 @@ namespace preview_path{
         } else{
             RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Lateral error too large: %f", lateral_error);
         }
+
+        lateral_error += lateral_offset;
 
         return lateral_error;
     }
@@ -267,30 +276,10 @@ namespace preview_path{
         }
     }
 
-    void PreviewPath::adjust_speed(){
-        for(size_t i = 0; i < cur_vec.size(); i++) {
-            double curvature = cur_vec[i];
-            double speed_limit = max_vel - fabs(curvature) * 40.0;
-
-            if (speed_limit < 2.0) {
-                speed_limit = 2.0;
-            }
-
-            if (speed_vec[i] > speed_limit) {
-                RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Speed too large (bounded to max): %f", speed_vec[i]);
-                speed_vec[i] = speed_limit;
-            } else if (speed_vec[i] < 0.0) {
-                RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Speed too small (bounded to min): %f", speed_vec[i]);
-                speed_vec[i] = 0.0;
-            }
-        }
-    }
-
     void PreviewPath::downsampling(){
         std::vector<double> downsampled_x_vec;
         std::vector<double> downsampled_y_vec;
         std::vector<double> downsampled_speed_vec;
-        std::vector<double> downsampled_acc_vec;
         std::vector<double> downsampled_cur_vec;
         std::vector<double> downsampled_heading_vec;
 
@@ -312,11 +301,6 @@ namespace preview_path{
                 downsampled_speed_vec.push_back(speed_vec[i]);
                 downsampled_cur_vec.push_back(cur_vec[i]);
                 downsampled_heading_vec.push_back(heading_vec[i]);
-
-                //print out curvature and speed
-                RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Curvature: %f", cur_vec[i]);
-                RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Speed: %f", speed_vec[i]);
-
 
                 // Reset accumulated time
                 accumulated_time = 0.0;
@@ -342,7 +326,6 @@ namespace preview_path{
         x_vec.erase(x_vec.begin(), x_vec.begin() + closest_point_idx-1);
         y_vec.erase(y_vec.begin(), y_vec.begin() + closest_point_idx-1);
         speed_vec.erase(speed_vec.begin(), speed_vec.begin() + closest_point_idx-1);
-        acc_vec.erase(acc_vec.begin(), acc_vec.begin() + closest_point_idx-1);
         heading_vec.erase(heading_vec.begin(), heading_vec.begin() + closest_point_idx-1);
     }
 
@@ -351,7 +334,6 @@ namespace preview_path{
         x_vec.clear();
         y_vec.clear();
         speed_vec.clear();
-        acc_vec.clear();
         heading_vec.clear();
 
         // Set the maximum amount of points as 200 (200 * 0.1meter = 20m max preview distance)
@@ -371,7 +353,6 @@ namespace preview_path{
             x_vec.push_back(point.pose.position.x);
             y_vec.push_back(point.pose.position.y);
             speed_vec.push_back(point.longitudinal_velocity_mps);
-            acc_vec.push_back(point.acceleration_mps2);
             heading_vec.push_back(heading);
         }
 
