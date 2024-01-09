@@ -17,6 +17,7 @@
   <depend>mcity_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>autoware_auto_planning_msgs</depend>
+  <depend>autoware_auto_vehicle_msgs</depend>
  
   <exec_depend>ros2launch</exec_depend>
 

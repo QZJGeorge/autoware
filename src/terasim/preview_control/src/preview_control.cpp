@@ -17,6 +17,8 @@ namespace preview_control{
 
         //register pub
         pub_cmd2bywire = this->create_publisher<Control>("/terasim/vehicle_control", 10);
+        pub_vel_report = this->create_publisher<VelocityReport>("/vehicle/status/velocity_status", 10);
+        pub_steer_report = this->create_publisher<SteeringReport>("/vehicle/status/steering_status", 10);
 
         //register sub
         sub_path = this->create_subscription<PlannedPath>(
@@ -51,6 +53,17 @@ namespace preview_control{
         pub_cmd2bywire->publish(cmd_msg);
     };
 
+    void PreviewControl::publishReport(){
+        vel_report_msg.header.stamp = this->get_clock()->now();
+        vel_report_msg.longitudinal_velocity = _vs->speed_x;
+
+        steer_report_msg.stamp = this->get_clock()->now();
+        steer_report_msg.steering_tire_angle = _vs->steering_wheel_angle;
+
+        pub_vel_report->publish(vel_report_msg);
+        pub_steer_report->publish(steer_report_msg);
+    };
+
     void PreviewControl::on_timer(){   
         //step 1: check in path or not, and path tracking
         pathFollow.run();
@@ -72,6 +85,9 @@ namespace preview_control{
 
         // step 6: publish commands
         publishCmd();
+
+        // step 7: publish report
+        publishReport();
     }
 
     void PreviewControl::vehStateCB(const VehicleState::SharedPtr msg){
