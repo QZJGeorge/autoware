@@ -19,34 +19,16 @@ namespace sumo_autoware_real{
   SumoAutowareReal::SumoAutowareReal(const rclcpp::NodeOptions & options)
   : Node("sumo_autoware_real", options)
   {
-    sub_autoware_state = this->create_subscription<AutowareState>(
-      "/autoware/state", 10, std::bind(&SumoAutowareReal::autoware_state_callback, this, std::placeholders::_1));
-
     cli_set_route_points = this->create_client<SetRoutePoints>("/planning/mission_planning/set_route_points");
 
     timer_ = rclcpp::create_timer(
-      this, get_clock(), 1000ms, std::bind(&SumoAutowareReal::on_timer, this));
+      this, get_clock(), 2000ms, std::bind(&SumoAutowareReal::on_timer, this));
 
-    // init_redis_client();
     init_route_points();
   }
 
   void SumoAutowareReal::on_timer(){
-    // string terasim_status = get_key("terasim_status");
-    // if (terasim_status == "" || terasim_status == "0"){
-    //   RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
-    //   return;
-    // }
-
-    // if (autoware_state == 0){
-    //   RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Waiting for autoware to start up..");
-    //   return;
-    // } else if (autoware_state == 1){
-    //   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Waiting for GNSS localization...");
-    // } else if (autoware_state == 2){
     set_route_points();
-    //   RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Setting route points...");
-    // }
   }
 
   void SumoAutowareReal::init_route_points(){
@@ -59,41 +41,50 @@ namespace sumo_autoware_real{
     wp0.orientation.z = 0.68874525198885;
     wp0.orientation.w = 0.7250034330007105;
 
-    wp1.position.x = 77616.9609375;
-    wp1.position.y = 86880.828125;
+    wp1.position.x = 77650.9140625;
+    wp1.position.y = 86724.375;
     wp1.position.z = 0.0;
 
     wp1.orientation.x = 0.0;
     wp1.orientation.y = 0.0;
-    wp1.orientation.z = -0.7423686519969227;
-    wp1.orientation.w = 0.6699916301956853;
+    wp1.orientation.z = 0.6915604708544391;
+    wp1.orientation.w = 0.7223185690203364;
 
-    wp2.position.x = 77549.984375;
-    wp2.position.y = 86745.5546875;
+    wp2.position.x = 77616.9609375;
+    wp2.position.y = 86880.828125;
     wp2.position.z = 0.0;
 
     wp2.orientation.x = 0.0;
     wp2.orientation.y = 0.0;
-    wp2.orientation.z = -0.7337657020938361;
-    wp2.orientation.w = 0.6794026011362775;
+    wp2.orientation.z = -0.7423686519969227;
+    wp2.orientation.w = 0.6699916301956853;
 
-    wp3.position.x = 77581.4375;
-    wp3.position.y = 86651.9765625;
+    wp3.position.x = 77549.984375;
+    wp3.position.y = 86745.5546875;
     wp3.position.z = 0.0;
 
     wp3.orientation.x = 0.0;
     wp3.orientation.y = 0.0;
-    wp3.orientation.z = -0.015441629002764135;
-    wp3.orientation.w = 0.999880770939086;
+    wp3.orientation.z = -0.7337657020938361;
+    wp3.orientation.w = 0.6794026011362775;
 
-    wp4.position.x = 77587.5625;
-    wp4.position.y = 86523.4140625;
+    wp4.position.x = 77581.4375;
+    wp4.position.y = 86651.9765625;
     wp4.position.z = 0.0;
 
     wp4.orientation.x = 0.0;
     wp4.orientation.y = 0.0;
-    wp4.orientation.z = 0.08106215155563748;
-    wp4.orientation.w = 0.9967090486120666;
+    wp4.orientation.z = -0.015441629002764135;
+    wp4.orientation.w = 0.999880770939086;
+
+    wp5.position.x = 77587.5625;
+    wp5.position.y = 86523.4140625;
+    wp5.position.z = 0.0;
+
+    wp5.orientation.x = 0.0;
+    wp5.orientation.y = 0.0;
+    wp5.orientation.z = 0.08106215155563748;
+    wp5.orientation.w = 0.9967090486120666;
   }
 
   void SumoAutowareReal::set_route_points(){
@@ -107,14 +98,10 @@ namespace sumo_autoware_real{
     auto set_route_points_req = std::make_shared<SetRoutePoints::Request>();
 
     set_route_points_req->header.frame_id = "map";
-    set_route_points_req->goal = wp4;
-    set_route_points_req->waypoints = {wp3};
+    set_route_points_req->goal = wp5;
+    set_route_points_req->waypoints = {wp0, wp1, wp2, wp3, wp4};
 
     auto result_s = cli_set_route_points->async_send_request(set_route_points_req);
-  }
-
-  void SumoAutowareReal::autoware_state_callback(AutowareState::SharedPtr msg){
-    autoware_state = msg->state;
   }
 
   void SumoAutowareReal::init_redis_client(){

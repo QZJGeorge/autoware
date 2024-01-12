@@ -22,7 +22,6 @@
 #include <geometry_msgs/msg/pose.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
 #include <autoware_adapi_v1_msgs/srv/set_route_points.hpp>
-#include <autoware_auto_system_msgs/msg/autoware_state.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
 
 namespace sumo_autoware_real
@@ -33,7 +32,6 @@ using namespace std;
 using geometry_msgs::msg::Pose;
 using geometry_msgs::msg::PoseWithCovarianceStamped;
 using autoware_adapi_v1_msgs::srv::SetRoutePoints;
-using autoware_auto_system_msgs::msg::AutowareState;
 
 class SumoAutowareReal : public rclcpp::Node
 {
@@ -44,13 +42,12 @@ public:
 private:
   int autoware_state = 0;
 
-  Pose wp0, wp1, wp2, wp3, wp4;
+  Pose wp0, wp1, wp2, wp3, wp4, wp5;
 
   redisContext *context;
 
   rclcpp::TimerBase::SharedPtr timer_;
 
-  rclcpp::Subscription<AutowareState>::SharedPtr sub_autoware_state;
   rclcpp::Client<SetRoutePoints>::SharedPtr cli_set_route_points;
 
   void on_timer();
@@ -58,8 +55,6 @@ private:
 
   void init_route_points();
   void set_route_points();
-
-  void autoware_state_callback(AutowareState::SharedPtr msg);
 
   string get_key(string key);
 };

@@ -1,0 +1,49 @@
+[35m[1mConsolidate compiler generated dependencies of target sumo_autoware_real_component[0m
+[ 33%] Built target preview_path
+[ 33%] Built target sumo_autoware_real
+[ 50%] Built target gnss_to_local
+[ 58%] [32mBuilding CXX object CMakeFiles/sumo_autoware_real_component.dir/src/sumo_autoware_real.cpp.o[0m
+[ 66%] [32m[1mLinking CXX shared library libsumo_autoware_real_component.so[0m
+[ 66%] Built target sumo_autoware_real_component
+[35m[1mConsolidate compiler generated dependencies of target gnss_to_local_component[0m
+[ 75%] [32m[1mLinking CXX shared library libgnss_to_local_component.so[0m
+[ 83%] Built target gnss_to_local_component
+[35m[1mConsolidate compiler generated dependencies of target preview_path_component[0m
+[ 91%] [32m[1mLinking CXX shared library libpreview_path_component.so[0m
+[100%] Built target preview_path_component
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/mcity_terasim/sumo_autoware_real
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/mcity_terasim/gnss_to_local
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/mcity_terasim/preview_path
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/include/gnss_to_local.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/include/preview_path.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/include/sumo_autoware_real.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/environment/library_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/environment/library_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/libsumo_autoware_real_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/libgnss_to_local_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/lib/libpreview_path_component.so
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/launch/real.launch.py
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/include/gnss_to_local.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/include/preview_path.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/include/sumo_autoware_real.hpp
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/ament_index/resource_index/package_run_dependencies/mcity_terasim
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/ament_index/resource_index/parent_prefix_path/mcity_terasim
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/environment/path.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/environment/path.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/local_setup.bash
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/local_setup.sh
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/local_setup.zsh
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/local_setup.dsv
+-- Symlinking: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/package.dsv
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/ament_index/resource_index/packages/mcity_terasim
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/ament_index/resource_index/rclcpp_components/mcity_terasim
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/cmake/mcity_terasimConfig.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/cmake/mcity_terasimConfig-version.cmake
+-- Up-to-date symlink: /home/zhijie/autoware/install/mcity_terasim/share/mcity_terasim/package.xml

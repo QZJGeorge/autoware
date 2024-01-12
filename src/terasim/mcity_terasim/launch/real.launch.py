@@ -10,6 +10,11 @@ def generate_launch_description():
             executable='gnss_to_local',
         ),
         Node(
+            package='mcity_terasim',
+            namespace='/terasim',
+            executable='sumo_autoware_real',
+        ),
+        Node(
             package='sumo_terasim',
             namespace='/terasim',
             executable='cav_info_converter',
@@ -40,7 +45,7 @@ def generate_launch_description():
                 {"lookahead_time": 2.0},
                 {"heading_offset": 0.04},
                 {"lateral_offset": 0.3},
-                {"lookahead_points": 5}
+                {"lookahead_points": 5},
                 {"trajectory_cutoff_size": 10},
             ],
         ),
