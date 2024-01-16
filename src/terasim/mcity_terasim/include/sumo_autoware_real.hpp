@@ -42,7 +42,7 @@ public:
 private:
   int autoware_state = 0;
 
-  Pose wp0, wp1, wp2, wp3, wp4, wp5;
+  Pose wp0, wp1, wp2, wp3, wp4;
 
   redisContext *context;
 
