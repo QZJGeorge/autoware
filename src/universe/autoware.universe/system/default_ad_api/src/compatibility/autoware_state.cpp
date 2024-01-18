@@ -23,8 +23,12 @@ namespace default_ad_api
 AutowareStateNode::AutowareStateNode(const rclcpp::NodeOptions & options)
 : Node("autoware_state", options)
 {
+  // const std::vector<std::string> module_names = {
+  //   "sensing", "perception", "map", "localization", "planning", "control", "vehicle", "system",
+  // };
+
   const std::vector<std::string> module_names = {
-    "sensing", "perception", "map", "localization", "planning", "control", "vehicle", "system",
+    "sensing", "map", "localization", "planning", "control", "vehicle", "system",
   };
 
   for (size_t i = 0; i < module_names.size(); ++i) {

@@ -39,8 +39,12 @@ OperationModeNode::OperationModeNode(const rclcpp::NodeOptions & options)
   adaptor.init_cli(cli_mode_, group_cli_);
   adaptor.init_cli(cli_control_, group_cli_);
 
+  // const std::vector<std::string> module_names = {
+  //   "sensing", "perception", "map", "localization", "planning", "control", "vehicle", "system",
+  // };
+
   const std::vector<std::string> module_names = {
-    "sensing", "perception", "map", "localization", "planning", "control", "vehicle", "system",
+    "sensing", "map", "localization", "planning", "control", "vehicle", "system",
   };
 
   for (size_t i = 0; i < module_names.size(); ++i) {

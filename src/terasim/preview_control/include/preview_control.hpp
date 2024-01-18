@@ -15,9 +15,6 @@
 #include <mcity_msgs/msg/vehicle_state.hpp>
 #include <mcity_msgs/msg/planned_path.hpp>
 
-#include <autoware_auto_vehicle_msgs/msg/velocity_report.hpp>
-#include <autoware_auto_vehicle_msgs/msg/steering_report.hpp>
-
 
 #define FREQ    (50)
 
@@ -27,9 +24,6 @@ namespace preview_control
 using mcity_msgs::msg::VehicleState;
 using mcity_msgs::msg::PlannedPath;
 using mcity_msgs::msg::Control;
-
-using autoware_auto_vehicle_msgs::msg::VelocityReport;
-using autoware_auto_vehicle_msgs::msg::SteeringReport;
 
 using namespace std;
 
@@ -41,19 +35,15 @@ public:
     ~PreviewControl() = default;
 
 private:
+    rclcpp::TimerBase::SharedPtr timer_;
+
     rclcpp::Publisher<Control>::SharedPtr pub_cmd2bywire;
-    rclcpp::Publisher<VelocityReport>::SharedPtr pub_vel_report;
-    rclcpp::Publisher<SteeringReport>::SharedPtr pub_steer_report;
 
     rclcpp::Subscription<VehicleState>::SharedPtr sub_veh_state;
     rclcpp::Subscription<PlannedPath>::SharedPtr sub_path;
-    rclcpp::TimerBase::SharedPtr timer_;
 
     long count = 0;
     Control cmd_msg;
-
-    VelocityReport vel_report_msg;
-    SteeringReport steer_report_msg;
 
     //vehicle 
     string gainfolder = "";

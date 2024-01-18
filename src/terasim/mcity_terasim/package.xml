@@ -26,6 +26,7 @@
   <depend>autoware_auto_perception_msgs</depend>
   <depend>autoware_auto_vehicle_msgs</depend>
   <depend>autoware_auto_control_msgs</depend>
+  <depend>tier4_system_msgs</depend>
   <depend>dataspeed_ulc_msgs</depend>
   <depend>dbw_ford_msgs</depend>
 

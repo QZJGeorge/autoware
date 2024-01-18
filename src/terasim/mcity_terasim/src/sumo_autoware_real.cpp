@@ -19,16 +19,50 @@ namespace sumo_autoware_real{
   SumoAutowareReal::SumoAutowareReal(const rclcpp::NodeOptions & options)
   : Node("sumo_autoware_real", options)
   {
+    pub_vel_report = this->create_publisher<VelocityReport>("/vehicle/status/velocity_status", 10);
+    pub_steer_report = this->create_publisher<SteeringReport>("/vehicle/status/steering_status", 10);
+
+    sub_autoware_state = this->create_subscription<AutowareState>(
+      "/autoware/state", 10, std::bind(&SumoAutowareReal::autowareStateCB, this, std::placeholders::_1));
+    sub_veh_state = this->create_subscription<VehicleState>(
+      "/terasim/vehicle_state", 10, std::bind(&SumoAutowareReal::vehStateCB, this, std::placeholders::_1));
+
     cli_set_route_points = this->create_client<SetRoutePoints>("/planning/mission_planning/set_route_points");
+    cli_set_operation_mode = this->create_client<ChangeOperationMode>("/system/operation_mode/change_operation_mode");
+    cli_set_autoware_control = this->create_client<ChangeAutowareControl>("/system/operation_mode/change_autoware_control");
 
     timer_ = rclcpp::create_timer(
-      this, get_clock(), 2000ms, std::bind(&SumoAutowareReal::on_timer, this));
+      this, get_clock(), 50ms, std::bind(&SumoAutowareReal::on_timer, this));
 
     init_route_points();
   }
 
   void SumoAutowareReal::on_timer(){
-    set_route_points();
+    if (autoware_state == 1){
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Waiting for vehicle initialization...");
+      return;
+    } else if (autoware_state == 2){
+      set_route_points();
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting vehicle route points...");
+    } else if (autoware_state == 3){
+      if (veh_state_msg.by_wire_enabled == true){
+        set_operation_mode(AUTONOMOUS);
+      } else {
+        set_operation_mode(LOCAL);
+      }
+
+      VelocityReport vel_report_msg;
+      SteeringReport steer_report_msg;
+
+      vel_report_msg.header.stamp = this->get_clock()->now();
+      vel_report_msg.longitudinal_velocity = veh_state_msg.speed_x;
+
+      steer_report_msg.stamp = this->get_clock()->now();
+      steer_report_msg.steering_tire_angle = veh_state_msg.steer_state;
+
+      pub_vel_report->publish(vel_report_msg);
+      pub_steer_report->publish(steer_report_msg);
+    }
   }
 
   void SumoAutowareReal::init_route_points(){
@@ -93,6 +127,28 @@ namespace sumo_autoware_real{
     set_route_points_req->waypoints = {wp0, wp1, wp2, wp3};
 
     auto result_s = cli_set_route_points->async_send_request(set_route_points_req);
+  }
+
+  void SumoAutowareReal::set_operation_mode(uint8_t mode){
+    auto request = std::make_shared<ChangeOperationMode::Request>();
+    request->mode = mode;
+
+    while (!cli_set_operation_mode->wait_for_service(1s)) {
+      if (!rclcpp::ok()) {
+        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
+      }
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "routing service not available, waiting again...");
+    }
+
+    auto result = cli_set_operation_mode->async_send_request(request);
+  }
+
+  void SumoAutowareReal::autowareStateCB(AutowareState::SharedPtr msg){
+    autoware_state = msg->state;
+  }
+
+  void SumoAutowareReal::vehStateCB(const VehicleState::SharedPtr msg){
+    veh_state_msg = *msg;
   }
 
   void SumoAutowareReal::init_redis_client(){

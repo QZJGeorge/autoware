@@ -797,22 +797,21 @@ MotionVelocitySmootherNode::calcInitialMotion(
   // If the control mode is not AUTONOMOUS (vehicle is not under control of the planning module),
   // use ego velocity/acceleration in the planning for smooth transition from MANUAL to AUTONOMOUS.
   if (node_param_.plan_from_ego_speed_on_manual_mode) {  // could be false for debug purpose
-    if (!vehicle_state_.by_wire_enabled){
-      const bool is_in_autonomous_control = operation_mode_.is_autoware_control_enabled &&
-                                            operation_mode_.mode == OperationModeState::AUTONOMOUS;
+    const bool is_in_autonomous_control = (operation_mode_.is_autoware_control_enabled &&
+                                          operation_mode_.mode == OperationModeState::AUTONOMOUS) || 
+                                          vehicle_state_.by_wire_enabled;
 
-      if (!is_in_autonomous_control) {
-        RCLCPP_INFO_THROTTLE(
-          get_logger(), *clock_, 10000, "Not in autonomous control. Plan from ego velocity.");
-        // We should plan from the current vehicle speed, but if the initial value is greater than the
-        // velocity limit, the current planning algorithm decelerates with a very high deceleration.
-        // To avoid this, we set the initial value of the vehicle speed to be below the speed limit.
-        const auto p = smoother_->getBaseParam();
-        const auto v0 = std::min(target_vel, vehicle_speed);
-        const auto a0 = std::clamp(vehicle_acceleration, p.min_decel, p.max_accel);
-        const Motion initial_motion = {v0, a0};
-        return {initial_motion, InitializeType::EGO_VELOCITY};
-      }
+    if (!is_in_autonomous_control) {
+      RCLCPP_INFO_THROTTLE(
+        get_logger(), *clock_, 10000, "Not in autonomous control. Plan from ego velocity.");
+      // We should plan from the current vehicle speed, but if the initial value is greater than the
+      // velocity limit, the current planning algorithm decelerates with a very high deceleration.
+      // To avoid this, we set the initial value of the vehicle speed to be below the speed limit.
+      const auto p = smoother_->getBaseParam();
+      const auto v0 = std::min(target_vel, vehicle_speed);
+      const auto a0 = std::clamp(vehicle_acceleration, p.min_decel, p.max_accel);
+      const Motion initial_motion = {v0, a0};
+      return {initial_motion, InitializeType::EGO_VELOCITY};
     }
   }
 

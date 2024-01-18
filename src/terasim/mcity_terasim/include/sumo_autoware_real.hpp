@@ -18,11 +18,17 @@
 #include <iostream>
 #include <rclcpp/rclcpp.hpp>
 #include <hiredis/hiredis.h>
-#include <nav_msgs/msg/odometry.hpp>
 #include <geometry_msgs/msg/pose.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
+#include <mcity_msgs/msg/vehicle_state.hpp>
 #include <autoware_adapi_v1_msgs/srv/set_route_points.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
+#include <tier4_system_msgs/srv/change_operation_mode.hpp>
+#include <tier4_system_msgs/srv/change_autoware_control.hpp>
+#include <autoware_auto_vehicle_msgs/msg/velocity_report.hpp>
+#include <autoware_auto_vehicle_msgs/msg/steering_report.hpp>
+#include <autoware_auto_system_msgs/msg/autoware_state.hpp>
+
 
 namespace sumo_autoware_real
 {
@@ -31,7 +37,14 @@ using namespace std;
 
 using geometry_msgs::msg::Pose;
 using geometry_msgs::msg::PoseWithCovarianceStamped;
+using autoware_auto_system_msgs::msg::AutowareState;
+using mcity_msgs::msg::VehicleState;
 using autoware_adapi_v1_msgs::srv::SetRoutePoints;
+using tier4_system_msgs::srv::ChangeOperationMode;
+using tier4_system_msgs::srv::ChangeAutowareControl;
+using autoware_auto_vehicle_msgs::msg::VelocityReport;
+using autoware_auto_vehicle_msgs::msg::SteeringReport;
+
 
 class SumoAutowareReal : public rclcpp::Node
 {
@@ -40,7 +53,15 @@ public:
   ~SumoAutowareReal() = default;
 
 private:
-  int autoware_state = 0;
+  // constants for operation mode
+  uint8_t STOP = 1;
+  uint8_t AUTONOMOUS = 2;
+  uint8_t LOCAL = 3;
+  uint8_t REMOTE = 4;
+
+  int autoware_state = 1;
+
+  VehicleState veh_state_msg;
 
   Pose wp0, wp1, wp2, wp3, wp4;
 
@@ -48,7 +69,15 @@ private:
 
   rclcpp::TimerBase::SharedPtr timer_;
 
+  rclcpp::Publisher<VelocityReport>::SharedPtr pub_vel_report;
+  rclcpp::Publisher<SteeringReport>::SharedPtr pub_steer_report;
+
+  rclcpp::Subscription<AutowareState>::SharedPtr sub_autoware_state;
+  rclcpp::Subscription<VehicleState>::SharedPtr sub_veh_state;
+
   rclcpp::Client<SetRoutePoints>::SharedPtr cli_set_route_points;
+  rclcpp::Client<ChangeOperationMode>::SharedPtr cli_set_operation_mode;
+  rclcpp::Client<ChangeAutowareControl>::SharedPtr cli_set_autoware_control;
 
   void on_timer();
   void init_redis_client();
@@ -56,7 +85,14 @@ private:
   void init_route_points();
   void set_route_points();
 
+  void set_operation_mode(uint8_t mode);
+  void set_autoware_control(bool autoware_control);
+
+  void vehStateCB(const VehicleState::SharedPtr msg);
+  void autowareStateCB(AutowareState::SharedPtr msg);
+
   string get_key(string key);
+  
 };
 
 }
