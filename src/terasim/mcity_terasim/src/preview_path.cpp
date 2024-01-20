@@ -89,22 +89,20 @@ namespace preview_path{
         if (closest_point_idx == -1){
             RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Cannot match vehicle position to processed trajectory point index");
             return;
-        } else{
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The closest processed trajectory point index is: %d", closest_point_idx);
         }
 
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The curvature at the closest processed trajectory point is: %f", path_msg.cr);
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Steering wheel angle cmd: %f", steering_wheel_angle_cmd);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The curvature at the closest processed trajectory point is: %f", path_msg.cr);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Steering wheel angle cmd: %f", steering_wheel_angle_cmd);
 
         uint8_t remaining_length = x_vec_preview.size() - closest_point_idx;
 
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The remaining length of the processed trajectory is: %d", remaining_length);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The remaining length of the processed trajectory is: %d", remaining_length);
         if (remaining_length < trajectory_cutoff_size){
             RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Remaining trajectory too short, aborting...");
             return;
         }
 
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The speed at the closest processed trajectory point is: %f", path_msg.vd);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "The speed at the closest processed trajectory point is: %f", path_msg.vd);
 
         path_msg.cr = cur_vec_preview[closest_point_idx];
         path_msg.cr_vector = cur_vec_preview;
@@ -175,11 +173,11 @@ namespace preview_path{
             heading_error += 2 * M_PI;
         }
 
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Desired trajectory orientation: %f radians", traj_heading);
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Current vehicle heading: %f radians", veh_heading);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Desired trajectory orientation: %f radians", traj_heading);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Current vehicle heading: %f radians", veh_heading);
 
         if (path_msg.ephi < 0.5){
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Orientation error: %f radians", path_msg.ephi);
+            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Orientation error: %f radians", path_msg.ephi);
         } else{
             RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Orientation error too large: %f radians", path_msg.ephi);
         }
@@ -207,7 +205,7 @@ namespace preview_path{
             lateral_error = -lateral_error;
         }
         if (fabs(lateral_error) < 1.0){
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Lateral error: %f meters", lateral_error);
+            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Lateral error: %f meters", lateral_error);
         } else{
             RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Lateral error too large: %f", lateral_error);
         }

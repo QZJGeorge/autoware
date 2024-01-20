@@ -22,6 +22,7 @@
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
 #include <mcity_msgs/msg/vehicle_state.hpp>
 #include <autoware_adapi_v1_msgs/srv/set_route_points.hpp>
+#include <autoware_adapi_v1_msgs/msg/operation_mode_state.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
 #include <tier4_system_msgs/srv/change_operation_mode.hpp>
 #include <tier4_system_msgs/srv/change_autoware_control.hpp>
@@ -40,6 +41,7 @@ using geometry_msgs::msg::PoseWithCovarianceStamped;
 using autoware_auto_system_msgs::msg::AutowareState;
 using mcity_msgs::msg::VehicleState;
 using autoware_adapi_v1_msgs::srv::SetRoutePoints;
+using autoware_adapi_v1_msgs::msg::OperationModeState;
 using tier4_system_msgs::srv::ChangeOperationMode;
 using tier4_system_msgs::srv::ChangeAutowareControl;
 using autoware_auto_vehicle_msgs::msg::VelocityReport;
@@ -63,6 +65,8 @@ private:
 
   VehicleState veh_state_msg;
 
+  OperationModeState operation_mode_state_msg;
+
   Pose wp0, wp1, wp2, wp3, wp4;
 
   redisContext *context;
@@ -74,6 +78,7 @@ private:
 
   rclcpp::Subscription<AutowareState>::SharedPtr sub_autoware_state;
   rclcpp::Subscription<VehicleState>::SharedPtr sub_veh_state;
+  rclcpp::Subscription<OperationModeState>::SharedPtr sub_operation_mode;
 
   rclcpp::Client<SetRoutePoints>::SharedPtr cli_set_route_points;
   rclcpp::Client<ChangeOperationMode>::SharedPtr cli_set_operation_mode;
@@ -89,7 +94,8 @@ private:
   void set_autoware_control(bool autoware_control);
 
   void vehStateCB(const VehicleState::SharedPtr msg);
-  void autowareStateCB(AutowareState::SharedPtr msg);
+  void autowareStateCB(const AutowareState::SharedPtr msg);
+  void operationModeStateCB(const OperationModeState::SharedPtr msg);
 
   string get_key(string key);
   
