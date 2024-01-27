@@ -47,12 +47,14 @@ namespace sumo_autoware_real{
       operation_mode_state_msg.mode = 3;
       set_route_points();
       RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting vehicle route points...");
-    } else if (autoware_state == 3){
-      if (veh_state_msg.by_wire_enabled && (uint8_t)operation_mode_state_msg.mode != AUTONOMOUS){
-        set_operation_mode(AUTONOMOUS);
+    } else{
+      if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x < 0.1 && (uint8_t)operation_mode_state_msg.mode != STOP){
+        set_operation_mode(STOP);
       } else if (!veh_state_msg.by_wire_enabled && (uint8_t)operation_mode_state_msg.mode != LOCAL){
         set_operation_mode(LOCAL);
-      }
+      } else if (veh_state_msg.by_wire_enabled && (uint8_t)operation_mode_state_msg.mode != AUTONOMOUS){
+        set_operation_mode(AUTONOMOUS);
+      } 
     }
 
     VelocityReport vel_report_msg;
@@ -156,31 +158,6 @@ namespace sumo_autoware_real{
 
   void SumoAutowareReal::operationModeStateCB(const OperationModeState::SharedPtr msg){
     operation_mode_state_msg = *msg;
-  }
-
-  void SumoAutowareReal::init_redis_client(){
-    // Connecting to the Redis server on localhost
-    context = redisConnect("127.0.0.1", 6379);
-
-    // handle error
-    if (context == NULL || context->err) {
-      if (context){
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
-      } else {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
-      }
-    } else {
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
-    }
-  }
-
-  string SumoAutowareReal::get_key(string key){
-    // GET key
-    redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
-    string result = "";
-    if (reply->type == REDIS_REPLY_STRING)
-      result = reply->str;
-    return result;
   }
 }
 

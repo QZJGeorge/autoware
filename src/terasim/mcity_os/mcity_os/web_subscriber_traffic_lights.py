@@ -29,9 +29,6 @@ class WebSubscriberTrafficLights(Node):
         'green':0, 'yellow':1, 'red':2 
     }
 
-    # update frequency of the signal timing plan
-    update_frequency = 2
-
     def __init__(self, host='localhost', port=6379, db=0):
         super().__init__('web_subscriber_traffic_lights')
 
@@ -39,7 +36,7 @@ class WebSubscriberTrafficLights(Node):
         self._update_time = -1
         self._thread_list = []
 
-        timer_period = 0.2  # seconds
+        timer_period = 0.1  # seconds
         self.timer = self.create_timer(timer_period, self._update_signal_from_web)
 
         print("Successfully initialize WebSubscriberTrafficLights!")

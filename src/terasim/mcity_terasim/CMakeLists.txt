@@ -42,6 +42,19 @@ rclcpp_components_register_node(gnss_to_local_component
   EXECUTABLE gnss_to_local
 )
 
+#############################  CARLA TO LOCAL  ###################################
+
+ament_auto_add_library(carla_to_local_component SHARED
+  src/carla_to_local.cpp
+)
+
+target_link_libraries(carla_to_local_component Geographic)
+
+rclcpp_components_register_node(carla_to_local_component
+  PLUGIN "carla_to_local::CarlaToLocal"
+  EXECUTABLE carla_to_local
+)
+
 #################################  PREVIEW PATH ######################################
 
 ament_auto_add_library(preview_path_component SHARED

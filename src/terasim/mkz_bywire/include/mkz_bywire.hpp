@@ -71,16 +71,16 @@ private:
     rclcpp::Publisher<TurnSignal>::SharedPtr pub_turn_signal;
     rclcpp::Publisher<VehicleState>::SharedPtr pub_veh_state;
 
-    rclcpp::Subscription<Bool>::SharedPtr sub_sys_enable;
-    rclcpp::Subscription<Odometry>::SharedPtr sub_gps_odom;
-    rclcpp::Subscription<NavSatFix>::SharedPtr sub_gps_fix;
-    rclcpp::Subscription<Control>::SharedPtr sub_cmd;
-
     rclcpp::Subscription<ThrottleReport>::SharedPtr sub_throttle_rept;
     rclcpp::Subscription<BrakeReport>::SharedPtr sub_brake_rept;
     rclcpp::Subscription<SteeringReport>::SharedPtr sub_steer_rept;
     rclcpp::Subscription<GearReport>::SharedPtr sub_gear_rept;
     rclcpp::Subscription<WheelSpeedReport>::SharedPtr sub_wheel_speed;
+
+    rclcpp::Subscription<Bool>::SharedPtr sub_sys_enable;
+    rclcpp::Subscription<Odometry>::SharedPtr sub_gps_odom;
+    rclcpp::Subscription<NavSatFix>::SharedPtr sub_gps_fix;
+    rclcpp::Subscription<Control>::SharedPtr sub_cmd;
 
     rclcpp::TimerBase::SharedPtr timer_;
 
@@ -97,6 +97,7 @@ private:
     float correct_cg_x;
     float correct_cg_y;
     float gps_angle_calib;
+    float autonomous_mode_smooth_time;
 
     bool is_cmd_received = false;
 

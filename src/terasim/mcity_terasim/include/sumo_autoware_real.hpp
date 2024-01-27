@@ -17,7 +17,6 @@
 
 #include <iostream>
 #include <rclcpp/rclcpp.hpp>
-#include <hiredis/hiredis.h>
 #include <geometry_msgs/msg/pose.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
 #include <mcity_msgs/msg/vehicle_state.hpp>
@@ -69,8 +68,6 @@ private:
 
   Pose wp0, wp1, wp2, wp3, wp4;
 
-  redisContext *context;
-
   rclcpp::TimerBase::SharedPtr timer_;
 
   rclcpp::Publisher<VelocityReport>::SharedPtr pub_vel_report;
@@ -85,7 +82,6 @@ private:
   rclcpp::Client<ChangeAutowareControl>::SharedPtr cli_set_autoware_control;
 
   void on_timer();
-  void init_redis_client();
 
   void init_route_points();
   void set_route_points();
@@ -96,9 +92,6 @@ private:
   void vehStateCB(const VehicleState::SharedPtr msg);
   void autowareStateCB(const AutowareState::SharedPtr msg);
   void operationModeStateCB(const OperationModeState::SharedPtr msg);
-
-  string get_key(string key);
-  
 };
 
 }

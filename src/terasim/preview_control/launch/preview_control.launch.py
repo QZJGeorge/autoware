@@ -23,6 +23,7 @@ def generate_launch_description():
                 {"max_speed": 8.333},
                 {"max_throttle": 0.45},
                 {"max_lat_acc": 2.0},
+                {"autonomous_mode_smooth_time", 1.5}
             ],
         ),
     ])

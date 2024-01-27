@@ -134,7 +134,6 @@ namespace gnss_to_local{
 
     pose_with_cov.pose.pose.position.x = (float)easting;
     pose_with_cov.pose.pose.position.y = (float)northing;
-
     pose_with_cov.pose.pose.position.z = (float)0.0;
 
     float qx, qy, qz, qw;
