@@ -50,7 +50,7 @@ def generate_launch_description():
                 {"lookahead_time": 2.0},
                 {"heading_offset": 0.04},
                 {"lateral_offset": 0.2},
-                {"lookahead_points": 4},
+                {"lookahead_points": 5},
                 {"trajectory_cutoff_size": 10},
             ],
         ),

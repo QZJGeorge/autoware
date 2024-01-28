@@ -97,7 +97,6 @@ private:
     float correct_cg_x;
     float correct_cg_y;
     float gps_angle_calib;
-    float autonomous_mode_smooth_time;
 
     bool is_cmd_received = false;
 

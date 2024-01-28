@@ -48,13 +48,13 @@ namespace sumo_autoware_real{
       set_route_points();
       RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting vehicle route points...");
     } else{
-      if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x < 0.1 && (uint8_t)operation_mode_state_msg.mode != STOP){
+      if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x < 0.25 && (uint8_t)operation_mode_state_msg.mode != STOP){
         set_operation_mode(STOP);
-      } else if (!veh_state_msg.by_wire_enabled && (uint8_t)operation_mode_state_msg.mode != LOCAL){
+      } else if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x >= 0.25 && (uint8_t)operation_mode_state_msg.mode != LOCAL){
         set_operation_mode(LOCAL);
       } else if (veh_state_msg.by_wire_enabled && (uint8_t)operation_mode_state_msg.mode != AUTONOMOUS){
         set_operation_mode(AUTONOMOUS);
-      } 
+      }
     }
 
     VelocityReport vel_report_msg;

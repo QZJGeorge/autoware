@@ -7,12 +7,10 @@ namespace mkz_bywire{
         this->declare_parameter("max_speed", 8.333);
         this->declare_parameter("max_throttle", 0.45);
         this->declare_parameter("max_lat_acc", 2.0);
-        this->declare_parameter("autonomous_mode_smooth_time", 1.5);
 
         this->get_parameter("max_speed", max_speed);
         this->get_parameter("max_throttle", max_throttle);
         this->get_parameter("max_lat_acc", max_lat_acc);
-        this->get_parameter("autonomous_mode_smooth_time", autonomous_mode_smooth_time);
 
         //register pub
         pub_throttle     = this->create_publisher<ThrottleCmd>("/vehicle/ds/throttle_cmd", 10);
@@ -194,14 +192,6 @@ namespace mkz_bywire{
         {
             RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "  => Violate rule 7: a_y %f > %fm/s2, set throttle to 0\n", 
                 vs_msg.acc_y, max_lat_acc);
-            cmd_in.throttle = 0.0;
-        }
-
-        // RULE 7: if vehicle just started from stop, disable brake and throttle
-        if(vs_msg.by_wire_enabled == false){
-            autonomous_mode_smooth_time = this->get_clock()->now().seconds();
-        } else if (this->get_clock()->now().seconds() - autonomous_mode_smooth_time < autonomous_mode_smooth_time){
-            cmd_in.brake = 0.0;
             cmd_in.throttle = 0.0;
         }
 
