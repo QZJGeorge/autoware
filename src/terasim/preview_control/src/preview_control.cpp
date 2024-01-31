@@ -43,7 +43,7 @@ namespace preview_control{
         pathFollow.init(_p2c, _vs, _ctrl, gainfolder, max_ey, max_ephi);
         speedCtrl.ini(_p2c, _vs, _ctrl, speed_ctrl_kp, speed_ctrl_ki, FREQ);
 
-        autonomous_mode_protection_start_time = 0.0;
+        auto_startup_smooth_time_refresh = 0.0;
     }
 
     void PreviewControl::publishCmd(){
@@ -76,29 +76,35 @@ namespace preview_control{
             RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "NOT able to recv decision result, set stop");    
         }
 
-        // RULE 5: if vehicle just started from stop, disable brake and throttle
-        bool path_check = std::all_of(_p2c->vd_vector.begin(), _p2c->vd_vector.end(), [](double d){return d > 0.00;});
+        // RULE 5: apply brake to the vehicle if there is a stop in 2 seconds and overwrite preview control
+        int zeroCount = std::count(_p2c->vd_vector.begin(), _p2c->vd_vector.end(), 0.0f);
+        float zero_ratio = float(zeroCount) / float(_p2c->vd_vector.size());
 
-        if (!path_check){
-            _ctrl->brake = max(_ctrl->brake, (float)0.2);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "zero count %d", zeroCount);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "zero ratio %f", zero_ratio);
+
+        if (zero_ratio > 0.0){
             _ctrl->throttle = 0.0;
+            _ctrl->brake = max(_ctrl->brake, float(zero_ratio * 0.5));
+            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "vehicle stop ahead, applying brake %f", _ctrl->brake);
             publishCmd();
             return;
         }
 
-        if ((_vs->by_wire_enabled == true && _vs->speed_x <= 0.25 && path_check)){
-            autonomous_mode_protection_start_time = this->get_clock()->now().seconds();
+        // RULE 6: if vehicle just go from stop, disable brake and throttle for smooth start
+        // given the condition of rule 5 that there is no stop in 2 seconds
+        if ((_vs->by_wire_enabled == true && _vs->speed_x <= 0.25)){
+            auto_startup_smooth_time_refresh = this->get_clock()->now().seconds();
         }
 
-        double time_elapsed = this->get_clock()->now().seconds() - autonomous_mode_protection_start_time;
+        double time_elapsed = this->get_clock()->now().seconds() - auto_startup_smooth_time_refresh;
 
+        // slowly increase throttle in the first 5 seconds
         if(time_elapsed <= autonomous_mode_protection_smooth_time){
-            if (time_elapsed <= autonomous_mode_protection_smooth_time){
-                _ctrl->brake = 0.0;
-                _ctrl->throttle = min(0.09 * time_elapsed, double( _ctrl->throttle));
-                RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
-                RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
-            }
+            _ctrl->brake = 0.0;
+            _ctrl->throttle = min(0.08 * time_elapsed, double( _ctrl->throttle));
+            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
+            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
         }
 
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "vd %f", _p2c->vd);
