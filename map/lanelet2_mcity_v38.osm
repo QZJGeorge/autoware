@@ -91455,14 +91455,6 @@
     <tag k='subtype' v='right_of_way' />
     <tag k='type' v='regulatory_element' />
   </relation>
-  <relation id='10008' visible='true' version='1'>
-    <member type='relation' ref='74271' role='yield' />
-    <member type='relation' ref='54210' role='yield' />
-    <member type='relation' ref='54271' role='yield' />
-    <member type='relation' ref='54330' role='right_of_way' />
-    <tag k='subtype' v='right_of_way' />
-    <tag k='type' v='regulatory_element' />
-  </relation>
   <relation id='10009' visible='true' version='1'>
     <member type='relation' ref='57250' role='yield' />
     <member type='relation' ref='57193' role='yield' />
@@ -91804,7 +91796,6 @@
     <member type='way' ref='45294' role='right' />
     <tag k='speed_limit' v='18' />
     <tag k='subtype' v='road' />
-    <tag k='turn_direction' v='straight' />
     <tag k='type' v='lanelet' />
   </relation>
   <relation id='45504' visible='true' version='1'>
@@ -93232,7 +93223,6 @@
     <member type='way' ref='54016' role='right' />
     <tag k='speed_limit' v='18' />
     <tag k='subtype' v='road' />
-    <tag k='turn_direction' v='right' />
     <tag k='type' v='lanelet' />
   </relation>
   <relation id='54167' action='modify' visible='true' version='1'>
@@ -93261,7 +93251,6 @@
   <relation id='54330' action='modify' visible='true' version='1'>
     <member type='way' ref='54273' role='left' />
     <member type='way' ref='54272' role='right' />
-    <member type='relation' ref='10008' role='regulatory_element' />
     <tag k='speed_limit' v='18' />
     <tag k='subtype' v='road' />
     <tag k='turn_direction' v='straight' />
@@ -94209,7 +94198,6 @@
     <member type='way' ref='54169' role='right' />
     <tag k='speed_limit' v='100' />
     <tag k='subtype' v='road' />
-    <tag k='turn_direction' v='right' />
     <tag k='type' v='lanelet' />
   </relation>
   <relation id='74330' action='modify' visible='true' version='1'>

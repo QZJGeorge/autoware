@@ -63,6 +63,11 @@ private:
     double auto_startup_smooth_time_refresh;
     double autonomous_mode_protection_smooth_time;
 
+    double stop_brake_hold_time;
+    double prev_brake;
+    double prev_throttle;
+    double prev_time;
+
     // GUI_Set_S guiSet;
     PathFollowing pathFollow;
     SpeedControl  speedCtrl;

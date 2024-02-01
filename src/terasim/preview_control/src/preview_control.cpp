@@ -43,6 +43,10 @@ namespace preview_control{
         pathFollow.init(_p2c, _vs, _ctrl, gainfolder, max_ey, max_ephi);
         speedCtrl.ini(_p2c, _vs, _ctrl, speed_ctrl_kp, speed_ctrl_ki, FREQ);
 
+        prev_time = 0.0;
+        prev_throttle = 0.0;
+        prev_brake = 0.0;
+        stop_brake_hold_time = 0.0;
         auto_startup_smooth_time_refresh = 0.0;
     }
 
@@ -77,18 +81,37 @@ namespace preview_control{
         }
 
         // RULE 5: apply brake to the vehicle if there is a stop in 2 seconds and overwrite preview control
-        int zeroCount = std::count(_p2c->vd_vector.begin(), _p2c->vd_vector.end(), 0.0f);
-        float zero_ratio = float(zeroCount) / float(_p2c->vd_vector.size());
+        auto it = std::find(_p2c->vd_vector.begin(), _p2c->vd_vector.end(), 0.0f);
 
-        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "zero count %d", zeroCount);
-        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "zero ratio %f", zero_ratio);
+        int index;
+        if (it != _p2c->vd_vector.end()){
+            index = std::distance (_p2c->vd_vector.begin(), it);
+        }else{
+            index = -1; // or any value to indicate that zero was not found
+        }
 
-        if (zero_ratio > 0.0){
+        double brake_time_elapsed = this->get_clock()->now().seconds() - stop_brake_hold_time;
+
+        if (index != -1){
             _ctrl->throttle = 0.0;
-            _ctrl->brake = max(_ctrl->brake, float(zero_ratio * 0.5));
+            // _ctrl->brake = max(_ctrl->brake, float(0.40 - index * 0.005));
+            double desired_brake = 0.12 + 0.15 - index * 0.003;
+            _ctrl->brake = max((float)prev_brake, (float)desired_brake);
+            prev_brake = _ctrl->brake;
+            stop_brake_hold_time = this->get_clock()->now().seconds();
+
+            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "first zero spped index %d", index);
             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "vehicle stop ahead, applying brake %f", _ctrl->brake);
             publishCmd();
             return;
+        } else if (brake_time_elapsed < 1.0){
+            _ctrl->throttle = 0.0;
+            _ctrl->brake = prev_brake;
+            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "brake hold time %f", brake_time_elapsed);
+            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "brake hold value %f", _ctrl->brake);
+            publishCmd();
+        } else{
+            prev_brake = 0.0;
         }
 
         // RULE 6: if vehicle just go from stop, disable brake and throttle for smooth start
@@ -107,9 +130,20 @@ namespace preview_control{
             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
         }
 
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "vd %f", _p2c->vd);
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle %f", _ctrl->throttle);
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "brake %f", _ctrl->brake);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "vd %f", _p2c->vd);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle %f", _ctrl->throttle);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "brake %f", _ctrl->brake);
+
+        // RULE 7: throttle smooth rule
+        // double max_throttle_inc = (this->get_clock()->now().seconds() - prev_time) * 0.1;
+        double max_allowed_throttle = _vs->speed_x * 0.12 + 0.1;
+
+        max_allowed_throttle = min(max_allowed_throttle, 1.0);
+
+        _ctrl->throttle = min(_ctrl->throttle, float(max_allowed_throttle));
+
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "desired throttle from preview control %f", _ctrl->throttle);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "max allowed smooth throttle %f", max_allowed_throttle);
 
         // step 6: publish commands
         publishCmd();

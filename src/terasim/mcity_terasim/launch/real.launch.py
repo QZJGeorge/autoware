@@ -45,7 +45,7 @@ def generate_launch_description():
             executable='preview_path',
             parameters=[
                 {"max_vel": 8.333},
-                {"curvature_bound": 0.2},
+                {"curvature_bound": 0.20},
                 {"delta_t": 0.04},
                 {"lookahead_time": 2.0},
                 {"heading_offset": 0.04},
