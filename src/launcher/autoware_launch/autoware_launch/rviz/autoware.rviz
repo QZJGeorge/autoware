@@ -867,14 +867,7 @@ Visualization Manager:
                     Color: 119; 11; 32
                   Name: PredictedObjects
                   Namespaces:
-                    acceleration: true
-                    label: true
-                    path: true
-                    path confidence: true
-                    shape: true
-                    twist: true
-                    uuid: true
-                    velocity: true
+                    {}
                   PEDESTRIAN:
                     Alpha: 0.9990000128746033
                     Color: 255; 192; 203
@@ -977,7 +970,6 @@ Visualization Manager:
               Enabled: true
               Name: RouteArea
               Namespaces:
-                end_lanelets: true
                 goal_lanelets: true
                 lane_start_bound: false
                 left_lane_bound: false
@@ -2025,8 +2017,7 @@ Visualization Manager:
                           Enabled: true
                           Name: VirtualWall (Intersection)
                           Namespaces:
-                            intersection74271_stop_factor_text: true
-                            intersection74271_stop_virtual_wall: true
+                            {}
                           Topic:
                             Depth: 5
                             Durability Policy: Volatile
@@ -2627,8 +2618,7 @@ Visualization Manager:
                           Enabled: true
                           Name: VirtualWall (ObstacleCruise)
                           Namespaces:
-                            stop_factor_text: true
-                            stop_virtual_wall: true
+                            {}
                           Topic:
                             Depth: 5
                             Durability Policy: Volatile
@@ -3137,7 +3127,7 @@ Visualization Manager:
     - Acceleration: 0
       Class: rviz_plugins/CarInitialPoseTool
       H vehicle height: 2
-      Interactive: true
+      Interactive: false
       L vehicle length: 4
       Max velocity: 33.29999923706055
       Min velocity: -33.29999923706055
@@ -3190,11 +3180,11 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: -15.858964920043945
+      Scale: -15.735827445983887
       Target Frame: viewer
       Value: TopDownOrtho (rviz_default_plugins)
-      X: 76.06903076171875
-      Y: 129.5746612548828
+      X: -35.31415939331055
+      Y: -48.88561248779297
     Saved:
       - Class: rviz_default_plugins/ThirdPersonFollower
         Distance: 18

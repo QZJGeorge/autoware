@@ -15,8 +15,6 @@
 #include <mcity_msgs/msg/vehicle_state.hpp>
 #include <mcity_msgs/msg/planned_path.hpp>
 
-#include <tier4_planning_msgs/msg/stop_reason_array.hpp>
-
 
 #define FREQ    (50)
 
@@ -26,8 +24,6 @@ namespace preview_control
 using mcity_msgs::msg::VehicleState;
 using mcity_msgs::msg::PlannedPath;
 using mcity_msgs::msg::Control;
-
-using tier4_planning_msgs::msg::StopReasonArray;
 
 using namespace std;
 
@@ -46,12 +42,8 @@ private:
     rclcpp::Subscription<VehicleState>::SharedPtr sub_veh_state;
     rclcpp::Subscription<PlannedPath>::SharedPtr sub_path;
 
-    rclcpp::Subscription<StopReasonArray>::SharedPtr sub_stop_reason;
-
     long count = 0;
     Control cmd_msg;
-
-    StopReasonArray stop_reason_msg;
 
     //vehicle 
     string gainfolder = "";
@@ -62,11 +54,6 @@ private:
 
     double auto_startup_smooth_time_refresh;
     double autonomous_mode_protection_smooth_time;
-
-    double stop_brake_hold_time;
-    double prev_brake;
-    double prev_throttle;
-    double prev_time;
 
     // GUI_Set_S guiSet;
     PathFollowing pathFollow;
@@ -86,8 +73,6 @@ private:
     void publishReport();
     void vehStateCB(const VehicleState::SharedPtr msg);
     void pathCB(const PlannedPath::SharedPtr msg);
-
-    void stopReasonCB(const StopReasonArray::SharedPtr msg);
 };
 
 }

@@ -173,16 +173,6 @@ int SpeedControl::run()
     //step 4: get the padel opening
     get_padel_opening(SC.acc_cmd, SC.speed_x, SC.throttle_cmd, SC.brake_cmd);
 
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "SC.speed_x: %f", SC.speed_x);
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "SC.vd: %f", SC.vd);
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "SC.acc_cmd: %f", SC.acc_cmd);
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "SC.throttle_cmd: %f", SC.throttle_cmd);
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "SC.brake_cmd: %f", SC.brake_cmd);
-
-    // if (SC.vErr < 0.5 && SC.vd > 0.25){
-    //     SC.brake_cmd = 0.0;
-    // }
-
     //step 5: check gear
     //make sure the transmission is shifted to "drive"
     if (_vs->gear_position != GEAR_DRIVE && SC.vd > 0.1) //target speed > 0.1

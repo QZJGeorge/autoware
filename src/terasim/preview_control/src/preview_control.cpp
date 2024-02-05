@@ -25,8 +25,6 @@ namespace preview_control{
             "/terasim/preview_path", 10, std::bind(&PreviewControl::pathCB, this, std::placeholders::_1));
         sub_veh_state = this->create_subscription<VehicleState>(
             "/terasim/vehicle_state", 10, std::bind(&PreviewControl::vehStateCB, this, std::placeholders::_1));
-        sub_stop_reason = this->create_subscription<StopReasonArray>(
-            "/planning/scenario_planning/status/stop_reasons", 10, std::bind(&PreviewControl::stopReasonCB, this, std::placeholders::_1));
 
         //register timer
         timer_ = rclcpp::create_timer(
@@ -43,10 +41,6 @@ namespace preview_control{
         pathFollow.init(_p2c, _vs, _ctrl, gainfolder, max_ey, max_ephi);
         speedCtrl.ini(_p2c, _vs, _ctrl, speed_ctrl_kp, speed_ctrl_ki, FREQ);
 
-        prev_time = 0.0;
-        prev_throttle = 0.0;
-        prev_brake = 0.0;
-        stop_brake_hold_time = 0.0;
         auto_startup_smooth_time_refresh = 0.0;
     }
 
@@ -80,42 +74,23 @@ namespace preview_control{
             RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "NOT able to recv decision result, set stop");    
         }
 
-        // RULE 5: apply brake to the vehicle if there is a stop in 2 seconds and overwrite preview control
+        // step 5.1: custom rules to overwrite preview control
         auto it = std::find(_p2c->vd_vector.begin(), _p2c->vd_vector.end(), 0.0f);
 
-        int index;
+        int stop_index;
         if (it != _p2c->vd_vector.end()){
-            index = std::distance (_p2c->vd_vector.begin(), it);
+            stop_index = std::distance (_p2c->vd_vector.begin(), it);
         }else{
-            index = -1; // or any value to indicate that zero was not found
+            stop_index = -1;
         }
 
-        double brake_time_elapsed = this->get_clock()->now().seconds() - stop_brake_hold_time;
-
-        if (index != -1){
+        // if there is a stop ahead and the vehicle is currently stopped, apply brake
+        if (stop_index != -1 && _vs->speed_x <= 0.05){
             _ctrl->throttle = 0.0;
-            // _ctrl->brake = max(_ctrl->brake, float(0.40 - index * 0.005));
-            double desired_brake = 0.12 + 0.15 - index * 0.003;
-            _ctrl->brake = max((float)prev_brake, (float)desired_brake);
-            prev_brake = _ctrl->brake;
-            stop_brake_hold_time = this->get_clock()->now().seconds();
-
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "first zero spped index %d", index);
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "vehicle stop ahead, applying brake %f", _ctrl->brake);
-            publishCmd();
-            return;
-        } else if (brake_time_elapsed < 1.0){
-            _ctrl->throttle = 0.0;
-            _ctrl->brake = prev_brake;
-            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "brake hold time %f", brake_time_elapsed);
-            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "brake hold value %f", _ctrl->brake);
-            publishCmd();
-        } else{
-            prev_brake = 0.0;
+            _ctrl->brake = max(_ctrl->brake, (float)0.25);
         }
 
-        // RULE 6: if vehicle just go from stop, disable brake and throttle for smooth start
-        // given the condition of rule 5 that there is no stop in 2 seconds
+        // step 5.2: if vehicle just went from stop, disable brake and throttle for smooth start
         if ((_vs->by_wire_enabled == true && _vs->speed_x <= 0.25)){
             auto_startup_smooth_time_refresh = this->get_clock()->now().seconds();
         }
@@ -123,9 +98,9 @@ namespace preview_control{
         double time_elapsed = this->get_clock()->now().seconds() - auto_startup_smooth_time_refresh;
 
         // slowly increase throttle in the first 5 seconds
-        if(time_elapsed <= autonomous_mode_protection_smooth_time){
+        if(time_elapsed <= autonomous_mode_protection_smooth_time && stop_index == -1){
             _ctrl->brake = 0.0;
-            _ctrl->throttle = min(0.08 * time_elapsed, double( _ctrl->throttle));
+            _ctrl->throttle = min(0.1 + 0.05 * time_elapsed, double( _ctrl->throttle));
             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
         }
@@ -134,23 +109,8 @@ namespace preview_control{
         // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle %f", _ctrl->throttle);
         // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "brake %f", _ctrl->brake);
 
-        // RULE 7: throttle smooth rule
-        // double max_throttle_inc = (this->get_clock()->now().seconds() - prev_time) * 0.1;
-        double max_allowed_throttle = _vs->speed_x * 0.12 + 0.1;
-
-        max_allowed_throttle = min(max_allowed_throttle, 1.0);
-
-        _ctrl->throttle = min(_ctrl->throttle, float(max_allowed_throttle));
-
-        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "desired throttle from preview control %f", _ctrl->throttle);
-        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "max allowed smooth throttle %f", max_allowed_throttle);
-
         // step 6: publish commands
         publishCmd();
-    }
-
-    void PreviewControl::stopReasonCB(const StopReasonArray::SharedPtr msg){
-        stop_reason_msg = *msg;
     }
 
     void PreviewControl::vehStateCB(const VehicleState::SharedPtr msg){

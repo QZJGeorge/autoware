@@ -53,7 +53,7 @@ namespace sumo_autoware_cosim{
       RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Setting goal point...");
     } else if (autoware_state == 4){
       set_autoware_control(true);
-      set_operation_mode(AUTONOMOUS);
+      // set_operation_mode(AUTONOMOUS);
       RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Enabling autoware control...");
     }
   }
