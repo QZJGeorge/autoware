@@ -41,14 +41,14 @@ namespace cav_info_converter
     double yaw = get_ori_from_odom(saved_odom_msg);           // convert from quaternion to angle
     std::string mgrs = get_mgrs_from_odom(saved_odom_msg);    // get mgrs format string for conversion
 
-    double lat, lon;
+    double x, y;
     // Convert the MGRS coordinates to UTM coordinates
-    GeographicLib::MGRS::Reverse(mgrs, zone, north, lat, lon, prec);
+    GeographicLib::MGRS::Reverse(mgrs, zone, north, x, y, prec);
 
     json av_state;
 
-    av_state["x"] = lat;
-    av_state["y"] = lon;
+    av_state["x"] = x;
+    av_state["y"] = y;
     av_state["orientation"] = yaw;
     av_state["resolution"] = 0.1;
     av_state["velocity"] = saved_odom_msg.twist.twist.linear.x;

@@ -41,7 +41,7 @@ namespace preview_control{
         pathFollow.init(_p2c, _vs, _ctrl, gainfolder, max_ey, max_ephi);
         speedCtrl.ini(_p2c, _vs, _ctrl, speed_ctrl_kp, speed_ctrl_ki, FREQ);
 
-        auto_startup_smooth_time_refresh = 0.0;
+        autonomous_smooth_time_start = 0.0;
     }
 
     void PreviewControl::publishCmd(){
@@ -74,7 +74,7 @@ namespace preview_control{
             RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "NOT able to recv decision result, set stop");    
         }
 
-        // step 5.1: custom rules to overwrite preview control
+        // step 5: custom rules to overwrite preview control for smooth start and stop
         auto it = std::find(_p2c->vd_vector.begin(), _p2c->vd_vector.end(), 0.0f);
 
         int stop_index;
@@ -84,27 +84,46 @@ namespace preview_control{
             stop_index = -1;
         }
 
-        // if there is a stop ahead and the vehicle is currently stopped, apply brake
-        if (stop_index != -1 && _vs->speed_x <= 0.05){
-            _ctrl->throttle = 0.0;
-            _ctrl->brake = max(_ctrl->brake, (float)0.25);
+        // if there is a stop ahead in 2 seconds
+        if (stop_index <= 50){
+            // if vehicle is currently very slow or stopped, apply small brake.
+            if (_vs->speed_x <= 0.1){
+                _ctrl->throttle = 0.0;
+                _ctrl->brake = min(_ctrl->brake, (float)0.23);
+            }
+            // if the vehicle is moving, follow the decision from preview control
+            else{
+                _ctrl->brake = _ctrl->brake;
+            }
         }
 
-        // step 5.2: if vehicle just went from stop, disable brake and throttle for smooth start
-        if ((_vs->by_wire_enabled == true && _vs->speed_x <= 0.25)){
-            auto_startup_smooth_time_refresh = this->get_clock()->now().seconds();
+        // there is no stop in 2 seconds
+        else{
+            // if vehicle is in low speed, refresh protection time countdown.
+            if ((_vs->speed_x <= 0.25)){
+                autonomous_smooth_time_start = this->get_clock()->now().seconds();
+            }
+
+            double time_elapsed = this->get_clock()->now().seconds() - autonomous_smooth_time_start;
+
+            if (time_elapsed <= autonomous_mode_protection_smooth_time){
+                // there is no stop in 5 seconds, slowly increase throttle for 3 seconds
+                if (stop_index == -1){
+                    _ctrl->brake = 0.0;
+                    _ctrl->throttle = min(0.05 + 0.05 * time_elapsed, double( _ctrl->throttle));
+                    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
+                    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
+                }
+                // there is a stop in 5 seconds, slowly move forward for 3 seconds
+                else{
+                    _ctrl->brake = 0.0;
+                    _ctrl->throttle = min(0.05, double( _ctrl->throttle));
+                    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
+                    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
+                }
+            }
         }
-
-        double time_elapsed = this->get_clock()->now().seconds() - auto_startup_smooth_time_refresh;
-
-        // slowly increase throttle in the first 5 seconds
-        if(time_elapsed <= autonomous_mode_protection_smooth_time && stop_index == -1){
-            _ctrl->brake = 0.0;
-            _ctrl->throttle = min(0.1 + 0.05 * time_elapsed, double( _ctrl->throttle));
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
-        }
-
+        
         // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "vd %f", _p2c->vd);
         // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle %f", _ctrl->throttle);
         // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "brake %f", _ctrl->brake);
@@ -161,14 +180,6 @@ namespace preview_control{
         _p2c->slope_vector.clear();
         for (auto i = 0; i < int(msg->slope_vector.size()); ++i)
             _p2c->slope_vector.push_back(msg->slope_vector.at(i));
-
-        _p2c->x_vector.clear();
-        for (auto i = 0; i < int(msg->x_vector.size()); ++i)
-            _p2c->x_vector.push_back(msg->x_vector.at(i));
-
-        _p2c->y_vector.clear();
-        for (auto i = 0; i < int(msg->y_vector.size()); ++i)
-            _p2c->y_vector.push_back(msg->y_vector.at(i)); 
     }
 }
 

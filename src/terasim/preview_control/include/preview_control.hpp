@@ -52,7 +52,7 @@ private:
     float speed_ctrl_kp = 1.0;
     float speed_ctrl_ki = 1.0;
 
-    double auto_startup_smooth_time_refresh;
+    double autonomous_smooth_time_start;
     double autonomous_mode_protection_smooth_time;
 
     // GUI_Set_S guiSet;
