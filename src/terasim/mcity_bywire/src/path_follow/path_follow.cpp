@@ -40,8 +40,7 @@ int PathFollowing::run()
         _p2c->estop = MAX(_p2c->estop, estop_HIGH);
         
         if (count%25==0)
-        printf("The vehicle departs from the path, ey=%f/%f ephi=%f/%f, set to estop_HIGH\n",
-            _p2c->ey, max_allowed_ey, _p2c->ephi, max_allowed_ephi);
+        RCLCPP_WARN(rclcpp::get_logger(" "), "The vehicle departs from the path, set to estop_HIGH");
     }
 
     //step 1: preview

@@ -31,9 +31,23 @@ void pathProcessing::run(){
     int closest_index = get_closest_index();
 
     _p2c->vd = _p2c->vd_vector[closest_index];
-    _p2c->cr = _p2c->cr_vector[closest_index];
     _p2c->ephi = get_orientation_error(closest_index);
     _p2c->ey = get_lateral_error(closest_index);
+
+    int size = int(_p2c->x_vector.size());
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "remaining preview path %d", size);
+
+    // int size = _p2c->x_vector.size();
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "first x %f", _p2c->x_vector[0]);
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "first y %f", _p2c->y_vector[0]);
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "last x %f", _p2c->x_vector[size-1]);
+    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "last y %f", _p2c->y_vector[size-1]);
+
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "index %d", closest_index);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "vd %f", _p2c->vd);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "cr %f", _p2c->cr);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "ephi %f", _p2c->ephi);
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "ey %f", _p2c->ey);
 }
 
 int pathProcessing::get_closest_index(){
@@ -82,6 +96,10 @@ void pathProcessing::compute_curvature(){
 
         double curvature = 1/radius;
 
+        if (curvature > -0.04 && curvature < 0.04) {
+            curvature = 0.0;
+        } 
+
         if (curvature > max_allowed_curvature) {
             RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Curvature too large (bounded to max): %f", curvature);
             curvature = max_allowed_curvature;
@@ -90,10 +108,12 @@ void pathProcessing::compute_curvature(){
             curvature = -max_allowed_curvature;
         }
 
-        _p2c->cr_vector.push_back(curvature);
+        // _p2c->cr_vector.push_back(curvature);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Curvature %f", curvature);
+        _p2c->cr_vector.push_back(0.0);
     }
 
-    // Record the first and last values
+    // // Record the first and last values
     int first_val = _p2c->cr_vector[0];
     int last_val = _p2c->cr_vector[_p2c->cr_vector.size()-1];
 
@@ -162,8 +182,12 @@ void pathProcessing::downsampling(double preview_time, double desired_time_resol
         double dy = _p2c->y_vector[i+1] - _p2c->y_vector[i];
         double dist = std::sqrt(dx * dx + dy * dy);
 
+        float vd = max(1.5, (double)_p2c->vd_vector[i]);
+
         // Compute the time to the next point
-        accumulated_time += dist / _p2c->vd_vector[i];
+        // accumulated_time += dist / _p2c->vd_vector[i];
+
+        accumulated_time += dist / vd;
         
         if (accumulated_time >= desired_time_resolution) {
             // This point should be included in the downsampled vectors
@@ -173,12 +197,17 @@ void pathProcessing::downsampling(double preview_time, double desired_time_resol
             downsampled_cr_vec.push_back(_p2c->cr_vector[i]);
             downsampled_ori_vec.push_back(_p2c->ori_vector[i]);
 
+            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "pusback index %d", (int)i);
+            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "x %f", _p2c->x_vector[i]);
+            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "y %f", _p2c->y_vector[i]);
+            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "vd %f", _p2c->vd_vector[i]);
+
             // Reset accumulated time
             accumulated_time = 0.0;
         }
 
         // Break if we have enough points for preview
-        if (i >= preview_time / desired_time_resolution){
+        if ((int)downsampled_x_vec.size() >= preview_time / desired_time_resolution){
             break;
         }
     }

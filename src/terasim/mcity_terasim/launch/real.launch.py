@@ -43,4 +43,9 @@ def generate_launch_description():
                 {"trajectory_cutoff_size": 10},
             ],
         ),
+        Node(
+            package='mcity_bywire',
+            namespace='/terasim',
+            executable='gnss_to_local',
+        ),
     ])

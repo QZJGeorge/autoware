@@ -3,7 +3,7 @@
 namespace preview_control{
     PreviewControl::PreviewControl(const rclcpp::NodeOptions & options)
     : Node("preview_control", options){
-        this->declare_parameter("gain_folder", "/home/mtl12345/autoware/src/terasim/preview_control/data/gain/withdelay/");
+        this->declare_parameter("gain_folder", "");
         this->declare_parameter("max_ey", 0.0);
         this->declare_parameter("max_ephi", 0.0);
         this->declare_parameter("max_curvature", 0.0);
@@ -75,18 +75,21 @@ namespace preview_control{
         if(p2c.go == 0){
             speedCtrl.set_stop();
             RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Decision go = 0, set stop");
+            publishCmd();
             return;
         }
 
         if (this->get_clock()->now().seconds() - p2c.timestamp > 1.0){
             speedCtrl.set_stop();
             RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "NOT able to recv decision result, set stop");
+            publishCmd();
             return; 
         }
 
         if (static_cast<int>(_p2c->x_vector.size()) < trajectory_abort_size) {
             speedCtrl.set_stop();
             RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Received trajectory too short, set stop");
+            publishCmd();
             return;
         }
 
@@ -96,6 +99,8 @@ namespace preview_control{
         // step 3: check in path or not, and path tracking
         pathFollow.run();
 
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "steering command %f", _ctrl->steering);
+        
         // step 4: speed control
         speedCtrl.run();
 
@@ -117,10 +122,11 @@ namespace preview_control{
         }
 
         // if there is a stop ahead in 2 seconds
-        if (stop_index <= 50){
+        if (stop_index != -1 && stop_index <= 50){
             if (_vs->speed_x <= 0.5){
                 _ctrl->throttle = 0.0;
                 _ctrl->brake = 0.23;
+                RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "stop ahead in 2 seconds, overwrite control");
             } else{
                 _ctrl->brake = _ctrl->brake;
             }
@@ -129,7 +135,7 @@ namespace preview_control{
         // there is no stop in 2 seconds
         else{
             // if vehicle is in low speed, refresh protection time countdown.
-            if ((_vs->speed_x <= 0.25)){
+            if ((_vs->speed_x <= 0.5)){
                 autonomous_smooth_time_start = this->get_clock()->now().seconds();
             }
 
@@ -139,14 +145,14 @@ namespace preview_control{
                 // there is no stop in 5 seconds, slowly increase throttle
                 if (stop_index == -1){
                     _ctrl->brake = 0.0;
-                    _ctrl->throttle = min(0.05 + 0.05 * time_elapsed, double( _ctrl->throttle));
+                    _ctrl->throttle = 0.1 + 0.05 * time_elapsed;
                     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
                     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
                 }
                 // there is a stop in 5 seconds, slowly move forward for 3 seconds
                 else{
                     _ctrl->brake = 0.0;
-                    _ctrl->throttle = min(0.05, double( _ctrl->throttle));
+                    _ctrl->throttle = 0.05;
                     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
                     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
                 }
@@ -198,6 +204,10 @@ namespace preview_control{
         _p2c->vd_vector.clear();
         for (auto i = 0; i < int(msg->vd_vector.size()); ++i)
             _p2c->vd_vector.push_back(msg->vd_vector.at(i));
+
+        _p2c->ori_vector.clear();
+        for (auto i = 0; i < int(msg->ori_vector.size()); ++i)
+            _p2c->ori_vector.push_back(msg->ori_vector.at(i));
 
         _p2c->slope_vector.clear();
         for (auto i = 0; i < int(msg->slope_vector.size()); ++i)
