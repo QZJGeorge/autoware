@@ -3,20 +3,16 @@
 
 #include <iostream>
 #include <math.h>
-#include <sx.hpp>
+#include <sx_bywire.hpp>
 #include <xmath.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
 
 #include <std_msgs/msg/bool.hpp>
-#include <sensor_msgs/msg/nav_sat_fix.hpp>
 #include <geometry_msgs/msg/twist_with_covariance_stamped.hpp>
-#include <nav_msgs/msg/odometry.hpp>
-#include <sensor_msgs/msg/imu.hpp> 
-#include <sensor_msgs/msg/nav_sat_fix.hpp>
 
-#include <mcity_msgs/msg/vehicle_state.hpp>
 #include <mcity_msgs/msg/control.hpp>
+#include <mcity_msgs/msg/vehicle_state.hpp>
 
 #include <dataspeed_dbw_msgs/msg/throttle_cmd.hpp>
 #include <dataspeed_dbw_msgs/msg/brake_cmd.hpp>
@@ -35,10 +31,7 @@ namespace mkz_bywire
 
 using namespace std;
 
-using sensor_msgs::msg::Imu;
-using sensor_msgs::msg::NavSatFix;
 using std_msgs::msg::Bool;
-using nav_msgs::msg::Odometry;
 
 using mcity_msgs::msg::VehicleState;
 using mcity_msgs::msg::Control;
@@ -78,8 +71,6 @@ private:
     rclcpp::Subscription<WheelSpeedReport>::SharedPtr sub_wheel_speed;
 
     rclcpp::Subscription<Bool>::SharedPtr sub_sys_enable;
-    rclcpp::Subscription<Odometry>::SharedPtr sub_gps_odom;
-    rclcpp::Subscription<NavSatFix>::SharedPtr sub_gps_fix;
     rclcpp::Subscription<Control>::SharedPtr sub_cmd;
 
     rclcpp::TimerBase::SharedPtr timer_;
@@ -94,9 +85,6 @@ private:
     float max_speed;
     float max_throttle;
     float max_lat_acc;
-    float correct_cg_x;
-    float correct_cg_y;
-    float gps_angle_calib;
 
     bool is_cmd_received = false;
 
@@ -113,8 +101,6 @@ private:
     void steerReptCB(const SteeringReport::SharedPtr msg);
     void gearReptCB(const GearReport::SharedPtr msg);
     void wheelspeedReptCB(const WheelSpeedReport::SharedPtr msg);
-    void gpsOdomCB(const Odometry::SharedPtr msg);
-    void gpsFixCB(const NavSatFix::SharedPtr msg);
  
     Control_Value_S cmd_in;
 };

@@ -65,24 +65,6 @@ namespace gnss_to_local{
     saved_imu_msg.orientation.y = qy = quat.y;
     saved_imu_msg.orientation.z = qz = quat.z;
     saved_imu_msg.orientation.w = qw = quat.w;
-
-    // // The following is for debugging purpose only
-    // // roll (x-axis rotation)
-    // double sinr_cosp = 2 * (qw * qx + qy * qz);
-    // double cosr_cosp = 1 - 2 * (qx * qx + qy * qy);
-    // double roll_ori = std::atan2(sinr_cosp, cosr_cosp);
-    // // pitch (y-axis rotation)
-    // double sinp = std::sqrt(1 + 2 * (qw * qy - qx * qz));
-    // double cosp = std::sqrt(1 - 2 * (qw * qy - qx * qz));
-    // double pitch_ori = 2 * std::atan2(sinp, cosp) - M_PI / 2;
-    // yaw (z-axis rotation)
-    // double siny_cosp = 2 * (qw * qz + qx * qy);
-    // double cosy_cosp = 1 - 2 * (qy * qy + qz * qz);
-    // double yaw_ori = std::atan2(siny_cosp, cosy_cosp);
-    // // print out the orientation
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "roll_ori: %f", roll_ori);
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "pitch_ori: %f", pitch_ori);
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "yaw_ori: %f", yaw_ori);
   }
 
   void GnssToLocal::imu_callback(Imu::SharedPtr msg){

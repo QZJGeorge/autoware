@@ -12,11 +12,6 @@ def generate_launch_description():
         Node(
             package='mcity_terasim',
             namespace='/terasim',
-            executable='gnss_to_local',
-        ),
-        Node(
-            package='mcity_terasim',
-            namespace='/terasim',
             executable='sumo_autoware_real',
         ),
         Node(
@@ -44,13 +39,7 @@ def generate_launch_description():
             namespace='/terasim',
             executable='preview_path',
             parameters=[
-                {"max_vel": 8.333},
-                {"curvature_bound": 0.20},
-                {"delta_t": 0.04},
-                {"lookahead_time": 5.0},
-                {"heading_offset": 0.04},
-                {"lateral_offset": 0.2},
-                {"lookahead_points": 5},
+                {"vmax": 8.333},
                 {"trajectory_cutoff_size": 10},
             ],
         ),

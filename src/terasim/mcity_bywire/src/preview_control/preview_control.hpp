@@ -5,6 +5,7 @@
 #include <iostream>
 #include <algorithm>
 #include <sx.hpp>
+#include <path_process.hpp>
 #include <path_follow.hpp>
 #include <speed_control.hpp>
 
@@ -15,6 +16,9 @@
 #include <mcity_msgs/msg/vehicle_state.hpp>
 #include <mcity_msgs/msg/planned_path.hpp>
 
+#include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
+#include <geometry_msgs/msg/twist_with_covariance_stamped.hpp>
+
 
 #define FREQ    (50)
 
@@ -24,6 +28,9 @@ namespace preview_control
 using mcity_msgs::msg::VehicleState;
 using mcity_msgs::msg::PlannedPath;
 using mcity_msgs::msg::Control;
+
+using geometry_msgs::msg::PoseWithCovarianceStamped;
+using geometry_msgs::msg::TwistWithCovarianceStamped;
 
 using namespace std;
 
@@ -39,6 +46,7 @@ private:
 
     rclcpp::Publisher<Control>::SharedPtr pub_cmd2bywire;
 
+    rclcpp::Subscription<PoseWithCovarianceStamped>::SharedPtr sub_pose;
     rclcpp::Subscription<VehicleState>::SharedPtr sub_veh_state;
     rclcpp::Subscription<PlannedPath>::SharedPtr sub_path;
 
@@ -47,15 +55,25 @@ private:
 
     //vehicle 
     string gainfolder = "";
-    float max_ey = 0.8;  //m
-    float max_ephi = 45 * PI/180; //radian
-    float speed_ctrl_kp = 1.0;
-    float speed_ctrl_ki = 1.0;
 
-    double autonomous_smooth_time_start;
-    double autonomous_mode_protection_smooth_time;
+    int trajectory_abort_size     = 0;
+    int heading_lookahead_points   = 0;
+
+    double max_ey                  = 0.0;
+    double max_ephi                = 0.0; //rad
+    double max_curvature           = 0.0;
+    double speed_ctrl_kp           = 0.0;
+    double speed_ctrl_ki           = 0.0;
+    double heading_offset          = 0.0;
+    double lateral_offset          = 0.0;
+    double preview_time            = 0.0;
+    double desired_time_resolution = 0.0;
+
+    double autonomous_smooth_time_start      = 0.0;
+    double autonomous_start_protection_time  = 0.0;
 
     // GUI_Set_S guiSet;
+    pathProcessing pathProcess;
     PathFollowing pathFollow;
     SpeedControl  speedCtrl;
 
@@ -69,8 +87,10 @@ private:
     
     void init();
     void on_timer();
+    void custom_rules();
     void publishCmd();
     void publishReport();
+    void pose_callback(const PoseWithCovarianceStamped::SharedPtr msg);
     void vehStateCB(const VehicleState::SharedPtr msg);
     void pathCB(const PlannedPath::SharedPtr msg);
 };
@@ -78,6 +98,4 @@ private:
 }
 
 #endif
-
-
  

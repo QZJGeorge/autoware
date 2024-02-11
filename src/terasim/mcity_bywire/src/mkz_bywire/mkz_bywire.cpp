@@ -32,10 +32,6 @@ namespace mkz_bywire{
         sub_wheel_speed = this->create_subscription<WheelSpeedReport>(
             "/vehicle/wheel_speed_report", 10, std::bind(&MkzBywire::wheelspeedReptCB, this, std::placeholders::_1));
 
-        sub_gps_odom = this->create_subscription<Odometry>(
-            "/ins/odometry", 10, std::bind(&MkzBywire::gpsOdomCB, this, std::placeholders::_1));
-        sub_gps_fix = this->create_subscription<NavSatFix>(
-            "/ins/nav_sat_fix", 10, std::bind(&MkzBywire::gpsFixCB, this, std::placeholders::_1));
         sub_sys_enable = this->create_subscription<Bool>(
             "/vehicle/dbw_enabled", 10, std::bind(&MkzBywire::sysEnableCB, this, std::placeholders::_1));
         sub_cmd = this->create_subscription<Control>(
@@ -212,19 +208,6 @@ namespace mkz_bywire{
 
         is_cmd_received = true;
     };
-
-    void MkzBywire::gpsFixCB(const NavSatFix::SharedPtr msg)
-    {
-        vs_msg.rtk_gps_longitude  = msg->longitude;
-        vs_msg.rtk_gps_latitude   = msg->latitude;
-        vs_msg.rtk_gps_altitude   = msg->altitude;
-    }
-
-    void MkzBywire::gpsOdomCB(const Odometry::SharedPtr msg){
-        vs_msg.rtk_gps_twist_angular_vx  = msg->twist.twist.angular.z;
-        vs_msg.rtk_gps_twist_angular_vy  = -msg->twist.twist.angular.y;
-        vs_msg.rtk_gps_twist_angular_vz  = -msg->twist.twist.angular.x;
-    }
 
     void MkzBywire::sysEnableCB(const Bool::SharedPtr msg){
         vs_msg.by_wire_enabled = msg->data;

@@ -87,11 +87,15 @@ class  VehState_S
 {
 public:
     double timestamp = 0;
-    double x         = 0;
-    double y         = 0;
-    double z         = 0;
     double heading   = 0;
     double yawRate   = 0;
+    double qx        = 0;
+    double qy        = 0;
+    double qz        = 0;
+    double qw        = 0;
+    double pos_x     = 0;
+    double pos_y     = 0;
+    double pos_z     = 0;
     double speed_x   = 0;
     double speed_y   = 0;
     double speed_z   = 0;
@@ -140,14 +144,17 @@ public:
     double len    = 0.0f;
     double cr     = 0.0f;
 
-    double x      = 0.0f;
-    double y      = 0.0f;
+    double time_resolution = 0.00f;
 
+    double x = 0.0f;
+    double y = 0.0f;
+
+    std::vector<float> x_vector;
+    std::vector<float> y_vector;
     std::vector<float> cr_vector;
     std::vector<float> vd_vector;
+    std::vector<float> ori_vector;
     std::vector<float> slope_vector;
-    std::vector<float>  x_vector;
-    std::vector<float>  y_vector;
 
     void ini()
     {

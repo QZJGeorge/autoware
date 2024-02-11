@@ -61,7 +61,7 @@ public:
         Control_Value_S * const control_output,
         std::string gain_folder,
         float max_allowed_ey_,
-        float max_allowed_eh_
+        float max_allowed_ephi_
     );
 
     int run();
@@ -78,7 +78,7 @@ private:
     Control_Value_S * _ctrl = NULL;
     long count = 0;
     float max_allowed_ey;
-    float max_allowed_eh;
+    float max_allowed_ephi;
     bool consider_delay_lag = false;
 };
 

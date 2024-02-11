@@ -29,19 +29,6 @@ rclcpp_components_register_node(sumo_autoware_real_component
   EXECUTABLE sumo_autoware_real
 )
 
-#############################  GNSS TO LOCAL  ###################################
-
-ament_auto_add_library(gnss_to_local_component SHARED
-  src/gnss_to_local.cpp
-)
-
-target_link_libraries(gnss_to_local_component Geographic)
-
-rclcpp_components_register_node(gnss_to_local_component
-  PLUGIN "gnss_to_local::GnssToLocal"
-  EXECUTABLE gnss_to_local
-)
-
 #############################  CARLA TO LOCAL  ###################################
 
 ament_auto_add_library(carla_to_local_component SHARED

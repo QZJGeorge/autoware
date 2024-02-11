@@ -6,18 +6,14 @@ void PathFollowing::init(
     Control_Value_S * const control_output,
     std::string gain_folder,
     float max_allowed_ey_,
-    float max_allowed_eh_)
+    float max_allowed_ephi_)
 {
     _p2c = planning2control_msg;
     _vs = vehicle_state;
     _ctrl = control_output;
 
-    _p2c->cr_vector.clear();
-    for (int i = 0; i < 100; ++i)
-        _p2c->cr_vector.push_back(0.0f);
-
     max_allowed_ey = max_allowed_ey_;
-    max_allowed_eh = max_allowed_eh_;
+    max_allowed_ephi = max_allowed_ephi_;
 
     loadGains(gain_folder);
 }
@@ -33,7 +29,7 @@ int PathFollowing::run()
 
     //step 0: check in path
     if ( fabs(_p2c->ey) < max_allowed_ey && 
-         fabs(_p2c->ephi) < max_allowed_eh) //rad
+         fabs(_p2c->ephi) < max_allowed_ephi) //rad
         PVC.inPathFlag  = true;
     else
         PVC.inPathFlag  = false;
@@ -45,7 +41,7 @@ int PathFollowing::run()
         
         if (count%25==0)
         printf("The vehicle departs from the path, ey=%f/%f ephi=%f/%f, set to estop_HIGH\n",
-            _p2c->ey, max_allowed_ey, _p2c->ephi, max_allowed_eh);
+            _p2c->ey, max_allowed_ey, _p2c->ephi, max_allowed_ephi);
     }
 
     //step 1: preview

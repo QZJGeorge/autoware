@@ -856,6 +856,46 @@ namespace XM
 
         return MIN(d1, MIN(d2, MIN(d3, d4)));
     }
+
+    static inline double get_radius(double x1, double y1, double x2, double y2, double x3, double y3) {
+        auto distance = [](double x1, double y1, double x2, double y2) {
+            return std::sqrt(std::pow(x1 - x2, 2) + std::pow(y1 - y2, 2));
+        };
+
+        double AB = distance(x1, y1, x2, y2);
+        double BC = distance(x2, y2, x3, y3);
+        double AC = distance(x1, y1, x3, y3);
+
+        double radius = (AB * BC * AC) / std::sqrt((AB + BC + AC) * (-AB + BC + AC) * (AB - BC + AC) * (AB + BC - AC));
+
+        // Determine winding using cross product
+        double crossProduct = (x2 - x1) * (y3 - y1) - (y2 - y1) * (x3 - x1);
+        if (crossProduct > 0) {
+            return radius; // counterclockwise
+        } else {
+            return -radius; // clockwise
+        }
+    }
+
+    static inline void quaternion_to_euler(
+        double qx, double qy, double qz, double qw, 
+        double &roll, double &pitch, double &yaw)
+    {
+        // roll (x-axis rotation)
+        double sinr_cosp = 2 * (qw * qx + qy * qz);
+        double cosr_cosp = 1 - 2 * (qx * qx + qy * qy);
+        roll = std::atan2(sinr_cosp, cosr_cosp);
+        
+        // pitch (y-axis rotation)
+        double sinp = std::sqrt(1 + 2 * (qw * qy - qx * qz));
+        double cosp = std::sqrt(1 - 2 * (qw * qy - qx * qz));
+        pitch = 2 * std::atan2(sinp, cosp) - M_PI / 2;
+        
+        // yaw (z-axis rotation)
+        double siny_cosp = 2 * (qw * qz + qx * qy);
+        double cosy_cosp = 1 - 2 * (qy * qy + qz * qz);
+        yaw = std::atan2(siny_cosp, cosy_cosp);
+    }
 }
 
 #endif
