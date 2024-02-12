@@ -1,0 +1,102 @@
+//  Copyright 2022 Tier IV, Inc. All rights reserved.
+//
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+
+#ifndef MCITY_TERASIM__autoware_interface_HPP_
+#define MCITY_TERASIM__autoware_interface_HPP_
+
+#include <iostream>
+#include <rclcpp/rclcpp.hpp>
+#include <geometry_msgs/msg/pose.hpp>
+#include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
+#include <mcity_msgs/msg/vehicle_state.hpp>
+#include <autoware_adapi_v1_msgs/srv/set_route_points.hpp>
+#include <autoware_adapi_v1_msgs/msg/operation_mode_state.hpp>
+#include <rclcpp_components/register_node_macro.hpp>
+#include <tier4_system_msgs/srv/change_operation_mode.hpp>
+#include <tier4_system_msgs/srv/change_autoware_control.hpp>
+#include <autoware_auto_vehicle_msgs/msg/velocity_report.hpp>
+#include <autoware_auto_vehicle_msgs/msg/steering_report.hpp>
+#include <autoware_auto_system_msgs/msg/autoware_state.hpp>
+
+
+namespace autoware_interface
+{
+
+using namespace std;
+
+using geometry_msgs::msg::Pose;
+using geometry_msgs::msg::PoseWithCovarianceStamped;
+using autoware_auto_system_msgs::msg::AutowareState;
+using mcity_msgs::msg::VehicleState;
+using autoware_adapi_v1_msgs::srv::SetRoutePoints;
+using autoware_adapi_v1_msgs::msg::OperationModeState;
+using tier4_system_msgs::srv::ChangeOperationMode;
+using tier4_system_msgs::srv::ChangeAutowareControl;
+using autoware_auto_vehicle_msgs::msg::VelocityReport;
+using autoware_auto_vehicle_msgs::msg::SteeringReport;
+
+
+class AutowareInterface : public rclcpp::Node
+{
+public:
+  explicit AutowareInterface(const rclcpp::NodeOptions & options);
+  ~AutowareInterface() = default;
+
+private:
+  // constants for operation mode
+  uint8_t STOP = 1;
+  uint8_t AUTONOMOUS = 2;
+  uint8_t LOCAL = 3;
+  uint8_t REMOTE = 4;
+
+  int autoware_state = 1;
+
+  const double STEER_TO_TIRE_RATIO = 16.0;
+
+  VehicleState veh_state_msg;
+
+  OperationModeState operation_mode_state_msg;
+
+  Pose wp0, wp1, wp2, wp3, wp4;
+
+  rclcpp::TimerBase::SharedPtr timer_;
+
+  rclcpp::Publisher<VelocityReport>::SharedPtr pub_vel_report;
+  rclcpp::Publisher<SteeringReport>::SharedPtr pub_steer_report;
+
+  rclcpp::Subscription<AutowareState>::SharedPtr sub_autoware_state;
+  rclcpp::Subscription<VehicleState>::SharedPtr sub_veh_state;
+  rclcpp::Subscription<OperationModeState>::SharedPtr sub_operation_mode;
+
+  rclcpp::Client<SetRoutePoints>::SharedPtr cli_set_route_points;
+  rclcpp::Client<ChangeOperationMode>::SharedPtr cli_set_operation_mode;
+  rclcpp::Client<ChangeAutowareControl>::SharedPtr cli_set_autoware_control;
+
+  void on_timer();
+
+  void init_route_points();
+  void set_route_points();
+  void pub_vehicle_report();
+
+  void set_operation_mode(uint8_t mode);
+  void set_autoware_control(bool autoware_control);
+
+  void vehStateCB(const VehicleState::SharedPtr msg);
+  void autowareStateCB(const AutowareState::SharedPtr msg);
+  void operationModeStateCB(const OperationModeState::SharedPtr msg);
+};
+
+}
+
+#endif
