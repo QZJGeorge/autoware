@@ -42,9 +42,4 @@ def generate_launch_description():
             namespace='/mcity/perception',
             executable='sumo_occ_grid_converter',
         ),
-        Node(
-            package='mcity_perception',
-            namespace='/mcity/perception',
-            executable='sumo_traffic_light_converter',
-        ),
     ])
