@@ -12,19 +12,19 @@ include_directories(
 )
 
 # Add link directories (also for redis)
-# link_directories(/usr/local/lib)
+link_directories(/usr/local/lib)
 
 ##########################  MCITY COSIM  ####################################
 
-ament_auto_add_library(autoware_interface_component SHARED
-  src/autoware_interface.cpp
+ament_auto_add_library(autoware_interface_cosim_component SHARED
+  src/autoware_interface_cosim.cpp
 )
 
-target_link_libraries(autoware_interface_component hiredis)
+target_link_libraries(autoware_interface_cosim_component hiredis)
 
-rclcpp_components_register_node(autoware_interface_component
-  PLUGIN "autoware_interface::AutowareInterface"
-  EXECUTABLE autoware_interface
+rclcpp_components_register_node(autoware_interface_cosim_component
+  PLUGIN "autoware_interface_cosim::AutowareInterfaceCosim"
+  EXECUTABLE autoware_interface_cosim
 )
 
 ########################################################################################

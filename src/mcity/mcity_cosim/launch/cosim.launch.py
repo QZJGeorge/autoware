@@ -10,7 +10,7 @@ def generate_launch_description():
         Node(
             package='mcity_cosim',
             namespace='/mcity/cosim',
-            executable='autoware_interface',
+            executable='autoware_interface_cosim',
         ),
 
         ############################################################
