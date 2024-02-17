@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'mcity_remote_control_car'
+package_name = 'mcity_remote_com_user'
 
 setup(
     name=package_name,
@@ -15,16 +15,13 @@ setup(
     zip_safe=True,
     maintainer='haojie',
     maintainer_email='zhuhj@umich.edu',
-    description='\
-        Receive trajectory from redis server and convert to ros2 message\
-        Convert vehicle state information from ros2 message and send to redis server\
-    ',
+    description='TODO: Package description',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'redis_to_ros_input_path = mcity_remote_control_car.redis_to_ros_input_path:main',
-            'ros_to_redis_vehicle_state = mcity_remote_control_car.ros_to_redis_vehicle_state:main',
+            'redis_to_ros_vehicle_state = mcity_remote_com_user.redis_to_ros_vehicle_state:main',
+            'ros_to_redis_input_path = mcity_remote_com_user.ros_to_redis_input_path:main',
         ],
     },
 )

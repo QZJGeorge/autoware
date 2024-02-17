@@ -57,7 +57,8 @@ private:
     string gainfolder = "";
 
     int trajectory_abort_size     = 0;
-    int heading_lookahead_points   = 0;
+    int heading_lookahead_points  = 0;
+    int vel_lookahead_points      = 0;
 
     double max_ey                  = 0.0;
     double max_ephi                = 0.0; //rad

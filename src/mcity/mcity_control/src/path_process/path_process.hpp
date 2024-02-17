@@ -28,6 +28,7 @@ public:
         double max_allowed_curvature_,
         double heading_offset_,
         int heading_lookahead_points_,
+        int vel_lookahead_points_,
         double lateral_offset_
     );
 
@@ -41,6 +42,7 @@ private:
 
     int get_closest_index();
 
+    double get_desired_velocity(int closest_index);
     double get_orientation_error(int closest_index);
     double get_lateral_error(int closest_index);
 
@@ -52,6 +54,8 @@ private:
     double max_allowed_curvature;
     double heading_offset;
     int heading_lookahead_points;
+    int vel_lookahead_points;
+    int values;
     double lateral_offset;
 };
 

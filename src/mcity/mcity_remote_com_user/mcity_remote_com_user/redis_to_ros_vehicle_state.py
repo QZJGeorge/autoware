@@ -1,12 +1,12 @@
 import json
 import rclpy
-import mcity_remote_control_user.constants as constants
+import mcity_remote_com_user.constants as constants
 
 from nav_msgs.msg import Odometry
 from mcity_msgs.msg import VehicleState
 from sensor_msgs.msg import NavSatFix, Imu
 from rosbridge_library.internal import message_conversion
-from mcity_remote_control_user.basic_ros_redis_com_node import BasicRosRedisComNode
+from mcity_remote_com_user.basic_ros_redis_com_node import BasicRosRedisComNode
 
 
 class RedisToRosVehicleState(BasicRosRedisComNode):

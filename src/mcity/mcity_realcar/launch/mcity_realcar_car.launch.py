@@ -3,6 +3,19 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     return LaunchDescription([
+
+        ############################################################
+        # Localization (GNSS to Autoware to SUMO)
+        ############################################################
+        Node(
+            package='mcity_localization',
+            namespace='/mcity/localization',
+            executable='gnss_to_autoware',
+        ),
+        
+        ############################################################
+        # Control (Preview Control & Drive by Wire)
+        ############################################################
         Node(
             package='mcity_control',
             namespace='/mcity/control',
@@ -16,7 +29,6 @@ def generate_launch_description():
                 {"speed_ctrl_ki": 0.5},
                 {"heading_offset": -0.04},
                 {"heading_lookahead_points": 30},
-                {"vel_lookahead_points": 25},
                 {"lateral_offset": 0.0},
                 {"preview_time": 5.0},
                 {"desired_time_resolution": 0.04},
@@ -33,5 +45,19 @@ def generate_launch_description():
                 {"max_throttle": 0.5},
                 {"max_lat_acc": 2.0},
             ],
+        ),
+
+        ############################################################
+        # Remote Communication
+        ############################################################
+        Node(
+            package='mcity_remote_com_car',
+            namespace='/mcity/communication',
+            executable='ros_to_redis_vehicle_state',
+        ),
+        Node(
+            package='mcity_remote_com_car',
+            namespace='/mcity/communication',
+            executable='redis_to_ros_input_path',
         ),
     ])

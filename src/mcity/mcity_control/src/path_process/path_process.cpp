@@ -8,6 +8,7 @@ void pathProcessing::init(
     double max_allowed_curvature_,
     double heading_offset_,
     int heading_lookahead_points_,
+    int vel_lookahead_points_,
     double lateral_offset_){
 
     _p2c = planning2control_msg;
@@ -18,6 +19,7 @@ void pathProcessing::init(
     max_allowed_curvature = max_allowed_curvature_;
     heading_offset = heading_offset_;
     heading_lookahead_points = heading_lookahead_points_;
+    vel_lookahead_points = vel_lookahead_points_;
     lateral_offset = lateral_offset_;
 }
 
@@ -30,7 +32,7 @@ void pathProcessing::process_path(double desired_time_resolution, double preview
 void pathProcessing::run(){
     int closest_index = get_closest_index();
 
-    _p2c->vd = _p2c->vd_vector[closest_index];
+    _p2c->vd = get_desired_velocity(closest_index);
     _p2c->ephi = get_orientation_error(closest_index);
     _p2c->ey = get_lateral_error(closest_index);
 
@@ -218,6 +220,17 @@ void pathProcessing::downsampling(double preview_time, double desired_time_resol
     _p2c->vd_vector = downsampled_vd_vec;
     _p2c->cr_vector = downsampled_cr_vec;
     _p2c->ori_vector = downsampled_ori_vec;
+}
+
+double pathProcessing::get_desired_velocity(int closest_index){
+    // read the heading of the closest point
+    double desired_velocity = _p2c->vd_vector[closest_index];
+
+    if (size_t(closest_index + vel_lookahead_points) < _p2c->ori_vector.size()){
+        desired_velocity = _p2c->ori_vector[closest_index + vel_lookahead_points];
+    }
+
+    return desired_velocity;
 }
 
 double pathProcessing::get_orientation_error(int closest_index){
