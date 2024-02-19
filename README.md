@@ -1,6 +1,6 @@
 # Autoware
 
-This is the terasim version of Autoware Universe repository. For more information check out the [Autoware Documentation](https://autowarefoundation.github.io/autoware-documentation/main/)
+This is the Mcity version of Autoware Universe. For more information check out [Autoware Documentation](https://autowarefoundation.github.io/autoware-documentation/main/)
 
 ## Installation
 ```bash
