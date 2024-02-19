@@ -22,6 +22,7 @@ rosdep init
 rosdep update
 
 # Open a new terminal to apply the changes.
+cd autoware
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
 # Build packages
