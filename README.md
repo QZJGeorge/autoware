@@ -9,7 +9,9 @@ git clone git@github.com:QZJGeorge/autoware.git
 
 cd autoware
 
-# Install Autoware Dependencies. You can automatically install the dependencies by using the provided Ansible script. Note that this step involves chaging some system settings. Enter yes to the prompt. When prompted to enter BECOME password, enter system password,
+# Install Autoware Dependencies using the provided Ansible script. 
+# Note that this step involves chaging some system settings. 
+# When prompted to enter BECOME password, enter system password,
 ./setup-dev-env.sh
 
 # Install Mcity Depedencies
