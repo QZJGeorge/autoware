@@ -13,10 +13,10 @@ class RosInterface(Node):
         super().__init__('mcity_light')
 
         self.redis_client = redis.Redis(host=host, port=port, db=db)
-        self.sumo_to_xdor_offset = [2.0, 159.0, 34.5]
+        self.sumo_to_carmaker_offset = [-891.5, -1083.5, 223.0]
 
-        self.terasim_synced_vehicle_ids = {"CAV": 160000}
-        self.terasim_vehicle_index = 1600000 + 1
+        self.terasim_synced_vehicle_ids = {"CAV": 1600000}
+        self.terasim_vehicle_index = 16000000 + 1
 
         self.pub_carmaker_untransformed = self.create_publisher(TrafficVehicleList, "/mcity/carmaker/traffic_vehicle_list_untransformed", 10)
         self.pub_carmaker_transformed = self.create_publisher(TrafficVehicleList, "/mcity/carmaker/traffic_vehicle_list_transformed", 10)
@@ -135,7 +135,7 @@ class RosInterface(Node):
         in_location = in_sumo_transform.location
         in_rotation = in_sumo_transform.rotation
 
-        offset = self.sumo_to_xdor_offset
+        offset = self.sumo_to_carmaker_offset
 
         # From front-center-bumper to center (sumo reference system).
         # (http://sumo.sourceforge.net/userdoc/Purgatory/Vehicle_Values.html#angle)

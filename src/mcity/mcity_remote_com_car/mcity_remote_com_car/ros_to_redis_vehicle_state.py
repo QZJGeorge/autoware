@@ -1,6 +1,5 @@
 import json
 import rclpy
-import time
 import mcity_remote_com_car.constants as constants
 
 from mcity_msgs.msg import VehicleState
@@ -23,8 +22,7 @@ class RosToRedisVehicleState(BasicRosRedisComNode):
         self.subscriber_rtk_position = self.create_subscription(NavSatFix, constants.RTK_POSITION, self.callback_rtk_position, 10)
         self.subscriber_vehiclestate = self.create_subscription(VehicleState, constants.VEHICLE_STATE, self.callback_vehicle_state, 10)
 
-        time_period = 0.07
-        self.timer = self.create_timer(time_period, self.on_timer)
+        self.timer = self.create_timer(1/constants.UPDATE_RATE, self.on_timer)
 
     def on_timer(self):
         if self.rtk_imu_msg and self.rtk_odometry_msg and self.rtk_position_msg and self.veh_state_msg:
@@ -34,7 +32,11 @@ class RosToRedisVehicleState(BasicRosRedisComNode):
                 constants.RTK_ODOMETRY: self.rtk_odometry_msg,
                 constants.RTK_POSITION: self.rtk_position_msg
             })
-            print(time.time())
+            
+            self.rtk_imu_msg = None
+            self.rtk_odometry_msg = None
+            self.rtk_position_msg = None
+            self.veh_state_msg = None
 
     def callback_rtk_imu(self, msg):
         json_str = json.dumps(message_conversion.extract_values(msg))

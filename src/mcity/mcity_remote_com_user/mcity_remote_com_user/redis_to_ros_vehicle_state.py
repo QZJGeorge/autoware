@@ -17,8 +17,7 @@ class RedisToRosVehicleState(BasicRosRedisComNode):
         self.publisher_rtk_position = self.create_publisher(NavSatFix, constants.RTK_POSITION, 10)
         self.publisher_vehicle_state = self.create_publisher(VehicleState, constants.VEHICLE_STATE, 10)
 
-        time_period = 0.1
-        self.timer = self.create_timer(time_period, self.callback_redis)
+        self.timer = self.create_timer(1/constants.UPDATE_RATE, self.callback_redis)
         
     def callback_redis(self):
         redis_key_list = [constants.RTK_POSITION, constants.RTK_ODOMETRY, constants.RTK_IMU, constants.VEHICLE_STATE]

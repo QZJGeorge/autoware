@@ -13,10 +13,15 @@ class RosToRedisInputPath(BasicRosRedisComNode):
         super().__init__('autoware_subscriber_redis_publisher')
         self.subscriber_autoware = self.create_subscription(PlannedPath, constants.PLANNED_PATH, self.callback_planned_path, 10)
 
+        self.planned_path_msg = None
+        self.timer = self.create_timer(1/constants.UPDATE_RATE, self.on_timer)
+
+    def on_timer(self):
+        self.redis_client.set(constants.PLANNED_PATH, self.planned_path_msg)
+
     def callback_planned_path(self, msg):
         json_str = json.dumps(message_conversion.extract_values(msg))
-        self.redis_client.set(constants.PLANNED_PATH, json_str)
-
+        self.planned_path_msg = json_str
 
 def main(args=None):
     rclpy.init(args=args)

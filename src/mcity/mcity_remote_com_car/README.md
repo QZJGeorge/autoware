@@ -18,7 +18,7 @@ sudo apt install ros-humble-rosbridge-suite
 
 ### Configuration
 ```sh
-colcon build
+colcon build --symlink-install
 ```
 
 ## Usage
@@ -30,17 +30,12 @@ Please first source the Autoware.Universe workspace and this workspace:
 ```
  Real vehicle side:
  ```sh
-    export TERASIM_REDIS_HOST="44.200.169.92"
+    export TERASIM_REDIS_HOST="161.188.17.229"
     export TERASIM_REDIS_PORT=6390
     export TERASIM_REDIS_PASSWORD="1G7R1SZDteJZmFa"
-    ros2 run ros2_redis_communication realvehicle2redis
-    # ros2 run ros2_redis_communication redis2autoware
- ```
- Remote worker side (Autoware.Universe):
-  ```sh
-    export TERASIM_REDIS_HOST="3.238.245.136"
-    export TERASIM_REDIS_PORT=6390
-    export TERASIM_REDIS_PASSWORD="1G7R1SZDteJZmFa"
-    ros2 run ros2_redis_communication redis2realvehicle
-    # ros2 run ros2_redis_communication autowre2redis
+    
+    # update vehicle state to redis
+    ros2 run mcity_remote_com_car ros_to_redis_vehicle_state
+    # receive input path from redis
+    ros2 run mcity_remote_com_car redis_to_ros_input_path
  ```

@@ -2,17 +2,6 @@
 
 This is the terasim version of Autoware Universe repository. For more information check out the [Autoware Documentation](https://autowarefoundation.github.io/autoware-documentation/main/)
 
-## Install Autoware Dependencies
-You can automatically install the dependencies by using the provided Ansible script. Note that this step involves chaging some system settings. When prompted to enter BECOME password, enter system password,
-```bash
-./setup-dev-env.sh
-```
-
-## Install Terasim Depedencies
-```bash
-sudo apt-get install libhiredis-dev libgeographic-dev libglm-dev
-```
-
 ## Installation
 ```bash
 # Clone the repository
@@ -20,7 +9,14 @@ git clone git@github.com:QZJGeorge/autoware.git
 
 cd autoware
 
-# Install dependencies
+# Install Autoware Dependencies
+You can automatically install the dependencies by using the provided Ansible script. Note that this step involves chaging some system settings. When prompted to enter BECOME password, enter system password,
+./setup-dev-env.sh
+
+# Install Mcity Depedencies
+sudo apt-get install libhiredis-dev libgeographic-dev libglm-dev
+
+# Install ROS2 dependencies
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
 # Build packages
