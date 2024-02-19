@@ -227,7 +227,7 @@ double pathProcessing::get_desired_velocity(int closest_index){
     double desired_velocity = _p2c->vd_vector[closest_index];
 
     if (size_t(closest_index + vel_lookahead_points) < _p2c->ori_vector.size()){
-        desired_velocity = _p2c->ori_vector[closest_index + vel_lookahead_points];
+        desired_velocity = _p2c->vd_vector[closest_index + vel_lookahead_points];
     }
 
     return desired_velocity;

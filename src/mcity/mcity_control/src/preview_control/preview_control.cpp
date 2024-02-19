@@ -116,62 +116,62 @@ namespace preview_control{
         speedCtrl.run();
 
         // step 5: custom rules to overwrite preview control for smooth start and stop
-        custom_rules();
+        // custom_rules();
 
         // step 6: publish commands
         publishCmd();
     }
 
     void PreviewControl::custom_rules(){
-        double max_allowed_throttle = min(0.18 + _vs->speed_x * 0.05, (double)_ctrl->throttle);
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "max allowed throttle %f, preview control throttle %f", max_allowed_throttle, _ctrl->throttle);
-        _ctrl->throttle = max_allowed_throttle;
-        // auto it = std::find(_p2c->vd_vector.begin(), _p2c->vd_vector.end(), 0.0f);
+        // double max_allowed_throttle = min(0.20 + _vs->speed_x * 0.05, (double)_ctrl->throttle);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "max allowed throttle %f, preview control throttle %f", max_allowed_throttle, _ctrl->throttle);
+        // _ctrl->throttle = max_allowed_throttle;
+        auto it = std::find(_p2c->vd_vector.begin(), _p2c->vd_vector.end(), 0.0f);
 
-        // int stop_index;
-        // if (it != _p2c->vd_vector.end()){
-        //     stop_index = std::distance (_p2c->vd_vector.begin(), it);
-        // }else{
-        //     stop_index = -1;
-        // }
+        int stop_index;
+        if (it != _p2c->vd_vector.end()){
+            stop_index = std::distance (_p2c->vd_vector.begin(), it);
+        }else{
+            stop_index = -1;
+        }
 
-        // // if there is a stop ahead in 2 seconds
-        // if (stop_index != -1 && stop_index <= 50){
-        //     if (_vs->speed_x <= 0.5){
-        //         _ctrl->throttle = 0.0;
-        //         _ctrl->brake = 0.23;
-        //         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "stop ahead in 2 seconds, overwrite control");
-        //     } else{
-        //         _ctrl->brake = _ctrl->brake;
-        //     }
-        // }
+        // if there is a stop ahead in 2 seconds
+        if (stop_index != -1 && stop_index <= 50){
+            if (_vs->speed_x <= 0.5){
+                _ctrl->throttle = 0.0;
+                _ctrl->brake = 0.23;
+                RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "stop ahead in 2 seconds, overwrite control");
+            } else{
+                _ctrl->brake = _ctrl->brake;
+            }
+        }
 
-        // // there is no stop in 2 seconds
-        // else{
-        //     // if vehicle is in low speed, refresh protection time countdown.
-        //     if ((_vs->speed_x <= 0.5)){
-        //         autonomous_smooth_time_start = this->get_clock()->now().seconds();
-        //     }
+        // there is no stop in 2 seconds
+        else{
+            // if vehicle is in low speed, refresh protection time countdown.
+            if ((_vs->speed_x <= 0.5)){
+                autonomous_smooth_time_start = this->get_clock()->now().seconds();
+            }
 
-        //     double time_elapsed = this->get_clock()->now().seconds() - autonomous_smooth_time_start;
+            double time_elapsed = this->get_clock()->now().seconds() - autonomous_smooth_time_start;
 
-        //     if (time_elapsed <= autonomous_start_protection_time){
-        //         // there is no stop in 5 seconds, slowly increase throttle
-        //         if (stop_index == -1){
-        //             _ctrl->brake = 0.0;
-        //             _ctrl->throttle = 0.1 + 0.05 * time_elapsed;
-        //             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
-        //             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
-        //         }
-        //         // there is a stop in 5 seconds, slowly move forward for 3 seconds
-        //         else{
-        //             _ctrl->brake = 0.0;
-        //             _ctrl->throttle = 0.05;
-        //             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
-        //             RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
-        //         }
-        //     }
-        // }
+            if (time_elapsed <= autonomous_start_protection_time){
+                // there is no stop in 5 seconds, slowly increase throttle
+                if (stop_index == -1){
+                    _ctrl->brake = 0.0;
+                    _ctrl->throttle = 0.1 + 0.05 * time_elapsed;
+                    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
+                    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
+                }
+                // there is a stop in 5 seconds, slowly move forward for 3 seconds
+                else{
+                    _ctrl->brake = 0.0;
+                    _ctrl->throttle = 0.05;
+                    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
+                    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
+                }
+            }
+        }
     }
 
     void PreviewControl::pose_callback(const PoseWithCovarianceStamped::SharedPtr msg){

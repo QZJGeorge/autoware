@@ -21,7 +21,7 @@ def generate_launch_description():
             namespace='/mcity/control',
             executable='preview_control',
             parameters=[
-                {"gain_folder": "/home/mtl12345/autoware/src/mcity/mcity_bywire/data/gain/withoutdelay/"},
+                {"gain_folder": "/home/mtl12345/autoware/src/mcity/mcity_control/data/gain/withoutdelay/"},
                 {"max_ey": 1.5},
                 {"max_ephi": 1.0},
                 {"max_curvature": 0.2},
@@ -50,14 +50,14 @@ def generate_launch_description():
         ############################################################
         # Remote Communication
         ############################################################
-        Node(
-            package='mcity_remote_com_car',
-            namespace='/mcity/communication',
-            executable='ros_to_redis_vehicle_state',
-        ),
-        Node(
-            package='mcity_remote_com_car',
-            namespace='/mcity/communication',
-            executable='redis_to_ros_input_path',
-        ),
+        # Node(
+        #     package='mcity_remote_com_car',
+        #     namespace='/mcity/communication',
+        #     executable='ros_to_redis_vehicle_state',
+        # ),
+        # Node(
+        #     package='mcity_remote_com_car',
+        #     namespace='/mcity/communication',
+        #     executable='redis_to_ros_input_path',
+        # ),
     ])

@@ -8,7 +8,7 @@ def generate_launch_description():
             namespace='/mcity/control',
             executable='preview_control',
             parameters=[
-                {"gain_folder": "/home/mtl12345/autoware/src/mcity/mcity_bywire/data/gain/withoutdelay/"},
+                {"gain_folder": "/home/mtl12345/autoware/src/mcity/mcity_control/data/gain/withoutdelay/"},
                 {"max_ey": 1.5},
                 {"max_ephi": 1.0},
                 {"max_curvature": 0.2},
