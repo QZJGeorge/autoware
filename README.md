@@ -18,6 +18,10 @@ cd autoware
 sudo apt-get install libhiredis-dev libgeographic-dev libglm-dev
 
 # Install ROS2 dependencies
+rosdep init
+rosdep update
+
+# Open a new terminal to apply the changes.
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
 # Build packages
