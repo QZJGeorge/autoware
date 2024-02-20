@@ -2,6 +2,7 @@ from rclpy.node import Node
 
 try:
     from terasim_com.redis_client.redis_client import redis_client
+    print("successfully import redis client from terasim communication")
 except:
     print("terasim communication is not installed")
     import redis
