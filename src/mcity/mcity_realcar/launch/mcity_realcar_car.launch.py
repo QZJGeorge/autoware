@@ -32,7 +32,6 @@ def generate_launch_description():
         #         {"lateral_offset": 0.0},
         #         {"preview_time": 5.0},
         #         {"desired_time_resolution": 0.04},
-        #         {"autonomous_start_protection_time": 3.0},
         #         {"trajectory_abort_size": 5}
         #     ],
         # ),

@@ -8,7 +8,6 @@ void pathProcessing::init(
     double max_allowed_curvature_,
     double heading_offset_,
     int heading_lookahead_points_,
-    int vel_lookahead_points_,
     double lateral_offset_){
 
     _p2c = planning2control_msg;
@@ -19,7 +18,6 @@ void pathProcessing::init(
     max_allowed_curvature = max_allowed_curvature_;
     heading_offset = heading_offset_;
     heading_lookahead_points = heading_lookahead_points_;
-    vel_lookahead_points = vel_lookahead_points_;
     lateral_offset = lateral_offset_;
 }
 
@@ -37,14 +35,8 @@ void pathProcessing::run(){
     _p2c->ey = get_lateral_error(closest_index);
 
     int size = int(_p2c->x_vector.size());
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "remaining preview path %d", size);
 
-    // int size = _p2c->x_vector.size();
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "first x %f", _p2c->x_vector[0]);
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "first y %f", _p2c->y_vector[0]);
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "last x %f", _p2c->x_vector[size-1]);
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "last y %f", _p2c->y_vector[size-1]);
-
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "remaining path length %d", size);
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "index %d", closest_index);
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "vd %f", _p2c->vd);
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "cr %f", _p2c->cr);
@@ -111,7 +103,6 @@ void pathProcessing::compute_curvature(){
         }
 
         // _p2c->cr_vector.push_back(curvature);
-        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Curvature %f", curvature);
         _p2c->cr_vector.push_back(0.0);
     }
 
@@ -185,10 +176,6 @@ void pathProcessing::downsampling(double preview_time, double desired_time_resol
         double dist = std::sqrt(dx * dx + dy * dy);
 
         float vd = max(1.5, (double)_p2c->vd_vector[i]);
-
-        // Compute the time to the next point
-        // accumulated_time += dist / _p2c->vd_vector[i];
-
         accumulated_time += dist / vd;
         
         if (accumulated_time >= desired_time_resolution) {
@@ -198,11 +185,6 @@ void pathProcessing::downsampling(double preview_time, double desired_time_resol
             downsampled_vd_vec.push_back(_p2c->vd_vector[i]);
             downsampled_cr_vec.push_back(_p2c->cr_vector[i]);
             downsampled_ori_vec.push_back(_p2c->ori_vector[i]);
-
-            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "pusback index %d", (int)i);
-            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "x %f", _p2c->x_vector[i]);
-            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "y %f", _p2c->y_vector[i]);
-            // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "vd %f", _p2c->vd_vector[i]);
 
             // Reset accumulated time
             accumulated_time = 0.0;
@@ -223,11 +205,20 @@ void pathProcessing::downsampling(double preview_time, double desired_time_resol
 }
 
 double pathProcessing::get_desired_velocity(int closest_index){
-    // read the heading of the closest point
+    // adaptively update desired velocity based on the curernt velocity
+    double current_velocity = _vs->speed_x;
     double desired_velocity = _p2c->vd_vector[closest_index];
 
-    if (size_t(closest_index + vel_lookahead_points) < _p2c->ori_vector.size()){
-        desired_velocity = _p2c->vd_vector[closest_index + vel_lookahead_points];
+    if (current_velocity >= desired_velocity && desired_velocity <= 1.5){
+        // find a velocity from future velocities that is close to the current velocity
+        double min_difference = std::numeric_limits<double>::max();
+        for (size_t i = closest_index; i < _p2c->vd_vector.size(); i++){
+            double difference = abs(_p2c->vd_vector[i] - current_velocity);
+            if (difference < min_difference){
+                min_difference = difference;
+                desired_velocity = _p2c->vd_vector[i];
+            }
+        }
     }
 
     return desired_velocity;
@@ -237,10 +228,6 @@ double pathProcessing::get_orientation_error(int closest_index){
     // Calculate vehicle heading
     double roll, pitch, yaw;
     XM::quaternion_to_euler(_vs->qx, _vs->qy, _vs->qz, _vs->qw, roll, pitch, yaw);
-
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "roll_ori: %f", roll_ori);
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "pitch_ori: %f", pitch_ori);
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "yaw_ori: %f", yaw_ori);
 
     // read the heading of the closest point
     double traj_heading = _p2c->ori_vector[closest_index];
@@ -262,10 +249,6 @@ double pathProcessing::get_orientation_error(int closest_index){
     if (orientation_error > max_allowed_ephi){
         RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Orientation error too large: %f radians", orientation_error);
     }
-
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Desired trajectory orientation: %f radians", traj_heading);
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Current vehicle heading: %f radians", veh_heading);
-    // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Orientation error: %f radians", path_msg.ephi);
 
     return orientation_error;
 }

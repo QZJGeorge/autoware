@@ -80,11 +80,9 @@ def generate_launch_description():
                 {"speed_ctrl_ki": 0.5},
                 {"heading_offset": -0.04},
                 {"heading_lookahead_points": 30},
-                {"vel_lookahead_points": 30},
                 {"lateral_offset": 0.0},
                 {"preview_time": 5.0},
                 {"desired_time_resolution": 0.04},
-                {"autonomous_start_protection_time": 3.0},
                 {"trajectory_abort_size": 5}
             ],
         ),

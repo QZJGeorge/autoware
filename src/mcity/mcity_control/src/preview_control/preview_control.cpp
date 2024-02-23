@@ -11,12 +11,11 @@ namespace preview_control{
         this->declare_parameter("speed_ctrl_ki", 0.0);
         this->declare_parameter("heading_offset", 0.0);
         this->declare_parameter("heading_lookahead_points", 0);
-        this->declare_parameter("vel_lookahead_points", 0);
         this->declare_parameter("lateral_offset", 0.0);
         this->declare_parameter("preview_time", 0.0);
         this->declare_parameter("desired_time_resolution", 0.0);
-        this->declare_parameter("autonomous_start_protection_time", 0.0);
         this->declare_parameter("trajectory_abort_size", 0);
+        this->declare_parameter("velocity_smooth_threshold", 0.0);
 
         this->get_parameter("gain_folder", gainfolder);
         this->get_parameter("max_ey", max_ey);
@@ -26,12 +25,11 @@ namespace preview_control{
         this->get_parameter("speed_ctrl_ki", speed_ctrl_ki);
         this->get_parameter("heading_offset", heading_offset);
         this->get_parameter("heading_lookahead_points", heading_lookahead_points);
-        this->get_parameter("vel_lookahead_points", vel_lookahead_points);
         this->get_parameter("lateral_offset", lateral_offset);
         this->get_parameter("preview_time", preview_time);
         this->get_parameter("desired_time_resolution", desired_time_resolution);
-        this->get_parameter("autonomous_start_protection_time", autonomous_start_protection_time);
         this->get_parameter("trajectory_abort_size", trajectory_abort_size);
+        this->get_parameter("velocity_smooth_threshold", velocity_smooth_threshold);
 
         //register pub
         pub_cmd2bywire = this->create_publisher<Control>("/mcity/vehicle_control", 10);
@@ -57,13 +55,13 @@ namespace preview_control{
         _ctrl = &ctrl;
 
         pathProcess.init(
-            _p2c, _vs, 
+            _p2c, 
+            _vs, 
             max_ey, 
             max_curvature, 
             max_ephi, 
             heading_offset, 
             heading_lookahead_points, 
-            vel_lookahead_points, 
             lateral_offset
         );
         pathFollow.init(_p2c, _vs, _ctrl, gainfolder, max_ey, max_ephi);
@@ -109,69 +107,12 @@ namespace preview_control{
 
         // step 3: check in path or not, and path tracking
         pathFollow.run();
-
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "steering command %f", _ctrl->steering);
         
         // step 4: speed control
         speedCtrl.run();
 
-        // step 5: custom rules to overwrite preview control for smooth start and stop
-        // custom_rules();
-
-        // step 6: publish commands
+        // step 5: publish commands
         publishCmd();
-    }
-
-    void PreviewControl::custom_rules(){
-        // double max_allowed_throttle = min(0.20 + _vs->speed_x * 0.05, (double)_ctrl->throttle);
-        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "max allowed throttle %f, preview control throttle %f", max_allowed_throttle, _ctrl->throttle);
-        // _ctrl->throttle = max_allowed_throttle;
-        auto it = std::find(_p2c->vd_vector.begin(), _p2c->vd_vector.end(), 0.0f);
-
-        int stop_index;
-        if (it != _p2c->vd_vector.end()){
-            stop_index = std::distance (_p2c->vd_vector.begin(), it);
-        }else{
-            stop_index = -1;
-        }
-
-        // if there is a stop ahead in 2 seconds
-        if (stop_index != -1 && stop_index <= 50){
-            if (_vs->speed_x <= 0.5){
-                _ctrl->throttle = 0.0;
-                _ctrl->brake = 0.23;
-                RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "stop ahead in 2 seconds, overwrite control");
-            } else{
-                _ctrl->brake = _ctrl->brake;
-            }
-        }
-
-        // there is no stop in 2 seconds
-        else{
-            // if vehicle is in low speed, refresh protection time countdown.
-            if ((_vs->speed_x <= 0.5)){
-                autonomous_smooth_time_start = this->get_clock()->now().seconds();
-            }
-
-            double time_elapsed = this->get_clock()->now().seconds() - autonomous_smooth_time_start;
-
-            if (time_elapsed <= autonomous_start_protection_time){
-                // there is no stop in 5 seconds, slowly increase throttle
-                if (stop_index == -1){
-                    _ctrl->brake = 0.0;
-                    _ctrl->throttle = 0.1 + 0.05 * time_elapsed;
-                    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
-                    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
-                }
-                // there is a stop in 5 seconds, slowly move forward for 3 seconds
-                else{
-                    _ctrl->brake = 0.0;
-                    _ctrl->throttle = 0.05;
-                    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "protection time elapsed %f", time_elapsed);
-                    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "throttle command %f", _ctrl->throttle);
-                }
-            }
-        }
     }
 
     void PreviewControl::pose_callback(const PoseWithCovarianceStamped::SharedPtr msg){

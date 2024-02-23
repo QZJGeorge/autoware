@@ -28,7 +28,6 @@ public:
         double max_allowed_curvature_,
         double heading_offset_,
         int heading_lookahead_points_,
-        int vel_lookahead_points_,
         double lateral_offset_
     );
 
@@ -54,7 +53,6 @@ private:
     double max_allowed_curvature;
     double heading_offset;
     int heading_lookahead_points;
-    int vel_lookahead_points;
     int values;
     double lateral_offset;
 };

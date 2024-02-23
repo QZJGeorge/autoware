@@ -50,7 +50,6 @@ private:
     rclcpp::Subscription<VehicleState>::SharedPtr sub_veh_state;
     rclcpp::Subscription<PlannedPath>::SharedPtr sub_path;
 
-    long count = 0;
     Control cmd_msg;
 
     //vehicle 
@@ -58,7 +57,6 @@ private:
 
     int trajectory_abort_size     = 0;
     int heading_lookahead_points  = 0;
-    int vel_lookahead_points      = 0;
 
     double max_ey                  = 0.0;
     double max_ephi                = 0.0; //rad
@@ -69,9 +67,7 @@ private:
     double lateral_offset          = 0.0;
     double preview_time            = 0.0;
     double desired_time_resolution = 0.0;
-
-    double autonomous_smooth_time_start      = 0.0;
-    double autonomous_start_protection_time  = 0.0;
+    double velocity_smooth_threshold = 0.0;
 
     // GUI_Set_S guiSet;
     pathProcessing pathProcess;

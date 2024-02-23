@@ -53,39 +53,39 @@ namespace autoware_interface_cosim{
       RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Setting goal point...");
     } else if (autoware_state == 4){
       set_autoware_control(true);
-      // set_operation_mode(AUTONOMOUS);
+      set_operation_mode(AUTONOMOUS);
       RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Enabling autoware control...");
     }
   }
 
   void AutowareInterfaceCosim::init_localization(){
-    localization_msg.pose.pose.position.x = 77639.3359375;
-    localization_msg.pose.pose.position.y = 86558.40625;
+    localization_msg.pose.pose.position.x = 77649.4394032368;
+    localization_msg.pose.pose.position.y = 86534.51602876329;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = 0.578428211916176;
-    localization_msg.pose.pose.orientation.w = 0.8157332919891497;
+    localization_msg.pose.pose.orientation.z = 0.2965215425350918;
+    localization_msg.pose.pose.orientation.w = 0.9550261644649375;
   }
 
   void AutowareInterfaceCosim::init_route_points(){
-    wp0.position.x = 77650.9765625;
-    wp0.position.y = 86728.0625;
+    wp0.position.x = 77655.625;
+    wp0.position.y = 86757.359375;
     wp0.position.z = 0.0;
 
     wp0.orientation.x = 0.0;
     wp0.orientation.y = 0.0;
-    wp0.orientation.z = 0.6988676780815593;
-    wp0.orientation.w = 0.715250982895438;
+    wp0.orientation.z = 0.6900613220973807;
+    wp0.orientation.w = 0.72375090448663;
 
-    wp1.position.x = 77698.640625;
-    wp1.position.y = 86851.6640625;
+    wp1.position.x = 77715.765625;
+    wp1.position.y = 86862.0390625;
     wp1.position.z = 0.0;
 
     wp1.orientation.x = 0.0;
     wp1.orientation.y = 0.0;
-    wp1.orientation.z = -0.7423686519969227;
-    wp1.orientation.w = 0.6699916301956853;
+    wp1.orientation.z = 0.6681716444489322;
+    wp1.orientation.w = 0.7440071596123318;
 
     wp2.position.x = 77549.984375;
     wp2.position.y = 86745.5546875;

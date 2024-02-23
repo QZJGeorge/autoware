@@ -30,7 +30,7 @@ Please first source the Autoware.Universe workspace and this workspace:
 ```
  Real vehicle side:
  ```sh
-    export TERASIM_REDIS_HOST="44.200.169.92"
+    export TERASIM_REDIS_HOST="127.0.0.1"
     export TERASIM_REDIS_PORT=6390
     export TERASIM_REDIS_PASSWORD="1G7R1SZDteJZmFa"
     ros2 run ros2_redis_communication realvehicle2redis
