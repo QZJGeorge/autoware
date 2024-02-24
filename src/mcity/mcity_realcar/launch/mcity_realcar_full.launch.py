@@ -16,11 +16,11 @@ def generate_launch_description():
         ############################################################
         # Read Traffic Light from McityOS and Sync to SUMO
         ############################################################
-        # Node(
-        #     package='mcity_light',
-        #     namespace='/mcity/light',
-        #     executable='mcity_light',
-        # ),
+        Node(
+            package='mcity_light',
+            namespace='/mcity/light',
+            executable='mcity_light',
+        ),
 
         ############################################################
         # Localization (GNSS to Autoware to SUMO)
@@ -30,30 +30,30 @@ def generate_launch_description():
             namespace='/mcity/localization',
             executable='gnss_to_autoware',
         ),
-        # Node(
-        #     package='mcity_localization',
-        #     namespace='/mcity/localization',
-        #     executable='autoware_to_sumo',
-        # ),
+        Node(
+            package='mcity_localization',
+            namespace='/mcity/localization',
+            executable='autoware_to_sumo',
+        ),
         
         ############################################################
         # Perception (SUMO to Autoware)
         ############################################################
-        # Node(
-        #     package='mcity_perception',
-        #     namespace='/mcity/perception',
-        #     executable='sumo_background_vehicle_converter',
-        # ),
-        # Node(
-        #     package='mcity_perception',
-        #     namespace='/mcity/perception',
-        #     executable='sumo_traffic_light_converter',
-        # ),
-        # Node(
-        #     package='mcity_perception',
-        #     namespace='/mcity/perception',
-        #     executable='sumo_occ_grid_converter',
-        # ),
+        Node(
+            package='mcity_perception',
+            namespace='/mcity/perception',
+            executable='sumo_background_vehicle_converter',
+        ),
+        Node(
+            package='mcity_perception',
+            namespace='/mcity/perception',
+            executable='sumo_traffic_light_converter',
+        ),
+        Node(
+            package='mcity_perception',
+            namespace='/mcity/perception',
+            executable='sumo_occ_grid_converter',
+        ),
 
         ############################################################
         # Planning (Autoware Path to Preview Control)
@@ -79,11 +79,11 @@ def generate_launch_description():
                 {"speed_ctrl_kp": 1.3},
                 {"speed_ctrl_ki": 0.5},
                 {"heading_offset": -0.04},
-                {"heading_lookahead_points": 30},
+                {"heading_lookahead_points": 15},
                 {"lateral_offset": 0.0},
-                {"preview_time": 5.0},
+                {"preview_time": 3.0},
                 {"desired_time_resolution": 0.04},
-                {"trajectory_abort_size": 5}
+                {"trajectory_abort_size": 25}
             ],
         ),
         Node(
