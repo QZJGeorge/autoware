@@ -59,13 +59,13 @@ namespace autoware_interface_cosim{
   }
 
   void AutowareInterfaceCosim::init_localization(){
-    localization_msg.pose.pose.position.x = 77663.5859375;
-    localization_msg.pose.pose.position.y = 86560.5;
+    localization_msg.pose.pose.position.x = 77638.703125;
+    localization_msg.pose.pose.position.y = 86530.3984375;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = 0.7339686907865298;
-    localization_msg.pose.pose.orientation.w = 0.6791833043774761;
+    localization_msg.pose.pose.orientation.z = 0.1351410441129879;
+    localization_msg.pose.pose.orientation.w = 0.9908263713668765;
   }
 
   void AutowareInterfaceCosim::init_route_points(){

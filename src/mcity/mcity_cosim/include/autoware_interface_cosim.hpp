@@ -16,6 +16,8 @@
 #define MCITY_COSIM_AUTOWARE_INTERFACE_COSIM_HPP_
 
 #include <iostream>
+#include <chrono>
+#include <thread>
 #include <rclcpp/rclcpp.hpp>
 #include <hiredis/hiredis.h>
 #include <nav_msgs/msg/odometry.hpp>
@@ -52,8 +54,8 @@ private:
   uint8_t LOCAL = 3;
   uint8_t REMOTE = 4;
 
-  int autoware_state = 1;
-
+  int autoware_state = 0;
+  
   Pose wp0, wp1, wp2, wp3, wp4;
 
   redisContext *context;
