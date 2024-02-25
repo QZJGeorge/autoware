@@ -71,7 +71,7 @@ MotionVelocitySmootherNode::MotionVelocitySmootherNode(const rclcpp::NodeOptions
 
   // customized change for preview control package
   sub_vehicle_state_ = create_subscription<VehicleState>(
-    "/terasim/vehicle_state", 10,
+    "/mcity/vehicle_state", 10,
     [this](const VehicleState::ConstSharedPtr msg) { vehicle_state_ = *msg; });
 
   // parameter update

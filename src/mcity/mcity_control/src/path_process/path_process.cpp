@@ -23,7 +23,7 @@ void pathProcessing::init(
 
 void pathProcessing::process_path(double desired_time_resolution, double preview_time){
     compute_curvature();
-    upsampling(desired_time_resolution);
+    // upsampling(desired_time_resolution);
     downsampling(preview_time, desired_time_resolution);
 }
 
@@ -36,12 +36,13 @@ void pathProcessing::run(){
 
     int size = int(_p2c->x_vector.size());
 
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "remaining path length %d", size);
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "index %d", closest_index);
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "vd %f", _p2c->vd);
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "cr %f", _p2c->cr);
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "ephi %f", _p2c->ephi);
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "ey %f", _p2c->ey);
+    RCLCPP_INFO(rclcpp::get_logger("path_process"), "remaining path length %d", size);
+    RCLCPP_INFO(rclcpp::get_logger("path_process"), "index %d", closest_index);
+    RCLCPP_INFO(rclcpp::get_logger("path_process"), "vd %f", _p2c->vd);
+    RCLCPP_INFO(rclcpp::get_logger("path_process"), "vc %f", _vs->speed_x);
+    RCLCPP_INFO(rclcpp::get_logger("path_process"), "cr %f", _p2c->cr);
+    RCLCPP_INFO(rclcpp::get_logger("path_process"), "ephi %f", _p2c->ephi);
+    RCLCPP_INFO(rclcpp::get_logger("path_process"), "ey %f", _p2c->ey);
 }
 
 int pathProcessing::get_closest_index(){
@@ -209,11 +210,18 @@ double pathProcessing::get_desired_velocity(int closest_index){
     double current_velocity = _vs->speed_x;
     double desired_velocity = _p2c->vd_vector[closest_index];
 
-    if (current_velocity >= desired_velocity && desired_velocity <= 1.5){
+    // the vehicle is slowing down and will stop very soon
+    if (current_velocity <= 0.05 && _p2c->vd_vector.back() <= 0.5){
+        RCLCPP_INFO(rclcpp::get_logger(""), "early stop cut off");
+        return 0.0;
+    }
+
+    if (current_velocity >= desired_velocity && desired_velocity <= 2.5){
         // find a velocity from future velocities that is close to the current velocity
         double min_difference = std::numeric_limits<double>::max();
+
         for (size_t i = closest_index; i < _p2c->vd_vector.size(); i++){
-            double difference = abs(_p2c->vd_vector[i] - current_velocity);
+            double difference = abs(current_velocity + 0.1 - _p2c->vd_vector[i]);
             if (difference < min_difference){
                 min_difference = difference;
                 desired_velocity = _p2c->vd_vector[i];
