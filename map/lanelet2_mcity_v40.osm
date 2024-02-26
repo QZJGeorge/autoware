@@ -91772,6 +91772,7 @@
     <member type='way' ref='45294' role='right' />
     <tag k='speed_limit' v='18' />
     <tag k='subtype' v='road' />
+    <tag k='turn_direction' v='straight' />
     <tag k='type' v='lanelet' />
   </relation>
   <relation id='45504' visible='true' version='1'>
