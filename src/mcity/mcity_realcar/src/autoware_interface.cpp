@@ -61,23 +61,23 @@ namespace autoware_interface{
   }
 
   void AutowareInterface::init_route_points(){
-    wp0.position.x = 77655.625;
-    wp0.position.y = 86757.359375;
+    wp0.position.x = 77655.0859375;
+    wp0.position.y = 86828.109375;
     wp0.position.z = 0.0;
 
     wp0.orientation.x = 0.0;
     wp0.orientation.y = 0.0;
-    wp0.orientation.z = 0.6900613220973807;
-    wp0.orientation.w = 0.72375090448663;
+    wp0.orientation.z = 0.6951211110805368;
+    wp0.orientation.w = 0.7188926491001004;
 
-    wp1.position.x = 77715.765625;
-    wp1.position.y = 86862.0390625;
+    wp1.position.x = 77685.453125;
+    wp1.position.y = 86849.828125;
     wp1.position.z = 0.0;
 
     wp1.orientation.x = 0.0;
     wp1.orientation.y = 0.0;
-    wp1.orientation.z = 0.6681716444489322;
-    wp1.orientation.w = 0.7440071596123318;
+    wp1.orientation.z = -0.029373685715313885;
+    wp1.orientation.w = 0.9995685001977093;
 
     wp2.position.x = 77549.984375;
     wp2.position.y = 86745.5546875;
