@@ -27,6 +27,19 @@ rclcpp_components_register_node(autoware_interface_cosim_component
   EXECUTABLE autoware_interface_cosim
 )
 
+##########################  MCITY VOICES  ####################################
+
+ament_auto_add_library(autoware_interface_voices_component SHARED
+  src/autoware_interface_voices.cpp
+)
+
+target_link_libraries(autoware_interface_voices_component hiredis)
+
+rclcpp_components_register_node(autoware_interface_voices_component
+  PLUGIN "autoware_interface_voices::AutowareInterfaceVoices"
+  EXECUTABLE autoware_interface_voices
+)
+
 ########################################################################################
 
 ament_auto_package(
