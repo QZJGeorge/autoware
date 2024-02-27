@@ -60,13 +60,13 @@ namespace autoware_interface_voices{
   void AutowareInterfaceVoices::init_localization(){
     PoseWithCovarianceStamped localization_msg;
 
-    localization_msg.pose.pose.position.x = 77610.796875;
-    localization_msg.pose.pose.position.y = 86761.3125;
+    localization_msg.pose.pose.position.x = 77663.359375;
+    localization_msg.pose.pose.position.y = 86904.6171875;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = -0.7342767251742988;
-    localization_msg.pose.pose.orientation.w = 0.6788502713171052;
+    localization_msg.pose.pose.orientation.z = 0.9958484575054507;
+    localization_msg.pose.pose.orientation.w = 0.09102664271527604;
 
     localization_msg.header.stamp = this->get_clock()->now();
     localization_msg.header.frame_id = "map";
