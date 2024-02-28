@@ -216,7 +216,7 @@ double pathProcessing::get_desired_velocity(int closest_index){
         return 0.0;
     }
 
-    if (current_velocity >= desired_velocity && desired_velocity <= 2.5){
+    if (current_velocity >= desired_velocity && desired_velocity <= 3.0){
         // find a velocity from future velocities that is close to the current velocity
         double min_difference = std::numeric_limits<double>::max();
 
