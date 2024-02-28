@@ -49,11 +49,12 @@ namespace autoware_interface_voices{
       string terasim_status = get_key("terasim_status");
       if (terasim_status == "" || terasim_status == "0"){
         RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
-      } else{
-        set_autoware_control(true);
-        set_operation_mode(AUTONOMOUS);
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Enabling autoware control...");
-      }
+      } 
+      // else{
+      //   set_autoware_control(true);
+      //   set_operation_mode(AUTONOMOUS);
+      //   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Enabling autoware control...");
+      // }
     }
   }
 

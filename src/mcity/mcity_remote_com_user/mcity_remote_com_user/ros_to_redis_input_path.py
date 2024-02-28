@@ -17,7 +17,8 @@ class RosToRedisInputPath(BasicRosRedisComNode):
         self.timer = self.create_timer(1/constants.UPDATE_RATE, self.on_timer)
 
     def on_timer(self):
-        self.redis_client.set(constants.PLANNED_PATH, self.planned_path_msg)
+        if self.planned_path_msg is not None:
+            self.redis_client.set(constants.PLANNED_PATH, self.planned_path_msg)
 
     def callback_planned_path(self, msg):
         json_str = json.dumps(message_conversion.extract_values(msg))
