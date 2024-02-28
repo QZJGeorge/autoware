@@ -30,6 +30,11 @@ def generate_launch_description():
         #     namespace='/mcity/localization',
         #     executable='autoware_to_sumo',
         # ),
+        Node(
+            package='mcity_localization',
+            namespace='/mcity/localization',
+            executable='gnss_to_autoware',
+        ),
         
         ############################################################
         # Perception (SUMO to Autoware)
