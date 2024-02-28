@@ -81,7 +81,7 @@ def generate_launch_description():
                 {"heading_offset": -0.04},
                 {"heading_lookahead_points": 15},
                 {"lateral_offset": 0.0},
-                {"preview_time": 3.0},
+                {"preview_time": 5.0},
                 {"desired_time_resolution": 0.04},
                 {"trajectory_abort_size": 25}
             ],
