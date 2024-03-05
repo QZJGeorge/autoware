@@ -59,33 +59,33 @@ namespace autoware_interface_cosim{
   }
 
   void AutowareInterfaceCosim::init_localization(){
-    localization_msg.pose.pose.position.x = 77663.53125;
-    localization_msg.pose.pose.position.y = 86560.6640625;
+    localization_msg.pose.pose.position.x = 77639.3359375;
+    localization_msg.pose.pose.position.y = 86558.40625;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = 0.7401650921458631;
-    localization_msg.pose.pose.orientation.w = 0.6724251901652004;
+    localization_msg.pose.pose.orientation.z = 0.578428211916176;
+    localization_msg.pose.pose.orientation.w = 0.8157332919891497;
   }
 
   void AutowareInterfaceCosim::init_route_points(){
-    wp0.position.x = 77655.625;
-    wp0.position.y = 86757.359375;
+    wp0.position.x = 77649.625;
+    wp0.position.y = 86695.296;
     wp0.position.z = 0.0;
 
     wp0.orientation.x = 0.0;
     wp0.orientation.y = 0.0;
-    wp0.orientation.z = 0.6900613220973807;
-    wp0.orientation.w = 0.72375090448663;
+    wp0.orientation.z = 0.68874525198885;
+    wp0.orientation.w = 0.7250034330007105;
 
-    wp1.position.x = 77715.765625;
-    wp1.position.y = 86862.0390625;
+    wp1.position.x = 77654.6328125;
+    wp1.position.y = 86815.8203125;
     wp1.position.z = 0.0;
 
     wp1.orientation.x = 0.0;
     wp1.orientation.y = 0.0;
-    wp1.orientation.z = 0.6681716444489322;
-    wp1.orientation.w = 0.7440071596123318;
+    wp1.orientation.z = 0.6971827007404735;
+    wp1.orientation.w = 0.71689349403396;
 
     wp2.position.x = 77549.984375;
     wp2.position.y = 86745.5546875;
