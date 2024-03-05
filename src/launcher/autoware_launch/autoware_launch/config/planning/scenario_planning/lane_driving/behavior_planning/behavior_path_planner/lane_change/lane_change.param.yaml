@@ -2,8 +2,7 @@
   ros__parameters:
     lane_change:
       backward_lane_length: 200.0 #[m]
-      # prepare_duration: 4.0         # [s]
-      prepare_duration: 2.0         # [s]
+      prepare_duration: 4.0         # [s]
 
       backward_length_buffer_for_end_of_lane: 3.0 # [m]
       lane_change_finish_judge_buffer: 2.0      # [m]
@@ -24,10 +23,8 @@
       length_ratio_for_turn_signal_deactivation: 0.8 # ratio (desired end position)
 
       # longitudinal acceleration
-      # min_longitudinal_acc: -1.0
-      # max_longitudinal_acc: 1.0
-      min_longitudinal_acc: -2.0
-      max_longitudinal_acc: 2.0
+      min_longitudinal_acc: -1.0
+      max_longitudinal_acc: 1.0
 
       # safety check
       safety_check:
