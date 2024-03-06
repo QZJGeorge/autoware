@@ -35,12 +35,6 @@ namespace test_02{
   }
 
   void Test02::on_timer(){
-    string terasim_status = get_key("terasim_status");
-    if (terasim_status == "" || terasim_status == "0"){
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
-      return;
-    }
-
     if (autoware_state == 0){
       RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Waiting for autoware to start up..");
       return;
@@ -49,11 +43,17 @@ namespace test_02{
       RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Publishing initial localization...");
     } else if (autoware_state == 2){
       publish_goal();
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Setting goal point...");
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting goal point...");
     } else if (autoware_state == 4){
-      set_autoware_control(true);
-      set_operation_mode(AUTONOMOUS);
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Enabling autoware control...");
+      string terasim_status = get_key("terasim_status");
+      if (terasim_status == "" || terasim_status == "0"){
+        RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
+      } 
+      else{
+        set_autoware_control(true);
+        set_operation_mode(AUTONOMOUS);
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Enabling autoware control...");
+      }
     }
   }
 
