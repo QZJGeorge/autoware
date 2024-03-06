@@ -970,6 +970,7 @@ Visualization Manager:
               Enabled: true
               Name: RouteArea
               Namespaces:
+                end_lanelets: true
                 goal_lanelets: true
                 lane_start_bound: false
                 left_lane_bound: false

@@ -35,7 +35,7 @@ Please first source the Autoware.Universe workspace and this workspace:
     export TERASIM_REDIS_PASSWORD="1G7R1SZDteJZmFa"
     
     # update vehicle state to redis
-    ros2 run mcity_remote_com_car ros_to_redis_vehicle_state
+    ros2 run mcity_remote_communication ros_to_redis_vehicle_state
     # receive input path from redis
-    ros2 run mcity_remote_com_car redis_to_ros_input_path
+    ros2 run mcity_remote_communication redis_to_ros_input_path
  ```
