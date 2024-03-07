@@ -12,8 +12,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_TERASIM__autoware_interface_HPP_
-#define MCITY_TERASIM__autoware_interface_HPP_
+#ifndef MCITY_TERASIM__autoware_interface_realcar_HPP_
+#define MCITY_TERASIM__autoware_interface_realcar_HPP_
 
 #include <iostream>
 #include <rclcpp/rclcpp.hpp>
@@ -30,7 +30,7 @@
 #include <autoware_auto_system_msgs/msg/autoware_state.hpp>
 
 
-namespace autoware_interface
+namespace autoware_interface_realcar
 {
 
 using namespace std;
@@ -47,11 +47,11 @@ using autoware_auto_vehicle_msgs::msg::VelocityReport;
 using autoware_auto_vehicle_msgs::msg::SteeringReport;
 
 
-class AutowareInterface : public rclcpp::Node
+class AutowareInterfaceRealcar : public rclcpp::Node
 {
 public:
-  explicit AutowareInterface(const rclcpp::NodeOptions & options);
-  ~AutowareInterface() = default;
+  explicit AutowareInterfaceRealcar(const rclcpp::NodeOptions & options);
+  ~AutowareInterfaceRealcar() = default;
 
 private:
   // constants for operation mode

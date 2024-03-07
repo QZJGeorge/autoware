@@ -76,8 +76,8 @@ namespace preview_control{
         cmd_msg.gear_cmd        = _ctrl->gear;
         cmd_msg.turn_signal_cmd = _ctrl->turn_signal;
 
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "cmd throttle %f", cmd_msg.throttle_cmd);
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "cmd brake %f", cmd_msg.brake_cmd);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "cmd throttle %f", cmd_msg.throttle_cmd);
+        // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "cmd brake %f", cmd_msg.brake_cmd);
 
         pub_cmd2bywire->publish(cmd_msg);
     };

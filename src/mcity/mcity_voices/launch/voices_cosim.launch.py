@@ -8,9 +8,9 @@ def generate_launch_description():
         # Autoware Interface to handle the simulation requests
         ############################################################
         Node(
-            package='mcity_cosim',
-            namespace='/mcity/cosim',
-            executable='autoware_interface_voices',
+            package='mcity_voices',
+            namespace='/mcity/voices',
+            executable='autoware_interface_voices_cosim',
         ),
 
         ############################################################

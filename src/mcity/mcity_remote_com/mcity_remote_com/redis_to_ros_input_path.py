@@ -1,10 +1,10 @@
 import json
 import rclpy
-import mcity_remote_communication.constants as constants
+import mcity_remote_com.constants as constants
 
 from mcity_msgs.msg import PlannedPath
 from rosbridge_library.internal import message_conversion
-from mcity_remote_communication.basic_ros_redis_com_node import BasicRosRedisComNode
+from mcity_remote_com.basic_ros_redis_com_node import BasicRosRedisComNode
 
 
 class RedisToRosInputPath(BasicRosRedisComNode):

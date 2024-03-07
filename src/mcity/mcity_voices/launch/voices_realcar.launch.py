@@ -5,27 +5,16 @@ from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
 
-
 def generate_launch_description():
-
     return LaunchDescription([
 
         ############################################################
         # Autoware Interface to handle the simulation requests
         ############################################################
         Node(
-            package='mcity_realcar',
-            namespace='/mcity/realcar',
-            executable='autoware_interface',
-        ),
-
-        ############################################################
-        # Read Traffic Light from McityOS and Sync to SUMO
-        ############################################################
-        Node(
-            package='mcity_light',
-            namespace='/mcity/light',
-            executable='mcity_light',
+            package='mcity_voices',
+            namespace='/mcity/voices',
+            executable='autoware_interface_voices_realcar',
         ),
 
         ############################################################

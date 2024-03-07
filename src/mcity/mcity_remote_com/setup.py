@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'mcity_remote_communication'
+package_name = 'mcity_remote_com'
 
 setup(
     name=package_name,
@@ -23,10 +23,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'redis_to_ros_input_path = mcity_remote_communication.redis_to_ros_input_path:main',
-            'redis_to_ros_vehicle_state = mcity_remote_communication.redis_to_ros_vehicle_state:main',
-            'ros_to_redis_input_path = mcity_remote_communication.ros_to_redis_input_path:main',
-            'ros_to_redis_vehicle_state = mcity_remote_communication.ros_to_redis_vehicle_state:main',
+            'redis_to_ros_input_path = mcity_remote_com.redis_to_ros_input_path:main',
+            'redis_to_ros_vehicle_state = mcity_remote_com.redis_to_ros_vehicle_state:main',
+            'ros_to_redis_input_path = mcity_remote_com.ros_to_redis_input_path:main',
+            'ros_to_redis_vehicle_state = mcity_remote_com.ros_to_redis_vehicle_state:main',
         ],
     },
 )

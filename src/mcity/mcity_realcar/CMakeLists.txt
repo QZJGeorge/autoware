@@ -12,13 +12,13 @@ include_directories(
 
 ########################### AUTOWARE INTERFACE #####################################
 
-ament_auto_add_library(autoware_interface_component SHARED
-  src/autoware_interface.cpp
+ament_auto_add_library(autoware_interface_realcar_component SHARED
+  src/autoware_interface_realcar.cpp
 )
 
-rclcpp_components_register_node(autoware_interface_component
-  PLUGIN "autoware_interface::AutowareInterface"
-  EXECUTABLE autoware_interface
+rclcpp_components_register_node(autoware_interface_realcar_component
+  PLUGIN "autoware_interface_realcar::AutowareInterfaceRealcar"
+  EXECUTABLE autoware_interface_realcar
 )
 
 ########################################################################################

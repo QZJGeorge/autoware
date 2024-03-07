@@ -12,30 +12,30 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include <autoware_interface_voices.hpp>
+#include <autoware_interface_voices_cosim.hpp>
 
-namespace autoware_interface_voices{
+namespace autoware_interface_voices_cosim{
 
-  AutowareInterfaceVoices::AutowareInterfaceVoices(const rclcpp::NodeOptions & options)
-  : Node("autoware_interface_voices", options)
+  AutowareInterfaceVoicesCosim::AutowareInterfaceVoicesCosim(const rclcpp::NodeOptions & options)
+  : Node("autoware_interface_voices_cosim", options)
   {
     pub_local = this->create_publisher<PoseWithCovarianceStamped>("/initialpose", 10);
     sub_autoware_state = this->create_subscription<AutowareState>(
-      "/autoware/state", 10, std::bind(&AutowareInterfaceVoices::autoware_state_callback, this, std::placeholders::_1));
+      "/autoware/state", 10, std::bind(&AutowareInterfaceVoicesCosim::autoware_state_callback, this, std::placeholders::_1));
     sub_ego_odom = this->create_subscription<Odometry>(
-      "/localization/kinematic_state", 10, std::bind(&AutowareInterfaceVoices::odom_callback, this, std::placeholders::_1));
+      "/localization/kinematic_state", 10, std::bind(&AutowareInterfaceVoicesCosim::odom_callback, this, std::placeholders::_1));
 
     cli_set_route_points = this->create_client<SetRoutePoints>("/planning/mission_planning/set_route_points");
     cli_set_operation_mode = this->create_client<ChangeOperationMode>("/system/operation_mode/change_operation_mode");
     cli_set_autoware_control = this->create_client<ChangeAutowareControl>("/system/operation_mode/change_autoware_control");
 
     timer_ = rclcpp::create_timer(
-      this, get_clock(), 1000ms, std::bind(&AutowareInterfaceVoices::on_timer, this));
+      this, get_clock(), 1000ms, std::bind(&AutowareInterfaceVoicesCosim::on_timer, this));
 
     init_redis_client();
   }
 
-  void AutowareInterfaceVoices::on_timer(){
+  void AutowareInterfaceVoicesCosim::on_timer(){
     if (autoware_state == 0){
       RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Waiting for autoware to start up..");
       return;
@@ -58,7 +58,7 @@ namespace autoware_interface_voices{
     }
   }
 
-  void AutowareInterfaceVoices::init_localization(){
+  void AutowareInterfaceVoicesCosim::init_localization(){
     PoseWithCovarianceStamped localization_msg;
 
     localization_msg.pose.pose.position.x = 77663.359375;
@@ -75,7 +75,7 @@ namespace autoware_interface_voices{
     pub_local->publish(localization_msg);
   }
 
-  void AutowareInterfaceVoices::set_route_points(){
+  void AutowareInterfaceVoicesCosim::set_route_points(){
     while (!cli_set_route_points->wait_for_service(1s)) {
       if (!rclcpp::ok()) {
         RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
@@ -84,6 +84,8 @@ namespace autoware_interface_voices{
     }
 
     auto set_route_points_req = std::make_shared<SetRoutePoints::Request>();
+
+    Pose wp0, wp1, wp2;
 
     wp0.position.x = 77591.7109375;
     wp0.position.y = 86607.234375;
@@ -120,7 +122,7 @@ namespace autoware_interface_voices{
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting new route...");
   }
 
-  void AutowareInterfaceVoices::set_operation_mode(uint8_t mode){
+  void AutowareInterfaceVoicesCosim::set_operation_mode(uint8_t mode){
     auto request = std::make_shared<ChangeOperationMode::Request>();
     request->mode = mode;
 
@@ -134,7 +136,7 @@ namespace autoware_interface_voices{
     auto result = cli_set_operation_mode->async_send_request(request);
   }
 
-  void AutowareInterfaceVoices::set_autoware_control(bool autoware_control){
+  void AutowareInterfaceVoicesCosim::set_autoware_control(bool autoware_control){
     auto request = std::make_shared<ChangeAutowareControl::Request>();
     request->autoware_control = autoware_control;
 
@@ -148,15 +150,15 @@ namespace autoware_interface_voices{
     auto result = cli_set_autoware_control->async_send_request(request);
   }
 
-  void AutowareInterfaceVoices::autoware_state_callback(AutowareState::SharedPtr msg){
+  void AutowareInterfaceVoicesCosim::autoware_state_callback(AutowareState::SharedPtr msg){
     autoware_state = msg->state;
   }
 
-  void AutowareInterfaceVoices::odom_callback(Odometry::SharedPtr msg){
+  void AutowareInterfaceVoicesCosim::odom_callback(Odometry::SharedPtr msg){
     odom_msg = *msg;
   }
 
-  void AutowareInterfaceVoices::init_redis_client(){
+  void AutowareInterfaceVoicesCosim::init_redis_client(){
     // Connecting to the Redis server on localhost
     context = redisConnect("127.0.0.1", 6379);
 
@@ -172,7 +174,7 @@ namespace autoware_interface_voices{
     }
   }
 
-  string AutowareInterfaceVoices::get_key(string key){
+  string AutowareInterfaceVoicesCosim::get_key(string key){
     // GET key
     redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
     string result = "";
@@ -182,4 +184,4 @@ namespace autoware_interface_voices{
   }
 }
 
-RCLCPP_COMPONENTS_REGISTER_NODE(autoware_interface_voices::AutowareInterfaceVoices)
+RCLCPP_COMPONENTS_REGISTER_NODE(autoware_interface_voices_cosim::AutowareInterfaceVoicesCosim)

@@ -68,12 +68,12 @@ def generate_launch_description():
         # Remote Communication
         ############################################################
         Node(
-            package='mcity_remote_communication',
+            package='mcity_remote_com',
             namespace='/mcity/communication',
             executable='redis_to_ros_vehicle_state',
         ),
         Node(
-            package='mcity_remote_communication',
+            package='mcity_remote_com',
             namespace='/mcity/communication',
             executable='ros_to_redis_input_path',
         ),
