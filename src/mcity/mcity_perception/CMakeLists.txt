@@ -8,6 +8,7 @@ autoware_package()
 # Add include directories
 include_directories(
     include
+    ../redis_client/
     /usr/include/hiredis
     /usr/include/GeographicLib
 )
@@ -16,6 +17,7 @@ include_directories(
 
 ament_auto_add_library(sumo_traffic_light_converter_component SHARED
   src/sumo_traffic_light_converter.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(sumo_traffic_light_converter_component hiredis)
@@ -29,6 +31,7 @@ rclcpp_components_register_node(sumo_traffic_light_converter_component
 
 ament_auto_add_library(sumo_background_vehicle_converter_component SHARED
   src/sumo_background_vehicle_converter.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(sumo_background_vehicle_converter_component hiredis Geographic)
@@ -42,6 +45,7 @@ rclcpp_components_register_node(sumo_background_vehicle_converter_component
 
 ament_auto_add_library(sumo_traffic_vehicle_replay_component SHARED
   src/sumo_traffic_vehicle_replay.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(sumo_traffic_vehicle_replay_component hiredis)

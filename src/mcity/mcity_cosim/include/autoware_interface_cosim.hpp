@@ -18,16 +18,23 @@
 #include <iostream>
 #include <chrono>
 #include <thread>
+
 #include <rclcpp/rclcpp.hpp>
-#include <hiredis/hiredis.h>
+#include <rclcpp_components/register_node_macro.hpp>
+
+#include <RedisClient.h>
+
 #include <nav_msgs/msg/odometry.hpp>
+
 #include <geometry_msgs/msg/pose.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
+
 #include <tier4_system_msgs/srv/change_operation_mode.hpp>
 #include <tier4_system_msgs/srv/change_autoware_control.hpp>
+
 #include <autoware_adapi_v1_msgs/srv/set_route_points.hpp>
 #include <autoware_auto_system_msgs/msg/autoware_state.hpp>
-#include <rclcpp_components/register_node_macro.hpp>
+
 
 namespace autoware_interface_cosim
 {
@@ -48,19 +55,9 @@ public:
   ~AutowareInterfaceCosim() = default;
 
 private:
-  // constants for operation mode
-  uint8_t STOP = 1;
-  uint8_t AUTONOMOUS = 2;
-  uint8_t LOCAL = 3;
-  uint8_t REMOTE = 4;
+  int autoware_state = 1;
 
-  int autoware_state = 0;
-  
-  Pose wp0, wp1, wp2, wp3, wp4;
-
-  redisContext *context;
-
-  PoseWithCovarianceStamped localization_msg;
+  RedisClient redis_client;
 
   rclcpp::TimerBase::SharedPtr timer_;
 
@@ -72,20 +69,14 @@ private:
   rclcpp::Client<ChangeAutowareControl>::SharedPtr cli_set_autoware_control;
 
   void on_timer();
-  void init_redis_client();
 
   void init_localization();
-  void pub_localization();
 
-  void init_route_points();
   void set_route_points();
-
   void set_operation_mode(uint8_t mode);
   void set_autoware_control(bool autoware_control);
 
   void autoware_state_callback(AutowareState::SharedPtr msg);
-
-  string get_key(string key);
 };
 
 }

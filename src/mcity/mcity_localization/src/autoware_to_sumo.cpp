@@ -16,7 +16,6 @@
 
 namespace autoware_to_sumo
 {
-
   AutowareToSumo::AutowareToSumo(const rclcpp::NodeOptions &options)
       : Node("autoware_to_sumo", options)
   {
@@ -26,14 +25,15 @@ namespace autoware_to_sumo
     timer_ = rclcpp::create_timer(
         this, get_clock(), 50ms, std::bind(&AutowareToSumo::on_timer, this));
 
-    init_redis_client();
-    signal(SIGINT, handleShutdown);  // Register the signal handler for clearing redis cashe before shutting down node
+    if (!redis_client.connect()) {
+        RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
+    } else {
+        RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
+    }
   }
 
   void AutowareToSumo::on_timer(){
-    if (odom_check == 0){
-      return;
-    }
+    if (!odom_status) return;
 
     int zone = 17;                                 // ann arbor is in zone 17
     int prec = 10;                                 // we set conversion precision to 10 decimals
@@ -42,6 +42,7 @@ namespace autoware_to_sumo
     std::string mgrs = get_mgrs_from_odom(saved_odom_msg);    // get mgrs format string for conversion
 
     double x, y;
+    
     // Convert the MGRS coordinates to UTM coordinates
     GeographicLib::MGRS::Reverse(mgrs, zone, north, x, y, prec);
 
@@ -53,10 +54,8 @@ namespace autoware_to_sumo
     av_state["resolution"] = 0.1;
     av_state["velocity"] = saved_odom_msg.twist.twist.linear.x;
 
-    set_key("av_state", av_state.dump());
-    set_key("terasim_time", get_key("terasim_time"));
-
-    odom_check = 0;
+    redis_client.set("av_state", av_state.dump());
+    odom_status = false;
   }
 
   double AutowareToSumo::get_ori_from_odom(Odometry msg){
@@ -87,43 +86,7 @@ namespace autoware_to_sumo
 
   void AutowareToSumo::odom_callback(Odometry::SharedPtr msg){
     saved_odom_msg = *msg;
-    odom_check = 1;
-  }
-
-  void AutowareToSumo::init_redis_client(){
-    // Connecting to the Redis server on localhost
-    context = redisConnect("127.0.0.1", 6379);
-
-    // handle error
-    if (context == NULL || context->err) {
-      if (context){
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
-      } else {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
-      }
-    } else {
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
-    }
-  }
-
-  void AutowareToSumo::set_key(string key, string value){
-    // SET key
-    redisReply *reply = (redisReply *)redisCommand(context, "SET %s %s", key.c_str(), value.c_str());
-    if (reply->type == REDIS_REPLY_ERROR){
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Redis set key error: %s", key.c_str());
-    }
-    if (reply->type == REDIS_REPLY_STATUS){
-
-    }
-  }
-
-  string AutowareToSumo::get_key(string key){
-    // GET key
-    redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
-    std::string result = "";
-    if (reply->type == REDIS_REPLY_STRING)
-      result = reply->str;
-    return result;
+    odom_status = true;
   }
 }
 

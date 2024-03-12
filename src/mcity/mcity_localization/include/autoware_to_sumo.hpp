@@ -12,16 +12,17 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_TERASIM__autoware_to_sumo_HPP_
-#define MCITY_TERASIM__autoware_to_sumo_HPP_
+#ifndef MCITY_LOCALIZATION_AUTOWARE_TO_SUMO_HPP_
+#define MCITY_LOCALIZATION_AUTOWARE_TO_SUMO_HPP_
 
 #include <cmath>
 #include <string>
 #include <iomanip>
 #include <csignal>
 #include <iostream>
+
+#include <RedisClient.h>
 #include <nlohmann/json.hpp>
-#include <hiredis/hiredis.h>
 
 #include <GeographicLib/Geodesic.hpp>
 #include <GeographicLib/GeodesicLine.hpp>
@@ -45,35 +46,22 @@ public:
   explicit AutowareToSumo(const rclcpp::NodeOptions & options);
   ~AutowareToSumo() = default;
 
-  static void handleShutdown(int signal)
-  {
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "interruption signal received %d", signal);
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "clearing redis cashe before shutting down...");
-
-    // Execute FLUSHDB command to clear current database
-    redisContext *c = redisConnect("127.0.0.1", 6379);
-    redisReply *reply = (redisReply *)redisCommand(c,"FLUSHDB");
-    freeReplyObject(reply);
-    rclcpp::shutdown();
-  }
-
 private:
   rclcpp::TimerBase::SharedPtr timer_;
+
   rclcpp::Subscription<Odometry>::SharedPtr sub_ego_odom;
 
-  redisContext *context;
+  RedisClient redis_client;
 
-  int odom_check = 0;
   Odometry saved_odom_msg;
 
+  bool odom_status = false;
+
   void on_timer();
-  void init_redis_client();
-  void set_key(string key, string value);
   void odom_callback(Odometry::SharedPtr msg);
 
   double get_ori_from_odom(Odometry msg);
 
-  string get_key(string key);
   string get_mgrs_from_odom(Odometry msg);
 };
 

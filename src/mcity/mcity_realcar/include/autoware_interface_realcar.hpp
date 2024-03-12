@@ -16,15 +16,21 @@
 #define MCITY_TERASIM__autoware_interface_realcar_HPP_
 
 #include <iostream>
+
 #include <rclcpp/rclcpp.hpp>
+#include <rclcpp_components/register_node_macro.hpp>
+
 #include <geometry_msgs/msg/pose.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
+
 #include <mcity_msgs/msg/vehicle_state.hpp>
+
 #include <autoware_adapi_v1_msgs/srv/set_route_points.hpp>
 #include <autoware_adapi_v1_msgs/msg/operation_mode_state.hpp>
-#include <rclcpp_components/register_node_macro.hpp>
+
 #include <tier4_system_msgs/srv/change_operation_mode.hpp>
 #include <tier4_system_msgs/srv/change_autoware_control.hpp>
+
 #include <autoware_auto_vehicle_msgs/msg/velocity_report.hpp>
 #include <autoware_auto_vehicle_msgs/msg/steering_report.hpp>
 #include <autoware_auto_system_msgs/msg/autoware_state.hpp>
@@ -54,12 +60,6 @@ public:
   ~AutowareInterfaceRealcar() = default;
 
 private:
-  // constants for operation mode
-  uint8_t STOP = 1;
-  uint8_t AUTONOMOUS = 2;
-  uint8_t LOCAL = 3;
-  uint8_t REMOTE = 4;
-
   int autoware_state = 1;
 
   const double STEER_TO_TIRE_RATIO = 16.0;
@@ -67,8 +67,6 @@ private:
   VehicleState veh_state_msg;
 
   OperationModeState operation_mode_state_msg;
-
-  Pose wp0, wp1, wp2, wp3, wp4;
 
   rclcpp::TimerBase::SharedPtr timer_;
 
@@ -85,10 +83,9 @@ private:
 
   void on_timer();
 
-  void init_route_points();
-  void set_route_points();
   void pub_vehicle_report();
 
+  void set_route_points();
   void set_operation_mode(uint8_t mode);
   void set_autoware_control(bool autoware_control);
 

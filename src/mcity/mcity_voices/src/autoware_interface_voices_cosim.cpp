@@ -31,8 +31,6 @@ namespace autoware_interface_voices_cosim{
 
     timer_ = rclcpp::create_timer(
       this, get_clock(), 1000ms, std::bind(&AutowareInterfaceVoicesCosim::on_timer, this));
-
-    init_redis_client();
   }
 
   void AutowareInterfaceVoicesCosim::on_timer(){
@@ -45,16 +43,6 @@ namespace autoware_interface_voices_cosim{
     } else if (autoware_state == 2){
         set_route_points();
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting route points...");
-    } else if (autoware_state == 4){
-      string terasim_status = get_key("terasim_status");
-      if (terasim_status == "" || terasim_status == "0"){
-        RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
-      } 
-      // else{
-      //   set_autoware_control(true);
-      //   set_operation_mode(AUTONOMOUS);
-      //   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Enabling autoware control...");
-      // }
     }
   }
 
@@ -156,31 +144,6 @@ namespace autoware_interface_voices_cosim{
 
   void AutowareInterfaceVoicesCosim::odom_callback(Odometry::SharedPtr msg){
     odom_msg = *msg;
-  }
-
-  void AutowareInterfaceVoicesCosim::init_redis_client(){
-    // Connecting to the Redis server on localhost
-    context = redisConnect("127.0.0.1", 6379);
-
-    // handle error
-    if (context == NULL || context->err) {
-      if (context){
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
-      } else {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
-      }
-    } else {
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
-    }
-  }
-
-  string AutowareInterfaceVoicesCosim::get_key(string key){
-    // GET key
-    redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
-    string result = "";
-    if (reply->type == REDIS_REPLY_STRING)
-      result = reply->str;
-    return result;
   }
 }
 

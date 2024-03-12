@@ -25,12 +25,16 @@ namespace carla_to_local{
     timer_ = rclcpp::create_timer(
         this, get_clock(), 20ms, std::bind(&CarlaToLocal::pub_localization, this));
     
-    init_redis_client();
+    if (!redis_client.connect()) {
+        RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
+    } else {
+        RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
+    }
   }
 
   void CarlaToLocal::pub_localization(){
     // messages have not been updated
-    string cosim_ego_vehicle_info = get_key("cosim_ego_vehicle_info");
+    string cosim_ego_vehicle_info = redis_client.get("cosim_ego_vehicle_info");
     if (cosim_ego_vehicle_info == ""){
       RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Waiting for cosim_ego_vehicle_info...");
       return;
@@ -138,31 +142,6 @@ namespace carla_to_local{
 
     easting = easting_int/pow(10, 4);
     northing = northing_int/pow(10, 4);
-  }
-
-  void CarlaToLocal::init_redis_client(){
-    // Connecting to the Redis server on localhost
-    context = redisConnect("127.0.0.1", 6379);
-
-    // handle error
-    if (context == NULL || context->err) {
-      if (context){
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
-      } else {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
-      }
-    } else {
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
-    }
-  }
-
-  string CarlaToLocal::get_key(string key){
-    // GET key
-    redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
-    string result = "";
-    if (reply->type == REDIS_REPLY_STRING)
-      result = reply->str;
-    return result;
   }
 }
 

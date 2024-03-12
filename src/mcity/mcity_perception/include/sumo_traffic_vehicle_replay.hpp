@@ -12,8 +12,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_TERASIM__CAX_CONTEXT_REPLAY_HPP_
-#define MCITY_TERASIM__CAX_CONTEXT_REPLAY_HPP_
+#ifndef MCITY_PERCEPTION_SUMO_TRAFFIC_VEHICLE_REPLAY_REPLAY_HPP_
+#define MCITY_PERCEPTION_SUMO_TRAFFIC_VEHICLE_REPLAY_REPLAY_HPP_
 
 #include <string>
 #include <fstream>
@@ -21,12 +21,14 @@
 #include <iomanip>
 #include <iostream>
 #include <algorithm>
-#include <nlohmann/json.hpp>
-#include <hiredis/hiredis.h>
 
 #include <rclcpp/rclcpp.hpp>
-#include <unique_identifier_msgs/msg/uuid.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
+
+#include <RedisClient.h>
+#include <nlohmann/json.hpp>
+
+#include <unique_identifier_msgs/msg/uuid.hpp>
 
 
 namespace sumo_traffic_vehicle_replay
@@ -43,12 +45,9 @@ public:
   ~SumoTrafficVehicleReplay() = default;
 
 private:
-  redisContext *context;
+  RedisClient redis_client;
 
   void read_file();
-  void init_redis_client();
-  void set_key(string key, string value);
-  string get_key(string key);
 };
 
 }

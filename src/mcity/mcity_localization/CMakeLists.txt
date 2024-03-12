@@ -8,13 +8,11 @@ autoware_package()
 # Add include directories
 include_directories(
     include
+    ../redis_client/
+    /usr/include/hiredis
     /usr/include/GeographicLib
     /usr/include/glm
-    /usr/include/hiredis
 )
-
-# Add link directories (also for redis)
-link_directories(/usr/local/lib)
 
 #############################  GNSS TO AUTOWARE ###################################
 
@@ -33,6 +31,7 @@ rclcpp_components_register_node(gnss_to_autoware_component
 
 ament_auto_add_library(autoware_to_sumo_component SHARED
   src/autoware_to_sumo.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(autoware_to_sumo_component hiredis)

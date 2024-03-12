@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-  <!-- RViz2 -->
-  <node pkg="rviz2" exec="rviz2" name="rviz2_dbw" output="screen" args="-d $(find-pkg-share dbw_polaris_description)/launch/rviz2.rviz" />
-</launch>

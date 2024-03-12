@@ -15,25 +15,27 @@
 #ifndef MCITY_TERASIM__CARLA_TO_LOCAL__HPP_
 #define MCITY_TERASIM__CARLA_TO_LOCAL__HPP_
 
+#include <iostream>
+
 #include <GeographicLib/UTMUPS.hpp>
 #include <GeographicLib/MGRS.hpp>
 
+#include <RedisClient.h>
 #include <nlohmann/json.hpp>
-#include <hiredis/hiredis.h>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/quaternion.hpp>
 #include <glm/gtx/quaternion.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
-#include <iostream>
 #include <rclcpp/rclcpp.hpp>
+#include <rclcpp_components/register_node_macro.hpp>
+
 #include <std_msgs/msg/header.hpp>
 #include <sensor_msgs/msg/imu.hpp>
 #include <geometry_msgs/msg/twist_stamped.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
 #include <geometry_msgs/msg/twist_with_covariance_stamped.hpp>
-#include <rclcpp_components/register_node_macro.hpp>
 
 
 namespace carla_to_local
@@ -62,7 +64,7 @@ private:
 
   rclcpp::TimerBase::SharedPtr timer_;
 
-  redisContext *context;
+  RedisClient redis_client;
 
   Header header;
 
@@ -90,14 +92,11 @@ private:
   PoseWithCovarianceStamped pose_with_cov_msg;
   TwistWithCovarianceStamped twist_with_cov_msg;
 
-  void init_redis_client();
   void pub_localization();
   void calc_vehicle_orientation(float &qx, float &qy, float &qz, float &qw);
   void eulerToQuaternion(double roll, double pitch, double yaw,
                         double& qx, double& qy, double& qz, double& qw);
   void gcs_to_mgrs(double lat, double lon, double &easting, double &northing);
-                        
-  string get_key(string key);
   
   float calc_linear_x();
 };

@@ -9,7 +9,8 @@ def generate_launch_description():
             namespace='/mcity/control',
             executable='preview_control',
             parameters=[
-                {"gain_folder": PathJoinSubstitution([EnvironmentVariable('HOME'), "autoware/src/mcity/mcity_control/data/gain/withoutdelay/"])},
+                {"gain_folder": PathJoinSubstitution([EnvironmentVariable('HOME'), 
+                                                      "autoware/src/mcity/mcity_control/data/gain/withoutdelay/"])},
                 {"max_ey": 1.5},
                 {"max_ephi": 1.0},
                 {"max_curvature": 0.2},
@@ -21,16 +22,6 @@ def generate_launch_description():
                 {"preview_time": 5.0},
                 {"desired_time_resolution": 0.04},
                 {"trajectory_abort_size": 25}
-            ],
-        ),
-        Node(
-            package='mcity_control',
-            namespace='/mcity/control',
-            executable='mkz_bywire',
-            parameters=[
-                {"max_speed": 10.0},
-                {"max_throttle": 0.5},
-                {"max_lat_acc": 2.0},
             ],
         ),
     ])

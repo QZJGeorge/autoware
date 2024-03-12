@@ -35,33 +35,47 @@ namespace autoware_interface_realcar{
 
     timer_ = rclcpp::create_timer(
       this, get_clock(), 100ms, std::bind(&AutowareInterfaceRealcar::on_timer, this));
-
-    init_route_points();
   }
 
   void AutowareInterfaceRealcar::on_timer(){
-    if (autoware_state == 1){
+    if (autoware_state == AutowareState::INITIALIZING){
       RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Waiting for vehicle initialization...");
       return;
-    } else if (autoware_state == 2){
-      operation_mode_state_msg.mode = 3;
+    } else if (autoware_state == AutowareState::WAITING_FOR_ROUTE){
       set_route_points();
+      operation_mode_state_msg.mode = ChangeOperationMode::Request::LOCAL;
       RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting vehicle route points...");
     } 
     // else{
-    //   if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x < 0.25 && (uint8_t)operation_mode_state_msg.mode != STOP){
-    //     set_operation_mode(STOP);
-    //   } else if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x >= 0.25 && (uint8_t)operation_mode_state_msg.mode != LOCAL){
-    //     set_operation_mode(LOCAL);
-    //   } else if (veh_state_msg.by_wire_enabled && (uint8_t)operation_mode_state_msg.mode != AUTONOMOUS){
-    //     set_operation_mode(AUTONOMOUS);
+    //   if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x < 0.25 && (uint8_t)operation_mode_state_msg.mode != ChangeOperationMode::Request::STOP){
+    //     set_operation_mode(ChangeOperationMode::Request::STOP);
+    //   } else if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x >= 0.25 && (uint8_t)operation_mode_state_msg.mode != ChangeOperationMode::Request::LOCAL){
+    //     set_operation_mode(ChangeOperationMode::Request::LOCAL);
+    //   } else if (veh_state_msg.by_wire_enabled && (uint8_t)operation_mode_state_msg.mode != ChangeOperationMode::Request::AUTONOMOUS){
+    //     set_operation_mode(ChangeOperationMode::Request::AUTONOMOUS);
     //   }
     // }
 
     pub_vehicle_report();
   }
 
-  void AutowareInterfaceRealcar::init_route_points(){
+  void AutowareInterfaceRealcar::pub_vehicle_report(){
+    VelocityReport vel_report_msg;
+    SteeringReport steer_report_msg;
+
+    vel_report_msg.header.stamp = this->get_clock()->now();
+    vel_report_msg.longitudinal_velocity = veh_state_msg.speed_x;
+
+    steer_report_msg.stamp = this->get_clock()->now();
+    steer_report_msg.steering_tire_angle = veh_state_msg.steer_state / STEER_TO_TIRE_RATIO;
+
+    pub_vel_report->publish(vel_report_msg);
+    pub_steer_report->publish(steer_report_msg);
+  }
+
+  void AutowareInterfaceRealcar::set_route_points(){
+    Pose wp0, wp1, wp2, wp3, wp4;
+    
     wp0.position.x = 77649.625;
     wp0.position.y = 86695.296;
     wp0.position.z = 0.0;
@@ -106,23 +120,7 @@ namespace autoware_interface_realcar{
     wp4.orientation.y = 0.0;
     wp4.orientation.z = 0.08106215155563748;
     wp4.orientation.w = 0.9967090486120666;
-  }
 
-  void AutowareInterfaceRealcar::pub_vehicle_report(){
-    VelocityReport vel_report_msg;
-    SteeringReport steer_report_msg;
-
-    vel_report_msg.header.stamp = this->get_clock()->now();
-    vel_report_msg.longitudinal_velocity = veh_state_msg.speed_x;
-
-    steer_report_msg.stamp = this->get_clock()->now();
-    steer_report_msg.steering_tire_angle = veh_state_msg.steer_state / STEER_TO_TIRE_RATIO;
-
-    pub_vel_report->publish(vel_report_msg);
-    pub_steer_report->publish(steer_report_msg);
-  }
-
-  void AutowareInterfaceRealcar::set_route_points(){
     while (!cli_set_route_points->wait_for_service(1s)) {
       if (!rclcpp::ok()) {
         RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");

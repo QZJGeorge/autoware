@@ -19,8 +19,6 @@
   <depend>sensor_msgs</depend>
   <depend>mcity_msgs</depend>
   <depend>geometry_msgs</depend>
-  <depend>dbw_fca_msgs</depend>
-  <depend>dataspeed_dbw_msgs</depend>
  
   <exec_depend>ros2launch</exec_depend>
 

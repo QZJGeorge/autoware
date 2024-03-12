@@ -30,35 +30,38 @@ namespace autoware_interface_cosim{
     timer_ = rclcpp::create_timer(
       this, get_clock(), 1000ms, std::bind(&AutowareInterfaceCosim::on_timer, this));
 
-    init_redis_client();
-    init_localization();
-    init_route_points();
+    if (!redis_client.connect()) {
+        RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
+    } else {
+        RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
+    }
   }
 
   void AutowareInterfaceCosim::on_timer(){
-    if (autoware_state == 0){
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Waiting for autoware to start up..");
-      return;
-    } else if (autoware_state == 1){
-      pub_localization();
+    if (autoware_state == AutowareState::INITIALIZING){
+      init_localization();
       RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Publishing initial localization...");
-    } else if (autoware_state == 2){
+    }
+    else if (autoware_state == AutowareState::WAITING_FOR_ROUTE){
       set_route_points();
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting goal point...");
-    } else if (autoware_state == 4){
-      string terasim_status = get_key("terasim_status");
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting route points...");
+    } 
+    else if (autoware_state == AutowareState::WAITING_FOR_ENGAGE){
+      string terasim_status = redis_client.get("terasim_status");
       if (terasim_status == "" || terasim_status == "0"){
         RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
       } 
       else{
         set_autoware_control(true);
-        set_operation_mode(AUTONOMOUS);
+        set_operation_mode(ChangeOperationMode::Request::AUTONOMOUS);
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Enabling autoware control...");
       }
     }
   }
 
   void AutowareInterfaceCosim::init_localization(){
+    PoseWithCovarianceStamped localization_msg;
+
     localization_msg.pose.pose.position.x = 77639.3359375;
     localization_msg.pose.pose.position.y = 86558.40625;
 
@@ -66,9 +69,16 @@ namespace autoware_interface_cosim{
     localization_msg.pose.pose.orientation.y = 0.0;
     localization_msg.pose.pose.orientation.z = 0.578428211916176;
     localization_msg.pose.pose.orientation.w = 0.8157332919891497;
+
+    localization_msg.header.stamp = this->get_clock()->now();
+    localization_msg.header.frame_id = "map";
+    
+    pub_local->publish(localization_msg);
   }
 
-  void AutowareInterfaceCosim::init_route_points(){
+  void AutowareInterfaceCosim::set_route_points(){
+    Pose wp0, wp1, wp2, wp3, wp4;
+
     wp0.position.x = 77649.625;
     wp0.position.y = 86695.296;
     wp0.position.z = 0.0;
@@ -113,15 +123,7 @@ namespace autoware_interface_cosim{
     wp4.orientation.y = 0.0;
     wp4.orientation.z = 0.08106215155563748;
     wp4.orientation.w = 0.9967090486120666;
-  }
 
-  void AutowareInterfaceCosim::pub_localization(){
-    localization_msg.header.stamp = this->get_clock()->now();
-    localization_msg.header.frame_id = "map";
-    pub_local->publish(localization_msg);
-  }
-
-  void AutowareInterfaceCosim::set_route_points(){
     while (!cli_set_route_points->wait_for_service(1s)) {
       if (!rclcpp::ok()) {
         RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
@@ -169,31 +171,6 @@ namespace autoware_interface_cosim{
 
   void AutowareInterfaceCosim::autoware_state_callback(AutowareState::SharedPtr msg){
     autoware_state = msg->state;
-  }
-
-  void AutowareInterfaceCosim::init_redis_client(){
-    // Connecting to the Redis server on localhost
-    context = redisConnect("127.0.0.1", 6379);
-
-    // handle error
-    if (context == NULL || context->err) {
-      if (context){
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
-      } else {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
-      }
-    } else {
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
-    }
-  }
-
-  string AutowareInterfaceCosim::get_key(string key){
-    // GET key
-    redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
-    string result = "";
-    if (reply->type == REDIS_REPLY_STRING)
-      result = reply->str;
-    return result;
   }
 }
 

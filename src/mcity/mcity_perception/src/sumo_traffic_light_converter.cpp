@@ -24,12 +24,34 @@ namespace sumo_traffic_light_converter{
     timer_ = rclcpp::create_timer(
       this, get_clock(), 20ms, std::bind(&SumoTrafficLightConverter::on_timer, this));
 
-    init_redis_client();
+    if (!redis_client.connect()) {
+        RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
+    } else {
+        RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
+    }
+  }
+
+  void SumoTrafficLightConverter::on_timer(){
+    string av_tls = redis_client.get("av_tls");
+
+    if (av_tls == ""){
+      return;
+    }
+
+    json traffic_signals_json = json::parse(av_tls);
+    json traffic_signals_tls_info = json::parse(traffic_signals_json["tls_info"].dump());
+
+    update_signals(traffic_signals_tls_info);
+
+    traffic_signal_array.stamp = this->get_clock()->now();
+    traffic_signal_array.signals = signals;
+
+    pub_signal_array->publish(traffic_signal_array);
   }
 
   void SumoTrafficLightConverter::update_signals(json traffic_signals_tls_info){
-    traffic_signal_element.shape = CIRCLE;
-    traffic_signal_element.status = SOLID_ON;
+    traffic_signal_element.shape = TrafficSignalElement::CIRCLE;
+    traffic_signal_element.status = TrafficSignalElement::SOLID_ON;
     traffic_signal_element.confidence = 1.0;
 
     for(auto& node : traffic_signals_tls_info.items())
@@ -43,11 +65,11 @@ namespace sumo_traffic_light_converter{
         string traffic_light_state = light_info.substr(i,1);
 
         if (traffic_light_state == "r"){
-          traffic_signal_element.color = RED;
+          traffic_signal_element.color = TrafficSignalElement::RED;
         } else if (traffic_light_state== "y"){
-          traffic_signal_element.color = AMBER;
+          traffic_signal_element.color = TrafficSignalElement::AMBER;
         } else{
-          traffic_signal_element.color = GREEN;
+          traffic_signal_element.color = TrafficSignalElement::GREEN;
         }
 
         traffic_signal.traffic_signal_id = (int64_t)(stoi(traffic_light_id));
@@ -55,50 +77,6 @@ namespace sumo_traffic_light_converter{
         signals.push_back(traffic_signal);
       }
     }
-  }
-
-  void SumoTrafficLightConverter::init_redis_client(){
-    // Connecting to the Redis server on localhost
-    context = redisConnect("127.0.0.1", 6379);
-
-    // handle error
-    if (context == NULL || context->err) {
-      if (context){
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
-      } else {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
-      }
-    } else {
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
-    }
-  }
-
-  string SumoTrafficLightConverter::get_key(string key){
-    // GET key
-    redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
-    string result = "";
-    if (reply->type == REDIS_REPLY_STRING)
-      result = reply->str;
-    return result;
-  }
-
-  void SumoTrafficLightConverter::on_timer(){
-    string av_tls = get_key("av_tls");
-
-    if (av_tls == ""){
-      // RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "traffic signal not availble, waiting...");
-      return;
-    }
-
-    json traffic_signals_json = json::parse(av_tls);
-    json traffic_signals_tls_info = json::parse(traffic_signals_json["tls_info"].dump());
-
-    update_signals(traffic_signals_tls_info);
-
-    traffic_signal_array.stamp = this->get_clock()->now();
-    traffic_signal_array.signals = signals;
-
-    pub_signal_array->publish(traffic_signal_array);
   }
 }
 

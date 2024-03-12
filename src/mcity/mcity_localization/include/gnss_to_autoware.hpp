@@ -12,29 +12,32 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_PLANNER__gnss_to_autoware__HPP_
-#define MCITY_PLANNER__gnss_to_autoware__HPP_
+#ifndef MCITY_PLANNER_GNSS_TO_AUTOWARE_HPP_
+#define MCITY_PLANNER_GNSS_TO_AUTOWARE_HPP_
 
-#include <GeographicLib/UTMUPS.hpp>
-#include <GeographicLib/MGRS.hpp>
+#include <iostream>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/quaternion.hpp>
 #include <glm/gtx/quaternion.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
-#include <iostream>
+#include <GeographicLib/UTMUPS.hpp>
+#include <GeographicLib/MGRS.hpp>
+
 #include <rclcpp/rclcpp.hpp>
+#include <rclcpp_components/register_node_macro.hpp>
+
 #include <std_msgs/msg/header.hpp>
 #include <nav_msgs/msg/odometry.hpp>
+
 #include <sensor_msgs/msg/imu.hpp>
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
+
 #include <geometry_msgs/msg/transform_stamped.hpp>
 #include <geometry_msgs/msg/twist_stamped.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
 #include <geometry_msgs/msg/twist_with_covariance_stamped.hpp>
-#include <rclcpp_components/register_node_macro.hpp>
-
 
 namespace gnss_to_autoware
 {
@@ -90,12 +93,16 @@ private:
   PoseWithCovarianceStamped pose_with_cov;
   TwistWithCovarianceStamped twist_with_cov;
 
-  void pub_localization();
+  void on_timer();
+
+  void calc_vehicle_orientation(float &qx, float &qy, float &qz, float &qw);
+  void gcs_to_mgrs(double lat, double lon, double &easting, double &northing);
+  
+  float calc_linear_x();
+
   void imu_callback(Imu::SharedPtr msg);
   void odom_callback(Odometry::SharedPtr msg);
   void nav_callback(NavSatFix::SharedPtr msg);
-  void calc_vehicle_orientation(float &qx, float &qy, float &qz, float &qw);
-  float calc_linear_x();
 };
 
 }

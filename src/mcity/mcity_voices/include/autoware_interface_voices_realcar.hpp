@@ -82,10 +82,10 @@ private:
   rclcpp::Client<ChangeAutowareControl>::SharedPtr cli_set_autoware_control;
 
   void on_timer();
-
-  void set_route_points();
+  
   void pub_vehicle_report();
 
+  void set_route_points();
   void set_operation_mode(uint8_t mode);
   void set_autoware_control(bool autoware_control);
 

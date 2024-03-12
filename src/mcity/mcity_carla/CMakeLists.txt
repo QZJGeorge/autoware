@@ -7,7 +7,8 @@ autoware_package()
 
 # Add include directories
 include_directories(
-    include                 # for header files
+    include
+    ../redis_client/
     /usr/include/hiredis
     /usr/include/GeographicLib
     /usr/include/glm
@@ -17,6 +18,7 @@ include_directories(
 
 ament_auto_add_library(carla_to_local_component SHARED
   src/carla_to_local.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(carla_to_local_component hiredis Geographic)

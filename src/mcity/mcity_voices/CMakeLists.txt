@@ -7,20 +7,18 @@ autoware_package()
 
 # Add include directories
 include_directories(
-    include                 # for header files
-    /usr/include/hiredis
+    ../redis_client/
+    include
 )
-
-# Add link directories (also for redis)
-link_directories(/usr/local/lib)
 
 ##########################  MCITY VOICES COSIM ####################################
 
 ament_auto_add_library(autoware_interface_voices_cosim_component SHARED
   src/autoware_interface_voices_cosim.cpp
+  ../redis_client/RedisClient.cpp
 )
 
-target_link_libraries(autoware_interface_voices_cosim_component hiredis)
+# target_link_libraries(autoware_interface_voices_cosim_component hiredis)
 
 rclcpp_components_register_node(autoware_interface_voices_cosim_component
   PLUGIN "autoware_interface_voices_cosim::AutowareInterfaceVoicesCosim"
@@ -31,9 +29,10 @@ rclcpp_components_register_node(autoware_interface_voices_cosim_component
 
 ament_auto_add_library(autoware_interface_voices_realcar_component SHARED
   src/autoware_interface_voices_realcar.cpp
+  ../redis_client/RedisClient.cpp
 )
 
-target_link_libraries(autoware_interface_voices_realcar_component hiredis)
+# target_link_libraries(autoware_interface_voices_realcar_component hiredis)
 
 rclcpp_components_register_node(autoware_interface_voices_realcar_component
   PLUGIN "autoware_interface_voices_realcar::AutowareInterfaceVoicesRealcar"

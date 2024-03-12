@@ -30,76 +30,10 @@ namespace gnss_to_autoware{
       "/ins/nav_sat_fix", 10, std::bind(&GnssToAutoware::nav_callback, this, std::placeholders::_1));
 
     timer_ = rclcpp::create_timer(
-        this, get_clock(), 20ms, std::bind(&GnssToAutoware::pub_localization, this));
+        this, get_clock(), 20ms, std::bind(&GnssToAutoware::on_timer, this));
   }
 
-  float GnssToAutoware::calc_linear_x(){
-    double vx = saved_odom_msg.twist.twist.linear.x;
-    double vy = saved_odom_msg.twist.twist.linear.y;
-    double vz = saved_odom_msg.twist.twist.linear.z;
-
-    float speed = sqrt(vx*vx + vy*vy + vz*vz);
-
-    // filter out noise
-    if (speed < 0.05){
-      speed = 0.00;
-    }
-    return speed;
-  }
-
-  void GnssToAutoware::calc_vehicle_orientation(float &qx, float &qy, float &qz, float &qw){
-    qx = saved_imu_msg.orientation.x;
-    qy = saved_imu_msg.orientation.y;
-    qz = saved_imu_msg.orientation.z;
-    qw = saved_imu_msg.orientation.w;
-    
-    // rotate the quaternion by its local axis three times to align the imu's frame with the vehicle's frame
-    glm::quat quat = glm::quat(qw,qx,qy,qz);
-    glm::quat rotationAroundX = glm::angleAxis(glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-    glm::quat rotationAroundY = glm::angleAxis(glm::radians(-90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-    glm::quat rotationAroundZ = glm::angleAxis(glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
-
-    quat = quat * rotationAroundX * rotationAroundY * rotationAroundZ;
-
-    saved_imu_msg.orientation.x = qx = quat.x;
-    saved_imu_msg.orientation.y = qy = quat.y;
-    saved_imu_msg.orientation.z = qz = quat.z;
-    saved_imu_msg.orientation.w = qw = quat.w;
-  }
-
-  void GnssToAutoware::imu_callback(Imu::SharedPtr msg){
-    saved_imu_msg = *msg;
-    imu_status = 1;
-  }
-
-  void GnssToAutoware::odom_callback(Odometry::SharedPtr msg){
-    saved_odom_msg = *msg;
-    odom_status = 1;
-  }
-
-  void GnssToAutoware::nav_callback(NavSatFix::SharedPtr msg){
-    saved_nav_sat_fix_msg = *msg;
-    nav_status = 1;
-  }
-
-  void gcs_to_mgrs(double lat, double lon, double &easting, double &northing){
-    int zone;
-    bool northp;
-    double x, y;
-    int prec = 9;
-    string mgrs;
-    
-    UTMUPS::Forward(lat, lon, zone, northp, x, y);
-    MGRS::Forward(zone, northp, x, y, lat, prec, mgrs);
-
-    int easting_int = std::stoi(mgrs.substr(5,9));
-    int northing_int = std::stoi(mgrs.substr(14,9));
-
-    easting = easting_int/pow(10, 4);
-    northing = northing_int/pow(10, 4);
-  }
-
-  void GnssToAutoware::pub_localization(){
+  void GnssToAutoware::on_timer(){
     // messages have not been updated
     if (imu_status == 0 || nav_status == 0 || odom_status == 0){
         return;
@@ -154,6 +88,72 @@ namespace gnss_to_autoware{
     pub_imu->publish(saved_imu_msg);
     pub_pose->publish(pose_with_cov);
     pub_twist->publish(twist_with_cov);
+  }
+
+  float GnssToAutoware::calc_linear_x(){
+    double vx = saved_odom_msg.twist.twist.linear.x;
+    double vy = saved_odom_msg.twist.twist.linear.y;
+    double vz = saved_odom_msg.twist.twist.linear.z;
+
+    float speed = sqrt(vx*vx + vy*vy + vz*vz);
+
+    // filter out noise
+    if (speed < 0.05){
+      speed = 0.00;
+    }
+    return speed;
+  }
+
+  void GnssToAutoware::calc_vehicle_orientation(float &qx, float &qy, float &qz, float &qw){
+    qx = saved_imu_msg.orientation.x;
+    qy = saved_imu_msg.orientation.y;
+    qz = saved_imu_msg.orientation.z;
+    qw = saved_imu_msg.orientation.w;
+    
+    // rotate the quaternion by its local axis three times to align the imu's frame with the vehicle's frame
+    glm::quat quat = glm::quat(qw,qx,qy,qz);
+    glm::quat rotationAroundX = glm::angleAxis(glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+    glm::quat rotationAroundY = glm::angleAxis(glm::radians(-90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    glm::quat rotationAroundZ = glm::angleAxis(glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+
+    quat = quat * rotationAroundX * rotationAroundY * rotationAroundZ;
+
+    saved_imu_msg.orientation.x = qx = quat.x;
+    saved_imu_msg.orientation.y = qy = quat.y;
+    saved_imu_msg.orientation.z = qz = quat.z;
+    saved_imu_msg.orientation.w = qw = quat.w;
+  }
+
+  void GnssToAutoware::gcs_to_mgrs(double lat, double lon, double &easting, double &northing){
+    int zone;
+    bool northp;
+    double x, y;
+    int prec = 9;
+    string mgrs;
+    
+    UTMUPS::Forward(lat, lon, zone, northp, x, y);
+    MGRS::Forward(zone, northp, x, y, lat, prec, mgrs);
+
+    int easting_int = std::stoi(mgrs.substr(5,9));
+    int northing_int = std::stoi(mgrs.substr(14,9));
+
+    easting = easting_int/pow(10, 4);
+    northing = northing_int/pow(10, 4);
+  }
+
+  void GnssToAutoware::imu_callback(Imu::SharedPtr msg){
+    saved_imu_msg = *msg;
+    imu_status = 1;
+  }
+
+  void GnssToAutoware::odom_callback(Odometry::SharedPtr msg){
+    saved_odom_msg = *msg;
+    odom_status = 1;
+  }
+
+  void GnssToAutoware::nav_callback(NavSatFix::SharedPtr msg){
+    saved_nav_sat_fix_msg = *msg;
+    nav_status = 1;
   }
 }
 

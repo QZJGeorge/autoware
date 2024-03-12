@@ -24,7 +24,47 @@ namespace sumo_background_vehicle_converter
 
     pub_detected_objects = this->create_publisher<DetectedObjects>("/perception/object_recognition/detection/objects", 10);
 
-    init_redis_client();
+    if (!redis_client.connect()) {
+        RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
+    } else {
+        RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
+    }
+  }
+
+  void SumoBackgroundVehicleConverter::on_timer(){
+    string cav_context_vehicle_info_ros = redis_client.get("av_context");
+    if (cav_context_vehicle_info_ros == last_cav_context_vehicle_info_ros){
+      return;
+    } 
+    
+    last_cav_context_vehicle_info_ros = cav_context_vehicle_info_ros;
+    string newString = post_process_cav_context_vehicle_info_ros(cav_context_vehicle_info_ros);
+
+    detected_objects_msg.objects.clear();
+
+    if (newString == ""){
+      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "cav_context not available, waiting...");
+      pub_detected_objects->publish(detected_objects_msg);
+      return;
+    }
+
+    json cav_context_current_json = json::parse(newString);
+    string cav_value = cav_context_current_json["CAV"].dump();
+
+    // Update bv info with new message, create new bvs
+    for (json::iterator bv = cav_context_current_json.begin(); bv != cav_context_current_json.end(); ++bv) {
+      string bv_key = bv.key();
+      string bv_value = bv.value().dump();
+      if(in_range(cav_value, bv_value) && bv_key != "CAV"){
+        update_bv_in_autoware_sim(bv_key, bv_value);
+      }
+    }
+
+    detected_objects_msg.header.stamp = this->get_clock()->now();
+    detected_objects_msg.header.frame_id = "map";
+
+    // Publish the detected objects
+    pub_detected_objects->publish(detected_objects_msg);
   }
 
   double SumoBackgroundVehicleConverter::get_ori_from_odom(Odometry::SharedPtr msg){
@@ -165,7 +205,6 @@ namespace sumo_background_vehicle_converter
     return std::sqrt(std::pow(x_diff, 2)+std::pow(y_diff, 2)) < 100.0;
   }
 
-
   void SumoBackgroundVehicleConverter::update_bv_in_autoware_sim(string bv_key, string bv_value){
     json bv_value_json = json::parse(bv_value);
 
@@ -190,78 +229,6 @@ namespace sumo_background_vehicle_converter
     detected_object.shape = get_shape(bv_value_json);
 
     detected_objects_msg.objects.push_back(detected_object);
-  }
-
-  void SumoBackgroundVehicleConverter::init_redis_client(){
-    // Connecting to the Redis server on localhost
-    context = redisConnect("127.0.0.1", 6379);
-
-    // handle error
-    if (context == NULL || context->err) {
-      if (context){
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
-      } else {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
-      }
-    } else {
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
-    }
-  }
-
-  void SumoBackgroundVehicleConverter::set_key(string key, string value){
-    // SET key
-    redisReply *reply = (redisReply *)redisCommand(context, "SET %s %s", key.c_str(), value.c_str());
-    if (reply->type == REDIS_REPLY_ERROR){
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Redis set key error: %s", key.c_str());
-    }
-    if (reply->type == REDIS_REPLY_STATUS){
-      
-    }
-  }
-
-  string SumoBackgroundVehicleConverter::get_key(string key){
-    // GET key
-    redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
-    string result = "";
-    if (reply->type == REDIS_REPLY_STRING)
-      result = reply->str;
-    return result;
-  }
-
-  void SumoBackgroundVehicleConverter::on_timer(){
-    string cav_context_vehicle_info_ros = get_key("av_context");
-    if (cav_context_vehicle_info_ros == last_cav_context_vehicle_info_ros){
-      return;
-    } 
-    
-    last_cav_context_vehicle_info_ros = cav_context_vehicle_info_ros;
-    string newString = post_process_cav_context_vehicle_info_ros(cav_context_vehicle_info_ros);
-
-    detected_objects_msg.objects.clear();
-
-    if (newString == ""){
-      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "cav_context not available, waiting...");
-      pub_detected_objects->publish(detected_objects_msg);
-      return;
-    }
-
-    json cav_context_current_json = json::parse(newString);
-    string cav_value = cav_context_current_json["CAV"].dump();
-
-    // Update bv info with new message, create new bvs
-    for (json::iterator bv = cav_context_current_json.begin(); bv != cav_context_current_json.end(); ++bv) {
-      string bv_key = bv.key();
-      string bv_value = bv.value().dump();
-      if(in_range(cav_value, bv_value) && bv_key != "CAV"){
-        update_bv_in_autoware_sim(bv_key, bv_value);
-      }
-    }
-
-    detected_objects_msg.header.stamp = this->get_clock()->now();
-    detected_objects_msg.header.frame_id = "map";
-
-    // Publish the detected objects
-    pub_detected_objects->publish(detected_objects_msg);
   }
 }
 

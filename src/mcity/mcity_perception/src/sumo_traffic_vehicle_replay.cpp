@@ -19,7 +19,12 @@ namespace sumo_traffic_vehicle_replay
   SumoTrafficVehicleReplay::SumoTrafficVehicleReplay(const rclcpp::NodeOptions &options)
       : Node("sumo_traffic_vehicle_replay", options)
   {
-    init_redis_client();
+    if (!redis_client.connect()) {
+        RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
+    } else {
+        RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
+    }
+
     read_file();
   }
 
@@ -36,7 +41,7 @@ namespace sumo_traffic_vehicle_replay
         if(line.length() > 16) {  // check if line length is more than 12
             line = line.substr(15, line.size() - 17); // remove first 11 and last 1 characters
             // std::cout << line << std::endl << endl << endl << endl;  // print the modified line
-            set_key("av_context", line);
+            redis_client.set("av_context", line);
         }
         std::this_thread::sleep_for(std::chrono::milliseconds(100)); // wait for 0.1 seconds
     }
@@ -45,43 +50,6 @@ namespace sumo_traffic_vehicle_replay
 
     // print file read complete
     std::cout << "File read complete" << std::endl;
-  }
-
-
-  void SumoTrafficVehicleReplay::init_redis_client(){
-    // Connecting to the Redis server on localhost
-    context = redisConnect("127.0.0.1", 6379);
-
-    // handle error
-    if (context == NULL || context->err) {
-      if (context){
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
-      } else {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
-      }
-    } else {
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
-    }
-  }
-
-  void SumoTrafficVehicleReplay::set_key(string key, string value){
-    // SET key
-    redisReply *reply = (redisReply *)redisCommand(context, "SET %s %s", key.c_str(), value.c_str());
-    if (reply->type == REDIS_REPLY_ERROR){
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Redis set key error: %s", key.c_str());
-    }
-    if (reply->type == REDIS_REPLY_STATUS){
-      
-    }
-  }
-
-  string SumoTrafficVehicleReplay::get_key(string key){
-    // GET key
-    redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
-    string result = "";
-    if (reply->type == REDIS_REPLY_STRING)
-      result = reply->str;
-    return result;
   }
 }
 

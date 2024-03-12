@@ -32,7 +32,12 @@ class McityLight(Node):
     def __init__(self, host='localhost', port=6379, db=0):
         super().__init__('mcity_light')
 
-        self.redis_client = redis.Redis(host=host, port=port, db=db)
+        redis_host = os.environ.get("TERASIM_REDIS_HOST", 'localhost')
+        redis_port = os.environ.get("TERASIM_REDIS_PORT", 6379)
+        redis_password = os.environ.get("TERASIM_REDIS_PASSWORD", "")
+
+        self.redis_client = redis.Redis(host=redis_host, port=redis_port, db=0, password=redis_password)
+        
         self._update_time = -1
         self._thread_list = []
 

@@ -7,17 +7,16 @@ autoware_package()
 
 # Add include directories
 include_directories(
-    include                 # for header files
+    include
+    ../redis_client/
     /usr/include/hiredis
 )
-
-# Add link directories (also for redis)
-link_directories(/usr/local/lib)
 
 ##########################  MCITY COSIM  ####################################
 
 ament_auto_add_library(autoware_interface_cosim_component SHARED
   src/autoware_interface_cosim.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(autoware_interface_cosim_component hiredis)
