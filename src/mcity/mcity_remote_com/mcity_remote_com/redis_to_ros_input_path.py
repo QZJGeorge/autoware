@@ -20,6 +20,33 @@ class RedisToRosInputPath(BasicRosRedisComNode):
             msg = PlannedPath()
             message_conversion.populate_instance(ros_message_dict, msg)
             self.publisher_planned_path.publish(msg)
+
+            latency = self.calc_planning_latency(ros_message_dict)
+
+            if latency is None:
+                self.redis_client.set(constants.AV_PLANNING_LATENCY, 0.0)
+            else:
+                self.redis_client.set(constants.AV_PLANNING_LATENCY, latency)
+
+    def get_current_time(self):
+        # Assuming self.node is your ROS 2 node instance
+        now = self.get_clock().now()
+        # Convert ROS 2 time to seconds with nanoseconds as fractional part
+        current_time = now.seconds_nanoseconds()
+        return current_time[0] + current_time[1] * 1e-9
+
+    def calc_planning_latency(self, ros_message_dict):
+        if 'header' in ros_message_dict:
+            header = ros_message_dict['header']
+            if 'stamp' in header:
+                stamp = header['stamp']
+                if 'secs' in stamp and 'nsecs' in stamp:
+                    # Convert ROS message time to seconds with nanoseconds as fractional part
+                    message_time = stamp['secs'] + stamp['nsecs'] * 1e-9
+                    # Calculate latency by subtracting message time from current time
+                    return self.get_current_time() - message_time
+
+        return None
         
 def main(args=None):
     rclpy.init(args=args)

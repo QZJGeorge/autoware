@@ -5,4 +5,6 @@ RTK_IMU = "/ins/imu"
 PLANNED_PATH = "/mcity/input_path"
 VEHICLE_STATE = "/mcity/vehicle_state"
 
+AV_PLANNING_LATENCY = "av_planning_latency"
+
 UPDATE_RATE = 10
