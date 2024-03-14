@@ -55,13 +55,7 @@ public:
   ~AutowareInterfaceVoicesCosim() = default;
 
 private:
-  // constants for operation mode
-  uint8_t STOP = 1;
-  uint8_t AUTONOMOUS = 2;
-  uint8_t LOCAL = 3;
-  uint8_t REMOTE = 4;
-
-  int autoware_state = 0;
+  int autoware_state = 1;
 
   Odometry odom_msg;
 

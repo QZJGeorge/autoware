@@ -54,12 +54,6 @@ public:
   ~AutowareInterfaceVoicesRealcar() = default;
 
 private:
-  // constants for operation mode
-  uint8_t STOP = 1;
-  uint8_t AUTONOMOUS = 2;
-  uint8_t LOCAL = 3;
-  uint8_t REMOTE = 4;
-
   int autoware_state = 1;
 
   const double STEER_TO_TIRE_RATIO = 16.0;

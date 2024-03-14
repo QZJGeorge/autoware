@@ -39,22 +39,23 @@ namespace autoware_interface_realcar{
 
   void AutowareInterfaceRealcar::on_timer(){
     if (autoware_state == AutowareState::INITIALIZING){
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Waiting for vehicle initialization...");
+      RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Waiting for vehicle initialization...");
       return;
-    } else if (autoware_state == AutowareState::WAITING_FOR_ROUTE){
+    } 
+    else if (autoware_state == AutowareState::WAITING_FOR_ROUTE){
       set_route_points();
       operation_mode_state_msg.mode = ChangeOperationMode::Request::LOCAL;
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting vehicle route points...");
+      RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Setting route points...");
     } 
-    // else{
-    //   if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x < 0.25 && (uint8_t)operation_mode_state_msg.mode != ChangeOperationMode::Request::STOP){
-    //     set_operation_mode(ChangeOperationMode::Request::STOP);
-    //   } else if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x >= 0.25 && (uint8_t)operation_mode_state_msg.mode != ChangeOperationMode::Request::LOCAL){
-    //     set_operation_mode(ChangeOperationMode::Request::LOCAL);
-    //   } else if (veh_state_msg.by_wire_enabled && (uint8_t)operation_mode_state_msg.mode != ChangeOperationMode::Request::AUTONOMOUS){
-    //     set_operation_mode(ChangeOperationMode::Request::AUTONOMOUS);
-    //   }
-    // }
+    else{
+      if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x < 0.25 && (uint8_t)operation_mode_state_msg.mode != ChangeOperationMode::Request::STOP){
+        set_operation_mode(ChangeOperationMode::Request::STOP);
+      } else if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x >= 0.25 && (uint8_t)operation_mode_state_msg.mode != ChangeOperationMode::Request::LOCAL){
+        set_operation_mode(ChangeOperationMode::Request::LOCAL);
+      } else if (veh_state_msg.by_wire_enabled && (uint8_t)operation_mode_state_msg.mode != ChangeOperationMode::Request::AUTONOMOUS){
+        set_operation_mode(ChangeOperationMode::Request::AUTONOMOUS);
+      }
+    }
 
     pub_vehicle_report();
   }

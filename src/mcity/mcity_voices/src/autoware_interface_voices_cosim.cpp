@@ -34,15 +34,13 @@ namespace autoware_interface_voices_cosim{
   }
 
   void AutowareInterfaceVoicesCosim::on_timer(){
-    if (autoware_state == 0){
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Waiting for autoware to start up..");
-      return;
-    } else if (autoware_state == 1){
+    if (autoware_state == AutowareState::INITIALIZING){
       init_localization();
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Publishing initial localization...");
-    } else if (autoware_state == 2){
-        set_route_points();
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting route points...");
+      RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Waiting for vehicle initialization...");
+    } 
+    else if (autoware_state == AutowareState::WAITING_FOR_ROUTE){
+      set_route_points();
+      RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Setting route points...");
     }
   }
 
