@@ -30,14 +30,15 @@ public:
         double max_allowed_curvature_,
         double heading_offset_,
         int heading_lookahead_points_,
-        double lateral_offset_
+        double lateral_offset_,
+        string slope_folder_
     );
 
     void run();
     void process_path(double desired_time_resolution, double preview_time);
 
 private:
-    void load_slope();
+    void load_slope(string slope_folder);
     
     void compute_curvature();
     void upsampling(double desired_time_resolution);

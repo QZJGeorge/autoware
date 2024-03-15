@@ -16,7 +16,7 @@ def generate_launch_description():
         Node(
             package='mcity_realcar',
             namespace='/mcity/realcar',
-            executable='autoware_interface',
+            executable='autoware_interface_realcar',
         ),
 
         ############################################################

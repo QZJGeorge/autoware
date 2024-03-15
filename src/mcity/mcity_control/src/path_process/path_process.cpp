@@ -8,7 +8,8 @@ void pathProcessing::init(
     double max_allowed_curvature_,
     double heading_offset_,
     int heading_lookahead_points_,
-    double lateral_offset_){
+    double lateral_offset_,
+    string slope_folder){
 
     _p2c = planning2control_msg;
     _vs = vehicle_state;
@@ -20,11 +21,11 @@ void pathProcessing::init(
     heading_lookahead_points = heading_lookahead_points_;
     lateral_offset = lateral_offset_;
 
-    load_slope();
+    load_slope(slope_folder);
 }
 
-void pathProcessing::load_slope(){
-    std::ifstream file("/home/zhijie/autoware/src/mcity/slope_recorder/data/gnss_slope.txt");
+void pathProcessing::load_slope(string slope_folder){
+    std::ifstream file(slope_folder);
     std::string line;
 
     if (file.is_open()) {
@@ -48,12 +49,12 @@ void pathProcessing::load_slope(){
 }
 
 void pathProcessing::process_path(double desired_time_resolution, double preview_time){
-    compute_curvature();
     // upsampling(desired_time_resolution);
     downsampling(preview_time, desired_time_resolution);
 }
 
 void pathProcessing::run(){
+    int size = int(_p2c->x_vector.size());
     int closest_index = get_closest_index();
 
     _p2c->vd = get_desired_velocity(closest_index);
@@ -61,15 +62,13 @@ void pathProcessing::run(){
     _p2c->ey = get_lateral_error(closest_index);
     _p2c->slope = get_slope(closest_index);
 
-    int size = int(_p2c->x_vector.size());
-
-    RCLCPP_INFO(rclcpp::get_logger("path_process"), "remaining path length %d", size);
+    RCLCPP_INFO(rclcpp::get_logger("path_process"), "remaining length %d", size);
     RCLCPP_INFO(rclcpp::get_logger("path_process"), "index %d", closest_index);
     RCLCPP_INFO(rclcpp::get_logger("path_process"), "vd %f", _p2c->vd);
     RCLCPP_INFO(rclcpp::get_logger("path_process"), "vc %f", _vs->speed_x);
-    RCLCPP_INFO(rclcpp::get_logger("path_process"), "cr %f", _p2c->cr);
     RCLCPP_INFO(rclcpp::get_logger("path_process"), "ephi %f", _p2c->ephi);
     RCLCPP_INFO(rclcpp::get_logger("path_process"), "ey %f", _p2c->ey);
+    RCLCPP_INFO(rclcpp::get_logger("path_process"), "slope %f ", _p2c->slope);
 }
 
 int pathProcessing::get_closest_index(){
@@ -95,58 +94,6 @@ int pathProcessing::get_closest_index(){
     return closest_index;
 }
 
-void pathProcessing::compute_curvature(){
-    _p2c->cr_vector.clear();
-
-    size_t gap = 5;
-    if (_p2c->x_vector.size() < gap){
-        for (size_t i = 0; i < _p2c->x_vector.size(); i++){
-            _p2c->cr_vector.push_back(0.0);
-        }
-        return;
-    }
-
-    for(size_t i = gap; i < _p2c->x_vector.size() - gap; i++) {
-        double radius = XM::get_radius(
-            _p2c->x_vector[i-gap], 
-            _p2c->y_vector[i-gap], 
-            _p2c->x_vector[i], 
-            _p2c->y_vector[i], 
-            _p2c->x_vector[i+gap], 
-            _p2c->y_vector[i+gap]
-        );
-
-        double curvature = 1/radius;
-
-        if (curvature > -0.04 && curvature < 0.04) {
-            curvature = 0.0;
-        } 
-
-        if (curvature > max_allowed_curvature) {
-            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Curvature too large (bounded to max): %f", curvature);
-            curvature = max_allowed_curvature;
-        } else if (curvature < -max_allowed_curvature) {
-            RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Curvature too small (bounded to min): %f", curvature);
-            curvature = -max_allowed_curvature;
-        }
-
-        // _p2c->cr_vector.push_back(curvature);
-        _p2c->cr_vector.push_back(0.0);
-    }
-
-    // // Record the first and last values
-    int first_val = _p2c->cr_vector[0];
-    int last_val = _p2c->cr_vector[_p2c->cr_vector.size()-1];
-
-    // Insert the first value k times at the beginning
-    _p2c->cr_vector.insert(_p2c->cr_vector.begin(), gap, first_val);
-
-    // Insert the last value k times at the end
-    for (size_t i = 0; i < gap; i++) {
-        _p2c->cr_vector.push_back(last_val);
-    }
-}
-
 void pathProcessing::upsampling(double desired_time_resolution){
     // mupltiply by 2 to make sure the upsampled vectors have accurate info
     double upsample_factor = _p2c->time_resolution / desired_time_resolution * 2;
@@ -156,27 +103,23 @@ void pathProcessing::upsampling(double desired_time_resolution){
     std::vector<float> upsampled_x_vec;
     std::vector<float> upsampled_y_vec;
     std::vector<float> upsampled_vd_vec;
-    std::vector<float> upsampled_cr_vec;
     std::vector<float> upsampled_ori_vec;
 
     for (size_t i = 0; i < _p2c->x_vector.size() - 1; ++i) {
         double delta_x = (_p2c->x_vector[i + 1] - _p2c->x_vector[i]) / upsample_factor;
         double delta_y = (_p2c->y_vector[i + 1] - _p2c->y_vector[i]) / upsample_factor;
         double delta_vd = (_p2c->vd_vector[i + 1] - _p2c->vd_vector[i]) / upsample_factor;
-        double delta_cr = (_p2c->cr_vector[i + 1] - _p2c->cr_vector[i]) / upsample_factor;
         double delta_ori = (_p2c->ori_vector[i + 1] - _p2c->ori_vector[i]) / upsample_factor;
 
         for (int j = 0; j < int(upsample_factor); ++j) {
             double interpolated_x_value = _p2c->x_vector[i] + delta_x * j;
             double interpolated_y_value = _p2c->y_vector[i] + delta_y * j;
             double interpolated_vd_value = _p2c->vd_vector[i] + delta_vd * j;
-            double interpolated_cr_value = _p2c->cr_vector[i] + delta_cr * j;
             double interpolated_ori_value = _p2c->ori_vector[i] + delta_ori * j;
 
             upsampled_x_vec.push_back(interpolated_x_value);
             upsampled_y_vec.push_back(interpolated_y_value);
             upsampled_vd_vec.push_back(interpolated_vd_value);
-            upsampled_cr_vec.push_back(interpolated_cr_value);
             upsampled_ori_vec.push_back(interpolated_ori_value);
         }
     }
@@ -184,7 +127,6 @@ void pathProcessing::upsampling(double desired_time_resolution){
     _p2c->x_vector = upsampled_x_vec;
     _p2c->y_vector = upsampled_y_vec;
     _p2c->vd_vector = upsampled_vd_vec;
-    _p2c->cr_vector = upsampled_cr_vec;
     _p2c->ori_vector = upsampled_ori_vec;
 }
 
@@ -192,7 +134,6 @@ void pathProcessing::downsampling(double preview_time, double desired_time_resol
     std::vector<float> downsampled_x_vec;
     std::vector<float> downsampled_y_vec;
     std::vector<float> downsampled_vd_vec;
-    std::vector<float> downsampled_cr_vec;
     std::vector<float> downsampled_ori_vec;
 
     double accumulated_time = 0.0;
@@ -211,7 +152,6 @@ void pathProcessing::downsampling(double preview_time, double desired_time_resol
             downsampled_x_vec.push_back(_p2c->x_vector[i]);
             downsampled_y_vec.push_back(_p2c->y_vector[i]);
             downsampled_vd_vec.push_back(_p2c->vd_vector[i]);
-            downsampled_cr_vec.push_back(_p2c->cr_vector[i]);
             downsampled_ori_vec.push_back(_p2c->ori_vector[i]);
 
             // Reset accumulated time
@@ -228,7 +168,6 @@ void pathProcessing::downsampling(double preview_time, double desired_time_resol
     _p2c->x_vector = downsampled_x_vec;
     _p2c->y_vector = downsampled_y_vec;
     _p2c->vd_vector = downsampled_vd_vec;
-    _p2c->cr_vector = downsampled_cr_vec;
     _p2c->ori_vector = downsampled_ori_vec;
 }
 
@@ -239,7 +178,6 @@ double pathProcessing::get_desired_velocity(int closest_index){
 
     // the vehicle is slowing down and will stop very soon
     if (current_velocity <= 0.05 && _p2c->vd_vector.back() <= 0.5){
-        RCLCPP_INFO(rclcpp::get_logger(""), "early stop cut off");
         return 0.0;
     }
 
@@ -318,15 +256,27 @@ double pathProcessing::get_slope(int closest_index){
     double x = _p2c->x_vector[closest_index];
     double y = _p2c->y_vector[closest_index];
 
-    int x_int = int(x);
-    int y_int = int(y);
+    std::pair<int, int> closest_point;
+    double min_distance = std::numeric_limits<double>::max();
+    double closest_slope = 0.0;
 
-    auto key = std::make_pair(x_int, y_int);
-    if (slope_data.find(key) != slope_data.end()) {
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "current slope %f", slope_data[key]);
-        return slope_data[key];
+    for (const auto& item : slope_data) {
+        // Calculate the distance between (x, y) and the current point in the map
+        double distance = std::sqrt(std::pow(item.first.first - x, 2) + std::pow(item.first.second - y, 2));
+
+        // Check if this point is the closest one so far
+        if (distance < min_distance) {
+            min_distance = distance;
+            closest_point = item.first;
+            closest_slope = item.second;
+        }
+    }
+
+    // Check if the closest point is within 5 meters
+    if (min_distance <= 3.0) {
+        return closest_slope;
     } else {
-        std::cout << "Slope data not found for the given coordinates." << std::endl;
+        RCLCPP_WARN(rclcpp::get_logger("path_process"), "No close enough slope data found for the given coordinates.");
         return 0.0;
     }
 }

@@ -53,21 +53,25 @@ private:
     Control cmd_msg;
 
     //vehicle 
-    string gainfolder = "";
+    string gain_folder = "";
+    string slope_folder = "";
 
-    int trajectory_abort_size     = 0;
-    int heading_lookahead_points  = 0;
+    int stop_count = 0;
 
-    double max_ey                  = 0.0;
-    double max_ephi                = 0.0; //rad
-    double max_curvature           = 0.0;
-    double speed_ctrl_kp           = 0.0;
-    double speed_ctrl_ki           = 0.0;
-    double heading_offset          = 0.0;
-    double lateral_offset          = 0.0;
-    double preview_time            = 0.0;
-    double desired_time_resolution = 0.0;
-    double velocity_smooth_threshold = 0.0;
+    int trajectory_abort_size       = 0;
+    int trajectory_loose_abort_size = 0;
+
+    int heading_lookahead_points    = 0;
+
+    double max_ey                   = 0.0;
+    double max_ephi                 = 0.0; //rad
+    double max_curvature            = 0.0;
+    double speed_ctrl_kp            = 0.0;
+    double speed_ctrl_ki            = 0.0;
+    double heading_offset           = 0.0;
+    double lateral_offset           = 0.0;
+    double preview_time             = 0.0;
+    double desired_time_resolution  = 0.0;
 
     // GUI_Set_S guiSet;
     pathProcessing pathProcess;

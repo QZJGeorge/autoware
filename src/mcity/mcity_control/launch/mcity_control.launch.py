@@ -11,6 +11,8 @@ def generate_launch_description():
             parameters=[
                 {"gain_folder": PathJoinSubstitution([EnvironmentVariable('HOME'), 
                                                       "autoware/src/mcity/mcity_control/data/gain/withoutdelay/"])},
+                {"slope_folder": PathJoinSubstitution([EnvironmentVariable('HOME'), 
+                                                      "autoware/src/mcity/mcity_control/data/slope/gnss_slope.txt"])},
                 {"max_ey": 1.5},
                 {"max_ephi": 1.0},
                 {"max_curvature": 0.2},
@@ -21,7 +23,8 @@ def generate_launch_description():
                 {"lateral_offset": 0.0},
                 {"preview_time": 5.0},
                 {"desired_time_resolution": 0.04},
-                {"trajectory_abort_size": 25}
+                {"trajectory_abort_size": 25},
+                {"trajectory_loose_abort_size": 75}
             ],
         ),
     ])
