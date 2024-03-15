@@ -154,7 +154,6 @@ public:
     std::vector<float> cr_vector;
     std::vector<float> vd_vector;
     std::vector<float> ori_vector;
-    std::vector<float> slope_vector;
 
     void ini()
     {

@@ -1,6 +1,8 @@
 #ifndef PATH_PROCESSING_HPP
 #define PATH_PROCESSING_HPP
 
+#include <map>
+#include <fstream> 
 #include <iostream>
 #include <algorithm>
 #include <math.h>
@@ -35,6 +37,8 @@ public:
     void process_path(double desired_time_resolution, double preview_time);
 
 private:
+    void load_slope();
+    
     void compute_curvature();
     void upsampling(double desired_time_resolution);
     void downsampling(double preview_time, double desired_time_resolution);
@@ -44,6 +48,7 @@ private:
     double get_desired_velocity(int closest_index);
     double get_orientation_error(int closest_index);
     double get_lateral_error(int closest_index);
+    double get_slope(int closest_index);
 
     Plan_Rlt_S * _p2c  = NULL;
     VehState_S * _vs   = NULL;
@@ -55,6 +60,8 @@ private:
     int heading_lookahead_points;
     int values;
     double lateral_offset;
+
+    std::map<std::pair<int, int>, double> slope_data;
 };
 
 #endif // PATHFOLLOWING_HPP

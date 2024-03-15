@@ -19,6 +19,32 @@ void pathProcessing::init(
     heading_offset = heading_offset_;
     heading_lookahead_points = heading_lookahead_points_;
     lateral_offset = lateral_offset_;
+
+    load_slope();
+}
+
+void pathProcessing::load_slope(){
+    std::ifstream file("/home/zhijie/autoware/src/mcity/slope_recorder/data/gnss_slope.txt");
+    std::string line;
+
+    if (file.is_open()) {
+        while (getline(file, line)) {
+            std::istringstream iss(line);
+            char dummy1, dummy2, dummy3; // To ignore the characters '(', ')' and ','
+            int x, y;
+            double slope;
+            if (!(iss >> dummy1 >> x >> dummy2 >> y >> dummy3 >> dummy3 >> slope)) {
+                std::cerr << "Error parsing line: " << line << std::endl;
+                continue; // Skip malformed lines
+            }
+            // Store the data
+            slope_data[std::make_pair(x, y)] = slope;
+        }
+        RCLCPP_INFO(rclcpp::get_logger("path_process"), "Suceessfully loaded slope data.");
+        file.close();
+    } else {
+        RCLCPP_ERROR(rclcpp::get_logger("path_process"), "Unable to open slope data file");
+    }
 }
 
 void pathProcessing::process_path(double desired_time_resolution, double preview_time){
@@ -33,6 +59,7 @@ void pathProcessing::run(){
     _p2c->vd = get_desired_velocity(closest_index);
     _p2c->ephi = get_orientation_error(closest_index);
     _p2c->ey = get_lateral_error(closest_index);
+    _p2c->slope = get_slope(closest_index);
 
     int size = int(_p2c->x_vector.size());
 
@@ -285,4 +312,21 @@ double pathProcessing::get_lateral_error(int closest_index){
     }
 
     return lateral_error;
+}
+
+double pathProcessing::get_slope(int closest_index){
+    double x = _p2c->x_vector[closest_index];
+    double y = _p2c->y_vector[closest_index];
+
+    int x_int = int(x);
+    int y_int = int(y);
+
+    auto key = std::make_pair(x_int, y_int);
+    if (slope_data.find(key) != slope_data.end()) {
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "current slope %f", slope_data[key]);
+        return slope_data[key];
+    } else {
+        std::cout << "Slope data not found for the given coordinates." << std::endl;
+        return 0.0;
+    }
 }

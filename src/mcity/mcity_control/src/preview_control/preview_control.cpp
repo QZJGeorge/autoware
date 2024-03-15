@@ -167,10 +167,6 @@ namespace preview_control{
         for (auto i = 0; i < int(msg->ori_vector.size()); ++i)
             _p2c->ori_vector.push_back(msg->ori_vector.at(i));
 
-        _p2c->slope_vector.clear();
-        for (auto i = 0; i < int(msg->slope_vector.size()); ++i)
-            _p2c->slope_vector.push_back(msg->slope_vector.at(i));
-
         pathProcess.process_path(desired_time_resolution, preview_time);
     }
 }

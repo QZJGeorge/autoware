@@ -16,12 +16,12 @@ def compute_slope(data):
     slope_data = {}
     for i in range(len(data)):
         if i < 10 or i > len(data) - 11:  # Check if there are not enough points before or after
-            slope_data[(data[i][0], data[i][1])] = 0
+            slope_data[(int(data[i][0]), int(data[i][1]))] = 0.0
         else:
             delta_h = data[i + 10][2] - data[i - 10][2]
             delta_d = 20  # Given
             slope = math.atan(delta_h / delta_d)
-            slope_data[(data[i][0], data[i][1])] = slope
+            slope_data[(int(data[i][0]), int(data[i][1]))] = slope
     return slope_data
 
 # Function to save the slope data to a text file
