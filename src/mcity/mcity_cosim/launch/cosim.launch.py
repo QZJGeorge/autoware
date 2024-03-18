@@ -14,30 +14,26 @@ def generate_launch_description():
         ),
 
         ############################################################
-        # Localization (Autoware to SUMO)
+        # Mixed Reality (SUMO to Autoware)
         ############################################################
         Node(
             package='mcity_localization',
             namespace='/mcity/localization',
-            executable='autoware_to_sumo',
-        ),
-
-        ############################################################
-        # Perception (SUMO to Autoware)
-        ############################################################
-        Node(
-            package='mcity_perception',
-            namespace='/mcity/perception',
-            executable='sumo_background_vehicle_converter',
+            executable='cav_state_converter',
         ),
         Node(
-            package='mcity_perception',
-            namespace='/mcity/perception',
-            executable='sumo_occ_grid_converter',
+            package='mcity_mr',
+            namespace='/mcity',
+            executable='cav_context_converter',
         ),
         Node(
-            package='mcity_perception',
-            namespace='/mcity/perception',
-            executable='sumo_traffic_light_converter',
+            package='mcity_mr',
+            namespace='/mcity',
+            executable='occ_grid_converter',
+        ),
+        Node(
+            package='mcity_mr',
+            namespace='/mcity',
+            executable='sumo_light_converter',
         ),
     ])

@@ -2,14 +2,13 @@
 <package format="2">
   <name>mcity_localization</name>
   <version>1.0.0</version>
-  <description>The mcity localization package</description>
+  <description>Convert gnss data to local frame</description>
  
+  <author email="zhijieq@umich.edu">Zhijie Qiao</author>
   <maintainer email="zhijieq@umich.edu">Zhijie Qiao</maintainer>
-  <license>To Commercialize</license>
-  <author email="shaobxu@gmail.com">Zhijie Qiao</author>
+  <license>MIT2.0</license>
 
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
-  <buildtool_depend>autoware_cmake</buildtool_depend>
 
   <depend>rclpy</depend>
   <depend>rclcpp</depend>
@@ -22,7 +21,6 @@
   <exec_depend>ros2launch</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
-  <test_depend>autoware_lint_common</test_depend>
 
   <export>
     <build_type>ament_cmake</build_type>

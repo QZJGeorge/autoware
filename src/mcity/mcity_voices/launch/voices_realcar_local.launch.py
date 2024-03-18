@@ -18,40 +18,40 @@ def generate_launch_description():
         ),
 
         ############################################################
-        # Localization (GNSS to Autoware to SUMO)
+        # Localization 
         ############################################################
         Node(
             package='mcity_localization',
             namespace='/mcity/localization',
-            executable='gnss_to_autoware',
-        ),
-        Node(
-            package='mcity_localization',
-            namespace='/mcity/localization',
-            executable='autoware_to_sumo',
-        ),
-        
-        ############################################################
-        # Perception (SUMO to Autoware)
-        ############################################################
-        Node(
-            package='mcity_perception',
-            namespace='/mcity/perception',
-            executable='sumo_background_vehicle_converter',
-        ),
-        Node(
-            package='mcity_perception',
-            namespace='/mcity/perception',
-            executable='sumo_traffic_light_converter',
-        ),
-        Node(
-            package='mcity_perception',
-            namespace='/mcity/perception',
-            executable='sumo_occ_grid_converter',
+            executable='mcity_localization',
         ),
 
         ############################################################
-        # Planning (Autoware Path to Preview Control)
+        # Mixed Reality
+        ############################################################
+        Node(
+            package='mcity_mr',
+            namespace='/mcity',
+            executable='cav_state_converter',
+        ),
+        Node(
+            package='mcity_mr',
+            namespace='/mcity',
+            executable='cav_context_converter',
+        ),
+        Node(
+            package='mcity_mr',
+            namespace='/mcity',
+            executable='sumo_light_converter',
+        ),
+        Node(
+            package='mcity_mr',
+            namespace='/mcity',
+            executable='occ_grid_converter',
+        ),
+
+        ############################################################
+        # Planning 
         ############################################################
         Node(
             package='mcity_planning',
@@ -60,7 +60,7 @@ def generate_launch_description():
         ),
         
         ############################################################
-        # Control (Preview Control & Drive by Wire)
+        # Control 
         ############################################################
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([

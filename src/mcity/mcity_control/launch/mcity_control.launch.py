@@ -6,13 +6,13 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='mcity_control',
-            namespace='/mcity/control',
+            namespace='/mcity',
             executable='preview_control',
             parameters=[
                 {"gain_folder": PathJoinSubstitution([EnvironmentVariable('HOME'), 
                                                       "autoware/src/mcity/mcity_control/data/gain/withoutdelay/"])},
                 {"slope_folder": PathJoinSubstitution([EnvironmentVariable('HOME'), 
-                                                      "autoware/src/mcity/mcity_control/data/slope/gnss_slope.txt"])},
+                                                      "vehicle_ws/src/MKZ-ROS2-Driver-Dev/preview_control/data/slope/DIT.txt"])},
                 {"max_ey": 1.5},
                 {"max_ephi": 1.0},
                 {"max_curvature": 0.2},

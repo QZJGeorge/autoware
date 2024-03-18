@@ -9,16 +9,16 @@ def generate_launch_description():
     return LaunchDescription([
 
         ############################################################
-        # Localization (GNSS to Autoware to SUMO)
+        # Localization
         ############################################################
         Node(
             package='mcity_localization',
             namespace='/mcity/localization',
-            executable='gnss_to_autoware',
+            executable='mcity_localization',
         ),
         
         ############################################################
-        # Control (Preview Control & Drive by Wire)
+        # Control
         ############################################################
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([
@@ -30,12 +30,12 @@ def generate_launch_description():
         # Remote Communication
         ############################################################
         Node(
-            package='mcity_remote_com',
+            package='mcity_remote',
             namespace='/mcity/communication',
             executable='ros_to_redis_vehicle_state',
         ),
         Node(
-            package='mcity_remote_com',
+            package='mcity_remote',
             namespace='/mcity/communication',
             executable='redis_to_ros_input_path',
         ),
