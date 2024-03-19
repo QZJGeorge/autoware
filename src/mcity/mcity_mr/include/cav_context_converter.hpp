@@ -69,19 +69,16 @@ private:
 
   DetectedObjects detected_objects_msg;
 
-  string last_cav_context_vehicle_info_ros;
-
   void on_timer();
 
   void update_bv_in_autoware_sim(string bv_key, string bv_value);
 
   double get_ori_from_odom(Odometry::SharedPtr msg);
-  bool in_range(string cav_value, string bv_value);
 
   string get_mgrs_from_odom(Odometry::SharedPtr msg);
   string get_cav_ego_speed_ros(double velocity);
   string get_cav_ego_positionheading_ros(double lat, double lon, double yaw);
-  string post_process_cav_context_vehicle_info_ros(string cav_context_vehicle_info_ros);
+  string post_process_cav_context_info(string cav_context_info);
 
   PoseWithCovariance get_pose_with_varience(nlohmann::json bv_value_json);
   TwistWithCovariance get_twist_with_varience(nlohmann::json bv_value_json);

@@ -32,30 +32,24 @@ namespace cav_context_converter
   }
 
   void CavContextConverter::on_timer(){
-    string cav_context_vehicle_info_ros = redis_client.get("av_context");
-    if (cav_context_vehicle_info_ros == last_cav_context_vehicle_info_ros){
-      return;
-    } 
-    
-    last_cav_context_vehicle_info_ros = cav_context_vehicle_info_ros;
-    string newString = post_process_cav_context_vehicle_info_ros(cav_context_vehicle_info_ros);
-
     detected_objects_msg.objects.clear();
 
-    if (newString == ""){
-      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "cav_context not available, waiting...");
+    string cav_context_info = redis_client.get("av_context");
+    cav_context_info = post_process_cav_context_info(cav_context_info);
+
+    if (cav_context_info == ""){
+      RCLCPP_WARN_THROTTLE(rclcpp::get_logger("mcity_mr"), *get_clock(), 1000, "cav_context not available, waiting...");
       pub_detected_objects->publish(detected_objects_msg);
       return;
     }
 
-    json cav_context_current_json = json::parse(newString);
-    string cav_value = cav_context_current_json["CAV"].dump();
+    json cav_context_json = json::parse(cav_context_info);
 
     // Update bv info with new message, create new bvs
-    for (json::iterator bv = cav_context_current_json.begin(); bv != cav_context_current_json.end(); ++bv) {
+    for (json::iterator bv = cav_context_json.begin(); bv != cav_context_json.end(); ++bv) {
       string bv_key = bv.key();
       string bv_value = bv.value().dump();
-      if(in_range(cav_value, bv_value) && bv_key != "CAV"){
+      if(bv_key != "CAV"){
         update_bv_in_autoware_sim(bv_key, bv_value);
       }
     }
@@ -107,8 +101,8 @@ namespace cav_context_converter
     return cav_dic.dump();;
   }
 
-  string CavContextConverter::post_process_cav_context_vehicle_info_ros(string cav_context_vehicle_info_ros){
-    string newString = cav_context_vehicle_info_ros;
+  string CavContextConverter::post_process_cav_context_info(string cav_context_info){
+    string newString = cav_context_info;
 
     string::size_type n = 0;
     string toSearch = "Infinity";  // we want to replace all the Infinity with 0.0 because its is forbidden in json
@@ -195,14 +189,6 @@ namespace cav_context_converter
 
     bv_classification.probability = 1.0;
     return bv_classification;
-  }
-
-  bool CavContextConverter::in_range(string cav_value, string bv_value){
-    json cav_value_json = json::parse(cav_value);
-    json bv_value_json = json::parse(bv_value);
-    double x_diff = cav_value_json["x"].get<double>()-bv_value_json["x"].get<double>();
-    double y_diff = cav_value_json["y"].get<double>()-bv_value_json["y"].get<double>();
-    return std::sqrt(std::pow(x_diff, 2)+std::pow(y_diff, 2)) < 100.0;
   }
 
   void CavContextConverter::update_bv_in_autoware_sim(string bv_key, string bv_value){
