@@ -20,18 +20,16 @@ def generate_launch_description():
             executable=LaunchConfiguration('scenario')
         ),
 
-        ############################################################
-        # Localization (Autoware to SUMO)
-        ############################################################
-        Node(
-            package='mcity_localization',
-            namespace='/mcity/localization',
-            executable='cav_state_converter',
-        ),
 
         ############################################################
         # Mixed Reality
         ############################################################
+        Node(
+            package='mcity_mr',
+            namespace='/mcity',
+            executable='cav_state_converter',
+        ),
+
         Node(
             package='mcity_mr',
             namespace='/mcity',

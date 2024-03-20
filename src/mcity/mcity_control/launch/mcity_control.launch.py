@@ -12,7 +12,7 @@ def generate_launch_description():
                 {"gain_folder": PathJoinSubstitution([EnvironmentVariable('HOME'), 
                                                       "autoware/src/mcity/mcity_control/data/gain/withoutdelay/"])},
                 {"slope_folder": PathJoinSubstitution([EnvironmentVariable('HOME'), 
-                                                      "vehicle_ws/src/MKZ-ROS2-Driver-Dev/preview_control/data/slope/VOICES.txt"])},
+                                                      "autoware/src/mcity/mcity_control/data/slope/VOICES.txt"])},
                 {"max_ey": 1.5},
                 {"max_ephi": 1.0},
                 {"max_curvature": 0.2},
