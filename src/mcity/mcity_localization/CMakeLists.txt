@@ -1,13 +1,9 @@
 cmake_minimum_required(VERSION 3.14)
 project(mcity_localization)
 
-find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(rclcpp_components REQUIRED)
-find_package(std_msgs REQUIRED)
-find_package(nav_msgs REQUIRED)
-find_package(sensor_msgs REQUIRED)
-find_package(geometry_msgs REQUIRED)
+find_package(autoware_cmake REQUIRED)
+
+autoware_package()
 
 # Add include directories
 include_directories(
@@ -16,37 +12,20 @@ include_directories(
     /usr/include/glm
 )
 
-# Declare a library
-add_library(mcity_localization_component SHARED
+#############################  GNSS TO AUTOWARE ###################################
+
+ament_auto_add_library(mcity_localization_component SHARED
   src/mcity_localization.cpp
 )
 
-ament_target_dependencies(mcity_localization_component
-  rclcpp
-  rclcpp_components
-  std_msgs
-  nav_msgs
-  sensor_msgs
-  geometry_msgs
-)
+target_link_libraries(mcity_localization_component Geographic)
 
 rclcpp_components_register_node(mcity_localization_component
   PLUGIN "mcity_localization::McityLocalization"
   EXECUTABLE mcity_localization
 )
 
-# Install rules for the component library
-install(TARGETS
-  mcity_localization_component
-  ARCHIVE DESTINATION lib
-  LIBRARY DESTINATION lib
-  RUNTIME DESTINATION bin
+ament_auto_package(
+  INSTALL_TO_SHARE
+  include
 )
-
-install(DIRECTORY
-  include/
-  DESTINATION include
-)
-
-# Must be called for ament package
-ament_package()
