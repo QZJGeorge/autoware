@@ -1,6 +1,5 @@
 import csv
 import math
-import json
 
 # Function to read the CSV data
 def read_csv_data(file_path):

@@ -9,7 +9,7 @@ class SlopeRecorder(Node):
         super().__init__('slope_recorder')
         self.subscription = self.create_subscription(NavSatFix, '/ins/nav_sat_fix', self.listener_callback, 10)
         self.previous_point = None
-        self.csv_file = open('gnss_data.csv', mode='w', newline='')
+        self.csv_file = open('/home/zhijie/autoware/src/mcity/slope_recorder/data/gnss_data.csv', mode='w', newline='')
         self.csv_writer = csv.writer(self.csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         self.csv_writer.writerow(['x', 'y', 'z'])
 
