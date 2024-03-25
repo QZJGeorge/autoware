@@ -17,8 +17,8 @@ def generate_launch_description():
         # Mixed Reality (SUMO to Autoware)
         ############################################################
         Node(
-            package='mcity_localization',
-            namespace='/mcity/localization',
+            package='mcity_mr',
+            namespace='/mcity',
             executable='cav_state_converter',
         ),
         Node(
