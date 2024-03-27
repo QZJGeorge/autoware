@@ -47,13 +47,13 @@ namespace autoware_interface_voices_cosim{
   void AutowareInterfaceVoicesCosim::init_localization(){
     PoseWithCovarianceStamped localization_msg;
 
-    localization_msg.pose.pose.position.x = 77648.2890625;
-    localization_msg.pose.pose.position.y = 86907.1875;
+    localization_msg.pose.pose.position.x = 77638.8203125;
+    localization_msg.pose.pose.position.y = 86906.9296875;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = 0.9991222550491191;
-    localization_msg.pose.pose.orientation.w = 0.04188937174944139;
+    localization_msg.pose.pose.orientation.z = -0.9852470737794425;
+    localization_msg.pose.pose.orientation.w = 0.1711379665914191;
 
     localization_msg.header.stamp = this->get_clock()->now();
     localization_msg.header.frame_id = "map";
