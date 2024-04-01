@@ -19,8 +19,6 @@ def generate_launch_description():
             namespace='/mcity/',
             executable=LaunchConfiguration('scenario')
         ),
-
-
         ############################################################
         # Mixed Reality
         ############################################################
@@ -39,5 +37,10 @@ def generate_launch_description():
             package='mcity_mr',
             namespace='/mcity',
             executable='occ_grid_converter',
+        ),
+        Node(
+            package='mcity_mr',
+            namespace='/mcity',
+            executable='sumo_light_converter',
         ),
     ])

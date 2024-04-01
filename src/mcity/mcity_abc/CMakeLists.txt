@@ -185,6 +185,19 @@ rclcpp_components_register_node(test_13_component
   EXECUTABLE 13_vehicle_encroachment
 )
 
+##########################  TEST_15 ####################################
+
+ament_auto_add_library(test_15_component SHARED
+  src/test_15.cpp
+)
+
+target_link_libraries(test_15_component hiredis Geographic)
+
+rclcpp_components_register_node(test_15_component
+  PLUGIN "test_15::Test15"
+  EXECUTABLE 15_traffic_signal
+)
+
 ament_auto_package(
   INSTALL_TO_SHARE
   launch  
