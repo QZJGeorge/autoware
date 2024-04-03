@@ -11,12 +11,12 @@ def generate_launch_description():
         ############################################################
         DeclareLaunchArgument(
           'scenario',
-          default_value='01_lane_change',
+          default_value='01_lane_change_realcar',
           description='Name of the executable.'
         ),
         Node(
-            package='mcity_abc',
-            namespace='/mcity/',
+            package='mcity_abc_realcar',
+            namespace='/mcity',
             executable=LaunchConfiguration('scenario')
         ),
         ############################################################
