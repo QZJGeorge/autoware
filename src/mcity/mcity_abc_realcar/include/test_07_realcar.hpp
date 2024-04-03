@@ -12,8 +12,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_TERASIM_TEST_01_realcar_HPP_
-#define MCITY_TERASIM_TEST_01_realcar_HPP_
+#ifndef MCITY_TERASIM_TEST_07_realcar_HPP_
+#define MCITY_TERASIM_TEST_07_realcar_HPP_
 
 #include <iostream>
 
@@ -36,7 +36,7 @@
 #include <autoware_auto_system_msgs/msg/autoware_state.hpp>
 
 
-namespace test_01_realcar
+namespace test_07_realcar
 {
 
 using namespace std;
@@ -53,11 +53,11 @@ using autoware_auto_vehicle_msgs::msg::VelocityReport;
 using autoware_auto_vehicle_msgs::msg::SteeringReport;
 
 
-class Test01Realcar : public rclcpp::Node
+class Test07Realcar : public rclcpp::Node
 {
 public:
-  explicit Test01Realcar(const rclcpp::NodeOptions & options);
-  ~Test01Realcar() = default;
+  explicit Test07Realcar(const rclcpp::NodeOptions & options);
+  ~Test07Realcar() = default;
 
 private:
   int autoware_state = 1;
