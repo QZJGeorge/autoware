@@ -97,6 +97,8 @@ private:
 
   void calc_vehicle_orientation(float &qx, float &qy, float &qz, float &qw);
   void gcs_to_mgrs(double lat, double lon, double &easting, double &northing);
+
+  void quaternionToEuler(float qx, float qy, float qz, float qw);
   
   float calc_linear_x();
 

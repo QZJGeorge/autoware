@@ -118,10 +118,32 @@ namespace mcity_localization{
 
     quat = quat * rotationAroundX * rotationAroundY * rotationAroundZ;
 
-    saved_imu_msg.orientation.x = qx = quat.x;
-    saved_imu_msg.orientation.y = qy = quat.y;
-    saved_imu_msg.orientation.z = qz = quat.z;
-    saved_imu_msg.orientation.w = qw = quat.w;
+    qx = quat.x;
+    qy = quat.y;
+    qz = quat.z;
+    qw = quat.w;
+
+    saved_imu_msg.orientation.x = quat.x;
+    saved_imu_msg.orientation.y = quat.y;
+    saved_imu_msg.orientation.z = quat.z;
+    saved_imu_msg.orientation.w = quat.w;
+
+    // quaternionToEuler(quat.x, quat.y, quat.z, quat.w);
+  }
+
+  void McityLocalization::quaternionToEuler(float qx, float qy, float qz, float qw) {
+      // Calculate Euler angles (roll, pitch, and yaw) from the quaternions
+      double roll = std::atan2(2.0 * (qw * qx + qy * qz), 1.0 - 2.0 * (qx * qx + qy * qy));
+      double pitch = std::asin(2.0 * (qw * qy - qz * qx));
+      double yaw = std::atan2(2.0 * (qw * qz + qx * qy), 1.0 - 2.0 * (qy * qy + qz * qz));
+
+      // Convert from radians to degrees, if necessary
+      roll *= 180.0 / M_PI;
+      pitch *= 180.0 / M_PI;
+      yaw *= 180.0 / M_PI;
+
+      // Log the Euler angles
+      RCLCPP_INFO(rclcpp::get_logger("mcity_localization"), "Roll: %f, Pitch: %f, Yaw: %f", roll, pitch, yaw);
   }
 
   void McityLocalization::gcs_to_mgrs(double lat, double lon, double &easting, double &northing){
