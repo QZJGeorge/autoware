@@ -43,8 +43,9 @@ namespace cav_context_converter
       return;
     }
 
-    json cav_context_json = json::parse(cav_context_info);
-
+    json cav_context_json_wrapper = json::parse(cav_context_info);
+    json cav_context_json = cav_context_json_wrapper["data"];
+    
     // Update bv info with new message, create new bvs
     for (json::iterator bv = cav_context_json.begin(); bv != cav_context_json.end(); ++bv) {
       string bv_key = bv.key();

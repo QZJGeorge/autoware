@@ -47,11 +47,18 @@ namespace autoware_interface_cosim{
       RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Setting route points...");
     } 
     else if (autoware_state == AutowareState::WAITING_FOR_ENGAGE){
-      string terasim_status = redis_client.get("terasim_status");
-      if (terasim_status == "" || terasim_status == "0"){
-        RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Terasim not available, waiting...");
-      } 
-      else{
+      string terasim_status_wrapper = redis_client.get("terasim_status");
+      if (terasim_status_wrapper == ""){
+        RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Terasim status not available, waiting...");
+        return;
+      }
+
+      json terasim_status_json = json::parse(terasim_status_wrapper);
+      int terasim_status = terasim_status_json["data"];
+
+      if (terasim_status == 0){
+        RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Terasim not ready, waiting...");
+      } else{
         set_autoware_control(true);
         set_operation_mode(ChangeOperationMode::Request::AUTONOMOUS);
         RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Enabling autoware control...");

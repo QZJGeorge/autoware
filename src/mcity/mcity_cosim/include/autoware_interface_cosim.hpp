@@ -23,6 +23,7 @@
 #include <rclcpp_components/register_node_macro.hpp>
 
 #include <RedisClient.h>
+#include <nlohmann/json.hpp>
 
 #include <nav_msgs/msg/odometry.hpp>
 
@@ -41,6 +42,7 @@ namespace autoware_interface_cosim
 
 using namespace std;
 
+using nlohmann::json;
 using geometry_msgs::msg::Pose;
 using geometry_msgs::msg::PoseWithCovarianceStamped;
 using tier4_system_msgs::srv::ChangeOperationMode;
