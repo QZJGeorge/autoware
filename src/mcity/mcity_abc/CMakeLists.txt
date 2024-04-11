@@ -8,6 +8,7 @@ autoware_package()
 # Add include directories
 include_directories(
     include                 # for header files
+    ../redis_client/
     /usr/include/hiredis
     /usr/include/GeographicLib
 )
@@ -20,6 +21,7 @@ link_directories(/usr/local/lib)
 
 ament_auto_add_library(test_01_component SHARED
   src/test_01.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_01_component hiredis Geographic)
@@ -33,6 +35,7 @@ rclcpp_components_register_node(test_01_component
 
 ament_auto_add_library(test_02_component SHARED
   src/test_02.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_02_component hiredis Geographic)
@@ -46,6 +49,7 @@ rclcpp_components_register_node(test_02_component
 
 ament_auto_add_library(test_03_component SHARED
   src/test_03.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_03_component hiredis Geographic)
@@ -59,6 +63,7 @@ rclcpp_components_register_node(test_03_component
 
 ament_auto_add_library(test_04_component SHARED
   src/test_04.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_04_component hiredis Geographic)
@@ -72,6 +77,7 @@ rclcpp_components_register_node(test_04_component
 
 ament_auto_add_library(test_05_component SHARED
   src/test_05.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_05_component hiredis Geographic)
@@ -85,6 +91,7 @@ rclcpp_components_register_node(test_05_component
 
 ament_auto_add_library(test_06_component SHARED
   src/test_06.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_06_component hiredis Geographic)
@@ -98,6 +105,7 @@ rclcpp_components_register_node(test_06_component
 
 ament_auto_add_library(test_07_component SHARED
   src/test_07.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_07_component hiredis Geographic)
@@ -111,6 +119,7 @@ rclcpp_components_register_node(test_07_component
 
 ament_auto_add_library(test_08_component SHARED
   src/test_08.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_08_component hiredis Geographic)
@@ -124,6 +133,7 @@ rclcpp_components_register_node(test_08_component
 
 ament_auto_add_library(test_09_component SHARED
   src/test_09.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_09_component hiredis Geographic)
@@ -137,6 +147,7 @@ rclcpp_components_register_node(test_09_component
 
 ament_auto_add_library(test_10_component SHARED
   src/test_10.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_10_component hiredis Geographic)
@@ -150,6 +161,7 @@ rclcpp_components_register_node(test_10_component
 
 ament_auto_add_library(test_11_component SHARED
   src/test_11.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_11_component hiredis Geographic)
@@ -163,6 +175,7 @@ rclcpp_components_register_node(test_11_component
 
 ament_auto_add_library(test_12_component SHARED
   src/test_12.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_12_component hiredis Geographic)
@@ -176,6 +189,7 @@ rclcpp_components_register_node(test_12_component
 
 ament_auto_add_library(test_13_component SHARED
   src/test_13.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_13_component hiredis Geographic)
@@ -189,6 +203,7 @@ rclcpp_components_register_node(test_13_component
 
 ament_auto_add_library(test_15_component SHARED
   src/test_15.cpp
+  ../redis_client/RedisClient.cpp
 )
 
 target_link_libraries(test_15_component hiredis Geographic)

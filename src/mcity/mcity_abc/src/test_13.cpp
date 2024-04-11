@@ -31,33 +31,43 @@ namespace test_13{
     timer_ = rclcpp::create_timer(
       this, get_clock(), 1000ms, std::bind(&Test13::on_timer, this));
 
-    init_redis_client();
+    if (!redis_client.connect()) {
+        RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
+    } else {
+        RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
+    }
   }
 
   void Test13::on_timer(){
-    if (autoware_state == 0){
-      RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Waiting for autoware to start up..");
-      return;
-    } else if (autoware_state == 1){
-      publish_localization();
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Publishing initial localization...");
-    } else if (autoware_state == 2){
-      publish_goal();
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting goal point...");
-    } else if (autoware_state == 4){
-      string terasim_status = get_key("terasim_status");
-      if (terasim_status == "" || terasim_status == "0"){
-        RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Terasim not available, waiting...");
-      } 
-      else{
+    if (autoware_state == AutowareState::INITIALIZING){
+      init_localization();
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Waiting for vehicle initialization...");
+    }
+    else if (autoware_state == AutowareState::WAITING_FOR_ROUTE){
+      set_route_points();
+      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting route points...");
+    }
+    else if (autoware_state == AutowareState::WAITING_FOR_ENGAGE){
+      string terasim_status_wrapper = redis_client.get("terasim_status");
+      if (terasim_status_wrapper == ""){
+        RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Terasim status not available, waiting...");
+        return;
+      }
+
+      json terasim_status_json = json::parse(terasim_status_wrapper);
+      int terasim_status = terasim_status_json["data"];
+
+      if (terasim_status == 0){
+        RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Terasim not ready, waiting...");
+      } else{
         set_autoware_control(true);
-        set_operation_mode(AUTONOMOUS);
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Enabling autoware control...");
+        set_operation_mode(ChangeOperationMode::Request::AUTONOMOUS);
+        RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Enabling autoware control...");
       }
     }
   }
 
-  void Test13::publish_localization(){
+  void Test13::init_localization(){
     localization_msg.pose.pose.position.x = 77645.28125;
     localization_msg.pose.pose.position.y = 86593.59375;
 
@@ -72,7 +82,7 @@ namespace test_13{
     pub_local->publish(localization_msg);
   }
 
-  void Test13::publish_goal(){
+  void Test13::set_route_points(){
     goal_msg.pose.position.x = 77655.609375;
     goal_msg.pose.position.y = 86834.976562;
 
@@ -117,31 +127,6 @@ namespace test_13{
 
   void Test13::autoware_state_callback(AutowareState::SharedPtr msg){
     autoware_state = msg->state;
-  }
-
-  void Test13::init_redis_client(){
-    // Connecting to the Redis server on localhost
-    context = redisConnect("127.0.0.1", 6379);
-
-    // handle error
-    if (context == NULL || context->err) {
-      if (context){
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Connect redis error: %d", context->err);
-      } else {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Can't allocate redis context");
-      }
-    } else {
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Connected to redis server at 127.0.0.1:6379");
-    }
-  }
-
-  string Test13::get_key(string key){
-    // GET key
-    redisReply *reply = (redisReply *)redisCommand(context, "GET %s", key.c_str());
-    string result = "";
-    if (reply->type == REDIS_REPLY_STRING)
-      result = reply->str;
-    return result;
   }
 }
 

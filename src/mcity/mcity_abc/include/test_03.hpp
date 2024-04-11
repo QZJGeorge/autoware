@@ -17,6 +17,8 @@
 
 #include <iostream>
 #include <rclcpp/rclcpp.hpp>
+#include <RedisClient.h>
+#include <nlohmann/json.hpp>
 #include <hiredis/hiredis.h>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
@@ -30,6 +32,7 @@ namespace test_03
 
 using namespace std;
 
+using nlohmann::json;
 using geometry_msgs::msg::PoseStamped;
 using geometry_msgs::msg::PoseWithCovarianceStamped;
 using tier4_system_msgs::srv::ChangeOperationMode;
@@ -43,15 +46,9 @@ public:
   ~Test03() = default;
 
 private:
-  // constants for operation mode
-  uint8_t STOP = 1;
-  uint8_t AUTONOMOUS = 2;
-  uint8_t LOCAL = 3;
-  uint8_t REMOTE = 4;
-
   int autoware_state = 1;
 
-  redisContext *context;
+  RedisClient redis_client;
 
   PoseStamped goal_msg;
   PoseWithCovarianceStamped localization_msg;
@@ -67,17 +64,14 @@ private:
   rclcpp::Client<ChangeAutowareControl>::SharedPtr cli_set_autoware_control;
 
   void on_timer();
-  void init_redis_client();
 
-  void publish_localization();
-  void publish_goal();
+  void init_localization();
+  void set_route_points();
 
   void set_operation_mode(uint8_t mode);
   void set_autoware_control(bool autoware_control);
 
   void autoware_state_callback(AutowareState::SharedPtr msg);
-
-  string get_key(string key);
 };
 
 }
