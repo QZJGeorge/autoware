@@ -50,7 +50,7 @@ namespace mcity_localization{
 
     pose_with_cov.pose.pose.position.x = (float)easting;
     pose_with_cov.pose.pose.position.y = (float)northing;
-    pose_with_cov.pose.pose.position.z = (float)0.0;
+    pose_with_cov.pose.pose.position.z = (float)0.7;
 
     float qx, qy, qz, qw;
     calc_vehicle_orientation(qx, qy, qz, qw);
