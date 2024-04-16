@@ -11,7 +11,7 @@ class RedisToRosInputPath(BasicRosRedisComNode):
     def __init__(self):
         super().__init__('redis_subscriber_autoware_publisher')
         self.publisher_planned_path = self.create_publisher(PlannedPath, constants.PLANNED_PATH, 10)
-        self.timer = self.create_timer(1/constants.UPDATE_RATE, self.on_timer)
+        self.timer = self.create_timer(1/constants.UPDATE_RATE_GET, self.on_timer)
         
     def on_timer(self):
         json_str = self.redis_client.get(constants.PLANNED_PATH)

@@ -14,7 +14,7 @@ class RosToRedisInputPath(BasicRosRedisComNode):
         self.subscriber_autoware = self.create_subscription(PlannedPath, constants.PLANNED_PATH, self.callback_planned_path, 10)
 
         self.planned_path_msg = None
-        self.timer = self.create_timer(1/constants.UPDATE_RATE, self.on_timer)
+        self.timer = self.create_timer(1/constants.UPDATE_RATE_SET, self.on_timer)
 
     def on_timer(self):
         if self.planned_path_msg is not None:

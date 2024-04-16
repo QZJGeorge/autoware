@@ -7,4 +7,5 @@ VEHICLE_STATE = "/mcity/vehicle_state"
 
 AV_PLANNING_LATENCY = "av_planning_latency"
 
-UPDATE_RATE = 10
+UPDATE_RATE_SET = 10
+UPDATE_RATE_GET = 20
