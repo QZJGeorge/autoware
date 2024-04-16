@@ -8,15 +8,22 @@ class RedisClient {
 public:
     RedisClient();
     ~RedisClient();
-    bool connect();
+    bool connect(bool local=true);
     bool set(const std::string &key, const std::string &value);
     std::string get(const std::string &key);
 
 private:
     redisContext *context;
-    std::string host;
-    int port;
-    std::string password;
+
+    std::string local_host;
+    std::string remote_host;
+
+    int local_port;
+    int remote_port;
+
+    std::string local_password;
+    std::string remote_password;
+
     void loadEnvironmentVariables();
 };
 

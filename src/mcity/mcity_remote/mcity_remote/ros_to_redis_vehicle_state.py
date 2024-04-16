@@ -22,7 +22,7 @@ class RosToRedisVehicleState(BasicRosRedisComNode):
         self.subscriber_rtk_position = self.create_subscription(NavSatFix, constants.RTK_POSITION, self.callback_rtk_position, 10)
         self.subscriber_vehiclestate = self.create_subscription(VehicleState, constants.VEHICLE_STATE, self.callback_vehicle_state, 10)
 
-        self.timer = self.create_timer(1/constants.UPDATE_RATE_SET, self.on_timer)
+        self.timer = self.create_timer(1/constants.UPDATE_RATE, self.on_timer)
 
     def on_timer(self):
         if self.rtk_imu_msg and self.rtk_odometry_msg and self.rtk_position_msg and self.veh_state_msg:

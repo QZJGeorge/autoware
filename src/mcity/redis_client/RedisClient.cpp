@@ -17,13 +17,22 @@ void RedisClient::loadEnvironmentVariables() {
     char* port_env = std::getenv("TERASIM_REDIS_PORT");
     char* password_env = std::getenv("TERASIM_REDIS_PASSWORD");
 
-    host = host_env ? host_env : "127.0.0.1";
-    port = port_env ? std::stoi(port_env) : 6379;
-    password = password_env ? password_env : "";
+    remote_host = host_env ? host_env : "127.0.0.1";
+    remote_port = port_env ? std::stoi(port_env) : 6379;
+    remote_password = password_env ? password_env : "";
+
+    local_host = "127.0.0.1";
+    local_port = 6379;
+    local_password = "";
 }
 
-bool RedisClient::connect() {
-    context = redisConnect(host.c_str(), port);
+bool RedisClient::connect(bool local = true) {
+    if (local){
+        context = redisConnect(local_host.c_str(), local_port);
+    } else{
+        context = redisConnect(remote_host.c_str(), remote_port);
+    }
+
     if (context == nullptr || context->err) {
         if (context) {
             std::cerr << "Connect redis error: " << context->err << std::endl;
@@ -34,15 +43,15 @@ bool RedisClient::connect() {
         return false;
     }
 
-    if (!password.empty()) {
-        redisReply *reply = (redisReply *)redisCommand(context, "AUTH %s", password.c_str());
-        if (reply->type == REDIS_REPLY_ERROR) {
-            std::cerr << "Redis auth error: " << reply->str << std::endl;
-            freeReplyObject(reply);
-            return false;
-        }
-        freeReplyObject(reply);
-    }
+    // if (!password.empty()) {
+    //     redisReply *reply = (redisReply *)redisCommand(context, "AUTH %s", password.c_str());
+    //     if (reply->type == REDIS_REPLY_ERROR) {
+    //         std::cerr << "Redis auth error: " << reply->str << std::endl;
+    //         freeReplyObject(reply);
+    //         return false;
+    //     }
+    //     freeReplyObject(reply);
+    // }
 
     return true;
 }
