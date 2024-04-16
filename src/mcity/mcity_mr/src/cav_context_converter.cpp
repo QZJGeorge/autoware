@@ -24,7 +24,7 @@ namespace cav_context_converter
 
     pub_detected_objects = this->create_publisher<DetectedObjects>("/perception/object_recognition/detection/objects", 10);
 
-    if (!redis_client.connect()) {
+    if (!redis_client.connect(true)) {
         RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
     } else {
         RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");

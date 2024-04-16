@@ -19,7 +19,7 @@ namespace cav_context_replay
   CavContextReplay::CavContextReplay(const rclcpp::NodeOptions &options)
       : Node("cav_context_replay", options)
   {
-    if (!redis_client.connect()) {
+    if (!redis_client.connect(true)) {
         RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
     } else {
         RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");

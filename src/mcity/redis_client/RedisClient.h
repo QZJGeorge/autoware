@@ -8,7 +8,7 @@ class RedisClient {
 public:
     RedisClient();
     ~RedisClient();
-    bool connect(bool local=true);
+    bool connect(bool local);
     bool set(const std::string &key, const std::string &value);
     std::string get(const std::string &key);
 

@@ -26,11 +26,15 @@ void RedisClient::loadEnvironmentVariables() {
     local_password = "";
 }
 
-bool RedisClient::connect(bool local = true) {
+bool RedisClient::connect(bool local) {
+    std::string password;
+
     if (local){
         context = redisConnect(local_host.c_str(), local_port);
+        password = local_password;
     } else{
         context = redisConnect(remote_host.c_str(), remote_port);
+        password = remote_password;
     }
 
     if (context == nullptr || context->err) {
@@ -43,15 +47,15 @@ bool RedisClient::connect(bool local = true) {
         return false;
     }
 
-    // if (!password.empty()) {
-    //     redisReply *reply = (redisReply *)redisCommand(context, "AUTH %s", password.c_str());
-    //     if (reply->type == REDIS_REPLY_ERROR) {
-    //         std::cerr << "Redis auth error: " << reply->str << std::endl;
-    //         freeReplyObject(reply);
-    //         return false;
-    //     }
-    //     freeReplyObject(reply);
-    // }
+    if (!password.empty()) {
+        redisReply *reply = (redisReply *)redisCommand(context, "AUTH %s", password.c_str());
+        if (reply->type == REDIS_REPLY_ERROR) {
+            std::cerr << "Redis auth error: " << reply->str << std::endl;
+            freeReplyObject(reply);
+            return false;
+        }
+        freeReplyObject(reply);
+    }
 
     return true;
 }

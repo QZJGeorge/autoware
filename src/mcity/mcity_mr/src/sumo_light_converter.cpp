@@ -24,7 +24,7 @@ namespace sumo_light_converter{
     timer_ = rclcpp::create_timer(
       this, get_clock(), 20ms, std::bind(&SumoLightConverter::on_timer, this));
 
-    if (!redis_client.connect()) {
+    if (!redis_client.connect(true)) {
         RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
     } else {
         RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
