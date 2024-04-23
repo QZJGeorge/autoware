@@ -10,7 +10,7 @@ from mcity_remote.basic_ros_redis_com_node import BasicRosRedisComNode
 
 class RosToRedisInputPath(BasicRosRedisComNode):
     def __init__(self):
-        super().__init__('ros_to_redis_input_path')
+        super().__init__('ros_to_redis_input_path', 'remote')
         self.subscriber_autoware = self.create_subscription(PlannedPath, constants.PLANNED_PATH, self.callback_planned_path, 10)
 
         self.planned_path_msg = None

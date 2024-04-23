@@ -11,7 +11,7 @@ from mcity_remote.basic_ros_redis_com_node import BasicRosRedisComNode
 
 class RedisToRosVehicleState(BasicRosRedisComNode):
     def __init__(self):
-        super().__init__('redis_to_ros_vehicle_state')
+        super().__init__('redis_to_ros_vehicle_state', 'remote')
         self.publisher_rtk_imu = self.create_publisher(Imu, constants.RTK_IMU, 10)
         self.publisher_rtk_odometry = self.create_publisher(Odometry, constants.RTK_ODOMETRY, 10)
         self.publisher_rtk_position = self.create_publisher(NavSatFix, constants.RTK_POSITION, 10)

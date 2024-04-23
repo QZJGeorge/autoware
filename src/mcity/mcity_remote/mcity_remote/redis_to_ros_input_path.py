@@ -12,7 +12,7 @@ import numpy as np
 
 class RedisToRosInputPath(BasicRosRedisComNode):
     def __init__(self):
-        super().__init__('redis_to_ros_input_path')
+        super().__init__('redis_to_ros_input_path', 'remote')
         self.publisher_planned_path = self.create_publisher(PlannedPath, constants.PLANNED_PATH, 10)
         self.publisher_planned_path_latency = self.create_publisher(Float64, constants.PLANNED_PATH_LATENCY, 10)
         self.timer = self.create_timer(1/constants.UPDATE_RATE_GET, self.on_timer)

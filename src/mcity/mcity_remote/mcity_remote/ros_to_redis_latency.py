@@ -8,7 +8,7 @@ from mcity_remote.basic_ros_redis_com_node import BasicRosRedisComNode
 
 class RosToRedisLatency(BasicRosRedisComNode):
     def __init__(self):
-        super().__init__('ros_to_redis_latency')
+        super().__init__('ros_to_redis_latency', 'remote')
         self.subscriber_autoware = self.create_subscription(Float64, constants.PLANNED_PATH_LATENCY, self.callback_planned_path_latency, 10)
 
         self.planned_path_latency = None
