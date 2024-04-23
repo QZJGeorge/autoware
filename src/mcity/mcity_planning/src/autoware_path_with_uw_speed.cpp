@@ -20,7 +20,7 @@ namespace autoware_path_with_uw_speed{
         uw_spd = 0;
         uw_acc = 0;
         uw_time = 0;
-        if (!redis_client.connect()) {
+        if (!redis_client.connect(true)) {
             RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
         } else {
             RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");

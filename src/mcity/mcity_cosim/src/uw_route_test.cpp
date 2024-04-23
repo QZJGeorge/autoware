@@ -30,7 +30,7 @@ namespace uw_route_test{
     timer_ = rclcpp::create_timer(
       this, get_clock(), 1000ms, std::bind(&UwRouteTest::on_timer, this));
 
-    if (!redis_client.connect()) {
+    if (!redis_client.connect(true)) {
         RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
     } else {
         RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
