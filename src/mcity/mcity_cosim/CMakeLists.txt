@@ -28,16 +28,16 @@ rclcpp_components_register_node(autoware_interface_cosim_component
 
 ##########################  UW ROUTE TEST  ####################################
 
-ament_auto_add_library(uw_route_test_component SHARED
-  src/uw_route_test.cpp
+ament_auto_add_library(uw_route_cosim_component SHARED
+  src/uw_route_cosim.cpp
   ../redis_client/RedisClient.cpp
 )
 
-target_link_libraries(uw_route_test_component hiredis)
+target_link_libraries(uw_route_cosim_component hiredis)
 
-rclcpp_components_register_node(uw_route_test_component
-  PLUGIN "uw_route_test::UwRouteTest"
-  EXECUTABLE uw_route_test
+rclcpp_components_register_node(uw_route_cosim_component
+  PLUGIN "uw_route_cosim::UwRouteCosim"
+  EXECUTABLE uw_route_cosim
 )
 
 ########################################################################################

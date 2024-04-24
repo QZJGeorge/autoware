@@ -1,25 +1,21 @@
-#include <autoware_path_with_uw_speed.hpp>
+#include <autoware_path_uw.hpp>
 
-namespace autoware_path_with_uw_speed{
-    AutowarePathWithUWSpeed::AutowarePathWithUWSpeed(const rclcpp::NodeOptions & options)
-    : Node("autoware_path_with_uw_speed", options){
+namespace autoware_path_uw{
+    AutowarePathUW::AutowarePathUW(const rclcpp::NodeOptions & options)
+    : Node("autoware_path_uw", options){
         //register pub
         pub_path = this->create_publisher<PlannedPath>("/mcity/input_path", 10);
     
         //register sub
         sub_trajectory = this->create_subscription<Trajectory>(
-            "/planning/scenario_planning/trajectory", 10, std::bind(&AutowarePathWithUWSpeed::trajectory_callback, this, std::placeholders::_1));
+            "/planning/scenario_planning/trajectory", 10, std::bind(&AutowarePathUW::trajectory_callback, this, std::placeholders::_1));
 
         //register timer
         traj_timer_ = rclcpp::create_timer(
-            this, get_clock(), 50ms, std::bind(&AutowarePathWithUWSpeed::on_traj_timer, this));
+            this, get_clock(), 50ms, std::bind(&AutowarePathUW::on_traj_timer, this));
 
         init_path();
-        
-        uw_control = false;
-        uw_spd = 0;
-        uw_acc = 0;
-        uw_time = 0;
+
         if (!redis_client.connect(true)) {
             RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
         } else {
@@ -27,13 +23,13 @@ namespace autoware_path_with_uw_speed{
         }
     }
 
-    void AutowarePathWithUWSpeed::init_path(){
+    void AutowarePathUW::init_path(){
         path_msg.time_resolution = 0.1;
         path_msg.estop = 0;
         path_msg.go = 1;
     }
 
-    void AutowarePathWithUWSpeed::on_traj_timer(){
+    void AutowarePathUW::on_traj_timer(){
         if (path_msg.x_vector.empty()){
             RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 2000, "Empty trajectory received, not processed");
             return;
@@ -44,8 +40,7 @@ namespace autoware_path_with_uw_speed{
             json control_command_json = json::parse(control_command);
             if (control_command_json["info"] != NULL && control_command_json["info"]["trajectory_commands_cav"] != NULL){
                 uw_control = true;
-                uw_spd = control_command_json["info"]["trajectory_commands_cav"]["spd"]
-                uw_acc = control_command_json["info"]["trajectory_commands_cav"]["acc"]
+                uw_spd = control_command_json["info"]["trajectory_commands_cav"]["spd"];
                 uw_time = this->get_clock()->now().seconds();
             }
             else{
@@ -67,7 +62,7 @@ namespace autoware_path_with_uw_speed{
         pub_path->publish(path_msg);
     }
 
-    void AutowarePathWithUWSpeed::trajectory_callback(const Trajectory::SharedPtr msg){
+    void AutowarePathUW::trajectory_callback(const Trajectory::SharedPtr msg){
         std::vector<double> x_vector;
         std::vector<double> y_vector;
         std::vector<double> vd_vector;
@@ -102,4 +97,4 @@ namespace autoware_path_with_uw_speed{
     }
 }
 
-RCLCPP_COMPONENTS_REGISTER_NODE(autoware_path_with_uw_speed::AutowarePathWithUWSpeed)
+RCLCPP_COMPONENTS_REGISTER_NODE(autoware_path_uw::AutowarePathUW)

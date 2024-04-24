@@ -12,8 +12,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_COSIM_uw_route_test_HPP_
-#define MCITY_COSIM_uw_route_test_HPP_
+#ifndef MCITY_COSIM_uw_route_cosim_HPP_
+#define MCITY_COSIM_uw_route_cosim_HPP_
 
 #include <iostream>
 #include <chrono>
@@ -36,7 +36,7 @@
 #include <autoware_auto_system_msgs/msg/autoware_state.hpp>
 
 
-namespace uw_route_test
+namespace uw_route_cosim
 {
 
 using namespace std;
@@ -48,11 +48,11 @@ using tier4_system_msgs::srv::ChangeAutowareControl;
 using autoware_adapi_v1_msgs::srv::SetRoutePoints;
 using autoware_auto_system_msgs::msg::AutowareState;
 
-class UwRouteTest : public rclcpp::Node
+class UwRouteCosim : public rclcpp::Node
 {
 public:
-  explicit UwRouteTest(const rclcpp::NodeOptions & options);
-  ~UwRouteTest() = default;
+  explicit UwRouteCosim(const rclcpp::NodeOptions & options);
+  ~UwRouteCosim() = default;
 
 private:
   int autoware_state = 1;

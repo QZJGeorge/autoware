@@ -12,71 +12,69 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include <uw_route_test.hpp>
+#include "uw_route_realcar.hpp"
 
-namespace uw_route_test{
+namespace uw_route_realcar{
 
-  UwRouteTest::UwRouteTest(const rclcpp::NodeOptions & options)
-  : Node("uw_route_test", options)
+  UwRouteRealcar::UwRouteRealcar(const rclcpp::NodeOptions & options)
+  : Node("uw_route_realcar", options)
   {
-    pub_local = this->create_publisher<PoseWithCovarianceStamped>("/initialpose", 10);
+    pub_vel_report = this->create_publisher<VelocityReport>("/vehicle/status/velocity_status", 10);
+    pub_steer_report = this->create_publisher<SteeringReport>("/vehicle/status/steering_status", 10);
+
     sub_autoware_state = this->create_subscription<AutowareState>(
-      "/autoware/state", 10, std::bind(&UwRouteTest::autoware_state_callback, this, std::placeholders::_1));
+      "/autoware/state", 10, std::bind(&UwRouteRealcar::autowareStateCB, this, std::placeholders::_1));
+    sub_veh_state = this->create_subscription<VehicleState>(
+      "/mcity/vehicle_state", 10, std::bind(&UwRouteRealcar::vehStateCB, this, std::placeholders::_1));
+    sub_operation_mode = this->create_subscription<OperationModeState>(
+      "/system/operation_mode/state", 10, std::bind(&UwRouteRealcar::operationModeStateCB, this, std::placeholders::_1));
 
     cli_set_route_points = this->create_client<SetRoutePoints>("/planning/mission_planning/set_route_points");
     cli_set_operation_mode = this->create_client<ChangeOperationMode>("/system/operation_mode/change_operation_mode");
     cli_set_autoware_control = this->create_client<ChangeAutowareControl>("/system/operation_mode/change_autoware_control");
 
     timer_ = rclcpp::create_timer(
-      this, get_clock(), 1000ms, std::bind(&UwRouteTest::on_timer, this));
-
-    if (!redis_client.connect(true)) {
-        RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
-    } else {
-        RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
-    }
+      this, get_clock(), 100ms, std::bind(&UwRouteRealcar::on_timer, this));
   }
 
-  void UwRouteTest::on_timer(){
+  void UwRouteRealcar::on_timer(){
     if (autoware_state == AutowareState::INITIALIZING){
-      init_localization();
       RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Waiting for vehicle initialization...");
-    }
+      return;
+    } 
     else if (autoware_state == AutowareState::WAITING_FOR_ROUTE){
       set_route_points();
+      operation_mode_state_msg.mode = ChangeOperationMode::Request::LOCAL;
       RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Setting route points...");
     } 
-    else if (autoware_state == AutowareState::WAITING_FOR_ENGAGE){
-      string terasim_status = redis_client.get("terasim_status");
-      if (terasim_status == "" || terasim_status == "0"){
-        RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Terasim not available, waiting...");
-      } 
-      else{
-        set_autoware_control(true);
+    else{
+      if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x < 0.25 && (uint8_t)operation_mode_state_msg.mode != ChangeOperationMode::Request::STOP){
+        set_operation_mode(ChangeOperationMode::Request::STOP);
+      } else if (!veh_state_msg.by_wire_enabled && veh_state_msg.speed_x >= 0.25 && (uint8_t)operation_mode_state_msg.mode != ChangeOperationMode::Request::LOCAL){
+        set_operation_mode(ChangeOperationMode::Request::LOCAL);
+      } else if (veh_state_msg.by_wire_enabled && (uint8_t)operation_mode_state_msg.mode != ChangeOperationMode::Request::AUTONOMOUS){
         set_operation_mode(ChangeOperationMode::Request::AUTONOMOUS);
-        RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Enabling autoware control...");
       }
     }
+
+    pub_vehicle_report();
   }
 
-  void UwRouteTest::init_localization(){
-    PoseWithCovarianceStamped localization_msg;
+  void UwRouteRealcar::pub_vehicle_report(){
+    VelocityReport vel_report_msg;
+    SteeringReport steer_report_msg;
 
-    localization_msg.pose.pose.position.x = 77634.805;
-    localization_msg.pose.pose.position.y = 86722.445;
+    vel_report_msg.header.stamp = this->get_clock()->now();
+    vel_report_msg.longitudinal_velocity = veh_state_msg.speed_x;
 
-    localization_msg.pose.pose.orientation.x = 0.0;
-    localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = 0.9998690840231589;
-    localization_msg.pose.pose.orientation.w = 0.016180692651716146;
+    steer_report_msg.stamp = this->get_clock()->now();
+    steer_report_msg.steering_tire_angle = veh_state_msg.steer_state / STEER_TO_TIRE_RATIO;
 
-    localization_msg.header.stamp = this->get_clock()->now();
-    localization_msg.header.frame_id = "map";
-    
-    pub_local->publish(localization_msg);
+    pub_vel_report->publish(vel_report_msg);
+    pub_steer_report->publish(steer_report_msg);
   }
 
-  void UwRouteTest::set_route_points(){
+  void UwRouteRealcar::set_route_points(){
     Pose wp0, wp1, wp2, wp3, wp4, wp5, wp6, wp7, wp8;
 
     wp0.position.x = 77536.445;
@@ -177,7 +175,7 @@ namespace uw_route_test{
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting new route...");
   }
 
-  void UwRouteTest::set_operation_mode(uint8_t mode){
+  void UwRouteRealcar::set_operation_mode(uint8_t mode){
     auto request = std::make_shared<ChangeOperationMode::Request>();
     request->mode = mode;
 
@@ -191,23 +189,17 @@ namespace uw_route_test{
     auto result = cli_set_operation_mode->async_send_request(request);
   }
 
-  void UwRouteTest::set_autoware_control(bool autoware_control){
-    auto request = std::make_shared<ChangeAutowareControl::Request>();
-    request->autoware_control = autoware_control;
-
-    while (!cli_set_autoware_control->wait_for_service(1s)) {
-      if (!rclcpp::ok()) {
-        RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
-      }
-      RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "routing service not available, waiting again...");
-    }
-
-    auto result = cli_set_autoware_control->async_send_request(request);
+  void UwRouteRealcar::autowareStateCB(const AutowareState::SharedPtr msg){
+    autoware_state = msg->state;
   }
 
-  void UwRouteTest::autoware_state_callback(AutowareState::SharedPtr msg){
-    autoware_state = msg->state;
+  void UwRouteRealcar::vehStateCB(const VehicleState::SharedPtr msg){
+    veh_state_msg = *msg;
+  }
+
+  void UwRouteRealcar::operationModeStateCB(const OperationModeState::SharedPtr msg){
+    operation_mode_state_msg = *msg;
   }
 }
 
-RCLCPP_COMPONENTS_REGISTER_NODE(uw_route_test::UwRouteTest)
+RCLCPP_COMPONENTS_REGISTER_NODE(uw_route_realcar::UwRouteRealcar)

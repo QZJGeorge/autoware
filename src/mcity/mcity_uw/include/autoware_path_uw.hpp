@@ -1,5 +1,5 @@
-#ifndef autoware_path_with_uw_speed_HPP
-#define autoware_path_with_uw_speed_HPP
+#ifndef autoware_path_uw_HPP
+#define autoware_path_uw_HPP
 
 #include <math.h>
 #include <iostream>
@@ -12,21 +12,22 @@
 #include <RedisClient.h>
 #include <nlohmann/json.hpp>
 
-namespace autoware_path_with_uw_speed
+namespace autoware_path_uw
 {
 
 using namespace std;
 
+using nlohmann::json;
 using mcity_msgs::msg::PlannedPath;
 using autoware_auto_planning_msgs::msg::Trajectory;
 
 
-class AutowarePathWithUWSpeed : public rclcpp::Node
+class AutowarePathUW : public rclcpp::Node
 {
 
 public:
-    explicit AutowarePathWithUWSpeed(const rclcpp::NodeOptions & options);
-    ~AutowarePathWithUWSpeed() = default;
+    explicit AutowarePathUW(const rclcpp::NodeOptions & options);
+    ~AutowarePathUW() = default;
 
 private:
     rclcpp::Publisher<PlannedPath>::SharedPtr pub_path;
@@ -37,9 +38,9 @@ private:
 
     RedisClient redis_client;
 
-    bool uw_control;
+    bool uw_control = false;
+    
     double uw_spd;
-    double uw_acc;
     double uw_time;
     
     void init_path();
