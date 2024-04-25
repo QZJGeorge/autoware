@@ -36,26 +36,31 @@ namespace autoware_path_uw{
         }
 
         string control_command = redis_client.get("output");
-        if (control_command != ""){
+
+        if (control_command == ""){
+            RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 2000, "UW control message not available...");
+        } else{
             json control_command_json = json::parse(control_command);
-            if (control_command_json["info"] != NULL && control_command_json["info"]["trajectory_commands_cav"] != NULL){
-                uw_control = true;
-                uw_spd = control_command_json["info"]["trajectory_commands_cav"]["spd"];
-                uw_time = this->get_clock()->now().seconds();
-            }
-            else{
-                if (uw_control){
-                    double duration = this->get_clock()->now().seconds() - uw_time;
-                    if (duration > 0.5){
-                        uw_control = false;
-                    }
+            if (control_command_json.contains("info")){
+                if (control_command_json["info"].is_object() && control_command_json["info"].contains("trajectory_commands_cav")) {
+                    uw_control = true;
+                    uw_spd = control_command_json["info"]["trajectory_commands_cav"]["spd"];
+                    uw_time = this->get_clock()->now().seconds();
                 }
             }
         }
 
         if (uw_control){
-            // set constant speed
-            std::fill(path_msg.vd_vector.begin(), path_msg.vd_vector.end(), uw_spd);
+            if (this->get_clock()->now().seconds() - uw_time > 0.5){
+                uw_control = false;
+                RCLCPP_INFO(this->get_logger(), "UW control disabled due to timeout.");
+            } else if (uw_spd < 0.0 || uw_spd > 8.0){
+                uw_control = false;
+                RCLCPP_INFO(this->get_logger(), "UW control disabled due to speed bound.");
+            } else {
+                std::fill(path_msg.vd_vector.begin(), path_msg.vd_vector.end(), uw_spd);
+                RCLCPP_INFO(this->get_logger(), "UW control enabled with constant speed: %f", uw_spd);
+            }
         }
 
         path_msg.timestamp = this->get_clock()->now().seconds();        

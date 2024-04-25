@@ -29,12 +29,6 @@ namespace uw_route_cosim{
 
     timer_ = rclcpp::create_timer(
       this, get_clock(), 1000ms, std::bind(&UwRouteCosim::on_timer, this));
-
-    if (!redis_client.connect(true)) {
-        RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
-    } else {
-        RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
-    }
   }
 
   void UwRouteCosim::on_timer(){
@@ -46,17 +40,6 @@ namespace uw_route_cosim{
       set_route_points();
       RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Setting route points...");
     } 
-    else if (autoware_state == AutowareState::WAITING_FOR_ENGAGE){
-      string terasim_status = redis_client.get("terasim_status");
-      if (terasim_status == "" || terasim_status == "0"){
-        RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Terasim not available, waiting...");
-      } 
-      else{
-        set_autoware_control(true);
-        set_operation_mode(ChangeOperationMode::Request::AUTONOMOUS);
-        RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Enabling autoware control...");
-      }
-    }
   }
 
   void UwRouteCosim::init_localization(){
