@@ -68,13 +68,13 @@ namespace test_08{
   }
 
   void Test08::init_localization(){
-    localization_msg.pose.pose.position.x = 77632.796875;
-    localization_msg.pose.pose.position.y = 86722.421875;
+    localization_msg.pose.pose.position.x = 77603.9375;
+    localization_msg.pose.pose.position.y = 86722.125;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = 0.9997486631026764;
-    localization_msg.pose.pose.orientation.w = 0.022418979111709512;
+    localization_msg.pose.pose.orientation.z = 0.9998774655293617;
+    localization_msg.pose.pose.orientation.w = 0.015654198369129436;
 
     localization_msg.header.stamp = this->get_clock()->now();
     localization_msg.header.frame_id = "map";
