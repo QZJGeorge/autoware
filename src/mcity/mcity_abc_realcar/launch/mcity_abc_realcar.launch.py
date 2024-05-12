@@ -15,7 +15,7 @@ def generate_launch_description():
         ############################################################
         DeclareLaunchArgument(
           'scenario',
-          default_value='01_lane_change_realcar',
+          default_value='02_car_following_realcar',
           description='Name of the executable.'
         ),
         Node(
