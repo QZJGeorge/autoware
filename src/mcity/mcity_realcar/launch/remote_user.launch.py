@@ -1,5 +1,7 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
+from launch.actions import ExecuteProcess
+from launch.substitutions import EnvironmentVariable, PathJoinSubstitution
 
 def generate_launch_description():
     return LaunchDescription([
@@ -14,7 +16,7 @@ def generate_launch_description():
         ),
 
         ############################################################
-        # Localization (Autoware to SUMO)
+        # Localization
         ############################################################
 
         Node(
@@ -69,4 +71,14 @@ def generate_launch_description():
             namespace='/mcity',
             executable='ros_to_redis_input_path',
         ),
+        ExecuteProcess(
+            cmd=[
+                'python3',
+                PathJoinSubstitution([
+                    EnvironmentVariable('HOME'),
+                    'autoware/src/mcity/mcity_remote/mcity_remote/redis_local_remote.py'
+                ])
+            ],
+            name='redis_local_remote',
+        )
     ])

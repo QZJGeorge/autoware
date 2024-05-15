@@ -41,4 +41,9 @@ def generate_launch_description():
             namespace='/mcity',
             executable='redis_to_ros_input_path',
         ),
+        Node(
+            package='mcity_remote',
+            namespace='/mcity/communication',
+            executable='ros_to_redis_latency',
+        ),
     ])
