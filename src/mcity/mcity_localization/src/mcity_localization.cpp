@@ -128,7 +128,7 @@ namespace mcity_localization{
     saved_imu_msg.orientation.z = quat.z;
     saved_imu_msg.orientation.w = quat.w;
 
-    // quaternionToEuler(quat.x, quat.y, quat.z, quat.w);
+    quaternionToEuler(quat.x, quat.y, quat.z, quat.w);
   }
 
   void McityLocalization::quaternionToEuler(float qx, float qy, float qz, float qw) {
