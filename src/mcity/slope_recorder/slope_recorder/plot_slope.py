@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Function to read slope data from the txt file
-def read_slope_data(file_path='/home/zhijie/autoware/src/mcity/mcity_control/data/slope/DIT.txt'):
+def read_slope_data(file_path='/home/mtl12345/autoware/src/mcity/mcity_control/data/slope/DIT.txt'):
     x_coords, y_coords, slopes = [], [], []
     with open(file_path, 'r', encoding='utf-8') as file:
         for line in file:

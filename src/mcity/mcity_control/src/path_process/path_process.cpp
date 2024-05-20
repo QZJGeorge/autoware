@@ -68,7 +68,7 @@ void pathProcessing::run(){
     RCLCPP_INFO(rclcpp::get_logger("path_process"), "vc %f", _vs->speed_x);
     RCLCPP_INFO(rclcpp::get_logger("path_process"), "ephi %f", _p2c->ephi);
     RCLCPP_INFO(rclcpp::get_logger("path_process"), "ey %f", _p2c->ey);
-    RCLCPP_INFO(rclcpp::get_logger("path_process"), "slope %f ", _p2c->slope);
+    // RCLCPP_INFO(rclcpp::get_logger("path_process"), "slope %f ", _p2c->slope);
 }
 
 int pathProcessing::get_closest_index(){
@@ -181,7 +181,7 @@ double pathProcessing::get_desired_velocity(int closest_index){
         return 0.0;
     }
 
-    if (current_velocity >= desired_velocity && desired_velocity <= 3.0){
+    if (current_velocity >= desired_velocity && desired_velocity <= 2.0){
         // find a velocity from future velocities that is close to the current velocity
         double min_difference = std::numeric_limits<double>::max();
 
@@ -253,30 +253,31 @@ double pathProcessing::get_lateral_error(int closest_index){
 }
 
 double pathProcessing::get_slope(int closest_index){
-    double x = _p2c->x_vector[closest_index];
-    double y = _p2c->y_vector[closest_index];
+    // double x = _p2c->x_vector[closest_index];
+    // double y = _p2c->y_vector[closest_index];
 
-    std::pair<int, int> closest_point;
-    double min_distance = std::numeric_limits<double>::max();
-    double closest_slope = 0.0;
+    // std::pair<int, int> closest_point;
+    // double min_distance = std::numeric_limits<double>::max();
+    // double closest_slope = 0.0;
 
-    for (const auto& item : slope_data) {
-        // Calculate the distance between (x, y) and the current point in the map
-        double distance = std::sqrt(std::pow(item.first.first - x, 2) + std::pow(item.first.second - y, 2));
+    // for (const auto& item : slope_data) {
+    //     // Calculate the distance between (x, y) and the current point in the map
+    //     double distance = std::sqrt(std::pow(item.first.first - x, 2) + std::pow(item.first.second - y, 2));
 
-        // Check if this point is the closest one so far
-        if (distance < min_distance) {
-            min_distance = distance;
-            closest_point = item.first;
-            closest_slope = item.second;
-        }
-    }
+    //     // Check if this point is the closest one so far
+    //     if (distance < min_distance) {
+    //         min_distance = distance;
+    //         closest_point = item.first;
+    //         closest_slope = item.second;
+    //     }
+    // }
 
-    // Check if the closest point is within 5 meters
-    if (min_distance <= 3.0) {
-        return closest_slope;
-    } else {
-        RCLCPP_WARN(rclcpp::get_logger("path_process"), "No close enough slope data found for the given coordinates.");
-        return 0.0;
-    }
+    // // Check if the closest point is within 5 meters
+    // if (min_distance <= 3.0) {
+    //     return closest_slope;
+    // } else {
+    //     RCLCPP_WARN(rclcpp::get_logger("path_process"), "No close enough slope data found for the given coordinates.");
+    //     return 0.0;
+    // }
+    return 0.0;
 }
