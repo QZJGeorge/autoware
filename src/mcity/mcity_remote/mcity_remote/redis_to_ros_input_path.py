@@ -26,7 +26,7 @@ class RedisToRosInputPath(BasicRosRedisComNode):
             ros_message_dict_wrapper = json.loads(json_str)
 
             timestamp = ros_message_dict_wrapper['timestamp']
-            ros_message_dict = ros_message_dict_wrapper['data']
+            ros_message_dict = json.loads(ros_message_dict_wrapper['data'])
 
             msg = PlannedPath()
             message_conversion.populate_instance(ros_message_dict, msg)
