@@ -71,14 +71,14 @@ def generate_launch_description():
             namespace='/mcity',
             executable='ros_to_redis_input_path',
         ),
-        ExecuteProcess(
-            cmd=[
-                'python3',
-                PathJoinSubstitution([
-                    EnvironmentVariable('HOME'),
-                    'autoware/src/mcity/mcity_remote/mcity_remote/redis_local_remote.py'
-                ])
-            ],
-            name='redis_local_remote',
-        )
+        # ExecuteProcess(
+        #     cmd=[
+        #         'python3',
+        #         PathJoinSubstitution([
+        #             EnvironmentVariable('HOME'),
+        #             'autoware/src/mcity/mcity_remote/mcity_remote/redis_local_remote.py'
+        #         ])
+        #     ],
+        #     name='redis_local_remote',
+        # )
     ])

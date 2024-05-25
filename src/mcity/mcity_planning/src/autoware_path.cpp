@@ -18,7 +18,6 @@ namespace autoware_path{
     }
 
     void AutowarePath::init_path(){
-        path_msg.time_resolution = 0.1;
         path_msg.estop = 0;
         path_msg.go = 1;
     }

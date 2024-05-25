@@ -23,24 +23,32 @@ class RedisToRosInputPath(BasicRosRedisComNode):
         json_str = self.redis_client.get(constants.PLANNED_PATH)
 
         if json_str is not None:
-            ros_message_dict = json.loads(json_str)
-            self.set_redis_latency(ros_message_dict)
+            ros_message_dict_wrapper = json.loads(json_str)
+
+            timestamp = ros_message_dict_wrapper['timestamp']
+            ros_message_dict = ros_message_dict_wrapper['data']
 
             msg = PlannedPath()
             message_conversion.populate_instance(ros_message_dict, msg)
             self.publisher_planned_path.publish(msg)
 
-    def set_redis_latency(self, ros_message_dict):
-        latency = None
-        if self.data is None:
-            self.data = ros_message_dict
-            latency = time.time() - ros_message_dict['timestamp']
-        elif self.data != ros_message_dict:
-            self.data = ros_message_dict
-            latency = time.time() - ros_message_dict['timestamp']
+            # self.set_redis_latency(ros_message_dict)
+
+            latency = time.time() - timestamp
+            planned_path_latency_wrapper = {"timestamp": time.time(), "data": latency}
+            self.redis_client.set(constants.AV_PLANNING_LATENCY, json.dumps(planned_path_latency_wrapper))
+
+    # def set_redis_latency(self, ros_message_dict):
+    #     latency = None
+    #     if self.data is None:
+    #         self.data = ros_message_dict
+    #         latency = time.time() - ros_message_dict['timestamp']
+    #     elif self.data != ros_message_dict:
+    #         self.data = ros_message_dict
+    #         latency = time.time() - ros_message_dict['timestamp']
             
-        if latency:
-            self.publisher_planned_path_latency.publish(Float64(data=latency))
+    #     if latency:
+    #         self.publisher_planned_path_latency.publish(Float64(data=latency))
 
 def main(args=None):
     rclpy.init(args=args)

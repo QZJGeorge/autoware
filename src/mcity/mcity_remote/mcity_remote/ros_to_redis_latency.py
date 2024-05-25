@@ -1,5 +1,6 @@
 import rclpy
 import json
+import time
 import mcity_remote.constants as constants
 
 from std_msgs.msg import Float64
@@ -16,7 +17,8 @@ class RosToRedisLatency(BasicRosRedisComNode):
 
     def on_timer(self):
         if self.planned_path_latency is not None:
-            self.redis_client.set(constants.AV_PLANNING_LATENCY, self.planned_path_latency)
+            planned_path_latency_wrapper = {"timestamp": time.time(), "data": self.planned_path_latency}
+            self.redis_client.set(constants.AV_PLANNING_LATENCY, json.dumps(planned_path_latency_wrapper))
 
     def callback_planned_path_latency(self, msg):
         self.planned_path_latency = msg.data

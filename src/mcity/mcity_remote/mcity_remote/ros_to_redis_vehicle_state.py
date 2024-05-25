@@ -1,4 +1,5 @@
 import json
+import time
 import rclpy
 import mcity_remote.constants as constants
 
@@ -26,11 +27,16 @@ class RosToRedisVehicleState(BasicRosRedisComNode):
 
     def on_timer(self):
         if self.rtk_imu_msg and self.rtk_odometry_msg and self.rtk_position_msg and self.veh_state_msg:
+            rtk_imu_msg_wrapper = {"timestamp": time.time(), "data": self.rtk_imu_msg}
+            rtk_odometry_msg_wrapper = {"timestamp": time.time(), "data": self.rtk_odometry_msg}
+            rtk_position_msg_wrapper = {"timestamp": time.time(), "data": self.rtk_position_msg}
+            veh_state_msg_wrapper = {"timestamp": time.time(), "data": self.veh_state_msg}
+
             self.redis_client.mset({
-                constants.VEHICLE_STATE: self.veh_state_msg,
-                constants.RTK_IMU: self.rtk_imu_msg,
-                constants.RTK_ODOMETRY: self.rtk_odometry_msg,
-                constants.RTK_POSITION: self.rtk_position_msg
+                constants.VEHICLE_STATE: json.dumps(veh_state_msg_wrapper),
+                constants.RTK_IMU: json.dumps(rtk_imu_msg_wrapper),
+                constants.RTK_ODOMETRY: json.dumps(rtk_odometry_msg_wrapper),
+                constants.RTK_POSITION: json.dumps(rtk_position_msg_wrapper)
             })
             
             self.rtk_imu_msg = None

@@ -23,22 +23,26 @@ class RedisToRosVehicleState(BasicRosRedisComNode):
         redis_key_list = [constants.RTK_POSITION, constants.RTK_ODOMETRY, constants.RTK_IMU, constants.VEHICLE_STATE]
         results = self.redis_client.mget(redis_key_list)
         if results[0] is not None:
-            ros_message_dict  = json.loads(results[0])
+            ros_message_dict_wrapper = json.loads(results[0])
+            ros_message_dict = ros_message_dict_wrapper['data']
             msg = NavSatFix()
             message_conversion.populate_instance(ros_message_dict, msg)
             self.publisher_rtk_position.publish(msg)
         if results[1] is not None:
-            ros_message_dict  = json.loads(results[1])
+            ros_message_dict_wrapper = json.loads(results[1])
+            ros_message_dict = ros_message_dict_wrapper['data']
             msg = Odometry()
             message_conversion.populate_instance(ros_message_dict, msg)
             self.publisher_rtk_odometry.publish(msg)
         if results[2] is not None:
-            ros_message_dict  = json.loads(results[2])
+            ros_message_dict_wrapper = json.loads(results[2])
+            ros_message_dict = ros_message_dict_wrapper['data']
             msg = Imu()
             message_conversion.populate_instance(ros_message_dict, msg)
             self.publisher_rtk_imu.publish(msg)
         if results[3] is not None:
-            ros_message_dict  = json.loads(results[3])
+            ros_message_dict_wrapper  = json.loads(results[3])
+            ros_message_dict = ros_message_dict_wrapper['data']
             msg = VehicleState()
             message_conversion.populate_instance(ros_message_dict, msg)
             self.publisher_vehicle_state.publish(msg)

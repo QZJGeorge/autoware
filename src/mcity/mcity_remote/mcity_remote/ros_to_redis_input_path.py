@@ -1,5 +1,6 @@
 import rclpy
 import json
+import time
 import mcity_remote.constants as constants
 
 from mcity_msgs.msg import PlannedPath
@@ -18,7 +19,8 @@ class RosToRedisInputPath(BasicRosRedisComNode):
 
     def on_timer(self):
         if self.planned_path_msg is not None:
-            self.redis_client.set(constants.PLANNED_PATH, self.planned_path_msg)
+            planned_path_msg_wrapper = {"timestamp": time.time(), "data": self.planned_path_msg}
+            self.redis_client.set(constants.PLANNED_PATH, json.dumps(planned_path_msg_wrapper))
 
     def callback_planned_path(self, msg):
         json_str = json.dumps(message_conversion.extract_values(msg))
