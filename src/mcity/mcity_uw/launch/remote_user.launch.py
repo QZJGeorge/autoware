@@ -60,15 +60,6 @@ def generate_launch_description():
         ),
 
         ############################################################
-        # Control
-        ############################################################
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([
-                os.path.join(get_package_share_directory('mcity_control'),'launch','mcity_control.launch.py')
-            ])
-        ),
-
-        ############################################################
         # Remote Communication
         ############################################################
         Node(
