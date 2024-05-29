@@ -175,7 +175,7 @@ double pathProcessing::get_desired_velocity(int closest_index){
     double desired_velocity = _p2c->vd_vector[closest_index];
 
     // the vehicle is slowing down and will stop very soon
-    if (current_velocity <= 0.05 && _p2c->vd_vector.back() <= 0.25){
+    if (current_velocity <= 0.05 && _p2c->vd_vector.back() <= 0.5){
         return 0.0;
     }
 
