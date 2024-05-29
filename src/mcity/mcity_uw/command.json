@@ -1,8 +1,40 @@
 {
+  "sumo_time": 268,
+  "sumo_step": 2680,
+  "timestamp": 1716752751.6923606,
   "info": {
+    "cur_phase": 7,
+    "next_signal_phase": 3,
+    "trajectory_commands": {
+      "BV_9.5": {
+        "spd": 9.457027753493704e-12,
+        "within_control_range": true
+      },
+      "BV_9.6": {
+        "spd": 1.300771843708794,
+        "within_control_range": true
+      },
+      "BV_1.3": {
+        "spd": 0.00013294648298696406,
+        "within_control_range": true
+      },
+      "BV_5.3": {
+        "spd": 0.0005608701022539794,
+        "within_control_range": true
+      },
+      "BV_6.5": {
+        "spd": 1.9900830188270475,
+        "within_control_range": true
+      },
+      "CAV": {
+        "spd": 0.8735969871759147,
+        "within_control_range": true
+      }
+    },
     "trajectory_commands_cav": {
-      "spd": 0.0
-    }
+      "spd": 0.8735969871759147,
+      "within_control_range": true
+    },
+    "cur_yellow_step": 0
   }
 }
-

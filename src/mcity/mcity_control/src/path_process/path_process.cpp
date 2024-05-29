@@ -96,9 +96,7 @@ int pathProcessing::get_closest_index(){
 
 void pathProcessing::upsampling(double desired_time_resolution){
     // mupltiply by 2 to make sure the upsampled vectors have accurate info
-    double upsample_factor = _p2c->time_resolution / desired_time_resolution * 2;
-    // for now use a simple value
-    upsample_factor = 50.0;
+    double upscale_factor = _p2c->time_resolution / desired_time_resolution * 2.0;
 
     std::vector<float> upsampled_x_vec;
     std::vector<float> upsampled_y_vec;
@@ -106,12 +104,12 @@ void pathProcessing::upsampling(double desired_time_resolution){
     std::vector<float> upsampled_ori_vec;
 
     for (size_t i = 0; i < _p2c->x_vector.size() - 1; ++i) {
-        double delta_x = (_p2c->x_vector[i + 1] - _p2c->x_vector[i]) / upsample_factor;
-        double delta_y = (_p2c->y_vector[i + 1] - _p2c->y_vector[i]) / upsample_factor;
-        double delta_vd = (_p2c->vd_vector[i + 1] - _p2c->vd_vector[i]) / upsample_factor;
-        double delta_ori = (_p2c->ori_vector[i + 1] - _p2c->ori_vector[i]) / upsample_factor;
+        double delta_x = (_p2c->x_vector[i + 1] - _p2c->x_vector[i]) / upscale_factor;
+        double delta_y = (_p2c->y_vector[i + 1] - _p2c->y_vector[i]) / upscale_factor;
+        double delta_vd = (_p2c->vd_vector[i + 1] - _p2c->vd_vector[i]) / upscale_factor;
+        double delta_ori = (_p2c->ori_vector[i + 1] - _p2c->ori_vector[i]) / upscale_factor;
 
-        for (int j = 0; j < int(upsample_factor); ++j) {
+        for (int j = 0; j < int(upscale_factor); ++j) {
             double interpolated_x_value = _p2c->x_vector[i] + delta_x * j;
             double interpolated_y_value = _p2c->y_vector[i] + delta_y * j;
             double interpolated_vd_value = _p2c->vd_vector[i] + delta_vd * j;

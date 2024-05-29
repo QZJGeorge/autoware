@@ -54,6 +54,9 @@ namespace cav_state_converter
     av_state["resolution"] = 0.1;
     av_state["velocity"] = saved_odom_msg.twist.twist.linear.x;
 
+    auto now = rclcpp::Clock().now();
+    av_state["timestamp"] = now.seconds();
+
     redis_client.set("av_state", av_state.dump());
     odom_status = false;
   }

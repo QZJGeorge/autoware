@@ -12,7 +12,7 @@ from mcity_remote.basic_ros_redis_com_node import BasicRosRedisComNode
 
 class RosToRedisVehicleState(BasicRosRedisComNode):
     def __init__(self):
-        super().__init__('ros_to_redis_vehicle_state', 'remote')
+        super().__init__('ros_to_redis_vehicle_state', 'local')
         self.rtk_imu_msg = None
         self.rtk_odometry_msg = None
         self.rtk_position_msg = None
