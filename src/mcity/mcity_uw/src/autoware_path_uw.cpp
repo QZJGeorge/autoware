@@ -43,9 +43,13 @@ namespace autoware_path_uw{
             json control_command_json = json::parse(control_command);
             if (control_command_json.contains("info")){
                 if (control_command_json["info"].is_object() && control_command_json["info"].contains("trajectory_commands_cav")) {
-                    uw_control = true;
-                    uw_spd = control_command_json["info"]["trajectory_commands_cav"]["spd"];
-                    uw_time = this->get_clock()->now().seconds();
+                    if (control_command_json["info"]["trajectory_commands_cav"].is_null()) {
+                        // RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "trajectory_commands_cav is null");
+                    } else {
+                        uw_control = true;
+                        uw_spd = control_command_json["info"]["trajectory_commands_cav"]["spd"];
+                        uw_time = this->get_clock()->now().seconds();
+                    }
                 }
             }
         }
@@ -56,7 +60,7 @@ namespace autoware_path_uw{
                 RCLCPP_INFO(this->get_logger(), "UW control disabled due to timeout.");
             } else if (uw_spd < 0.0 || uw_spd > 8.0){
                 uw_control = false;
-                RCLCPP_INFO(this->get_logger(), "UW control disabled due to speed bound.");
+                RCLCPP_INFO(this->get_logger(), "UW control disabled due to speed bound %f", uw_spd);
             } else {
                 std::fill(path_msg.vd_vector.begin(), path_msg.vd_vector.end(), uw_spd);
                 RCLCPP_INFO(this->get_logger(), "UW control enabled with constant speed: %f", uw_spd);

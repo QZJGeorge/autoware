@@ -62,46 +62,6 @@ namespace cav_context_converter
     pub_detected_objects->publish(detected_objects_msg);
   }
 
-  double CavContextConverter::get_ori_from_odom(Odometry::SharedPtr msg){
-    double quat_x = msg->pose.pose.orientation.x;
-    double quat_y = msg->pose.pose.orientation.y;
-    double quat_z = msg->pose.pose.orientation.z;
-    double quat_w = msg->pose.pose.orientation.w;
-
-    double yaw = std::atan2(2.0 * (quat_w * quat_z + quat_x * quat_y), 1.0 - 2.0 * (quat_y * quat_y + quat_z * quat_z));
-
-    // normalize to the range from -pi to pi
-    while(yaw > M_PI) yaw -= 2.*M_PI;
-    while(yaw < -M_PI) yaw += 2.*M_PI;
-
-    return yaw;
-  }
-
-  string CavContextConverter::get_mgrs_from_odom(Odometry::SharedPtr msg){
-    string ANN_ARBOR = "17TKG";
-
-    int PRECISION = 4;  // increase precision to 4 decimal place
-    int easting = round(msg->pose.pose.position.x * pow(10, PRECISION));   // Your easting coordinate
-    int northing = round(msg->pose.pose.position.y * pow(10, PRECISION));  // Your northing coordinate
-
-    string mgrs = ANN_ARBOR + std::to_string(easting) + std::to_string(northing);
-    return mgrs;
-  }
-
-  string CavContextConverter::get_cav_ego_positionheading_ros(double lat, double lon, double yaw){
-    nlohmann::json cav_dic;
-    cav_dic["x"] = lat;
-    cav_dic["y"] = lon;
-    cav_dic["orientation"] = yaw;
-    return cav_dic.dump();;
-  }
-
-  string CavContextConverter::get_cav_ego_speed_ros(double velocity){
-    nlohmann::json cav_dic;
-    cav_dic["velocity"] = velocity;
-    return cav_dic.dump();;
-  }
-
   string CavContextConverter::post_process_cav_context_info(string cav_context_info){
     string newString = cav_context_info;
 

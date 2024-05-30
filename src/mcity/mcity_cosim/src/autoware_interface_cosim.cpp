@@ -47,16 +47,9 @@ namespace autoware_interface_cosim{
       RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Setting route points...");
     } 
     else if (autoware_state == AutowareState::WAITING_FOR_ENGAGE){
-      string terasim_status_wrapper = redis_client.get("terasim_status");
-      if (terasim_status_wrapper == ""){
-        RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Terasim status not available, waiting...");
-        return;
-      }
+      string terasim_status = redis_client.get("terasim_status");
 
-      json terasim_status_json = json::parse(terasim_status_wrapper);
-      int terasim_status = terasim_status_json["data"];
-
-      if (terasim_status == 0){
+      if (terasim_status == "0" || terasim_status == ""){
         RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Terasim not ready, waiting...");
       } else{
         set_autoware_control(true);
@@ -69,13 +62,13 @@ namespace autoware_interface_cosim{
   void AutowareInterfaceCosim::init_localization(){
     PoseWithCovarianceStamped localization_msg;
 
-    localization_msg.pose.pose.position.x = 77639.3359375;
-    localization_msg.pose.pose.position.y = 86558.40625;
+    localization_msg.pose.pose.position.x = 77629.2578125;
+    localization_msg.pose.pose.position.y = 86538.890625;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = 0.578428211916176;
-    localization_msg.pose.pose.orientation.w = 0.8157332919891497;
+    localization_msg.pose.pose.orientation.z = 0.3950913837413942;
+    localization_msg.pose.pose.orientation.w = 0.9186418227433968;
 
     localization_msg.header.stamp = this->get_clock()->now();
     localization_msg.header.frame_id = "map";
@@ -84,52 +77,43 @@ namespace autoware_interface_cosim{
   }
 
   void AutowareInterfaceCosim::set_route_points(){
-    Pose wp0, wp1, wp2, wp3, wp4;
+    Pose wp0, wp1, wp2, wp3;
 
-    wp0.position.x = 77649.625;
-    wp0.position.y = 86695.296;
+    wp0.position.x = 77655.4375;
+    wp0.position.y = 86749.046875;
     wp0.position.z = 0.0;
 
     wp0.orientation.x = 0.0;
     wp0.orientation.y = 0.0;
-    wp0.orientation.z = 0.68874525198885;
-    wp0.orientation.w = 0.7250034330007105;
+    wp0.orientation.z = 0.6909212694599096;
+    wp0.orientation.w = 0.7229300100341021;
 
-    wp1.position.x = 77654.6328125;
-    wp1.position.y = 86815.8203125;
+    wp1.position.x = 77549.984375;
+    wp1.position.y = 86745.5546875;
     wp1.position.z = 0.0;
 
     wp1.orientation.x = 0.0;
     wp1.orientation.y = 0.0;
-    wp1.orientation.z = 0.6971827007404735;
-    wp1.orientation.w = 0.71689349403396;
+    wp1.orientation.z = -0.7337657020938361;
+    wp1.orientation.w = 0.6794026011362775;
 
-    wp2.position.x = 77549.984375;
-    wp2.position.y = 86745.5546875;
+    wp2.position.x = 77581.4375;
+    wp2.position.y = 86651.9765625;
     wp2.position.z = 0.0;
 
     wp2.orientation.x = 0.0;
     wp2.orientation.y = 0.0;
-    wp2.orientation.z = -0.7337657020938361;
-    wp2.orientation.w = 0.6794026011362775;
+    wp2.orientation.z = -0.015441629002764135;
+    wp2.orientation.w = 0.999880770939086;
 
-    wp3.position.x = 77581.4375;
-    wp3.position.y = 86651.9765625;
+    wp3.position.x = 77587.5625;
+    wp3.position.y = 86523.4140625;
     wp3.position.z = 0.0;
 
     wp3.orientation.x = 0.0;
     wp3.orientation.y = 0.0;
-    wp3.orientation.z = -0.015441629002764135;
-    wp3.orientation.w = 0.999880770939086;
-
-    wp4.position.x = 77587.5625;
-    wp4.position.y = 86523.4140625;
-    wp4.position.z = 0.0;
-
-    wp4.orientation.x = 0.0;
-    wp4.orientation.y = 0.0;
-    wp4.orientation.z = 0.08106215155563748;
-    wp4.orientation.w = 0.9967090486120666;
+    wp3.orientation.z = 0.08106215155563748;
+    wp3.orientation.w = 0.9967090486120666;
 
     while (!cli_set_route_points->wait_for_service(1s)) {
       if (!rclcpp::ok()) {
@@ -141,8 +125,8 @@ namespace autoware_interface_cosim{
     auto set_route_points_req = std::make_shared<SetRoutePoints::Request>();
 
     set_route_points_req->header.frame_id = "map";
-    set_route_points_req->goal = wp4;
-    set_route_points_req->waypoints = {wp0, wp1, wp2, wp3};
+    set_route_points_req->goal = wp3;
+    set_route_points_req->waypoints = {wp0, wp1, wp2};
 
     auto result_s = cli_set_route_points->async_send_request(set_route_points_req);
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting new route...");
