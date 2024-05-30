@@ -60,6 +60,7 @@ namespace test_11{
       if (terasim_status == 0){
         RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Terasim not ready, waiting...");
       } else{
+        std::this_thread::sleep_for(std::chrono::seconds(3));
         set_autoware_control(true);
         set_operation_mode(ChangeOperationMode::Request::AUTONOMOUS);
         RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Enabling autoware control...");
