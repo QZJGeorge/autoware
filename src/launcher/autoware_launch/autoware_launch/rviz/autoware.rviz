@@ -5,7 +5,6 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Sensing1/LiDAR1/ConcatenatePointCloud1/Autocompute Value Bounds1
-        - /Perception1/ObjectRecognition1
         - /Perception1/ObjectRecognition1/Tracking1/TrackedObjects1
         - /Perception1/ObjectRecognition1/Prediction1/PredictedObjects1
         - /Planning1/ScenarioPlanning1/ScenarioTrajectory1
@@ -418,7 +417,7 @@ Visualization Manager:
       Displays:
         - Class: rviz_common/Group
           Displays:
-            - Alpha: 0.4000000059604645
+            - Alpha: 1
               Autocompute Intensity Bounds: true
               Autocompute Value Bounds:
                 Max Value: 5
@@ -428,18 +427,18 @@ Visualization Manager:
               Channel Name: intensity
               Class: rviz_default_plugins/PointCloud2
               Color: 255; 255; 255
-              Color Transformer: AxisColor
-              Decay Time: 0
+              Color Transformer: Intensity
+              Decay Time: 0.10000000149011612
               Enabled: true
               Invert Rainbow: false
               Max Color: 255; 255; 255
-              Max Intensity: 4096
+              Max Intensity: 0.9791234135627747
               Min Color: 0; 0; 0
-              Min Intensity: 0
+              Min Intensity: 0.6722710728645325
               Name: ConcatenatePointCloud
               Position Transformer: XYZ
               Selectable: false
-              Size (Pixels): 1
+              Size (Pixels): 2
               Size (m): 0.019999999552965164
               Style: Points
               Topic:
@@ -773,7 +772,8 @@ Visualization Manager:
                     Color: 119; 11; 32
                   Name: DetectedObjects
                   Namespaces:
-                    {}
+                    label: true
+                    shape: true
                   PEDESTRIAN:
                     Alpha: 0.9990000128746033
                     Color: 255; 192; 203
@@ -980,11 +980,7 @@ Visualization Manager:
               Enabled: true
               Name: RouteArea
               Namespaces:
-                goal_lanelets: true
-                lane_start_bound: true
-                left_lane_bound: true
-                right_lane_bound: true
-                route_lanelets: true
+                {}
               Topic:
                 Depth: 5
                 Durability Policy: Transient Local
@@ -2628,8 +2624,7 @@ Visualization Manager:
                           Enabled: true
                           Name: VirtualWall (ObstacleCruise)
                           Namespaces:
-                            stop_factor_text: true
-                            stop_virtual_wall: true
+                            {}
                           Topic:
                             Depth: 5
                             Durability Policy: Volatile
@@ -3191,11 +3186,11 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 8.698495864868164
+      Scale: 3.6329197883605957
       Target Frame: viewer
       Value: TopDownOrtho (rviz)
-      X: -38.55656051635742
-      Y: -41.569732666015625
+      X: 35.01393508911133
+      Y: 12.604303359985352
     Saved:
       - Class: rviz_default_plugins/ThirdPersonFollower
         Distance: 18

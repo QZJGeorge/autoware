@@ -2,30 +2,28 @@ cmake_minimum_required(VERSION 3.14)
 project(mcity_carla)
 
 find_package(autoware_cmake REQUIRED)
+find_package(Eigen3 REQUIRED)
 
 autoware_package()
 
 # Add include directories
 include_directories(
     include
-    ../redis_client/
-    /usr/include/hiredis
-    /usr/include/GeographicLib
-    /usr/include/glm
+    ${EIGEN3_INCLUDE_DIR}
 )
 
-#############################  CARLA TO LOCAL  ###################################
+#############################  CARLA LOCALIZATION  ###################################
 
-ament_auto_add_library(carla_to_local_component SHARED
-  src/carla_to_local.cpp
+ament_auto_add_library(carla_localization_component SHARED
+  src/carla_localization.cpp
   ../redis_client/RedisClient.cpp
 )
 
-target_link_libraries(carla_to_local_component hiredis Geographic)
+target_link_libraries(carla_localization_component Eigen3::Eigen)
 
-rclcpp_components_register_node(carla_to_local_component
-  PLUGIN "carla_to_local::CarlaToLocal"
-  EXECUTABLE carla_to_local
+rclcpp_components_register_node(carla_localization_component
+  PLUGIN "carla_localization::CarlaLocalization"
+  EXECUTABLE carla_localization
 )
 
 ########################################################################################

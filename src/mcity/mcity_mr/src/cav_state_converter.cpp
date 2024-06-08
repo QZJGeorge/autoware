@@ -36,13 +36,14 @@ namespace cav_state_converter
     if (!odom_status) return;
 
     int zone = 17;                                 // ann arbor is in zone 17
+    // int zone = 18;                                 // us dot is in zone 18
+
     int prec = 10;                                 // we set conversion precision to 10 decimals
     bool north = true;                             // ann arbor is in northern hemisphere
     double yaw = get_ori_from_odom(saved_odom_msg);           // convert from quaternion to angle
     std::string mgrs = get_mgrs_from_odom(saved_odom_msg);    // get mgrs format string for conversion
 
     double x, y;
-    
     // Convert the MGRS coordinates to UTM coordinates
     GeographicLib::MGRS::Reverse(mgrs, zone, north, x, y, prec);
 
@@ -78,12 +79,23 @@ namespace cav_state_converter
 
   string CavStateConverter::get_mgrs_from_odom(Odometry msg){
     std::string ANN_ARBOR = "17TKG";
+    // std::string DC = "18SUJ";
 
     int PRECISION = 4;  // increase precision to 4 decimal place
     int easting = round(msg.pose.pose.position.x * pow(10, PRECISION));   // Your easting coordinate
     int northing = round(msg.pose.pose.position.y * pow(10, PRECISION));  // Your northing coordinate
 
+    std::ostringstream oss1, oss2;
+
+    oss1 << std::setw(9) << std::setfill('0') << easting;
+    oss2 << std::setw(9) << std::setfill('0') << northing;
+
+    std::string easting_string = oss1.str();
+    std::string northing_string = oss2.str();
+
     std::string mgrs = ANN_ARBOR + std::to_string(easting) + std::to_string(northing);
+    // std::string mgrs = DC + easting_string + northing_string;
+
     return mgrs;
   }
 

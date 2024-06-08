@@ -86,6 +86,8 @@ namespace cav_context_converter
     double latitude = bv_value_json["latitude"];
 
     int zone = 17;           // ann arbor is in zone 17
+    // int zone = 18;           // usdot is zone 18
+
     int prec = 8;            // set precision to 3 decimals (xxxxx.xxx)
     bool north = true;       // ann arbor is in northern hemisphere
 

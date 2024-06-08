@@ -2,7 +2,6 @@ import json
 import rclpy
 import mcity_remote.constants as constants
 
-from std_msgs.msg import Float64
 from mcity_msgs.msg import PlannedPath
 from rosbridge_library.internal import message_conversion
 from mcity_remote.basic_ros_redis_com_node import BasicRosRedisComNode
@@ -11,10 +10,7 @@ class RedisToRosInputPath(BasicRosRedisComNode):
     def __init__(self):
         super().__init__('redis_to_ros_input_path', 'local')
         self.publisher_planned_path = self.create_publisher(PlannedPath, constants.PLANNED_PATH, 10)
-        self.publisher_planned_path_latency = self.create_publisher(Float64, constants.PLANNED_PATH_LATENCY, 10)
         self.timer = self.create_timer(1/constants.UPDATE_RATE_GET, self.on_timer)
-        self.data = None
-        self.latency_data = []
         
     def on_timer(self):
         json_str = self.redis_client.get(constants.PLANNED_PATH)

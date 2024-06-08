@@ -63,19 +63,19 @@ namespace mcity_localization{
     twist_with_cov.twist.twist.linear.x = calc_linear_x();
 
     // initialize the 6*6 covariance matrix [x,y,z,rot-x,rot-y,rot-z] to identity
-    pose_with_cov.pose.covariance = Identity_6;
-    twist_with_cov.twist.covariance = Identity_6;
+    pose_with_cov.pose.covariance = Identity_Min_6;
+    twist_with_cov.twist.covariance = Identity_Min_6;
 
-    // include the 3x3 [x,y,z] position covariance matrix into and set no correlation between position and orientation
-    pose_with_cov.pose.covariance[0] = saved_nav_sat_fix_msg.position_covariance[0];
-    pose_with_cov.pose.covariance[1] = saved_nav_sat_fix_msg.position_covariance[1];
-    pose_with_cov.pose.covariance[2] = saved_nav_sat_fix_msg.position_covariance[2];
-    pose_with_cov.pose.covariance[6] = saved_nav_sat_fix_msg.position_covariance[3];
-    pose_with_cov.pose.covariance[7] = saved_nav_sat_fix_msg.position_covariance[4];
-    pose_with_cov.pose.covariance[8] = saved_nav_sat_fix_msg.position_covariance[5];
-    pose_with_cov.pose.covariance[12] = saved_nav_sat_fix_msg.position_covariance[6];
-    pose_with_cov.pose.covariance[13] = saved_nav_sat_fix_msg.position_covariance[7];
-    pose_with_cov.pose.covariance[14] = saved_nav_sat_fix_msg.position_covariance[8];
+    // // include the 3x3 [x,y,z] position covariance matrix into and set no correlation between position and orientation
+    // pose_with_cov.pose.covariance[0] = saved_nav_sat_fix_msg.position_covariance[0];
+    // pose_with_cov.pose.covariance[1] = saved_nav_sat_fix_msg.position_covariance[1];
+    // pose_with_cov.pose.covariance[2] = saved_nav_sat_fix_msg.position_covariance[2];
+    // pose_with_cov.pose.covariance[6] = saved_nav_sat_fix_msg.position_covariance[3];
+    // pose_with_cov.pose.covariance[7] = saved_nav_sat_fix_msg.position_covariance[4];
+    // pose_with_cov.pose.covariance[8] = saved_nav_sat_fix_msg.position_covariance[5];
+    // pose_with_cov.pose.covariance[12] = saved_nav_sat_fix_msg.position_covariance[6];
+    // pose_with_cov.pose.covariance[13] = saved_nav_sat_fix_msg.position_covariance[7];
+    // pose_with_cov.pose.covariance[14] = saved_nav_sat_fix_msg.position_covariance[8];
 
     pose_with_cov.header = header;
     twist_with_cov.header = header;

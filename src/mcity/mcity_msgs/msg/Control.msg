@@ -1,10 +1,10 @@
 
-float64 timestamp 			#ros time
-int32 	count
-float64 brake_cmd 			#brake pedal opening
-float64 throttle_cmd 		#throttle pedal openning
-float64 steering_cmd 		#(-2.5pi to 2.5pi)
-int16 	gear_cmd 
+float64 timestamp 			# ros time
+int32 	count               # keep as default
+float64 brake_cmd 			# (0.0 to 1.0)
+float64 throttle_cmd 		# (0.0 to 1.0)
+float64 steering_cmd 		# (-2.5pi to 2.5pi)
+int16 	gear_cmd            # see below
 int16 	turn_signal_cmd
 
  

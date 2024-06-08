@@ -27,10 +27,11 @@ class RosToRedisVehicleState(BasicRosRedisComNode):
 
     def on_timer(self):
         if self.rtk_imu_msg and self.rtk_odometry_msg and self.rtk_position_msg and self.veh_state_msg:
-            rtk_imu_msg_wrapper = {"timestamp": time.time(), "data": self.rtk_imu_msg}
-            rtk_odometry_msg_wrapper = {"timestamp": time.time(), "data": self.rtk_odometry_msg}
-            rtk_position_msg_wrapper = {"timestamp": time.time(), "data": self.rtk_position_msg}
-            veh_state_msg_wrapper = {"timestamp": time.time(), "data": self.veh_state_msg}
+            current_time = time.time()
+            rtk_imu_msg_wrapper = {"timestamp": current_time, "data": self.rtk_imu_msg}
+            rtk_odometry_msg_wrapper = {"timestamp": current_time, "data": self.rtk_odometry_msg}
+            rtk_position_msg_wrapper = {"timestamp": current_time, "data": self.rtk_position_msg}
+            veh_state_msg_wrapper = {"timestamp": current_time, "data": self.veh_state_msg}
 
             self.redis_client.mset({
                 constants.VEHICLE_STATE: json.dumps(veh_state_msg_wrapper),

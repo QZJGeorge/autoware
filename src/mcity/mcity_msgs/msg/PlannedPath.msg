@@ -1,10 +1,11 @@
-float64 timestamp              # time
+float64 timestamp              # system time
 float64 time_resolution        # timestamp between trajectory points
+                               # Please use 0.1 seconds for best control performance
 
 int16 	go                     # default: 1
 int16 	estop                  # default: 0
 
-float64[] x_vector             # up to 50 points in the next 2 seconds (0.04s)
-float64[] y_vector             # up to 50 points in the next 2 seconds (0.04s)
-float64[] vd_vector            # up to 50 points in the next 2 seconds (0.04s)
-float64[] ori_vector           # up to 50 points in the next 2 seconds (0.04s)
+float64[] x_vector             # UTM coordinate, 150 points maximum
+float64[] y_vector             # UTM coordinate, 150 points maximum
+float64[] vd_vector            # meters/sec, 150 points maximum
+float64[] ori_vector           # North East frame in radians, 150 points maximum

@@ -8,7 +8,10 @@ namespace autoware_path_uw{
     
         //register sub
         sub_trajectory = this->create_subscription<Trajectory>(
-            "/planning/scenario_planning/trajectory", 10, std::bind(&AutowarePathUW::trajectory_callback, this, std::placeholders::_1));
+            "/planning/scenario_planning/trajectory", 10, std::bind(&AutowarePathUW::trajectoryCB, this, std::placeholders::_1));
+
+        sub_veh_state = this->create_subscription<VehicleState>(
+            "/mcity/vehicle_state", 10, std::bind(&AutowarePathUW::vehStateCB, this, std::placeholders::_1));
 
         //register timer
         traj_timer_ = rclcpp::create_timer(
@@ -48,6 +51,7 @@ namespace autoware_path_uw{
                     } else {
                         uw_control = true;
                         uw_spd = control_command_json["info"]["trajectory_commands_cav"]["spd"];
+                        uw_acc = control_command_json["info"]["trajectory_commands_cav"]["acc"];
                         uw_time = this->get_clock()->now().seconds();
                     }
                 }
@@ -55,15 +59,18 @@ namespace autoware_path_uw{
         }
 
         if (uw_control){
-            if (this->get_clock()->now().seconds() - uw_time > 0.5){
+            double time_elapsed = this->get_clock()->now().seconds() - uw_time;
+
+            if (time_elapsed > 0.5){
                 uw_control = false;
                 RCLCPP_INFO(this->get_logger(), "UW control disabled due to timeout.");
             } else if (uw_spd < 0.0 || uw_spd > 8.0){
                 uw_control = false;
                 RCLCPP_INFO(this->get_logger(), "UW control disabled due to speed bound %f", uw_spd);
             } else {
-                std::fill(path_msg.vd_vector.begin(), path_msg.vd_vector.end(), uw_spd);
-                RCLCPP_INFO(this->get_logger(), "UW control enabled with constant speed: %f", uw_spd);
+                double desired_speed = current_speed + uw_acc * time_elapsed;
+                std::fill(path_msg.vd_vector.begin(), path_msg.vd_vector.end(), desired_speed);
+                RCLCPP_INFO(this->get_logger(), "UW control enabled with desired speed: %f", desired_speed);
             }
         }
 
@@ -71,7 +78,7 @@ namespace autoware_path_uw{
         pub_path->publish(path_msg);
     }
 
-    void AutowarePathUW::trajectory_callback(const Trajectory::SharedPtr msg){
+    void AutowarePathUW::trajectoryCB(const Trajectory::SharedPtr msg){
         std::vector<double> x_vector;
         std::vector<double> y_vector;
         std::vector<double> vd_vector;
@@ -95,7 +102,7 @@ namespace autoware_path_uw{
 
             x_vector.push_back(point.pose.position.x);
             y_vector.push_back(point.pose.position.y);
-            vd_vector.push_back(point.longitudinal_velocity_mps);
+            vd_vector.push_back(point.longitudinal_velocity_mps); 
             ori_vector.push_back(yaw);
         }
 
@@ -103,6 +110,10 @@ namespace autoware_path_uw{
         path_msg.y_vector = y_vector;
         path_msg.vd_vector = vd_vector;
         path_msg.ori_vector = ori_vector;
+    }
+
+    void AutowarePathUW::vehStateCB(const VehicleState::SharedPtr msg){
+        current_speed = msg->speed_x;
     }
 }
 
