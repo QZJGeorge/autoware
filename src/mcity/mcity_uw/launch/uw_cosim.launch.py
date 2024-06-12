@@ -14,18 +14,9 @@ def generate_launch_description():
         Node(
             package='mcity_uw',
             namespace='/mcity',
-            executable='uw_route_realcar',
+            executable='uw_route_cosim',
         ),
-
-        ############################################################
-        # Localization
-        ############################################################
-        Node(
-            package='mcity_localization',
-            namespace='/mcity/localization',
-            executable='mcity_localization',
-        ),
-
+        
         ############################################################
         # Mixed Reality (SUMO to Autoware)
         ############################################################
@@ -48,23 +39,5 @@ def generate_launch_description():
             package='mcity_mr',
             namespace='/mcity',
             executable='sumo_light_converter',
-        ),
-
-        ############################################################
-        # Planning
-        ############################################################
-        Node(
-            package='mcity_uw',
-            namespace='/mcity',
-            executable='autoware_path_uw',
-        ),
-
-        ############################################################
-        # Control
-        ############################################################
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([
-                os.path.join(get_package_share_directory('mcity_control'),'launch','mcity_control.launch.py')
-            ])
         ),
     ])

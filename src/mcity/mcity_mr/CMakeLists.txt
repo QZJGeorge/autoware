@@ -55,6 +55,21 @@ rclcpp_components_register_node(cav_context_converter_component
   EXECUTABLE cav_context_converter
 )
 
+############################  AUTOWARE COSIM PLUGIN #########################
+
+ament_auto_add_library(autoware_cosim_plugin_component SHARED
+  src/autoware_cosim_plugin.cpp
+  ../redis_client/RedisClient.cpp
+)
+
+target_link_libraries(autoware_cosim_plugin_component hiredis Geographic)
+
+rclcpp_components_register_node(autoware_cosim_plugin_component
+  PLUGIN "autoware_cosim_plugin::AutowareCosimPlugin"
+  EXECUTABLE autoware_cosim_plugin
+)
+
+
 #########################  CAV CONTEXT REPLAY  ################################
 
 ament_auto_add_library(cav_context_replay_component SHARED

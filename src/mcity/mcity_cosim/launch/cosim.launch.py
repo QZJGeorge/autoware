@@ -19,12 +19,7 @@ def generate_launch_description():
         Node(
             package='mcity_mr',
             namespace='/mcity',
-            executable='cav_state_converter',
-        ),
-        Node(
-            package='mcity_mr',
-            namespace='/mcity',
-            executable='cav_context_converter',
+            executable='autoware_cosim_plugin',
         ),
         Node(
             package='mcity_mr',

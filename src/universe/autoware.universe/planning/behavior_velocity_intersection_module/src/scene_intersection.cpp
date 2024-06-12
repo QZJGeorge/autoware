@@ -1147,17 +1147,17 @@ bool IntersectionModule::checkCollision(
   bool collision_detected = false;
   for (const auto & object : target_objects.objects) {
 
-    // Line 1150-1160 is custom implementation to temporarily ignore objects from from wrong directions 
-    auto pose = object.kinematics.initial_pose_with_covariance.pose;
-    if (pose.position.y >= 86643.0 && pose.position.y <= 86663.0 && (pose.position.x <= 77541 || pose.position.x >= 77561)) {
-      // RCLCPP_INFO(
-      //   rclcpp::get_logger("rclcpp"), "Pose: position(%f, %f, %f), orientation(%f, %f, %f, %f)",
-      //   pose.position.x, pose.position.y, pose.position.z,
-      //   pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w);
+    // // Line 1150-1160 is hard coded to temporarily ignore objects from from wrong directions 
+    // auto pose = object.kinematics.initial_pose_with_covariance.pose;
+    // if (pose.position.y >= 86643.0 && pose.position.y <= 86663.0 && (pose.position.x <= 77541 || pose.position.x >= 77561)) {
+    //   // RCLCPP_INFO(
+    //   //   rclcpp::get_logger("rclcpp"), "Pose: position(%f, %f, %f), orientation(%f, %f, %f, %f)",
+    //   //   pose.position.x, pose.position.y, pose.position.z,
+    //   //   pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w);
 
-      continue;
-    }
-    // This is the end of the custom implementation
+    //   continue;
+    // }
+    // // This is the end of the custom implementation
 
     for (const auto & predicted_path : object.kinematics.predicted_paths) {
       if (
