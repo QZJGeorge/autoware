@@ -14,30 +14,30 @@ include_directories(
 
 ##########################  UW ROUTE COSIM  ####################################
 
-ament_auto_add_library(uw_route_cosim_component SHARED
-  src/uw_route_cosim.cpp
+ament_auto_add_library(autoware_interface_uw_cosim_component SHARED
+  src/autoware_interface_uw_cosim.cpp
   ../redis_client/RedisClient.cpp
 )
 
-target_link_libraries(uw_route_cosim_component hiredis)
+target_link_libraries(autoware_interface_uw_cosim_component hiredis)
 
-rclcpp_components_register_node(uw_route_cosim_component
-  PLUGIN "uw_route_cosim::UwRouteCosim"
-  EXECUTABLE uw_route_cosim
+rclcpp_components_register_node(autoware_interface_uw_cosim_component
+  PLUGIN "autoware_interface_uw_cosim::UwRouteCosim"
+  EXECUTABLE autoware_interface_uw_cosim
 )
 
 ##########################  UW ROUTE REALCAR  ####################################
 
-ament_auto_add_library(uw_route_realcar_component SHARED
-  src/uw_route_realcar.cpp
+ament_auto_add_library(autoware_interface_uw_realcar_component SHARED
+  src/autoware_interface_uw_realcar.cpp
   ../redis_client/RedisClient.cpp
 )
 
-target_link_libraries(uw_route_realcar_component hiredis)
+target_link_libraries(autoware_interface_uw_realcar_component hiredis)
 
-rclcpp_components_register_node(uw_route_realcar_component
-  PLUGIN "uw_route_realcar::UwRouteRealcar"
-  EXECUTABLE uw_route_realcar
+rclcpp_components_register_node(autoware_interface_uw_realcar_component
+  PLUGIN "autoware_interface_uw_realcar::UwRouteRealcar"
+  EXECUTABLE autoware_interface_uw_realcar
 )
 
 ##########################  AUTOWARE PATH UW ###################################

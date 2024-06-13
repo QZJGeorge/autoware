@@ -50,6 +50,7 @@ private:
     double uw_time;
 
     double current_speed = 0.0;
+    double recoreded_speed = 0.0;
     
     void init_path();
     void on_traj_timer();

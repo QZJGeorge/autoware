@@ -12,8 +12,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_COSIM_autoware_interface_usdot_cosim_HPP_
-#define MCITY_COSIM_autoware_interface_usdot_cosim_HPP_
+#ifndef MCITY_USDOT_autoware_interface_usdot_cosim_HPP_
+#define MCITY_USDOT_autoware_interface_usdot_cosim_HPP_
 
 #include <iostream>
 #include <chrono>

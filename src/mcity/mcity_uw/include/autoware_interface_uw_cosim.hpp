@@ -1,19 +1,5 @@
-//  Copyright 2022 Tier IV, Inc. All rights reserved.
-//
-//  Licensed under the Apache License, Version 2.0 (the "License");
-//  you may not use this file except in compliance with the License.
-//  You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-//  Unless required by applicable law or agreed to in writing, software
-//  distributed under the License is distributed on an "AS IS" BASIS,
-//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-//  See the License for the specific language governing permissions and
-//  limitations under the License.
-
-#ifndef MCITY_COSIM_AUTOWARE_INTERFACE_COSIM_HPP_
-#define MCITY_COSIM_AUTOWARE_INTERFACE_COSIM_HPP_
+#ifndef MCITY_UW_AUTOWARE_INTERFACE_UW_COSIM_HPP_
+#define MCITY_UW_AUTOWARE_INTERFACE_UW_COSIM_HPP_
 
 #include <iostream>
 #include <chrono>
@@ -23,7 +9,6 @@
 #include <rclcpp_components/register_node_macro.hpp>
 
 #include <RedisClient.h>
-#include <nlohmann/json.hpp>
 
 #include <nav_msgs/msg/odometry.hpp>
 
@@ -37,12 +22,11 @@
 #include <autoware_auto_system_msgs/msg/autoware_state.hpp>
 
 
-namespace autoware_interface_cosim
+namespace autoware_interface_uw_cosim
 {
 
 using namespace std;
 
-using nlohmann::json;
 using geometry_msgs::msg::Pose;
 using geometry_msgs::msg::PoseWithCovarianceStamped;
 using tier4_system_msgs::srv::ChangeOperationMode;
@@ -50,11 +34,11 @@ using tier4_system_msgs::srv::ChangeAutowareControl;
 using autoware_adapi_v1_msgs::srv::SetRoutePoints;
 using autoware_auto_system_msgs::msg::AutowareState;
 
-class AutowareInterfaceCosim : public rclcpp::Node
+class AutowareInterfaceUWCosim : public rclcpp::Node
 {
 public:
-  explicit AutowareInterfaceCosim(const rclcpp::NodeOptions & options);
-  ~AutowareInterfaceCosim() = default;
+  explicit AutowareInterfaceUWCosim(const rclcpp::NodeOptions & options);
+  ~AutowareInterfaceUWCosim() = default;
 
 private:
   int autoware_state = 1;

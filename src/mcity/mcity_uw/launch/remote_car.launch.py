@@ -13,7 +13,7 @@ def generate_launch_description():
         ############################################################
         Node(
             package='mcity_localization',
-            namespace='/mcity/localization',
+            namespace='/mcity',
             executable='mcity_localization',
         ),
 

@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>mcity_cosim</name>
+  <name>mcity_demo</name>
   <version>0.1.0</version>
-  <description>The mcity_cosim package</description>
+  <description>The mcity_demo package</description>
   <maintainer email="zhijieq@umich.edu">Zhijie Qiao</maintainer>
   <license>Apache License 2.0</license>
 
@@ -15,6 +15,7 @@
   <depend>tf2_ros</depend>
   <depend>nav_msgs</depend>
   <depend>std_msgs</depend>
+  <depend>mcity_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>rclcpp</depend>

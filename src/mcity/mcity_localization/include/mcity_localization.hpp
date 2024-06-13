@@ -12,8 +12,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_PLANNER_mcity_localization_HPP_
-#define MCITY_PLANNER_mcity_localization_HPP_
+#ifndef MCITY_PLANNER_MCITY_LOCALIZATION_HPP_
+#define MCITY_PLANNER_MCITY_LOCALIZATION_HPP_
 
 #include <iostream>
 
@@ -23,7 +23,6 @@
 #include <glm/gtc/matrix_transform.hpp>
 
 #include <GeographicLib/UTMUPS.hpp>
-#include <GeographicLib/MGRS.hpp>
 
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
@@ -70,6 +69,9 @@ private:
 
   rclcpp::TimerBase::SharedPtr timer_;
 
+  double UTM_offset_x = -277600 + 102.89;
+  double UTM_offset_y = -4686800 + 281.25;
+
   bool imu_status = 0;
   bool odom_status = 0;
   bool nav_status = 0;
@@ -80,14 +82,24 @@ private:
   Odometry saved_odom_msg;
   NavSatFix saved_nav_sat_fix_msg;
 
+  std::array<double, 36> Identity_6 =
+  {
+    1.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 
+    0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 
+    0.0, 0.0, 0.0, 1.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 
+    0.0, 0.0, 0.0, 0.0, 0.0, 1.0
+  };
+
   std::array<double, 36> Identity_Min_6 =
   {
-    0.0000001, 0.0, 0.0, 0.0, 0.0, 0.0,
-    0.0, 0.0000001, 0.0, 0.0, 0.0, 0.0, 
-    0.0, 0.0, 0.0000001, 0.0, 0.0, 0.0, 
-    0.0, 0.0, 0.0, 0.0000001, 0.0, 0.0,
-    0.0, 0.0, 0.0, 0.0, 0.0000001, 0.0, 
-    0.0, 0.0, 0.0, 0.0, 0.0, 0.0000001
+    0.000001, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.000001, 0.0, 0.0, 0.0, 0.0, 
+    0.0, 0.0, 0.000001, 0.0, 0.0, 0.0, 
+    0.0, 0.0, 0.0, 0.000001, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.000001, 0.0, 
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.000001
   };
 
   PoseWithCovarianceStamped pose_with_cov;
@@ -96,8 +108,6 @@ private:
   void on_timer();
 
   void calc_vehicle_orientation(float &qx, float &qy, float &qz, float &qw);
-  void gcs_to_mgrs(double lat, double lon, double &easting, double &northing);
-
   void quaternionToEuler(float qx, float qy, float qz, float qw);
   
   float calc_linear_x();

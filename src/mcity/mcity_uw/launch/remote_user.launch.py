@@ -10,7 +10,7 @@ def generate_launch_description():
         Node(
             package='mcity_uw',
             namespace='/mcity',
-            executable='uw_route_realcar',
+            executable='autoware_interface_uw_realcar',
         ),
 
         ############################################################
@@ -18,32 +18,8 @@ def generate_launch_description():
         ############################################################
         Node(
             package='mcity_localization',
-            namespace='/mcity/localization',
+            namespace='/mcity',
             executable='mcity_localization',
-        ),
-
-        ############################################################
-        # Mixed Reality (SUMO to Autoware)
-        ############################################################
-        Node(
-            package='mcity_mr',
-            namespace='/mcity',
-            executable='cav_state_converter',
-        ),
-        Node(
-            package='mcity_mr',
-            namespace='/mcity',
-            executable='cav_context_converter',
-        ),
-        Node(
-            package='mcity_mr',
-            namespace='/mcity',
-            executable='occ_grid_converter',
-        ),
-        Node(
-            package='mcity_mr',
-            namespace='/mcity',
-            executable='sumo_light_converter',
         ),
 
         ############################################################

@@ -42,14 +42,17 @@ namespace mcity_localization{
     header.stamp = this->get_clock()->now();
     header.frame_id = "map";
 
-    double latitude = saved_nav_sat_fix_msg.latitude;
-    double longitude = saved_nav_sat_fix_msg.longitude;
+    double lat = saved_nav_sat_fix_msg.latitude;
+    double lon = saved_nav_sat_fix_msg.longitude;
 
     double easting, northing;
-    gcs_to_mgrs(latitude, longitude, easting, northing);
+    int zone;
+    bool northp;
 
-    pose_with_cov.pose.pose.position.x = (float)easting;
-    pose_with_cov.pose.pose.position.y = (float)northing;
+    UTMUPS::Forward(lat, lon, zone, northp, easting, northing);
+
+    pose_with_cov.pose.pose.position.x = (float)easting + UTM_offset_x;
+    pose_with_cov.pose.pose.position.y = (float)northing + UTM_offset_y;
     pose_with_cov.pose.pose.position.z = (float)0.1;
 
     float qx, qy, qz, qw;
@@ -62,20 +65,8 @@ namespace mcity_localization{
 
     twist_with_cov.twist.twist.linear.x = calc_linear_x();
 
-    // initialize the 6*6 covariance matrix [x,y,z,rot-x,rot-y,rot-z] to identity
     pose_with_cov.pose.covariance = Identity_Min_6;
     twist_with_cov.twist.covariance = Identity_Min_6;
-
-    // // include the 3x3 [x,y,z] position covariance matrix into and set no correlation between position and orientation
-    // pose_with_cov.pose.covariance[0] = saved_nav_sat_fix_msg.position_covariance[0];
-    // pose_with_cov.pose.covariance[1] = saved_nav_sat_fix_msg.position_covariance[1];
-    // pose_with_cov.pose.covariance[2] = saved_nav_sat_fix_msg.position_covariance[2];
-    // pose_with_cov.pose.covariance[6] = saved_nav_sat_fix_msg.position_covariance[3];
-    // pose_with_cov.pose.covariance[7] = saved_nav_sat_fix_msg.position_covariance[4];
-    // pose_with_cov.pose.covariance[8] = saved_nav_sat_fix_msg.position_covariance[5];
-    // pose_with_cov.pose.covariance[12] = saved_nav_sat_fix_msg.position_covariance[6];
-    // pose_with_cov.pose.covariance[13] = saved_nav_sat_fix_msg.position_covariance[7];
-    // pose_with_cov.pose.covariance[14] = saved_nav_sat_fix_msg.position_covariance[8];
 
     pose_with_cov.header = header;
     twist_with_cov.header = header;
@@ -128,7 +119,7 @@ namespace mcity_localization{
     saved_imu_msg.orientation.z = quat.z;
     saved_imu_msg.orientation.w = quat.w;
 
-    // quaternionToEuler(quat.x, quat.y, quat.z, quat.w);
+    quaternionToEuler(quat.x, quat.y, quat.z, quat.w);
   }
 
   void McityLocalization::quaternionToEuler(float qx, float qy, float qz, float qw) {
@@ -144,23 +135,6 @@ namespace mcity_localization{
 
       // Log the Euler angles
       RCLCPP_INFO(rclcpp::get_logger("mcity_localization"), "Roll: %f, Pitch: %f, Yaw: %f", roll, pitch, yaw);
-  }
-
-  void McityLocalization::gcs_to_mgrs(double lat, double lon, double &easting, double &northing){
-    int zone;
-    bool northp;
-    double x, y;
-    int prec = 9;
-    string mgrs;
-    
-    UTMUPS::Forward(lat, lon, zone, northp, x, y);
-    MGRS::Forward(zone, northp, x, y, lat, prec, mgrs);
-
-    int easting_int = std::stoi(mgrs.substr(5,9));
-    int northing_int = std::stoi(mgrs.substr(14,9));
-
-    easting = easting_int/pow(10, 4);
-    northing = northing_int/pow(10, 4);
   }
 
   void McityLocalization::imu_callback(Imu::SharedPtr msg){

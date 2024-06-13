@@ -4,7 +4,7 @@
 //  you may not use this file except in compliance with the License.
 //  You may obtain a copy of the License at
 //
-//      http://www.apache.org/licenses/LICENSE-2.0
+//  http://www.apache.org/licenses/LICENSE-2.0
 //
 //  Unless required by applicable law or agreed to in writing, software
 //  distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,57 +12,70 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_COSIM_uw_route_cosim_HPP_
-#define MCITY_COSIM_uw_route_cosim_HPP_
+#ifndef MCITY_UW_AUTOWARE_INTERFACE_UW_REALCAR_HPP_
+#define MCITY_UW_AUTOWARE_INTERFACE_UW_REALCAR_HPP_
 
 #include <iostream>
-#include <chrono>
-#include <thread>
 
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
 
-#include <RedisClient.h>
-
-#include <nav_msgs/msg/odometry.hpp>
-
 #include <geometry_msgs/msg/pose.hpp>
 #include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
+
+#include <mcity_msgs/msg/vehicle_state.hpp>
+
+#include <autoware_adapi_v1_msgs/srv/set_route_points.hpp>
+#include <autoware_adapi_v1_msgs/msg/operation_mode_state.hpp>
 
 #include <tier4_system_msgs/srv/change_operation_mode.hpp>
 #include <tier4_system_msgs/srv/change_autoware_control.hpp>
 
-#include <autoware_adapi_v1_msgs/srv/set_route_points.hpp>
+#include <autoware_auto_vehicle_msgs/msg/velocity_report.hpp>
+#include <autoware_auto_vehicle_msgs/msg/steering_report.hpp>
 #include <autoware_auto_system_msgs/msg/autoware_state.hpp>
 
 
-namespace uw_route_cosim
+namespace autoware_interface_uw_realcar
 {
 
 using namespace std;
 
 using geometry_msgs::msg::Pose;
 using geometry_msgs::msg::PoseWithCovarianceStamped;
+using autoware_auto_system_msgs::msg::AutowareState;
+using mcity_msgs::msg::VehicleState;
+using autoware_adapi_v1_msgs::srv::SetRoutePoints;
+using autoware_adapi_v1_msgs::msg::OperationModeState;
 using tier4_system_msgs::srv::ChangeOperationMode;
 using tier4_system_msgs::srv::ChangeAutowareControl;
-using autoware_adapi_v1_msgs::srv::SetRoutePoints;
-using autoware_auto_system_msgs::msg::AutowareState;
+using autoware_auto_vehicle_msgs::msg::VelocityReport;
+using autoware_auto_vehicle_msgs::msg::SteeringReport;
 
-class UwRouteCosim : public rclcpp::Node
+
+class AutowareInterfaceUWRealcar : public rclcpp::Node
 {
 public:
-  explicit UwRouteCosim(const rclcpp::NodeOptions & options);
-  ~UwRouteCosim() = default;
+  explicit AutowareInterfaceUWRealcar(const rclcpp::NodeOptions & options);
+  ~AutowareInterfaceUWRealcar() = default;
 
 private:
   int autoware_state = 1;
 
-  RedisClient redis_client;
+  const double STEER_TO_TIRE_RATIO = 16.0;
+
+  VehicleState veh_state_msg;
+
+  OperationModeState operation_mode_state_msg;
 
   rclcpp::TimerBase::SharedPtr timer_;
 
-  rclcpp::Publisher<PoseWithCovarianceStamped>::SharedPtr pub_local;
+  rclcpp::Publisher<VelocityReport>::SharedPtr pub_vel_report;
+  rclcpp::Publisher<SteeringReport>::SharedPtr pub_steer_report;
+
   rclcpp::Subscription<AutowareState>::SharedPtr sub_autoware_state;
+  rclcpp::Subscription<VehicleState>::SharedPtr sub_veh_state;
+  rclcpp::Subscription<OperationModeState>::SharedPtr sub_operation_mode;
 
   rclcpp::Client<SetRoutePoints>::SharedPtr cli_set_route_points;
   rclcpp::Client<ChangeOperationMode>::SharedPtr cli_set_operation_mode;
@@ -70,13 +83,15 @@ private:
 
   void on_timer();
 
-  void init_localization();
+  void pub_vehicle_report();
 
   void set_route_points();
   void set_operation_mode(uint8_t mode);
   void set_autoware_control(bool autoware_control);
 
-  void autoware_state_callback(AutowareState::SharedPtr msg);
+  void vehStateCB(const VehicleState::SharedPtr msg);
+  void autowareStateCB(const AutowareState::SharedPtr msg);
+  void operationModeStateCB(const OperationModeState::SharedPtr msg);
 };
 
 }

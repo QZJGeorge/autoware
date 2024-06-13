@@ -12,8 +12,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_COSIM_autoware_interface_voices_cosim_HPP_
-#define MCITY_COSIM_autoware_interface_voices_cosim_HPP_
+#ifndef MCITY_VOICES_AUTOWARE_INTERFACE_VOICES_VOSIM_HPP_
+#define MCITY_VOICES_AUTOWARE_INTERFACE_VOICES_VOSIM_HPP_
 
 #include <iostream>
 #include <chrono>

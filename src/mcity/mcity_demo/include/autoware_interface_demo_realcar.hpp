@@ -1,19 +1,5 @@
-//  Copyright 2022 Tier IV, Inc. All rights reserved.
-//
-//  Licensed under the Apache License, Version 2.0 (the "License");
-//  you may not use this file except in compliance with the License.
-//  You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-//  Unless required by applicable law or agreed to in writing, software
-//  distributed under the License is distributed on an "AS IS" BASIS,
-//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-//  See the License for the specific language governing permissions and
-//  limitations under the License.
-
-#ifndef MCITY_TERASIM__autoware_interface_realcar_HPP_
-#define MCITY_TERASIM__autoware_interface_realcar_HPP_
+#ifndef MCITY_TERASIM_AUTOWARE_INTERFACE_DEMO_REALCAR_HPP_
+#define MCITY_TERASIM_AUTOWARE_INTERFACE_DEMO_REALCAR_HPP_
 
 #include <iostream>
 
@@ -36,7 +22,7 @@
 #include <autoware_auto_system_msgs/msg/autoware_state.hpp>
 
 
-namespace autoware_interface_realcar
+namespace autoware_interface_demo_realcar
 {
 
 using namespace std;
@@ -53,11 +39,11 @@ using autoware_auto_vehicle_msgs::msg::VelocityReport;
 using autoware_auto_vehicle_msgs::msg::SteeringReport;
 
 
-class AutowareInterfaceRealcar : public rclcpp::Node
+class AutowareInterfaceDemoRealcar : public rclcpp::Node
 {
 public:
-  explicit AutowareInterfaceRealcar(const rclcpp::NodeOptions & options);
-  ~AutowareInterfaceRealcar() = default;
+  explicit AutowareInterfaceDemoRealcar(const rclcpp::NodeOptions & options);
+  ~AutowareInterfaceDemoRealcar() = default;
 
 private:
   int autoware_state = 1;
