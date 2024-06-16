@@ -22,7 +22,7 @@ ament_auto_add_library(autoware_interface_uw_cosim_component SHARED
 target_link_libraries(autoware_interface_uw_cosim_component hiredis)
 
 rclcpp_components_register_node(autoware_interface_uw_cosim_component
-  PLUGIN "autoware_interface_uw_cosim::UwRouteCosim"
+  PLUGIN "autoware_interface_uw_cosim::AutowareInterfaceUWCosim"
   EXECUTABLE autoware_interface_uw_cosim
 )
 
@@ -36,7 +36,7 @@ ament_auto_add_library(autoware_interface_uw_realcar_component SHARED
 target_link_libraries(autoware_interface_uw_realcar_component hiredis)
 
 rclcpp_components_register_node(autoware_interface_uw_realcar_component
-  PLUGIN "autoware_interface_uw_realcar::UwRouteRealcar"
+  PLUGIN "autoware_interface_uw_realcar::AutowareInterfaceUWRealcar"
   EXECUTABLE autoware_interface_uw_realcar
 )
 

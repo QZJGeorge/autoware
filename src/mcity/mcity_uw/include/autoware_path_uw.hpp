@@ -1,5 +1,5 @@
-#ifndef autoware_path_uw_HPP
-#define autoware_path_uw_HPP
+#ifndef MCITY_UW_AUTOWARE_PATH_UW_HPP_
+#define MCITY_UW_AUTOWARE_PATH_UW_HPP_
 
 #include <math.h>
 #include <iostream>

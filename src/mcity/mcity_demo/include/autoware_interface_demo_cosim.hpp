@@ -12,8 +12,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#ifndef MCITY_COSIM_AUTOWARE_INTERFACE_DEMO_COSIM_HPP_
-#define MCITY_COSIM_AUTOWARE_INTERFACE_DEMO_COSIM_HPP_
+#ifndef MCITY_DEMO_AUTOWARE_INTERFACE_DEMO_COSIM_HPP_
+#define MCITY_DEMO_AUTOWARE_INTERFACE_DEMO_COSIM_HPP_
 
 #include <iostream>
 #include <chrono>

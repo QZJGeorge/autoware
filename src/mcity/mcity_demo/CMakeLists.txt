@@ -22,7 +22,7 @@ ament_auto_add_library(autoware_interface_demo_cosim_component SHARED
 target_link_libraries(autoware_interface_demo_cosim_component hiredis)
 
 rclcpp_components_register_node(autoware_interface_demo_cosim_component
-  PLUGIN "autoware_interface_demo_cosim::AutowareInterfaceCosim"
+  PLUGIN "autoware_interface_demo_cosim::AutowareInterfaceDemoCosim"
   EXECUTABLE autoware_interface_demo_cosim
 )
 
@@ -33,7 +33,7 @@ ament_auto_add_library(autoware_interface_demo_realcar_component SHARED
 )
 
 rclcpp_components_register_node(autoware_interface_demo_realcar_component
-  PLUGIN "autoware_interface_demo_realcar::AutowareInterfaceRealcar"
+  PLUGIN "autoware_interface_demo_realcar::AutowareInterfaceDemoRealcar"
   EXECUTABLE autoware_interface_demo_realcar
 )
 
