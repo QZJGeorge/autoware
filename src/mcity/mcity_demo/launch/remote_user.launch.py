@@ -26,27 +26,29 @@ def generate_launch_description():
         ),
         
         ############################################################
-        # Mixed Reality
+        # Cosim
         ############################################################
         Node(
-            package='mcity_mr',
+            package='autoware_cosim_plugin',
             namespace='/mcity',
-            executable='cav_state_converter',
+            executable='autoware_cosim_plugin',
+            parameters=[
+                {'control_cav': True},
+                {'cosim_controlled_vehicle_keys': ["terasim_cosim_vehicle_info"]}
+            ],
         ),
         Node(
-            package='mcity_mr',
+            package='autoware_cosim_plugin',
             namespace='/mcity',
-            executable='cav_context_converter',
+            executable='autoware_tls_plugin',
+            parameters=[
+                {'cosim_controlled_tls_keys': ["terasim_cosim_tls_info"]}
+            ],
         ),
         Node(
-            package='mcity_mr',
+            package='autoware_cosim_plugin',
             namespace='/mcity',
-            executable='sumo_light_converter',
-        ),
-        Node(
-            package='mcity_mr',
-            namespace='/mcity',
-            executable='occ_grid_converter',
+            executable='autoware_dummy_grid',
         ),
 
         ############################################################
