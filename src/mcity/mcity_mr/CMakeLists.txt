@@ -55,20 +55,6 @@ rclcpp_components_register_node(cav_context_converter_component
   EXECUTABLE cav_context_converter
 )
 
-#########################  CAV CONTEXT REPLAY  ################################
-
-ament_auto_add_library(cav_context_replay_component SHARED
-  src/cav_context_replay.cpp
-  ../redis_client/RedisClient.cpp
-)
-
-target_link_libraries(cav_context_replay_component hiredis)
-
-rclcpp_components_register_node(cav_context_replay_component
-  PLUGIN "cav_context_replay::CavContextReplay"
-  EXECUTABLE cav_context_replay
-)
-
 ############################### OCCUPANCY GRID ####################################
 
 ament_auto_add_library(occ_grid_converter_component SHARED
