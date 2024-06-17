@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/goal_distance_calculator/libgoal_distance_calculator.so" "TARGETS" "goal_distance_calculator" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

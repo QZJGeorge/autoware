@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libmish_plugin.so -o libmish_plugin.so CMakeFiles/mish_plugin.dir/lib/src/plugins/mish_plugin.cpp.o CMakeFiles/mish_plugin.dir/lib/src/plugins/mish_plugin_generated_mish.cu.o  /usr/local/cuda/lib64/libcudart_static.a -ldl /usr/lib/x86_64-linux-gnu/librt.a 

@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_system_msgs/rosidl_generator_c/tier4_system_msgs/msg/detail/mode_change_available__type_support.h

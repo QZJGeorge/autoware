@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autoware_planning_msgs/msg/Trajectory.msg
+// generated code does not contain a copyright notice
+
+#include "autoware_planning_msgs/msg/TrajectoryPoint.idl"
+#include "std_msgs/msg/Header.idl"
+
+module autoware_planning_msgs {
+  module msg {
+    typedef autoware_planning_msgs::msg::TrajectoryPoint autoware_planning_msgs__msg__TrajectoryPoint;
+    typedef autoware_planning_msgs__msg__TrajectoryPoint autoware_planning_msgs__msg__TrajectoryPoint__10000[10000];
+    module Trajectory_Constants {
+      const uint32 CAPACITY = 10000;
+    };
+    struct Trajectory {
+      std_msgs::msg::Header header;
+
+      autoware_planning_msgs__msg__TrajectoryPoint__10000 points;
+    };
+  };
+};

@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_api_msgs/msg/IntersectionStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module tier4_api_msgs {
+  module msg {
+    module IntersectionStatus_Constants {
+      const int32 STOP = 0;
+      const int32 GO = 1;
+    };
+    struct IntersectionStatus {
+      std_msgs::msg::Header header;
+
+      int32 status;
+    };
+  };
+};

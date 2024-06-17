@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from control_validator/msg/ControlValidatorStatus.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module control_validator {
+  module msg {
+    struct ControlValidatorStatus {
+      builtin_interfaces::msg::Time stamp;
+
+      @verbatim (language="comment", text=
+        "states")
+      boolean is_valid_max_distance_deviation;
+
+      @verbatim (language="comment", text=
+        "values")
+      double max_distance_deviation;
+
+      int64 invalid_count;
+    };
+  };
+};

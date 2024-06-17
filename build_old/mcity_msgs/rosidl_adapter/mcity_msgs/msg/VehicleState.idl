@@ -1,0 +1,94 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mcity_msgs/msg/VehicleState.msg
+// generated code does not contain a copyright notice
+
+
+module mcity_msgs {
+  module msg {
+    struct VehicleState {
+      double timestamp;
+
+      double x;
+
+      double y;
+
+      double z;
+
+      double speed_x;
+
+      double speed_y;
+
+      double speed_z;
+
+      double acc_x;
+
+      double acc_y;
+
+      double acc_z;
+
+      double heading;
+
+      double yaw_rate;
+
+      boolean by_wire_enabled;
+
+      double throttle_cmd;
+
+      double throttle_input;
+
+      double throttle_state;
+
+      boolean throttle_enabled;
+
+      boolean throttle_override;
+
+      boolean throttle_driver;
+
+      boolean throttle_timeout;
+
+      double brake_cmd;
+
+      double brake_input;
+
+      double brake_state;
+
+      double brake_torq_cmd;
+
+      double brake_torq_input;
+
+      double brake_torq_state;
+
+      boolean brake_boo_output;
+
+      boolean brake_enabled;
+
+      boolean brake_override;
+
+      boolean brake_driver;
+
+      boolean brake_timeout;
+
+      double steer_cmd;
+
+      double steer_state;
+
+      double steer_torque;
+
+      boolean steer_enabled;
+
+      boolean steer_override;
+
+      boolean steer_timeout;
+
+      int16 gear_pos;
+
+      double wheel_v_front_left;
+
+      double wheel_v_front_right;
+
+      double wheel_v_rear_left;
+
+      double wheel_v_rear_right;
+    };
+  };
+};

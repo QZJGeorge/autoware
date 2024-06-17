@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/mcity_voices/ament_cmake_core/mcity_voicesConfig-version.cmake

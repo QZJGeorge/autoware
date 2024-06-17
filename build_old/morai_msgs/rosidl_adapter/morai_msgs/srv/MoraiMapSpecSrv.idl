@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from morai_msgs/srv/MoraiMapSpecSrv.srv
+// generated code does not contain a copyright notice
+
+#include "morai_msgs/msg/MapSpec.idl"
+#include "morai_msgs/msg/MapSpecIndex.idl"
+
+module morai_msgs {
+  module srv {
+    struct MoraiMapSpecSrv_Request {
+      morai_msgs::msg::MapSpecIndex request;
+    };
+    struct MoraiMapSpecSrv_Response {
+      morai_msgs::msg::MapSpec response;
+    };
+  };
+};

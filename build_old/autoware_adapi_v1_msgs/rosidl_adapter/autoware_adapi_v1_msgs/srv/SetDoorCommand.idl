@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from autoware_adapi_v1_msgs/vehicle/srv/SetDoorCommand.srv
+// generated code does not contain a copyright notice
+
+#include "autoware_adapi_v1_msgs/msg/DoorCommand.idl"
+#include "autoware_adapi_v1_msgs/msg/ResponseStatus.idl"
+
+module autoware_adapi_v1_msgs {
+  module srv {
+    struct SetDoorCommand_Request {
+      sequence<autoware_adapi_v1_msgs::msg::DoorCommand> doors;
+    };
+    struct SetDoorCommand_Response {
+      autoware_adapi_v1_msgs::msg::ResponseStatus status;
+    };
+  };
+};

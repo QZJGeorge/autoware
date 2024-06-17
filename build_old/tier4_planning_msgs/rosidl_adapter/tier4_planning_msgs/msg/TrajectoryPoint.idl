@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_planning_msgs/msg/TrajectoryPoint.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Accel.idl"
+#include "geometry_msgs/msg/Pose.idl"
+#include "geometry_msgs/msg/Twist.idl"
+
+module tier4_planning_msgs {
+  module msg {
+    struct TrajectoryPoint {
+      geometry_msgs::msg::Pose pose;
+
+      geometry_msgs::msg::Twist twist;
+
+      geometry_msgs::msg::Accel accel;
+    };
+  };
+};

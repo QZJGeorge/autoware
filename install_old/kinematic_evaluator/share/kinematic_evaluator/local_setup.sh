@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/kinematic_evaluator/ament_cmake_environment_hooks/local_setup.sh

@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_external_api_msgs/msg/Operator.msg
+// generated code does not contain a copyright notice
+
+
+module tier4_external_api_msgs {
+  module msg {
+    module Operator_Constants {
+      const uint8 DRIVER = 1;
+      const uint8 AUTONOMOUS = 2;
+      const uint8 OBSERVER = 3;
+    };
+    @verbatim (language="comment", text=
+      "constants")
+    struct Operator {
+      @verbatim (language="comment", text=
+        "fields")
+      uint8 mode;
+    };
+  };
+};

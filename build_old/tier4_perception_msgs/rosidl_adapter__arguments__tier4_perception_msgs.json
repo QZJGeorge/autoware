@@ -1,0 +1,19 @@
+{
+  "package_name": "tier4_perception_msgs",
+  "non_idl_tuples": [
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/object_recognition/DetectedObjectWithFeature.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/object_recognition/DetectedObjectsWithFeature.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/object_recognition/DynamicObject.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/object_recognition/DynamicObjectArray.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/object_recognition/Feature.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/object_recognition/PredictedPath.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/object_recognition/Semantic.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/object_recognition/Shape.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/object_recognition/State.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/traffic_light/TrafficLightElement.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/traffic_light/TrafficLightRoi.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/traffic_light/TrafficLightRoiArray.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/traffic_light/TrafficSignal.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_perception_msgs:msg/traffic_light/TrafficSignalArray.msg"
+  ]
+}

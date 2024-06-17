@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/autoware_launch/ament_cmake_core/autoware_launchConfig-version.cmake

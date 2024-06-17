@@ -1,0 +1,40 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from morai_msgs/msg/ReplayInfo.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Quaternion.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+#include "morai_msgs/msg/ObjectStatus.idl"
+#include "std_msgs/msg/Header.idl"
+
+module morai_msgs {
+  module msg {
+    struct ReplayInfo {
+      std_msgs::msg::Header header;
+
+      double ego_acc;
+
+      double ego_brake;
+
+      double ego_steer;
+
+      geometry_msgs::msg::Quaternion orientation;
+
+      geometry_msgs::msg::Vector3 linear_acceleration;
+
+      geometry_msgs::msg::Vector3 angular_velocity;
+
+      int32 num_of_npcs;
+
+      int32 num_of_pedestrian;
+
+      int32 num_of_obstacle;
+
+      sequence<morai_msgs::msg::ObjectStatus> npc_list;
+
+      sequence<morai_msgs::msg::ObjectStatus> pedestrian_list;
+
+      sequence<morai_msgs::msg::ObjectStatus> obstacle_list;
+    };
+  };
+};

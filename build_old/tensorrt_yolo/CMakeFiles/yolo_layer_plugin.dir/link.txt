@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libyolo_layer_plugin.so -o libyolo_layer_plugin.so CMakeFiles/yolo_layer_plugin.dir/lib/src/plugins/yolo_layer_plugin.cpp.o CMakeFiles/yolo_layer_plugin.dir/lib/src/plugins/yolo_layer_plugin_generated_yolo_layer.cu.o  /usr/local/cuda/lib64/libcudart_static.a -ldl /usr/lib/x86_64-linux-gnu/librt.a 

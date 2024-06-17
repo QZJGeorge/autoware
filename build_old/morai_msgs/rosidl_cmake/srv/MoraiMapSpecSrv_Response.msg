@@ -1,0 +1,2 @@
+
+MapSpec response

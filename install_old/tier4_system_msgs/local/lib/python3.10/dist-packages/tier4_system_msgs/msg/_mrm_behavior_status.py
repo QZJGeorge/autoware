@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_system_msgs/rosidl_generator_py/tier4_system_msgs/msg/_mrm_behavior_status.py

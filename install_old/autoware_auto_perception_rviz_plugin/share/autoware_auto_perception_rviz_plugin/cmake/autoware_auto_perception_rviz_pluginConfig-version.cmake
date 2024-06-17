@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/autoware_auto_perception_rviz_plugin/ament_cmake_core/autoware_auto_perception_rviz_pluginConfig-version.cmake

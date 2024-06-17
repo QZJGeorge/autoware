@@ -1,0 +1,4 @@
+source;share/fault_injection/local_setup.bash
+source;share/fault_injection/local_setup.dsv
+source;share/fault_injection/local_setup.sh
+source;share/fault_injection/local_setup.zsh

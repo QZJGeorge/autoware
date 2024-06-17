@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/awapi_awiv_adapter/ament_cmake_core/awapi_awiv_adapterConfig.cmake

@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_perception_msgs/msg/object_recognition/DynamicObject.msg
+// generated code does not contain a copyright notice
+
+#include "tier4_perception_msgs/msg/Semantic.idl"
+#include "tier4_perception_msgs/msg/Shape.idl"
+#include "tier4_perception_msgs/msg/State.idl"
+#include "unique_identifier_msgs/msg/UUID.idl"
+
+module tier4_perception_msgs {
+  module msg {
+    struct DynamicObject {
+      unique_identifier_msgs::msg::UUID id;
+
+      tier4_perception_msgs::msg::Semantic semantic;
+
+      tier4_perception_msgs::msg::State state;
+
+      tier4_perception_msgs::msg::Shape shape;
+    };
+  };
+};

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from autoware_adapi_v1_msgs/planning/srv/SetCooperationPolicies.srv
+// generated code does not contain a copyright notice
+
+#include "autoware_adapi_v1_msgs/msg/CooperationPolicy.idl"
+#include "autoware_adapi_v1_msgs/msg/ResponseStatus.idl"
+
+module autoware_adapi_v1_msgs {
+  module srv {
+    struct SetCooperationPolicies_Request {
+      sequence<autoware_adapi_v1_msgs::msg::CooperationPolicy> policies;
+    };
+    struct SetCooperationPolicies_Response {
+      autoware_adapi_v1_msgs::msg::ResponseStatus status;
+    };
+  };
+};

@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/autoware_auto_planning_msgs/rosidl_generator_c/autoware_auto_planning_msgs/msg/trajectory.h

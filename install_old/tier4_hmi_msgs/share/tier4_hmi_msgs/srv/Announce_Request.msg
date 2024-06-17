@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_hmi_msgs/rosidl_cmake/srv/Announce_Request.msg

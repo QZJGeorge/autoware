@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from static_centerline_optimizer/srv/PlanPath.srv
+// generated code does not contain a copyright notice
+
+#include "static_centerline_optimizer/msg/PointsWithLaneId.idl"
+
+module static_centerline_optimizer {
+  module srv {
+    struct PlanPath_Request {
+      uint32 map_id;
+
+      sequence<uint32> route;
+    };
+    struct PlanPath_Response {
+      sequence<static_centerline_optimizer::msg::PointsWithLaneId> points_with_lane_ids;
+
+      string message;
+
+      sequence<uint32> unconnected_lane_ids;
+    };
+  };
+};

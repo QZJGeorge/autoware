@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/automatic_pose_initializer/ament_cmake_core/automatic_pose_initializerConfig.cmake

@@ -1,0 +1,3 @@
+
+bool success
+geometry_msgs/PoseWithCovarianceStamped pose_with_covariance

@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/ad_api_adaptors/ament_cmake_core/ad_api_adaptorsConfig-version.cmake

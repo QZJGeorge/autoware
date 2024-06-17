@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autoware_adapi_v1_msgs/planning/msg/CooperationDecision.msg
+// generated code does not contain a copyright notice
+
+
+module autoware_adapi_v1_msgs {
+  module msg {
+    module CooperationDecision_Constants {
+      const uint8 UNKNOWN = 0;
+      const uint8 DEACTIVATE = 1;
+      const uint8 ACTIVATE = 2;
+      const uint8 AUTONOMOUS = 3;
+      const uint8 UNDECIDED = 4;
+    };
+    struct CooperationDecision {
+      uint8 decision;
+    };
+  };
+};

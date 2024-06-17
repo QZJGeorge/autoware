@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_planning_msgs/msg/PathChangeModuleId.msg
+// generated code does not contain a copyright notice
+
+
+module tier4_planning_msgs {
+  module msg {
+    module PathChangeModuleId_Constants {
+      const int32 NONE = 0;
+      const int32 AVOIDANCE = 1;
+      const int32 LANE_CHANGE = 2;
+      const int32 FORCE_LANE_CHANGE = 3;
+      const int32 GOAL_PLANNER = 4;
+      const int32 START_PLANNER = 5;
+    };
+    struct PathChangeModuleId {
+      int32 type;
+    };
+  };
+};

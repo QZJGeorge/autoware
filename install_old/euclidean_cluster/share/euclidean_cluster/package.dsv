@@ -1,0 +1,11 @@
+source;share/euclidean_cluster/hook/cmake_prefix_path.ps1
+source;share/euclidean_cluster/hook/cmake_prefix_path.dsv
+source;share/euclidean_cluster/hook/cmake_prefix_path.sh
+source;share/euclidean_cluster/hook/ld_library_path_lib.ps1
+source;share/euclidean_cluster/hook/ld_library_path_lib.dsv
+source;share/euclidean_cluster/hook/ld_library_path_lib.sh
+source;share/euclidean_cluster/local_setup.bash
+source;share/euclidean_cluster/local_setup.dsv
+source;share/euclidean_cluster/local_setup.ps1
+source;share/euclidean_cluster/local_setup.sh
+source;share/euclidean_cluster/local_setup.zsh

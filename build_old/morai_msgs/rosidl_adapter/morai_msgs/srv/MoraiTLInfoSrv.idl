@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from morai_msgs/srv/MoraiTLInfoSrv.srv
+// generated code does not contain a copyright notice
+
+#include "morai_msgs/msg/MoraiTLIndex.idl"
+#include "morai_msgs/msg/MoraiTLInfo.idl"
+
+module morai_msgs {
+  module srv {
+    struct MoraiTLInfoSrv_Request {
+      morai_msgs::msg::MoraiTLIndex request;
+    };
+    struct MoraiTLInfoSrv_Response {
+      morai_msgs::msg::MoraiTLInfo response;
+    };
+  };
+};

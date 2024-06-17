@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/behavior_velocity_planner__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/behavior_velocity_planner/srv/detail/load_plugin__type_support_c.cpp.o"
+  "CMakeFiles/behavior_velocity_planner__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/behavior_velocity_planner/srv/detail/load_plugin__type_support_c.cpp.o.d"
+  "CMakeFiles/behavior_velocity_planner__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/behavior_velocity_planner/srv/detail/unload_plugin__type_support_c.cpp.o"
+  "CMakeFiles/behavior_velocity_planner__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/behavior_velocity_planner/srv/detail/unload_plugin__type_support_c.cpp.o.d"
+  "libbehavior_velocity_planner__rosidl_typesupport_fastrtps_c.pdb"
+  "libbehavior_velocity_planner__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/behavior_velocity_planner/srv/detail/load_plugin__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/behavior_velocity_planner/srv/detail/load_plugin__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/behavior_velocity_planner/srv/detail/unload_plugin__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/behavior_velocity_planner/srv/detail/unload_plugin__type_support_c.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/behavior_velocity_planner__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

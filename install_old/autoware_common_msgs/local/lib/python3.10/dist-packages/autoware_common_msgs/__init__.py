@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/autoware_common_msgs/rosidl_generator_py/autoware_common_msgs/__init__.py

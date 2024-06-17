@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/dummy_perception_publisher/libsigned_distance_function.so" "TARGETS" "signed_distance_function" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

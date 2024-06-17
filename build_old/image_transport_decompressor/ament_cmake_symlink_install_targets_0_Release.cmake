@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/image_transport_decompressor/image_transport_decompressor_node" "TARGETS" "image_transport_decompressor_node" "DESTINATION" "lib/image_transport_decompressor")

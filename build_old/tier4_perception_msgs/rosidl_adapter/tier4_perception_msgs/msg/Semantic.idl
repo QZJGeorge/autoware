@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_perception_msgs/msg/object_recognition/Semantic.msg
+// generated code does not contain a copyright notice
+
+
+module tier4_perception_msgs {
+  module msg {
+    module Semantic_Constants {
+      const uint8 UNKNOWN = 0;
+      const uint8 CAR = 1;
+      const uint8 TRUCK = 2;
+      const uint8 BUS = 3;
+      const uint8 BICYCLE = 4;
+      const uint8 MOTORBIKE = 5;
+      const uint8 PEDESTRIAN = 6;
+      const uint8 ANIMAL = 7;
+    };
+    struct Semantic {
+      uint32 type;
+
+      double confidence;
+    };
+  };
+};

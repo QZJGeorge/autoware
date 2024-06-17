@@ -1,0 +1,8 @@
+CPUMonitor;lib/libcpu_monitor_lib.so
+HddMonitor;lib/libhdd_monitor_lib.so
+MemMonitor;lib/libmem_monitor_lib.so
+NetMonitor;lib/libnet_monitor_lib.so
+NTPMonitor;lib/libntp_monitor_lib.so
+ProcessMonitor;lib/libprocess_monitor_lib.so
+GPUMonitor;lib/libgpu_monitor_lib.so
+VoltageMonitor;lib/libvoltage_monitor_lib.so

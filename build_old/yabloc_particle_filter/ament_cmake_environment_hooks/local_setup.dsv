@@ -1,0 +1,4 @@
+source;share/yabloc_particle_filter/environment/ament_prefix_path.sh
+source;share/yabloc_particle_filter/environment/library_path.sh
+source;share/yabloc_particle_filter/environment/path.sh
+source;share/yabloc_particle_filter/environment/pythonpath.sh

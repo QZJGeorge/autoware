@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libtvm_utility.so -o libtvm_utility.so  -Wl,-rpath,/opt/ros/humble/lib /opt/ros/humble/lib/libament_index_cpp.so 

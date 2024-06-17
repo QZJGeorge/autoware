@@ -1,0 +1,11 @@
+source;share/front_vehicle_velocity_estimator/hook/cmake_prefix_path.ps1
+source;share/front_vehicle_velocity_estimator/hook/cmake_prefix_path.dsv
+source;share/front_vehicle_velocity_estimator/hook/cmake_prefix_path.sh
+source;share/front_vehicle_velocity_estimator/hook/ld_library_path_lib.ps1
+source;share/front_vehicle_velocity_estimator/hook/ld_library_path_lib.dsv
+source;share/front_vehicle_velocity_estimator/hook/ld_library_path_lib.sh
+source;share/front_vehicle_velocity_estimator/local_setup.bash
+source;share/front_vehicle_velocity_estimator/local_setup.dsv
+source;share/front_vehicle_velocity_estimator/local_setup.ps1
+source;share/front_vehicle_velocity_estimator/local_setup.sh
+source;share/front_vehicle_velocity_estimator/local_setup.zsh

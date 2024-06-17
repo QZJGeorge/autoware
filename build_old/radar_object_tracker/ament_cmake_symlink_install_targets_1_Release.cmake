@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/radar_object_tracker/libmu_successive_shortest_path.so" "/home/mtl12345/autoware/build/radar_object_tracker/libradar_object_tracker_node.so" "TARGETS" "mu_successive_shortest_path" "radar_object_tracker_node" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

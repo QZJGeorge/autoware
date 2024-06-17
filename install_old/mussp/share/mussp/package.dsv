@@ -1,0 +1,11 @@
+source;share/mussp/hook/cmake_prefix_path.ps1
+source;share/mussp/hook/cmake_prefix_path.dsv
+source;share/mussp/hook/cmake_prefix_path.sh
+source;share/mussp/hook/ld_library_path_lib.ps1
+source;share/mussp/hook/ld_library_path_lib.dsv
+source;share/mussp/hook/ld_library_path_lib.sh
+source;share/mussp/local_setup.bash
+source;share/mussp/local_setup.dsv
+source;share/mussp/local_setup.ps1
+source;share/mussp/local_setup.sh
+source;share/mussp/local_setup.zsh

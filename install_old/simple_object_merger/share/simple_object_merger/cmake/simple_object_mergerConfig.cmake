@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/simple_object_merger/ament_cmake_core/simple_object_mergerConfig.cmake

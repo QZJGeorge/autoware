@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/osqp_interface/ament_cmake_core/osqp_interfaceConfig.cmake

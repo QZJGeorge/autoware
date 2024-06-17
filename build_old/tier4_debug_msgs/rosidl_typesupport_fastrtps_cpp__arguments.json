@@ -1,0 +1,47 @@
+{
+  "package_name": "tier4_debug_msgs",
+  "output_dir": "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_typesupport_fastrtps_cpp/tier4_debug_msgs",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource",
+  "idl_tuples": [
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs:msg/MultiArrayDimension.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs:msg/MultiArrayLayout.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs:msg/BoolStamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs:msg/Float32Stamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs:msg/Float32MultiArrayStamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs:msg/Float64Stamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs:msg/Float64MultiArrayStamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs:msg/Int32Stamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs:msg/Int32MultiArrayStamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs:msg/Int64Stamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs:msg/Int64MultiArrayStamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs:msg/StringStamped.idl"
+  ],
+  "ros_interface_dependencies": [
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_cpp/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/idl__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/msg__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs/msg/MultiArrayDimension.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs/msg/MultiArrayLayout.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs/msg/BoolStamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs/msg/Float32Stamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs/msg/Float32MultiArrayStamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs/msg/Float64Stamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs/msg/Float64MultiArrayStamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs/msg/Int32Stamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs/msg/Int32MultiArrayStamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs/msg/Int64Stamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs/msg/Int64MultiArrayStamped.idl",
+    "/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_adapter/tier4_debug_msgs/msg/StringStamped.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
+  ]
+}

@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/autoware_adapi_version_msgs/ament_cmake_core/autoware_adapi_version_msgsConfig.cmake

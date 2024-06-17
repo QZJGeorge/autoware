@@ -1,0 +1,11 @@
+source;share/detected_object_validation/hook/cmake_prefix_path.ps1
+source;share/detected_object_validation/hook/cmake_prefix_path.dsv
+source;share/detected_object_validation/hook/cmake_prefix_path.sh
+source;share/detected_object_validation/hook/ld_library_path_lib.ps1
+source;share/detected_object_validation/hook/ld_library_path_lib.dsv
+source;share/detected_object_validation/hook/ld_library_path_lib.sh
+source;share/detected_object_validation/local_setup.bash
+source;share/detected_object_validation/local_setup.dsv
+source;share/detected_object_validation/local_setup.ps1
+source;share/detected_object_validation/local_setup.sh
+source;share/detected_object_validation/local_setup.zsh

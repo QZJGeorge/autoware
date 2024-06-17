@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/control_performance_analysis/control_performance_analysis_exe" "TARGETS" "control_performance_analysis_exe" "DESTINATION" "lib/control_performance_analysis")

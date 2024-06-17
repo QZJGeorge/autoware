@@ -1,0 +1,11 @@
+source;share/crosswalk_traffic_light_estimator/hook/cmake_prefix_path.ps1
+source;share/crosswalk_traffic_light_estimator/hook/cmake_prefix_path.dsv
+source;share/crosswalk_traffic_light_estimator/hook/cmake_prefix_path.sh
+source;share/crosswalk_traffic_light_estimator/hook/ld_library_path_lib.ps1
+source;share/crosswalk_traffic_light_estimator/hook/ld_library_path_lib.dsv
+source;share/crosswalk_traffic_light_estimator/hook/ld_library_path_lib.sh
+source;share/crosswalk_traffic_light_estimator/local_setup.bash
+source;share/crosswalk_traffic_light_estimator/local_setup.dsv
+source;share/crosswalk_traffic_light_estimator/local_setup.ps1
+source;share/crosswalk_traffic_light_estimator/local_setup.sh
+source;share/crosswalk_traffic_light_estimator/local_setup.zsh

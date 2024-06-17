@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_rtc_msgs/msg/CooperateStatus.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "tier4_rtc_msgs/msg/Command.idl"
+#include "tier4_rtc_msgs/msg/Module.idl"
+#include "unique_identifier_msgs/msg/UUID.idl"
+
+module tier4_rtc_msgs {
+  module msg {
+    struct CooperateStatus {
+      builtin_interfaces::msg::Time stamp;
+
+      unique_identifier_msgs::msg::UUID uuid;
+
+      tier4_rtc_msgs::msg::Module module;
+
+      boolean safe;
+
+      tier4_rtc_msgs::msg::Command command_status;
+
+      boolean auto_mode;
+
+      float start_distance;
+
+      float finish_distance;
+    };
+  };
+};

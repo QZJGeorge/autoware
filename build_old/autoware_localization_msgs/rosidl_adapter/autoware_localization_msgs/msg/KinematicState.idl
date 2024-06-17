@@ -1,0 +1,38 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autoware_localization_msgs/msg/KinematicState.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/AccelWithCovariance.idl"
+#include "geometry_msgs/msg/PoseWithCovariance.idl"
+#include "geometry_msgs/msg/TwistWithCovariance.idl"
+#include "std_msgs/msg/Header.idl"
+
+module autoware_localization_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "KinematicState represents an estimate of a position, velocity and acceleration in free space." "\n"
+      "The pose_with_covariance is in the coordinate frame given by header.frame_id" "\n"
+      "The twist_with_covariance and accel_with_covariance are in the coordinate frame given by the child_frame_id")
+    struct KinematicState {
+      @verbatim (language="comment", text=
+        "Includes the frame id of the pose parent.")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Frame id the pose points to.")
+      string child_frame_id;
+
+      @verbatim (language="comment", text=
+        "Estimated pose that is relative to the header.frame_id.")
+      geometry_msgs::msg::PoseWithCovariance pose_with_covariance;
+
+      @verbatim (language="comment", text=
+        "Estimated linear and angular velocity relative to child_frame_id.")
+      geometry_msgs::msg::TwistWithCovariance twist_with_covariance;
+
+      @verbatim (language="comment", text=
+        "Estimated linear and angular acceleration relative to child_frame_id.")
+      geometry_msgs::msg::AccelWithCovariance accel_with_covariance;
+    };
+  };
+};

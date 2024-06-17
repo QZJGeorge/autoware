@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/morai_msgs/rosidl_generator_c/morai_msgs/msg/sync_mode_result_response.h

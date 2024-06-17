@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_planning_msgs/msg/Scenario.msg
+// generated code does not contain a copyright notice
+
+
+module tier4_planning_msgs {
+  module msg {
+    module Scenario_Constants {
+      const string EMPTY = "Empty";
+      const string LANEDRIVING = "LaneDriving";
+      const string PARKING = "Parking";
+    };
+    struct Scenario {
+      string current_scenario;
+
+      sequence<string> activating_scenarios;
+    };
+  };
+};

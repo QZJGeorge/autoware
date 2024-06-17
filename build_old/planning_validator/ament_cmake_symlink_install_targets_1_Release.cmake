@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/planning_validator/invalid_trajectory_publisher" "TARGETS" "invalid_trajectory_publisher" "DESTINATION" "lib/planning_validator")

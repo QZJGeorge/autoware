@@ -1,0 +1,11 @@
+source;share/goal_distance_calculator/hook/cmake_prefix_path.ps1
+source;share/goal_distance_calculator/hook/cmake_prefix_path.dsv
+source;share/goal_distance_calculator/hook/cmake_prefix_path.sh
+source;share/goal_distance_calculator/hook/ld_library_path_lib.ps1
+source;share/goal_distance_calculator/hook/ld_library_path_lib.dsv
+source;share/goal_distance_calculator/hook/ld_library_path_lib.sh
+source;share/goal_distance_calculator/local_setup.bash
+source;share/goal_distance_calculator/local_setup.dsv
+source;share/goal_distance_calculator/local_setup.ps1
+source;share/goal_distance_calculator/local_setup.sh
+source;share/goal_distance_calculator/local_setup.zsh

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tier4_external_api_msgs/srv/SetRoute.srv
+// generated code does not contain a copyright notice
+
+#include "tier4_external_api_msgs/msg/ResponseStatus.idl"
+#include "tier4_external_api_msgs/msg/Route.idl"
+
+module tier4_external_api_msgs {
+  module srv {
+    struct SetRoute_Request {
+      tier4_external_api_msgs::msg::Route route;
+    };
+    struct SetRoute_Response {
+      tier4_external_api_msgs::msg::ResponseStatus status;
+    };
+  };
+};

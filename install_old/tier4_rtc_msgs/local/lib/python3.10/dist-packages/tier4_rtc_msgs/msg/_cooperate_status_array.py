@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_rtc_msgs/rosidl_generator_py/tier4_rtc_msgs/msg/_cooperate_status_array.py

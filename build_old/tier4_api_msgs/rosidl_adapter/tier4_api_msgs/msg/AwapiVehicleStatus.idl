@@ -1,0 +1,46 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_api_msgs/msg/AwapiVehicleStatus.msg
+// generated code does not contain a copyright notice
+
+#include "geographic_msgs/msg/GeoPoint.idl"
+#include "geometry_msgs/msg/Pose.idl"
+#include "std_msgs/msg/Header.idl"
+#include "tier4_api_msgs/msg/Euler.idl"
+
+module tier4_api_msgs {
+  module msg {
+    struct AwapiVehicleStatus {
+      std_msgs::msg::Header header;
+
+      geometry_msgs::msg::Pose pose;
+
+      tier4_api_msgs::msg::Euler eulerangle;
+
+      geographic_msgs::msg::GeoPoint geo_point;
+
+      double velocity;
+
+      double acceleration;
+
+      double steering;
+
+      double steering_velocity;
+
+      double angular_velocity;
+
+      int32 gear;
+
+      float energy_level;
+
+      int32 turn_signal;
+
+      double target_velocity;
+
+      double target_acceleration;
+
+      double target_steering;
+
+      double target_steering_velocity;
+    };
+  };
+};

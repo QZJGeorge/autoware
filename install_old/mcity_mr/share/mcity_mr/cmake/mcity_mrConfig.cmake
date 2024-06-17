@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/mcity_mr/ament_cmake_core/mcity_mrConfig.cmake

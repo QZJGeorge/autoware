@@ -1,0 +1,2 @@
+autoware::motion::control::trajectory_follower_node::Controller;lib/libcontroller_node.so
+simple_trajectory_follower::SimpleTrajectoryFollower;lib/libsimple_trajectory_follower.so

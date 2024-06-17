@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_v2x_msgs/msg/KeyValue.msg
+// generated code does not contain a copyright notice
+
+
+module tier4_v2x_msgs {
+  module msg {
+    struct KeyValue {
+      string key;
+
+      string value;
+    };
+  };
+};

@@ -1,0 +1,4 @@
+# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
+
+set(tier4_vehicle_msgs_IDL_FILES "msg/ActuationCommand.idl;msg/ActuationCommandStamped.idl;msg/ActuationStatus.idl;msg/ActuationStatusStamped.idl;msg/BatteryStatus.idl;msg/Shift.idl;msg/ShiftStamped.idl;msg/TurnSignal.idl;msg/Steering.idl;msg/SteeringWheelStatusStamped.idl;msg/VehicleEmergencyStamped.idl;srv/UpdateAccelBrakeMap.idl")
+set(tier4_vehicle_msgs_INTERFACE_FILES "msg/ActuationCommand.msg;msg/ActuationCommandStamped.msg;msg/ActuationStatus.msg;msg/ActuationStatusStamped.msg;msg/BatteryStatus.msg;msg/Shift.msg;msg/ShiftStamped.msg;msg/TurnSignal.msg;msg/Steering.msg;msg/SteeringWheelStatusStamped.msg;msg/VehicleEmergencyStamped.msg;srv/UpdateAccelBrakeMap.srv;srv/UpdateAccelBrakeMap_Request.msg;srv/UpdateAccelBrakeMap_Response.msg")

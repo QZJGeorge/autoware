@@ -1,0 +1,11 @@
+source;share/bytetrack/hook/cmake_prefix_path.ps1
+source;share/bytetrack/hook/cmake_prefix_path.dsv
+source;share/bytetrack/hook/cmake_prefix_path.sh
+source;share/bytetrack/hook/ld_library_path_lib.ps1
+source;share/bytetrack/hook/ld_library_path_lib.dsv
+source;share/bytetrack/hook/ld_library_path_lib.sh
+source;share/bytetrack/local_setup.bash
+source;share/bytetrack/local_setup.dsv
+source;share/bytetrack/local_setup.ps1
+source;share/bytetrack/local_setup.sh
+source;share/bytetrack/local_setup.zsh

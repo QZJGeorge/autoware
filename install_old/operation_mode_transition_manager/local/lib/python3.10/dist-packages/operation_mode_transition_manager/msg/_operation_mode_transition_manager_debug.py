@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/operation_mode_transition_manager/rosidl_generator_py/operation_mode_transition_manager/msg/_operation_mode_transition_manager_debug.py

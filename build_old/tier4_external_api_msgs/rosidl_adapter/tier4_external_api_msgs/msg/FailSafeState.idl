@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_external_api_msgs/msg/FailSafeState.msg
+// generated code does not contain a copyright notice
+
+
+module tier4_external_api_msgs {
+  module msg {
+    module FailSafeState_Constants {
+      const uint8 NORMAL = 1;
+      const uint8 OVERRIDE_REQUESTING = 2;
+      const uint8 MRM_OPERATING = 3;
+      const uint8 MRM_SUCCEEDED = 4;
+      const uint8 MRM_FAILED = 5;
+    };
+    @verbatim (language="comment", text=
+      "constants")
+    struct FailSafeState {
+      @verbatim (language="comment", text=
+        "fields")
+      uint8 state;
+    };
+  };
+};

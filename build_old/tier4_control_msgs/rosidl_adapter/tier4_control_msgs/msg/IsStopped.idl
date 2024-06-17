@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_control_msgs/msg/IsStopped.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module tier4_control_msgs {
+  module msg {
+    struct IsStopped {
+      builtin_interfaces::msg::Time stamp;
+
+      boolean data;
+
+      sequence<string> requested_sources;
+    };
+  };
+};

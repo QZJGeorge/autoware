@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tier4_external_api_msgs/srv/GetTextFile.srv
+// generated code does not contain a copyright notice
+
+#include "tier4_external_api_msgs/msg/ResponseStatus.idl"
+#include "tier4_external_api_msgs/msg/TextFile.idl"
+
+module tier4_external_api_msgs {
+  module srv {
+    struct GetTextFile_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetTextFile_Response {
+      tier4_external_api_msgs::msg::ResponseStatus status;
+
+      tier4_external_api_msgs::msg::TextFile file;
+    };
+  };
+};

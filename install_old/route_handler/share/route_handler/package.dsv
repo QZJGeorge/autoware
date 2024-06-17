@@ -1,0 +1,11 @@
+source;share/route_handler/hook/cmake_prefix_path.ps1
+source;share/route_handler/hook/cmake_prefix_path.dsv
+source;share/route_handler/hook/cmake_prefix_path.sh
+source;share/route_handler/hook/ld_library_path_lib.ps1
+source;share/route_handler/hook/ld_library_path_lib.dsv
+source;share/route_handler/hook/ld_library_path_lib.sh
+source;share/route_handler/local_setup.bash
+source;share/route_handler/local_setup.dsv
+source;share/route_handler/local_setup.ps1
+source;share/route_handler/local_setup.sh
+source;share/route_handler/local_setup.zsh

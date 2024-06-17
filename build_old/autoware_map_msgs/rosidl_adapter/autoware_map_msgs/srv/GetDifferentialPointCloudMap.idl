@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from autoware_map_msgs/srv/GetDifferentialPointCloudMap.srv
+// generated code does not contain a copyright notice
+
+#include "autoware_map_msgs/msg/AreaInfo.idl"
+#include "autoware_map_msgs/msg/PointCloudMapCellWithID.idl"
+#include "std_msgs/msg/Header.idl"
+
+module autoware_map_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Area query for map loading" "\n"
+      "(PCD grids that overlaps with the area is going to be loaded)")
+    struct GetDifferentialPointCloudMap_Request {
+      autoware_map_msgs::msg::AreaInfo area;
+
+      @verbatim (language="comment", text=
+        "The IDs of PCD maps that the node already has")
+      sequence<string> cached_ids;
+    };
+    @verbatim (language="comment", text=
+      "Header")
+    struct GetDifferentialPointCloudMap_Response {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Newly loaded PCD maps with ID")
+      sequence<autoware_map_msgs::msg::PointCloudMapCellWithID> new_pointcloud_with_ids;
+
+      @verbatim (language="comment", text=
+        "Map IDs that the client side should remove")
+      sequence<string> ids_to_remove;
+    };
+  };
+};

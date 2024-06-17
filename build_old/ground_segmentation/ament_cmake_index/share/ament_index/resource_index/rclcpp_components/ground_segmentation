@@ -1,0 +1,3 @@
+ground_segmentation::RayGroundFilterComponent;lib/libground_segmentation.so
+ground_segmentation::RANSACGroundFilterComponent;lib/libground_segmentation.so
+ground_segmentation::ScanGroundFilterComponent;lib/libground_segmentation.so

@@ -1,0 +1,8 @@
+source;share/ar_tag_based_localizer/hook/cmake_prefix_path.ps1
+source;share/ar_tag_based_localizer/hook/cmake_prefix_path.dsv
+source;share/ar_tag_based_localizer/hook/cmake_prefix_path.sh
+source;share/ar_tag_based_localizer/local_setup.bash
+source;share/ar_tag_based_localizer/local_setup.dsv
+source;share/ar_tag_based_localizer/local_setup.ps1
+source;share/ar_tag_based_localizer/local_setup.sh
+source;share/ar_tag_based_localizer/local_setup.zsh

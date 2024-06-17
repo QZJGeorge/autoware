@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from autoware_adapi_v1_msgs/vehicle/srv/GetDoorLayout.srv
+// generated code does not contain a copyright notice
+
+#include "autoware_adapi_v1_msgs/msg/DoorLayout.idl"
+#include "autoware_adapi_v1_msgs/msg/ResponseStatus.idl"
+
+module autoware_adapi_v1_msgs {
+  module srv {
+    struct GetDoorLayout_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetDoorLayout_Response {
+      autoware_adapi_v1_msgs::msg::ResponseStatus status;
+
+      sequence<autoware_adapi_v1_msgs::msg::DoorLayout> doors;
+    };
+  };
+};

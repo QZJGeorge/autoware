@@ -1,0 +1,11 @@
+source;share/steer_offset_estimator/hook/cmake_prefix_path.ps1
+source;share/steer_offset_estimator/hook/cmake_prefix_path.dsv
+source;share/steer_offset_estimator/hook/cmake_prefix_path.sh
+source;share/steer_offset_estimator/hook/ld_library_path_lib.ps1
+source;share/steer_offset_estimator/hook/ld_library_path_lib.dsv
+source;share/steer_offset_estimator/hook/ld_library_path_lib.sh
+source;share/steer_offset_estimator/local_setup.bash
+source;share/steer_offset_estimator/local_setup.dsv
+source;share/steer_offset_estimator/local_setup.ps1
+source;share/steer_offset_estimator/local_setup.sh
+source;share/steer_offset_estimator/local_setup.zsh

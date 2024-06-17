@@ -1,0 +1,16 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/operation_mode_transition_manager__rosidl_generator_c.dir/rosidl_generator_c/operation_mode_transition_manager/msg/detail/operation_mode_transition_manager_debug__functions.c.o"
+  "CMakeFiles/operation_mode_transition_manager__rosidl_generator_c.dir/rosidl_generator_c/operation_mode_transition_manager/msg/detail/operation_mode_transition_manager_debug__functions.c.o.d"
+  "liboperation_mode_transition_manager__rosidl_generator_c.pdb"
+  "liboperation_mode_transition_manager__rosidl_generator_c.so"
+  "rosidl_generator_c/operation_mode_transition_manager/msg/detail/operation_mode_transition_manager_debug__functions.c"
+  "rosidl_generator_c/operation_mode_transition_manager/msg/detail/operation_mode_transition_manager_debug__functions.h"
+  "rosidl_generator_c/operation_mode_transition_manager/msg/detail/operation_mode_transition_manager_debug__struct.h"
+  "rosidl_generator_c/operation_mode_transition_manager/msg/detail/operation_mode_transition_manager_debug__type_support.h"
+  "rosidl_generator_c/operation_mode_transition_manager/msg/operation_mode_transition_manager_debug.h"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/operation_mode_transition_manager__rosidl_generator_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

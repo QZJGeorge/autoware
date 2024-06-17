@@ -1,0 +1,42 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mcity_msgs/msg/PlannedPath.msg
+// generated code does not contain a copyright notice
+
+
+module mcity_msgs {
+  module msg {
+    struct PlannedPath {
+      @verbatim (language="comment", text=
+        "time")
+      double timestamp;
+
+      @verbatim (language="comment", text=
+        "timestamp between trajectory points")
+      double time_resolution;
+
+      @verbatim (language="comment", text=
+        "default: 1")
+      int16 go;
+
+      @verbatim (language="comment", text=
+        "default: 0")
+      int16 estop;
+
+      @verbatim (language="comment", text=
+        "up to 50 points in the next 2 seconds (0.04s)")
+      sequence<double> x_vector;
+
+      @verbatim (language="comment", text=
+        "up to 50 points in the next 2 seconds (0.04s)")
+      sequence<double> y_vector;
+
+      @verbatim (language="comment", text=
+        "up to 50 points in the next 2 seconds (0.04s)")
+      sequence<double> vd_vector;
+
+      @verbatim (language="comment", text=
+        "up to 50 points in the next 2 seconds (0.04s)")
+      sequence<double> ori_vector;
+    };
+  };
+};

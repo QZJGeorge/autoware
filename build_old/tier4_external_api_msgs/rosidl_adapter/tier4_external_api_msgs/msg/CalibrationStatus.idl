@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_external_api_msgs/msg/CalibrationStatus.msg
+// generated code does not contain a copyright notice
+
+
+module tier4_external_api_msgs {
+  module msg {
+    module CalibrationStatus_Constants {
+      const uint8 ACCEL_BRAKE_MAP = 1;
+      @verbatim (language="comment", text=
+        "status constants")
+      const uint8 NORMAL = 0;
+      const uint8 CALIBRATION_REQUIRED = 1;
+      const uint8 UNAVAILABLE = 2;
+    };
+    @verbatim (language="comment", text=
+      "calibration target")
+    struct CalibrationStatus {
+      @verbatim (language="comment", text=
+        "fields")
+      uint8 target;
+
+      uint8 status;
+    };
+  };
+};

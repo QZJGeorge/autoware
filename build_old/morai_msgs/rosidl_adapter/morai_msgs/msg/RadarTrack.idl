@@ -1,0 +1,60 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from morai_msgs/msg/RadarTrack.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+
+module morai_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "This message relates only to FMCW radar.  " "\n"
+      "All variables below are relative to the radar's frame of reference." "\n"
+      "This message is not meant to be used alone but as part of a stamped or array message.")
+    struct RadarTrack {
+      @verbatim (language="comment", text=
+        "Object classifications (Additional vendor-specific classifications are permitted starting from 32000 eg. Car)" "\n"
+        "Note: The z component of these fields is ignored for 2D tracking.")
+      int8 uuid;
+
+      @verbatim (language="comment", text=
+        "x, y, z coordinates of the centroid of the object being tracked.")
+      geometry_msgs::msg::Point position;
+
+      @verbatim (language="comment", text=
+        "The velocity of the object in each spatial dimension.")
+      geometry_msgs::msg::Vector3 velocity;
+
+      @verbatim (language="comment", text=
+        "The acceleration of the object in each spatial dimension.")
+      geometry_msgs::msg::Vector3 acceleration;
+
+      @verbatim (language="comment", text=
+        "The object size as represented by the radar sensor eg. length, width, height OR the diameter of an ellipsoid in the x, y, z, dimensions" "\n"
+        "and is from the sensor frame's view.")
+      geometry_msgs::msg::Vector3 size;
+
+      @verbatim (language="comment", text=
+        "An optional classification of the object (see above)")
+      uint16 classification;
+
+      @verbatim (language="comment", text=
+        "Upper-triangle covariance about the x, y, z axes")
+      sequence<float> position_covariance;
+
+      @verbatim (language="comment", text=
+        "Upper-triangle covariance about the x, y, z axes")
+      sequence<float> velocity_covariance;
+
+      @verbatim (language="comment", text=
+        "Upper-triangle covariance about the x, y, z axes")
+      sequence<float> acceleration_covariance;
+
+      @verbatim (language="comment", text=
+        "Upper-triangle covariance about the x, y, z axes")
+      sequence<float> size_covariance;
+
+      float amplitude;
+    };
+  };
+};

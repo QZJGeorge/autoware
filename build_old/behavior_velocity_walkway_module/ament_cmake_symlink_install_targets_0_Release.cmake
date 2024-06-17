@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/behavior_velocity_walkway_module/libbehavior_velocity_walkway_module.so" "TARGETS" "behavior_velocity_walkway_module" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

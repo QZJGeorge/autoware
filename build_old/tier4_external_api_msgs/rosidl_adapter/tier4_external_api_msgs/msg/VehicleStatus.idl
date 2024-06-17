@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_external_api_msgs/msg/VehicleStatus.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Twist.idl"
+#include "tier4_external_api_msgs/msg/GearShift.idl"
+#include "tier4_external_api_msgs/msg/Steering.idl"
+#include "tier4_external_api_msgs/msg/TurnSignal.idl"
+
+module tier4_external_api_msgs {
+  module msg {
+    struct VehicleStatus {
+      geometry_msgs::msg::Twist twist;
+
+      tier4_external_api_msgs::msg::Steering steering;
+
+      tier4_external_api_msgs::msg::TurnSignal turn_signal;
+
+      tier4_external_api_msgs::msg::GearShift gear_shift;
+    };
+  };
+};

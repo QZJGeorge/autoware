@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/topic_state_monitor/topic_state_monitor_node" "TARGETS" "topic_state_monitor_node" "DESTINATION" "lib/topic_state_monitor")

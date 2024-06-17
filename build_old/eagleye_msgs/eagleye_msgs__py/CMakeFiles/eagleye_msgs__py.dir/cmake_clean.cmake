@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "../rosidl_generator_py/eagleye_msgs/_eagleye_msgs_s.ep.rosidl_typesupport_c.c"
+  "../rosidl_generator_py/eagleye_msgs/_eagleye_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "../rosidl_generator_py/eagleye_msgs/_eagleye_msgs_s.ep.rosidl_typesupport_introspection_c.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/__init__.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_acc_x_offset.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_acc_x_offset_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_acc_x_scale_factor.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_acc_x_scale_factor_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_acc_y_offset.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_acc_y_offset_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_angular_velocity_offset.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_angular_velocity_offset_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_distance.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_distance_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_heading.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_heading_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_height.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_height_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_pitching.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_pitching_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_position.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_position_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_rolling.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_rolling_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_slip_angle.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_slip_angle_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_status.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_status_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_status_stamped.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_status_stamped_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_velocity_scale_factor.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_velocity_scale_factor_s.c"
+  "../rosidl_generator_py/eagleye_msgs/msg/_yawrate_offset.py"
+  "../rosidl_generator_py/eagleye_msgs/msg/_yawrate_offset_s.c"
+  "CMakeFiles/eagleye_msgs__py"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/eagleye_msgs__py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

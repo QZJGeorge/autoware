@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from morai_msgs/msg/MultiEgoSetting.msg
+// generated code does not contain a copyright notice
+
+
+module morai_msgs {
+  module msg {
+    struct MultiEgoSetting {
+      int32 number_of_ego_vehicle;
+
+      int32 camera_index;
+
+      sequence<int32> ego_index;
+
+      sequence<double> global_position_x;
+
+      sequence<double> global_position_y;
+
+      sequence<double> global_position_z;
+
+      sequence<float> global_roll;
+
+      sequence<float> global_pitch;
+
+      sequence<float> global_yaw;
+
+      sequence<float> velocity;
+
+      sequence<int8> gear;
+
+      sequence<int8> ctrl_mode;
+    };
+  };
+};

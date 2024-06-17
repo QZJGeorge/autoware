@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/mrm_comfortable_stop_operator/mrm_comfortable_stop_operator" "TARGETS" "mrm_comfortable_stop_operator" "DESTINATION" "lib/mrm_comfortable_stop_operator")

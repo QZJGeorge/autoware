@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/static_centerline_optimizer/rosidl_typesupport_fastrtps_c/static_centerline_optimizer/msg/detail/points_with_lane_id__rosidl_typesupport_fastrtps_c.h

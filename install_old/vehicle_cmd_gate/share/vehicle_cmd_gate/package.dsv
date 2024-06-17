@@ -1,0 +1,11 @@
+source;share/vehicle_cmd_gate/hook/cmake_prefix_path.ps1
+source;share/vehicle_cmd_gate/hook/cmake_prefix_path.dsv
+source;share/vehicle_cmd_gate/hook/cmake_prefix_path.sh
+source;share/vehicle_cmd_gate/hook/ld_library_path_lib.ps1
+source;share/vehicle_cmd_gate/hook/ld_library_path_lib.dsv
+source;share/vehicle_cmd_gate/hook/ld_library_path_lib.sh
+source;share/vehicle_cmd_gate/local_setup.bash
+source;share/vehicle_cmd_gate/local_setup.dsv
+source;share/vehicle_cmd_gate/local_setup.ps1
+source;share/vehicle_cmd_gate/local_setup.sh
+source;share/vehicle_cmd_gate/local_setup.zsh

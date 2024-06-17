@@ -1,0 +1,17 @@
+{
+  "package_name": "tier4_vehicle_msgs",
+  "non_idl_tuples": [
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_vehicle_msgs:msg/ActuationCommand.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_vehicle_msgs:msg/ActuationCommandStamped.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_vehicle_msgs:msg/ActuationStatus.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_vehicle_msgs:msg/ActuationStatusStamped.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_vehicle_msgs:msg/BatteryStatus.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_vehicle_msgs:msg/Shift.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_vehicle_msgs:msg/ShiftStamped.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_vehicle_msgs:msg/TurnSignal.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_vehicle_msgs:msg/Steering.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_vehicle_msgs:msg/SteeringWheelStatusStamped.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_vehicle_msgs:msg/VehicleEmergencyStamped.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_vehicle_msgs:srv/UpdateAccelBrakeMap.srv"
+  ]
+}

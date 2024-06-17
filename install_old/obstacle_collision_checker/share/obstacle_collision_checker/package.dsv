@@ -1,0 +1,11 @@
+source;share/obstacle_collision_checker/hook/cmake_prefix_path.ps1
+source;share/obstacle_collision_checker/hook/cmake_prefix_path.dsv
+source;share/obstacle_collision_checker/hook/cmake_prefix_path.sh
+source;share/obstacle_collision_checker/hook/ld_library_path_lib.ps1
+source;share/obstacle_collision_checker/hook/ld_library_path_lib.dsv
+source;share/obstacle_collision_checker/hook/ld_library_path_lib.sh
+source;share/obstacle_collision_checker/local_setup.bash
+source;share/obstacle_collision_checker/local_setup.dsv
+source;share/obstacle_collision_checker/local_setup.ps1
+source;share/obstacle_collision_checker/local_setup.sh
+source;share/obstacle_collision_checker/local_setup.zsh

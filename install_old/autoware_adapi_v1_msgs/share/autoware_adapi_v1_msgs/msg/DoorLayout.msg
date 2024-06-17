@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/src/core/autoware_adapi_msgs/autoware_adapi_v1_msgs/vehicle/msg/DoorLayout.msg

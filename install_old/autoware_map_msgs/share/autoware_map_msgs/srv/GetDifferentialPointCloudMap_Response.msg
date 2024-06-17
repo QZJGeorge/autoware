@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/autoware_map_msgs/rosidl_cmake/srv/GetDifferentialPointCloudMap_Response.msg

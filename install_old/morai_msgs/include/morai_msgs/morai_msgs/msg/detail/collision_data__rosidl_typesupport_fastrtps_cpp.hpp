@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/morai_msgs/rosidl_typesupport_fastrtps_cpp/morai_msgs/msg/detail/collision_data__rosidl_typesupport_fastrtps_cpp.hpp

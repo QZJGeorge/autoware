@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/object_merger/libmu_successive_shortest_path.so" "/home/mtl12345/autoware/build/object_merger/libobject_association_merger.so" "TARGETS" "mu_successive_shortest_path" "object_association_merger" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

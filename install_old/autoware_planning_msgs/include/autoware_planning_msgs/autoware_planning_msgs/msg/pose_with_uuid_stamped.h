@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/autoware_planning_msgs/rosidl_generator_c/autoware_planning_msgs/msg/pose_with_uuid_stamped.h

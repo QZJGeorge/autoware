@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/autoware_external_api_msgs/rosidl_typesupport_introspection_c/autoware_external_api_msgs/srv/detail/get_version__rosidl_typesupport_introspection_c.h

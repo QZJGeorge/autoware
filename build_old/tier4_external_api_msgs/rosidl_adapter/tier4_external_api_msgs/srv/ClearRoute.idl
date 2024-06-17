@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tier4_external_api_msgs/srv/ClearRoute.srv
+// generated code does not contain a copyright notice
+
+#include "tier4_external_api_msgs/msg/ResponseStatus.idl"
+
+module tier4_external_api_msgs {
+  module srv {
+    struct ClearRoute_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct ClearRoute_Response {
+      tier4_external_api_msgs::msg::ResponseStatus status;
+    };
+  };
+};

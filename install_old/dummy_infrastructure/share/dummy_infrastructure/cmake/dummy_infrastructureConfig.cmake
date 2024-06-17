@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/dummy_infrastructure/ament_cmake_core/dummy_infrastructureConfig.cmake

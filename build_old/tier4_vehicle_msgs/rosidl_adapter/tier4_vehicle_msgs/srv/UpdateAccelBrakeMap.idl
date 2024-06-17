@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tier4_vehicle_msgs/srv/UpdateAccelBrakeMap.srv
+// generated code does not contain a copyright notice
+
+
+module tier4_vehicle_msgs {
+  module srv {
+    struct UpdateAccelBrakeMap_Request {
+      @verbatim (language="comment", text=
+        "path to directory the map will be saved")
+      string path;
+    };
+    struct UpdateAccelBrakeMap_Response {
+      @verbatim (language="comment", text=
+        "indicate successful run of triggered service")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "informational, e.g. for error messages")
+      string message;
+    };
+  };
+};

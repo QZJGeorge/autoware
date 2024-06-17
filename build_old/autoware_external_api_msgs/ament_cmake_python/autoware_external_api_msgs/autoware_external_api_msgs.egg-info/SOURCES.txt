@@ -1,0 +1,10 @@
+setup.py
+autoware_external_api_msgs/__init__.py
+autoware_external_api_msgs.egg-info/PKG-INFO
+autoware_external_api_msgs.egg-info/SOURCES.txt
+autoware_external_api_msgs.egg-info/dependency_links.txt
+autoware_external_api_msgs.egg-info/top_level.txt
+autoware_external_api_msgs/msg/__init__.py
+autoware_external_api_msgs/msg/_response_status.py
+autoware_external_api_msgs/srv/__init__.py
+autoware_external_api_msgs/srv/_get_version.py

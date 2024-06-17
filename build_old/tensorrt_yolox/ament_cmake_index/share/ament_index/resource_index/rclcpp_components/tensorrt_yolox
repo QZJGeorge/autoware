@@ -1,0 +1,2 @@
+tensorrt_yolox::YoloXSingleImageInferenceNode;lib/libyolox_single_image_inference_node.so
+tensorrt_yolox::TrtYoloXNode;lib/libtensorrt_yolox_node.so

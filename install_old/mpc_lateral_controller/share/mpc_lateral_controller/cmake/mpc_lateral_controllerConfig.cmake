@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/mpc_lateral_controller/ament_cmake_core/mpc_lateral_controllerConfig.cmake

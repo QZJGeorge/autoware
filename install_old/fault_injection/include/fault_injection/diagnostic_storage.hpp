@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/src/universe/autoware.universe/simulator/fault_injection/include/fault_injection/diagnostic_storage.hpp

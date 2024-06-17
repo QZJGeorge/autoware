@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/lane_departure_checker/lane_departure_checker_node" "TARGETS" "lane_departure_checker_node" "DESTINATION" "lib/lane_departure_checker")

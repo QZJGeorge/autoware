@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from planning_debug_tools/msg/TrajectoryDebugInfo.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module planning_debug_tools {
+  module msg {
+    struct TrajectoryDebugInfo {
+      builtin_interfaces::msg::Time stamp;
+
+      uint32 size;
+
+      sequence<double> arclength;
+
+      sequence<double> curvature;
+
+      sequence<double> velocity;
+
+      sequence<double> acceleration;
+
+      sequence<double> yaw;
+    };
+  };
+};

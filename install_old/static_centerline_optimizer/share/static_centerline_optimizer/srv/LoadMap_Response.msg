@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/static_centerline_optimizer/rosidl_cmake/srv/LoadMap_Response.msg

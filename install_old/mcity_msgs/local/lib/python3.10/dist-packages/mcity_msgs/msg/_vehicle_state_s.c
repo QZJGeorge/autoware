@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/mcity_msgs/rosidl_generator_py/mcity_msgs/msg/_vehicle_state_s.c

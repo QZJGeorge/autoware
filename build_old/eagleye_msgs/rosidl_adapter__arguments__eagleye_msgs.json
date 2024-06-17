@@ -1,0 +1,20 @@
+{
+  "package_name": "eagleye_msgs",
+  "non_idl_tuples": [
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/AccXOffset.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/AccXScaleFactor.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/AccYOffset.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/AngularVelocityOffset.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/Distance.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/Heading.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/Height.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/Pitching.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/Position.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/Rolling.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/SlipAngle.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/Status.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/StatusStamped.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/VelocityScaleFactor.msg",
+    "/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs:msg/YawrateOffset.msg"
+  ]
+}

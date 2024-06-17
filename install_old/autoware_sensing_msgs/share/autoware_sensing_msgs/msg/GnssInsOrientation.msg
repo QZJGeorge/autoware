@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/src/core/autoware_msgs/autoware_sensing_msgs/msg/GnssInsOrientation.msg

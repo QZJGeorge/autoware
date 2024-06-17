@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/system_diagnostic_monitor/ament_cmake_core/system_diagnostic_monitorConfig.cmake

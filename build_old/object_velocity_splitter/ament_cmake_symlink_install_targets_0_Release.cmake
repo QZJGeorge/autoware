@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/object_velocity_splitter/object_velocity_splitter_node" "TARGETS" "object_velocity_splitter_node" "DESTINATION" "lib/object_velocity_splitter")

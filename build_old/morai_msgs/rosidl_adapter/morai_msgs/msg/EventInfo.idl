@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from morai_msgs/msg/EventInfo.msg
+// generated code does not contain a copyright notice
+
+#include "morai_msgs/msg/Lamps.idl"
+
+module morai_msgs {
+  module msg {
+    struct EventInfo {
+      int8 option;
+
+      int32 ctrl_mode;
+
+      int32 gear;
+
+      morai_msgs::msg::Lamps lamps;
+
+      boolean set_pause;
+    };
+  };
+};

@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_perception_msgs/rosidl_generator_c/tier4_perception_msgs/msg/detail/traffic_light_element__type_support.h

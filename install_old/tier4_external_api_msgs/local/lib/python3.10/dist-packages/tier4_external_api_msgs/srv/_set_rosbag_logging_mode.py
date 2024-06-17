@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_external_api_msgs/rosidl_generator_py/tier4_external_api_msgs/srv/_set_rosbag_logging_mode.py

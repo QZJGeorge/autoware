@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_external_api_msgs/rosidl_cmake/srv/InitializePose_Response.msg

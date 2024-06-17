@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/map_projection_loader/ament_cmake_core/map_projection_loaderConfig-version.cmake

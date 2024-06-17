@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/morai_msgs/rosidl_generator_py/morai_msgs/msg/_sync_mode_set_gear_s.c

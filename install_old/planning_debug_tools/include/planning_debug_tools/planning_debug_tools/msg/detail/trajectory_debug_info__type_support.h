@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/planning_debug_tools/rosidl_generator_c/planning_debug_tools/msg/detail/trajectory_debug_info__type_support.h

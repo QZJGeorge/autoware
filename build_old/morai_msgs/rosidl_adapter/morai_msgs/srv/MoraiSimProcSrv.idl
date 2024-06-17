@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from morai_msgs/srv/MoraiSimProcSrv.srv
+// generated code does not contain a copyright notice
+
+#include "morai_msgs/msg/MoraiSimProcHandle.idl"
+#include "morai_msgs/msg/MoraiSrvResponse.idl"
+
+module morai_msgs {
+  module srv {
+    struct MoraiSimProcSrv_Request {
+      morai_msgs::msg::MoraiSimProcHandle request;
+    };
+    struct MoraiSimProcSrv_Response {
+      morai_msgs::msg::MoraiSrvResponse response;
+    };
+  };
+};

@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_adapi_rviz_plugin/ament_cmake_core/tier4_adapi_rviz_pluginConfig.cmake

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/obstacle_velocity_limiter/obstacle_velocity_limiter" "TARGETS" "obstacle_velocity_limiter" "DESTINATION" "lib/obstacle_velocity_limiter")

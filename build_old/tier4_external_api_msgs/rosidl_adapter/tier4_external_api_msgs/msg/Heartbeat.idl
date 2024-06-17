@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_external_api_msgs/msg/Heartbeat.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module tier4_external_api_msgs {
+  module msg {
+    struct Heartbeat {
+      builtin_interfaces::msg::Time stamp;
+    };
+  };
+};

@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from eagleye_msgs/msg/Heading.msg
+// generated code does not contain a copyright notice
+
+#include "eagleye_msgs/msg/Status.idl"
+#include "std_msgs/msg/Header.idl"
+
+module eagleye_msgs {
+  module msg {
+    struct Heading {
+      std_msgs::msg::Header header;
+
+      double heading_angle;
+
+      double variance;
+
+      eagleye_msgs::msg::Status status;
+    };
+  };
+};

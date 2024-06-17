@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tier4_rtc_msgs/srv/AutoMode.srv
+// generated code does not contain a copyright notice
+
+
+module tier4_rtc_msgs {
+  module srv {
+    struct AutoMode_Request {
+      boolean enable;
+    };
+    struct AutoMode_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/traffic_light_ssd_fine_detector/libgather_topk_plugin.so" "/home/mtl12345/autoware/build/traffic_light_ssd_fine_detector/libgrid_priors_plugin.so" "TARGETS" "gather_topk_plugin" "grid_priors_plugin" "LIBRARY_DESTINATION" "lib" "ARCHIVE_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

@@ -1,0 +1,65 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from operation_mode_transition_manager/msg/OperationModeTransitionManagerDebug.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module operation_mode_transition_manager {
+  module msg {
+    struct OperationModeTransitionManagerDebug {
+      builtin_interfaces::msg::Time stamp;
+
+      @verbatim (language="comment", text=
+        "states")
+      string status;
+
+      boolean in_autoware_control;
+
+      boolean in_transition;
+
+      @verbatim (language="comment", text=
+        "flags for engage permission")
+      boolean is_all_ok;
+
+      boolean engage_allowed_for_stopped_vehicle;
+
+      boolean trajectory_available_ok;
+
+      boolean lateral_deviation_ok;
+
+      boolean yaw_deviation_ok;
+
+      boolean speed_upper_deviation_ok;
+
+      boolean speed_lower_deviation_ok;
+
+      boolean stop_ok;
+
+      boolean large_acceleration_ok;
+
+      boolean large_lateral_acceleration_ok;
+
+      boolean large_lateral_acceleration_diff_ok;
+
+      @verbatim (language="comment", text=
+        "values")
+      double current_speed;
+
+      double target_control_speed;
+
+      double target_planning_speed;
+
+      double target_control_acceleration;
+
+      double lateral_acceleration;
+
+      double lateral_acceleration_deviation;
+
+      double lateral_deviation;
+
+      double yaw_deviation;
+
+      double speed_deviation;
+    };
+  };
+};

@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_external_api_msgs/msg/MapHash.msg
+// generated code does not contain a copyright notice
+
+
+module tier4_external_api_msgs {
+  module msg {
+    struct MapHash {
+      string lanelet;
+
+      string pcd;
+    };
+  };
+};

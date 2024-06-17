@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_vehicle_msgs/rosidl_generator_c/tier4_vehicle_msgs/msg/steering_wheel_status_stamped.h

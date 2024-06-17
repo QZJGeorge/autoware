@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_planning_msgs/msg/IsAvoidancePossible.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module tier4_planning_msgs {
+  module msg {
+    struct IsAvoidancePossible {
+      builtin_interfaces::msg::Time stamp;
+
+      boolean is_avoidance_possible;
+    };
+  };
+};

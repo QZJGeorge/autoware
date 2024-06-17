@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_simulation_msgs/msg/FaultInjectionEvent.msg
+// generated code does not contain a copyright notice
+
+
+module tier4_simulation_msgs {
+  module msg {
+    module FaultInjectionEvent_Constants {
+      const int8 OK = 0;
+      const int8 WARN = 1;
+      const int8 ERROR = 2;
+      const int8 STALE = 3;
+    };
+    struct FaultInjectionEvent {
+      int8 level;
+
+      string name;
+    };
+  };
+};

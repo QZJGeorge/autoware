@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mcity_msgs/msg/Control.msg
+// generated code does not contain a copyright notice
+
+
+module mcity_msgs {
+  module msg {
+    struct Control {
+      @verbatim (language="comment", text=
+        "ros time")
+      double timestamp;
+
+      int32 count;
+
+      @verbatim (language="comment", text=
+        "brake pedal opening")
+      double brake_cmd;
+
+      @verbatim (language="comment", text=
+        "throttle pedal openning")
+      double throttle_cmd;
+
+      @verbatim (language="comment", text=
+        "(-2.5pi to 2.5pi)")
+      double steering_cmd;
+
+      int16 gear_cmd;
+
+      int16 turn_signal_cmd;
+    };
+  };
+};

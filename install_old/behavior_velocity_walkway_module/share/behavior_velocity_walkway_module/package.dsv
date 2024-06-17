@@ -1,0 +1,11 @@
+source;share/behavior_velocity_walkway_module/hook/cmake_prefix_path.ps1
+source;share/behavior_velocity_walkway_module/hook/cmake_prefix_path.dsv
+source;share/behavior_velocity_walkway_module/hook/cmake_prefix_path.sh
+source;share/behavior_velocity_walkway_module/hook/ld_library_path_lib.ps1
+source;share/behavior_velocity_walkway_module/hook/ld_library_path_lib.dsv
+source;share/behavior_velocity_walkway_module/hook/ld_library_path_lib.sh
+source;share/behavior_velocity_walkway_module/local_setup.bash
+source;share/behavior_velocity_walkway_module/local_setup.dsv
+source;share/behavior_velocity_walkway_module/local_setup.ps1
+source;share/behavior_velocity_walkway_module/local_setup.sh
+source;share/behavior_velocity_walkway_module/local_setup.zsh

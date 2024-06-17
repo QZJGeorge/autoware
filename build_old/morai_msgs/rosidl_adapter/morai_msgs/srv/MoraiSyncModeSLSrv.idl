@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from morai_msgs/srv/MoraiSyncModeSLSrv.srv
+// generated code does not contain a copyright notice
+
+#include "morai_msgs/msg/SyncModeResultResponse.idl"
+#include "morai_msgs/msg/SyncModeScenarioLoad.idl"
+
+module morai_msgs {
+  module srv {
+    struct MoraiSyncModeSLSrv_Request {
+      morai_msgs::msg::SyncModeScenarioLoad request;
+    };
+    struct MoraiSyncModeSLSrv_Response {
+      morai_msgs::msg::SyncModeResultResponse response;
+    };
+  };
+};

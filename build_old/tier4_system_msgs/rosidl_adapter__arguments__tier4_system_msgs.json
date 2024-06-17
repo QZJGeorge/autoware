@@ -1,0 +1,20 @@
+{
+  "package_name": "tier4_system_msgs",
+  "non_idl_tuples": [
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:msg/AutowareState.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:msg/DiagnosticGraph.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:msg/DiagnosticLink.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:msg/DiagnosticNode.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:msg/OperationModeAvailability.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:msg/EmergencyState.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:msg/EmergencyStateStamped.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:msg/HazardStatus.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:msg/HazardStatusStamped.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:msg/ServiceLog.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:msg/ModeChangeAvailable.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:msg/MrmBehaviorStatus.msg",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:srv/OperateMrm.srv",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:srv/ChangeOperationMode.srv",
+    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_system_msgs:srv/ChangeAutowareControl.srv"
+  ]
+}

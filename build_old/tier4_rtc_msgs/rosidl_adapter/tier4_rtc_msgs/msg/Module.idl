@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_rtc_msgs/msg/Module.msg
+// generated code does not contain a copyright notice
+
+
+module tier4_rtc_msgs {
+  module msg {
+    module Module_Constants {
+      const uint8 NONE = 0;
+      const uint8 LANE_CHANGE_LEFT = 1;
+      const uint8 LANE_CHANGE_RIGHT = 2;
+      const uint8 AVOIDANCE_LEFT = 3;
+      const uint8 AVOIDANCE_RIGHT = 4;
+      const uint8 GOAL_PLANNER = 5;
+      const uint8 START_PLANNER = 6;
+      const uint8 TRAFFIC_LIGHT = 7;
+      const uint8 INTERSECTION = 8;
+      const uint8 INTERSECTION_OCCLUSION = 9;
+      const uint8 CROSSWALK = 10;
+      const uint8 BLIND_SPOT = 11;
+      const uint8 DETECTION_AREA = 12;
+      const uint8 NO_STOPPING_AREA = 13;
+      const uint8 OCCLUSION_SPOT = 14;
+      const uint8 EXT_REQUEST_LANE_CHANGE_LEFT = 15;
+      const uint8 EXT_REQUEST_LANE_CHANGE_RIGHT = 16;
+      const uint8 AVOIDANCE_BY_LC_LEFT = 17;
+      const uint8 AVOIDANCE_BY_LC_RIGHT = 18;
+    };
+    struct Module {
+      uint8 type;
+    };
+  };
+};

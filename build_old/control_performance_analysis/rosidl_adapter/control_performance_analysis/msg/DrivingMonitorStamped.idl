@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from control_performance_analysis/msg/DrivingMonitorStamped.msg
+// generated code does not contain a copyright notice
+
+#include "control_performance_analysis/msg/FloatStamped.idl"
+
+module control_performance_analysis {
+  module msg {
+    struct DrivingMonitorStamped {
+      control_performance_analysis::msg::FloatStamped longitudinal_acceleration;
+
+      control_performance_analysis::msg::FloatStamped longitudinal_jerk;
+
+      control_performance_analysis::msg::FloatStamped lateral_acceleration;
+
+      control_performance_analysis::msg::FloatStamped lateral_jerk;
+
+      control_performance_analysis::msg::FloatStamped desired_steering_angle;
+
+      control_performance_analysis::msg::FloatStamped controller_processing_time;
+    };
+  };
+};

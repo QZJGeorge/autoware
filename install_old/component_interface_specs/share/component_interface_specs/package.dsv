@@ -1,0 +1,8 @@
+source;share/component_interface_specs/hook/cmake_prefix_path.ps1
+source;share/component_interface_specs/hook/cmake_prefix_path.dsv
+source;share/component_interface_specs/hook/cmake_prefix_path.sh
+source;share/component_interface_specs/local_setup.bash
+source;share/component_interface_specs/local_setup.dsv
+source;share/component_interface_specs/local_setup.ps1
+source;share/component_interface_specs/local_setup.sh
+source;share/component_interface_specs/local_setup.zsh

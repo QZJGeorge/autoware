@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_perception_msgs/rosidl_generator_c/tier4_perception_msgs/msg/detail/traffic_signal_array__type_support.h

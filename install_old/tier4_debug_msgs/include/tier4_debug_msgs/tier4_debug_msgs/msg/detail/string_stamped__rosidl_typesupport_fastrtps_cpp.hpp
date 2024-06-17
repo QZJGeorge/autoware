@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_typesupport_fastrtps_cpp/tier4_debug_msgs/msg/detail/string_stamped__rosidl_typesupport_fastrtps_cpp.hpp

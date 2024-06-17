@@ -1,0 +1,11 @@
+source;share/behavior_path_planner/hook/cmake_prefix_path.ps1
+source;share/behavior_path_planner/hook/cmake_prefix_path.dsv
+source;share/behavior_path_planner/hook/cmake_prefix_path.sh
+source;share/behavior_path_planner/hook/ld_library_path_lib.ps1
+source;share/behavior_path_planner/hook/ld_library_path_lib.dsv
+source;share/behavior_path_planner/hook/ld_library_path_lib.sh
+source;share/behavior_path_planner/local_setup.bash
+source;share/behavior_path_planner/local_setup.dsv
+source;share/behavior_path_planner/local_setup.ps1
+source;share/behavior_path_planner/local_setup.sh
+source;share/behavior_path_planner/local_setup.zsh

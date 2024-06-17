@@ -1,0 +1,4 @@
+source;share/dummy_perception_publisher/environment/ament_prefix_path.sh
+source;share/dummy_perception_publisher/environment/library_path.sh
+source;share/dummy_perception_publisher/environment/path.sh
+source;share/dummy_perception_publisher/environment/pythonpath.sh

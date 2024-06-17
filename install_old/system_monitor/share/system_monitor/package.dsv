@@ -1,0 +1,11 @@
+source;share/system_monitor/hook/cmake_prefix_path.ps1
+source;share/system_monitor/hook/cmake_prefix_path.dsv
+source;share/system_monitor/hook/cmake_prefix_path.sh
+source;share/system_monitor/hook/ld_library_path_lib.ps1
+source;share/system_monitor/hook/ld_library_path_lib.dsv
+source;share/system_monitor/hook/ld_library_path_lib.sh
+source;share/system_monitor/local_setup.bash
+source;share/system_monitor/local_setup.dsv
+source;share/system_monitor/local_setup.ps1
+source;share/system_monitor/local_setup.sh
+source;share/system_monitor/local_setup.zsh

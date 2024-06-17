@@ -1,0 +1,11 @@
+source;share/gnss_poser/hook/cmake_prefix_path.ps1
+source;share/gnss_poser/hook/cmake_prefix_path.dsv
+source;share/gnss_poser/hook/cmake_prefix_path.sh
+source;share/gnss_poser/hook/ld_library_path_lib.ps1
+source;share/gnss_poser/hook/ld_library_path_lib.dsv
+source;share/gnss_poser/hook/ld_library_path_lib.sh
+source;share/gnss_poser/local_setup.bash
+source;share/gnss_poser/local_setup.dsv
+source;share/gnss_poser/local_setup.ps1
+source;share/gnss_poser/local_setup.sh
+source;share/gnss_poser/local_setup.zsh

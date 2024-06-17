@@ -1,0 +1,11 @@
+source;share/compare_map_segmentation/hook/cmake_prefix_path.ps1
+source;share/compare_map_segmentation/hook/cmake_prefix_path.dsv
+source;share/compare_map_segmentation/hook/cmake_prefix_path.sh
+source;share/compare_map_segmentation/hook/ld_library_path_lib.ps1
+source;share/compare_map_segmentation/hook/ld_library_path_lib.dsv
+source;share/compare_map_segmentation/hook/ld_library_path_lib.sh
+source;share/compare_map_segmentation/local_setup.bash
+source;share/compare_map_segmentation/local_setup.dsv
+source;share/compare_map_segmentation/local_setup.ps1
+source;share/compare_map_segmentation/local_setup.sh
+source;share/compare_map_segmentation/local_setup.zsh

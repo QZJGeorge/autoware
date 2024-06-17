@@ -1,0 +1,11 @@
+default_ad_api::AutowareStateNode;lib/libdefault_ad_api.so
+default_ad_api::FailSafeNode;lib/libdefault_ad_api.so
+default_ad_api::InterfaceNode;lib/libdefault_ad_api.so
+default_ad_api::LocalizationNode;lib/libdefault_ad_api.so
+default_ad_api::MotionNode;lib/libdefault_ad_api.so
+default_ad_api::OperationModeNode;lib/libdefault_ad_api.so
+default_ad_api::PerceptionNode;lib/libdefault_ad_api.so
+default_ad_api::PlanningNode;lib/libdefault_ad_api.so
+default_ad_api::RoutingNode;lib/libdefault_ad_api.so
+default_ad_api::VehicleNode;lib/libdefault_ad_api.so
+default_ad_api::VehicleInfoNode;lib/libdefault_ad_api.so

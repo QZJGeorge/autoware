@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_external_api_msgs/msg/DoorStatus.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module tier4_external_api_msgs {
+  module msg {
+    module DoorStatus_Constants {
+      const int8 NOT_SUPPORTED = -1;
+      const int8 UNKNOWN = 0;
+      const int8 OPENED = 1;
+      const int8 CLOSED = 2;
+      const int8 OPENING = 3;
+      const int8 CLOSING = 4;
+    };
+    @verbatim (language="comment", text=
+      "constants")
+    struct DoorStatus {
+      @verbatim (language="comment", text=
+        "fields")
+      builtin_interfaces::msg::Time stamp;
+
+      int8 status;
+    };
+  };
+};

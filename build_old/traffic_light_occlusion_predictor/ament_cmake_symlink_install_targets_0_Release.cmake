@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/traffic_light_occlusion_predictor/traffic_light_occlusion_predictor_node" "TARGETS" "traffic_light_occlusion_predictor_node" "DESTINATION" "lib/traffic_light_occlusion_predictor")

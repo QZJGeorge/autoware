@@ -1,0 +1,8 @@
+source;share/lidar_apollo_segmentation_tvm/hook/cmake_prefix_path.ps1
+source;share/lidar_apollo_segmentation_tvm/hook/cmake_prefix_path.dsv
+source;share/lidar_apollo_segmentation_tvm/hook/cmake_prefix_path.sh
+source;share/lidar_apollo_segmentation_tvm/local_setup.bash
+source;share/lidar_apollo_segmentation_tvm/local_setup.dsv
+source;share/lidar_apollo_segmentation_tvm/local_setup.ps1
+source;share/lidar_apollo_segmentation_tvm/local_setup.sh
+source;share/lidar_apollo_segmentation_tvm/local_setup.zsh

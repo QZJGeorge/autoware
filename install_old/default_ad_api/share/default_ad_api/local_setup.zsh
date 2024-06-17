@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/default_ad_api/ament_cmake_environment_hooks/local_setup.zsh

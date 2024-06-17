@@ -1,0 +1,11 @@
+source;share/interpolation/hook/cmake_prefix_path.ps1
+source;share/interpolation/hook/cmake_prefix_path.dsv
+source;share/interpolation/hook/cmake_prefix_path.sh
+source;share/interpolation/hook/ld_library_path_lib.ps1
+source;share/interpolation/hook/ld_library_path_lib.dsv
+source;share/interpolation/hook/ld_library_path_lib.sh
+source;share/interpolation/local_setup.bash
+source;share/interpolation/local_setup.dsv
+source;share/interpolation/local_setup.ps1
+source;share/interpolation/local_setup.sh
+source;share/interpolation/local_setup.zsh

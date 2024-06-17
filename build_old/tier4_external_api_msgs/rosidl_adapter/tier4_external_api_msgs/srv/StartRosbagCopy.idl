@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tier4_external_api_msgs/srv/StartRosbagCopy.srv
+// generated code does not contain a copyright notice
+
+#include "tier4_external_api_msgs/msg/ResponseStatus.idl"
+
+module tier4_external_api_msgs {
+  module srv {
+    struct StartRosbagCopy_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct StartRosbagCopy_Response {
+      tier4_external_api_msgs::msg::ResponseStatus status;
+    };
+  };
+};

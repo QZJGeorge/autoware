@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/control_validator/libcontrol_validator_helpers.so" "/home/mtl12345/autoware/build/control_validator/libcontrol_validator_component.so" "TARGETS" "control_validator_helpers" "control_validator_component" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

@@ -1,0 +1,61 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from planning_validator/msg/PlanningValidatorStatus.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module planning_validator {
+  module msg {
+    struct PlanningValidatorStatus {
+      builtin_interfaces::msg::Time stamp;
+
+      @verbatim (language="comment", text=
+        "states")
+      boolean is_valid_finite_value;
+
+      boolean is_valid_interval;
+
+      boolean is_valid_relative_angle;
+
+      boolean is_valid_curvature;
+
+      boolean is_valid_lateral_acc;
+
+      boolean is_valid_longitudinal_max_acc;
+
+      boolean is_valid_longitudinal_min_acc;
+
+      boolean is_valid_steering;
+
+      boolean is_valid_steering_rate;
+
+      boolean is_valid_velocity_deviation;
+
+      boolean is_valid_distance_deviation;
+
+      @verbatim (language="comment", text=
+        "values")
+      double max_interval_distance;
+
+      double max_relative_angle;
+
+      double max_curvature;
+
+      double max_lateral_acc;
+
+      double max_longitudinal_acc;
+
+      double min_longitudinal_acc;
+
+      double max_steering;
+
+      double max_steering_rate;
+
+      double velocity_deviation;
+
+      double distance_deviation;
+
+      int64 invalid_count;
+    };
+  };
+};

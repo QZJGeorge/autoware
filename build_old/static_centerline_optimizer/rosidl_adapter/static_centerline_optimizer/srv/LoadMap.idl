@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from static_centerline_optimizer/srv/LoadMap.srv
+// generated code does not contain a copyright notice
+
+
+module static_centerline_optimizer {
+  module srv {
+    struct LoadMap_Request {
+      string map;
+    };
+    struct LoadMap_Response {
+      string message;
+    };
+  };
+};

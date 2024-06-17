@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/traffic_light_recognition_marker_publisher/ament_cmake_core/traffic_light_recognition_marker_publisherConfig-version.cmake

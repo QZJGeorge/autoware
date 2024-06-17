@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/dummy_perception_publisher/ament_cmake_environment_hooks/pythonpath.sh

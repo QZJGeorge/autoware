@@ -1,0 +1,8 @@
+source;share/automatic_pose_initializer/hook/cmake_prefix_path.ps1
+source;share/automatic_pose_initializer/hook/cmake_prefix_path.dsv
+source;share/automatic_pose_initializer/hook/cmake_prefix_path.sh
+source;share/automatic_pose_initializer/local_setup.bash
+source;share/automatic_pose_initializer/local_setup.dsv
+source;share/automatic_pose_initializer/local_setup.ps1
+source;share/automatic_pose_initializer/local_setup.sh
+source;share/automatic_pose_initializer/local_setup.zsh

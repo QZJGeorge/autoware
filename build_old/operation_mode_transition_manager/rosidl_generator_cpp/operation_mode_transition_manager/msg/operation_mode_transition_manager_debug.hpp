@@ -1,0 +1,11 @@
+// generated from rosidl_generator_cpp/resource/idl.hpp.em
+// generated code does not contain a copyright notice
+
+#ifndef OPERATION_MODE_TRANSITION_MANAGER__MSG__OPERATION_MODE_TRANSITION_MANAGER_DEBUG_HPP_
+#define OPERATION_MODE_TRANSITION_MANAGER__MSG__OPERATION_MODE_TRANSITION_MANAGER_DEBUG_HPP_
+
+#include "operation_mode_transition_manager/msg/detail/operation_mode_transition_manager_debug__struct.hpp"
+#include "operation_mode_transition_manager/msg/detail/operation_mode_transition_manager_debug__builder.hpp"
+#include "operation_mode_transition_manager/msg/detail/operation_mode_transition_manager_debug__traits.hpp"
+
+#endif  // OPERATION_MODE_TRANSITION_MANAGER__MSG__OPERATION_MODE_TRANSITION_MANAGER_DEBUG_HPP_

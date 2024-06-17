@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/morai_msgs/rosidl_generator_py/morai_msgs/msg/_morai_sim_config_s.c

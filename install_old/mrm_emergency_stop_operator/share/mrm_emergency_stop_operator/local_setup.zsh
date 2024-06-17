@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/mrm_emergency_stop_operator/ament_cmake_environment_hooks/local_setup.zsh

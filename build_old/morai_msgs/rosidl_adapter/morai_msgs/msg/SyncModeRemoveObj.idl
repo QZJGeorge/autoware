@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from morai_msgs/msg/SyncModeRemoveObj.msg
+// generated code does not contain a copyright notice
+
+
+module morai_msgs {
+  module msg {
+    struct SyncModeRemoveObj {
+      int32 unique_id;
+
+      uint64 frame;
+    };
+  };
+};

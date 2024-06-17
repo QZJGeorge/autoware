@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/imu_corrector/ament_cmake_environment_hooks/local_setup.bash

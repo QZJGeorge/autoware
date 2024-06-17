@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_simulation_msgs/msg/UserDefinedValueType.msg
+// generated code does not contain a copyright notice
+
+
+module tier4_simulation_msgs {
+  module msg {
+    module UserDefinedValueType_Constants {
+      const int8 BOOLEAN = 0;
+      const int8 DATE_TIME = 1;
+      const int8 DOUBLE = 2;
+      const int8 INTEGER = 3;
+      const int8 STRING = 4;
+      const int8 UNSIGNED_INT = 5;
+      const int8 UNSIGNED_SHORT = 6;
+    };
+    struct UserDefinedValueType {
+      uint8 data;
+    };
+  };
+};

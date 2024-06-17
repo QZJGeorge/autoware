@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autoware_external_api_msgs/msg/ResponseStatus.msg
+// generated code does not contain a copyright notice
+
+
+module autoware_external_api_msgs {
+  module msg {
+    module ResponseStatus_Constants {
+      @verbatim (language="comment", text=
+        "constants")
+      const uint32 SUCCESS = 1;
+      const uint32 IGNORED = 2;
+      const uint32 WARN = 3;
+      const uint32 ERROR = 4;
+    };
+    @verbatim (language="comment", text=
+      "This message type is deprecated. However, this message type is maintained" "\n"
+      "because autoware_hmi_msgs (https://github.com/tier4/AutowareArchitectureProposal_msgs/tree/main/autoware_hmi_msgs)" "\n"
+      "depends on this message type.")
+    struct ResponseStatus {
+      @verbatim (language="comment", text=
+        "fields")
+      uint32 code;
+
+      string message;
+    };
+  };
+};

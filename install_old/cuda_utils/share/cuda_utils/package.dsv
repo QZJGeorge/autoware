@@ -1,0 +1,8 @@
+source;share/cuda_utils/hook/cmake_prefix_path.ps1
+source;share/cuda_utils/hook/cmake_prefix_path.dsv
+source;share/cuda_utils/hook/cmake_prefix_path.sh
+source;share/cuda_utils/local_setup.bash
+source;share/cuda_utils/local_setup.dsv
+source;share/cuda_utils/local_setup.ps1
+source;share/cuda_utils/local_setup.sh
+source;share/cuda_utils/local_setup.zsh

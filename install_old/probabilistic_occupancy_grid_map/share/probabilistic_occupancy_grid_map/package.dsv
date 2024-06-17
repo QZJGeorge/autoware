@@ -1,0 +1,11 @@
+source;share/probabilistic_occupancy_grid_map/hook/cmake_prefix_path.ps1
+source;share/probabilistic_occupancy_grid_map/hook/cmake_prefix_path.dsv
+source;share/probabilistic_occupancy_grid_map/hook/cmake_prefix_path.sh
+source;share/probabilistic_occupancy_grid_map/hook/ld_library_path_lib.ps1
+source;share/probabilistic_occupancy_grid_map/hook/ld_library_path_lib.dsv
+source;share/probabilistic_occupancy_grid_map/hook/ld_library_path_lib.sh
+source;share/probabilistic_occupancy_grid_map/local_setup.bash
+source;share/probabilistic_occupancy_grid_map/local_setup.dsv
+source;share/probabilistic_occupancy_grid_map/local_setup.ps1
+source;share/probabilistic_occupancy_grid_map/local_setup.sh
+source;share/probabilistic_occupancy_grid_map/local_setup.zsh

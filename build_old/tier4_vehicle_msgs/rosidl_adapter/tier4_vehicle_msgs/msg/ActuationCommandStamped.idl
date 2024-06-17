@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_vehicle_msgs/msg/ActuationCommandStamped.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+#include "tier4_vehicle_msgs/msg/ActuationCommand.idl"
+
+module tier4_vehicle_msgs {
+  module msg {
+    struct ActuationCommandStamped {
+      std_msgs::msg::Header header;
+
+      tier4_vehicle_msgs::msg::ActuationCommand actuation;
+    };
+  };
+};

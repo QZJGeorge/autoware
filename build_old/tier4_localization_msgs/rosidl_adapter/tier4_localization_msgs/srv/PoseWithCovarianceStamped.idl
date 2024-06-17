@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tier4_localization_msgs/srv/PoseWithCovarianceStamped.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/PoseWithCovarianceStamped.idl"
+
+module tier4_localization_msgs {
+  module srv {
+    struct PoseWithCovarianceStamped_Request {
+      geometry_msgs::msg::PoseWithCovarianceStamped pose_with_covariance;
+    };
+    struct PoseWithCovarianceStamped_Response {
+      boolean success;
+
+      geometry_msgs::msg::PoseWithCovarianceStamped pose_with_covariance;
+    };
+  };
+};

@@ -1,0 +1,11 @@
+source;share/eagleye_navigation/hook/cmake_prefix_path.ps1
+source;share/eagleye_navigation/hook/cmake_prefix_path.dsv
+source;share/eagleye_navigation/hook/cmake_prefix_path.sh
+source;share/eagleye_navigation/hook/ld_library_path_lib.ps1
+source;share/eagleye_navigation/hook/ld_library_path_lib.dsv
+source;share/eagleye_navigation/hook/ld_library_path_lib.sh
+source;share/eagleye_navigation/local_setup.bash
+source;share/eagleye_navigation/local_setup.dsv
+source;share/eagleye_navigation/local_setup.ps1
+source;share/eagleye_navigation/local_setup.sh
+source;share/eagleye_navigation/local_setup.zsh

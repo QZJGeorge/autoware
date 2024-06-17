@@ -1,0 +1,39 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_system_msgs/msg/HazardStatus.msg
+// generated code does not contain a copyright notice
+
+#include "diagnostic_msgs/msg/DiagnosticStatus.idl"
+
+module tier4_system_msgs {
+  module msg {
+    module HazardStatus_Constants {
+      const int32 NO_FAULT = 0;
+      const int32 SAFE_FAULT = 1;
+      const int32 LATENT_FAULT = 2;
+      const int32 SINGLE_POINT_FAULT = 3;
+    };
+    struct HazardStatus {
+      int32 level;
+
+      boolean emergency;
+
+      boolean emergency_holding;
+
+      @verbatim (language="comment", text=
+        "diagnostics categorized as no fault")
+      sequence<diagnostic_msgs::msg::DiagnosticStatus> diagnostics_nf;
+
+      @verbatim (language="comment", text=
+        "diagnostics categorized as safe fault")
+      sequence<diagnostic_msgs::msg::DiagnosticStatus> diagnostics_sf;
+
+      @verbatim (language="comment", text=
+        "diagnostics categorized as latent fault")
+      sequence<diagnostic_msgs::msg::DiagnosticStatus> diagnostics_lf;
+
+      @verbatim (language="comment", text=
+        "diagnostics categorized as single point fault")
+      sequence<diagnostic_msgs::msg::DiagnosticStatus> diagnostics_spf;
+    };
+  };
+};

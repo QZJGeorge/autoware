@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/glog_component/ament_cmake_environment_hooks/local_setup.bash

@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_perception_msgs/ament_cmake_core/tier4_perception_msgsConfig-version.cmake

@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autoware_map_msgs/msg/AreaInfo.msg
+// generated code does not contain a copyright notice
+
+
+module autoware_map_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Area info used as a query in map loading service" "\n"
+      "Note: this only supports cylindrical area message for now")
+    struct AreaInfo {
+      float center_x;
+
+      float center_y;
+
+      float radius;
+    };
+  };
+};

@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_map_msgs/rosidl_generator_c/tier4_map_msgs/msg/map_projector_info.h

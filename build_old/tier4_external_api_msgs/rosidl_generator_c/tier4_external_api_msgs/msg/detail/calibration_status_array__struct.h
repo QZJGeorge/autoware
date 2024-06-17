@@ -1,0 +1,47 @@
+// generated from rosidl_generator_c/resource/idl__struct.h.em
+// with input from tier4_external_api_msgs:msg/CalibrationStatusArray.idl
+// generated code does not contain a copyright notice
+
+#ifndef TIER4_EXTERNAL_API_MSGS__MSG__DETAIL__CALIBRATION_STATUS_ARRAY__STRUCT_H_
+#define TIER4_EXTERNAL_API_MSGS__MSG__DETAIL__CALIBRATION_STATUS_ARRAY__STRUCT_H_
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+
+
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'stamp'
+#include "builtin_interfaces/msg/detail/time__struct.h"
+// Member 'status_array'
+#include "tier4_external_api_msgs/msg/detail/calibration_status__struct.h"
+
+/// Struct defined in msg/CalibrationStatusArray in the package tier4_external_api_msgs.
+typedef struct tier4_external_api_msgs__msg__CalibrationStatusArray
+{
+  builtin_interfaces__msg__Time stamp;
+  tier4_external_api_msgs__msg__CalibrationStatus__Sequence status_array;
+} tier4_external_api_msgs__msg__CalibrationStatusArray;
+
+// Struct for a sequence of tier4_external_api_msgs__msg__CalibrationStatusArray.
+typedef struct tier4_external_api_msgs__msg__CalibrationStatusArray__Sequence
+{
+  tier4_external_api_msgs__msg__CalibrationStatusArray * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} tier4_external_api_msgs__msg__CalibrationStatusArray__Sequence;
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // TIER4_EXTERNAL_API_MSGS__MSG__DETAIL__CALIBRATION_STATUS_ARRAY__STRUCT_H_

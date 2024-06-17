@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/src/universe/autoware.universe/common/global_parameter_loader/launch/global_params.launch.py

@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/morai_msgs/rosidl_typesupport_fastrtps_c/morai_msgs/msg/detail/sync_mode_add_obj__rosidl_typesupport_fastrtps_c.h

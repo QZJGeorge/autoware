@@ -1,0 +1,14 @@
+{
+  "package_name": "autoware_perception_msgs",
+  "non_idl_tuples": [
+    "/home/mtl12345/autoware/src/core/autoware_msgs/autoware_perception_msgs:msg/ObjectClassification.msg",
+    "/home/mtl12345/autoware/src/core/autoware_msgs/autoware_perception_msgs:msg/PredictedObject.msg",
+    "/home/mtl12345/autoware/src/core/autoware_msgs/autoware_perception_msgs:msg/PredictedObjectKinematics.msg",
+    "/home/mtl12345/autoware/src/core/autoware_msgs/autoware_perception_msgs:msg/PredictedObjects.msg",
+    "/home/mtl12345/autoware/src/core/autoware_msgs/autoware_perception_msgs:msg/PredictedPath.msg",
+    "/home/mtl12345/autoware/src/core/autoware_msgs/autoware_perception_msgs:msg/Shape.msg",
+    "/home/mtl12345/autoware/src/core/autoware_msgs/autoware_perception_msgs:msg/TrafficSignalElement.msg",
+    "/home/mtl12345/autoware/src/core/autoware_msgs/autoware_perception_msgs:msg/TrafficSignal.msg",
+    "/home/mtl12345/autoware/src/core/autoware_msgs/autoware_perception_msgs:msg/TrafficSignalArray.msg"
+  ]
+}

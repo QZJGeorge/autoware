@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from morai_msgs/msg/RadarDetection.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module morai_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "This message relates only to FMCW radar.  " "\n"
+      "All variables below are relative to the radar's frame of reference." "\n"
+      "This message is not meant to be used alone but as part of a stamped or array message.")
+    struct RadarDetection {
+      @verbatim (language="comment", text=
+        "Object classifications (Additional vendor-specific classifications are permitted starting from 32000 eg. Car)" "\n"
+        "Index of each radar detection point")
+      uint16 detection_id;
+
+      @verbatim (language="comment", text=
+        "x, y, z position of each radar detection point")
+      geometry_msgs::msg::Point position;
+
+      @verbatim (language="comment", text=
+        "azimuth angle of each radar detection point in Degree")
+      float azimuth;
+
+      @verbatim (language="comment", text=
+        "relative velocity of the radar detected target w.r.t radial direction")
+      float rangerate;
+
+      @verbatim (language="comment", text=
+        "amplitude of the reflected signal of the radar detected target(rcs)")
+      float amplitude;
+    };
+  };
+};

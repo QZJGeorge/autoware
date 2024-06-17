@@ -1,0 +1,40 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from control_performance_analysis/msg/Error.msg
+// generated code does not contain a copyright notice
+
+
+module control_performance_analysis {
+  module msg {
+    struct Error {
+      double lateral_error;
+
+      double lateral_error_velocity;
+
+      double lateral_error_acceleration;
+
+      double longitudinal_error;
+
+      double longitudinal_error_velocity;
+
+      double longitudinal_error_acceleration;
+
+      double heading_error;
+
+      double heading_error_velocity;
+
+      double control_effort_energy;
+
+      double error_energy;
+
+      double value_approximation;
+
+      double curvature_estimate;
+
+      double curvature_estimate_pp;
+
+      double vehicle_velocity_error;
+
+      double tracking_curvature_discontinuity_ability;
+    };
+  };
+};

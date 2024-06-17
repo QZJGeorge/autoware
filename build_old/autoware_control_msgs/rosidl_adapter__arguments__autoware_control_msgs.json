@@ -1,0 +1,9 @@
+{
+  "package_name": "autoware_control_msgs",
+  "non_idl_tuples": [
+    "/home/mtl12345/autoware/src/core/autoware_msgs/autoware_control_msgs:msg/Control.msg",
+    "/home/mtl12345/autoware/src/core/autoware_msgs/autoware_control_msgs:msg/ControlHorizon.msg",
+    "/home/mtl12345/autoware/src/core/autoware_msgs/autoware_control_msgs:msg/Lateral.msg",
+    "/home/mtl12345/autoware/src/core/autoware_msgs/autoware_control_msgs:msg/Longitudinal.msg"
+  ]
+}

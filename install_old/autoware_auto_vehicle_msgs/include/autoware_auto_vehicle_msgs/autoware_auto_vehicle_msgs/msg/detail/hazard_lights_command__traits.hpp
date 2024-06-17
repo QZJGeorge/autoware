@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/autoware_auto_vehicle_msgs/rosidl_generator_cpp/autoware_auto_vehicle_msgs/msg/detail/hazard_lights_command__traits.hpp

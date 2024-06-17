@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/behavior_velocity_no_stopping_area_module/ament_cmake_environment_hooks/local_setup.zsh

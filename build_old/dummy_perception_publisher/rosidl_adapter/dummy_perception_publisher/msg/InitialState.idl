@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dummy_perception_publisher/msg/InitialState.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/AccelWithCovariance.idl"
+#include "geometry_msgs/msg/PoseWithCovariance.idl"
+#include "geometry_msgs/msg/TwistWithCovariance.idl"
+
+module dummy_perception_publisher {
+  module msg {
+    struct InitialState {
+      geometry_msgs::msg::PoseWithCovariance pose_covariance;
+
+      geometry_msgs::msg::TwistWithCovariance twist_covariance;
+
+      geometry_msgs::msg::AccelWithCovariance accel_covariance;
+    };
+  };
+};

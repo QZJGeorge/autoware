@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fopenmp -Wall -Wextra -pedantic-errors -Werror -std=c++14 -O3 -g -funroll-loops -Wall -DNDEBUG -DBOOST_DISABLE_ASSERTS -shared -Wl,-soname,libmussp.so -o libmussp.so CMakeFiles/mussp.dir/muSSP/Graph.cpp.o CMakeFiles/mussp.dir/muSSP/Node.cpp.o CMakeFiles/mussp.dir/muSSP/Sink.cpp.o CMakeFiles/mussp.dir/muSSP/mussp.cpp.o 

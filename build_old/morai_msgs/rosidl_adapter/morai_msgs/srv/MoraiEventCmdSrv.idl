@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from morai_msgs/srv/MoraiEventCmdSrv.srv
+// generated code does not contain a copyright notice
+
+#include "morai_msgs/msg/EventInfo.idl"
+
+module morai_msgs {
+  module srv {
+    struct MoraiEventCmdSrv_Request {
+      morai_msgs::msg::EventInfo request;
+    };
+    struct MoraiEventCmdSrv_Response {
+      morai_msgs::msg::EventInfo response;
+    };
+  };
+};

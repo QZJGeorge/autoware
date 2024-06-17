@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from morai_msgs/msg/SyncModeCtrlCmd.msg
+// generated code does not contain a copyright notice
+
+#include "morai_msgs/msg/CtrlCmd.idl"
+
+module morai_msgs {
+  module msg {
+    struct SyncModeCtrlCmd {
+      uint64 frame;
+
+      morai_msgs::msg::CtrlCmd command;
+
+      boolean sensor_capture;
+    };
+  };
+};

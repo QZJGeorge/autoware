@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_rtc_msgs/msg/CooperateCommand.msg
+// generated code does not contain a copyright notice
+
+#include "tier4_rtc_msgs/msg/Command.idl"
+#include "tier4_rtc_msgs/msg/Module.idl"
+#include "unique_identifier_msgs/msg/UUID.idl"
+
+module tier4_rtc_msgs {
+  module msg {
+    struct CooperateCommand {
+      unique_identifier_msgs::msg::UUID uuid;
+
+      tier4_rtc_msgs::msg::Module module;
+
+      tier4_rtc_msgs::msg::Command command;
+    };
+  };
+};

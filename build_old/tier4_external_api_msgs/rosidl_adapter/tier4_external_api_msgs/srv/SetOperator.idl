@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tier4_external_api_msgs/srv/SetOperator.srv
+// generated code does not contain a copyright notice
+
+#include "tier4_external_api_msgs/msg/Operator.idl"
+#include "tier4_external_api_msgs/msg/ResponseStatus.idl"
+
+module tier4_external_api_msgs {
+  module srv {
+    struct SetOperator_Request {
+      tier4_external_api_msgs::msg::Operator mode;
+    };
+    struct SetOperator_Response {
+      tier4_external_api_msgs::msg::ResponseStatus status;
+    };
+  };
+};

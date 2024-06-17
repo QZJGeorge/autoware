@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/behavior_velocity_planner/ament_cmake_environment_hooks/pythonpath.sh

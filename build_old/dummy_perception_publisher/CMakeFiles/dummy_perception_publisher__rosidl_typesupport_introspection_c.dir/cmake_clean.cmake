@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/dummy_perception_publisher__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dummy_perception_publisher/msg/detail/initial_state__type_support.c.o"
+  "CMakeFiles/dummy_perception_publisher__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dummy_perception_publisher/msg/detail/initial_state__type_support.c.o.d"
+  "CMakeFiles/dummy_perception_publisher__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dummy_perception_publisher/msg/detail/object__type_support.c.o"
+  "CMakeFiles/dummy_perception_publisher__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dummy_perception_publisher/msg/detail/object__type_support.c.o.d"
+  "libdummy_perception_publisher__rosidl_typesupport_introspection_c.pdb"
+  "libdummy_perception_publisher__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/dummy_perception_publisher/msg/detail/initial_state__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/dummy_perception_publisher/msg/detail/initial_state__type_support.c"
+  "rosidl_typesupport_introspection_c/dummy_perception_publisher/msg/detail/object__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/dummy_perception_publisher/msg/detail/object__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/dummy_perception_publisher__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

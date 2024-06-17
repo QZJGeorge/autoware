@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/tier4_rtc_msgs/rosidl_generator_py/tier4_rtc_msgs/srv/_auto_mode_with_module_s.c

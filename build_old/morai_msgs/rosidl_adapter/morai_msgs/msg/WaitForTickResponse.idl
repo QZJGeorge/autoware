@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from morai_msgs/msg/WaitForTickResponse.msg
+// generated code does not contain a copyright notice
+
+#include "morai_msgs/msg/EgoVehicleStatus.idl"
+
+module morai_msgs {
+  module msg {
+    struct WaitForTickResponse {
+      boolean tick_status;
+
+      boolean pause_status;
+
+      uint64 frame;
+
+      morai_msgs::msg::EgoVehicleStatus vehicle_status;
+
+      string time;
+    };
+  };
+};

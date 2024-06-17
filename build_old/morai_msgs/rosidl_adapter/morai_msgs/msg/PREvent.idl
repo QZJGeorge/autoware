@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from morai_msgs/msg/PREvent.msg
+// generated code does not contain a copyright notice
+
+
+module morai_msgs {
+  module msg {
+    struct PREvent {
+      boolean mount_vehicle;
+    };
+  };
+};

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/eagleye_coordinate/libeagleye_coordinate.so" "TARGETS" "eagleye_coordinate" "ARCHIVE_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

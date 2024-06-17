@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autoware_sensing_msgs/msg/GnssInsOrientationStamped.msg
+// generated code does not contain a copyright notice
+
+#include "autoware_sensing_msgs/msg/GnssInsOrientation.idl"
+#include "std_msgs/msg/Header.idl"
+
+module autoware_sensing_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "GNSS(Global Navigation Satellite System) INS(Inertial Navigation System) orientation message" "\n"
+      "" "\n"
+      "Represents a 3D orientation in a global coordinate system with coordinate frame and timestamp.")
+    struct GnssInsOrientationStamped {
+      @verbatim (language="comment", text=
+        "Timestamp this reading was received by the INS sensor" "\n"
+        "Frame is expected to be of the INS device")
+      std_msgs::msg::Header header;
+
+      autoware_sensing_msgs::msg::GnssInsOrientation orientation;
+    };
+  };
+};

@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_system_msgs/msg/MrmBehaviorStatus.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module tier4_system_msgs {
+  module msg {
+    module MrmBehaviorStatus_Constants {
+      @verbatim (language="comment", text=
+        "For state")
+      const uint8 NOT_AVAILABLE = 0;
+      const uint8 AVAILABLE = 1;
+      const uint8 OPERATING = 2;
+    };
+    struct MrmBehaviorStatus {
+      builtin_interfaces::msg::Time stamp;
+
+      uint8 state;
+    };
+  };
+};

@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_vehicle_msgs/msg/TurnSignal.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module tier4_vehicle_msgs {
+  module msg {
+    module TurnSignal_Constants {
+      const uint8 NONE = 0;
+      const uint8 LEFT = 1;
+      const uint8 RIGHT = 2;
+      const uint8 HAZARD = 3;
+    };
+    struct TurnSignal {
+      std_msgs::msg::Header header;
+
+      int32 data;
+    };
+  };
+};

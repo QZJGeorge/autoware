@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/src/universe/autoware.universe/system/system_diagnostic_monitor/script/component_state_diagnostics.py

@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/control_validator/rosidl_generator_py/control_validator/msg/_control_validator_status.py

@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/src/universe/autoware.universe/planning/static_centerline_optimizer/include/static_centerline_optimizer/type_alias.hpp

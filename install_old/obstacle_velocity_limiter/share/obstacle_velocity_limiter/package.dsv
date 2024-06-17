@@ -1,0 +1,11 @@
+source;share/obstacle_velocity_limiter/hook/cmake_prefix_path.ps1
+source;share/obstacle_velocity_limiter/hook/cmake_prefix_path.dsv
+source;share/obstacle_velocity_limiter/hook/cmake_prefix_path.sh
+source;share/obstacle_velocity_limiter/hook/ld_library_path_lib.ps1
+source;share/obstacle_velocity_limiter/hook/ld_library_path_lib.dsv
+source;share/obstacle_velocity_limiter/hook/ld_library_path_lib.sh
+source;share/obstacle_velocity_limiter/local_setup.bash
+source;share/obstacle_velocity_limiter/local_setup.dsv
+source;share/obstacle_velocity_limiter/local_setup.ps1
+source;share/obstacle_velocity_limiter/local_setup.sh
+source;share/obstacle_velocity_limiter/local_setup.zsh

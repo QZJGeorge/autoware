@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/morai_msgs/rosidl_cmake/srv/MoraiMapSpecSrv_Response.msg

@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from autoware_map_msgs/srv/GetPartialPointCloudMap.srv
+// generated code does not contain a copyright notice
+
+#include "autoware_map_msgs/msg/AreaInfo.idl"
+#include "autoware_map_msgs/msg/PointCloudMapCellWithID.idl"
+#include "std_msgs/msg/Header.idl"
+
+module autoware_map_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Area query for map loading" "\n"
+      "(PCD grids that overlaps with the area is going to be loaded)")
+    struct GetPartialPointCloudMap_Request {
+      autoware_map_msgs::msg::AreaInfo area;
+    };
+    @verbatim (language="comment", text=
+      "Header")
+    struct GetPartialPointCloudMap_Response {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Newly loaded PCD maps with ID")
+      sequence<autoware_map_msgs::msg::PointCloudMapCellWithID> new_pointcloud_with_ids;
+    };
+  };
+};

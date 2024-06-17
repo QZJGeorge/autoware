@@ -1,0 +1,11 @@
+// generated from rosidl_generator_cpp/resource/idl.hpp.em
+// generated code does not contain a copyright notice
+
+#ifndef TIER4_EXTERNAL_API_MSGS__SRV__GET_ACCEL_BRAKE_MAP_CALIBRATION_DATA_HPP_
+#define TIER4_EXTERNAL_API_MSGS__SRV__GET_ACCEL_BRAKE_MAP_CALIBRATION_DATA_HPP_
+
+#include "tier4_external_api_msgs/srv/detail/get_accel_brake_map_calibration_data__struct.hpp"
+#include "tier4_external_api_msgs/srv/detail/get_accel_brake_map_calibration_data__builder.hpp"
+#include "tier4_external_api_msgs/srv/detail/get_accel_brake_map_calibration_data__traits.hpp"
+
+#endif  // TIER4_EXTERNAL_API_MSGS__SRV__GET_ACCEL_BRAKE_MAP_CALIBRATION_DATA_HPP_

@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from morai_msgs/msg/VehicleSpec.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Vector3.idl"
+
+module morai_msgs {
+  module msg {
+    struct VehicleSpec {
+      geometry_msgs::msg::Vector3 size;
+
+      float wheel_base;
+
+      double max_steering;
+
+      float overhang;
+
+      float rear_overhang;
+    };
+  };
+};

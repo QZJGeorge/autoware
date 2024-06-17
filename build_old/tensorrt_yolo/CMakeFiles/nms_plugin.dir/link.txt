@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libnms_plugin.so -o libnms_plugin.so CMakeFiles/nms_plugin.dir/lib/src/plugins/nms_plugin.cpp.o CMakeFiles/nms_plugin.dir/lib/src/plugins/nms_plugin_generated_nms.cu.o  /usr/local/cuda/lib64/libcudart_static.a -ldl /usr/lib/x86_64-linux-gnu/librt.a 

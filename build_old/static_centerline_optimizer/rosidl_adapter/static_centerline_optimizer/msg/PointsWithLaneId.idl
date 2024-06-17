@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from static_centerline_optimizer/msg/PointsWithLaneId.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module static_centerline_optimizer {
+  module msg {
+    struct PointsWithLaneId {
+      uint32 lane_id;
+
+      sequence<geometry_msgs::msg::Point> points;
+    };
+  };
+};

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from morai_msgs/srv/MoraiVehicleSpecSrv.srv
+// generated code does not contain a copyright notice
+
+#include "morai_msgs/msg/VehicleSpec.idl"
+#include "morai_msgs/msg/VehicleSpecIndex.idl"
+
+module morai_msgs {
+  module srv {
+    struct MoraiVehicleSpecSrv_Request {
+      morai_msgs::msg::VehicleSpecIndex request;
+    };
+    struct MoraiVehicleSpecSrv_Response {
+      morai_msgs::msg::VehicleSpec response;
+    };
+  };
+};

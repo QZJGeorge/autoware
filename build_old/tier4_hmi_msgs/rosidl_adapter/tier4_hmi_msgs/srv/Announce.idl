@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tier4_hmi_msgs/srv/Announce.srv
+// generated code does not contain a copyright notice
+
+#include "tier4_external_api_msgs/msg/ResponseStatus.idl"
+
+module tier4_hmi_msgs {
+  module srv {
+    module Announce_Request_Constants {
+      const uint32 ENGAGE = 1;
+      const uint32 RESTART_ENGAGE = 2;
+    };
+    struct Announce_Request {
+      uint32 kind;
+    };
+    struct Announce_Response {
+      tier4_external_api_msgs::msg::ResponseStatus status;
+    };
+  };
+};

@@ -1,0 +1,2 @@
+traffic_light::TrafficLightClassifierNodelet;lib/libtraffic_light_classifier_nodelet.so
+traffic_light::SingleImageDebugInferenceNode;lib/libsingle_image_debug_inference_node.so

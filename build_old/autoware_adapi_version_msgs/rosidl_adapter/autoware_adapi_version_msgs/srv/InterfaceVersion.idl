@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from autoware_adapi_version_msgs/srv/InterfaceVersion.srv
+// generated code does not contain a copyright notice
+
+
+module autoware_adapi_version_msgs {
+  module srv {
+    struct InterfaceVersion_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct InterfaceVersion_Response {
+      uint16 major;
+
+      uint16 minor;
+
+      uint16 patch;
+    };
+  };
+};

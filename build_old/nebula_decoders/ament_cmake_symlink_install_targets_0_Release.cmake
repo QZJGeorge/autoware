@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/nebula_decoders/libnebula_decoders_hesai.so" "/home/mtl12345/autoware/build/nebula_decoders/libnebula_decoders_velodyne.so" "TARGETS" "nebula_decoders_hesai" "nebula_decoders_velodyne" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

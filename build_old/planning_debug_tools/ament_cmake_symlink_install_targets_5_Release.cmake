@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/planning_debug_tools/libtrajectory_analyzer_node.so" "/home/mtl12345/autoware/build/planning_debug_tools/libstop_reason_visualizer_node.so" "TARGETS" "trajectory_analyzer_node" "stop_reason_visualizer_node" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

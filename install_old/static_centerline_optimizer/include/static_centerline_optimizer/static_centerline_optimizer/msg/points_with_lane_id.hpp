@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/static_centerline_optimizer/rosidl_generator_cpp/static_centerline_optimizer/msg/points_with_lane_id.hpp

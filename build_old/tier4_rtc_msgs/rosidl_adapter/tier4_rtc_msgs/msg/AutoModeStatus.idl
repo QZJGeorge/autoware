@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_rtc_msgs/msg/AutoModeStatus.msg
+// generated code does not contain a copyright notice
+
+#include "tier4_rtc_msgs/msg/Module.idl"
+
+module tier4_rtc_msgs {
+  module msg {
+    struct AutoModeStatus {
+      tier4_rtc_msgs::msg::Module module;
+
+      boolean is_auto_mode;
+    };
+  };
+};

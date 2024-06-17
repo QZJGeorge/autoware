@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from morai_msgs/msg/ERP42Info.msg
+// generated code does not contain a copyright notice
+
+
+module morai_msgs {
+  module msg {
+    struct ERP42Info {
+      int32 longl_cmd_type;
+
+      float position_x;
+
+      float position_y;
+
+      float position_z;
+
+      float roll;
+
+      float pitch;
+
+      float yaw;
+
+      float velocity;
+
+      float steering;
+    };
+  };
+};

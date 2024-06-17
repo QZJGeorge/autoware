@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_system_msgs/msg/AutowareState.msg
+// generated code does not contain a copyright notice
+
+
+module tier4_system_msgs {
+  module msg {
+    module AutowareState_Constants {
+      const string INITIALIZING_VEHICLE = "InitializingVehicle";
+      const string WAITING_FOR_ROUTE = "WaitingForRoute";
+      const string PLANNING = "Planning";
+      const string WAITING_FOR_ENGAGE = "WaitingForEngage";
+      const string DRIVING = "Driving";
+      const string ARRIVAL_GOAL = "ArrivedGoal";
+      const string EMERGENCY = "Emergency";
+      const string FINALIZING = "Finalizing";
+    };
+    struct AutowareState {
+      string state;
+
+      string msg;
+    };
+  };
+};

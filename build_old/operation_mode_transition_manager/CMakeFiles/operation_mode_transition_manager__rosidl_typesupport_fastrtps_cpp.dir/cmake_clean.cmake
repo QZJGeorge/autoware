@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/operation_mode_transition_manager__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/operation_mode_transition_manager/msg/detail/dds_fastrtps/operation_mode_transition_manager_debug__type_support.cpp.o"
+  "CMakeFiles/operation_mode_transition_manager__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/operation_mode_transition_manager/msg/detail/dds_fastrtps/operation_mode_transition_manager_debug__type_support.cpp.o.d"
+  "liboperation_mode_transition_manager__rosidl_typesupport_fastrtps_cpp.pdb"
+  "liboperation_mode_transition_manager__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/operation_mode_transition_manager/msg/detail/dds_fastrtps/operation_mode_transition_manager_debug__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/operation_mode_transition_manager/msg/detail/operation_mode_transition_manager_debug__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/operation_mode_transition_manager__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

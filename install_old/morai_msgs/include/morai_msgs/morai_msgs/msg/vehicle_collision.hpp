@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/morai_msgs/rosidl_generator_cpp/morai_msgs/msg/vehicle_collision.hpp

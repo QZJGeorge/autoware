@@ -1,0 +1,9 @@
+source;share/ad_api_visualizers/hook/pythonpath.ps1
+source;share/ad_api_visualizers/hook/pythonpath.dsv
+source;share/ad_api_visualizers/hook/pythonpath.sh
+source;share/ad_api_visualizers/hook/ament_prefix_path.ps1
+source;share/ad_api_visualizers/hook/ament_prefix_path.dsv
+source;share/ad_api_visualizers/hook/ament_prefix_path.sh
+source;../../build/ad_api_visualizers/share/ad_api_visualizers/hook/pythonpath_develop.ps1
+source;../../build/ad_api_visualizers/share/ad_api_visualizers/hook/pythonpath_develop.dsv
+source;../../build/ad_api_visualizers/share/ad_api_visualizers/hook/pythonpath_develop.sh

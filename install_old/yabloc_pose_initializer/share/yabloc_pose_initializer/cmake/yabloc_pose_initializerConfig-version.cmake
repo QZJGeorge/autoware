@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/yabloc_pose_initializer/ament_cmake_core/yabloc_pose_initializerConfig-version.cmake

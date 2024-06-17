@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autoware_map_msgs/msg/PointCloudMapCellMetaDataWithID.msg
+// generated code does not contain a copyright notice
+
+#include "autoware_map_msgs/msg/PointCloudMapCellMetaData.idl"
+
+module autoware_map_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Pointcloud metadata with ID")
+    struct PointCloudMapCellMetaDataWithID {
+      string cell_id;
+
+      autoware_map_msgs::msg::PointCloudMapCellMetaData metadata;
+    };
+  };
+};

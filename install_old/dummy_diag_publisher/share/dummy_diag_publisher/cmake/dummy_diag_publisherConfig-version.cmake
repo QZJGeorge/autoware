@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/dummy_diag_publisher/ament_cmake_core/dummy_diag_publisherConfig-version.cmake

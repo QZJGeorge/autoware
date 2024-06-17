@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from static_centerline_optimizer/srv/PlanRoute.srv
+// generated code does not contain a copyright notice
+
+
+module static_centerline_optimizer {
+  module srv {
+    struct PlanRoute_Request {
+      uint32 start_lane_id;
+
+      uint32 end_lane_id;
+    };
+    struct PlanRoute_Response {
+      sequence<uint32> lane_ids;
+
+      string message;
+    };
+  };
+};

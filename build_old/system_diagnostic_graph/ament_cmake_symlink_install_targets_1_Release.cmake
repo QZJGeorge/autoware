@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/system_diagnostic_graph/aggregator" "/home/mtl12345/autoware/build/system_diagnostic_graph/converter" "TARGETS" "aggregator" "converter" "DESTINATION" "lib/system_diagnostic_graph")

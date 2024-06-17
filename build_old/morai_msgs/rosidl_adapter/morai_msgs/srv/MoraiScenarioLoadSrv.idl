@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from morai_msgs/srv/MoraiScenarioLoadSrv.srv
+// generated code does not contain a copyright notice
+
+#include "morai_msgs/msg/MoraiSrvResponse.idl"
+#include "morai_msgs/msg/ScenarioLoad.idl"
+
+module morai_msgs {
+  module srv {
+    struct MoraiScenarioLoadSrv_Request {
+      morai_msgs::msg::ScenarioLoad request;
+    };
+    struct MoraiScenarioLoadSrv_Response {
+      morai_msgs::msg::MoraiSrvResponse response;
+    };
+  };
+};

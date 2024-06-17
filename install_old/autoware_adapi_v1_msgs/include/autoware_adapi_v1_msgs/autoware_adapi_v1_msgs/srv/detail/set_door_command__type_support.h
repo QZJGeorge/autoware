@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/autoware_adapi_v1_msgs/rosidl_generator_c/autoware_adapi_v1_msgs/srv/detail/set_door_command__type_support.h

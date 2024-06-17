@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/static_centerline_optimizer/rosidl_generator_py/static_centerline_optimizer/_static_centerline_optimizer_s.ep.rosidl_typesupport_fastrtps_c.c

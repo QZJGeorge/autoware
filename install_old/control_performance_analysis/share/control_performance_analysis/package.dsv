@@ -1,0 +1,11 @@
+source;share/control_performance_analysis/hook/cmake_prefix_path.ps1
+source;share/control_performance_analysis/hook/cmake_prefix_path.dsv
+source;share/control_performance_analysis/hook/cmake_prefix_path.sh
+source;share/control_performance_analysis/hook/ld_library_path_lib.ps1
+source;share/control_performance_analysis/hook/ld_library_path_lib.dsv
+source;share/control_performance_analysis/hook/ld_library_path_lib.sh
+source;share/control_performance_analysis/local_setup.bash
+source;share/control_performance_analysis/local_setup.dsv
+source;share/control_performance_analysis/local_setup.ps1
+source;share/control_performance_analysis/local_setup.sh
+source;share/control_performance_analysis/local_setup.zsh

@@ -1,0 +1,17 @@
+{
+  "package_name": "autoware_common_msgs",
+  "output_dir": "/home/mtl12345/autoware/build/autoware_common_msgs/rosidl_typesupport_cpp/autoware_common_msgs",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_cpp/resource",
+  "idl_tuples": [
+    "/home/mtl12345/autoware/build/autoware_common_msgs/rosidl_adapter/autoware_common_msgs:msg/ResponseStatus.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/action__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
+    "/home/mtl12345/autoware/build/autoware_common_msgs/rosidl_adapter/autoware_common_msgs/msg/ResponseStatus.idl"
+  ]
+}

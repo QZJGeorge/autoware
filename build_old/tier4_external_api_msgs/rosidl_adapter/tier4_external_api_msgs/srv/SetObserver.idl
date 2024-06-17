@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tier4_external_api_msgs/srv/SetObserver.srv
+// generated code does not contain a copyright notice
+
+#include "tier4_external_api_msgs/msg/Observer.idl"
+#include "tier4_external_api_msgs/msg/ResponseStatus.idl"
+
+module tier4_external_api_msgs {
+  module srv {
+    struct SetObserver_Request {
+      tier4_external_api_msgs::msg::Observer mode;
+    };
+    struct SetObserver_Response {
+      tier4_external_api_msgs::msg::ResponseStatus status;
+    };
+  };
+};

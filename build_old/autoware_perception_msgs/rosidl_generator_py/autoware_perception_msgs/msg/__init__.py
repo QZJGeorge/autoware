@@ -1,0 +1,9 @@
+from autoware_perception_msgs.msg._object_classification import ObjectClassification  # noqa: F401
+from autoware_perception_msgs.msg._predicted_object import PredictedObject  # noqa: F401
+from autoware_perception_msgs.msg._predicted_object_kinematics import PredictedObjectKinematics  # noqa: F401
+from autoware_perception_msgs.msg._predicted_objects import PredictedObjects  # noqa: F401
+from autoware_perception_msgs.msg._predicted_path import PredictedPath  # noqa: F401
+from autoware_perception_msgs.msg._shape import Shape  # noqa: F401
+from autoware_perception_msgs.msg._traffic_signal import TrafficSignal  # noqa: F401
+from autoware_perception_msgs.msg._traffic_signal_array import TrafficSignalArray  # noqa: F401
+from autoware_perception_msgs.msg._traffic_signal_element import TrafficSignalElement  # noqa: F401

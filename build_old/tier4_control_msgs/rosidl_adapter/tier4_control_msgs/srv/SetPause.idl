@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tier4_control_msgs/srv/SetPause.srv
+// generated code does not contain a copyright notice
+
+#include "autoware_common_msgs/msg/ResponseStatus.idl"
+
+module tier4_control_msgs {
+  module srv {
+    struct SetPause_Request {
+      boolean pause;
+    };
+    struct SetPause_Response {
+      autoware_common_msgs::msg::ResponseStatus status;
+    };
+  };
+};

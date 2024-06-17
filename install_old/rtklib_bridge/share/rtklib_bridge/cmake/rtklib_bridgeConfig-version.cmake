@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/rtklib_bridge/ament_cmake_core/rtklib_bridgeConfig-version.cmake

@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tier4_rtc_msgs/srv/CooperateCommands.srv
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "tier4_rtc_msgs/msg/CooperateCommand.idl"
+#include "tier4_rtc_msgs/msg/CooperateResponse.idl"
+
+module tier4_rtc_msgs {
+  module srv {
+    struct CooperateCommands_Request {
+      builtin_interfaces::msg::Time stamp;
+
+      sequence<tier4_rtc_msgs::msg::CooperateCommand> commands;
+    };
+    struct CooperateCommands_Response {
+      sequence<tier4_rtc_msgs::msg::CooperateResponse> responses;
+    };
+  };
+};

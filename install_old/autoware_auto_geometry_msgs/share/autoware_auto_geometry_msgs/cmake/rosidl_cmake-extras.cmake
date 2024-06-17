@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/autoware_auto_geometry_msgs/rosidl_cmake/rosidl_cmake-extras.cmake

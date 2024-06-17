@@ -1,0 +1,8 @@
+source;share/eagleye_gnss_converter/hook/cmake_prefix_path.ps1
+source;share/eagleye_gnss_converter/hook/cmake_prefix_path.dsv
+source;share/eagleye_gnss_converter/hook/cmake_prefix_path.sh
+source;share/eagleye_gnss_converter/local_setup.bash
+source;share/eagleye_gnss_converter/local_setup.dsv
+source;share/eagleye_gnss_converter/local_setup.ps1
+source;share/eagleye_gnss_converter/local_setup.sh
+source;share/eagleye_gnss_converter/local_setup.zsh

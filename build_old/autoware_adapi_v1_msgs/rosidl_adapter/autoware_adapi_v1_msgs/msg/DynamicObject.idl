@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autoware_adapi_v1_msgs/perception/msg/DynamicObject.msg
+// generated code does not contain a copyright notice
+
+#include "autoware_adapi_v1_msgs/msg/DynamicObjectKinematics.idl"
+#include "autoware_adapi_v1_msgs/msg/ObjectClassification.idl"
+#include "shape_msgs/msg/SolidPrimitive.idl"
+#include "unique_identifier_msgs/msg/UUID.idl"
+
+module autoware_adapi_v1_msgs {
+  module msg {
+    struct DynamicObject {
+      unique_identifier_msgs::msg::UUID id;
+
+      double existence_probability;
+
+      sequence<autoware_adapi_v1_msgs::msg::ObjectClassification> classification;
+
+      autoware_adapi_v1_msgs::msg::DynamicObjectKinematics kinematics;
+
+      shape_msgs::msg::SolidPrimitive shape;
+    };
+  };
+};

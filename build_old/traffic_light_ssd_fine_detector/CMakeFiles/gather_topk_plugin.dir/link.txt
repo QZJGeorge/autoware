@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libgather_topk_plugin.so -o libgather_topk_plugin.so CMakeFiles/gather_topk_plugin.dir/lib/src/plugins/gather_topk.cpp.o CMakeFiles/gather_topk_plugin.dir/lib/src/plugins/gather_topk_plugin_generated_gather_topk_kernel.cu.o  /usr/local/cuda/lib64/libcudart_static.a -ldl /usr/lib/x86_64-linux-gnu/librt.a 

@@ -1,0 +1,8 @@
+source;share/sample_sensor_kit_description/hook/cmake_prefix_path.ps1
+source;share/sample_sensor_kit_description/hook/cmake_prefix_path.dsv
+source;share/sample_sensor_kit_description/hook/cmake_prefix_path.sh
+source;share/sample_sensor_kit_description/local_setup.bash
+source;share/sample_sensor_kit_description/local_setup.dsv
+source;share/sample_sensor_kit_description/local_setup.ps1
+source;share/sample_sensor_kit_description/local_setup.sh
+source;share/sample_sensor_kit_description/local_setup.zsh

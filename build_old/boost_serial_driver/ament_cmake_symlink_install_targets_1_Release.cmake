@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/boost_serial_driver/libboost_serial_driver.so" "/home/mtl12345/autoware/build/boost_serial_driver/libboost_serial_driver_nodes.so" "TARGETS" "boost_serial_driver" "boost_serial_driver_nodes" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

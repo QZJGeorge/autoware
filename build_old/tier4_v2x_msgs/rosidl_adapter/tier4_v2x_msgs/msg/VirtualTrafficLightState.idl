@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tier4_v2x_msgs/msg/VirtualTrafficLightState.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module tier4_v2x_msgs {
+  module msg {
+    struct VirtualTrafficLightState {
+      builtin_interfaces::msg::Time stamp;
+
+      string type;
+
+      string id;
+
+      boolean approval;
+
+      @verbatim (language="comment", text=
+        "if finalization isn't required, always set to true")
+      boolean is_finalized;
+    };
+  };
+};

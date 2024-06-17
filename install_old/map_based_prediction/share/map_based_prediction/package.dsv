@@ -1,0 +1,11 @@
+source;share/map_based_prediction/hook/cmake_prefix_path.ps1
+source;share/map_based_prediction/hook/cmake_prefix_path.dsv
+source;share/map_based_prediction/hook/cmake_prefix_path.sh
+source;share/map_based_prediction/hook/ld_library_path_lib.ps1
+source;share/map_based_prediction/hook/ld_library_path_lib.dsv
+source;share/map_based_prediction/hook/ld_library_path_lib.sh
+source;share/map_based_prediction/local_setup.bash
+source;share/map_based_prediction/local_setup.dsv
+source;share/map_based_prediction/local_setup.ps1
+source;share/map_based_prediction/local_setup.sh
+source;share/map_based_prediction/local_setup.zsh

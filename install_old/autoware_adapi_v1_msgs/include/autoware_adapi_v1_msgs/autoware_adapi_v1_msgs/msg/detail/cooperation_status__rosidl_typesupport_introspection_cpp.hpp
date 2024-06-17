@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/autoware_adapi_v1_msgs/rosidl_typesupport_introspection_cpp/autoware_adapi_v1_msgs/msg/detail/cooperation_status__rosidl_typesupport_introspection_cpp.hpp

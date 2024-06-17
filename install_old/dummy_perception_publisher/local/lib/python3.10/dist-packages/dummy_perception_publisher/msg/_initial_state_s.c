@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/dummy_perception_publisher/rosidl_generator_py/dummy_perception_publisher/msg/_initial_state_s.c

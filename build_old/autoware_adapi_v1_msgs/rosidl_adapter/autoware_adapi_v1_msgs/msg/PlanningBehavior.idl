@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autoware_adapi_v1_msgs/planning/msg/PlanningBehavior.msg
+// generated code does not contain a copyright notice
+
+
+module autoware_adapi_v1_msgs {
+  module msg {
+    module PlanningBehavior_Constants {
+      const string AVOIDANCE = "avoidance";
+      const string CROSSWALK = "crosswalk";
+      const string EMERGENCY_OPERATION = "emergency-operation";
+      const string INTERSECTION = "intersection";
+      const string LANE_CHANGE = "lane-change";
+      const string MERGE = "merge";
+      const string NO_DRIVABLE_LANE = "no-drivable-lane";
+      const string NO_STOPPING_AREA = "no-stopping-area";
+      const string REAR_CHECK = "rear-check";
+      const string ROUTE_OBSTACLE = "route-obstacle";
+      const string SIDEWALK = "sidewalk";
+      const string STOP_SIGN = "stop-sign";
+      const string SURROUNDING_OBSTACLE = "surrounding-obstacle";
+      const string TRAFFIC_SIGNAL = "traffic-signal";
+      const string USER_DEFINED_DETECTION_AREA = "user-defined-attention-area";
+    };
+    @verbatim (language="comment", text=
+      "These constants are used in the behavior field of the SteeringFactor/VelocityFactor.")
+    struct PlanningBehavior {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

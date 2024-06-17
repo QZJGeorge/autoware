@@ -1,0 +1,11 @@
+source;share/polar_grid/hook/cmake_prefix_path.ps1
+source;share/polar_grid/hook/cmake_prefix_path.dsv
+source;share/polar_grid/hook/cmake_prefix_path.sh
+source;share/polar_grid/hook/ld_library_path_lib.ps1
+source;share/polar_grid/hook/ld_library_path_lib.dsv
+source;share/polar_grid/hook/ld_library_path_lib.sh
+source;share/polar_grid/local_setup.bash
+source;share/polar_grid/local_setup.dsv
+source;share/polar_grid/local_setup.ps1
+source;share/polar_grid/local_setup.sh
+source;share/polar_grid/local_setup.zsh

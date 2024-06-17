@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/autoware_external_api_msgs/rosidl_cmake/srv/GetVersion_Response.msg

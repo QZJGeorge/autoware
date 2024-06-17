@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from morai_msgs/msg/MoraiSimConfig.msg
+// generated code does not contain a copyright notice
+
+
+module morai_msgs {
+  module msg {
+    struct MoraiSimConfig {
+      string sensor_config_file_name;
+
+      string publisher_list;
+
+      string subscriber_list;
+
+      string service_list;
+
+      string camera_list;
+
+      string gps_list;
+
+      string imu_list;
+
+      string lidar_list;
+
+      string radar_list;
+    };
+  };
+};

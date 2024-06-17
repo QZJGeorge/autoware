@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from morai_msgs/msg/MoraiSimProcHandle.msg
+// generated code does not contain a copyright notice
+
+
+module morai_msgs {
+  module msg {
+    struct MoraiSimProcHandle {
+      uint8 sim_process_status;
+
+      int16 replay_option;
+
+      string rosbag_file_name;
+
+      int16 replay_target_option;
+
+      int32 replay_speed;
+
+      int32 start_time;
+    };
+  };
+};

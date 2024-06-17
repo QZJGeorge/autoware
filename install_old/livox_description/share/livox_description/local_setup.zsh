@@ -1,0 +1,1 @@
+/home/mtl12345/autoware/build/livox_description/ament_cmake_environment_hooks/local_setup.zsh

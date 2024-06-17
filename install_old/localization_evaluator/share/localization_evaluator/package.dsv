@@ -1,0 +1,11 @@
+source;share/localization_evaluator/hook/cmake_prefix_path.ps1
+source;share/localization_evaluator/hook/cmake_prefix_path.dsv
+source;share/localization_evaluator/hook/cmake_prefix_path.sh
+source;share/localization_evaluator/hook/ld_library_path_lib.ps1
+source;share/localization_evaluator/hook/ld_library_path_lib.dsv
+source;share/localization_evaluator/hook/ld_library_path_lib.sh
+source;share/localization_evaluator/local_setup.bash
+source;share/localization_evaluator/local_setup.dsv
+source;share/localization_evaluator/local_setup.ps1
+source;share/localization_evaluator/local_setup.sh
+source;share/localization_evaluator/local_setup.zsh
