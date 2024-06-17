@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_rtc_msgs/rosidl_typesupport_fastrtps_cpp/tier4_rtc_msgs/srv/detail/cooperate_commands__rosidl_typesupport_fastrtps_cpp.hpp

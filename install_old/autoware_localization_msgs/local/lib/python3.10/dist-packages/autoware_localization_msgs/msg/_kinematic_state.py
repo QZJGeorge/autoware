@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_localization_msgs/rosidl_generator_py/autoware_localization_msgs/msg/_kinematic_state.py

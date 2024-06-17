@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libgrid_priors_plugin.so -o libgrid_priors_plugin.so CMakeFiles/grid_priors_plugin.dir/lib/src/plugins/grid_priors.cpp.o CMakeFiles/grid_priors_plugin.dir/lib/src/plugins/grid_priors_plugin_generated_grid_priors_kernel.cu.o  /usr/local/cuda/lib64/libcudart_static.a -ldl /usr/lib/x86_64-linux-gnu/librt.a 

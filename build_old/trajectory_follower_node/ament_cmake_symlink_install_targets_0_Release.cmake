@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/trajectory_follower_node/controller_node_exe" "TARGETS" "controller_node_exe" "DESTINATION" "lib/trajectory_follower_node")

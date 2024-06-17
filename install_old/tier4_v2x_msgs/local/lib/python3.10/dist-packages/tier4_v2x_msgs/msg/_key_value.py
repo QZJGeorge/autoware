@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_v2x_msgs/rosidl_generator_py/tier4_v2x_msgs/msg/_key_value.py

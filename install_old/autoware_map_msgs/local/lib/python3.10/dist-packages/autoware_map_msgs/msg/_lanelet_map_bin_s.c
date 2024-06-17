@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_map_msgs/rosidl_generator_py/autoware_map_msgs/msg/_lanelet_map_bin_s.c

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_localization_msgs/rosidl_cmake/rosidl_cmake-extras.cmake

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/planning/obstacle_cruise_planner/include/obstacle_cruise_planner/pid_based_planner/pid_controller.hpp

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/traffic_light_recognition_marker_publisher/ament_cmake_environment_hooks/local_setup.sh

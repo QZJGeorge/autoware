@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/mcity_abc_realcar/03_lane_departure_same_realcar" "TARGETS" "03_lane_departure_same_realcar" "DESTINATION" "lib/mcity_abc_realcar")

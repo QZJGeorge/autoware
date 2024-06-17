@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/image_diagnostics/ament_cmake_environment_hooks/local_setup.bash

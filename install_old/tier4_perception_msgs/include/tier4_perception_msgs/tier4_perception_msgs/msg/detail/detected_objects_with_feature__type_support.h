@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_perception_msgs/rosidl_generator_c/tier4_perception_msgs/msg/detail/detected_objects_with_feature__type_support.h

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_control_msgs/rosidl_generator_c/tier4_control_msgs/msg/detail/gate_mode__struct.h

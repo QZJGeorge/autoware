@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/planning_validator/rosidl_generator_c/planning_validator/msg/detail/planning_validator_status__struct.h

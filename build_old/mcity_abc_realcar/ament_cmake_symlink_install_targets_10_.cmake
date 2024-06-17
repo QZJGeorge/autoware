@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/mcity_abc_realcar/11_roundabout_outside_realcar" "TARGETS" "11_roundabout_outside_realcar" "DESTINATION" "lib/mcity_abc_realcar")

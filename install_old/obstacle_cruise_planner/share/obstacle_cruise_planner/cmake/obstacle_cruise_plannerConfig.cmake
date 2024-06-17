@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/obstacle_cruise_planner/ament_cmake_core/obstacle_cruise_plannerConfig.cmake

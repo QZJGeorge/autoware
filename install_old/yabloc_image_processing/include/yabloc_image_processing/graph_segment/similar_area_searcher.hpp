@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/localization/yabloc/yabloc_image_processing/include/yabloc_image_processing/graph_segment/similar_area_searcher.hpp

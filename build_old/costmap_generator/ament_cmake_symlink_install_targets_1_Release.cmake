@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/costmap_generator/libcostmap_generator_lib.so" "/home/mtl12345/autoware/build/costmap_generator/libcostmap_generator_node.so" "TARGETS" "costmap_generator_lib" "costmap_generator_node" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

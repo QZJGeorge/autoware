@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/external/rtklib_ros_bridge/rtklib_bridge/include/hgeoid.hpp

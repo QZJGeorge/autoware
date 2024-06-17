@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_map_msgs/rosidl_generator_py/autoware_map_msgs/srv/_get_selected_point_cloud_map_s.c

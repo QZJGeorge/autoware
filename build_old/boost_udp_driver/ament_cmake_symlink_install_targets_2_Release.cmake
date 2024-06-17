@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/boost_udp_driver/libboost_udp_driver.so" "/home/mtl12345/autoware/build/boost_udp_driver/libboost_udp_driver_nodes.so" "TARGETS" "boost_udp_driver" "boost_udp_driver_nodes" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/localization_evaluator/localization_evaluator" "TARGETS" "localization_evaluator" "DESTINATION" "lib/localization_evaluator")

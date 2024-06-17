@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_map_msgs/rosidl_generator_py/tier4_map_msgs/msg/_map_projector_info.py

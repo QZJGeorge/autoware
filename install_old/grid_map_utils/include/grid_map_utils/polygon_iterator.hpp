@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/common/grid_map_utils/include/grid_map_utils/polygon_iterator.hpp

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/traffic_light_ssd_fine_detector/traffic_light_ssd_fine_detector_node" "TARGETS" "traffic_light_ssd_fine_detector_node" "DESTINATION" "lib/traffic_light_ssd_fine_detector")

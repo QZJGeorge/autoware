@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/detected_object_validation/object_position_filter_node" "TARGETS" "object_position_filter_node" "DESTINATION" "lib/detected_object_validation")

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_msgs/msg/Distance.msg

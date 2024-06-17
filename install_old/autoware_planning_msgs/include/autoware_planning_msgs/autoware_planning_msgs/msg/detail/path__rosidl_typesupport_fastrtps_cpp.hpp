@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_planning_msgs/rosidl_typesupport_fastrtps_cpp/autoware_planning_msgs/msg/detail/path__rosidl_typesupport_fastrtps_cpp.hpp

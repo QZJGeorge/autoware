@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/bezier_sampler/ament_cmake_core/bezier_samplerConfig-version.cmake

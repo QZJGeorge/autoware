@@ -1,8 +1,0 @@
-{
-  "package_name": "pandar_msgs",
-  "non_idl_tuples": [
-    "/home/mtl12345/autoware/src/sensor_component/external/nebula/nebula_messages/pandar_msgs:msg/PandarPacket.msg",
-    "/home/mtl12345/autoware/src/sensor_component/external/nebula/nebula_messages/pandar_msgs:msg/PandarScan.msg",
-    "/home/mtl12345/autoware/src/sensor_component/external/nebula/nebula_messages/pandar_msgs:msg/PandarJumboPacket.msg"
-  ]
-}

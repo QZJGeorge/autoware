@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_system_msgs/rosidl_generator_cpp/tier4_system_msgs/msg/detail/hazard_status_stamped__traits.hpp

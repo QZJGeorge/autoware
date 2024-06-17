@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/control/joy_controller/include/joy_controller/joy_converter/g29_joy_converter.hpp

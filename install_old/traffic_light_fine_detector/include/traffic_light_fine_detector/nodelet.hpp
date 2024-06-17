@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/perception/traffic_light_fine_detector/include/traffic_light_fine_detector/nodelet.hpp

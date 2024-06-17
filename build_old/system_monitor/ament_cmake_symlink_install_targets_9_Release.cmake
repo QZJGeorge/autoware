@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/system_monitor/msr_reader" "/home/mtl12345/autoware/build/system_monitor/hdd_reader" "/home/mtl12345/autoware/build/system_monitor/traffic_reader" "TARGETS" "msr_reader" "hdd_reader" "traffic_reader" "DESTINATION" "lib/system_monitor")

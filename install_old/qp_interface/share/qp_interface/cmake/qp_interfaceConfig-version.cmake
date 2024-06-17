@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/qp_interface/ament_cmake_core/qp_interfaceConfig-version.cmake

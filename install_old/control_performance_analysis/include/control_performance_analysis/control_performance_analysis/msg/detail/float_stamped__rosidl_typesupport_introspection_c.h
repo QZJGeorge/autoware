@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/control_performance_analysis/rosidl_typesupport_introspection_c/control_performance_analysis/msg/detail/float_stamped__rosidl_typesupport_introspection_c.h

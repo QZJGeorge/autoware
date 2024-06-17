@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/localization/stop_filter/include/stop_filter/stop_filter.hpp

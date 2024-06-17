@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_debug_msgs/rosidl_generator_py/tier4_debug_msgs/msg/_multi_array_dimension.py

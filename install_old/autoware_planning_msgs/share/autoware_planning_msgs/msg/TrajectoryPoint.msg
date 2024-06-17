@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/core/autoware_msgs/autoware_planning_msgs/msg/TrajectoryPoint.msg

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/control/vehicle_cmd_gate/msg/IsFilterActivated.msg

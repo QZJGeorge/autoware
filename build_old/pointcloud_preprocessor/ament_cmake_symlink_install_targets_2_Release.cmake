@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/pointcloud_preprocessor/concatenate_data_node" "TARGETS" "concatenate_data_node" "DESTINATION" "lib/pointcloud_preprocessor")

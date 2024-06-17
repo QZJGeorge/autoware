@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/map_projection_loader/map_projection_loader" "TARGETS" "map_projection_loader" "DESTINATION" "lib/map_projection_loader")

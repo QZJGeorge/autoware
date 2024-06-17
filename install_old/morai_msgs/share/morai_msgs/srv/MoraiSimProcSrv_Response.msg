@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/morai_msgs/rosidl_cmake/srv/MoraiSimProcSrv_Response.msg

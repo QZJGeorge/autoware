@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/perception/radar_fusion_to_detected_object/include/radar_object_fusion_to_detected_object/radar_object_fusion_to_detected_object_node.hpp

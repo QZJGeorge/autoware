@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/mcity_msgs/rosidl_typesupport_fastrtps_c/mcity_msgs/msg/detail/vehicle_state__rosidl_typesupport_fastrtps_c.h

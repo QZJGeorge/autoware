@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/diagnostic_converter/ament_cmake_core/diagnostic_converterConfig.cmake

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_perception_msgs/rosidl_generator_cpp/autoware_perception_msgs/msg/object_classification.hpp

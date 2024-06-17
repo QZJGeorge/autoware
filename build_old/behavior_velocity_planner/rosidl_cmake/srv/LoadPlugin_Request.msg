@@ -1,1 +1,0 @@
-string plugin_name

@@ -1,2 +1,0 @@
-
-autoware_common_msgs/ResponseStatus status

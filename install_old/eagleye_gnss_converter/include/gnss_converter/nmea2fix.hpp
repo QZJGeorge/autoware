@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_util/gnss_converter/include/gnss_converter/nmea2fix.hpp

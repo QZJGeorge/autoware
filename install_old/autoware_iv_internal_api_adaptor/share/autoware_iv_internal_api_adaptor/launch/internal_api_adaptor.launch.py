@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/external/tier4_ad_api_adaptor/autoware_iv_internal_api_adaptor/launch/internal_api_adaptor.launch.py

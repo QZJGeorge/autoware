@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_api_msgs/rosidl_generator_py/tier4_api_msgs/msg/_awapi_autoware_status_s.c

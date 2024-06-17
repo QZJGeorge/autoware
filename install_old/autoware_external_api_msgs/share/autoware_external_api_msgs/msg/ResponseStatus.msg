@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/external/tier4_ad_api_adaptor/autoware_external_api_msgs/msg/ResponseStatus.msg

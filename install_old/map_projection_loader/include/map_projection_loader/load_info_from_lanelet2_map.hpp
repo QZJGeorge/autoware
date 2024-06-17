@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/map/map_projection_loader/include/map_projection_loader/load_info_from_lanelet2_map.hpp

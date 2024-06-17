@@ -1,1 +1,0 @@
-bool autoware_control

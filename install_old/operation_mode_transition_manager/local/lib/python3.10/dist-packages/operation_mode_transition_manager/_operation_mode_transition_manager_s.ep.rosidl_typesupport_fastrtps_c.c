@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/operation_mode_transition_manager/rosidl_generator_py/operation_mode_transition_manager/_operation_mode_transition_manager_s.ep.rosidl_typesupport_fastrtps_c.c

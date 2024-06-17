@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/yabloc_image_processing/ament_cmake_core/yabloc_image_processingConfig-version.cmake

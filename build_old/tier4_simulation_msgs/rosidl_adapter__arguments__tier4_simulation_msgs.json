@@ -1,9 +1,0 @@
-{
-  "package_name": "tier4_simulation_msgs",
-  "non_idl_tuples": [
-    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_simulation_msgs:msg/FaultInjectionEvent.msg",
-    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_simulation_msgs:msg/SimulationEvents.msg",
-    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_simulation_msgs:msg/UserDefinedValue.msg",
-    "/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_simulation_msgs:msg/UserDefinedValueType.msg"
-  ]
-}

@@ -1,2 +1,0 @@
-
-SyncModeResultResponse response

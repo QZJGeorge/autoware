@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/component_state_monitor/ament_cmake_core/component_state_monitorConfig-version.cmake

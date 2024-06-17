@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_hmi_msgs/rosidl_generator_py/tier4_hmi_msgs/srv/_announce_s.c

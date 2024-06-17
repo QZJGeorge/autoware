@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/morai_msgs/rosidl_generator_cpp/morai_msgs/msg/detail/morai_sim_proc_handle__traits.hpp

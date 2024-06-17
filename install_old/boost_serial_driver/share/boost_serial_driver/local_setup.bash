@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/boost_serial_driver/ament_cmake_environment_hooks/local_setup.bash

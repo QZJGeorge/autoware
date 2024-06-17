@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/eagleye_msgs/rosidl_generator_c/eagleye_msgs/msg/acc_y_offset.h

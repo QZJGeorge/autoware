@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/mcity/mcity_voices/launch/voices_cosim.launch.py

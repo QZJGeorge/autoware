@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/planning/obstacle_avoidance_planner/scripts/calculation_time_plotter.py

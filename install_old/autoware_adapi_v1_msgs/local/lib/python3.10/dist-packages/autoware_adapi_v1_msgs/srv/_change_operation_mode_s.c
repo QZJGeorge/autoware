@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_adapi_v1_msgs/rosidl_generator_py/autoware_adapi_v1_msgs/srv/_change_operation_mode_s.c

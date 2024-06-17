@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/control/pure_pursuit/include/pure_pursuit/pure_pursuit.hpp

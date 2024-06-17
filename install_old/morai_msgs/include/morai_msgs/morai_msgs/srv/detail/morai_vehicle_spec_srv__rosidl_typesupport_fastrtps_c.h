@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/morai_msgs/rosidl_typesupport_fastrtps_c/morai_msgs/srv/detail/morai_vehicle_spec_srv__rosidl_typesupport_fastrtps_c.h

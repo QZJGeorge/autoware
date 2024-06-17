@@ -1,2 +1,0 @@
-sensor_msgs/RegionOfInterest roi
-int64 traffic_light_id

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_adapi_v1_msgs/rosidl_cmake/vehicle/srv/GetVehicleDimensions_Request.msg

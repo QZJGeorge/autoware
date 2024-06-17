@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_map_msgs/rosidl_typesupport_introspection_c/autoware_map_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h

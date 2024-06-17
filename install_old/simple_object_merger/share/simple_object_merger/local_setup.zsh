@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/simple_object_merger/ament_cmake_environment_hooks/local_setup.zsh

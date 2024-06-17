@@ -1,2 +1,0 @@
-uint32 start_lane_id
-uint32 end_lane_id

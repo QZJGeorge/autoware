@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_auto_perception_msgs/rosidl_typesupport_fastrtps_c/autoware_auto_perception_msgs/msg/detail/bounding_box__rosidl_typesupport_fastrtps_c.h

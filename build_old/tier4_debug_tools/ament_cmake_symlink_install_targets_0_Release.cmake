@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/tier4_debug_tools/lateral_error_publisher_node" "TARGETS" "lateral_error_publisher_node" "DESTINATION" "lib/tier4_debug_tools")

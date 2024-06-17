@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/yabloc_pose_initializer/camera_pose_initializer_node" "TARGETS" "camera_pose_initializer_node" "DESTINATION" "lib/yabloc_pose_initializer")

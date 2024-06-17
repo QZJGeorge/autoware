@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/planning/route_handler/include/route_handler/route_handler.hpp

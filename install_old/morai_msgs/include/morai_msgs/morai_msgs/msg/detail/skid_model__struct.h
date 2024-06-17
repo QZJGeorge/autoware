@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/morai_msgs/rosidl_generator_c/morai_msgs/msg/detail/skid_model__struct.h

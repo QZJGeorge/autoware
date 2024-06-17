@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/common/tier4_debug_rviz_plugin/include/tier4_debug_rviz_plugin/float32_multi_array_stamped_pie_chart.hpp

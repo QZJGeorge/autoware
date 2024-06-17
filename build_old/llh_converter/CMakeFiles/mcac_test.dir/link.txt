@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/mcac_test.dir/test/meridian_convergence_angle_correction_test.cpp.o -o mcac_test   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib:/home/mtl12345/autoware/build/llh_converter libllh_converter.so -lGeographic 

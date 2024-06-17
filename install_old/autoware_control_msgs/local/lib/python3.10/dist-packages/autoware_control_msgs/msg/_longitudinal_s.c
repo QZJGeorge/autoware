@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_control_msgs/rosidl_generator_py/autoware_control_msgs/msg/_longitudinal_s.c

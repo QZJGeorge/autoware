@@ -1,4 +1,0 @@
-# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
-
-set(autoware_map_msgs_IDL_FILES "msg/AreaInfo.idl;msg/LaneletMapBin.idl;msg/PointCloudMapCellWithID.idl;msg/PointCloudMapCellMetaData.idl;msg/PointCloudMapCellMetaDataWithID.idl;msg/PointCloudMapMetaData.idl;srv/GetPartialPointCloudMap.idl;srv/GetDifferentialPointCloudMap.idl;srv/GetSelectedPointCloudMap.idl")
-set(autoware_map_msgs_INTERFACE_FILES "msg/AreaInfo.msg;msg/LaneletMapBin.msg;msg/PointCloudMapCellWithID.msg;msg/PointCloudMapCellMetaData.msg;msg/PointCloudMapCellMetaDataWithID.msg;msg/PointCloudMapMetaData.msg;srv/GetPartialPointCloudMap.srv;srv/GetPartialPointCloudMap_Request.msg;srv/GetPartialPointCloudMap_Response.msg;srv/GetDifferentialPointCloudMap.srv;srv/GetDifferentialPointCloudMap_Request.msg;srv/GetDifferentialPointCloudMap_Response.msg;srv/GetSelectedPointCloudMap.srv;srv/GetSelectedPointCloudMap_Request.msg;srv/GetSelectedPointCloudMap_Response.msg")

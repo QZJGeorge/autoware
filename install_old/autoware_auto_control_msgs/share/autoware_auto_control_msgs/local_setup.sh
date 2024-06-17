@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_auto_control_msgs/ament_cmake_environment_hooks/local_setup.sh

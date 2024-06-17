@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/rtc_interface/ament_cmake_core/rtc_interfaceConfig.cmake

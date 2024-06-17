@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/lidar_centerpoint/ament_cmake_core/lidar_centerpointConfig.cmake

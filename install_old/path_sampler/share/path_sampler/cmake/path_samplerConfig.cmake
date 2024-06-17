@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/path_sampler/ament_cmake_core/path_samplerConfig.cmake

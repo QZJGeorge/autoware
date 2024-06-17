@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/planning/rtc_auto_mode_manager/include/rtc_auto_mode_manager/rtc_auto_mode_manager_interface.hpp

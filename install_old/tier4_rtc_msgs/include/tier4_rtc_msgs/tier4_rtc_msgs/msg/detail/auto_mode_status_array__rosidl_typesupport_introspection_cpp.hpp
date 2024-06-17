@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_rtc_msgs/rosidl_typesupport_introspection_cpp/tier4_rtc_msgs/msg/detail/auto_mode_status_array__rosidl_typesupport_introspection_cpp.hpp

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/pointcloud_preprocessor/pointcloud_accumulator_node" "TARGETS" "pointcloud_accumulator_node" "DESTINATION" "lib/pointcloud_preprocessor")

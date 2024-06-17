@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_target_object_type_rviz_plugin/ament_cmake_core/tier4_target_object_type_rviz_pluginConfig.cmake

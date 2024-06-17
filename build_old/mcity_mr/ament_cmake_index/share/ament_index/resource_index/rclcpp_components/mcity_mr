@@ -1,5 +1,0 @@
-sumo_light_converter::SumoLightConverter;lib/libsumo_light_converter_component.so
-cav_state_converter::CavStateConverter;lib/libcav_state_converter_component.so
-cav_context_converter::CavContextConverter;lib/libcav_context_converter_component.so
-cav_context_replay::CavContextReplay;lib/libcav_context_replay_component.so
-occ_grid_converter::OccGridConverter;lib/libocc_grid_converter_component.so

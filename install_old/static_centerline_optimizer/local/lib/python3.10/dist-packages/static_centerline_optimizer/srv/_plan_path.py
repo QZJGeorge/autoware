@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/static_centerline_optimizer/rosidl_generator_py/static_centerline_optimizer/srv/_plan_path.py

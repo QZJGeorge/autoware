@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/control/operation_mode_transition_manager/msg/OperationModeTransitionManagerDebug.msg

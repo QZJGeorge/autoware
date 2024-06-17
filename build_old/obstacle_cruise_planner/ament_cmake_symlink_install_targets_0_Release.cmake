@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/obstacle_cruise_planner/obstacle_cruise_planner" "TARGETS" "obstacle_cruise_planner" "DESTINATION" "lib/obstacle_cruise_planner")

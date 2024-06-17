@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/planning/static_centerline_optimizer/include/static_centerline_optimizer/successive_trajectory_optimizer_node.hpp

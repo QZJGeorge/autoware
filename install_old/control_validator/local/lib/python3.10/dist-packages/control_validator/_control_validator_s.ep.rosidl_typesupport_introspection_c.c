@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/control_validator/rosidl_generator_py/control_validator/_control_validator_s.ep.rosidl_typesupport_introspection_c.c

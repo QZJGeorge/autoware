@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_auto_planning_msgs/rosidl_generator_py/autoware_auto_planning_msgs/msg/_path_with_lane_id.py

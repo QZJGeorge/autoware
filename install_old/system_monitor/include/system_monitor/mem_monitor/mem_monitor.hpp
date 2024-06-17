@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/system/system_monitor/include/system_monitor/mem_monitor/mem_monitor.hpp

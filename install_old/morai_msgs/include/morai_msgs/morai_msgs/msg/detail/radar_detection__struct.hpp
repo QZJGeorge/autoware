@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/morai_msgs/rosidl_generator_cpp/morai_msgs/msg/detail/radar_detection__struct.hpp

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/obstacle_avoidance_planner/obstacle_avoidance_planner_node" "TARGETS" "obstacle_avoidance_planner_node" "DESTINATION" "lib/obstacle_avoidance_planner")

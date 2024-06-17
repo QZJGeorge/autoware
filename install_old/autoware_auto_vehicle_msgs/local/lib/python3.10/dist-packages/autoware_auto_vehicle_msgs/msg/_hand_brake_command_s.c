@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_auto_vehicle_msgs/rosidl_generator_py/autoware_auto_vehicle_msgs/msg/_hand_brake_command_s.c

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/eagleye_msgs/rosidl_generator_c/eagleye_msgs/msg/detail/status__type_support.h

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/lidar_apollo_instance_segmentation/lidar_apollo_instance_segmentation_node" "TARGETS" "lidar_apollo_instance_segmentation_node" "DESTINATION" "lib/lidar_apollo_instance_segmentation")

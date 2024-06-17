@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/mpc_lateral_controller/libsteering_offset_lib.so" "/home/mtl12345/autoware/build/mpc_lateral_controller/libmpc_lateral_controller_lib.so" "TARGETS" "steering_offset_lib" "mpc_lateral_controller_lib" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

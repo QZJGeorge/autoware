@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/nebula_ros/velodyne_hw_ros_wrapper_node" "TARGETS" "velodyne_hw_ros_wrapper_node" "DESTINATION" "lib/nebula_ros")

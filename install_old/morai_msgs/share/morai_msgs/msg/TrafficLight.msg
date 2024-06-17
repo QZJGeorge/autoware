@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/external/morai_msgs/msg/TrafficLight.msg

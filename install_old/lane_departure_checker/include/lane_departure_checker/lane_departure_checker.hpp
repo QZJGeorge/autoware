@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/control/lane_departure_checker/include/lane_departure_checker/lane_departure_checker.hpp

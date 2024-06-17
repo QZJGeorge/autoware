@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_control_msgs/rosidl_typesupport_fastrtps_c/tier4_control_msgs/srv/detail/set_stop__rosidl_typesupport_fastrtps_c.h

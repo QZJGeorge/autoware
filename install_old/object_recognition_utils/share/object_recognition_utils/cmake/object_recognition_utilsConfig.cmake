@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/object_recognition_utils/ament_cmake_core/object_recognition_utilsConfig.cmake

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/mcity/mcity_abc_realcar/launch/mcity_abc_realcar.launch.py

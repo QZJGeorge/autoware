@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_external_api_msgs/rosidl_generator_py/tier4_external_api_msgs/srv/_set_emergency_s.c

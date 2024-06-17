@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/sample_vehicle_description/ament_cmake_core/sample_vehicle_descriptionConfig-version.cmake

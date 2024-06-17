@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_map_msgs/rosidl_generator_c/tier4_map_msgs/msg/detail/map_projector_info__type_support.h

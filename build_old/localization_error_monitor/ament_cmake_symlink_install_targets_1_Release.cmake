@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/localization_error_monitor/localization_error_monitor" "TARGETS" "localization_error_monitor" "DESTINATION" "lib/localization_error_monitor")

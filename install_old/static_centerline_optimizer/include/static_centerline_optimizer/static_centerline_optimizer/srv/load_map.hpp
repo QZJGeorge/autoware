@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/static_centerline_optimizer/rosidl_generator_cpp/static_centerline_optimizer/srv/load_map.hpp

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_vehicle_msgs/rosidl_typesupport_introspection_c/tier4_vehicle_msgs/msg/detail/steering_wheel_status_stamped__rosidl_typesupport_introspection_c.h

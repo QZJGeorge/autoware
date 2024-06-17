@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/radar_object_clustering/radar_object_clustering_node" "TARGETS" "radar_object_clustering_node" "DESTINATION" "lib/radar_object_clustering")

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_control_msgs/rosidl_typesupport_introspection_cpp/tier4_control_msgs/msg/detail/external_command_selector_mode__rosidl_typesupport_introspection_cpp.hpp

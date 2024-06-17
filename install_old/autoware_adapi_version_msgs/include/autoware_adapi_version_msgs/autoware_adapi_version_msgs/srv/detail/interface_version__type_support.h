@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_adapi_version_msgs/rosidl_generator_c/autoware_adapi_version_msgs/srv/detail/interface_version__type_support.h

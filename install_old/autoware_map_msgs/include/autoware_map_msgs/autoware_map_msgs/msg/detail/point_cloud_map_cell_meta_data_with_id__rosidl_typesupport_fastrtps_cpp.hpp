@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_map_msgs/rosidl_typesupport_fastrtps_cpp/autoware_map_msgs/msg/detail/point_cloud_map_cell_meta_data_with_id__rosidl_typesupport_fastrtps_cpp.hpp

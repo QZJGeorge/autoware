@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_localization_msgs/rosidl_generator_py/tier4_localization_msgs/srv/__init__.py

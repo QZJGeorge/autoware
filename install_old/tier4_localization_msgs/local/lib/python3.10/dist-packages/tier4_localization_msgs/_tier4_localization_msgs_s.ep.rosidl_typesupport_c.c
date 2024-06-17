@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_localization_msgs/rosidl_generator_py/tier4_localization_msgs/_tier4_localization_msgs_s.ep.rosidl_typesupport_c.c

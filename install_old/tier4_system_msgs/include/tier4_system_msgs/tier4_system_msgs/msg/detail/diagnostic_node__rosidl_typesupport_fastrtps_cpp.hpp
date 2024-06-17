@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_system_msgs/rosidl_typesupport_fastrtps_cpp/tier4_system_msgs/msg/detail/diagnostic_node__rosidl_typesupport_fastrtps_cpp.hpp

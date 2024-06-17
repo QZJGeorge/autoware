@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/imu_corrector/imu_corrector" "/home/mtl12345/autoware/build/imu_corrector/gyro_bias_estimator" "TARGETS" "imu_corrector" "gyro_bias_estimator" "DESTINATION" "lib/imu_corrector")

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/control_validator/rosidl_typesupport_introspection_c/control_validator/msg/detail/control_validator_status__rosidl_typesupport_introspection_c.h

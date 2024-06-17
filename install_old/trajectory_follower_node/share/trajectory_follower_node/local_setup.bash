@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/trajectory_follower_node/ament_cmake_environment_hooks/local_setup.bash

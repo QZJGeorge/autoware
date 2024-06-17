@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_auto_control_msgs/rosidl_generator_py/autoware_auto_control_msgs/msg/_high_level_control_command_s.c

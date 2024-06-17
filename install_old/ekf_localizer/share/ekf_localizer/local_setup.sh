@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/ekf_localizer/ament_cmake_environment_hooks/local_setup.sh

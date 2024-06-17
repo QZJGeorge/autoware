@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_vehicle_msgs/rosidl_typesupport_fastrtps_c/tier4_vehicle_msgs/msg/detail/actuation_command__rosidl_typesupport_fastrtps_c.h

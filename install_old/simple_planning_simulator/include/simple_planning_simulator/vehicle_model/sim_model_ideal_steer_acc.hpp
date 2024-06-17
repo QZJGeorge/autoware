@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/simulator/simple_planning_simulator/include/simple_planning_simulator/vehicle_model/sim_model_ideal_steer_acc.hpp

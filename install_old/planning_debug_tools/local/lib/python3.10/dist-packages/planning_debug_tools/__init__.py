@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/planning_debug_tools/rosidl_generator_py/planning_debug_tools/__init__.py

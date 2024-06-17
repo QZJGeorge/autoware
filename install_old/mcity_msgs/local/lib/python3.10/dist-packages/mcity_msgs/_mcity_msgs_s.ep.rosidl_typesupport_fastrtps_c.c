@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/mcity_msgs/rosidl_generator_py/mcity_msgs/_mcity_msgs_s.ep.rosidl_typesupport_fastrtps_c.c

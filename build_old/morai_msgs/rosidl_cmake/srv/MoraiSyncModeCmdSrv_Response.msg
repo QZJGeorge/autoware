@@ -1,2 +1,0 @@
-
-SyncModeCmdResponse response

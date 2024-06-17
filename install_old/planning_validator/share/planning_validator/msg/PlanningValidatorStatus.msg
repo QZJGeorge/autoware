@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/planning/planning_validator/msg/PlanningValidatorStatus.msg

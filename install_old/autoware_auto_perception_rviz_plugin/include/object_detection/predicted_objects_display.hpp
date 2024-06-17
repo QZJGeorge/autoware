@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/common/autoware_auto_perception_rviz_plugin/include/object_detection/predicted_objects_display.hpp

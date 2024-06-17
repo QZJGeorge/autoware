@@ -1,2 +1,0 @@
-
-EventInfo response

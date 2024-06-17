@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_auto_perception_msgs/rosidl_typesupport_introspection_cpp/autoware_auto_perception_msgs/msg/detail/classified_roi__rosidl_typesupport_introspection_cpp.hpp

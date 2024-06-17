@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_vehicle_msgs/rosidl_generator_c/tier4_vehicle_msgs/msg/detail/actuation_command__type_support.h

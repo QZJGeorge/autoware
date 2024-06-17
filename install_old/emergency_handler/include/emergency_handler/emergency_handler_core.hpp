@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/system/emergency_handler/include/emergency_handler/emergency_handler_core.hpp

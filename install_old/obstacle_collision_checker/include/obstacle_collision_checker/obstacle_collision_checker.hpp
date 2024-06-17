@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/control/obstacle_collision_checker/include/obstacle_collision_checker/obstacle_collision_checker.hpp

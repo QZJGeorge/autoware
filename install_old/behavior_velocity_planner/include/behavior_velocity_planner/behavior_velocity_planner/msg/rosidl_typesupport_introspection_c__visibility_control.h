@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/behavior_velocity_planner/rosidl_typesupport_introspection_c/behavior_velocity_planner/msg/rosidl_typesupport_introspection_c__visibility_control.h

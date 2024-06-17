@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/freespace_planning_algorithms/ament_cmake_environment_hooks/local_setup.zsh

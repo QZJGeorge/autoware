@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_perception_msgs/rosidl_generator_py/tier4_perception_msgs/msg/_dynamic_object_array.py

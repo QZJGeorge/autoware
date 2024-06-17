@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/control_validator/rosidl_generator_c/control_validator/msg/control_validator_status.h

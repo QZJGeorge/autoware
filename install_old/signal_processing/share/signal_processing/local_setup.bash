@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/signal_processing/ament_cmake_environment_hooks/local_setup.bash

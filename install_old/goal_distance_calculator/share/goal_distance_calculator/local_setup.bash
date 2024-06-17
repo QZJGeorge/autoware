@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/goal_distance_calculator/ament_cmake_environment_hooks/local_setup.bash

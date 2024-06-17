@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_adapi_v1_msgs/rosidl_generator_c/autoware_adapi_v1_msgs/srv/detail/accept_start__struct.h

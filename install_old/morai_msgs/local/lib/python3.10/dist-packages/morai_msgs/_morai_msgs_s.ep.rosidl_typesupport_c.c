@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/morai_msgs/rosidl_generator_py/morai_msgs/_morai_msgs_s.ep.rosidl_typesupport_c.c

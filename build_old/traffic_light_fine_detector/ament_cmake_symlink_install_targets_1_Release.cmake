@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/traffic_light_fine_detector/libtraffic_light_fine_detector_nodelet.so" "TARGETS" "traffic_light_fine_detector_nodelet" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

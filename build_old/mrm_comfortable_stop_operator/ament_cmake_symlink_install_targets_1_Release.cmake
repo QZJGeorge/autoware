@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/mrm_comfortable_stop_operator/libmrm_comfortable_stop_operator_component.so" "TARGETS" "mrm_comfortable_stop_operator_component" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

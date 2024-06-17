@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/mcity_carla/ament_cmake_core/mcity_carlaConfig-version.cmake

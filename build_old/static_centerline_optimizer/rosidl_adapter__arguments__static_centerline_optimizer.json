@@ -1,9 +1,0 @@
-{
-  "package_name": "static_centerline_optimizer",
-  "non_idl_tuples": [
-    "/home/mtl12345/autoware/src/universe/autoware.universe/planning/static_centerline_optimizer:srv/LoadMap.srv",
-    "/home/mtl12345/autoware/src/universe/autoware.universe/planning/static_centerline_optimizer:srv/PlanRoute.srv",
-    "/home/mtl12345/autoware/src/universe/autoware.universe/planning/static_centerline_optimizer:srv/PlanPath.srv",
-    "/home/mtl12345/autoware/src/universe/autoware.universe/planning/static_centerline_optimizer:msg/PointsWithLaneId.msg"
-  ]
-}

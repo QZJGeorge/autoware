@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/common/component_interface_utils/include/component_interface_utils/rclcpp/service_client.hpp

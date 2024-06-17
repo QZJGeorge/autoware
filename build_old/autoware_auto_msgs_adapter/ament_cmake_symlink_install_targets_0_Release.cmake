@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/autoware_auto_msgs_adapter/autoware_auto_msgs_adapter_exe" "TARGETS" "autoware_auto_msgs_adapter_exe" "DESTINATION" "lib/autoware_auto_msgs_adapter")

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/localization/yabloc/yabloc_pose_initializer/include/yabloc_pose_initializer/camera/lane_image.hpp

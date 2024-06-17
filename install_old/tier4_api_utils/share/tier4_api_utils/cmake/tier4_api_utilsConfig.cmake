@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_api_utils/ament_cmake_core/tier4_api_utilsConfig.cmake

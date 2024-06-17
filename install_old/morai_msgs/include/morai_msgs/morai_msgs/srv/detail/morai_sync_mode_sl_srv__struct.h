@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/morai_msgs/rosidl_generator_c/morai_msgs/srv/detail/morai_sync_mode_sl_srv__struct.h

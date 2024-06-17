@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/radar_static_pointcloud_filter/libradar_static_pointcloud_filter_node_component.so" "TARGETS" "radar_static_pointcloud_filter_node_component" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

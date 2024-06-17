@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_rtc_msgs/rosidl_cmake/srv/CooperateCommands_Request.msg

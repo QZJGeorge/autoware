@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/mcity/mcity_cosim/include/autoware_interface_cosim.hpp

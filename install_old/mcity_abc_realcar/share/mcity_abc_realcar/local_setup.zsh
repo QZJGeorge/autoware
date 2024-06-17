@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/mcity_abc_realcar/ament_cmake_environment_hooks/local_setup.zsh

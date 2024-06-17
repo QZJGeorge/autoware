@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/mcity/mcity_realcar/launch/remote_user.launch.py

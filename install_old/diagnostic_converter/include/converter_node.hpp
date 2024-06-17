@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/evaluator/diagnostic_converter/include/converter_node.hpp

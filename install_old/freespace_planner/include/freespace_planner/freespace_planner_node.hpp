@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/planning/freespace_planner/include/freespace_planner/freespace_planner_node.hpp

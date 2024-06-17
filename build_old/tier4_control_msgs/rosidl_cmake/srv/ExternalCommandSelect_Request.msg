@@ -1,1 +1,0 @@
-tier4_control_msgs/ExternalCommandSelectorMode mode

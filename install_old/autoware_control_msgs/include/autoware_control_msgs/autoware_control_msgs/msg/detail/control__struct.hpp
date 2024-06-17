@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_control_msgs/rosidl_generator_cpp/autoware_control_msgs/msg/detail/control__struct.hpp

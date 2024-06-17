@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/awsim_sensor_kit_launch/ament_cmake_core/awsim_sensor_kit_launchConfig-version.cmake

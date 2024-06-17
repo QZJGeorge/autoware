@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/vehicle/external/pacmod_interface/pacmod_interface/include/pacmod_steer_test/pacmod_steer_test.hpp

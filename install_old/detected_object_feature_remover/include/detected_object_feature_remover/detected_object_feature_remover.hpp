@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/perception/detected_object_feature_remover/include/detected_object_feature_remover/detected_object_feature_remover.hpp

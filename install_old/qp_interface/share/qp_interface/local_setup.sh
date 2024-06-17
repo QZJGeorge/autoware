@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/qp_interface/ament_cmake_environment_hooks/local_setup.sh

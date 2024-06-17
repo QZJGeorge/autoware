@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/morai_msgs/rosidl_typesupport_introspection_c/morai_msgs/msg/detail/pr_ctrl_cmd__rosidl_typesupport_introspection_c.h

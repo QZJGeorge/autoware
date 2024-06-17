@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/external/eagleye/eagleye_core/coordinate/include/eagleye_coordinate/eagleye_coordinate.hpp

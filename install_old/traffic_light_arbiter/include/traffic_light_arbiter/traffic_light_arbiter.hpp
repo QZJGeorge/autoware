@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/perception/traffic_light_arbiter/include/traffic_light_arbiter/traffic_light_arbiter.hpp

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_map_msgs/ament_cmake_core/tier4_map_msgsConfig-version.cmake

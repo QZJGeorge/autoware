@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/vehicle/raw_vehicle_cmd_converter/include/raw_vehicle_cmd_converter/node.hpp

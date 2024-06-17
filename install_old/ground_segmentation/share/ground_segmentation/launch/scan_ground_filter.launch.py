@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/perception/ground_segmentation/launch/scan_ground_filter.launch.py

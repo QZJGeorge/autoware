@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/vehicle_velocity_converter/vehicle_velocity_converter" "TARGETS" "vehicle_velocity_converter" "DESTINATION" "lib/vehicle_velocity_converter")

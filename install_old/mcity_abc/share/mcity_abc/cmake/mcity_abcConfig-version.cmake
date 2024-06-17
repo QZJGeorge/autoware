@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/mcity_abc/ament_cmake_core/mcity_abcConfig-version.cmake

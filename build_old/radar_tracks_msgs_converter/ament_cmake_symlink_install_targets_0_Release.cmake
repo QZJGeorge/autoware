@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/radar_tracks_msgs_converter/radar_tracks_msgs_converter_node" "TARGETS" "radar_tracks_msgs_converter_node" "DESTINATION" "lib/radar_tracks_msgs_converter")

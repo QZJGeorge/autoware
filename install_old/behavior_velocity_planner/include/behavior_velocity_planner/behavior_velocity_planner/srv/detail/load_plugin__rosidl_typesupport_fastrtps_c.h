@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/behavior_velocity_planner/rosidl_typesupport_fastrtps_c/behavior_velocity_planner/srv/detail/load_plugin__rosidl_typesupport_fastrtps_c.h

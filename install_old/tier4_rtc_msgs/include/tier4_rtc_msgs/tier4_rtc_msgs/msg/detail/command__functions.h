@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_rtc_msgs/rosidl_generator_c/tier4_rtc_msgs/msg/detail/command__functions.h

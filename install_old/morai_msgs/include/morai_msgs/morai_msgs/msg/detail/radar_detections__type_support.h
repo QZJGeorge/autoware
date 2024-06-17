@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/morai_msgs/rosidl_generator_c/morai_msgs/msg/detail/radar_detections__type_support.h

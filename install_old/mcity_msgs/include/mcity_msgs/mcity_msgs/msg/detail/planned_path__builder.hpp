@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/mcity_msgs/rosidl_generator_cpp/mcity_msgs/msg/detail/planned_path__builder.hpp

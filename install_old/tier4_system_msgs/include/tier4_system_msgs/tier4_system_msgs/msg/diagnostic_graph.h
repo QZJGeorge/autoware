@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_system_msgs/rosidl_generator_c/tier4_system_msgs/msg/diagnostic_graph.h

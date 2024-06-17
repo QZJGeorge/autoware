@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/mcity_voices/autoware_interface_voices_cosim" "TARGETS" "autoware_interface_voices_cosim" "DESTINATION" "lib/mcity_voices")

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/planning_validator/rosidl_typesupport_fastrtps_cpp/planning_validator/msg/detail/planning_validator_status__rosidl_typesupport_fastrtps_cpp.hpp

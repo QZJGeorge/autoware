@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/sample_vehicle_launch/ament_cmake_core/sample_vehicle_launchConfig-version.cmake

@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_hmi_msgs/rosidl_typesupport_introspection_cpp/tier4_hmi_msgs/srv/detail/announce__rosidl_typesupport_introspection_cpp.hpp

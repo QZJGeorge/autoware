@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_api_msgs/rosidl_generator_cpp/tier4_api_msgs/msg/detail/door_status__builder.hpp

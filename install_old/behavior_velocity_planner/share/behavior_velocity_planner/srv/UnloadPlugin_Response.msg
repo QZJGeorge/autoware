@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/behavior_velocity_planner/rosidl_cmake/srv/UnloadPlugin_Response.msg

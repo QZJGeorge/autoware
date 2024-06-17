@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_vehicle_msgs/rosidl_generator_py/tier4_vehicle_msgs/msg/_turn_signal_s.c

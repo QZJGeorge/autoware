@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/mcity_control/ament_cmake_core/mcity_controlConfig-version.cmake

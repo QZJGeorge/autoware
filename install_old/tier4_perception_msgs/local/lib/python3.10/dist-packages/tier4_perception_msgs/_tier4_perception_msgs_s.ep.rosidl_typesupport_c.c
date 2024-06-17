@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/tier4_perception_msgs/rosidl_generator_py/tier4_perception_msgs/_tier4_perception_msgs_s.ep.rosidl_typesupport_c.c

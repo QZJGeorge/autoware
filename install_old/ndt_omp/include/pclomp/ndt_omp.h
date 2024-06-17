@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/external/ndt_omp/include/pclomp/ndt_omp.h

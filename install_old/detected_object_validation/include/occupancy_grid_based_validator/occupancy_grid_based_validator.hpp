@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/perception/detected_object_validation/include/occupancy_grid_based_validator/occupancy_grid_based_validator.hpp

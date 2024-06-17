@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/mcity_abc_realcar/ament_cmake_core/mcity_abc_realcarConfig-version.cmake

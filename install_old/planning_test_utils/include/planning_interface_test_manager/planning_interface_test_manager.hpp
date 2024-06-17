@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/planning/planning_test_utils/include/planning_interface_test_manager/planning_interface_test_manager.hpp

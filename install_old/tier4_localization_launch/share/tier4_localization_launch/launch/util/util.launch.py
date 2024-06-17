@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/launch/tier4_localization_launch/launch/util/util.launch.py

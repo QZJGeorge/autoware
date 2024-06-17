@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_external_api_msgs/rosidl_generator_c/autoware_external_api_msgs/srv/detail/get_version__functions.h

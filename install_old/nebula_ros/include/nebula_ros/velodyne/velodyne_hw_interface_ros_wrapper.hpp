@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/sensor_component/external/nebula/nebula_ros/include/nebula_ros/velodyne/velodyne_hw_interface_ros_wrapper.hpp

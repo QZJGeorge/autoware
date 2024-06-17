@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/behavior_velocity_stop_line_module/ament_cmake_environment_hooks/local_setup.sh

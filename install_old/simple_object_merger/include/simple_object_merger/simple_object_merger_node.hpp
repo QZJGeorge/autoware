@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/perception/simple_object_merger/include/simple_object_merger/simple_object_merger_node.hpp

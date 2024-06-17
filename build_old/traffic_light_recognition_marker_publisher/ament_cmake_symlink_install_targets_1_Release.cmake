@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/traffic_light_recognition_marker_publisher/libtraffic_light_recognition_marker_publisher.so" "TARGETS" "traffic_light_recognition_marker_publisher" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

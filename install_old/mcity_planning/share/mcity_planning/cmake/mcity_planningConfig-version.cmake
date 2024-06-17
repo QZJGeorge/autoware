@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/mcity_planning/ament_cmake_core/mcity_planningConfig-version.cmake

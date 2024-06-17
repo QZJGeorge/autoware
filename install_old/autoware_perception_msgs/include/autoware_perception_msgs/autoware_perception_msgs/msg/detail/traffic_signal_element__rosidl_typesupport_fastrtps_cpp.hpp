@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/autoware_perception_msgs/rosidl_typesupport_fastrtps_cpp/autoware_perception_msgs/msg/detail/traffic_signal_element__rosidl_typesupport_fastrtps_cpp.hpp

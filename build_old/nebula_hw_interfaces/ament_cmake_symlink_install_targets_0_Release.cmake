@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mtl12345/autoware/build/nebula_hw_interfaces/libnebula_hw_interfaces_hesai.so" "/home/mtl12345/autoware/build/nebula_hw_interfaces/libnebula_hw_interfaces_velodyne.so" "TARGETS" "nebula_hw_interfaces_hesai" "nebula_hw_interfaces_velodyne" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

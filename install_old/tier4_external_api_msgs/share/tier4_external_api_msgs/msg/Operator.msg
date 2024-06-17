@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/external/tier4_autoware_msgs/tier4_external_api_msgs/msg/Operator.msg

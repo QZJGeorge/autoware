@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/system/system_monitor/include/hdd_reader/hdd_reader.hpp

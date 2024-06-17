@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/pandar_msgs/rosidl_generator_c/pandar_msgs/msg/detail/pandar_packet__struct.h

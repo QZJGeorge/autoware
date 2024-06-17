@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/localization/pose2twist/include/pose2twist/pose2twist_core.hpp

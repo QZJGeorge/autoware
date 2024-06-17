@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/rtklib_msgs/rosidl_generator_c/rtklib_msgs/msg/detail/rtklib_nav__struct.h

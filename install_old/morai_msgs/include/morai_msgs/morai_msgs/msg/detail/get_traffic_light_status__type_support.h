@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/build/morai_msgs/rosidl_generator_c/morai_msgs/msg/detail/get_traffic_light_status__type_support.h

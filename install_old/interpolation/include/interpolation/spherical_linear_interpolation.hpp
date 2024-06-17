@@ -1,1 +1,0 @@
-/home/mtl12345/autoware/src/universe/autoware.universe/common/interpolation/include/interpolation/spherical_linear_interpolation.hpp
