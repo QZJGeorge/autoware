@@ -38,9 +38,6 @@ def generate_launch_description():
             package='autoware_cosim_plugin',
             namespace='/mcity',
             executable='autoware_tls_plugin',
-            parameters=[
-                {'cosim_controlled_tls_keys': ["terasim_cosim_tls_info"]}
-            ],
         ),
         Node(
             package='autoware_cosim_plugin',
