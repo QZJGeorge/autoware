@@ -1,9 +1,5 @@
-import os
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.actions import IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
-from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     return LaunchDescription([
@@ -18,25 +14,26 @@ def generate_launch_description():
         ),
 
         ############################################################
-        # Cosim
+        # Mixed Reality (SUMO to Autoware)
         ############################################################
         Node(
-            package='autoware_cosim_plugin',
+            package='mcity_mr',
             namespace='/mcity',
-            executable='autoware_cosim_plugin',
-            parameters=[
-                {'control_cav': True},
-                {'cosim_controlled_vehicle_keys': ["terasim_cosim_vehicle_info"]}
-            ],
+            executable='cav_state_converter',
         ),
         Node(
-            package='autoware_cosim_plugin',
+            package='mcity_mr',
             namespace='/mcity',
-            executable='autoware_tls_plugin',
+            executable='cav_context_converter',
         ),
         Node(
-            package='autoware_cosim_plugin',
+            package='mcity_mr',
             namespace='/mcity',
-            executable='autoware_dummy_grid',
+            executable='occ_grid_converter',
+        ),
+        Node(
+            package='mcity_mr',
+            namespace='/mcity',
+            executable='sumo_light_converter',
         ),
     ])
