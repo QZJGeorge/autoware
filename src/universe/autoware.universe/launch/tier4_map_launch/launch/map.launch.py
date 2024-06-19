@@ -182,7 +182,7 @@ def generate_launch_description():
     ),
     add_launch_arg(
         "map_projector_info_path",
-        [LaunchConfiguration("map_path"), "/map_projector_info.yaml"],
+        [LaunchConfiguration("map_path"), "/map_projector_info_mcity.yaml"],
         "path to map projector info yaml file",
     ),
     add_launch_arg(
