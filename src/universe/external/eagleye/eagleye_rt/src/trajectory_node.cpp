@@ -119,7 +119,7 @@ void on_timer()
   else
   {
     input_status = false;
-    RCLCPP_WARN(rclcpp::get_logger(node_name), "Twist is missing the required input topics.");
+    // RCLCPP_WARN(rclcpp::get_logger(node_name), "Twist is missing the required input topics.");
   }
 
   if (imu_time != imu_time_last) imu_time_last = imu_time;

@@ -293,7 +293,7 @@ void EKFLocalizer::timerTFCallback()
   geometry_msgs::msg::TransformStamped transform_stamped;
   transform_stamped = tier4_autoware_utils::pose2transform(current_ekf_pose_, "base_link");
   transform_stamped.header.stamp = this->now();
-  tf_br_->sendTransform(transform_stamped);
+  // tf_br_->sendTransform(transform_stamped);
 }
 
 /*
@@ -475,8 +475,8 @@ bool EKFLocalizer::measurementUpdatePose(const geometry_msgs::msg::PoseWithCovar
   pose_mahalanobis_distance_ = std::max(distance, pose_mahalanobis_distance_);
   if (distance > params_.pose_gate_dist) {
     pose_is_passed_mahalanobis_gate_ = false;
-    warning_.warnThrottle(mahalanobisWarningMessage(distance, params_.pose_gate_dist), 2000);
-    warning_.warnThrottle("Ignore the measurement data.", 2000);
+    // warning_.warnThrottle(mahalanobisWarningMessage(distance, params_.pose_gate_dist), 2000);
+    // warning_.warnThrottle("Ignore the measurement data.", 2000);
     return false;
   }
 
@@ -564,8 +564,8 @@ bool EKFLocalizer::measurementUpdateTwist(
   twist_mahalanobis_distance_ = std::max(distance, twist_mahalanobis_distance_);
   if (distance > params_.twist_gate_dist) {
     twist_is_passed_mahalanobis_gate_ = false;
-    warning_.warnThrottle(mahalanobisWarningMessage(distance, params_.twist_gate_dist), 2000);
-    warning_.warnThrottle("Ignore the measurement data.", 2000);
+    // warning_.warnThrottle(mahalanobisWarningMessage(distance, params_.twist_gate_dist), 2000);
+    // warning_.warnThrottle("Ignore the measurement data.", 2000);
     return false;
   }
 
@@ -597,8 +597,8 @@ void EKFLocalizer::publishEstimateResult()
   const Eigen::MatrixXd P = ekf_.getLatestP();
 
   /* publish latest pose */
-  pub_pose_->publish(current_ekf_pose_);
-  pub_biased_pose_->publish(current_biased_ekf_pose_);
+  // pub_pose_->publish(current_ekf_pose_);
+  // pub_biased_pose_->publish(current_biased_ekf_pose_);
 
   /* publish latest pose with covariance */
   geometry_msgs::msg::PoseWithCovarianceStamped pose_cov;
@@ -606,11 +606,11 @@ void EKFLocalizer::publishEstimateResult()
   pose_cov.header.frame_id = current_ekf_pose_.header.frame_id;
   pose_cov.pose.pose = current_ekf_pose_.pose;
   pose_cov.pose.covariance = ekfCovarianceToPoseMessageCovariance(P);
-  pub_pose_cov_->publish(pose_cov);
+  // pub_pose_cov_->publish(pose_cov);
 
   geometry_msgs::msg::PoseWithCovarianceStamped biased_pose_cov = pose_cov;
   biased_pose_cov.pose.pose = current_biased_ekf_pose_.pose;
-  pub_biased_pose_cov_->publish(biased_pose_cov);
+  // pub_biased_pose_cov_->publish(biased_pose_cov);
 
   /* publish latest twist */
   pub_twist_->publish(current_ekf_twist_);
@@ -621,13 +621,13 @@ void EKFLocalizer::publishEstimateResult()
   twist_cov.header.frame_id = current_ekf_twist_.header.frame_id;
   twist_cov.twist.twist = current_ekf_twist_.twist;
   twist_cov.twist.covariance = ekfCovarianceToTwistMessageCovariance(P);
-  pub_twist_cov_->publish(twist_cov);
+  // pub_twist_cov_->publish(twist_cov);
 
   /* publish yaw bias */
   tier4_debug_msgs::msg::Float64Stamped yawb;
   yawb.stamp = current_time;
   yawb.data = X(IDX::YAWB);
-  pub_yaw_bias_->publish(yawb);
+  // pub_yaw_bias_->publish(yawb);
 
   /* publish latest odometry */
   nav_msgs::msg::Odometry odometry;
@@ -636,14 +636,15 @@ void EKFLocalizer::publishEstimateResult()
   odometry.child_frame_id = "base_link";
   odometry.pose = pose_cov.pose;
   odometry.twist = twist_cov.twist;
-  pub_odom_->publish(odometry);
+
+  // pub_odom_->publish(odometry);
 
   /* debug measured pose */
   if (!pose_queue_.empty()) {
     geometry_msgs::msg::PoseStamped p;
     p.pose = pose_queue_.back()->pose.pose;
     p.header.stamp = current_time;
-    pub_measured_pose_->publish(p);
+    // pub_measured_pose_->publish(p);
   }
 
   /* debug publish */
@@ -657,7 +658,7 @@ void EKFLocalizer::publishEstimateResult()
   msg.data.push_back(tier4_autoware_utils::rad2deg(X(IDX::YAW)));   // [0] ekf yaw angle
   msg.data.push_back(tier4_autoware_utils::rad2deg(pose_yaw));      // [1] measurement yaw angle
   msg.data.push_back(tier4_autoware_utils::rad2deg(X(IDX::YAWB)));  // [2] yaw bias
-  pub_debug_->publish(msg);
+  // pub_debug_->publish(msg);
 }
 
 void EKFLocalizer::publishDiagnostics()
