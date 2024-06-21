@@ -17,9 +17,9 @@ def generate_launch_description():
         # Localization
         ############################################################
         Node(
-            package='mcity_localization',
+            package='gnss_cosim_plugin',
             namespace='/mcity',
-            executable='mcity_localization',
+            executable='gnss_cosim_plugin',
         ),
 
         ############################################################
@@ -38,11 +38,6 @@ def generate_launch_description():
             package='autoware_cosim_plugin',
             namespace='/mcity',
             executable='autoware_dummy_grid',
-        ),
-        Node(
-            package='gnss_cosim_plugin',
-            namespace='/mcity',
-            executable='gnss_cosim_plugin',
         ),
         Node(
             package='mcity_mr',
