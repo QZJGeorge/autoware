@@ -50,9 +50,9 @@ namespace autoware_path_uw{
                         // RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "trajectory_commands_cav is null");
                     } else {
                         uw_control = true;
-                        recoreded_speed = current_speed;
+                        // recoreded_speed = current_speed;
                         uw_spd = control_command_json["info"]["trajectory_commands_cav"]["spd"];
-                        uw_acc = control_command_json["info"]["trajectory_commands_cav"]["acc"];
+                        // uw_acc = control_command_json["info"]["trajectory_commands_cav"]["acc"];
                         uw_time = this->get_clock()->now().seconds();
                     }
                 }
@@ -69,9 +69,9 @@ namespace autoware_path_uw{
                 uw_control = false;
                 RCLCPP_INFO(this->get_logger(), "UW control disabled due to speed bound %f", uw_spd);
             } else {
-                double desired_speed = recoreded_speed + uw_acc * time_elapsed;
-                std::fill(path_msg.vd_vector.begin(), path_msg.vd_vector.end(), desired_speed);
-                RCLCPP_INFO(this->get_logger(), "UW control enabled with desired speed: %f", desired_speed);
+                // double desired_speed = recoreded_speed + uw_acc * time_elapsed;
+                std::fill(path_msg.vd_vector.begin(), path_msg.vd_vector.end(), uw_spd);
+                RCLCPP_INFO(this->get_logger(), "UW control enabled with desired speed: %f", uw_spd);
             }
         }
 
