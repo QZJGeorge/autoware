@@ -12,6 +12,15 @@ def generate_launch_description():
         # Localization
         ############################################################
         Node(
+            package='autoware_cosim_plugin',
+            namespace='/mcity',
+            executable='autoware_cosim_plugin',
+            parameters=[
+                {"control_cav": False},
+                {"cosim_controlled_vehicle_keys": ["av_context"]}
+            ]
+        ),
+        Node(
             package='gnss_cosim_plugin',
             namespace='/mcity',
             executable='gnss_cosim_plugin',

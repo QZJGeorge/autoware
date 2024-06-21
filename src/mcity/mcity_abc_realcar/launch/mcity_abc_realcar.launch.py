@@ -15,7 +15,7 @@ def generate_launch_description():
         ############################################################
         DeclareLaunchArgument(
           'scenario',
-          default_value='02_car_following_realcar',
+          default_value='04_lane_departure_opposite_realcar',
           description='Name of the executable.'
         ),
         Node(
@@ -28,23 +28,27 @@ def generate_launch_description():
         # Localization
         ############################################################
         Node(
-            package='mcity_localization',
-            namespace='/mcity/localization',
-            executable='mcity_localization',
+            package='gnss_cosim_plugin',
+            namespace='/mcity',
+            executable='gnss_cosim_plugin',
         ),
 
         ############################################################
         # Mixed Reality
         ############################################################
         Node(
-            package='mcity_mr',
+            package='autoware_cosim_plugin',
             namespace='/mcity',
-            executable='cav_state_converter',
+            executable='autoware_cosim_plugin',
+            parameters=[
+                {"control_cav": False},
+                {"cosim_controlled_vehicle_keys": ["av_context"]}
+            ]
         ),
         Node(
-            package='mcity_mr',
+            package='autoware_cosim_plugin',
             namespace='/mcity',
-            executable='cav_context_converter',
+            executable='autoware_dummy_grid',
         ),
         # Node(
         #     package='mcity_mr',
