@@ -77,14 +77,14 @@ namespace test_15_realcar{
   void Test15Realcar::set_route_points(){
     Pose wp0;
     
-    wp0.position.x = 77604.484375;
-    wp0.position.y = 86627.578125;
+    wp0.position.x = 108.198974609375;
+    wp0.position.y = 125.62752532958984;
     wp0.position.z = 0.0;
 
     wp0.orientation.x = 0.0;
     wp0.orientation.y = 0.0;
-    wp0.orientation.z = -0.7273591732648912;
-    wp0.orientation.w = 0.6862569730555851;
+    wp0.orientation.z = -0.7161398526344118;
+    wp0.orientation.w = 0.697956812036936;
 
     while (!cli_set_route_points->wait_for_service(1s)) {
       if (!rclcpp::ok()) {
