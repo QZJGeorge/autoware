@@ -26,19 +26,23 @@ def generate_launch_description():
         # Mixed Reality (SUMO to Autoware)
         ############################################################
         Node(
-            package='mcity_mr',
+            package='autoware_cosim_plugin',
             namespace='/mcity',
-            executable='cav_state_converter',
+            executable='autoware_cosim_plugin',
+            parameters=[
+                {"control_cav": False},
+                {"cosim_controlled_vehicle_keys": ["av_context"]}
+            ]
         ),
         Node(
-            package='mcity_mr',
+            package='autoware_cosim_plugin',
             namespace='/mcity',
-            executable='cav_context_converter',
+            executable='autoware_dummy_grid',
         ),
         Node(
-            package='mcity_mr',
+            package='gnss_cosim_plugin',
             namespace='/mcity',
-            executable='occ_grid_converter',
+            executable='gnss_cosim_plugin',
         ),
         Node(
             package='mcity_mr',
