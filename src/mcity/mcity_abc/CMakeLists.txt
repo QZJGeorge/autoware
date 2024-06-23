@@ -199,18 +199,18 @@ rclcpp_components_register_node(test_13_component
   EXECUTABLE 13_vehicle_encroachment
 )
 
-##########################  TEST_15 ####################################
+##########################  test_18 ####################################
 
-ament_auto_add_library(test_15_component SHARED
-  src/test_15.cpp
+ament_auto_add_library(test_18_component SHARED
+  src/test_18.cpp
   ../redis_client/RedisClient.cpp
 )
 
-target_link_libraries(test_15_component hiredis Geographic)
+target_link_libraries(test_18_component hiredis Geographic)
 
-rclcpp_components_register_node(test_15_component
-  PLUGIN "test_15::Test15"
-  EXECUTABLE 15_traffic_signal
+rclcpp_components_register_node(test_18_component
+  PLUGIN "test_18::Test18"
+  EXECUTABLE 18_traffic_signal
 )
 
 ament_auto_package(

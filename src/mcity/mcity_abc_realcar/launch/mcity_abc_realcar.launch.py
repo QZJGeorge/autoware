@@ -42,23 +42,18 @@ def generate_launch_description():
             executable='autoware_cosim_plugin',
             parameters=[
                 {"control_cav": False},
-                {"cosim_controlled_vehicle_keys": ["av_context"]}
+                {"cosim_controlled_vehicle_keys": ["terasim_cosim_vehicle_info"]}
             ]
         ),
         Node(
             package='autoware_cosim_plugin',
             namespace='/mcity',
-            executable='autoware_dummy_grid',
+            executable='autoware_tls_plugin',
         ),
-        # Node(
-        #     package='mcity_mr',
-        #     namespace='/mcity',
-        #     executable='sumo_light_converter',
-        # ),
         Node(
-            package='mcity_mr',
+            package='autoware_cosim_plugin',
             namespace='/mcity',
-            executable='occ_grid_converter',
+            executable='autoware_dummy_grid',
         ),
 
         ############################################################

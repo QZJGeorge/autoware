@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "test_15.hpp"
+#include "test_18.hpp"
 
-namespace test_15{
+namespace test_18{
 
-  Test15::Test15(const rclcpp::NodeOptions & options)
-  : Node("test_15", options)
+  Test18::Test18(const rclcpp::NodeOptions & options)
+  : Node("test_18", options)
   {
     pub_goal = this->create_publisher<PoseStamped>("/planning/mission_planning/goal", 10);
     pub_local = this->create_publisher<PoseWithCovarianceStamped>("/initialpose", 10);
@@ -26,10 +26,10 @@ namespace test_15{
     cli_set_autoware_control = this->create_client<ChangeAutowareControl>("/system/operation_mode/change_autoware_control");
 
     sub_autoware_state = this->create_subscription<AutowareState>(
-      "/autoware/state", 10, std::bind(&Test15::autoware_state_callback, this, std::placeholders::_1));
+      "/autoware/state", 10, std::bind(&Test18::autoware_state_callback, this, std::placeholders::_1));
 
     timer_ = rclcpp::create_timer(
-      this, get_clock(), 1000ms, std::bind(&Test15::on_timer, this));
+      this, get_clock(), 1000ms, std::bind(&Test18::on_timer, this));
 
     if (!redis_client.connect(true)) {
         RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
@@ -38,7 +38,7 @@ namespace test_15{
     }
   }
 
-  void Test15::on_timer(){
+  void Test18::on_timer(){
     if (autoware_state == AutowareState::INITIALIZING){
       init_localization();
       RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Waiting for vehicle initialization...");
@@ -67,14 +67,14 @@ namespace test_15{
     }
   }
 
-  void Test15::init_localization(){
-    localization_msg.pose.pose.position.x = 77612.828125;
-    localization_msg.pose.pose.position.y = 86802.34375;
+  void Test18::init_localization(){
+    localization_msg.pose.pose.position.x = 59.169189453125;
+    localization_msg.pose.pose.position.y = 103.42141723632812;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = -0.709574814946511;
-    localization_msg.pose.pose.orientation.w = 0.7046301029573068;
+    localization_msg.pose.pose.orientation.z = 0.7898293579186024;
+    localization_msg.pose.pose.orientation.w = 0.6133266531421282;
 
     localization_msg.header.stamp = this->get_clock()->now();
     localization_msg.header.frame_id = "map";
@@ -82,14 +82,14 @@ namespace test_15{
     pub_local->publish(localization_msg);
   }
 
-  void Test15::set_route_points(){
-    goal_msg.pose.position.x = 77604.484375;
-    goal_msg.pose.position.y = 86627.578125;
+  void Test18::set_route_points(){
+    goal_msg.pose.position.x = 61.00359344482422;
+    goal_msg.pose.position.y = 236.38259887695312;
 
     goal_msg.pose.orientation.x = 0.0;
     goal_msg.pose.orientation.y = 0.0;
-    goal_msg.pose.orientation.z = -0.7273591732648912;
-    goal_msg.pose.orientation.w = 0.6862569730555851;
+    goal_msg.pose.orientation.z = 0.6928243395661423;
+    goal_msg.pose.orientation.w = 0.7211063961058304;
 
     goal_msg.header.stamp = this->get_clock()->now();
     goal_msg.header.frame_id = "map";
@@ -97,7 +97,7 @@ namespace test_15{
     pub_goal->publish(goal_msg);
   }
 
-  void Test15::set_operation_mode(uint8_t mode){
+  void Test18::set_operation_mode(uint8_t mode){
     auto request = std::make_shared<ChangeOperationMode::Request>();
     request->mode = mode;
 
@@ -111,7 +111,7 @@ namespace test_15{
     auto result = cli_set_operation_mode->async_send_request(request);
   }
 
-  void Test15::set_autoware_control(bool autoware_control){
+  void Test18::set_autoware_control(bool autoware_control){
     auto request = std::make_shared<ChangeAutowareControl::Request>();
     request->autoware_control = autoware_control;
 
@@ -125,9 +125,9 @@ namespace test_15{
     auto result = cli_set_autoware_control->async_send_request(request);
   }
 
-  void Test15::autoware_state_callback(AutowareState::SharedPtr msg){
+  void Test18::autoware_state_callback(AutowareState::SharedPtr msg){
     autoware_state = msg->state;
   }
 }
 
-RCLCPP_COMPONENTS_REGISTER_NODE(test_15::Test15)
+RCLCPP_COMPONENTS_REGISTER_NODE(test_18::Test18)
