@@ -23,9 +23,9 @@ def generate_launch_description():
         # Localization
         ############################################################
         Node(
-            package='mcity_localization',
+            package='gnss_cosim_plugin',
             namespace='/mcity',
-            executable='mcity_localization',
+            executable='gnss_cosim_plugin',
         ),
 
         ############################################################

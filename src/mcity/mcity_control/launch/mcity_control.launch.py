@@ -19,7 +19,7 @@ def generate_launch_description():
                 {"speed_ctrl_kp": 1.8},
                 {"speed_ctrl_ki": 0.8},
                 {"heading_offset": -0.04},
-                {"heading_lookahead_points": 10},
+                {"heading_lookahead_points": 12},
                 {"lateral_offset": 0.0},
                 {"preview_time": 5.0},
                 {"desired_time_resolution": 0.04},
