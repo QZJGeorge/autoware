@@ -26,8 +26,8 @@ setup(
             'redis_to_ros_input_path = mcity_remote.redis_to_ros_input_path:main',
             'redis_to_ros_vehicle_state = mcity_remote.redis_to_ros_vehicle_state:main',
             'ros_to_redis_input_path = mcity_remote.ros_to_redis_input_path:main',
-            'ros_to_redis_latency = mcity_remote.ros_to_redis_latency:main',
             'ros_to_redis_vehicle_state = mcity_remote.ros_to_redis_vehicle_state:main',
+            'ros_to_redis_vehicle_control = mcity_remote.ros_to_redis_vehicle_control:main',
         ],
     },
 )
