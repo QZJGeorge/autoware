@@ -61,12 +61,12 @@ def generate_launch_description():
         # Remote Communication
         ############################################################
         Node(
-            package='mcity_remote',
+            package='ros_redis_interface',
             namespace='/mcity/communication',
             executable='redis_to_ros_vehicle_state',
         ),
         Node(
-            package='mcity_remote',
+            package='ros_redis_interface',
             namespace='/mcity/communication',
             executable='ros_to_redis_input_path',
         ),
@@ -75,7 +75,7 @@ def generate_launch_description():
                 'python3',
                 PathJoinSubstitution([
                     EnvironmentVariable('HOME'),
-                    'autoware/src/mcity/mcity_remote/mcity_remote/redis_local_remote.py'
+                    'autoware/src/mcity/ros_redis_interface/ros_redis_interface/redis_local_remote.py'
                 ])
             ],
             name='redis_local_remote',
