@@ -71,7 +71,7 @@ namespace autoware_interface_usdot_cosim{
 
     auto set_route_points_req = std::make_shared<SetRoutePoints::Request>();
 
-    Pose wp0, wp1, wp2;
+    Pose wp0;
 
     wp0.position.x = 58.74744415283203;
     wp0.position.y = -73.74825286865234;
@@ -82,18 +82,8 @@ namespace autoware_interface_usdot_cosim{
     wp0.orientation.z = -0.7077132799979856;
     wp0.orientation.w = 0.7064997617228846;
 
-    // wp1.position.x = 26157.145289458822;
-    // wp1.position.y = 4954.80001487748;
-    // wp1.position.z = 0.0;
-
-    // wp1.orientation.x = 0.0;
-    // wp1.orientation.y = 0.0;
-    // wp1.orientation.z = 0.8038294933925517;
-    // wp1.orientation.w = 0.5948597696535493;
-
     set_route_points_req->header.frame_id = "map";
     set_route_points_req->goal = wp0;
-    // set_route_points_req->waypoints = {wp0};
 
     auto result_s = cli_set_route_points->async_send_request(set_route_points_req);
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting new route...");

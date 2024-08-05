@@ -25,6 +25,20 @@ rclcpp_components_register_node(autoware_interface_usdot_cosim_component
   EXECUTABLE autoware_interface_usdot_cosim
 )
 
+##########################  MCITY USDOT REALCAR ####################################
+
+ament_auto_add_library(autoware_interface_usdot_realcar_component SHARED
+  src/autoware_interface_usdot_realcar.cpp
+  ../redis_client/RedisClient.cpp
+)
+
+# target_link_libraries(autoware_interface_usdot_realcar_component hiredis)
+
+rclcpp_components_register_node(autoware_interface_usdot_realcar_component
+  PLUGIN "autoware_interface_usdot_realcar::AutowareInterfaceUSDOTrealcar"
+  EXECUTABLE autoware_interface_usdot_realcar
+)
+
 ########################################################################################
 
 ament_auto_package(
