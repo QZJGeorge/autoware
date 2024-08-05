@@ -47,13 +47,13 @@ namespace autoware_interface_usdot_cosim{
   void AutowareInterfaceUSDOTCosim::init_localization(){
     PoseWithCovarianceStamped localization_msg;
 
-    localization_msg.pose.pose.position.x = 26148.71484375;
-    localization_msg.pose.pose.position.y = 4959.935546875;
+    localization_msg.pose.pose.position.x = 27.500064849853516;
+    localization_msg.pose.pose.position.y = 96.6528091430664;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = -0.6179608125451177;
-    localization_msg.pose.pose.orientation.w = 0.7862088998215283;
+    localization_msg.pose.pose.orientation.z = -0.5895733882900114;
+    localization_msg.pose.pose.orientation.w = 0.8077148134213186;
 
     localization_msg.header.stamp = this->get_clock()->now();
     localization_msg.header.frame_id = "map";
@@ -73,27 +73,27 @@ namespace autoware_interface_usdot_cosim{
 
     Pose wp0, wp1, wp2;
 
-    wp0.position.x = 26089.797406386635;
-    wp0.position.y = 4820.818679184576;
+    wp0.position.x = 58.74744415283203;
+    wp0.position.y = -73.74825286865234;
     wp0.position.z = 0.0;
 
     wp0.orientation.x = 0.0;
     wp0.orientation.y = 0.0;
-    wp0.orientation.z = -0.71650258553512;
-    wp0.orientation.w = 0.6975844356932629;
+    wp0.orientation.z = -0.7077132799979856;
+    wp0.orientation.w = 0.7064997617228846;
 
-    wp1.position.x = 26157.145289458822;
-    wp1.position.y = 4954.80001487748;
-    wp1.position.z = 0.0;
+    // wp1.position.x = 26157.145289458822;
+    // wp1.position.y = 4954.80001487748;
+    // wp1.position.z = 0.0;
 
-    wp1.orientation.x = 0.0;
-    wp1.orientation.y = 0.0;
-    wp1.orientation.z = 0.8038294933925517;
-    wp1.orientation.w = 0.5948597696535493;
+    // wp1.orientation.x = 0.0;
+    // wp1.orientation.y = 0.0;
+    // wp1.orientation.z = 0.8038294933925517;
+    // wp1.orientation.w = 0.5948597696535493;
 
     set_route_points_req->header.frame_id = "map";
-    set_route_points_req->goal = wp1;
-    set_route_points_req->waypoints = {wp0};
+    set_route_points_req->goal = wp0;
+    // set_route_points_req->waypoints = {wp0};
 
     auto result_s = cli_set_route_points->async_send_request(set_route_points_req);
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting new route...");
