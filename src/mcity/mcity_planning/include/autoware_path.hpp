@@ -9,6 +9,9 @@
 #include <mcity_msgs/msg/planned_path.hpp>
 #include <autoware_auto_planning_msgs/msg/trajectory.hpp>
 
+#include <RedisClient.h>
+#include <nlohmann/json.hpp>
+
 namespace autoware_path
 {
 
@@ -31,6 +34,8 @@ private:
     rclcpp::TimerBase::SharedPtr traj_timer_;
 
     PlannedPath path_msg;
+
+    RedisClient redis_client;
     
     void init_path();
     void on_traj_timer();

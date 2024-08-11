@@ -15,6 +15,12 @@ namespace autoware_path{
             this, get_clock(), 50ms, std::bind(&AutowarePath::on_traj_timer, this));
             
         init_path();
+
+        if (!redis_client.connect(true)) {
+            RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
+        } else {
+            RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
+        }
     }
 
     void AutowarePath::init_path(){
@@ -26,6 +32,12 @@ namespace autoware_path{
         if (path_msg.x_vector.empty()){
             RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 2000, "Empty trajectory received, not processed");
             return;
+        }
+
+        string emergency_stop = redis_client.get("emergency_stop");
+        if (emergency_stop == "True"){
+            std::fill(path_msg.vd_vector.begin(), path_msg.vd_vector.end(), 0.0);
+            RCLCPP_INFO(this->get_logger(), "External emergency stop");
         }
 
         path_msg.timestamp = this->get_clock()->now().seconds();

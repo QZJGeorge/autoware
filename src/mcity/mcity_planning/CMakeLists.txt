@@ -8,13 +8,18 @@ autoware_package()
 # Add include directories
 include_directories(
     include
+    ../redis_client/
+    /usr/include/hiredis
 )
 
 ################################# AUTOWARE PATH ######################################
 
 ament_auto_add_library(autoware_path_component SHARED
   src/autoware_path.cpp
+  ../redis_client/RedisClient.cpp
 )
+
+target_link_libraries(autoware_path_component hiredis)
 
 rclcpp_components_register_node(autoware_path_component
   PLUGIN "autoware_path::AutowarePath"
