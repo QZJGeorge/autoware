@@ -14,7 +14,7 @@ def generate_launch_description():
         Node(
             package='mcity_usdot',
             namespace='/mcity',
-            executable='autoware_interface_usdot_realcar',
+            executable='autoware_usdot_realcar',
         ),
 
         ############################################################
@@ -34,7 +34,7 @@ def generate_launch_description():
             namespace='/mcity',
             executable='autoware_cosim_plugin',
             parameters=[
-                {'control_cav': True},
+                {'control_cav': False},
                 {'cosim_controlled_vehicle_keys': ["terasim_cosim_vehicle_info"]}
             ],
         ),

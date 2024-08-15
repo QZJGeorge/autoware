@@ -1,5 +1,5 @@
-#ifndef MCITY_DEMO_AUTOWARE_INTERFACE_USDOT_REALCAR_HPP_
-#define MCITY_DEMO_AUTOWARE_INTERFACE_USDOT_REALCAR_HPP_
+#ifndef MCITY_DEMO_autoware_usdot_realcar_HPP_
+#define MCITY_DEMO_autoware_usdot_realcar_HPP_
 
 #include <iostream>
 
@@ -22,7 +22,7 @@
 #include <autoware_auto_system_msgs/msg/autoware_state.hpp>
 
 
-namespace autoware_interface_usdot_realcar
+namespace autoware_usdot_realcar
 {
 
 using namespace std;
@@ -39,11 +39,11 @@ using autoware_auto_vehicle_msgs::msg::VelocityReport;
 using autoware_auto_vehicle_msgs::msg::SteeringReport;
 
 
-class AutowareInterfaceUSDOTRealcar : public rclcpp::Node
+class AutowareUSDOTRealcar : public rclcpp::Node
 {
 public:
-  explicit AutowareInterfaceUSDOTRealcar(const rclcpp::NodeOptions & options);
-  ~AutowareInterfaceUSDOTRealcar() = default;
+  explicit AutowareUSDOTRealcar(const rclcpp::NodeOptions & options);
+  ~AutowareUSDOTRealcar() = default;
 
 private:
   int autoware_state = 1;

@@ -12,32 +12,34 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "autoware_interface_usdot_realcar.hpp"
+#include "autoware_usdot_realcar.hpp"
 
-namespace autoware_interface_usdot_realcar{
+namespace autoware_usdot_realcar{
 
-  AutowareInterfaceUSDOTRealcar::AutowareInterfaceUSDOTRealcar(const rclcpp::NodeOptions & options)
-  : Node("autoware_interface_usdot_realcar", options)
+  AutowareUSDOTRealcar::AutowareUSDOTRealcar(const rclcpp::NodeOptions & options)
+  : Node("autoware_usdot_realcar", options)
   {
     pub_vel_report = this->create_publisher<VelocityReport>("/vehicle/status/velocity_status", 10);
     pub_steer_report = this->create_publisher<SteeringReport>("/vehicle/status/steering_status", 10);
 
     sub_autoware_state = this->create_subscription<AutowareState>(
-      "/autoware/state", 10, std::bind(&AutowareInterfaceUSDOTRealcar::autowareStateCB, this, std::placeholders::_1));
+      "/autoware/state", 10, std::bind(&AutowareUSDOTRealcar::autowareStateCB, this, std::placeholders::_1));
     sub_veh_state = this->create_subscription<VehicleState>(
-      "/mcity/vehicle_state", 10, std::bind(&AutowareInterfaceUSDOTRealcar::vehStateCB, this, std::placeholders::_1));
+      "/mcity/vehicle_state", 10, std::bind(&AutowareUSDOTRealcar::vehStateCB, this, std::placeholders::_1));
     sub_operation_mode = this->create_subscription<OperationModeState>(
-      "/system/operation_mode/state", 10, std::bind(&AutowareInterfaceUSDOTRealcar::operationModeStateCB, this, std::placeholders::_1));
+      "/system/operation_mode/state", 10, std::bind(&AutowareUSDOTRealcar::operationModeStateCB, this, std::placeholders::_1));
 
     cli_set_route_points = this->create_client<SetRoutePoints>("/planning/mission_planning/set_route_points");
     cli_set_operation_mode = this->create_client<ChangeOperationMode>("/system/operation_mode/change_operation_mode");
     cli_set_autoware_control = this->create_client<ChangeAutowareControl>("/system/operation_mode/change_autoware_control");
 
     timer_ = rclcpp::create_timer(
-      this, get_clock(), 100ms, std::bind(&AutowareInterfaceUSDOTRealcar::on_timer, this));
+      this, get_clock(), 100ms, std::bind(&AutowareUSDOTRealcar::on_timer, this));
+
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Waiting for vehicle initialization...");
   }
 
-  void AutowareInterfaceUSDOTRealcar::on_timer(){
+  void AutowareUSDOTRealcar::on_timer(){
     if (autoware_state == AutowareState::INITIALIZING){
       RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Waiting for vehicle initialization...");
       return;
@@ -60,7 +62,7 @@ namespace autoware_interface_usdot_realcar{
     pub_vehicle_report();
   }
 
-  void AutowareInterfaceUSDOTRealcar::pub_vehicle_report(){
+  void AutowareUSDOTRealcar::pub_vehicle_report(){
     VelocityReport vel_report_msg;
     SteeringReport steer_report_msg;
 
@@ -74,7 +76,7 @@ namespace autoware_interface_usdot_realcar{
     pub_steer_report->publish(steer_report_msg);
   }
 
-  void AutowareInterfaceUSDOTRealcar::set_route_points(){
+  void AutowareUSDOTRealcar::set_route_points(){
     while (!cli_set_route_points->wait_for_service(1s)) {
       if (!rclcpp::ok()) {
         RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
@@ -102,7 +104,7 @@ namespace autoware_interface_usdot_realcar{
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Setting new route...");
   }
 
-  void AutowareInterfaceUSDOTRealcar::set_operation_mode(uint8_t mode){
+  void AutowareUSDOTRealcar::set_operation_mode(uint8_t mode){
     auto request = std::make_shared<ChangeOperationMode::Request>();
     request->mode = mode;
 
@@ -116,17 +118,17 @@ namespace autoware_interface_usdot_realcar{
     auto result = cli_set_operation_mode->async_send_request(request);
   }
 
-  void AutowareInterfaceUSDOTRealcar::autowareStateCB(const AutowareState::SharedPtr msg){
+  void AutowareUSDOTRealcar::autowareStateCB(const AutowareState::SharedPtr msg){
     autoware_state = msg->state;
   }
 
-  void AutowareInterfaceUSDOTRealcar::vehStateCB(const VehicleState::SharedPtr msg){
+  void AutowareUSDOTRealcar::vehStateCB(const VehicleState::SharedPtr msg){
     veh_state_msg = *msg;
   }
 
-  void AutowareInterfaceUSDOTRealcar::operationModeStateCB(const OperationModeState::SharedPtr msg){
+  void AutowareUSDOTRealcar::operationModeStateCB(const OperationModeState::SharedPtr msg){
     operation_mode_state_msg = *msg;
   }
 }
 
-RCLCPP_COMPONENTS_REGISTER_NODE(autoware_interface_usdot_realcar::AutowareInterfaceUSDOTRealcar)
+RCLCPP_COMPONENTS_REGISTER_NODE(autoware_usdot_realcar::AutowareUSDOTRealcar)
