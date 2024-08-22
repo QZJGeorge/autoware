@@ -184,16 +184,16 @@ rclcpp_components_register_node(test_13_realcar_component
   EXECUTABLE 13_vehicle_encroachment_realcar
 )
 
-##########################  TEST_18 ####################################
+##########################  test_15 ####################################
 
-ament_auto_add_library(test_18_realcar_component SHARED
-  src/test_18_realcar.cpp
+ament_auto_add_library(test_15_realcar_component SHARED
+  src/test_15_realcar.cpp
 )
 
-target_link_libraries(test_18_realcar_component hiredis)
+target_link_libraries(test_15_realcar_component hiredis)
 
-rclcpp_components_register_node(test_18_realcar_component
-  PLUGIN "test_18_realcar::Test18Realcar"
+rclcpp_components_register_node(test_15_realcar_component
+  PLUGIN "test_15_realcar::Test15Realcar"
   EXECUTABLE 18_traffic_signal_realcar
 )
 

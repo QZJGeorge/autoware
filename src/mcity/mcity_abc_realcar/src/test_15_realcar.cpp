@@ -12,32 +12,32 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "test_18_realcar.hpp"
+#include "test_15_realcar.hpp"
 
-namespace test_18_realcar{
+namespace test_15_realcar{
 
-  Test18Realcar::Test18Realcar(const rclcpp::NodeOptions & options)
-  : Node("test_18_realcar", options)
+  Test15Realcar::Test15Realcar(const rclcpp::NodeOptions & options)
+  : Node("test_15_realcar", options)
   {
     pub_vel_report = this->create_publisher<VelocityReport>("/vehicle/status/velocity_status", 10);
     pub_steer_report = this->create_publisher<SteeringReport>("/vehicle/status/steering_status", 10);
 
     sub_autoware_state = this->create_subscription<AutowareState>(
-      "/autoware/state", 10, std::bind(&Test18Realcar::autowareStateCB, this, std::placeholders::_1));
+      "/autoware/state", 10, std::bind(&Test15Realcar::autowareStateCB, this, std::placeholders::_1));
     sub_veh_state = this->create_subscription<VehicleState>(
-      "/mcity/vehicle_state", 10, std::bind(&Test18Realcar::vehStateCB, this, std::placeholders::_1));
+      "/mcity/vehicle_state", 10, std::bind(&Test15Realcar::vehStateCB, this, std::placeholders::_1));
     sub_operation_mode = this->create_subscription<OperationModeState>(
-      "/system/operation_mode/state", 10, std::bind(&Test18Realcar::operationModeStateCB, this, std::placeholders::_1));
+      "/system/operation_mode/state", 10, std::bind(&Test15Realcar::operationModeStateCB, this, std::placeholders::_1));
 
     cli_set_route_points = this->create_client<SetRoutePoints>("/planning/mission_planning/set_route_points");
     cli_set_operation_mode = this->create_client<ChangeOperationMode>("/system/operation_mode/change_operation_mode");
     cli_set_autoware_control = this->create_client<ChangeAutowareControl>("/system/operation_mode/change_autoware_control");
 
     timer_ = rclcpp::create_timer(
-      this, get_clock(), 100ms, std::bind(&Test18Realcar::on_timer, this));
+      this, get_clock(), 100ms, std::bind(&Test15Realcar::on_timer, this));
   }
 
-  void Test18Realcar::on_timer(){
+  void Test15Realcar::on_timer(){
     if (autoware_state == AutowareState::INITIALIZING){
       RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Waiting for vehicle initialization...");
       return;
@@ -60,7 +60,7 @@ namespace test_18_realcar{
     pub_vehicle_report();
   }
 
-  void Test18Realcar::pub_vehicle_report(){
+  void Test15Realcar::pub_vehicle_report(){
     VelocityReport vel_report_msg;
     SteeringReport steer_report_msg;
 
@@ -74,7 +74,7 @@ namespace test_18_realcar{
     pub_steer_report->publish(steer_report_msg);
   }
 
-  void Test18Realcar::set_route_points(){
+  void Test15Realcar::set_route_points(){
     Pose wp0;
     
     wp0.position.x = 61.00359344482422;
@@ -101,7 +101,7 @@ namespace test_18_realcar{
     auto result_s = cli_set_route_points->async_send_request(set_route_points_req);
   }
 
-  void Test18Realcar::set_operation_mode(uint8_t mode){
+  void Test15Realcar::set_operation_mode(uint8_t mode){
     auto request = std::make_shared<ChangeOperationMode::Request>();
     request->mode = mode;
 
@@ -115,17 +115,17 @@ namespace test_18_realcar{
     auto result = cli_set_operation_mode->async_send_request(request);
   }
 
-  void Test18Realcar::autowareStateCB(const AutowareState::SharedPtr msg){
+  void Test15Realcar::autowareStateCB(const AutowareState::SharedPtr msg){
     autoware_state = msg->state;
   }
 
-  void Test18Realcar::vehStateCB(const VehicleState::SharedPtr msg){
+  void Test15Realcar::vehStateCB(const VehicleState::SharedPtr msg){
     veh_state_msg = *msg;
   }
 
-  void Test18Realcar::operationModeStateCB(const OperationModeState::SharedPtr msg){
+  void Test15Realcar::operationModeStateCB(const OperationModeState::SharedPtr msg){
     operation_mode_state_msg = *msg;
   }
 }
 
-RCLCPP_COMPONENTS_REGISTER_NODE(test_18_realcar::Test18Realcar)
+RCLCPP_COMPONENTS_REGISTER_NODE(test_15_realcar::Test15Realcar)

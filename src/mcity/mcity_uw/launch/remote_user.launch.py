@@ -40,9 +40,9 @@ def generate_launch_description():
             executable='autoware_dummy_grid',
         ),
         Node(
-            package='mcity_mr',
+            package='autoware_cosim_plugin',
             namespace='/mcity',
-            executable='sumo_light_converter',
+            executable='autoware_tls_plugin',
         ),
 
         ############################################################

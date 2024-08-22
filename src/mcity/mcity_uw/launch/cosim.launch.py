@@ -28,11 +28,11 @@ def generate_launch_description():
         Node(
             package='autoware_cosim_plugin',
             namespace='/mcity',
-            executable='autoware_dummy_grid',
+            executable='autoware_tls_plugin',
         ),
         Node(
-            package='mcity_mr',
+            package='autoware_cosim_plugin',
             namespace='/mcity',
-            executable='sumo_light_converter',
+            executable='autoware_dummy_grid',
         ),
     ])
