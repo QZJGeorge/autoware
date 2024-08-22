@@ -39,20 +39,14 @@ namespace autoware_interface_demo_cosim{
 
   void AutowareInterfaceDemoCosim::on_timer(){
     if (autoware_state == AutowareState::INITIALIZING){
-      redis_client.set("autoare_state", "initializing");
-
       init_localization();
       RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Waiting for vehicle initialization...");
     }
     else if (autoware_state == AutowareState::WAITING_FOR_ROUTE){
-      redis_client.set("autoare_state", "waiting_for_route");
-
       set_route_points();
       RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Setting route points...");
     } 
     else if (autoware_state == AutowareState::WAITING_FOR_ENGAGE){
-      redis_client.set("autoare_state", "waiting_for_engage");
-      
       string terasim_status = redis_client.get("terasim_status");
       if (terasim_status == "0" || terasim_status == ""){
         RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Terasim not ready, waiting...");
@@ -61,9 +55,6 @@ namespace autoware_interface_demo_cosim{
         set_operation_mode(ChangeOperationMode::Request::AUTONOMOUS);
         RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Enabling autoware control...");
       }
-    }
-    else if (autoware_state == AutowareState::DRIVING){
-      redis_client.set("autoare_state", "driving");
     }
   }
 

@@ -16,7 +16,7 @@ def generate_launch_description():
         ),
         Node(
             package='mcity_abc',
-            namespace='/mcity/',
+            namespace='/mcity',
             executable=LaunchConfiguration('scenario')
         ),
         ############################################################

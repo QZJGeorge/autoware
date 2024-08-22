@@ -194,7 +194,7 @@ target_link_libraries(test_15_realcar_component hiredis)
 
 rclcpp_components_register_node(test_15_realcar_component
   PLUGIN "test_15_realcar::Test15Realcar"
-  EXECUTABLE 18_traffic_signal_realcar
+  EXECUTABLE 15_traffic_signal_realcar
 )
 
 

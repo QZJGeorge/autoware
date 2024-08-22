@@ -210,7 +210,7 @@ target_link_libraries(test_15_component hiredis Geographic)
 
 rclcpp_components_register_node(test_15_component
   PLUGIN "test_15::Test15"
-  EXECUTABLE 18_traffic_signal
+  EXECUTABLE 15_traffic_signal
 )
 
 ament_auto_package(
