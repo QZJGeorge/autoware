@@ -4,7 +4,7 @@ namespace autoware_path{
     AutowarePath::AutowarePath(const rclcpp::NodeOptions & options)
     : Node("autoware_path", options){
         //register pub
-        pub_path = this->create_publisher<PlannedPath>("/mcity/input_path", 10);
+        pub_path = this->create_publisher<PlannedPath>("/mcity/planned_path", 10);
     
         //register sub
         sub_trajectory = this->create_subscription<Trajectory>(

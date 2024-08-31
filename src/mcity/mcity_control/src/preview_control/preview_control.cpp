@@ -1,8 +1,10 @@
 #include <preview_control.hpp>
 
-namespace preview_control{
-    PreviewControl::PreviewControl(const rclcpp::NodeOptions & options)
-    : Node("preview_control", options){
+namespace preview_control
+{
+    PreviewControl::PreviewControl(const rclcpp::NodeOptions &options)
+        : Node("preview_control", options)
+    {
         this->declare_parameter("gain_folder", "");
         this->declare_parameter("slope_folder", "");
         this->declare_parameter("max_ey", 0.0);
@@ -33,59 +35,62 @@ namespace preview_control{
         this->get_parameter("trajectory_abort_size", trajectory_abort_size);
         this->get_parameter("trajectory_loose_abort_size", trajectory_loose_abort_size);
 
-        //register pub
+        // register pub
         pub_cmd2bywire = this->create_publisher<Control>("/mcity/vehicle_control", 10);
 
-        //register sub
+        // register sub
         sub_pose = this->create_subscription<PoseWithCovarianceStamped>(
             "/localization/pose_estimator/pose_with_covariance", 10, std::bind(&PreviewControl::pose_callback, this, std::placeholders::_1));
         sub_path = this->create_subscription<PlannedPath>(
-            "/mcity/input_path", 10, std::bind(&PreviewControl::pathCB, this, std::placeholders::_1));
+            "/mcity/planned_path", 10, std::bind(&PreviewControl::pathCB, this, std::placeholders::_1));
         sub_veh_state = this->create_subscription<VehicleState>(
             "/mcity/vehicle_state", 10, std::bind(&PreviewControl::vehStateCB, this, std::placeholders::_1));
 
-        //register timer
+        // register timer
         timer_ = rclcpp::create_timer(
             this, get_clock(), 20ms, std::bind(&PreviewControl::on_timer, this));
 
         init();
     }
 
-    void PreviewControl::init(){
+    void PreviewControl::init()
+    {
         _p2c = &p2c;
         _vs = &vs;
         _ctrl = &ctrl;
 
         pathProcess.init(
-            _p2c, 
-            _vs, 
-            max_ey, 
-            max_curvature, 
-            max_ephi, 
-            heading_offset, 
-            heading_lookahead_points, 
+            _p2c,
+            _vs,
+            max_ey,
+            max_curvature,
+            max_ephi,
+            heading_offset,
+            heading_lookahead_points,
             lateral_offset,
-            slope_folder
-        );
+            slope_folder);
 
         pathFollow.init(_p2c, _vs, _ctrl, gain_folder, max_ey, max_ephi);
         speedCtrl.ini(_p2c, _vs, _ctrl, speed_ctrl_kp, speed_ctrl_ki, FREQ);
     }
 
-    void PreviewControl::publishCmd(){
+    void PreviewControl::publishCmd()
+    {
         cmd_msg.timestamp = this->get_clock()->now().seconds();
-        cmd_msg.brake_cmd       = _ctrl->brake;
-        cmd_msg.throttle_cmd    = _ctrl->throttle;
-        cmd_msg.steering_cmd    = _ctrl->steering;
-        cmd_msg.gear_cmd        = _ctrl->gear;
+        cmd_msg.brake_cmd = _ctrl->brake;
+        cmd_msg.throttle_cmd = _ctrl->throttle;
+        cmd_msg.steering_cmd = _ctrl->steering;
+        cmd_msg.gear_cmd = _ctrl->gear;
         cmd_msg.turn_signal_cmd = _ctrl->turn_signal;
 
         pub_cmd2bywire->publish(cmd_msg);
     };
 
-    void PreviewControl::on_timer(){
+    void PreviewControl::on_timer()
+    {
         // step 1: check whether to stop
-        if(p2c.go == 0){
+        if (p2c.go == 0)
+        {
             speedCtrl.set_stop();
             RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Decision go = 0, set stop");
             publishCmd();
@@ -93,15 +98,17 @@ namespace preview_control{
         }
 
         // no planning result received
-        if (this->get_clock()->now().seconds() - p2c.timestamp > 1.0){
+        if (this->get_clock()->now().seconds() - p2c.timestamp > 1.0)
+        {
             speedCtrl.set_stop();
             RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "NOT able to recv decision result, set stop");
             publishCmd();
-            return; 
+            return;
         }
 
         // received trajectory too short
-        if (static_cast<int>(_p2c->x_vector.size()) < trajectory_abort_size) {
+        if (static_cast<int>(_p2c->x_vector.size()) < trajectory_abort_size)
+        {
             speedCtrl.set_stop();
             RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Received trajectory too short, set stop");
             publishCmd();
@@ -109,16 +116,22 @@ namespace preview_control{
         }
 
         // we still have some trajectory left but vehicle is already stopped
-        if (static_cast<int>(_p2c->x_vector.size()) < trajectory_loose_abort_size && _vs->speed_x == 0.0) {
-            if (stop_count > 100){
+        if (static_cast<int>(_p2c->x_vector.size()) < trajectory_loose_abort_size && _vs->speed_x == 0.0)
+        {
+            if (stop_count > 100)
+            {
                 speedCtrl.set_stop();
                 RCLCPP_WARN_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "early stop, shift gear to park");
                 publishCmd();
                 return;
-            } else{
+            }
+            else
+            {
                 stop_count++;
             }
-        } else{
+        }
+        else
+        {
             stop_count = 0;
         }
 
@@ -127,7 +140,7 @@ namespace preview_control{
 
         // step 3: check in path or not, and path tracking
         pathFollow.run();
-        
+
         // step 4: speed control
         speedCtrl.run();
 
@@ -135,7 +148,8 @@ namespace preview_control{
         publishCmd();
     }
 
-    void PreviewControl::pose_callback(const PoseWithCovarianceStamped::SharedPtr msg){
+    void PreviewControl::pose_callback(const PoseWithCovarianceStamped::SharedPtr msg)
+    {
         _vs->pos_x = msg->pose.pose.position.x;
         _vs->pos_y = msg->pose.pose.position.y;
         _vs->pos_z = msg->pose.pose.position.z;
@@ -146,23 +160,27 @@ namespace preview_control{
         _vs->qw = msg->pose.pose.orientation.w;
     }
 
-    void PreviewControl::vehStateCB(const VehicleState::SharedPtr msg){
-        if (_vs == NULL) return;
+    void PreviewControl::vehStateCB(const VehicleState::SharedPtr msg)
+    {
+        if (_vs == NULL)
+            return;
 
-        _vs->timestamp               = msg->timestamp;
-        _vs->yawRate                 = msg->yaw_rate;
-        _vs->speed_x                 = msg->speed_x;
-        _vs->by_wire_enabled         = msg->by_wire_enabled;
-        _vs->steering_wheel_angle    = msg->steer_state;
-        _vs->wheelAngle              = msg->steer_state/STEERING_RATIO; //not steering wheel, front wheel    
-        _vs->brake_pedal_output      = msg->brake_state;
-        _vs->throttle_pedal_output   = msg->throttle_state;
-        _vs->gear_position           = msg->gear_pos;
+        _vs->timestamp = msg->timestamp;
+        _vs->yawRate = msg->yaw_rate;
+        _vs->speed_x = msg->speed_x;
+        _vs->by_wire_enabled = msg->by_wire_enabled;
+        _vs->steering_wheel_angle = msg->steer_state;
+        _vs->wheelAngle = msg->steer_state / STEERING_RATIO; // not steering wheel, front wheel
+        _vs->brake_pedal_output = msg->brake_state;
+        _vs->throttle_pedal_output = msg->throttle_state;
+        _vs->gear_position = msg->gear_pos;
     }
 
-    void PreviewControl::pathCB(const PlannedPath::SharedPtr msg){
-        if (_p2c == NULL) return;
-        
+    void PreviewControl::pathCB(const PlannedPath::SharedPtr msg)
+    {
+        if (_p2c == NULL)
+            return;
+
         _p2c->timestamp = msg->timestamp;
         _p2c->time_resolution = msg->time_resolution;
         _p2c->estop = msg->estop;
@@ -189,4 +207,3 @@ namespace preview_control{
 }
 
 RCLCPP_COMPONENTS_REGISTER_NODE(preview_control::PreviewControl)
-
