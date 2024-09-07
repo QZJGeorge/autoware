@@ -93,8 +93,10 @@ namespace preview_control
     };
 
     void PreviewControl::on_timer(){
-        string vi_grade_override = redis_client.get("vi_grade_override");
-        if (vi_grade_override == "True"){
+        // check control override flag
+        string mcity_flag = redis_client.get("/mcity/flag");
+        auto flag = nlohmann::json::parse(mcity_flag);
+        if (flag["data"] == "True") {
             return;
         }
 
