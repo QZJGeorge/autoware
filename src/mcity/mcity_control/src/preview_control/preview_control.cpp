@@ -48,6 +48,12 @@ namespace preview_control{
         timer_ = rclcpp::create_timer(
             this, get_clock(), 20ms, std::bind(&PreviewControl::on_timer, this));
 
+        if (!redis_client.connect(true)) {
+            RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
+        } else {
+            RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
+        }
+
         init();
     }
 
@@ -84,6 +90,11 @@ namespace preview_control{
     };
 
     void PreviewControl::on_timer(){
+        string vi_grade_override = redis_client.get("vi_grade_override");
+        if (vi_grade_override == "True"){
+            return;
+        }
+
         // step 1: check whether to stop
         if(p2c.go == 0){
             speedCtrl.set_stop();
