@@ -68,8 +68,8 @@ namespace test_05{
   }
 
   void Test05::init_localization(){
-    localization_msg.pose.pose.position.x = 77612.0859375;
-    localization_msg.pose.pose.position.y = 86634.515625;
+    localization_msg.pose.pose.position.x = 115.43462371826172;
+    localization_msg.pose.pose.position.y = 119.25724792480469;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
@@ -83,8 +83,8 @@ namespace test_05{
   }
 
   void Test05::set_route_points(){
-    goal_msg.pose.position.x = 77616.96875;
-    goal_msg.pose.position.y = 86796.1484375;
+    goal_msg.pose.position.x = 121.0159912109375;
+    goal_msg.pose.position.y = 239.8248748779297;
 
     goal_msg.pose.orientation.x = 0.0;
     goal_msg.pose.orientation.y = 0.0;

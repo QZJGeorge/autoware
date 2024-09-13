@@ -68,13 +68,13 @@ namespace test_07{
   }
 
   void Test07::init_localization(){
-    localization_msg.pose.pose.position.x = 77554.09375;
-    localization_msg.pose.pose.position.y = 86635.5625;
+    localization_msg.pose.pose.position.x = 57.037353515625;
+    localization_msg.pose.pose.position.y = 116.36869812011719;
 
     localization_msg.pose.pose.orientation.x = 0.0;
     localization_msg.pose.pose.orientation.y = 0.0;
-    localization_msg.pose.pose.orientation.z = 0.7415248982332455;
-    localization_msg.pose.pose.orientation.w = 0.6709253500205331;
+    localization_msg.pose.pose.orientation.z = 0.7366898752107643;
+    localization_msg.pose.pose.orientation.w = 0.6762307503818119;
 
     localization_msg.header.stamp = this->get_clock()->now();
     localization_msg.header.frame_id = "map";
@@ -83,13 +83,13 @@ namespace test_07{
   }
 
   void Test07::set_route_points(){
-    goal_msg.pose.position.x = 77557.6953125;
-    goal_msg.pose.position.y = 86750.40625;
+    goal_msg.pose.position.x = 76.82257080078125;
+    goal_msg.pose.position.y = 275.37261962890625;
 
     goal_msg.pose.orientation.x = 0.0;
     goal_msg.pose.orientation.y = 0.0;
-    goal_msg.pose.orientation.z = 0.6915789093529723;
-    goal_msg.pose.orientation.w = 0.722300915227271;
+    goal_msg.pose.orientation.z = 0.42004345209862004;
+    goal_msg.pose.orientation.w = 0.9075039935719701;
 
     goal_msg.header.stamp = this->get_clock()->now();
     goal_msg.header.frame_id = "map";
