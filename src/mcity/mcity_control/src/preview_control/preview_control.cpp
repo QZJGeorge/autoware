@@ -50,6 +50,12 @@ namespace preview_control
         timer_ = rclcpp::create_timer(
             this, get_clock(), 20ms, std::bind(&PreviewControl::on_timer, this));
 
+        if (!redis_client.connect(true)) {
+            RCLCPP_ERROR(this->get_logger(), "Failed to connect to Redis server.");
+        } else {
+            RCLCPP_INFO(this->get_logger(), "Connected to Redis server.");
+        }
+
         init();
     }
 
@@ -86,8 +92,14 @@ namespace preview_control
         pub_cmd2bywire->publish(cmd_msg);
     };
 
-    void PreviewControl::on_timer()
-    {
+    void PreviewControl::on_timer(){
+        // check control override flag
+        string mcity_flag = redis_client.get("/mcity/flag");
+        auto flag = nlohmann::json::parse(mcity_flag);
+        if (flag["data"] == "True") {
+            return;
+        }
+
         // step 1: check whether to stop
         if (p2c.go == 0)
         {

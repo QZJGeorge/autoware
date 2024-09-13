@@ -9,6 +9,9 @@
 #include <path_follow.hpp>
 #include <speed_control.hpp>
 
+#include <RedisClient.h>
+#include <nlohmann/json.hpp>
+
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp_components/register_node_macro.hpp>
 
@@ -85,6 +88,8 @@ private:
     Plan_Rlt_S p2c;
     VehState_S vs;
     Control_Value_S ctrl;
+
+    RedisClient redis_client;
     
     void init();
     void on_timer();

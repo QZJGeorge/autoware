@@ -17,6 +17,8 @@ include_directories(
     src/path_process
     src/path_follow
     src/speed_control
+    ../redis_client/
+    /usr/include/hiredis
 )
 
 # Declare a library
@@ -25,7 +27,10 @@ add_library(preview_control_component SHARED
   src/path_process/path_process.cpp
   src/path_follow/path_follow.cpp
   src/speed_control/speed_control.cpp
+  ../redis_client/RedisClient.cpp
 )
+
+target_link_libraries(preview_control_component hiredis)
 
 ament_target_dependencies(preview_control_component
   rclcpp
