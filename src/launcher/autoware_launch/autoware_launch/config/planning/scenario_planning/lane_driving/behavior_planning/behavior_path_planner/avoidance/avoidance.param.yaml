@@ -147,12 +147,8 @@
         hysteresis_factor_safe_count: 10                 # [-]
         # rss parameters
 
-        # expected_front_deceleration: -1.0                # [m/ss]
-        expected_front_deceleration: -7.0 #Driver Licensing Test
-
-        # expected_rear_deceleration: -1.0                 # [m/ss]
-        expected_rear_deceleration: -7.0 #Driver Licensing Test
-
+        expected_front_deceleration: -1.0                # [m/ss]
+        expected_rear_deceleration: -1.0                 # [m/ss]
         rear_vehicle_reaction_time: 2.0                  # [s]
         rear_vehicle_safety_time_margin: 1.0             # [s]
         lateral_distance_max_threshold: 0.75             # [m]
@@ -215,14 +211,9 @@
 
         # longitudinal constraints
         longitudinal:
-          # nominal_deceleration: -1.0                    # [m/ss]
-          nominal_deceleration: -7.0 #Driver Licensing Test
-
+          nominal_deceleration: -1.0                    # [m/ss]
           nominal_jerk: 0.5                             # [m/sss]
-
-          # max_deceleration: -1.5                        # [m/ss]
-          max_deceleration: -7.0 #Driver Licensing Test
-
+          max_deceleration: -1.5                        # [m/ss]
           max_jerk: 1.0                                 # [m/sss]
           max_acceleration: 1.0                         # [m/ss]
 

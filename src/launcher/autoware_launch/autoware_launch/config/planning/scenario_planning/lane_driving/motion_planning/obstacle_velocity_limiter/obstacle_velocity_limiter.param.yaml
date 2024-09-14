@@ -3,9 +3,7 @@
     min_ttc: 1.0  # [s] minimum time without collision when doing projection at each trajectory point
     distance_buffer: 0.0  # [m] extra distance to add to a projection (in addition to the vehicle overhang)
     min_adjusted_velocity: 2.5  # [m/s] minimum velocity that the module can set
-    
-    # max_deceleration: 2.0  # [m/s²] maximum deceleration caused by the adjusted velocity
-    max_deceleration: 7.0 #Driver Licensing Test
+    max_deceleration: 2.0  # [m/s²] maximum deceleration caused by the adjusted velocity
 
     trajectory_preprocessing:
       start_distance: 0.0  # [m] distance ahead of ego from which to start modifying the trajectory

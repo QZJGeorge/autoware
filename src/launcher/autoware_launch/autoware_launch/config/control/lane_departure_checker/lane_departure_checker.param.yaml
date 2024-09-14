@@ -17,10 +17,7 @@
     # Core
     footprint_margin_scale: 1.0
     resample_interval: 0.3
-
-    # max_deceleration: 2.8
-    max_deceleration: 7.0 #Driver Licensing Test
-
+    max_deceleration: 2.8
     delay_time: 1.3
     max_lateral_deviation: 2.0
     max_longitudinal_deviation: 2.0

@@ -28,12 +28,8 @@
 
       # safety check
       safety_check:
-        # expected_front_deceleration: -1.0
-        expected_front_deceleration: -7.0 #Driver Licensing Test
-        
-        # expected_rear_deceleration: -1.0
-        expected_rear_deceleration: -7.0 #Driver Licensing Test
-
+        expected_front_deceleration: -1.0
+        expected_rear_deceleration: -1.0
         expected_front_deceleration_for_abort: -1.0
         expected_rear_deceleration_for_abort: -2.0
         rear_vehicle_reaction_time: 2.0
