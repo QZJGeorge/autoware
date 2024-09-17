@@ -95,9 +95,12 @@ namespace preview_control
     void PreviewControl::on_timer(){
         // check control override flag
         string mcity_flag = redis_client.get("/mcity/flag");
-        auto flag = nlohmann::json::parse(mcity_flag);
-        if (flag["data"] == "True") {
-            return;
+
+        if (!mcity_flag.empty()){
+            auto control_override = nlohmann::json::parse(mcity_flag);
+            if (control_override["data"] == "True") {
+                return;
+            }
         }
 
         // step 1: check whether to stop
