@@ -40,19 +40,6 @@ rclcpp_components_register_node(autoware_interface_uw_realcar_component
   EXECUTABLE autoware_interface_uw_realcar
 )
 
-##########################  AUTOWARE PATH UW ###################################
-
-ament_auto_add_library(autoware_path_uw_component SHARED
-  src/autoware_path_uw.cpp
-)
-
-target_link_libraries(autoware_path_uw_component hiredis)
-
-rclcpp_components_register_node(autoware_path_uw_component
-  PLUGIN "autoware_path_uw::AutowarePathUW"
-  EXECUTABLE autoware_path_uw
-)
-
 ########################################################################################
 
 ament_auto_package(
