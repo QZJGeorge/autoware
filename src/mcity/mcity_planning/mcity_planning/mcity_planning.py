@@ -1,0 +1,102 @@
+import math
+import json
+import rclpy
+import terasim_cosim.redis_msgs as redis_msgs
+
+from rclpy.node import Node
+from mcity_msgs.msg import PlannedPath
+from autoware_auto_planning_msgs.msg import Trajectory
+
+from terasim_cosim.constants import *
+from terasim_cosim.redis_client_wrapper import create_redis_client
+
+
+class McityPlanning(Node):
+    def __init__(self):
+        super().__init__("mcity_planning")
+
+        # Register publisher
+        self.pub_path = self.create_publisher(PlannedPath, "/mcity/planned_path", 10)
+
+        # Register subscriber
+        self.sub_trajectory = self.create_subscription(
+            Trajectory,
+            "/planning/scenario_planning/trajectory",
+            self.trajectory_callback,
+            10,
+        )
+
+        # Register timer
+        self.traj_timer = self.create_timer(0.05, self.on_traj_timer)
+
+        key_value_config = {
+            "output": redis_msgs.GeneralMsg,
+        }
+        self.redis_client = create_redis_client(key_value_config=key_value_config)
+
+        self.path_msg = PlannedPath()
+        self.path_msg.estop = 0
+        self.path_msg.go = 1
+
+    def apply_uw_speed(self):
+        output = self.redis_client.get("output")
+        if output:
+            data = json.loads(output.data)
+            info = data["info"]
+            if info:
+                trajectory_commands = info["trajectory_commands"]
+                if trajectory_commands:
+                    speed = trajectory_commands["CAV"]["spd"]
+                    self.path_msg.vd_vector = [speed] * len(self.path_msg.vd_vector)
+
+    def on_traj_timer(self):
+        try:
+            self.apply_uw_speed()
+        except Exception as e:
+            pass
+
+        self.path_msg.timestamp = self.get_clock().now().nanoseconds / 1e9
+        self.pub_path.publish(self.path_msg)
+
+    def trajectory_callback(self, msg):
+        x_list = []
+        y_list = []
+        vd_list = []
+        ori_list = []
+
+        # 500 * 0.1 meter = 50m max distance
+        max_num_points = 500
+        num_points_to_store = min(max_num_points, len(msg.points))
+
+        for i in range(num_points_to_store):
+            point = msg.points[i]
+
+            qx = point.pose.orientation.x
+            qy = point.pose.orientation.y
+            qz = point.pose.orientation.z
+            qw = point.pose.orientation.w
+
+            siny_cosp = 2 * (qw * qz + qx * qy)
+            cosy_cosp = 1 - 2 * (qy * qy + qz * qz)
+            yaw = math.atan2(siny_cosp, cosy_cosp)
+
+            x_list.append(point.pose.position.x)
+            y_list.append(point.pose.position.y)
+            vd_list.append(point.longitudinal_velocity_mps)
+            ori_list.append(yaw)
+
+        self.path_msg.x_vector = x_list
+        self.path_msg.y_vector = y_list
+        self.path_msg.vd_vector = vd_list
+        self.path_msg.ori_vector = ori_list
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = McityPlanning()
+    rclpy.spin(node)
+    rclpy.shutdown()
+
+
+if __name__ == "__main__":
+    main()
