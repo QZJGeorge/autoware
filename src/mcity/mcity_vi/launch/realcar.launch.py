@@ -13,9 +13,9 @@ def generate_launch_description():
             # Autoware Interface to handle the simulation requests
             ############################################################
             Node(
-                package="mcity_uw",
+                package="mcity_vi",
                 namespace="/mcity",
-                executable="autoware_interface_uw_realcar",
+                executable="autoware_interface_vi_realcar",
             ),
             ############################################################
             # Localization
