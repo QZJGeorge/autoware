@@ -195,6 +195,10 @@ namespace preview_control
         if (_p2c == NULL)
             return;
 
+        if (msg->x_vector.empty()) {
+            return;
+        }
+
         _p2c->timestamp = msg->timestamp;
         _p2c->time_resolution = msg->time_resolution;
         _p2c->estop = msg->estop;

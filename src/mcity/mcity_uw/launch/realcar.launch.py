@@ -1,5 +1,9 @@
+import os
 from launch import LaunchDescription
 from launch_ros.actions import Node
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from ament_index_python.packages import get_package_share_directory
 
 
 def generate_launch_description():
@@ -22,7 +26,7 @@ def generate_launch_description():
                 executable="gnss_cosim_plugin",
             ),
             ############################################################
-            # Mixed Reality (SUMO to Autoware)
+            # Cosim
             ############################################################
             Node(
                 package="autoware_cosim_plugin",
@@ -30,7 +34,7 @@ def generate_launch_description():
                 executable="autoware_cosim_plugin",
                 parameters=[
                     {"control_cav": False},
-                    {"cosim_controlled_vehicle_keys": ["av_context"]},
+                    {"cosim_controlled_vehicle_keys": ["tera_cosim_vehicle_info"]},
                 ],
             ),
             Node(
@@ -52,17 +56,18 @@ def generate_launch_description():
                 executable="mcity_planning",
             ),
             ############################################################
-            # Remote Communication
+            # Control
             ############################################################
-            Node(
-                package="ros_redis_interface",
-                namespace="/mcity",
-                executable="redis_to_ros_vehicle_state",
-            ),
-            Node(
-                package="ros_redis_interface",
-                namespace="/mcity",
-                executable="ros_to_redis_input_path",
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource(
+                    [
+                        os.path.join(
+                            get_package_share_directory("mcity_control"),
+                            "launch",
+                            "mcity_control.launch.py",
+                        )
+                    ]
+                )
             ),
         ]
     )
