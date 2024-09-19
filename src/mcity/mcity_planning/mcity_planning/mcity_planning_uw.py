@@ -7,10 +7,13 @@ from rclpy.node import Node
 from mcity_msgs.msg import PlannedPath
 from autoware_auto_planning_msgs.msg import Trajectory
 
+from terasim_cosim.constants import *
+from terasim_cosim.redis_client_wrapper import create_redis_client
 
-class McityPlanning(Node):
+
+class McityPlanningUW(Node):
     def __init__(self):
-        super().__init__("mcity_planning")
+        super().__init__("mcity_planning_uw")
 
         # Register publisher
         self.pub_path = self.create_publisher(PlannedPath, "/mcity/planned_path", 10)
@@ -26,13 +29,44 @@ class McityPlanning(Node):
         # Register timer
         self.traj_timer = self.create_timer(0.05, self.on_timer)
 
+        self.uw_speed = 0.0
+        self.uw_timestamp = 0.0
+
+        key_value_config = {
+            "output": redis_msgs.GeneralMsg,
+        }
+        self.redis_client = create_redis_client(key_value_config=key_value_config)
+
         self.path_msg = PlannedPath()
         self.path_msg.estop = 0
         self.path_msg.go = 1
 
     def on_timer(self):
+        self.update_uw_control()
+        self.apply_uw_speed()
+
         self.path_msg.timestamp = self.get_clock().now().nanoseconds / 1e9
         self.pub_path.publish(self.path_msg)
+
+    def update_uw_control(self):
+        output = self.redis_client.get("output")
+        if output:
+            data = json.loads(output.data)
+            info = data["info"]
+            if info:
+                trajectory_commands = info["trajectory_commands"]
+                if trajectory_commands:
+                    self.uw_timestamp = output.header.timestamp
+                    self.uw_speed = trajectory_commands["CAV"]["spd"]
+                    print("uw speed received {}".format(self.uw_speed))
+
+    def apply_uw_speed(self):
+        current_time = self.get_clock().now().nanoseconds / 1e9
+        if current_time - self.uw_timestamp < 1.0:
+            self.path_msg.vd_vector = [self.uw_speed] * len(self.path_msg.vd_vector)
+            print("uw control speed applied {}".format(self.uw_speed))
+        else:
+            print("uw control command outdated")
 
     def trajectory_callback(self, msg):
         x_list = []
@@ -69,7 +103,7 @@ class McityPlanning(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = McityPlanning()
+    node = McityPlanningUW()
     rclpy.spin(node)
     rclpy.shutdown()
 

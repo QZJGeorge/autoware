@@ -53,7 +53,7 @@ def generate_launch_description():
             Node(
                 package="mcity_planning",
                 namespace="/mcity",
-                executable="mcity_planning",
+                executable="mcity_planning_uw",
             ),
             ############################################################
             # Control

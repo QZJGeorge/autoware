@@ -23,6 +23,7 @@ setup(
     entry_points={
         "console_scripts": [
             "mcity_planning = mcity_planning.mcity_planning:main",
+            "mcity_planning_uw = mcity_planning.mcity_planning_uw:main",
         ],
     },
 )
