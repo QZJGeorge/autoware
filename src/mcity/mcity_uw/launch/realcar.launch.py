@@ -34,7 +34,7 @@ def generate_launch_description():
                 executable="autoware_cosim_plugin",
                 parameters=[
                     {"control_cav": False},
-                    {"cosim_controlled_vehicle_keys": ["tera_cosim_vehicle_info"]},
+                    {"cosim_controlled_vehicle_keys": ["terasim_cosim_vehicle_info"]},
                 ],
             ),
             Node(
