@@ -98,6 +98,7 @@ namespace preview_control
         if (!mcity_flag.empty()){
             auto control_override = nlohmann::json::parse(mcity_flag);
             if (control_override["data"] == "True") {
+                RCLCPP_INFO_THROTTLE(rclcpp::get_logger("rclcpp"), *get_clock(), 1000, "Control override from redis");
                 return;
             }
         }
