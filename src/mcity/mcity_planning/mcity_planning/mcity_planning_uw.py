@@ -54,19 +54,23 @@ class McityPlanningUW(Node):
             data = json.loads(output.data)
             info = data["info"]
             if info:
-                trajectory_commands = info["trajectory_commands"]
+                trajectory_commands = info["trajectory_commands_cav"]
                 if trajectory_commands:
                     self.uw_timestamp = output.header.timestamp
-                    self.uw_speed = trajectory_commands["CAV"]["spd"]
-                    print("uw speed received {}".format(self.uw_speed))
+                    uw_speed = float(trajectory_commands["spd"])
+                    if uw_speed >= 0.0:
+                        self.uw_speed = uw_speed
+                        self.get_logger().info(
+                            "uw speed received {}".format(self.uw_speed)
+                        )
 
     def apply_uw_speed(self):
         current_time = self.get_clock().now().nanoseconds / 1e9
-        if current_time - self.uw_timestamp < 1.0:
+        if current_time - self.uw_timestamp <= 0.5:
             self.path_msg.vd_vector = [self.uw_speed] * len(self.path_msg.vd_vector)
-            print("uw control speed applied {}".format(self.uw_speed))
+            self.get_logger().info("uw control speed applied {}".format(self.uw_speed))
         else:
-            print("uw control command outdated")
+            self.get_logger().info("uw control command outdated")
 
     def trajectory_callback(self, msg):
         x_list = []
