@@ -70,5 +70,13 @@ def generate_launch_description():
                     ]
                 )
             ),
+            ############################################################
+            # Remote Communication
+            ############################################################
+            Node(
+                package="ros_redis_interface",
+                namespace="/mcity",
+                executable="ros_to_redis_vehicle_state",
+            ),
         ]
     )
