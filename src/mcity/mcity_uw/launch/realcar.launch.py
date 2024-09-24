@@ -77,5 +77,10 @@ def generate_launch_description():
                 namespace="/mcity/communication",
                 executable="ros_to_redis_vehicle_state",
             ),
+            Node(
+                package="ros_redis_interface",
+                namespace="/mcity/communication",
+                executable="ros_to_redis_planned_path",
+            ),
         ]
     )
