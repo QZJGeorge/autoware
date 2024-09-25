@@ -46,6 +46,8 @@ bool    steer_timeout
 
 int16   gear_pos
 
+float64 engine_rpm
+
 float64 wheel_v_front_left
 float64 wheel_v_front_right
 float64 wheel_v_rear_left
