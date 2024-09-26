@@ -70,7 +70,8 @@ class McityPlanningUW(Node):
             self.path_msg.vd_vector = [self.uw_speed] * len(self.path_msg.vd_vector)
             self.get_logger().info("uw control speed applied {}".format(self.uw_speed))
         else:
-            self.get_logger().info("uw control command outdated")
+            pass
+            # self.get_logger().info("uw control command outdated")
 
     def trajectory_callback(self, msg):
         x_list = []
