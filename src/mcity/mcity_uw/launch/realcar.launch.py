@@ -48,14 +48,6 @@ def generate_launch_description():
                 executable="autoware_tls_plugin",
             ),
             ############################################################
-            # Planning
-            ############################################################
-            Node(
-                package="mcity_planning",
-                namespace="/mcity",
-                executable="mcity_planning_uw",
-            ),
-            ############################################################
             # Control
             ############################################################
             IncludeLaunchDescription(

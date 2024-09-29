@@ -29,6 +29,8 @@ class McityPlanning(Node):
         self.path_msg = PlannedPath()
         self.path_msg.estop = 0
         self.path_msg.go = 1
+        
+        print("reading trajectory from autoware and publishing preview control path...")
 
     def on_timer(self):
         self.path_msg.timestamp = self.get_clock().now().nanoseconds / 1e9
