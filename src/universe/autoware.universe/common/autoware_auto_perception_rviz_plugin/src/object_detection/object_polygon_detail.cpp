@@ -80,8 +80,13 @@ visualization_msgs::msg::Marker::SharedPtr get_predicted_path_marker_ptr(
   marker_ptr->lifetime = rclcpp::Duration::from_seconds(0.2);
   marker_ptr->pose = initPose();
   marker_ptr->color = predicted_path_color;
-  marker_ptr->color.a = 0.6;
-  marker_ptr->scale.x = 0.015;
+  // marker_ptr->color.a = 0.6;
+  // marker_ptr->scale.x = 0.015;
+  marker_ptr->color.r = 0.63;
+  marker_ptr->color.g = 0.59;
+  marker_ptr->color.b = 1.2;
+  marker_ptr->color.a = 1.0;
+  marker_ptr->scale.x = 0.10;
   calc_path_line_list(predicted_path, marker_ptr->points, is_simple);
   for (size_t k = 0; k < marker_ptr->points.size(); ++k) {
     marker_ptr->points.at(k).z -= shape.dimensions.z / 2.0;
