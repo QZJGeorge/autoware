@@ -55211,7 +55211,7 @@
     <tag k='local_x' v='-48.166097' />
     <tag k='local_y' v='32.586835' />
   </node>
-  <node id='57393' visible='true' version='1' lat='42.30029391731' lon='-83.69862655232'>
+  <node id='57393' action='modify' visible='true' version='1' lat='42.30053751864' lon='-83.69858043054'>
     <tag k='ele' v='0.000000' />
     <tag k='local_x' v='-51.665558' />
     <tag k='local_y' v='32.648265' />
@@ -91488,7 +91488,6 @@
     <member type='relation' ref='233000' role='regulatory_element' />
     <tag k='speed_limit' v='18' />
     <tag k='subtype' v='road' />
-    <tag k='turn_direction' v='right' />
     <tag k='type' v='lanelet' />
   </relation>
   <relation id='44356' action='modify' visible='true' version='1'>
@@ -94101,7 +94100,6 @@
     <member type='relation' ref='233000' role='regulatory_element' />
     <tag k='speed_limit' v='18' />
     <tag k='subtype' v='road' />
-    <tag k='turn_direction' v='right' />
     <tag k='type' v='lanelet' />
   </relation>
   <relation id='62247' action='modify' visible='true' version='1'>

@@ -91488,7 +91488,6 @@
     <member type='relation' ref='233000' role='regulatory_element' />
     <tag k='speed_limit' v='18' />
     <tag k='subtype' v='road' />
-    <tag k='turn_direction' v='right' />
     <tag k='type' v='lanelet' />
   </relation>
   <relation id='44356' action='modify' visible='true' version='1'>
@@ -94101,7 +94100,6 @@
     <member type='relation' ref='233000' role='regulatory_element' />
     <tag k='speed_limit' v='18' />
     <tag k='subtype' v='road' />
-    <tag k='turn_direction' v='right' />
     <tag k='type' v='lanelet' />
   </relation>
   <relation id='62247' action='modify' visible='true' version='1'>
