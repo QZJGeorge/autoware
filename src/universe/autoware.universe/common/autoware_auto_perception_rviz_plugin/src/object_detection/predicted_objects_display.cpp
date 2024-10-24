@@ -56,6 +56,11 @@ std::vector<visualization_msgs::msg::Marker::SharedPtr> PredictedObjectsDisplay:
   std::vector<visualization_msgs::msg::Marker::SharedPtr> markers;
 
   for (const auto & object : msg->objects) {
+    // std::string uuid_sub = uuid_to_string(object.object_id).substr(0, 4);
+    // if (uuid_sub != "3365"){
+    //   continue;
+    // }
+
     // Get marker for shape
     auto shape_marker = get_shape_marker_ptr(
       object.shape, object.kinematics.initial_pose_with_covariance.pose.position,
