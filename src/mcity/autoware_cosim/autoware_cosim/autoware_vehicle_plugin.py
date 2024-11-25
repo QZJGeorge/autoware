@@ -233,6 +233,7 @@ class AutowareVehiclePlugin(Node):
 
         bv_pose_with_covariance.pose.position.x = x
         bv_pose_with_covariance.pose.position.y = y
+        bv_pose_with_covariance.pose.position.z = 0.8
         bv_pose_with_covariance.pose.orientation.w = cos(orientation / 2)
         bv_pose_with_covariance.pose.orientation.x = 0.0
         bv_pose_with_covariance.pose.orientation.y = 0.0
