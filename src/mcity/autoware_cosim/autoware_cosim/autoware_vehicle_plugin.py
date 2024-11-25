@@ -28,7 +28,7 @@ class AutowareVehiclePlugin(Node):
     def __init__(self):
         super().__init__("autoware_vehicle_plugin")
 
-        self.declare_parameter("control_cav", True)
+        self.declare_parameter("control_cav", False)
         self.declare_parameter(
             "cosim_controlled_vehicle_keys", [TERASIM_COSIM_VEHICLE_INFO]
         )
@@ -143,7 +143,7 @@ class AutowareVehiclePlugin(Node):
             cav_orientation = cav_info.orientation
 
             cav_x, cav_y = self.center_coordinate_to_autoware_coordinate(
-                cav_x, cav_x, cav_orientation
+                cav_x, cav_y, cav_orientation
             )
 
             # Modify position based on some offsets and set to pose message
@@ -339,3 +339,6 @@ def main(args=None):
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
+
+
+main()
