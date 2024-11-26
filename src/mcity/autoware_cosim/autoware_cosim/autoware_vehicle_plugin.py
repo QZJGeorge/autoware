@@ -138,7 +138,7 @@ class AutowareVehiclePlugin(Node):
 
             cav_x = cav_info.x + self.UTM_offset[0]
             cav_y = cav_info.y + self.UTM_offset[1]
-            cav_z = cav_info.z
+            cav_z = 0.0
 
             cav_orientation = cav_info.orientation
 
