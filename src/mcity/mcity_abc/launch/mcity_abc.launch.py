@@ -24,21 +24,21 @@ def generate_launch_description():
             # Mixed Reality
             ############################################################
             Node(
-                package="autoware_cosim_plugin",
+                package="autoware_cosim",
                 namespace="/mcity",
-                executable="autoware_cosim_plugin",
+                executable="autoware_vehicle_plugin",
                 parameters=[
                     {"control_cav": True},
                     {"cosim_controlled_vehicle_keys": ["terasim_cosim_vehicle_info"]},
                 ],
             ),
             Node(
-                package="autoware_cosim_plugin",
+                package="autoware_cosim",
                 namespace="/mcity",
                 executable="autoware_tls_plugin",
             ),
             Node(
-                package="autoware_cosim_plugin",
+                package="autoware_cosim",
                 namespace="/mcity",
                 executable="autoware_dummy_grid",
             ),
