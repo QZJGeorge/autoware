@@ -28,7 +28,7 @@ class AutowareVehiclePlugin(Node):
     def __init__(self):
         super().__init__("autoware_vehicle_plugin")
 
-        self.declare_parameter("control_cav", False)
+        self.declare_parameter("control_cav", True)
         self.declare_parameter(
             "cosim_controlled_vehicle_keys", [TERASIM_COSIM_VEHICLE_INFO]
         )
@@ -68,7 +68,7 @@ class AutowareVehiclePlugin(Node):
 
         self.tf = tf2_ros.TransformBroadcaster(self)
 
-        self.timer = self.create_timer(0.1, self.on_timer)
+        self.timer = self.create_timer(0.02, self.on_timer)
 
         self.saved_odom_msg = Odometry()
 
