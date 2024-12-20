@@ -78,23 +78,23 @@ namespace autoware_interface_demo_cosim{
   void AutowareInterfaceDemoCosim::set_route_points(){
     Pose wp0, wp1, wp2, wp3, wp4;
 
-    wp0.position.x = 159.460693359375;
-    wp0.position.y = 256.66790771484375;
+    wp0.position.x = 153.94821166992188;
+    wp0.position.y = 209.9748077392578;
     wp0.position.z = 0.0;
 
     wp0.orientation.x = 0.0;
     wp0.orientation.y = 0.0;
-    wp0.orientation.z = 0.6955498525464231;
-    wp0.orientation.w = 0.718477837252235;
+    wp0.orientation.z = 0.7040023080395935;
+    wp0.orientation.w = 0.7101976839408344;
 
-    wp1.position.x = 196.44869995117188;
-    wp1.position.y = 326.031494140625;
+    wp1.position.x = 200.9136505126953;
+    wp1.position.y = 332.71807861328125;
     wp1.position.z = 0.0;
 
     wp1.orientation.x = 0.0;
     wp1.orientation.y = 0.0;
-    wp1.orientation.z = 0.10959365387983362;
-    wp1.orientation.w = 0.9939764740823935;
+    wp1.orientation.z = 0.1576494929852369;
+    wp1.orientation.w = 0.98749513282927;
 
     wp2.position.x = 50.181983947753906;
     wp2.position.y = 164.53213500976562;

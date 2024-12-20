@@ -68,7 +68,8 @@ class AutowareVehiclePlugin(Node):
 
         self.tf = tf2_ros.TransformBroadcaster(self)
 
-        self.timer = self.create_timer(0.02, self.on_timer)
+        self.cav_timer = self.create_timer(0.02, self.on_cav_timer)
+        self.bv_timer = self.create_timer(0.1, self.on_bv_timer)
 
         self.saved_odom_msg = Odometry()
 
@@ -87,12 +88,13 @@ class AutowareVehiclePlugin(Node):
 
         self.redis_client = create_redis_client(key_value_config=key_value_config)
 
-    def on_timer(self):
+    def on_cav_timer(self):
         if self.control_cav:
             self.sync_autoware_cav_to_cosim()
         else:
             self.sync_cosim_cav_to_autoware()
 
+    def on_bv_timer(self):
         self.sync_cosim_vehicle_to_autoware()
 
     def sync_autoware_cav_to_cosim(self):

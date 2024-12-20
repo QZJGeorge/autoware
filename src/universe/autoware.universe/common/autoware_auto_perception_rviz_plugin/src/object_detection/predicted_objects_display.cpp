@@ -57,7 +57,7 @@ std::vector<visualization_msgs::msg::Marker::SharedPtr> PredictedObjectsDisplay:
 
   for (const auto & object : msg->objects) {
     // std::string uuid_sub = uuid_to_string(object.object_id).substr(0, 4);
-    // if (uuid_sub != "3365"){
+    // if (uuid_sub != "3365" && uuid_sub != "5369"){
     //   continue;
     // }
 
