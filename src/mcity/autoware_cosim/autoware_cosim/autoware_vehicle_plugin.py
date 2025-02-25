@@ -17,7 +17,7 @@ from autoware_auto_perception_msgs.msg import (
 )
 
 from terasim_cosim.constants import *
-from terasim_cosim.redis_msgs import Vehicle, VehicleDict
+from terasim_cosim.redis_msgs import Actor, ActorDict
 from terasim_cosim.redis_client_wrapper import create_redis_client
 
 from math import atan2, cos, sin, pi
@@ -28,10 +28,8 @@ class AutowareVehiclePlugin(Node):
     def __init__(self):
         super().__init__("autoware_vehicle_plugin")
 
-        self.declare_parameter("control_cav", True)
-        self.declare_parameter(
-            "cosim_controlled_vehicle_keys", [TERASIM_COSIM_VEHICLE_INFO]
-        )
+        self.declare_parameter("control_cav", False)
+        self.declare_parameter("cosim_controlled_vehicle_keys", [TERASIM_ACTOR_INFO])
 
         self.control_cav = (
             self.get_parameter("control_cav").get_parameter_value().bool_value
@@ -81,10 +79,10 @@ class AutowareVehiclePlugin(Node):
 
     def on_start(self):
         key_value_config = {
-            CAV_COSIM_VEHICLE_INFO: VehicleDict,
+            CAV_INFO: ActorDict,
         }
         for key in self.cosim_controlled_vehicle_keys:
-            key_value_config[key] = VehicleDict
+            key_value_config[key] = ActorDict
 
         self.redis_client = create_redis_client(key_value_config=key_value_config)
 
@@ -110,10 +108,10 @@ class AutowareVehiclePlugin(Node):
         orientation = self.get_orientation_from_quaternion(qx, qy, qz, qw)
         x, y = self.autoware_coordinate_to_center_coordinate(x, y, orientation)
 
-        cav_cosim_vehicle_info = VehicleDict()
-        cav_cosim_vehicle_info.header.timestamp = time.time()
+        cav_info = ActorDict()
+        cav_info.header.timestamp = time.time()
 
-        info = Vehicle()
+        info = Actor()
         info.x = x
         info.y = y
         info.z = 275.0
@@ -123,19 +121,19 @@ class AutowareVehiclePlugin(Node):
         info.orientation = orientation
         info.speed_long = speed_long
 
-        cav_cosim_vehicle_info.data["CAV"] = info
+        cav_info.data["CAV"] = info
 
-        self.redis_client.set(CAV_COSIM_VEHICLE_INFO, cav_cosim_vehicle_info)
+        self.redis_client.set(CAV_INFO, cav_info)
 
     def sync_cosim_cav_to_autoware(self):
         try:
-            cav_cosim_vehicle_info = self.redis_client.get(CAV_COSIM_VEHICLE_INFO)
+            cav_info = self.redis_client.get(CAV_INFO)
         except:
-            print("cav_cosim_vehicle_info not available. Exiting...")
+            print("cav_info not available. Exiting...")
             return
 
-        if cav_cosim_vehicle_info:
-            data = cav_cosim_vehicle_info.data
+        if cav_info:
+            data = cav_info.data
             cav_info = data["CAV"]
 
             cav_x = cav_info.x + self.UTM_offset[0]
